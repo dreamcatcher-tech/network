@@ -1,14 +1,9 @@
 ---
+title: 'Ambient Attribution'
 published: false
-slug: ambient-attribution
-title: Ambient Attribution
-author: dreamwalker
-author_title: architect @ dreamcatcher
-author_url: https://github.com/
-author_image_url: blog/assets/logo.svg
+description: 'k'
+tags: infosec, privacy, tor, blockchain
 cover_image: 'https://raw.githubusercontent.com/dreamcatcher-tech/dev.to/master/blog-posts/ambient-attribution/assets/time-money-balance.jpg'
-description: ''
-tags: [infosec, privacy, tor, blockchain]
 series:
 canonical_url: 'https://github.com/dreamcatcher-tech/dev.to/blob/master/blog-posts/ambient-attribution/ambient-attribution.md'
 ---
@@ -26,8 +21,6 @@ Software companies make up trillions of dollars on the stockmarket, but the best
 quality software is actually free - how can we connect these two extremes to
 something more sustainable, and how can we get more software, of a higher
 quality, faster, and cost lest money ?
-
-<!--truncate-->
 
 Based on two forces:
 
