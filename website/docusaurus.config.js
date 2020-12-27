@@ -7,7 +7,7 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'dreamcatcher-tech', // Usually your GitHub org/user name.
-  projectName: 'dreamcatcher-tech.github.io', // Usually your repo name.
+  projectName: 'dreamcatcher-tech', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Dreamcatcher',
