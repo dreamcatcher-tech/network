@@ -14,7 +14,7 @@ const features = [
       <>
         Making code contributions is open to anybody. Please contact us if you
         are having trouble getting your environment set up, or have any
-        questions.
+        questions. You may also read the docs to get started.
       </>
     ),
   },
