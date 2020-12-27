@@ -12,8 +12,9 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Making code contributions is open to anybody. Please contact us if you
+        are having trouble getting your environment set up, or have any
+        questions.
       </>
     ),
   },
@@ -22,8 +23,9 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we'll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Tell us what is wrong with the apps, or with the codebase. This is
+        valuable to us. Even helping clarify issues that others have written is
+        valuable.
       </>
     ),
   },
@@ -32,8 +34,21 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
+        You can put up money directly thru gitcoin or any other system to pay
+        money for people to close issues you choose. We will attribute you the
+        value of the issue you closed between you and the people who did the
+        work.
+      </>
+    ),
+  },
+  {
+    title: 'Fund the organization',
+    imageUrl: 'img/undraw_docusaurus_react.svg',
+    description: (
+      <>
         Funding is managed through an Aragon DAO and is tracked with Inversion
-        Tokens, with symbol <code>NVN</code>
+        Tokens, with symbol <code>NVN</code> This is a bonded curve token and is
+        open to accredited investors only.
       </>
     ),
   },
@@ -42,8 +57,8 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Good clear documentation is essential for onboarding. Please help us
+        improve what we have, and suggest anything that might need changing.
       </>
     ),
   },
@@ -52,8 +67,9 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        If you find something useful to use the software for, please let us
+        know. We would love to know what problems you had getting set up, and
+        what
       </>
     ),
   },
