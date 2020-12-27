@@ -4,7 +4,7 @@ title: Hello
 author: Endilie Yacop Sucipto
 author_title: Maintainer of Docusaurus
 author_url: https://github.com/
-author_image_url: /blog/assets/logo.svg
+author_image_url: blog/assets/logo.svg
 tags: [hello, docusaurus]
 ---
 
