@@ -2,7 +2,7 @@ module.exports = {
   title: 'Dreamcatcher',
   tagline: 'A Perpetual Invention Machine',
   url: 'https://dreamcatcher.land',
-  baseUrl: '/',
+  baseUrl: '/dreamcatcher/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
