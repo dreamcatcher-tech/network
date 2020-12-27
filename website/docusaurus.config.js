@@ -2,12 +2,12 @@ module.exports = {
   title: 'Dreamcatcher',
   tagline: 'A Perpetual Invention Machine',
   url: 'https://dreamcatcher.land',
-  baseUrl: '/dreamcatcher/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'dreamcatcher-tech', // Usually your GitHub org/user name.
-  projectName: 'dreamcatcher', // Usually your repo name.
+  projectName: 'dreamcatcher-tech.github.io', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Dreamcatcher',
