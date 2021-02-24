@@ -7,7 +7,7 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'dreamcatcher-tech', // Usually your GitHub org/user name.
-  projectName: 'dreamcatcher-tech', // Usually your repo name.
+  projectName: 'dreamcatcher-tech', // do not add .github.io else will publish to master
   themeConfig: {
     navbar: {
       title: 'Dreamcatcher',
@@ -46,8 +46,8 @@ module.exports = {
               to: 'docs/',
             },
             {
-              label: 'Fundraising',
-              to: 'docs/',
+              label: 'Contributing',
+              to: 'contributing/',
             },
           ],
         },
@@ -56,15 +56,12 @@ module.exports = {
           items: [
             {
               label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href:
+                'https://stackoverflow.com/questions/tagged/dreamcatcher-tech',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/dreamcatcher-tech',
             },
           ],
         },
@@ -77,12 +74,13 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href:
+                'https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Dreamcatcher. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Dreamcatcher.`,
     },
   },
   presets: [
@@ -93,13 +91,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/edit/master/website/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/edit/master/website/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

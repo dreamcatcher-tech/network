@@ -9,7 +9,7 @@ slug: /
 
 <!-- What is the goal of dreamcatcher -->
 
-Realtime provably fair attribution of proceeds from provably fair purchases of open works of knowledge with zero overhead
+To provide a provably fair economy producing open works of knowledge
 
 ### What, who and why
 
