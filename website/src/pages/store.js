@@ -152,6 +152,17 @@ const features = [
       </>
     ),
   },
+  {
+    title: 'Witness',
+    imageUrl: 'img/undraw_candidate.svg',
+    description: (
+      <>
+        How to make witness statements about how payments should be dispersed.
+        How to search them, how to link them in dependency graphs, and allow
+        payments to flow thru them
+      </>
+    ),
+  },
 ]
 features.reverse()
 function Feature({ imageUrl, title, description }) {
@@ -190,9 +201,7 @@ function Store() {
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">App Store</h1>
-          <p className="hero__subtitle">
-            The initial suite of Dreamcatcher apps
-          </p>
+          <p className="hero__subtitle">The core suite of Dreamcatcher apps</p>
         </div>
       </header>
       <main>

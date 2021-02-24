@@ -2,25 +2,29 @@
 title: 'Ambient Attribution'
 published: false
 description: 'k'
-tags: infosec, privacy, tor, blockchain
+tags: [infosec, privacy, tor, blockchain]
 cover_image: 'https://raw.githubusercontent.com/dreamcatcher-tech/dev.to/master/blog-posts/ambient-attribution/assets/time-money-balance.jpg'
 series:
 canonical_url: 'https://github.com/dreamcatcher-tech/dev.to/blob/master/blog-posts/ambient-attribution/ambient-attribution.md'
 ---
 
-_"Mirror mirror, on the wall, who is the fairest of them all ?"_
+_"Mirror mirror, on the wall, who is the fairest of them all?"_
 
 Contents
 
 1. Example project funding of Interblock
 1. Example project funding of DOS
 
-Ambient Attribution
-
 Software companies make up trillions of dollars on the stockmarket, but the best
 quality software is actually free - how can we connect these two extremes to
 something more sustainable, and how can we get more software, of a higher
 quality, faster, and cost lest money ?
+
+<!--truncate-->
+
+The utopian model of knowledge work is that all individuals permissionlessly contribute to whatever they are able, in whatever form they can, and can build on all prior contributions from anyone else, while receiving fair recompense based on the value they provided whenever their work is used and reused, all with zero overhead. This utopia is focused on providing pure utility to consumers, and enabling pure contribution from producers. This environment would be ideal Ambient Attribution.
+
+To implement such perfection in our current reality needs compromise and ingenuity. A pragmatic form of Ambient Attribution as presented here has mechanisms to handle corruption, fairness discovery, attack mitigation (eg: lawsuits and corporation pressures), dishonesty, disputes, transaction costs, and management overheads, all while avoiding the perils of central system control. Whilst the perfected version may be some decades away technologically, we see within the rise of blockchains, the basic components required to implement a first iteration. This is what we set out to embody within the Dreamcatcher.
 
 Based on two forces:
 
@@ -36,7 +40,7 @@ optimal price. the more people can do the work the better. less friction, zero
 friction company. zero liability, zero friction, never credit. credit being
 given by the worker, acting as a bank. [graph showing decreasing overall cost]
 
-Work for sweat ![](./2020-12-20-assets/sweat-equity.jpg)
+[<img src='/blog/2020-12-20-assets/sweat-equity.jpg' height="480"/>](./2020-12-20-assets/sweat-equity.jpg)
 
 decreasing activation cost longer it survives, the better the quality a good
 programmer on their day public scrutiny, even if perceived can be called to

@@ -2,9 +2,15 @@ module.exports = {
   docs: [
     {
       type: 'category',
-      label: 'Docusauruss',
+      label: 'Whitepapers',
       collapsed: true,
-      items: ['doc1', 'doc2', 'doc3'],
+      items: [
+        'wp_dreamcatcher',
+        'wp_dos',
+        'wp_interblock',
+        'wp_inversion',
+        'wp_appstore',
+      ],
     },
     // Features: ['mdx'],
     {
