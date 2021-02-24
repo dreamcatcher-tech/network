@@ -25,6 +25,8 @@ It pressures consumers to pay, without using force, thru awareness of producer c
 
 All this with very low overhead, and completely opt in as the defaults apply unless otherwise specified.
 
+This is transparent supply chain provenance applied to works of knowledge.
+
 ### Alternatives
 
 <!-- What is the best current and foreseeable future alternative for each need identified in 1 and what makes dc better than that alternative -->
@@ -41,7 +43,7 @@ The pursuit of fairness leads to a single network. Any alternative that finds ho
 
 Making every transaction optionally contain rich voting information is the highest bandwidth and lowest latency connection possible to a consumer base. The system itself is designed to balance this information against producers and other consumers, and average out deviations to seek the limiting form of fairness.
 
-The primary motive of the system is the highest possible rate of innovation. The whole system is about being the purest form of the Red Queen, and it seeks to do that on the assumption that awareness leads to fairness, which leads to maximum global innovation.
+The primary motive of the system is the highest possible rate of innovation. The whole system is about being the purest form of the Red Queen, which it seeks to do on the assumption that awareness leads to fairness, which leads to maximum global innovation.
 
 ### Components
 
@@ -49,25 +51,13 @@ The primary motive of the system is the highest possible rate of innovation. The
 
 All the components require at a minimum [DOS - upon which all applications run](./wp_dos.md) and [Interblock - the universal object protocol](./wp_interblock.md) which provides the underlying protocol for DOS and therefore all Dreamcatcher interactions.
 
-## Attribute list of the Dreamcatcher
+Other components with dependencies are (TODO):
 
-1. Work done is useful work, of all kinds including git commits.
-1. Ever expanding awareness
-1. Ambient Attribution emerges
-1. Wisdom / consensus of crowds to discover fair
-1. Payment from consumers without force
-1. Theoretical maximum rate of global innovation
-1. Work of the chain is the delivery of purchased labour.
-1. An app store that runs on the principles of the blockchain.
-1. Stable AMM pricing.
-1. Optimizing innovation.
-1. Supply chain provenance applied to works fo knowledge.
-1. Open source software has a transparent supply chain.
-1. Blockproducers can choose to follow whitelists.
-1. Reason for using software is zero margin goods, which makes the unfairness immediately obvious.
-1. We want optimized innovation, just so happens to be ethics.
-1. Standardized revenue model.
-1. First place to apply full value chain reward with super low overhead is to make an app store model for blockchain applications.
-1. app stores are super easy to use, easy to develop for, and easy to understand.
-1. App store Presents a standard interface, which is a precursor to a standard revenue model. A fairness revenue model does not coexist well with bespoke business models - it is infectious.
-1. Standardized revenue model dictates standard consumption interface. fairness of consumption/inversion means freedom of consumption, which means an installation target owned completely by the users
+1. Interblock
+   1. DOS
+      1. App Store
+         1. Gitclone
+         1. Inventors Notebook
+         1. Agreemail
+   1. Inversion currency NVN
+   1. Universal Computing Surface
