@@ -7,7 +7,7 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
+    "deploy": "dotenv docusaurus deploy",
     "serve": "docusaurus serve",
     "clear": "docusaurus clear",
     "devto": "dev-to-git"
@@ -18,6 +18,7 @@
     "@mdx-js/react": "^1.6.21",
     "clsx": "^1.1.1",
     "dev-to-git": "^1.4.1",
+    "dotenv-cli": "^4.0.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },
