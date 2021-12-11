@@ -1,1 +1,1 @@
-Two way authenticated connection between two chains, permanent until killed. Non-parent child link to another chain. Each can send actions, read data depending on your permission. Equivalent to a tcp connection
+Two way authenticated connection between two chains, permanent until killed. Non-parent child link to another chain. Each can send actions, read data depending on your permission. Equivalent to a tcp connection.
