@@ -14,6 +14,10 @@ module.exports = {
     },
     // Features: ['mdx'],
     {
+      type: 'doc',
+      id: 'Dictionary_Conventions',
+    },
+    {
       type: 'category',
       label: 'User Dictionary',
       collapsed: false,
