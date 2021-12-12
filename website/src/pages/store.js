@@ -6,7 +6,17 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import styles from './styles.module.css'
 
-const features = [
+const apps = [
+  {
+    title: 'CRM',
+    imageUrl: 'img/undraw_app_installation.svg',
+    description: (
+      <>
+        Customer Relationship Management app used as a starting point for CRM
+        style applications
+      </>
+    ),
+  },
   {
     title: 'App Store App',
     imageUrl: 'img/undraw_app_installation.svg',
@@ -18,6 +28,7 @@ const features = [
         currently browsing 🤯
       </>
     ),
+    badges: ['ctf', 'service'],
   },
   {
     title: 'dPack Package Repository',
@@ -31,6 +42,7 @@ const features = [
         ambient attribution framework
       </>
     ),
+    badges: ['ctf', 'service'],
   },
   {
     title: 'The Dreamcatcher',
@@ -44,6 +56,7 @@ const features = [
         project management system.
       </>
     ),
+    badges: ['ctf'],
   },
   {
     title: 'DOS',
@@ -51,6 +64,7 @@ const features = [
     description: (
       <>The Dreamcatcher Operating System - this runs all the applications</>
     ),
+    badges: ['ctf'],
   },
   {
     title: 'Reconcile Mail',
@@ -61,6 +75,7 @@ const features = [
         server, running this app as a client is all that is required.
       </>
     ),
+    badges: ['ctf'],
   },
   {
     title: 'SMTP Relay',
@@ -73,6 +88,7 @@ const features = [
         archaic network, we need email relays.
       </>
     ),
+    badges: ['service'],
   },
   {
     title: 'Flowcreator',
@@ -95,6 +111,7 @@ const features = [
         worlds data, and reduce it all to a single hash.
       </>
     ),
+    badges: ['ctf'],
   },
   {
     title: 'GorillaHost',
@@ -106,6 +123,7 @@ const features = [
         can sell spare capacity to other blockchains
       </>
     ),
+    badges: ['ctf', 'service'],
   },
   {
     title: 'Chain Reputation',
@@ -117,6 +135,7 @@ const features = [
         reputation.
       </>
     ),
+    badges: ['ctf', 'service'],
   },
   {
     title: 'Brightpay',
@@ -128,18 +147,20 @@ const features = [
         your consumer spending on blockchain. Manage your accounts yourself.
       </>
     ),
+    badges: ['service'],
   },
   {
-    title: 'Justice ex Machina',
+    title: 'Law Machine',
     imageUrl: 'img/law.svg',
     description: (
       <>
-        The Justice Machine of the Dreamcatcher. Tokenized legal council. The
+        The legal armaments of the Dreamcatcher. Tokenized legal council. The
         interface between the Dreamcatcher and legal institutions of the world.
         Shared knowledge, shared financial burden, shared workload, shared
         reward. Even if ruled against, at least records are everlasting.
       </>
     ),
+    badges: ['service'],
   },
   {
     title: 'Ideator',
@@ -162,10 +183,15 @@ const features = [
         payments to flow thru them
       </>
     ),
+    badges: ['ctf'],
   },
 ]
-features.reverse()
-function Feature({ imageUrl, title, description }) {
+apps.reverse()
+const badgesMap = {
+  ctf: <span class="badge badge--danger">CTF</span>,
+  service: <span class="badge badge--primary">service</span>,
+}
+function Feature({ imageUrl, title, description, badges = [] }) {
   const imgUrl = useBaseUrl(imageUrl)
   return (
     <div className={clsx('col col--4', styles.feature)}>
@@ -185,6 +211,9 @@ function Feature({ imageUrl, title, description }) {
           {title}
         </Link>
       </h3>
+      {badges.map((name) => (
+        <span>{badgesMap[name]} </span>
+      ))}
       <p>{description}</p>
     </div>
   )
@@ -205,11 +234,11 @@ function Store() {
         </div>
       </header>
       <main>
-        {features && features.length > 0 && (
+        {apps && apps.length > 0 && (
           <section className={styles.features}>
             <div className="container">
               <div className="row">
-                {features.map((props, idx) => (
+                {apps.map((props, idx) => (
                   <Feature key={idx} {...props} />
                 ))}
               </div>

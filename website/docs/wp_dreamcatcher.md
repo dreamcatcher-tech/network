@@ -27,6 +27,17 @@ All this with very low overhead, and completely opt in as the defaults apply unl
 
 This is transparent supply chain provenance applied to works of knowledge.
 
+Roughly, the basic principles are:
+
+1. we seek deduplication between project components
+2. equity is not token based, but NFT based where every contribution creates an NFT by simply doing it
+3. all of the project data is stored on chain, no matter how big
+4. projects can be forked like a github project
+5. the whole system can be run completely offline or on premise and connected to any other running instances at whim
+6. you can prepurchase products of projects that do not exist yet, by specifying what you want and committing to pay
+7. membership is pattern based, not voting based, making it a psychographic network
+8. every transaction can include a vote for any state change in the known universe
+
 ### Alternatives
 
 <!-- What is the best current and foreseeable future alternative for each need identified in 1 and what makes dc better than that alternative -->
