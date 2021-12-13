@@ -1,46 +1,70 @@
-import React from 'react';
-import clsx from 'clsx';
-import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import styles from './styles.module.css';
-
+import React from 'react'
+import clsx from 'clsx'
+import Layout from '@theme/Layout'
+import Link from '@docusaurus/Link'
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
+import useBaseUrl from '@docusaurus/useBaseUrl'
+import styles from './styles.module.css'
 const features = [
   {
-    title: 'Easy to Use',
+    title: 'One blockchain for every idea',
+    imageUrl: 'img/dreamcatcher.svg',
+    description: (
+      <>
+        Project components are deduplicated, allowing greater reuse between
+        active projects, and broader chance of upside for dormant projects
+      </>
+    ),
+  },
+  {
+    title: 'Deduplication of Effort',
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Project components are deduplicated, allowing greater reuse between
+        active projects, and broader chance of upside for dormant projects
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Automatic Equity',
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Every action in a natively project earns equity in the upside of the
+        project through Ambient Attribution
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Forward App Store',
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Purchase applications that do not exist yet, and earn upside when they
+        do
       </>
     ),
   },
-];
+  {
+    title: 'Continuous Arbitrary Voting',
+    imageUrl: 'img/undraw_docusaurus_react.svg',
+    description: (
+      <>
+        Every transaction carries with it a vote on any possible state change in
+        the world
+      </>
+    ),
+  },
+  {
+    title: 'Trading of Equity',
+    imageUrl: 'img/undraw_personal_finance_tqcd.svg',
+    description: <>Earned equity can be bought and sold with others</>,
+  },
+]
 
-function Feature({imageUrl, title, description}) {
-  const imgUrl = useBaseUrl(imageUrl);
+function Feature({ imageUrl, title, description }) {
+  const imgUrl = useBaseUrl(imageUrl)
   return (
     <div className={clsx('col col--4', styles.feature)}>
       {imgUrl && (
@@ -51,16 +75,17 @@ function Feature({imageUrl, title, description}) {
       <h3>{title}</h3>
       <p>{description}</p>
     </div>
-  );
+  )
 }
 
 function Home() {
-  const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
+  const context = useDocusaurusContext()
+  const { siteConfig = {} } = context
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="Perpetual Invention Machine"
+    >
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
@@ -69,9 +94,10 @@ function Home() {
             <Link
               className={clsx(
                 'button button--outline button--secondary button--lg',
-                styles.getStarted,
+                styles.getStarted
               )}
-              to={useBaseUrl('docs/')}>
+              to={useBaseUrl('docs/')}
+            >
               Get Started
             </Link>
           </div>
@@ -91,7 +117,7 @@ function Home() {
         )}
       </main>
     </Layout>
-  );
+  )
 }
 
-export default Home;
+export default Home

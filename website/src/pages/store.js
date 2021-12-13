@@ -185,6 +185,18 @@ const apps = [
     ),
     badges: ['ctf'],
   },
+  {
+    title: 'Upside Casino',
+    imageUrl: 'img/undraw_playing_cards_cywn.svg',
+    description: (
+      <>
+        Provably fair Casino with range of games utilizing Interblock. Allows
+        api based access so can be played by bots. Proceeds used to fund
+        internal projects
+      </>
+    ),
+    badges: ['service'],
+  },
 ]
 apps.reverse()
 const badgesMap = {
