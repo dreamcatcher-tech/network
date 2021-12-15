@@ -1,3 +1,5 @@
+Typeof: Workflow
+
 Merges are the combining of two Objects of the same type into one. At the architectural level this involves the syncing of the chain histories of both Objects such that both histories are valid and available through the new (merged) chain.
 
 

@@ -1,3 +1,5 @@
+Typeof: Object
+
 Dreams are the founding ideas and aspirations behind a Project.  They can be created by Forking a Wish or an Issue into a Branch, embedded in a Project’s Dreams object.
 Dreams are intended to steer Projects towards a clear outcome.  There can be any number of Dreams in a Project, including zero.
 

@@ -1,3 +1,5 @@
+Typeof: Annotation
+
 Comments are free-form text that can also embed actions (by embedding one or more Algos.)  They are intended to be a context-sensitive method of collaboration on all aspects of a Project.
 
 Comments can be upvoted once by any Project with Permission.  A Pull Request can be raised to merge two Comments.  Merged Comments combine their Upvotes.  

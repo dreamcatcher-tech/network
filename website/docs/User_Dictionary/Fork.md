@@ -1,3 +1,5 @@
+Typeof: workflow
+
 Fork is the process of creating a new Object from an existing one, where the genesis block of the new Object points to the block in the old Object that was the latest block at the time of the Fork.  
 At the Dreamcatcher level, this results in the new Object having the same data as the old at the time of the Fork.  Forks can be configured to allow or disallow changes in the Origin Object after the Fork to be considered as changes to the Branch Object, an operation which is deconflicted at the Architecture level or through highlighting conflicts in the UI for resolution between the instigating parties.
 

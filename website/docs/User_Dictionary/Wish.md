@@ -1,3 +1,5 @@
+typeof: Object
+
 A Wish captures early thoughts on any change to any [Object](Object.md).  E.g. the change could relate to:
 
 1. Improving any part of an existing Project
