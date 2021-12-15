@@ -1,5 +1,5 @@
 Traces are Bonded Non-Fungible Tokens.  (In Current industrial parlance: Bridge, Wrapper. Bond.)
-
+<!--- This is an HTML comment in Markdown --->
 In established traditional finance “Bonds” are units of debt issued by companies and securitized as tradable assets. In the DCM the “debt” is the State Change, the “company” that issues it is the User who triggered those State Changes and the securitization is the State Changes a User bundles together as a Trace - a tradable asset.
 Therefore a Trace references a collection of State Changes.  Ownership is established through the Governance of the Trace, and royalties owed in a Dispersal Event are recorded within its Attribution.
 
