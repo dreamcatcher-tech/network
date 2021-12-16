@@ -12,3 +12,5 @@ This page is intended to be an ordered list of the headlines and tweets that bes
 > **The third way** A peer-to-peer attribution engine protocol (from @Pancifist)
 
 > **Fair innovation** A knowledge work labour market with equity automation
+
+> **Harnessing the power of creativity** (from @Pancifist)
