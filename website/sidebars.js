@@ -1,6 +1,10 @@
 module.exports = {
   docs: [
     {
+      type: 'doc',
+      id: 'Tweets',
+    },
+    {
       type: 'category',
       label: 'Apps',
       collapsed: true,
