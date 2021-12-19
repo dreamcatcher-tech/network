@@ -45,7 +45,7 @@
     1. [Agreement to Mediation](#Agreement-to-Mediation)
     1. [Damages](#Damages)
     1. [Reputation](#Reputation)
-    
+    1. [Revocation of Access to Assets](#Revocation-of-Access-to-Assets)   
 
 ## Preface
 
@@ -281,5 +281,8 @@ An Arbiter in a dispute may record their own notes on the Reputation Ledger of b
 Any User, including the User to whom the Reputation applies, may record their own annotations against their Reputation Ledger.
 Revocation of Access to Assets
 
+Any Asset that has been made public through the ACL can never be removed from the DCM.  An Asset that has been limited through an ACL to a defined list of Signatories may be removed.  In this case, the Signatories who previously have had access to the Asset, when notified or automated through the DCM, will no longer have legal access to that Asset.
+
+### Revocation of Access to Assets
 Any Asset that has been made public through the ACL can never be removed from the DCM.  An Asset that has been limited through an ACL to a defined list of Signatories may be removed.  In this case, the Signatories who previously have had access to the Asset, when notified or automated through the DCM, will no longer have legal access to that Asset.
 
