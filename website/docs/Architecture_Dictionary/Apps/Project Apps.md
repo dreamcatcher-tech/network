@@ -1,0 +1,1 @@
+Applications that are installed within a Project to provide some enhanced functionality.  Algos used by a Project are installed and managed this way.  UI can be supplied with each app and rendered in an iFrame for isolation, within the main Project UI.
