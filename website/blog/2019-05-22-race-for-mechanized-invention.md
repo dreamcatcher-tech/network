@@ -36,7 +36,7 @@ Why the panic to create an invention machine ? One of the founders of Dreamcatch
 
 5/22/19, 14:27 - ☢️: And there goes another 4 from the time we called \*\*\* this morning
 
-![](2019-05-22-assets/tick-tock-debate-me.gif)
+![tick tock mf](2019-05-22-assets/tick-tock-debate-me.gif)
 
 5/22/19, 14:27 - ☢️: Tick tock motherfucker…
 
