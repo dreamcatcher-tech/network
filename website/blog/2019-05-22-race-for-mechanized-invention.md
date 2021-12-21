@@ -64,7 +64,7 @@ Why the panic to create an invention machine ? One of the founders of Dreamcatch
 
 5/22/19, 14:38 - ☢️: “Just cuz we know what it is, now it's our burden to make it?” Yes, it is. Bring it on!
 
-![](2019-05-22-assets/3000-people.png)
+![3000 people](2019-05-22-assets/3000-people.png)
 
 This is what 3000 people look like...
 
