@@ -56,8 +56,7 @@ module.exports = {
           items: [
             {
               label: 'Stack Overflow',
-              href:
-                'https://stackoverflow.com/questions/tagged/dreamcatcher-tech',
+              href: 'https://stackoverflow.com/questions/tagged/dreamcatcher-tech',
             },
             {
               label: 'Twitter',
@@ -74,8 +73,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href:
-                'https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io',
+              href: 'https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io',
             },
           ],
         },
@@ -98,6 +96,7 @@ module.exports = {
           // Please change this to your repo.
           editUrl:
             'https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/edit/master/website/',
+          blogSidebarCount: 'ALL',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
