@@ -1,0 +1,1 @@
+A Datum without any formData within it.  When new datums are added to the collection that owns this datumTemplate, they must conform to the configuration contained within the datumTemplate to be allowed to be added to the collection.  When the add() function of the collection is called, this datumTemplate is used to create the new Datum that has been requested.
