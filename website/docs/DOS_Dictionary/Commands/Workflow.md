@@ -1,0 +1,1 @@
+A watcher on a chain, which triggers when it changes and then carries out a series of steps itself, or triggers further actions in a remote chain by changing the prerequisite chain.  A workflow either completes entirely, at every step, or does not complete at all. 
