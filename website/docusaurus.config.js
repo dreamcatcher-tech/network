@@ -22,6 +22,11 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
+        // {
+        //   label: 'API',
+        //   type: 'doc',
+        //   docId: 'Tweets',
+        // },
         { to: 'blog', label: 'Blog', position: 'left' },
         {
           label: 'Apps',

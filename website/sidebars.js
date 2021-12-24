@@ -2,6 +2,10 @@ module.exports = {
   docs: [
     {
       type: 'doc',
+      id: 'Dreamcatcher Charter',
+    },
+    {
+      type: 'doc',
       id: 'Tweets',
     },
     {
@@ -82,4 +86,5 @@ module.exports = {
       ],
     },
   ],
+  // api: [{ type: 'category', label: 'API', collapsed: false, items: [] }],
 }
