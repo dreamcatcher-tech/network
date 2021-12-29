@@ -1,6 +1,4 @@
----
-id: Dreamcatcher Charter
----
+# Dreamcatcher Charter
 
 1. The Dreamcatcher exists to optimise innovation.
 1. To do so it aims to bring together talent and resources in a manner that avoids waste and benefits all.
