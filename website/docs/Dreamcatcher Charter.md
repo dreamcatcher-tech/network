@@ -152,3 +152,7 @@ Investment is a return for risk taken, and that risk taken is a perception of th
 1. Has no central server, and no central blockchain
 1. Is censorship proof (resistant)
 1. Allows perfect anonymity
+
+## The Riddle of the Dreamcatcher
+
+Attribution algorithm that includes its own payment

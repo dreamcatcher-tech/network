@@ -8,6 +8,19 @@ import styles from './styles.module.css'
 
 const apps = [
   {
+    title: 'DAO Bridge',
+    imageUrl: 'img/undraw_server_status_-5-pbv.svg',
+    description: (
+      <>
+        Give DAO based control to traditional SaaS apps. Makes a single top
+        level admin account on services such as AWS, Github, Youtube, Slack,
+        Gmail, etc and only allow operation that have passed DAO based voting
+        and workflows. Make your org decentralized but still use last gen SaaS
+        tooling.
+      </>
+    ),
+  },
+  {
     title: 'CRM',
     imageUrl: 'img/undraw_app_installation.svg',
     description: (
@@ -25,7 +38,7 @@ const apps = [
         The App Store is an application on the App Store. Use this to run your
         own app store, with your own curated or uncurated content. The App Store
         is a subclass of the Package Repository. This is the app you are
-        currently browsing 🤯
+        currently browsing{' '}
       </>
     ),
     badges: ['ctf', 'service'],

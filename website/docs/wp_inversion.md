@@ -50,7 +50,7 @@ This same time distribution principle can be used compressively - you can run yo
 
 Designed so the price never goes down relative to the USD, but will over time go up.
 
-Two kinds of growth are predicted for our system.  The zero sum fraction of all computing load on the planet that we aim to replace, and the expansion of worldwide computing requirements.  We see that expansion being dominate for the next 2 decades.
+Two kinds of growth are predicted for our system. The zero sum fraction of all computing load on the planet that we aim to replace, and the expansion of worldwide computing requirements. We see that expansion being dominate for the next 2 decades.
 
 Bitcoin = Proof of Waste
 NVN = Proof of Work Purchased
@@ -81,7 +81,9 @@ Consumers of the software are also incentivized to keep the top chain correct as
 
 The repeating principle is a shared trusted zone where multiple suppliers and multiple consumers all desire correct operation of the trust zone each for their own self serving purposes. This causes the strength and breadth of this zone to increase as more actors are added. The spread of the zone is determined by how broadly useful it is, so in the case of a universal computing surface, its breadth is as wide as anyone wanting any kind of computing. In comparison Bitcoin is as wide as anyone wanting to make payments in that particular currency.
 
+Whenever a commit is made to a software project, some automated checks occur and often several people review it before a final assertion of fit for purpose is made. These escalating assertions about quality are done by both a human and a machine, and so our intent for mainnet is to piggy back on top of these kinds of assertions, and use a variety of acts like this as an opportunity for the machine to tag along its view of what the latest highest block is, that it has checked for correctness.
 
+So to stake on our mainnet you don't necessarily need currency, you just need trust. Stake doesn't need to be a narrow and sterile token, but it can be anything that itself contains trust and correctness of some form. The best kinds are those that run on computers, as the assertion of mainnet can be completely automated for good actors.
 
 ### What, who and why
 
