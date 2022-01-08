@@ -35,7 +35,7 @@ module.exports = {
         },
         {
           label: 'Benchmarks',
-          to: 'https://dreamcatcher-tech.github.io/dreamcatcher-stack/dev/bench',
+          href: 'https://dreamcatcher-tech.github.io/dreamcatcher-stack/dev/bench',
           position: 'right',
         },
         {
