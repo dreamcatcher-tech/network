@@ -44,13 +44,13 @@ NB, out of scope but noted are:
 
 The following NFAs are due a split from any revenue coming into this NFA:
 
-002: Company Formation
-003: Company Structure
-004: Dreamcatcher Design
-005: Initial Block Producer
-006: Funding
-007: Build Blockchain
-008: Build Dreamcatcher
+- 002: Company Formation
+- 003: Company Structure
+- 004: Dreamcatcher Design
+- 005: Initial Block Producer
+- 006: Funding
+- 007: Build Blockchain
+- 008: Build Dreamcatcher
 
 ## QA authority
 
