@@ -34,6 +34,10 @@ NB, out of scope but noted are:
 
 ## Bid 
 
+NB, this NFA is a wrapper for the underlying NFAs necessary to meet it's objectives.
+
+Therefore the below are calculated from those underlying NFAs.
+
 ### Bid Days to Complete
 
 ### Bid Price
