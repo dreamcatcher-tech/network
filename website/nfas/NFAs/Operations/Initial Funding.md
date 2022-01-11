@@ -18,6 +18,10 @@ Signed Legal Documentation.
 
 ### Bid Attribution split
 
+The following NFAs are due a split from any revenue coming into this NFA:
+
+- Pitch Documentation
+
 ## QA authority
 
 ## Detailed requirements
