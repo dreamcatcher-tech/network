@@ -1,3 +1,7 @@
+const remarkPlugins = [
+  require('mdx-mermaid'),
+  { mermaid: { theme: { light: 'neutral', dark: 'forest' } } },
+]
 module.exports = {
   title: 'Dreamcatcher',
   tagline: 'A Perpetual Invention Machine',
@@ -106,6 +110,7 @@ module.exports = {
           // Please change this to your repo.
           editUrl:
             'https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/edit/master/website/',
+          remarkPlugins,
         },
         blog: {
           showReadingTime: true,
@@ -128,6 +133,8 @@ module.exports = {
         path: 'nfas',
         routeBasePath: 'nfas',
         sidebarPath: require.resolve('./sidebarsNFAs.js'),
+        remarkPlugins,
+        sidebarCollapsed: false,
       },
     ],
   ],
