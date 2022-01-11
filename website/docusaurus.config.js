@@ -22,6 +22,12 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
+        {
+          to: 'nfas/',
+          activeBasePath: 'nfas',
+          label: 'NFAs',
+          position: 'left',
+        },
         // {
         //   label: 'API',
         //   type: 'doc',
@@ -111,6 +117,17 @@ module.exports = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+      },
+    ],
+  ],
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'nfas',
+        path: 'nfas',
+        routeBasePath: 'nfas',
+        sidebarPath: require.resolve('./sidebarsNFAs.js'),
       },
     ],
   ],
