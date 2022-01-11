@@ -1,4 +1,4 @@
-# 003: Company Formation 
+# 003: Company Structure 
 
 Company Formation of a Legal Entity with the remit to complete the work required to launch Dreamcatcher.
 
