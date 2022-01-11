@@ -48,7 +48,7 @@ The following NFAs are due a split from any revenue coming into this NFA:
 - 003: Company Structure
 - 004: Dreamcatcher Product Design
 - 005: Initial Block Producer
-- 006: Funding
+- 006: Initial Funding
 - 007: Build Blockchain
 - 008: Build Dreamcatcher
 
