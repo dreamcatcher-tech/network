@@ -1,4 +1,4 @@
-# 005: Initial Funding
+# 006: Initial Funding
 
 ## Description
 
