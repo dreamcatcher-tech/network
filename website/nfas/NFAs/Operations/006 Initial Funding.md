@@ -20,7 +20,7 @@ Signed Legal Documentation.
 
 The following NFAs are due a split from any revenue coming into this NFA:
 
-- Pitch Documentation
+- 006.1 Pitch Deck
 
 ## QA authority
 
