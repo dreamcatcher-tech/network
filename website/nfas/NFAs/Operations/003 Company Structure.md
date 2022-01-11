@@ -4,7 +4,7 @@ Company Formation of a Legal Entity with the remit to complete the work required
 
 ## Description
 
-Create the documentation for the Governance of the Dreamcatcher Launch Project:
+The top level NFA which recognises the work involved in creating the Org that will launch the Dreamcatcher. This includes:
 
 1. DPL
 2. Contracts with Contributors
@@ -13,12 +13,6 @@ Create the documentation for the Governance of the Dreamcatcher Launch Project:
 5. Arbitration bid
 
 ## Deliverable Format
-
-The following Objects on the Dreamcatcher:
-
-1. Executed DPL
-2. Executed Contracts for Contributors and Investors
-3. Project Object, including Governance and Attribution 
 
 ## Bid 
 
@@ -30,8 +24,22 @@ The following Objects on the Dreamcatcher:
 
 ### Bid Attribution split
 
+The following are to be considered in Attribution:
+
+003.1 DPL
+003.2 Contracts with Contributors
+003.3 Contracts with Investors
+003.4 Attribution bid
+003.5 Arbitration bid
+
 ## QA authority
 
 ## Detailed requirements
 
 ## Dependencies
+
+003.1 DPL
+003.2 Contracts with Contributors
+003.3 Contracts with Investors
+003.4 Attribution bid
+003.5 Arbitration bid
