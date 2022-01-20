@@ -1,8 +1,8 @@
-# 007: Build Blockchain
+# 007: Dreamcatcher Software
 
 ## Description
 
-Running and tested code that supports the functions required for Build Dreamcatcher.
+The wrapping NFA for the Dreamcatcher Software Build
 
 ## Deliverable Format
 
