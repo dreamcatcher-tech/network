@@ -1,4 +1,4 @@
-# 009 Dreamcatcher Launch Marketing
+# 006 Dreamcatcher Marketing
 
 ## Description
 
@@ -17,14 +17,6 @@ To be generated algorithmically from the NFA dependencies.
 ### Bid Due Date
 
 ### Bid Attribution split
-
-The following NFAs are due an Attribution split:
-
-- 009.1 Dreamcatcher Outreach Programme
-- 009.2 Dreamcatcher Ad Programme
-- 009.3 Forum activities
-- 009.4 Conference Presentations
-- 009.5 Video presentations
 
 ## QA authority
 
