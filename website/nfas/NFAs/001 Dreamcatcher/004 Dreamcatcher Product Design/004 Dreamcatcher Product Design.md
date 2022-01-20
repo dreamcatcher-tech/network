@@ -1,8 +1,8 @@
-# 004: Dreamcatcher Product Design
+# 004 Dreamcatcher Product Design
 
 ## Description
 
-The Product Design of the interface and user experience for new users of the Dreamcatcher.
+Wrapper NFA for the Product Design for users of the Dreamcatcher.
 
 ## Deliverable Format
 
