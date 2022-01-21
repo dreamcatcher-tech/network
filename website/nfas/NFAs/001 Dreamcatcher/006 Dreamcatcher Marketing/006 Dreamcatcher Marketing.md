@@ -12,9 +12,13 @@ To be generated algorithmically from the NFA dependencies.
 
 ### Bid Days to Complete
 
+960 hrs
+
 ### Bid Price
 
 ### Bid Due Date
+
+Dec 22
 
 ### Bid Attribution split
 
@@ -22,10 +26,14 @@ To be generated algorithmically from the NFA dependencies.
 
 ## Detailed requirements
 
+See:
+
+- 006.01 Dreamcatcher Ad Programme
+- 006.02 Forum activities
+- 006.03 Conference Presentations
+- 006.04 Video presentations
+- 006.05 Dreamcatcher Outreach Programme
+
 ## Dependencies
 
-- 009.1 Dreamcatcher Outreach Programme
-- 009.2 Dreamcatcher Ad Programme
-- 009.3 Forum activities
-- 009.4 Conference Presentations
-- 009.4 Video presentations
+
