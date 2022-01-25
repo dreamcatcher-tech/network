@@ -74,3 +74,11 @@ We aim to allow the greatest amount of sharing of all activity, but some may fee
 ## Reputation Management
 
 Although Access Control can limit transparency for code, all activity on the network is transparent. That is, the fact of a User’s behaviour as specified by an Arbiter is open to all, as is the fact of well-concluded Contracts; likewise the lack of any such interaction is also known, and can be accounted for by any User wanting to interact with them in the future. And so using optional anonymity in ways that do not benefit the network is managed by permanent reputation recording.
+
+## Principles of Ambient Attribution are:
+
+1. Highest granularity of data is used
+1. Dispersal is by algorithm acting upon data relating to the things being paid for
+1. Dispersal should always happen at time of payment
+1. Dispersal should be predictable ahead of time
+1. People selecting the algorithm for a project should be disinterested in that project
