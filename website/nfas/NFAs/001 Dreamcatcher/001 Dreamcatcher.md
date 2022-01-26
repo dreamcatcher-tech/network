@@ -1,65 +1,69 @@
-# 001: Dreamcatcher Initial Funding Project
+# 001: Project - Dreamcatcher Initial Launch 
 
-## Description
+## Aim
 
-See [Dreamcatcher Initial Launch Plan](https://docs.google.com/spreadsheets/d/1ihHjHoOsKFFZsjS4sUAfRNM6zzj-ahCkV_Q0LChlBlU/edit#gid=0)
-
-The top level NFA which recognises the work involved in launching the Dreamcatcher.  This includes:
-
-1. The Planning to complete the Initial Launch of the Dreamcatcher Project.
-
-1. A legal structure for the first entity working within the Dreamcatcher, which will work on the Dreamcatcher.
-
-1. A downloadable codebase, with documentation, that will allow anyone to:
-
-    1. Run the Dreamcatcher
-    2. Create the Object which represents themselves (Person Object)
-    3. Create a Project, and set the parameters of that Project.
-    4. Conduct work, recorded in that Project Object
-    5. Receive payment for that work.
-    6. Have that payment distributed using Attribution.
-    7. Change the paramenters of that Project using Governance.
-
-1. The Product interface that will allow basic operation with the running instance.
-
-1. A marketing campaign to make potential users aware that Dreamcatcher exists.
-
-1. Documentation that will reasonably allow a participant to download and run the code, set up and run a Project.
-
-NB, out of scope but noted are:
-
-1. A Sales operation that will actively seek out Demand for NFAs to be completed beyond the core Dreamcatcher.
-
-## Deliverable Format
+Creation of the first version of the Dreamcatcher which we can promote, use and build on.
 
 
+## Governance
+
+Dreamcatcher Team
+
+
+## Requirements
+
+1. A downloadable and executable version of Dreamcatcher
+1. Documentation, supporting website and forum.
+1. An installed and running Block Producer.
+1. An installed and available App Store.
+1. An Arbiter, with Contract advertised and in place, which can be called upon.
+1. The registration of a vehicle through which funding can be gained and benefits distributed through NFAs.
+
+
+## Output NFAs
+
+- 02 Company
+- 03 Dreamcatcher Software
+- 04 Dreamcatcher Product Design
+- 05 Initial Block Producer
+- 06 Marketing
+- 07 QA
+- 08 Initial Arbiter
+- 09 Initial App Store
+
+
+## QA Authority
+
+
+## Dependencies
+
+1. Prior Dreamcatcher code base
+1. Prior work on Dreamcatcher Dictionary, supporting material and proposed method of operation.
 
 ## Bid 
 
-NB, this NFA is a wrapper for the underlying NFAs necessary to meet it's objectives.
+### Estimated Effort
 
-Therefore the below are calculated from those underlying NFAs.
+3170 hrs
 
-### Bid Days to Complete
+### Estimated Budget
 
-### Bid Price
+$400k NZD
 
-### Bid Due Date
+### Proposed Due Date
 
-### Bid Attribution split
+Oct 2022
 
-The following NFAs are due a split from any revenue coming into this NFA:
+## Comments 
+See supporting documentation here: [Dreamcatcher Initial Launch Plan](https://docs.google.com/spreadsheets/d/1ihHjHoOsKFFZsjS4sUAfRNM6zzj-ahCkV_Q0LChlBlU/edit#gid=0)
 
-- 002: Company Formation
-- 003: Company Structure
-- 004: Dreamcatcher Product Design
-- 005: Initial Block Producer
-- 006: Initial Funding
-- 007: Build Blockchain
-- 008: Build Dreamcatcher
+Out of scope but noted are:
 
-## QA authority
+1. A Sales operation that will actively seek out Demand for NFAs to be completed beyond the core Dreamcatcher.
 
-## Detailed requirements
 
-## Dependencies
+
+
+
+
+
