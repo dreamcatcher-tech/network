@@ -1,4 +1,8 @@
-# P01.02.01.01 Create Arbitration Algo bid
+# Create Arbitration Algo bid
+
+## ID 
+
+P01.02.01.01
 
 ## Description
 
