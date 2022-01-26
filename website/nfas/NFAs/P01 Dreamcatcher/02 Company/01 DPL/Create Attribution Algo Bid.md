@@ -1,0 +1,23 @@
+# P01.02.01.02 Create Attribution Algo Bid
+
+## Description
+
+The initial structure for the Attribution Algos of the Dreamcatcher Launch Project which takes into account the legal structure agreed with the investors and the DPL contracts agreed with the contributors.
+
+## Deliverable Format
+
+## Bid 
+
+### Bid Days to Complete
+
+### Bid Price
+
+### Bid Due Date
+
+### Bid Attribution split
+
+## QA authority
+
+## Detailed requirements
+
+## Dependencies
