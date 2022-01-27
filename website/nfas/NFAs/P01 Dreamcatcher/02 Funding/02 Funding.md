@@ -13,10 +13,10 @@ We therefore intend to use the concepts in the Dreamcatcher to run the investmen
 
 In order to meet the Strategic Intent, we believe that we need:
 
-	1. To be able to convince potential investors that the Dreamcatcher is a good opportunity for them to invest.
-	2. To be able to take in investment should investors agree.
-	3. To be able to effectively spend that treasury legally to create NFAs for the creation of the Dreamcatcher, and for NFAs built on the Dreamcatcher. This includes spending the treasury on third parties.
-	4. To be able to disburse the benefits attributed to the NFAs to contributors and investors.
+1. To be able to convince potential investors that the Dreamcatcher is a good opportunity for them to invest.
+2. To be able to take in investment should investors agree.
+3. To be able to effectively spend that treasury legally to create NFAs for the creation of the Dreamcatcher, and for NFAs built on the Dreamcatcher. This includes spending the treasury on third parties.
+4. To be able to disburse the benefits attributed to the NFAs to contributors and investors.
 
 ## Detailed Description
 
@@ -26,22 +26,22 @@ To convince investors as to the opportunity to invest, we believe that we need t
 
 #### Must
 
-	1. Communicate the fundamentals of what the Dreamcatcher is.
-	1. Communicate the opportunity.
+1. Communicate the fundamentals of what the Dreamcatcher is.
+1. Communicate the opportunity.
 
 #### Should
 
-	1. Detail the opportunity to them as an investor.
-	1. Detail the logistics of how they can invest, should they wish to.
+1. Detail the opportunity to them as an investor.
+1. Detail the logistics of how they can invest, should they wish to.
 
 #### Could
 
-	1. Provide enough details that, if they want to, the investor can refer the proposition to someone skilled in the art for assessment without further reference to us.
-	1. Show the growing need in the market and the urgency about 'why now?'
+1. Provide enough details that, if they want to, the investor can refer the proposition to someone skilled in the art for assessment without further reference to us.
+1. Show the growing need in the market and the urgency about 'why now?'
 
 #### Must not
 
-	1. Be in any way misleading in terms of what will be produced with this round of investment vs what the future may hold after that.
+1. Be in any way misleading in terms of what will be produced with this round of investment vs what the future may hold after that.
 
 
 ### Tactical Intent 2: Take in Investment.
@@ -49,20 +49,20 @@ To convince investors as to the opportunity to invest, we believe that we need t
 To take in investment, we believe that we need a legal vehicle in place which Investors can have confidence in.  The properties of this legal vehicle are that it:
 
 #### Must
-	1. Allow investment to be made in a legal manner in the specific territory or territories in which it will be set up.
-	1. Be simple enough to allow a reasonable investor to have confidence in the structure.
+1. Allow investment to be made in a legal manner in the specific territory or territories in which it will be set up.
+1. Be simple enough to allow a reasonable investor to have confidence in the structure.
 
 #### Should
-	1. Allow the investors to exit if they feel that their funds are not being appropriately deployed.
-	2. Be attractive to investors in order to make fundraising as fast as possible.  
-	3. Be understandable to the investors as part of a 30 minute pitch deck.
+1. Allow the investors to exit if they feel that their funds are not being appropriately deployed.
+2. Be attractive to investors in order to make fundraising as fast as possible.  
+3. Be understandable to the investors as part of a 30 minute pitch deck.
 
 #### Could
-	1. Use a structure Investors are used to, in order to speed up the investment round.
-	1. Allow the Articles and Governance to be published as an NFA to allow others to re-use this work.
+1. Use a structure Investors are used to, in order to speed up the investment round.
+1. Allow the Articles and Governance to be published as an NFA to allow others to re-use this work.
 
 #### Must not
-	1. Break the ethos of the Dreamcatcher, in that its articles embody transparency, fairness, etc.
+1. Break the ethos of the Dreamcatcher, in that its articles embody transparency, fairness, etc.
 
 
 ### Tactical Intent 3: Spend the Treasury on NFAs.
@@ -70,16 +70,16 @@ To take in investment, we believe that we need a legal vehicle in place which In
 To be able to effectively spend the Treasury on NFAs we need to be able to hold the treasury, pay out from the treasury for work done including tracking that work done to completion, to be able to report on where it has been spent, and be able to track beneficial ownership of the NFAs produced.  We beleive that to do that we:
 
 #### Must
-	1. Be able to spend the treasury on the creation on NFAs that protects both the contributors and investors.
+1. Be able to spend the treasury on the creation on NFAs that protects both the contributors and investors.
 
 #### Should
-	1. Provide transparency to Investors about where their investment has been deployed.
+1. Provide transparency to Investors about where their investment has been deployed.
 
 #### Could
-	1. Test the concept of NFAs and Ambient Attribution.
+1. Test the concept of NFAs and Ambient Attribution.
 
 #### Must not
-	1. Fall foul of the financial laws of the jurisdiction in which the vehicle is based.
+1. Fall foul of the financial laws of the jurisdiction in which the vehicle is based.
 
 
 ### Tactical Intent 4: Disburse the benefits arising.
@@ -87,21 +87,21 @@ To be able to effectively spend the Treasury on NFAs we need to be able to hold 
 To be able to entice investors, we expect that they will look for a return on their investment.  In order to reach the Strategic Intent we expect to use Ambient Attribution for this.  We beleive to do that we:
 
 #### Must
-	1. Provide the legal framework for some form of Ambient Attribution that the investors and contributors are comfortable with.
+1. Provide the legal framework for some form of Ambient Attribution that the investors and contributors are comfortable with.
 
 #### Should
-	1. Be translatable into the Dreamcatcher once launched, for continuity.
+1. Be translatable into the Dreamcatcher once launched, for continuity.
 
 #### Could
-	1. Test the concept of NFAs and Ambient Attribution.
+1. Test the concept of NFAs and Ambient Attribution.
 
 #### Must not
-	1. Fall foul of the financial laws of the jurisdiction in which the vehicle is based.
+1. Fall foul of the financial laws of the jurisdiction in which the vehicle is based.
 
 
 ## Further Guidance
 
-	1. We believe that if the structure does not clearly identify itself as being of a known type (Company, Co-op, e.g.) in the key jurisdictions, we're likely at some point to be forced into one of those definitions and may face retrospective legal action against us.  This should be borne in mind.
+1. We believe that if the structure does not clearly identify itself as being of a known type (Company, Co-op, e.g.) in the key jurisdictions, we're likely at some point to be forced into one of those definitions and may face retrospective legal action against us.  This should be borne in mind.
 
 
 ## Offer 
