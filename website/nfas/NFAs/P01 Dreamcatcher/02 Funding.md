@@ -48,25 +48,29 @@ To take in investment, we believe that we need a legal vehicle in place which In
 
 1. Allow investment to be made in a legal manner in the specific territory or territories in which it will be set up.
 1. Be simple enough to allow a reasonable investor to have confidence in the structure.
+1. Must firmly occupy a predefined legal vehicle definition to avoid being forced into one unwillingly
+1. Must be reusable by other projects on the Dreamcatcher as their investment mechanisms
+1. Allow the Articles and Governance to be published as an NFA to allow others to re-use this work.
 
 #### Should
 
-1. Allow the investors to exit if they feel that their funds are not being appropriately deployed.
-2. Be attractive to investors in order to make fundraising as fast as possible.
-3. Be understandable to the investors as part of a 30 minute pitch deck.
+1. Allow the investors to exit instantly if they feel that their funds are not being appropriately deployed.
+1. Be reinvestable in continuously, for those who want to enter later
+1. Be attractive to investors in order to make fundraising as fast as possible.
+1. Be understandable to the investors as part of a 30 minute pitch deck.
 
 #### Could
 
 1. Use a structure Investors are used to, in order to speed up the investment round.
-1. Allow the Articles and Governance to be published as an NFA to allow others to re-use this work.
 
 #### Must not
 
 1. Break the ethos of the Dreamcatcher, in that its articles embody transparency, fairness, etc.
+1. Permit any naive investors to put their money in
 
 ### Tactical Intent 3: Spend the Treasury on NFAs.
 
-To be able to effectively spend the Treasury on NFAs we need to be able to hold the treasury, pay out from the treasury for work done including tracking that work done to completion, to be able to report on where it has been spent, and be able to track beneficial ownership of the NFAs produced. We beleive that to do that we:
+To be able to effectively spend the Treasury on NFAs we need to be able to hold the treasury, pay out from the treasury for work done including tracking that work done to completion, to be able to report on where it has been spent, and be able to track beneficial ownership of the NFAs produced. We believe that to do that we:
 
 #### Must
 
@@ -160,7 +164,7 @@ The signatures on the legal contracts from the internal team, signifying that th
 
 #### Stagegate 2
 
-Incorporation of the legal contracts within the articles of the legal vehicle, and therefore acceptance by the investors to work under that same legal structure. First trenche of investment transferred to the legal vehicle for that use.
+Incorporation of the legal contracts within the articles of the legal vehicle, and therefore acceptance by the investors to work under that same legal structure. First tranche of investment transferred to the legal vehicle for that use.
 
 #### Stagegate 3
 
