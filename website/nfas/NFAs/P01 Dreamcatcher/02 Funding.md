@@ -1,10 +1,10 @@
 ## Strategic Intent
 
-The Strategic Intent is to fund further Dreamcatcher development in order to get the Dreamcatcher launched.
+The Strategic Intent is to fund further Dreamcatcher development in order to get the Dreamcatcher launched. Currently we have no funding beyond personal means, which isn't scalable and is not enough to get the Dreamcatcher operational in a self sustaining state.
 
-Currently we have no way that can be done beyond personal means, which isn't scalable and is very finite.
+Because the Dreamcatcher is intended to have per project fundraising abilities, and because those methods conflict with many of the concepts of conventional equity, we believe the only sustainable fundraising model is to use the concepts of the Dreamcatcher to raise the investment necessary to build and launch the Dreamcatcher.
 
-We therefore intend to use the concepts in the Dreamcatcher to run the investment necessary to build and launch the Dreamcatcher.
+The Dreamcatcher must be treated in all regards as a project on the Dreamcatcher.
 
 ## Tactical Intent
 
@@ -12,8 +12,9 @@ In order to meet the Strategic Intent, we believe that we need:
 
 1. To be able to convince potential investors that the Dreamcatcher is a good opportunity for them to invest.
 2. To be able to take in investment should investors agree.
-3. To be able to effectively spend that treasury legally to create NFAs for the creation of the Dreamcatcher, and for NFAs built on the Dreamcatcher. This includes spending the treasury on third parties.
+3. To be able to effectively spend that treasury legally to create NFAs for the creation of the Dreamcatcher, and for NFAs built on the Dreamcatcher, including spending the treasury on third parties.
 4. To be able to disburse the benefits attributed to the NFAs to contributors and investors.
+5. Use a funding mechanism that can be reused for any other projects on the Dreamcatcher network
 
 ## Detailed Description
 
@@ -51,6 +52,7 @@ To take in investment, we believe that we need a legal vehicle in place which In
 1. Must firmly occupy a predefined legal vehicle definition to avoid being forced into one unwillingly
 1. Must be reusable by other projects on the Dreamcatcher as their investment mechanisms
 1. Allow the Articles and Governance to be published as an NFA to allow others to re-use this work.
+1. Guarantee investors ownership of their unspent money
 
 #### Should
 
@@ -67,6 +69,7 @@ To take in investment, we believe that we need a legal vehicle in place which In
 
 1. Break the ethos of the Dreamcatcher, in that its articles embody transparency, fairness, etc.
 1. Permit any naive investors to put their money in
+1. Offer any form of ownership or control other than NFAs and remaining funds
 
 ### Tactical Intent 3: Spend the Treasury on NFAs.
 
@@ -75,6 +78,7 @@ To be able to effectively spend the Treasury on NFAs we need to be able to hold 
 #### Must
 
 1. Be able to spend the treasury on the creation on NFAs that protects both the contributors and investors.
+1. Provide an intelligent feedback loop from investor selection as to what their money gets spent on
 
 #### Should
 
@@ -95,6 +99,7 @@ To be able to entice investors, we expect that they will look for a return on th
 #### Must
 
 1. Provide the legal framework for some form of Ambient Attribution that the investors and contributors are comfortable with.
+1. Be able to demonstrate self improvement both in action, and in a model of incentives for all actors
 
 #### Should
 
@@ -107,6 +112,27 @@ To be able to entice investors, we expect that they will look for a return on th
 #### Must not
 
 1. Fall foul of the financial laws of the jurisdiction in which the vehicle is based.
+
+### Tactical Intent 5: Reusable Funding Method
+
+To be an authentic Dreamcatcher fundraising method, it must be possible to reuse this method for any other project.
+
+#### Must
+
+1. Be used to raise capital for a completely non core Dreamcatcher project
+1. Be operated fully by people unaffiliated with the Dreamcatcher team
+
+#### Should
+
+1. Be easily operated in a majority of popular jurisdictions around the world
+1. Be crypto and fiat compatible
+
+#### Could
+
+#### Must not
+
+1. Break laws in the nominated majority jurisdictions
+1. Allow
 
 ## Further Guidance
 
