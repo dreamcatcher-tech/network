@@ -26,6 +26,7 @@ To convince investors as to the opportunity to invest, we believe that we need t
 
 1. Communicate the fundamentals of what the Dreamcatcher is.
 1. Communicate the opportunity.
+1. Be clear that the only way for profit realization is when ambient attribution begins, which relies on the parcipation of large numbers of users
 
 #### Should
 
@@ -53,6 +54,7 @@ To take in investment, we believe that we need a legal vehicle in place which In
 1. Must be reusable by other projects on the Dreamcatcher as their investment mechanisms
 1. Allow the Articles and Governance to be published as an NFA to allow others to re-use this work.
 1. Guarantee investors ownership of their unspent money
+1. Record the real world identities of all who contribute money
 
 #### Should
 
@@ -64,6 +66,7 @@ To take in investment, we believe that we need a legal vehicle in place which In
 #### Could
 
 1. Use a structure Investors are used to, in order to speed up the investment round.
+1. Leverage the continuous disclosure nature of the Dreamcatcher to meet US Securities requirements for reduction of information asymmetries.
 
 #### Must not
 
