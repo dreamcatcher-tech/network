@@ -1,5 +1,7 @@
 ## Strategic Intent
 
+![Anime-Beautiful_DreamcatcherAlgorithmicCapTable](/nfts/DreamcatcherAlgorithmicCapTable.png)
+
 The traditional incentives for innovating are mis-aligned. This creates friction and in turn hampers the speed of Innovation.  
 For example, typically:
 
@@ -34,6 +36,8 @@ We assume that, given the likely granularity and fidelity required, the Strategi
 
 ### Tactical Intent 1: Recording of Contributions
 
+![Anime-Beautiful_Recording of Contributions](/nfts/RecordingOfContributions.png)
+
 In order to record all Contributions of any sort to an Innovation, we beleive the following properties are required:
 
 #### Must
@@ -60,6 +64,8 @@ In order to record all Contributions of any sort to an Innovation, we beleive th
 
 ### Tactical Intent 2: Assessment of Contributions
 
+![Anime-Beautiful_AssessmentOfContributions](/nfts/AssessmentOfContributions.png)
+
 In order to fairly assess the value of each Contribution relative to each other, we beleive the following properties are required:
 
 #### Must
@@ -81,6 +87,8 @@ In order to fairly assess the value of each Contribution relative to each other,
 1. Allow for a manual or algorithmic Assessment that is not visible to the Contributors involved. (No smoke-filled back-room deals.)
 
 ### Tactical Intent 3: Recording of Financial Value generated
+
+![Anime-Beautiful_RecordingOfFinancialValueGenerated](/nfts/RecordingOfFinancialValueGenerated.png)
 
 In order to ensure the above-board recording of the financial value generated from an Innovation, and thereby the financial value of a Contribution, we beleive the following properties are required:
 
@@ -105,6 +113,8 @@ In order to ensure the above-board recording of the financial value generated fr
 
 ### Tactical Intent 4: Dispersal of Benefits
 
+![Anime-Beautiful_DispersalOfBenefits](/nfts/DispersalOfBenefits.png)
+
 In order to assure the Dispersal of the financial benefits, we believe the following properties are required:
 
 #### Must
@@ -126,6 +136,8 @@ In order to assure the Dispersal of the financial benefits, we believe the follo
 1. Allow for the delay or alteration of the Dispersal without visibility of all beneficiaries to a particular Dispersal.
 
 ### Tactical Intent 5: Maintenance of Confidence
+
+![Anime-Beautiful_MaintenanceOfConfidence](/nfts/MaintenanceOfConfidence.png)
 
 In order to maintain the confidence of the Users that they are participating in a System which faithfully attempts to recreate the Strategic Intent, we believe the following properties are required:
 
@@ -149,6 +161,8 @@ In order to maintain the confidence of the Users that they are participating in 
 
 ### Tactical Intent 6: Self-Improvement
 
+![Anime-Beautiful_SelfImprovement](/nfts/SelfImprovement.png)
+
 In order to provide the ability for the System to change and adapt when improvements are are identified, we believe the following properties are required:
 
 #### Must
@@ -170,6 +184,8 @@ In order to provide the ability for the System to change and adapt when improvem
 1. Allow breaking changes to interact with other instances where those breaking changes alter or remove the Strategic or Tactical Intent functionality listed above.
 
 ### Tactical Intent 6: Contracting within the System
+
+![Anime-Beautiful_ContractingWithinTheSystem](/nfts/ContractingWithinTheSystem.png)
 
 In order for the System to be useful beyond the automated processes, it's necessary to allow Users of the System to enter into Contracts (mutual agreements) that can be enforced within the System. To do that, we believe the following properties are required:
 

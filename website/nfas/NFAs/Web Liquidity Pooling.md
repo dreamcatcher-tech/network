@@ -1,3 +1,5 @@
+![Anime-Beautiful](/nfts/DreamcatcherWebLiquidityPooling.png)
+
 Every Venture on the Dreamcatcher is something that can be invested into. Each venture may have a pool of liquidity where people deposit funds that can be used for approved batches of work to be completed. Liquidity Providers are contributing minimally just by parking their money in the pools, and maximally by that money being used to purchase software services for the betterment of the Venture.
 
 We must run our own chain to manage these pools, or else we look foolish asking for money, and we must be able to demonstrate that we cannot rug pull any funds. This document describes a minimal system that can be used to build itself out more, depending on the preferences of the liquidity providers. Assets enter the system from either fiat or the DAI stablecoin, and leave the system only via DAI.
