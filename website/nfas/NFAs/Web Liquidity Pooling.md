@@ -1,3 +1,5 @@
+![Anime-Beautiful](/nfts/DreamcatcherWebLiquidityPooling.png)
+
 ## Introduction
 
 The Dreamcatcher transforms contribution events into contribution things, and then allows interaction with these things, including trading ownership of said things. We name these things Non Fungible Assets, or NFAs. The provenance and trade history of these NFAs is used to redisperse attribution.
