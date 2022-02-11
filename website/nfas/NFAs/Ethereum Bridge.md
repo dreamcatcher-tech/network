@@ -2,7 +2,7 @@
 
 A bridge between Ethereum compatible chains and the Dreamcatcher Network
 
-Made up of a deployable smart contract and a deployable Dreamcatcher app. The two are bonded together and permit two way asset transfers.
+Made up of a deployable smart contract and a deployable Dreamcatcher app. The two are bonded together and permit two way asset transfers. A third part may be an ERC1155 contract to allow these items to be tradeable on Opensea.
 
 ## Requirements
 
@@ -17,10 +17,13 @@ Made up of a deployable smart contract and a deployable Dreamcatcher app. The tw
 1. Pass all costs on to the users
 1. Allow withdraws without the user owning any ETH
 1. At most permit developers to pause withdrawals for a fixed period of time until bugs can be addressed
+1. Must enforce worst case damage of corrupted validators is frozen funds
+1. Allow automated auditing tool to compare allocation of NVN in Dreamcatcher to ETH allocations
 
 ### Should
 
-1. Allow depositors to pull back an unclaimed deposit they made
+1. Allow depositors to pull back an unclaimed deposit they made on the DAI chain
+1. Require a signature from the account holder to withdraw their funds
 
 ### Could
 
@@ -34,3 +37,4 @@ Made up of a deployable smart contract and a deployable Dreamcatcher app. The tw
 1. Be controllable by the developers to steal funds
 1. Allow Dreamcatcher bugs to result in loss of funds
 1. Allow withdraws by users that have not passed KYC
+1. Allow the token to be sent to any address other than the gateway contract
