@@ -15,6 +15,8 @@ The number of possible exploits is too unwieldy for a single statechart to be pr
 
 E.g. If the Fwd NFA is in Development, has Investment and Contributors, and an Investor promotes that Fwd NFA, then the state would change to "Security Guardian Check".  This would allow for a cautious approach (any activity during a state of a susceptable type will be checked), and would allow the Security Guardian checklist to be updated regularly without changes to the statechart and therefore flow.
 
+NB, the previous statechart at https://miro.com/app/board/o9J_lS2-5J4=/ can easily be re-purposed as the assessment check, as it deals not with the triggers, but an assessment of the current situation in terms of Securities Law.  I'll propose using something similar to detail the assessment if this proposal is accepted.
+
 2. Be versioned and upgradeable
 
 I propose UML v2.0, using Mermaid, and committed through github.
