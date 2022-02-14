@@ -156,10 +156,10 @@ Until this KYC and AML flag is passed, whomever owns NVN can burn it and recover
 
 ### Implementation Steps
 
-Deploy the Dreamcatcher-to-Eth bridge on the polygon chain, which is an ERC1155 smart contract that mints NVN in NFT notes denominations (10,50,200,500, etc) in exchange for the denominated amount of DAI. This contract is listed on opensea for discoverability, but can also be called directly. These NFTs cannot be transferred to anyone else, and their uniqueness is because their kyc and aml information is retained. The only action free from kyc and aml verification is to withdraw your own funds.
-Buy these tokens with DAI to gain access to that Dreamcatcher Pooling. Anyone can access the dreamcatcher but you cannot provide liquidity without owning one of these tokens and passing KYC. The DAI can only be released by the dreamcatcher gateway chain releasing it.
-Participate in the dreamcatcher, where you can earn and spend your NVN by pooling, and bonding to NFAs
-Withdraw your NVN based on the ownership record of the Dreamcatcher. You sign a transaction in Dreamcatcher, and you reconfirm your eth address, which triggers the gateway to burn the NVN that you control in the Dreamcatcher, and send the released DAI to your confirmed ETH address
+1. Deploy the Dreamcatcher-to-Eth bridge on the polygon chain, which is an ERC1155 smart contract that mints NVN in NFT notes denominations (10,50,200,500, etc) in exchange for the denominated amount of DAI. This contract is listed on opensea for discoverability, but can also be called directly. These NFTs cannot be transferred to anyone else, and their uniqueness is because their kyc and aml information is retained. The only action free from kyc and aml verification is to withdraw your own funds.
+1. Buy these tokens with DAI to gain access to that Dreamcatcher Pooling. Anyone can access the dreamcatcher but you cannot provide liquidity without owning one of these tokens and passing KYC. The DAI can only be released by the dreamcatcher gateway chain releasing it.
+1. Participate in the dreamcatcher, where you can earn and spend your NVN by pooling, and bonding to NFAs
+1. Withdraw your NVN based on the ownership record of the Dreamcatcher. You sign a transaction in Dreamcatcher, and you reconfirm your eth address, which triggers the gateway to burn the NVN that you control in the Dreamcatcher, and send the released DAI to your confirmed ETH address
 
 ### Implementation Time
 
