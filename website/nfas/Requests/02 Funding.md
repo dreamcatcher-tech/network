@@ -124,6 +124,7 @@ To be an authentic Dreamcatcher fundraising method, it must be possible to reuse
 
 1. Be used to raise capital for a completely non core Dreamcatcher project
 1. Be operated fully by people unaffiliated with the Dreamcatcher team
+1. Be able to fund betterment of an open source project without the agreement of the project leads
 
 #### Should
 
