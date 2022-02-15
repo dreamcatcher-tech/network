@@ -22,6 +22,8 @@ Using pubsub in IPFS, each chainId is a broadcast topic. Correctly functioning v
 
 ### Announcing new interblocks
 
+Listeners in the target chain subscribe to the topic of targetChainId:sourceChainId. Once the permissions layer is implemented, they would just listen to the sourceChainId topic, and would only receive notifications when something they can access is part of the latest block
+
 ### Catching up
 
 Upon first seek, or periodically when a node suspects it might be behind announcements, the node needs to get the best known latest block. There are two ways to do this, which will be subject to testing.
@@ -49,22 +51,29 @@ We will need to make a walker that periodically checks that latest has all its d
 ### Chain
 
 This is a reverse trickle DAG which has as leaves pointers to every block.
-The root hash of this DAG represents the LATEST hash. Benefit is that getting an arbitrary height can be looked up near instantly, rather than having to walk the chain one block at a time.  The old version of chain was literally a chain, but this new version should be a tree, to give this rapid lookup ability based on height.
+The root hash of this DAG represents the LATEST hash. Benefit is that getting an arbitrary height can be looked up near instantly, rather than having to walk the chain one block at a time. The old version of chain was literally a chain, but this new version should be a tree, to give this rapid lookup ability based on height.
 
 ### Block
+
 This stays largely the same, except internally the IPLD datamodel is applied
 
-#### Network
-This will be left alone if possible, but we might change firstly that we build it up asynchronously, allowing efficiency as it gets large, and secondly that we might move to a HAMT which allows millions of children.  HAMT needs performance checking.  We need to make sure that holes are repacked in the network tree, so the tree does not shuffle, but this might not actually matter if we use named links.
+### Network
 
-##### Channel
-This is an interesting structure, since it acts as a splice point to connect to the DAG or another chain.  In the `precedent` field, it maintains a pointer to the latest block from the remote chain that transmitted to it.  Walking this DAG it finds what messages are due to it based on its chainId.  This will be tricky to implement privacy on, as the content request needs to be done as tho 
+This will be left alone if possible, but we might change firstly that we build it up asynchronously, allowing efficiency as it gets large, and secondly that we might move to a HAMT which allows millions of children. HAMT needs performance checking. We need to make sure that holes are repacked in the network tree, so the tree does not shuffle, but this might not actually matter if we use named links.
+
+### Channel
+
+This is an interesting structure, since it acts as a splice point to connect to the DAG or another chain. In the `precedent` field, it maintains a pointer to the latest block from the remote chain that transmitted to it. Walking this DAG it finds what messages are due to it based on its chainId. This will be tricky to implement privacy on, as the content request needs to be done as tho
 
 ### Interblocks
 
+These point directly at the blocks of the transmitting channel so are no longer a thing. The permissions layer will restrict how receiving chains can walk the DAG of transmitting chains.
+
+The `block.transmission` slice points now to the CID of the channel tip
+
 ### State
 
-This is made up of pointers within the DAG
+State allows using CIDs if the developer wants to, which can make anything in the IPLD be referenced and mutated by chains, by wrapping them in state.
 
 ## Converting existing models
 
@@ -72,9 +81,27 @@ This is made up of pointers within the DAG
 
 This was designed to be very large and fast using ImmutableJS. Using IPLD opens up a new possibility for scale, as a network object of unlimited size can be created, and walked only for the specific pieces required during blockmaking. Using tools like the [IPLD HAMT](https://github.com/rvagg/js-ipld-hashmap) we might be able to achieve megachain without implementing the proxy pattern for chains.
 
+## Overlay DAGs within the App Complex
+
+A chain application is made up of an approot and any number of children. Within this tree of children, there are 3 overlay DAGs which can be navigated directly:
+
+1. The state tree (the knowledge of the complex)
+1. The metadata tree (the liveliness of the complex)
+1. The binary tree (the files of the complex)
+
+Each of these is referenced and pushed up to the root. This allows the state hash to be queried for when it changes, and know that none of the child states changed either.
+
 ## Entering the system
 
 The binary data can be attached directly to a pierce chain, or it can be attached using IPFS and then a CID provided to the chain. The validators will fetch the CID and verify the hashes before including reference to this data in any blocks
+
+## Locking of chains
+
+This is only required within any process that has access to the crypto keys of this node. This lock process cannot be within IPFS because it needs to be very quick, and should never leave the node. In lambda, this would probably be done through dynamodb, or it might be done as blocks in an internal chain to give high level locks, then fast local locks within each 6 core runner.
+
+In an algorithm like tendermint, locking is handled loosely and within the protocol, so here locking refers to only within the node itself, to provide consistent and compliant use of the precious crypto keys.
+
+The npm package [`mortice`](https://www.npmjs.com/package/mortice) which is used by IPFS might be useful for locking on the same machine.
 
 ## Benefits over existing implementation
 
@@ -96,6 +123,7 @@ Questions:
 
 1. Can a UnixFS file also contain a custom IPLD format, so we can blend the payload layer tree and showing the state of each node ?
 1. Does throwing in the pubsub handler in ipfs perform the same result as a validator in libp2p pubsub ?
+1. How is the performance of the IPLD primitives ? Can we use them in the intermediate states, or should we stick to our objects and only stamp down to IPLD at blockmaking time ?
 
 ## Extra wishes
 
