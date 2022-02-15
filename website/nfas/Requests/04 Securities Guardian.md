@@ -43,6 +43,7 @@ Given that the behavior of Actors and NFTs within the Dreamcatcher are all contr
 
 1. Include states that model specific exploits, such as pump and dump, theft, failure to deliver, did not understand what was purchasing, insider trading, sybil attack, market manipulation, [and others](https://en.wikipedia.org/wiki/Securities_fraud)
 1. Include the QA service provider as an actor in the system
+1. Model a traditional company showing the vulnerabilities in the trust model
 
 #### Should
 
