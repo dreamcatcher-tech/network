@@ -1,0 +1,105 @@
+## Proposal Scope
+
+This proposal covers Tactical Intent 1 of 04 Securities Guardian. It's execution will take Tactical Intents 2-4 into account as the end use. On a successful PR, certain aspects of Tactical Intents 2-4 that can be expressed by the use of the statechart will be addressed. Aspects that require integration with DC automation will be left to others.
+
+## Proposed Approach
+
+### Must have
+
+1. Be designed in all ways to protect all actors from exploitations by others, even if someone actively wanted to be exploited.
+
+The number of possible exploits is too unwieldy for a single statechart to be practically complete. As an alternative, I propose a set of state 'triggers' - transitions of state based on types of activity during the current state that trigger the Security Guardian.
+
+E.g. If the Fwd NFA is in Development, has Investment and Contributors, and an Investor promotes that Fwd NFA, then the state would change to "Security Guardian Check". This would allow for a cautious approach (any activity during a state of a susceptable type will be checked), and would allow the Security Guardian checklist to be updated regularly without changes to the statechart and therefore flow.
+
+NB, the previous statechart at https://miro.com/app/board/o9J_lS2-5J4=/ can easily be re-purposed as the assessment check, as it deals not with the triggers, but an assessment of the current situation in terms of Securities Law. I'll propose using something similar to detail the assessment if this proposal is accepted.
+
+2. Be versioned and upgradeable
+
+I propose UML v2.0, using Mermaid, and committed through github.
+
+3. Operate synchronously with no external calls
+
+Noted. This may restrict the notification to the current state that a promotion is underway to promotions that occur only on-chain, or which are reported on-chain.
+
+4. Be deterministic and repeatable
+
+Pre-requisite for this is a 'timeslice' of the current state each time the Security Guardian is triggered, which would allow the decision to be reviewed and repeated, and would remove any async input.
+
+5. Be applicable to every Actor / NFT pair in the system
+
+I've identified the following Actors and NFT States. Each will have a pairing with the other:
+
+Actors:
+
+- Security Guardian (Software Agent)
+- Dreamcatcher System (Software Agent)
+- Governance
+- Contributor, Permissionless
+- Contributor, Permissioned, Sweat Only
+- Contributor, Permissioned, Hybrid, (Sweat and cash)
+- Investor, No Participation
+- Investor, Participant
+- QA Service
+- Escrow Service
+- Arbiter
+
+Broad States to cover:
+
+- Idea is being formed, but not yet articulated as a Fwd NFA
+- Fwd NFA is being developed, but is not yet available for revenue or value generation
+- NFA is available for revenue, value generation or inclusion in another Project
+- NFA is no longer being developed, but is being promoted for use or sale (typically only used e.g. in one-off pieces, such as a photograph.)
+- NFA is no longer being developed or promoted (used only for state transitions back to 'promoted')
+
+6. Define allowed states with a large margin of error, beyond doubt
+
+See above note on the statechart being used as a 'trigger' for any event that could possibly result in Securities Law issues.
+
+7. Be scopable for simple high level views
+
+The above "Broad States" will have embedded states within those that show higher granularity. In my view this high granularity is indeed necessary in order to prove the statechart complete, afterwhich lower granularity views can be generated.
+
+### Could have
+
+1. Include states that model specific exploits, such as pump and dump, theft, failure to deliver, did not understand what was purchasing, insider trading, sybil attack, market manipulation, and others
+
+Modelling of these would be through a series of transition flows through the statechart to be produced. E.g. a pump and dump may be modelled by
+
+1. Transition 1: S1 (Fwd NFA) -- Fwd NFA invested in by Actor: Investor --> S2 (Fwd NFA in Development)
+1. Transition 2: S2 (Fwd NFA in Development) -- Actor: Investor promotes Fwd NFA --> S3 (Securities Guarian Triggered)
+1. Transition 3: S3 (Securities Guarian Triggered) -- Actor: Securities Guardian Accepts content of Promotion --> S2 (Fwd NFA in Development)
+1. Transition 4: S2 (Fwd NFA in Development) -- Actor: Investor sells out --> S3 (Securities Guarian Triggered)
+1. Transition 5: S3 (Securities Guarian Triggered) -- Actor: Securities Guardian triggers exception on sale close to promotion --> S4 (Fwd NFA Locked)
+1. Transition 6: S4 (Fwd NFA Locked) --> //
+
+These is a gross example to show roughly the approach. That is, specific exploits can be modelled using the proposed statechart and a script to prove/demonstrate it's response.
+
+2. Include the QA service provider as an actor in the system
+
+Agree that this is a necessary actor at v1.
+
+### Should
+
+1. Permit generation of overlay statecharts representing a specific jurisdictions classification rules
+
+With the proposed approach, any transition that could possibly result in a breach is triggered through the statechart, and passed to the securities guardian rulebase for assessment. That way, e.g. multiple jurisdictions can be assessed, the geo of the user can select one, or the sum of all jurisdictions (hardest case) can be applied and more easily updated.
+
+### Must Not
+
+1. Be overly influenced by any specific jurisdiction, as invulnerability is a universal goal
+
+Reference the above 'trigger approach'; I believe that meets this requirement.
+
+## Proposed Output
+
+Initial format (for ease): Matrix compatible with translation to UML v2.0 statechart.
+PR will use Mermaid syntax.
+
+## Proposed Timeline
+
+First PR - 2 days.
+
+## Proposed Contract
+
+DPL in force. Attribution only.
