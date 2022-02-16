@@ -8,21 +8,37 @@ During the course of this conversion we will treat permissioning and privacy as 
 
 ## Functions required
 
-1. Announce when new blocks of a chain are made
+1. Announce when new blocks of a chain are made to readers
 1. Announce to destination when new interblocks are available from source
 1. Recover latest block of a chain, having missed announce
 1. Recover latest interblocks from source, having missed announce
 1. Publish a permanent end for a validator sets combined public key, signalling turnover to a new validator set
 
+#### Announce using a custom dht + pubsub
+
+We need to make a custom dht in libp2p and set the validate and select functions to only relay blocks. There is a significant weakness in that a rogue validator set can turnover and then continue to publish, which will confuse some nodes, unless each node looks up the block turnover history to validate it properly before validating.
+
+Initially for our version this problem will not be tackled, and any block with a valid signature scheme will be passed. The selector will operate solely on the heights of each block, whereas later it should walk the tree and determine which is latest.
+
+The key:value pair in the dht is `chainId:CID` and we will walk the tree to check it. In prototyping, any publication will pass.
+
 ### Announcing new blocks
 
 To avoid flooding the broadcast channels of IPFS (or any announcement system), change subscriptions are voluntarily kept to approot chains, altho they are permitted to be anything. The root of the app is guaranteed to change if any of the children change. The approot is the method of crosschain consistency for running queries.
 
-Using pubsub in IPFS, each chainId is a broadcast topic. Correctly functioning validators will only broadcast when approots change. Upon receipt, each peer checks the signature of the block and if it fails it should stop gossiping the message
+Using pubsub in IPFS, each chainId is a broadcast topic. Correctly functioning validators will only broadcast when approots change. Upon receipt, each peer checks the signature of the block and if it fails it should stop gossiping the message.
+
+Worst case we have a single validator, so we can just use IPNS to publish.
+
+This DHT put is required for peers that missed an announcement. Each new block is also announced using pubsub. The same problems occur here as with put, and are handled the same way. Again a custom libp2p implementation may be needed.
+
+Whenever a new block is received, the client and the server should pin it recursively, as this is the approot.
 
 ### Announcing new interblocks
 
 Listeners in the target chain subscribe to the topic of targetChainId:sourceChainId. Once the permissions layer is implemented, they would just listen to the sourceChainId topic, and would only receive notifications when something they can access is part of the latest block
+
+The principle is that if you have a request that you need processed, you need to keep announcing until you receive a reply. There is no point storing these values anywhere.
 
 ### Catching up
 
@@ -124,10 +140,8 @@ Questions:
 1. Can a UnixFS file also contain a custom IPLD format, so we can blend the payload layer tree and showing the state of each node ?
 1. Does throwing in the pubsub handler in ipfs perform the same result as a validator in libp2p pubsub ?
 1. How is the performance of the IPLD primitives ? Can we use them in the intermediate states, or should we stick to our objects and only stamp down to IPLD at blockmaking time ?
+1. How big are ints in the IPLD datamodel ? 2^53 due to implementation in JS
 
-## Extra wishes
+## Problems
 
-1. Present a state tree browser that presents data like files
-1. Be able to browse blocks and other structures with the web tools in native IPFS
-1. Map IPNS versions to blockheights
-1. Allow a composite key in IPNS
+1. Browser peers need access to a signalling server to use webrtc: https://github.com/libp2p/js-libp2p-webrtc-star/tree/master/packages/webrtc-star-signalling-server - but a desktop node might do this automatically once it gets discovered by the browsers
