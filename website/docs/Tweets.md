@@ -24,6 +24,8 @@ This page is intended to be an ordered list of the headlines and tweets that bes
 
 > **One blockchain for every idea**
 
+> **Zero Trust Venture Capital** Autonomous Equity
+
 > #Dreamcatcher supercharges the rate of innovation, removing the age-old barriers that exist between ideas, demand, capital and experts
 
 > #Dreamcatcher is the network that brings together the world's talent - the last unbuilt social network and the one that counts
