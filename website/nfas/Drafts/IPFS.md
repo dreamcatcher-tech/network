@@ -1,12 +1,18 @@
 Because we have chosen to have a payload layer, and because our design treats all blocks as part of that payload layer, we are a seamless fit for IPFS which aims to be purely a payload layer. IPFS would be responsible for replacing our storage layer and network layer, which is an enormous amount of complexity that we can leverage from a popular and funded project.
 
-IPFS does not currently have any sense of read permissions, nor multisig public cryptography, so we will need to add these layers in, hopefully in a way that can benefit the IPFS project as reusable components. An interim measure will be to use the private network feature of IPFS to form boundaries of non overlapping permissioned data
+IPFS does not currently have any sense of read permissions, nor multisig public cryptography, so we will need to add these layers in, hopefully in a way that can benefit the IPFS project as reusable components. An interim measure will be to use the private network feature of IPFS to form boundaries of non overlapping permissioned data until per chain permissioning can be implemented.
 
 Some modifications to our models are required to fit this, but all the logic of chainmaking remains identical. There may be an extra step to asynchronously build up the parts of the block that are needed once we know what we need - specifically in `block.network` - but the upside is that `block.network` can grow to millions of chains and still function with performance being mostly a function of what changes you want to make, not what changes had previously been made.
 
 During the course of this conversion we will treat permissioning and privacy as a separate layer, as it does not affect the data structure and transmission systems very much, the only exception being the layout of a block to allow interblocks to be formed that do not leak data about what other channels also received transmissions at the same block.
 
-## Functions required
+The utility of IPFS splits into two key areas: Liveliness, which is the means of propagating changes to chains, and Persistence, which is the means of storing, distributing, and retrieving chains.
+
+## Liveliness
+
+Broadcasting in any network is a troublesome operation. After analysis of the protocols available in IPFS, broadcasting is significantly cheaper if a large number of different messages are sent to a single topic, rather than few messages sent to many topics. This is due to the cost of subscription to a topic. The principle we leverage to fit this model is that an AppRoot of any application is used as the topic for messages to notify a child of the AppRoot that there are new interblocks available to them to make new blocks out of.
+
+### Functions required
 
 1. Announce when new blocks of a chain are made to readers
 1. Announce to destination when new interblocks are available from source
@@ -40,6 +46,8 @@ Listeners in the target chain subscribe to the topic of targetChainId:sourceChai
 
 The principle is that if you have a request that you need processed, you need to keep announcing until you receive a reply. There is no point storing these values anywhere.
 
+Publish by putting a value in the DHT so that if someone comes looking, they'll be able to find it, published by srcChainId-dstChainId:hash-height
+
 ### Catching up
 
 Upon first seek, or periodically when a node suspects it might be behind announcements, the node needs to get the best known latest block. There are two ways to do this, which will be subject to testing.
@@ -62,7 +70,7 @@ IPFS has a function called pinning, and we should use this to pin the approot of
 
 We will need to make a walker that periodically checks that latest has all its data present, then proceeds backwards in time, to ensure that all data is available.
 
-## DAGs required, and their children:
+## Persistence
 
 ### Chain
 
@@ -145,3 +153,17 @@ Questions:
 ## Problems
 
 1. Browser peers need access to a signalling server to use webrtc: https://github.com/libp2p/js-libp2p-webrtc-star/tree/master/packages/webrtc-star-signalling-server - but a desktop node might do this automatically once it gets discovered by the browsers
+
+## Goals
+
+1. Perform well over lan on a private network - ignore public network performance
+
+## Implementation order
+
+1. Data structures overview via writing schema
+1. Convert model system over to use IPLD models
+1. Build hash functions with rough benchmarks
+1. Check producers still operate correctly
+1. Modify Engine to use IPFS to store pools
+1. Cache ioConsistency using block.bytes.length as the capacity
+1. Modify Engine to fully resolve DAGs before blockmaking
