@@ -8,7 +8,7 @@ The current situation with the deployment of Russian forces on Ukrainian soil ca
 4. Diplomatic Solution - Both parties consider a non-military solution as being in their interests, and agree to talks.  Territory currently held is maintained and solidified.  International debate continues as to the long term normalisation of relations while accepting en passant the anexation or balkanization of the target country.  Limitted and asymetric warfare continued by national irregular forces.
 5. Decapitation or defenestration of the premier of the dominant force - out of scope.
 
-In outcome (1), (2) and (3), there will be a need for a communications and coordination fabric for irregular forces to leverage their asymetric advantage.
+In outcome (1), (2) and (3), and possibly to a lesser extent (4), there will be a need for a communications and coordination fabric for irregular forces to leverage their asymetric advantage.
 
 The main characteristic of asymetric warfare is that the dominant force has centralised Command and Control, most likely well-developed logistics including the rotation of forces; they can deploy sophisticated materiel in theatre and may have freedom of manoeuvre within the battlespace.  Whereas, the subordinate force has eclectic capabilities, is dispersed, does not have clear command and control lines, does not have freedom of manoeuvre and may not enjoy reliable logistics. 
 
@@ -21,7 +21,7 @@ This system is intended as a tool to allow that to happen.
 
 ## Strategic Intent
 
-The system is intended to support an irregular force in asymetric warfare against an occupying force.  The system is to provide decentralised C3 (Command, Control, Communications), and by implication Resource Procurement and Allocation (Logistics) to the irregular force.  It needs to operate in a manner which allows for the prioritisation of resources, efficiency of their use, their deployment on specific tactical objectives while anticipating the potential modes of failure and their consequences, and the robustness of the overall system in the face of success and failure.
+The system is intended to support an irregular force in asymetric warfare against an occupying force.  The system is to provide decentralised C3 (Command, Control, Communications), and by implication Resource Procurement and Allocation (Logistics) to the irregular force.  It needs to operate in a manner which allows for the prioritisation of resources, efficiency of their use, their deployment on specific tactical objectives while anticipating the potential modes of failure and their consequences, and the robustness of the overall system in the face of both success and failure.
 
 
 ## Tactical Intent
@@ -29,21 +29,24 @@ The system is intended to support an irregular force in asymetric warfare agains
 In order to meet the Strategic Intent, the system must cover each of the three points on C3, but without the need for a centralised command centre or deployed/secure communications network.  Breaking these down, the system requires:
 
 1. Communication: Robust and secure comms - the message always gets through.
-	1. This may be through an API to existing (Telegram) or new messaging system.  Aim is to support the following tactical intents through secure comms that are likely to be disrupted, and which therefore prioritise that the message got through over speed of message delivery.  By analogy, traditional comms is UDP-like.  Asymetric comms needs to be TCP-like.
+	1. This may be through an API to existing (e.g. Telegram) or new messaging system.  Aim is to support the following tactical intents through secure comms that are likely to be disrupted, and which therefore prioritise the message getting through over speed of message delivery.  By analogy, traditional comms is UDP-like.  Asymetric comms needs to be TCP-like.
 2. Command: Request Submission
 	1. A method for submitting targets of opportunity, and targets to be avoided, with meta data on how reliable the information received is.
 3. Command: Request QA
-	1. A method for others to comment on, promote or deter targets referred to in (3)
+	1. A method for others to comment on, promote or deter targets referred to in (2).
+	2. A method for signing off on an operation to proceed, within given parameters, where 'signing off' is decentralised.
 4. Command: Target Prioritisation
-	1. A method to allow private groups and inter-groups to manage finite resources, feeding back to (5).  Ie having a list of QA'd targets/objectives, not all need to be/should be/can be carried out in parallel.  This is the strategic level of coordination.
+	1. Given an approved Request, a method to allow private groups and inter-groups to manage finite resources.  Ie having a list of QA'd targets/objectives, not all need to be/should be/can be carried out in parallel.  This is the strategic level of coordination.
 5. Control: Situational Awareness
-	1. A method for condensing decisions that have passed QA at (4) into a tactical map or data representation that informs others in their Requests at (3)
+	1. A method for condensing decisions that have passed QA into a tactical map or data representation that informs others in their future Requests at (2)
 6. Control: Target Identification
-	1. A method to collate information on the target or objective from others, once that target/objective has passed QA.
-7. Logistics: NFT non-combatant contribution
-	1. Throughout 4-7, a method for non-combatants to to request (3) and promote (5-7) while providing supporting funds in exchange for NFTs for that objective.
-8. Logisitics: Combatant Reputation.
-	1. A method to weight (3-7 based on QAd results of previous objectives)
+	1. A method to practically collate information on the target or objective from others, once that target/objective has passed QA. This is to allow for disparate groups to coordinate effectively.
+7. Control: Operation Assessment
+	1. A method to disperse the results from an operation, to inform operations still in the queue, to receive feedback and to prioritise that feedback based on reputation.
+8. Logistics: NFT non-combatant contribution
+	1. A method for non-combatants to request (2), promote (4) and support (5) operations while providing supporting funds in exchange for NFTs for that operation.
+9. Logisitics: Combatant Reputation.
+	1. A method to update the Reputation of participants through (2-7) based on outcomes and assessed by peers.
 
 
 
