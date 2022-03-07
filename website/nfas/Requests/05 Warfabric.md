@@ -1,4 +1,4 @@
-# 05 Warfabric
+![burning field of robots in chains in the style of Unreal Engine](/nfts/WarFabric.png)
 
 The current situation with the deployment of Russian forces on Ukrainian soil can serve as a model for similar military operations, where a dominant foreign force invades a defensive in-country force.  In such a scenario, there are generally five likely outcomes:
 
