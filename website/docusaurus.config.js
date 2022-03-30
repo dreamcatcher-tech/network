@@ -133,6 +133,8 @@ module.exports = {
         path: 'nfas',
         routeBasePath: 'nfas',
         sidebarPath: require.resolve('./sidebarsNFAs.js'),
+        editUrl:
+          'https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/edit/master/website/',
         remarkPlugins,
         sidebarCollapsed: false,
       },
