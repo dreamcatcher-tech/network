@@ -45,35 +45,12 @@ The amount of cash, or other recompense such as attribution, that is owed to any
 
 ### Timeline
 
-An indication of what the maximum amount of elapsed time is permissable before the Request is irrelevalent. 
+An indication of what the maximum amount of elapsed time is permissable before the Request is irrelevalent from the point of view of the Requestor.
 
-IE, this Request times out if it can't be done within the time window indicated in this section.
+E.g. My house is on fire.  I need it put out.  Timeline 10-20 mins.
+  My company needs X.  I've got to make a decision in 2-4 weeks. 
 
-## QA authority
-
-Once an idea is accepted for this Request, the Offer is placed in escrow.  That escrow is released to the Person who completes the work specified, once the QA Authority as judged that the work submitted meets the Request.
-
-## Stage Gates
-
-### Strategic Stage Gate
-
-This is further information the proposes a breakdown of that escrow release to sub-parts.  It's not binding - other agreements can be made through the Request:Idea process.
-
-### Tactical Intent 1: Title here
-
-For each of the Stagegates in Tactical Intent 1, what are the proposed Stagegates that will be submitted to QA.
-
-#### Stagegate 1: Title here
-
-Details of the proposed stagegate
-
-#### Stagegate N: Title here
-
-And so forth...
-
-## Dependencies
-
-A list of previous Assets or Contributions that this Request either uses or wants to recognise.
+  NB it's not th timeline for the production of the Idea into code.  That's down to the Request:Idea Contract to sort out.
 
 ## Definitions
 
