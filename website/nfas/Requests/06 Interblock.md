@@ -28,6 +28,4 @@ Produce a 'universal computer' with the following properties:
 
 #### Must not
 
-## Offer
 
-### Timeline
