@@ -7,6 +7,12 @@
 | 2022-04-10 | 2 | [07 Yawp](../../Requests/07%20yawp.md) | Creation of the strategic and tactical intent |
 | 2022-04-11 | 4            | [08 Mayday](../../Requests/08%20mayday.md) | Creation of the strategic and tactical intent |
 | 2022-04-11 | 4            | [09 Journo](../../Requests/09%20Journo.md) | Creation of the strategic and tactical intent |
+| 2022-04-11 | 0.5            | [NFT pic license](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/issues/18) | Close read through of hotpot.ai license and response to issue |
+
+
+
+
+
 
 ## Future Work Stack Rank
 
