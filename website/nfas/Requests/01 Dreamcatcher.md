@@ -6,15 +6,14 @@ slug: /
 
 ![Anime-Beautiful_DreamcatcherAlgorithmicCapTable](/nfts/DreamcatcherAlgorithmicCapTable.png)
 
-The traditional incentives for innovating are mis-aligned. This creates friction and in turn hampers the speed of Innovation.  
-For example, typically:
+The traditional incentives for innovating are mis-aligned. This creates friction and in turn hampers the speed of Innovation. For example, typically:
 
 1. A Cap Table will be drawn up for the main benefit for investors, incentivising them to minimise the cost of their holding and maximise share value of dividends.
-1. Wages are agreed ahead of any work being done, incentivising workers to minimises the effort needed to maintain or increase that wage, and to horde their own ideas for individual benefit.
-1. Inventors are incentivised to control their inventions for fear of losing out to others, e.g. with Patents, or to open up their work and seek other, secondary, forms of reward, e.g. as happens with open source.
+1. Wages are agreed ahead of any work being done, incentivising workers to minimise the effort needed to maintain or increase that wage, and to horde their own ideas for individual benefit.
+1. Inventors are incentivised to control their inventions for fear of losing out to others, e.g. with Patents, or to open up their work and seek other, secondary, forms of reward, e.g. as happens with open source where the purity of purpose is tainted.
 1. Customers with valuable problems to solve either accept the compromise of off-the-shelf solutions, horde bespoke software for fear of losing the relative benefit with their competitors, and attempt to minimise their costs for both.
 
-In each case, each actor sees the optimisation of their own returns as a zero-sum game with one or more of the other actors. Moreover, their actions are optimised for the local maxima of their own return, despite there very possibly being a higher return available as a share of the returns should the Innovation be used _to its full potential_ - the global maxima.
+In each case, each actor sees the optimisation of their own returns as a zero-sum game with one or more of the other actors. Moreover, their actions are optimised for the local maxima of their own return, despite there very possibly being a higher return available as a share of the returns should the Innovation be used _to its full potential_. We believe that their own return at global maxima is higher than at their local maxima.
 
 We believe that this is due to the practice of having to agree ahead of time what the relative Dispersal of benefits from the Innovation will be, and the fear that the benefit of the actual Contribution each actor makes may go elsewhere. Not only does this waste time and energy when the actual value is unknown, it restricts all from putting in the full measure of the effort that they believe the idea deserves.
 
@@ -22,7 +21,7 @@ No one can possibly know with certainty the value of that any particular Contrib
 
 Our intent is to solve this inefficiency by creating an Algorithmic Cap Table, where all Contributions are recorded, and where the benefits of the Innovations produced are distributed fairly and transparently based on those Contributions once there impact is actualy known.
 
-We expect, when this problem is solved, that the result will be a highly efficient and attractive Innovation environment that may outcompete traditional Innovation in terms of speed to market and the financial returns on the time and money employed.
+We expect, when this problem is solved, that the result will be a highly efficient and attractive Innovation environment that will outcompete traditional Innovation in terms of speed to market and the financial returns on the time and money employed.
 
 ## Tactical Intent
 
@@ -34,7 +33,23 @@ We assume that, given the likely granularity and fidelity required, the Strategi
 4. A method that assures Dispersal of those benefits as they become available, including any benefits arising from the sale of rights or ultimate ownership.
 5. Intrinsically and actively maintains the confidence of all Users.
 6. Contains within its structure the ability to change and adapt when improvements that better meet the Strategic Intent are identified.
-7. A method of allowing Users of the System to enter into agreements with other Users that algorithmically control parts of the System in a Contract, without the capacity to override any of the above Tactical Intents.
+7. A method of self governance that allows Users of the System to enter into agreements with other Users that algorithmically control parts of the System in a Contract, without the capacity to override any of the above Tactical Intents.
+
+### Definition of Done
+
+1. We will know that this is done when the first 3 projects are set up and running, choosing this System over the traditional System on purely Smithian Rational Agent grounds. This would include for each project:
+
+   1. External investment, willing to use the System as a means of return on capital employed.
+   1. A team of Contributors, willing to work on a project under this System, possibly under a System whereby they reduce their call for pay in return for partial ownership of their contribution with investors.
+   1. Fair attribution for contributions made to the project by authors not yet on the System, but who nevertheless are owed for their work.
+   1. A customer willing to hire a team on the System, under the legal structures in place, and possibly willing to allow the asset generated to be used by others within the Contribution System described above.
+
+1. To the satisfaction of at least 4 Users, the system allows their activities to be rolled up into Contributions, and records it in a manner where original Ownership can be proven. Specifically, this is proven by:
+
+   1. One or more Investors willing to deploy capital into the System as part of a Contract with a User, where some or all of the Benefits of that Contribution are owed to that Investor and that Investor is content with the protection that the record provides.
+   1. One or more Users who contributes permissionless Labour (ie without a Contract), and is content with the protection that the record provides in proving their ownership.
+   1. The recording of external Contributions of non-Users, where QA agree that these external Contributions are not assigned to a User, and a process exists that can Attribute them to a new User in due course.
+   1. The recording of activity that does not result in a gitHub Commit, but which nevertheless has made a Contribution and which other Contributors to the initial Innovation are content as being equivalent to a commit in terms of Governance.
 
 ## Detailed Description
 
@@ -42,7 +57,7 @@ We assume that, given the likely granularity and fidelity required, the Strategi
 
 ![Anime-Beautiful_Recording of Contributions](/nfts/RecordingOfContributions.png)
 
-In order to record all Contributions of any sort to an Innovation, we beleive the following properties are required:
+In order to record all Contributions of any sort to an Innovation, the following properties are required:
 
 #### Must
 
@@ -66,6 +81,10 @@ In order to record all Contributions of any sort to an Innovation, we beleive th
 
 1. In any way allow the record of Contributions to be lost, corrupted or changed.
 
+#### Done
+
+To the satisfaction of at least 4 Users, demonstrate that the system records all Activity that they personally believe they have carried out, that timestamps are in place, and that all 4 agree that the raw data recorded is a true and accurate reflection of their individual activity over a period of not less than 7 days.
+
 ### Tactical Intent 2: Assessment of Contributions
 
 ![Anime-Beautiful_AssessmentOfContributions](/nfts/AssessmentOfContributions.png)
@@ -76,6 +95,7 @@ In order to fairly assess the value of each Contribution relative to each other,
 
 1. Have a method of pulling together all Contributions made at any point in time in order to build a set of Contributions that assessed can be assessed as a batch.
 1. Have a method of comparing relative Contributions to generate a dynamic Cap Table for use in Dispersal.
+1. Contain a workflow which records the transfer of all or partial rights and ownership of a Contribution, and which restricts the permissions of such a transfer to the current Owner, or to a Contract agreed by the Owner.
 
 #### Should
 
@@ -89,6 +109,16 @@ In order to fairly assess the value of each Contribution relative to each other,
 #### Must not
 
 1. Allow for a manual or algorithmic Assessment that is not visible to the Contributors involved. (No smoke-filled back-room deals.)
+
+#### Done
+
+To the satisfaction of at least 4 Users, demonstrate that the system can recall on demand all Contributions such that it is known:
+
+1. Which User Owns which Contribution.
+1. What the content of that Contribution was.
+1. What the overall state of the Innovation was at the time of the Contribution being recorded.
+1. What the process or algoithm, Governance, Comments and deliberation (if any) was that allowed the activity to be accepted as a Contribution to a particular Innovation.
+1. on demand provide a trace of beneficial ownership to be indelibly recorded and followed, and recreated for any particular point in time
 
 ### Tactical Intent 3: Recording of Financial Value generated
 
@@ -163,6 +193,10 @@ In order to maintain the confidence of the Users that they are participating in 
 
 1. Obscure, alter or redact any information about the System which is pertinent to a User making their judgement call as to whether or not to be confident in its operation.
 
+#### Done
+
+The operation of that system of record is accepted by at least 1 external auditor as being incapable of being lost, corrupted or changed, with the external auditor's report being recorded for all Users to inspect.
+
 ### Tactical Intent 6: Self-Improvement
 
 ![Anime-Beautiful_SelfImprovement](/nfts/SelfImprovement.png)
@@ -211,4 +245,3 @@ In order for the System to be useful beyond the automated processes, it's necess
 
 1. Imply that the services provided in the System override any real-world obligations or laws.
 1. Allow any Contracts or User generated algorithms to override the Core Functionality in the Strategic and Tactical Intent that others assume is in place and rely on.
-
