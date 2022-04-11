@@ -22,13 +22,14 @@
 4. Idea - Dreamcatcher
 5. Request - Funding
 6. Idea - Funding
-7. Request - DPL Legal docs made legal
-8. Idea - DPL Legal docs made legal
-9. Request - CRM for business up creation
-10. Request - Law Machine
-11. Request - Interblock supporting material
-12. Request - Dreamcatcher supporting material
-13. Idea - Law Machine
-11. Idea - Interblock supporting material
-12. Idea - Dreamcatcher supporting material
+7. Request->Idea->Project documentation
+8. Request - DPL Legal docs made legal
+9. Idea - DPL Legal docs made legal
+10. Request - CRM for business up creation
+11. Request - Law Machine
+12. Request - Interblock supporting material
+13. Request - Dreamcatcher supporting material
+14. Idea - Law Machine
+15. Idea - Interblock supporting material
+16. Idea - Dreamcatcher supporting material
 
