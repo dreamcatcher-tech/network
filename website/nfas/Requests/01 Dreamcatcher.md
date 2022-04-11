@@ -1,7 +1,3 @@
----
-slug: /
----
-
 ## Strategic Intent
 
 ![Anime-Beautiful_DreamcatcherAlgorithmicCapTable](/nfts/DreamcatcherAlgorithmicCapTable.png)
