@@ -42,9 +42,16 @@ To convince investors as to the opportunity to invest, we believe that we need t
 
 1. Be in any way misleading in terms of what will be produced with this round of investment vs what the future may hold after that.
 
+#### Done
+
+1. A test pitch to three 'friendly' potential investors who will give us full and fair feedback, with that feedback being incorporated into the pitch.
+1. Three real-life investment pitches where feedback is such that the QA Authority believes they understood the value proposition and has gained feedback to that end on the proposed legal structure.
+
 ### Tactical Intent 2: Take in Investment.
 
-To take in investment, we believe that we need a legal vehicle in place which Investors can have confidence in. The properties of this legal vehicle are that it:
+To take in investment, we believe that we need a legal vehicle in place which Investors can have confidence in.
+We believe that if the structure does not clearly identify itself as being of a known type (Company, Co-op, e.g.) in the key jurisdictions, we're likely at some point to be forced into one of those definitions and may face retrospective legal action against us.
+The properties of this legal vehicle are that it:
 
 #### Must
 
@@ -62,6 +69,7 @@ To take in investment, we believe that we need a legal vehicle in place which In
 1. Be reinvestable in continuously, for those who want to enter later
 1. Be attractive to investors in order to make fundraising as fast as possible.
 1. Be understandable to the investors as part of a 30 minute pitch deck.
+1. Pick a clear legal bucket to be classified as, lest classification be chosen for us.
 
 #### Could
 
@@ -73,6 +81,14 @@ To take in investment, we believe that we need a legal vehicle in place which In
 1. Break the ethos of the Dreamcatcher, in that its articles embody transparency, fairness, etc.
 1. Permit any naive investors to put their money in
 1. Offer any form of ownership or control other than NFAs and remaining funds
+
+#### Done
+
+1.  Internal Proposal for 2-3 possible structures that satisfy the description, with anticipated problems highlighted and a comparison table between them. This Stagegate will be considered done when this proposal is sufficient to make a decision on which structure to implement.
+1.  The legal entity chosen and validated is set up and ready to accept investment.
+1.  We will know that this is done when we have $500k in the bank, and can deploy that as we see fit in developing the Dreamcatcher, can attract 1-10 investors, each investing $50k to $200k, in a vehicle where they feel that their investment will be intelligently deployed and will attract a return.
+1.  The signatures on the legal contracts from the internal team, signifying that they are individually content to work under Ambient Attribution.
+1.  Incorporation of the legal contracts within the articles of the legal vehicle, and therefore acceptance by the investors to work under Ambient Attribution.
 
 ### Tactical Intent 3: Spend the Treasury on NFAs.
 
@@ -94,6 +110,12 @@ To be able to effectively spend the Treasury on NFAs we need to be able to hold 
 #### Must not
 
 1. Fall foul of the financial laws of the jurisdiction in which the vehicle is based.
+
+#### Done
+
+1. The signatures on the legal contracts from the internal team, signifying that they are individually content to work under those contracts for direct payments. First payment under this paid out for work carried. The recording on Contributions beyond that payout (ie partial funding for the work and split ownership.)
+1. Incorporation of the legal contracts within the articles of the legal vehicle, and therefore acceptance by the investors to work under that same legal structure. First tranche of investment transferred to the legal vehicle for that use.
+1. Validation of wider utility through the first signature of a non-internal team Contributor.
 
 ### Tactical Intent 4: Disburse the benefits arising.
 
@@ -136,4 +158,3 @@ To be an authentic Dreamcatcher fundraising method, it must be possible to reuse
 #### Must not
 
 1. Break laws in the nominated majority jurisdictions
-
