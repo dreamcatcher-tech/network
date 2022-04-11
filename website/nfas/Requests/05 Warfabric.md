@@ -211,14 +211,3 @@ The first duty of command is to identify what can be done, ie what opportunities
 #### Must not
 
 1. 
-
-## Further Guidance
-
-### Offer
-
-#### Expected Budget
-
-#### Due Date
-
-## QU Authority
-
