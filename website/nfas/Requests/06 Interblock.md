@@ -31,9 +31,3 @@ Produce a 'universal computer' with the following properties:
 ## Offer
 
 ### Timeline
-
-## Log
-
-| Date       | Duration (hrs) | Contributor | Description                      |
-| ---------- | -------------- | ----------- | -------------------------------- |
-| 2022-04-10 | 0.5            | SM          | Creation of the strategic intent |

@@ -40,7 +40,3 @@ E.g. My house is on fire. I need it put out. Timeline 10-20 mins.
 My company needs X. I've got to make a decision in 2-4 weeks.
 
 NB it's not th timeline for the production of the Idea into code. That's down to the Request:Idea Contract to sort out.
-
-## Log
-
-A log of the time and effort that has gone into initially producing this doc, and subsequently honing this doc to reach Request:Idea lock.
