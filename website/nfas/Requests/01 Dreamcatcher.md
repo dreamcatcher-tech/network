@@ -1,3 +1,7 @@
+---
+slug: /
+---
+
 ## Strategic Intent
 
 ![Anime-Beautiful_DreamcatcherAlgorithmicCapTable](/nfts/DreamcatcherAlgorithmicCapTable.png)
@@ -351,8 +355,6 @@ on demand provide a trace of beneficial ownership to be indelibly recorded and f
 ...
 
 ## Dependencies
-
-## Definitions
 
 Contribution
 Owner
