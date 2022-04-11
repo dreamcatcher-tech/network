@@ -64,16 +64,4 @@ The App would have the following characteristics:
 #### Must not
 
 
-## Offer
-
-### Timeline
-
-## Definitions
-
-
-## Log
-
-| Date | Duration (hrs) | Contributor | Description |
-| -- | -- | -- | -- |
-| 2022-04-10 | 2 | SM | Creation of the strategic and tactical intent |
 
