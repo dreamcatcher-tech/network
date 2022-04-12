@@ -13,6 +13,9 @@ Produce a 'universal computing surface' with the following properties:
 1. Provides a persistent data store that cannot, reasonably, be deleted or corrupted without compromising multiple nodes.
 1. Provides a method for users to interact with the system in a manner that may be anonymous, but nevertheless in which key holders can prove ownership/identification on the network.
 1. Provides a computing surface on which others can write and run Apps without centralised permission, but with permission of the user running the Apps.
+1. Provides the option for privacy at rest through encryption, and enforces encryption in transit.  
+1. Allows for the creation of groups and the control of membership of a group through the governance agreed by that group.  Within a group, privacy is ensured through an effective 'walled garden', where only those in a group have visibility of that group's chains', access to the discovery of those chains and the locations of nodes in use by that group.  This effectively limits network traffic analysis to within a group.
+1. Provides the option of joining a public group where membership is not controlled, and therefore network traffic analysis may be carried out (although the option remains to encrypt at rest and traffic is always encrypted.)
 
 ## Tactical Intent
 
