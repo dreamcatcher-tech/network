@@ -113,7 +113,7 @@ The locked forward NFA has its ownership fractionalized amongst all the pool hol
 
 ### Delivery
 
-Once a Forward NFA is realized, it converts to a Completed NFA, which will show up in the accounts of the holders with the logo that was chosen for it initially. Code contributors see a similar logo based view for projects they committed to.
+Once a Forward NFA is realized, it converts to a Completed NFA, which will show up in the accounts of the holders with the logo that was chosen for it initially. Code contributors see a similar logo based view for projects they committed to. We should end up with a list of outputs that looks similar to the history of the [RFCs that made the internet](https://en.wikipedia.org/wiki/List_of_RFCs)
 
 ## Functionality
 
