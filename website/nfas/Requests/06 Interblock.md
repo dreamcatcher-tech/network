@@ -1,6 +1,6 @@
 ## Strategic Intent
 
-Produce a 'universal computing surface' with the following properties:
+Produce a 'universal computing surface' designed for Object Oriented Programming where those Objects are Serverless.
 
 1. Runs on a distributed network of small devices, such as phones.
 1. Does not require any centralised back-end servers.
@@ -13,20 +13,29 @@ Produce a 'universal computing surface' with the following properties:
 1. Provides a persistent data store that cannot, reasonably, be deleted or corrupted without compromising multiple nodes.
 1. Provides a method for users to interact with the system in a manner that may be anonymous, but nevertheless in which key holders can prove ownership/identification on the network.
 1. Provides a computing surface on which others can write and run Apps without centralised permission, but with permission of the user running the Apps.
-1. Provides the option for privacy at rest through encryption, and enforces encryption in transit.  
-1. Allows for the creation of groups and the control of membership of a group through the governance agreed by that group.  Within a group, privacy is ensured through an effective 'walled garden', where only those in a group have visibility of that group's chains', access to the discovery of those chains and the locations of nodes in use by that group.  This effectively limits network traffic analysis to within a group.
-1. Provides the option of joining a public group where membership is not controlled, and therefore network traffic analysis may be carried out (although the option remains to encrypt at rest and traffic is always encrypted.)
+1. Allows for the creation of groups and the control of membership of a group through the governance agreed by that group. Within a group, privacy is ensured through an effective 'walled garden', where only those in a group have visibility of that group's chains', access to the discovery of those chains and the locations of nodes in use by that group. This effectively limits network traffic analysis to within a group.
+1. Provides the option of joining a public group where membership is not controlled, and therefore network traffic analysis may be carried out
 
 ## Tactical Intent
 
+1. Privacy of participants is controlled by permissions set within the Objects
+1. Developer Experience is simple and quick to learn
+
 ## Detailed Description
 
-### Tactical Intent 1: Title here
+### Tactical Intent 1: Privacy of Participants
 
 #### Must
+
+1. Encrypt all data at rest
+1. Encrypt all data in flight
 
 #### Should
 
 #### Could
 
 #### Must not
+
+1. Confirm or Deny the existence of an Object if the requester has no permission to access the object
+1. Leak metadata about other Objects that are connected to any given Object that the attacker has a connection to
+1. Leak info about what Objects a participant is accessing to those without access to each Object
