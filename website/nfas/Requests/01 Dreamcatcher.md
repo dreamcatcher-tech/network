@@ -19,13 +19,13 @@ We believe that this is due to the practice of having to agree ahead of time wha
 
 No one can possibly know with certainty the value of that any particular Contribution will make.
 
-Our intent is to solve this inefficiency by creating an Algorithmic Cap Table, where all Contributions are recorded, and where the benefits of the Innovations produced are distributed fairly and transparently based on those Contributions once there impact is actualy known.  We intend to do this by putting in a system of proof of ownership at a granualar level and generating that Cap Table on the fly for each distribution of benefits that arise from the product or products that the Contribution was used in.
+Our intent is to solve this inefficiency by creating an Algorithmic Cap Table, where all Contributions are recorded, and where the benefits of the Innovations produced are distributed fairly and transparently based on those Contributions once there impact is actually known. We intend to do this by putting in a system of proof of ownership at a granular level and generating that Cap Table on the fly for each distribution of benefits that arise from the product or products that the Contribution was used in.
 
 We expect, when this problem is solved, that the result will be a highly efficient and attractive Innovation environment that will outcompete traditional Innovation in terms of speed to market and the financial returns on the time and money employed.
 
 ## Tactical Intent
 
-We assume that, given the likely granularity and fidelity required, the Strategic Intent is best met by building an App on [Interblock](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Requests/06%20Interblock.md) and so which inherits Interblock's capabilities to provide a trusted, distributed System, granular system.  This App would have the following properties:
+We assume that, given the likely granularity and fidelity required, the Strategic Intent is best met by building an App on [Interblock](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Requests/06%20Interblock.md) and so which inherits Interblock's capabilities to provide a trusted, distributed, granular system. This App would have the following properties:
 
 1. A method of allowing all Contributions to be recorded. I.e what was done by whom and who provided what by providing proof of ownership to that Contribution, including trading of that proof of ownership.
 2. A method of assessing what the relative impact of each individual Contribution, including additional improvements as they are made over time.
@@ -35,13 +35,13 @@ We assume that, given the likely granularity and fidelity required, the Strategi
 6. Contains within its structure the ability to change and adapt when improvements that better meet the Strategic Intent are identified.
 7. A method of self governance that allows Users of the System to enter into agreements with other Users that algorithmically control parts of the System through a Contract, without the capacity to override any of the above Tactical Intents.
 8. A method of publishing and advertising of problems and solutions to those problems, and Contracting between the two.
-10. A method to publish and provide solutions which do not refer directly to published problems, but which can still be used by others with benefits arrising.  This is expected to need the provision of an extension of the base license with detailed license conditions.
-11. A method of negotiating contracts or providing licenses for:
-    1.  The use of solutions within other solutions (ie nesting)
-    2.  The use of solutions to meet or partly meet problems.
-    3.  The execution of solutions not yet created to meet the needs of problems.
-1. A marketplace in which proofs of ownership can be traded after-market.
-2. A method to provide capital in a pool, with governance agreed and enfored algorithmically, and for the use of that capital to either purchase proofs of ownership in existing solutions or to fund the development of solutions that do not yet exist.  This capital pool will require integration with the contracting function and therefore with problem, solution, development, QA, publication, escrow, dispersal and reuse/improvement.
+9. A method to publish and provide solutions which do not refer directly to published problems, but which can still be used by others with benefits arrising. This is expected to need the provision of an extension of the base license with detailed license conditions.
+10. A method of negotiating contracts or providing licenses for:
+    1. The use of solutions within other solutions (ie nesting)
+    2. The use of solutions to meet or partly meet problems.
+    3. The execution of solutions not yet created to meet the needs of problems.
+11. A marketplace in which proofs of ownership can be traded after-market.
+12. A method to provide capital in a pool, with governance agreed and enforced algorithmically, and for the use of that capital to either purchase proofs of ownership in existing solutions or to fund the development of solutions that do not yet exist. This capital pool will require integration with the contracting function and therefore with problem, solution, development, QA, publication, escrow, dispersal and reuse/improvement.
 
 ### Definition of Done
 
@@ -78,7 +78,7 @@ In order to record all Contributions of any sort to an Innovation, the following
 1. Allow the results of that work to be incorporated into other Innovations while maintaining the rights of the owner (not necessarily the author if the proof of ownership has been sold) to their share of the benefits that this re-use may bring.
 1. Allow for partial ownership or benefit from a Contribution between Users, e.g. for use where a Contract is in place that splits the benefit of work down between the author and another who funded that author to do the work. (Fractional ownership.)
 1. Allow for the transfer of part or all of a Contributions based on a pre-agreed Contract between Users.
-2. Record the use of the contribution of pre-existing solutions within new solutions, and honour the disperal based on the contract/license agreed for it's use.
+1. Record the use of the contribution of pre-existing solutions within new solutions, and honour the dispersal based on the contract/license agreed for it's use.
 
 #### Could
 
@@ -237,7 +237,7 @@ In order to provide the ability for the System to change and adapt when improvem
 
 In order for the System to be useful beyond the automated processes, it's necessary to allow Users of the System to discover problems that need to be solved, offer solutions to those problems, enter into Contracts (mutual agreements) that lock these two and which can be enforced within the System, and be confident that if the work is carried out, the Contract will be honoured.
 
-This also implies some method of proof of ownership for each Contribution, including the problem and solution, the contract and the outputs from the project.  That proof of ownership should act as an asset itself, be tradeable, have rights (such as beneficial financial rights) attached to it, and allow for fractional ownership.
+This also implies some method of proof of ownership for each Contribution, including the problem and solution, the contract and the outputs from the project. That proof of ownership should act as an asset itself, be tradeable, have rights (such as beneficial financial rights) attached to it, and allow for fractional ownership.
 
 To do that, we believe the following properties are required:
 
@@ -245,17 +245,17 @@ To do that, we believe the following properties are required:
 
 1. Provide a System of trust, backed up in a common agreement or agreements, that allow two Users to interact with confidence that the other party will act in good faith in accordance with that agreement. This includes the indelible publishing of the agreements by which a party is willing to be engaged, and a record of their past adherence to those agreements.
 2. Provide a method for submitting problems and solutions with an indelible payload, timestamp and which provides proof of ownership.
-5. Allow for two parties to negotiate around this problem/solution fit, reach agreement in a Contract and alter the ownership, rights or beneficial ownership of a Contribution either ahead of it being committed or after the fact, with that Contract being backed by automation which triggers on acceptance that the Contract has been fulfilled.
-6. Provide an escrow service for rights, ownership or payment that is beyond the reach of Contracting parties to alter, including through the alteration of any higher level Contracts they have agreed to be held by (e.g. regardless of Governance, Contracts are executed.)
+3. Allow for two parties to negotiate around this problem/solution fit, reach agreement in a Contract and alter the ownership, rights or beneficial ownership of a Contribution either ahead of it being committed or after the fact, with that Contract being backed by automation which triggers on acceptance that the Contract has been fulfilled.
+4. Provide an escrow service for rights, ownership or payment that is beyond the reach of Contracting parties to alter, including through the alteration of any higher level Contracts they have agreed to be held by (e.g. regardless of Governance, Contracts are executed.)
 
 #### Should
 
 1. Provide an Arbitration service for the inevitable edge cases, where it's unclear if the automated function of Escrow should be executed.
 1. Provide a method for publicising problems that need to be solved, and allow others to propose solutions to those problems.
-2. Provide a method for also publicising solutions in search of a problem.
-3. Provide a method for searching the published problems and solutions (ie discovery.)
-4. Provide a method for publicising problems that need to be solved, and allow others to propose solutions to those problems.
-2. Provide a method of publicising solutions unilaterally, ie without an explicit link to answering a problem.  This could be solutions that are yet to be built, or solutions that are already built but have certain functions and characteristics that can be potentially used to solve a problem.  
+1. Provide a method for also publicising solutions in search of a problem.
+1. Provide a method for searching the published problems and solutions (ie discovery.)
+1. Provide a method for publicising problems that need to be solved, and allow others to propose solutions to those problems.
+1. Provide a method of publicising solutions unilaterally, ie without an explicit link to answering a problem. This could be solutions that are yet to be built, or solutions that are already built but have certain functions and characteristics that can be potentially used to solve a problem.
 
 #### Could
 
@@ -267,7 +267,4 @@ To do that, we believe the following properties are required:
 
 1. Imply that the services provided in the System override any real-world obligations or laws.
 1. Allow any Contracts or User generated algorithms to override the Core Functionality in the Strategic and Tactical Intent that others assume is in place and rely on.
-2. Fall foul of Securities Laws in terms of the after-market trading of the proofs of ownership.
-
-
-
+1. Fall foul of Securities Laws in terms of the after-market trading of the proofs of ownership.
