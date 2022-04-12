@@ -110,3 +110,4 @@ Given that the behavior of Actors and NFTs within the Dreamcatcher are all contr
 #### Could
 
 1. Pay the legal professionals by each transition that gets used which depends on their advice
+1. Use a natural language processing ML model to detect securities promises in natural language
