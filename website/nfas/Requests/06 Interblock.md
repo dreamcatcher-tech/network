@@ -1,6 +1,6 @@
 ## Strategic Intent
 
-Produce a 'universal computer' with the following properties:
+Produce a 'universal computing surface' with the following properties:
 
 1. Runs on a distributed network of small devices, such as phones.
 1. Does not require any centralised back-end servers.
@@ -27,5 +27,3 @@ Produce a 'universal computer' with the following properties:
 #### Could
 
 #### Must not
-
-
