@@ -32,6 +32,8 @@ Produce a 'universal computing surface' designed for Object Oriented Programming
 
 #### Should
 
+1. Build atop of the [privacy stance of IPFS](https://docs.ipfs.io/concepts/privacy-and-encryption/#what-s-public-on-ipfs)
+
 #### Could
 
 #### Must not
