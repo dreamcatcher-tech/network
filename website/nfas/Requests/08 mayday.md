@@ -1,4 +1,6 @@
-## [courage and compassion in an emergency in the style of acrylic art](/nfts/maydayApp.png)
+![courage and compassion in an emergency in the style of acrylic art](/nfts/maydayApp.png)
+
+---
 
 "Courage and compassion are two sides of the same coin, and that every warrior, every humanitarian, every citizen is built to live with both. To win a war, to create peace, to save a life, requires of us - of every one of us - that we be both good and strong."
 
