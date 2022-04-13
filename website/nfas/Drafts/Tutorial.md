@@ -1,0 +1,65 @@
+mcnasty — Today at 10:49 AM
+@rexmondo how would you measure the DX of a particular framework ? What makes it good or bad compared to another one ? Is the best we can do to conduct a survey ?
+rexmondo — Today at 10:49 AM
+There’s some simple standard measures like cyclomatic complexity
+Also think about it like ergonomics
+You wouldn’t sit in a chair that put huge sideways pressure in your knees
+Using a dev framework that forces you to keep 1000 things in mind every time you’re writing a line is like putting strain on your brain
+I suspect it’s possible to build tests that can discriminate high mental load frameworks from low ones
+Kind of roughly counting how many dependencies, layers of contextual surrounding code, special rules exist in your average code unit
+mcnasty — Today at 11:42 AM
+so if I request "developer experience" as a requirement for Interblock, how would I know someone had met that ?
+A simple way could be to select a collection of other stacks that can be used to build an application, and just put them in order of hard to easy ?
+so it becomes a relative measurement ?
+if someone runs some metrics on a chair, I might not know what that means, but if I can sit my ass in them, I can definitely rank them in order of preference
+there was this programming site I saw a while back that implemented a bunch of simple apps, like todo list, using different dev frameworks, and used that to derive metrics for ?
+can't damn well find it tho...
+rexmondo — Today at 12:46 PM
+Yeah todo list is a great example of how devs sniff this stuff out
+There’s a standard ui for it but it’s slightly different in each framework
+It’s going to be a bit of a tougher sell with inter lock because most of the todo list implementations are client only
+I think to do a real apples to apples DX consideration you’d need to show differences in app lifecycle management including migration, scaling, refactoring
+mcnasty — Today at 12:48 PM
+maybe theres a todolist style app we can do that is for a distributed app
+as a starting point, how about a truly decentralized todo list - that starts the test at basically impossible for conventional frameworks
+rexmondo — Today at 12:49 PM
+Yes
+That’s a great idea
+mcnasty — Today at 12:50 PM
+then we can make a bunch of metrics statements about it, and make some equivalents in other blockchains
+as a good metric, wasted data % is a good one - as a client of this app, how much data am I receiving that has nothing to do with me ?
+rexmondo — Today at 12:50 PM
+I think even if it was possible in conventional frameworks but the amount of code is staggering
+mcnasty — Today at 12:51 PM
+for traditional blockchains this will be the majority of data
+then we can define some contrived lifecycle events: make the todo app be multi user, upgrade one dependency library, upgrade the framework version without bugs, scale to 10k users, simulate being slashdotted
+at each stage, include costs for infrastructure, and also for dev time
+rexmondo — Today at 12:53 PM
+Yes
+I love this
+Like a case study and a tutorial in one
+mcnasty — Today at 12:55 PM
+then torture test: netsplit, slashdotted, patch the framework, and release 1 new feature while users are offline 🤣
+like that's not that contrived, but you're testing so much more than just a code framework there - thats software supply chain integrity and availability
+rexmondo — Today at 12:58 PM
+Yeah that’s the ticket
+Instead of having those all be unaddressed future concerns that everyone answers differently, you have the answer up front
+I think fear of real world conditions holds a lot of people back from trying weird stuff in dev
+And for those of us it doesn’t, we get stung by things we didn’t see coming
+mcnasty — Today at 1:00 PM
+yeah totally
+I think the final test is how easily can you get your code written, and how much will it cost you, and how much will it cost to maintain
+those are the metrics of the dreamcatcher
+if I can take 15 minutes to drop in a spec for my todo list, $100, and review a few responses, thats the best framework of all
+plus if it automatically has people fixing bugs for me, and auto upgrading the base library after ensuring that my code executed exactly the same as it always did
+#winner
+rexmondo — Today at 1:03 PM
+Yeah man
+mcnasty — Today at 1:04 PM
+oh yeah and do all this offline too ! 😆
+distributed offline mic drop 🎙️
+rexmondo — Today at 1:04 PM
+Yeah that’s a good point
+mcnasty — Today at 1:05 PM
+if a mic drops on the internet, but no-one is connected to hear it.....
+ok well this sounds like a great case study, tutorial, spec / goal thing - I'll write it up
