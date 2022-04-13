@@ -1,5 +1,6 @@
-mcnasty — Today at 10:49 AM
-@rexmondo how would you measure the DX of a particular framework ? What makes it good or bad compared to another one ? Is the best we can do to conduct a survey ?
+## Measurement of Developer Experience
+
+how would you measure the DX of a particular framework ? What makes it good or bad compared to another one ? Is the best we can do to conduct a survey ?
 rexmondo — Today at 10:49 AM
 There’s some simple standard measures like cyclomatic complexity
 Also think about it like ergonomics
