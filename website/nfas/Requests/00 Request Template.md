@@ -16,7 +16,7 @@ You can also nest Tactical Intents.  E.g. what does it mean to get there in styl
 
 By stating the Request in this way you've done two things: first is to make clear what you're actually trying to do, second it to restrict the search space of solutions around not only what needs to be done, but the manner in which it needs to be done.  That leaves the space open for anyone to suggest solutions.  E.g get an Uber, get a lift from your mate, buy a motorbike...
 
-It also shows your thinking, because of that strategic intent.  That's important because tactics can be flexible, but strategy should be fixed.  E.g. what happens if there's foul whether stopping all travel?  The Tactical Intent can't be met.  But why not a virtual dinner instead?  That would meet your strategic intent.
+It also shows your thinking, because of that strategic intent.  That's important because tactics can be flexible, but strategy should be fixed.  E.g. what happens if there's foul weather stopping all travel?  The Tactical Intent can't be met.  But why not a virtual dinner instead?  That would meet your strategic intent.
 
 
 ## Strategic Intent
