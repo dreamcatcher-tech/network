@@ -1,6 +1,6 @@
 ## Proposal Scope
 
-<STUB>
+*THIS IS A STUB*
   
 This idea references the request at [01 Dreamcatcher.md](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Requests/01%20Dreamcatcher.md)
 
