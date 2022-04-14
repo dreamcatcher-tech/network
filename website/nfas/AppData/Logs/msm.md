@@ -18,22 +18,23 @@
 
 ## Future Work Stack Rank
 
-4. Idea - Dreamcatcher
+1. Idea - Dreamcatcher
 5. Idea - Yawp
 6. Idea - Journo
 7. Idea - Mayday
-8. Request - Funding
-9. Idea - Funding
-10. Request->Idea->Project documentation
-11. Request - DPL Legal docs made legal
-12. Idea - DPL Legal docs made legal
-13. Request - CRM for business up creation
-14. Request - Law Machine
-15. Request - Interblock supporting material
-16. Request - Dreamcatcher supporting material
-17. Idea - Law Machine
-18. Idea - Interblock supporting material
-19. Idea - Dreamcatcher supporting material
+8. Blog post on difference between strategic and tactical intent, based on compressed version in Request template.
+9. Request - Funding
+10. Idea - Funding
+11. Request->Idea->Project documentation
+12. Request - DPL Legal docs made legal
+13. Idea - DPL Legal docs made legal
+14. Request - CRM for business up creation
+15. Request - Law Machine
+16. Request - Interblock supporting material
+17. Request - Dreamcatcher supporting material
+18. Idea - Law Machine
+19. Idea - Interblock supporting material
+20. Idea - Dreamcatcher supporting material
 
 ## Unsorted
 
