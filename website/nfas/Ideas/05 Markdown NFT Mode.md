@@ -1,3 +1,5 @@
+![manual NFT hand crank Hotpot Art 3](/nfts/handcrank.png)
+
 ## Proposal Scope
 
 Targets the earliest possible stage of [01 Dreamcatcher](../Requests/01%20Dreamcatcher.md)
