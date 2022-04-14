@@ -2,7 +2,7 @@
 
 *THIS IS A STUB*
 
-Reference: [07 Journo](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Requests/09%20Journo.md)
+Reference: [09 Journo](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Requests/09%20Journo.md)
 
 Any limitations to this Idea, ie which Tactical Intents does it aim to address.
 
