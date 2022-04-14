@@ -1,3 +1,5 @@
+![tree of life next to the tree knowledge burning in an oil slick Hotpot Art 3](/nfts/interblock.png)
+
 ## Strategic Intent
 
 Produce a 'universal computing surface' designed for Object Oriented Programming where those Objects are Serverless.
