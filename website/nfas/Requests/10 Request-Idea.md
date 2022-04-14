@@ -1,0 +1,101 @@
+## Strategic Intent
+
+_<insert NFT image based on title\>_
+
+We have a concept in the Dreamcatcher about how the Request/Idea pairing should work.  We also have a number of possible App ideas floating about but not in that format.  As there's nothing stopping us testing the DC Request/Idea concept using git and .md, then we should in order to test that idea, refine it, and capture the App ideas in a more coherent way.
+
+Moreover, this will allow us to start using the DC to track our own time, and in doing so we expect forward progress to be more focused.
+
+## Tactical Intent
+
+To do this, we need to:
+
+1. Define what a Request and Idea is, the process, how it's used, what format we think it should be in and what the scope of it is (ie what it's not.)
+1. Gather the general app ideas we have and put them into that format.
+1. Record issues and notes that arise, and if those lead to proposals put those also into the Request/Idea format.
+
+## Detailed Description
+
+### Tactical Intent 1: Define what a Request and Idea is.
+
+_<insert NFT image based on title\>_
+
+#### Must
+
+1. Be consistent with the [Dreamcatcher Charter](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/docs/Dreamcatcher%20Charter.md)
+1. Test edge cases as far as we can see them.  E.g. should the DC impose a universal format, should it be imposed through QA for submission to a pool, what if it's used outwith any pool as a pure volunteer project.
+1. Work with at least two actors.
+
+#### Should
+
+1. Result in written material that can be presented on the website as future guidance to us and others.
+1. Use the NFT system envisaged.
+
+#### Could
+
+1. Integrate with the full process from start to finish.  This is likely to need a draft rough full process in order to show hand off points e.g. to becoming a project.
+1. Be tested with more than two actors.  
+
+#### Should Not
+
+1. Attempt to get to perfect, or attempt to work in serial.  That will slow down the work - we're far more likely to make progress with multiple rapid drafts.
+
+#### Must not
+
+1. Involve any documentation outwith the [DC Website Repo](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/tree/master/website) for docs, and the [DC Stack Repo](https://github.com/dreamcatcher-tech/dreamcatcher-stack)
+
+
+### Tactical Intent 2: Gather the general app ideas we have and put them into that format.
+
+_<insert NFT image based on title\>_
+
+#### Must
+
+1. Produce Result/Idea pairs of docs for the App concepts we have.
+1. Result in docs that follow our own guidelines and templates.
+1. Capture the full extent of these App concepts enough to pass our own internal QA, being "would we pass on this Request/Idea pair to a pool that we administer?"
+
+
+#### Should
+
+1. Result in written App Request/Idea pairs that can be used as examples on the website.
+1. Have NFTs issued at a suitable granularity.
+
+#### Could
+
+1. Extend or test the content of those App concepts, although this is not the primary aim.
+
+#### Should Not
+
+1. Expand on the App concepts we have at the moment - we've enough, we're trying to define and use the process.
+
+#### Must not
+
+1. Intentionally blank
+
+### Tactical Intent 3: Record issues and notes that arise, and if those lead to proposals put those also into the Request/Idea format.
+
+_<insert NFT image based on title\>_
+
+#### Must
+
+1. As issues arise, record and discuss those issues over git.
+1. Where relevant, generate stub blog posts or Issues to alter other parts of the documentation.
+1. Where issues generate further work to be done, cascade those into their own Request/Idea pairs.
+
+#### Should
+
+1. Test edge cases. Although not all edge cases need solutions, potential solutions should be identified as not being at odds with the generated process.
+1. Provide data on time taken on each asset produced, and issue discussed, in a manner that possibly could be retrofitted into ambient attribution.
+
+#### Could
+
+1. Intentionally blank.
+
+#### Should Not
+
+1. Intentionally blank.
+
+#### Must not
+
+1. Record issues or notes outside of the [DC Website Repo](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/tree/master/website).
