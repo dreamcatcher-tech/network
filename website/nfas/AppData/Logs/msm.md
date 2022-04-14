@@ -22,7 +22,7 @@
 5. Idea - Yawp
 6. Idea - Journo
 7. Idea - Mayday
-8. Blog post on difference between strategic and tactical intent, based on compressed version in Request template.
+8. Blog post on difference between strategic and tactical intent, based on compressed version in Request template.  See [Strategic Intent and Tactical intent are not defined #26](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/issues/26)
 9. Request - Funding
 10. Idea - Funding
 11. Request->Idea->Project documentation
