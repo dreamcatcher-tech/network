@@ -18,8 +18,8 @@
 
 ## Future Work Stack Rank
 
-1. Idea - Dreamcatcher
-5. Idea - Yawp
+1. Idea - [Dreamcatcher](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/01%20Dreamcatcher.md)
+5. Idea - [07 Yawp](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/07%20Yawp.md)
 6. Idea - Journo
 7. Idea - Mayday
 8. Blog post on difference between strategic and tactical intent, based on compressed version in Request template.  See [Strategic Intent and Tactical intent are not defined #26](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/issues/26)
