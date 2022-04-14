@@ -1,11 +1,9 @@
 ## Proposal Scope
 
-*THIS IS A STUB*
-  
-This idea references the request at [07 Yawp.md](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Requests/07%20yawp.md)
+_THIS IS A STUB_
 
+This idea references the request at [07 Yawp.md](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Requests/R07%20yawp.md)
 
-  
 Any limitations to this Idea, ie which Tactical Intents does it aim to address.
 
 ## Proposed Approach
@@ -17,5 +15,3 @@ Although freetext initially, in order to get Request:Idea lock (and therefore a 
 ## Proposed Output
 
 This section covers what the Asset to be produced is. Ie what is QA considering when it's being asked to release escrow?
-
-

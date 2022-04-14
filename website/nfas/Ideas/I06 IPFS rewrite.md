@@ -2,7 +2,7 @@
 
 ## Proposal Scope
 
-Targets [06 Interblock](../Requests/06%20Interblock.md) in all areas except privacy.
+Targets [06 Interblock](../Requests/R06%20Interblock.md) in all areas except privacy.
 
 Because we have chosen to have a payload layer, and because our design treats all blocks as part of that payload layer, we are a seamless fit for IPFS which aims to be purely a payload layer. IPFS would be responsible for replacing our storage layer and network layer, which is an enormous amount of complexity that we can leverage from a popular and funded project.
 
