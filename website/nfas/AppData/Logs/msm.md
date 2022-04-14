@@ -12,6 +12,9 @@
 | 2022-04-12 | 4     | [06 Interblock](../../Requests/06%20Interblock.md)                                                                                                    | Response to [06 Interblock.md does not mention privacy](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/issues/22)              |
 | 2022-04-12 | 6     | [01 Dreamcatcher](../../Requests/01%20Dreamcatcher.md)                                                                                                | Response to [01 Dreamcatcher.md does not mention NFTs](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/issues/21)               |
 | 2022-04-12 | 2     | [01 Dreamcatcher](../../Requests/01%20Dreamcatcher.md)                                                                                                | Response to [QA for Requests and Ideas, independent of QA of output](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/issues/20) |
+| 2022-04-13 | 2            | [How can we mark a Request as passed by QA ? #28](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/issues/28) | Response |
+| 2022-04-13 | 2            | [Strategic Intent and Tactical intent are not defined #26](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/issues/26) | Response |
+| 2022-04-13 | 6            | [00 Request Template](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Requests/00%20Request%20Template.md) | Detailed the guidance on Strategic and Tactical intent |
 
 ## Future Work Stack Rank
 
