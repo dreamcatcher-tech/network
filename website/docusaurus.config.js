@@ -32,6 +32,12 @@ module.exports = {
           label: 'NFAs',
           position: 'left',
         },
+        {
+          to: 'pool/',
+          activeBasePath: 'pool',
+          label: 'Pool',
+          position: 'left',
+        },
         // {
         //   label: 'API',
         //   type: 'doc',
@@ -133,6 +139,19 @@ module.exports = {
         path: 'nfas',
         routeBasePath: 'nfas',
         sidebarPath: require.resolve('./sidebarsNFAs.js'),
+        editUrl:
+          'https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/edit/master/website/',
+        remarkPlugins,
+        sidebarCollapsed: false,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'pool',
+        path: 'pool',
+        routeBasePath: 'pool',
+        sidebarPath: require.resolve('./sidebarsPool.js'),
         editUrl:
           'https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/edit/master/website/',
         remarkPlugins,
