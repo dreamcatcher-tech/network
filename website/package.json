@@ -10,7 +10,8 @@
     "deploy": "dotenv docusaurus deploy",
     "serve": "docusaurus serve",
     "clear": "docusaurus clear",
-    "devto": "dev-to-git"
+    "devto": "dev-to-git",
+    "resize": "rm static/nfts/*ico* && node node_modules/resize-cli/dist/index.js static/nfts/* -w 32 -s .ico -o static/nfts/"
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-beta.18",
@@ -46,5 +47,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io.git"
+  },
+  "devDependencies": {
+    "resize-cli": "^0.0.4"
   }
 }
