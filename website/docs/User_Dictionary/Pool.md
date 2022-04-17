@@ -4,6 +4,6 @@ The entrance authority is QA. The QA may consist of a group of other QAs or it m
 For the first version of Pool that we will launch, entrance is determined as:
 
 1. A QA authority is selected for the pool that is external to the pool operators
-1. For an Request to be included, it must follow the format in the [R00 Request Template](../../nfas/Requests/R00%20Request%20Template) and be approved by QA
-1. For an Idea to be included, it must follow the format in the [I00 Idea Template](../../nfas/Ideas/I00%20Idea%20Template) and be approved by QA
+1. For an Request to be included, it must follow the format in the [R00 Request Template](../../nfas/Requests/R00) and be approved by QA
+1. For an Idea to be included, it must follow the format in the [I00 Idea Template](../../nfas/Ideas/I00) and be approved by QA
 1. For NVN to enter the pool, the owners must have passed KYC verification and the source of funds deemed clear of any illegal activity.

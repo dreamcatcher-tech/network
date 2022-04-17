@@ -38,11 +38,6 @@ module.exports = {
           label: 'Pool',
           position: 'left',
         },
-        // {
-        //   label: 'API',
-        //   type: 'doc',
-        //   docId: 'Tweets',
-        // },
         { to: 'blog', label: 'Blog', position: 'left' },
         {
           label: 'Apps',
@@ -113,14 +108,12 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl:
             'https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/edit/master/website/',
           remarkPlugins,
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
           editUrl:
             'https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/edit/master/website/',
           blogSidebarCount: 'ALL',

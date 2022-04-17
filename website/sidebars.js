@@ -24,7 +24,6 @@ module.exports = {
         'wp_appstore',
       ],
     },
-    // Features: ['mdx'],
     { type: 'doc', id: 'spec/Specification' },
     {
       type: 'category',
@@ -86,5 +85,4 @@ module.exports = {
       ],
     },
   ],
-  // api: [{ type: 'category', label: 'API', collapsed: false, items: [] }],
 }
