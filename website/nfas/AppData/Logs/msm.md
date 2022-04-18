@@ -25,6 +25,8 @@
 | 2022-04-18 | 3     | [I05](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I05.md) - Markdown NFT Mode | [Passing Pool QA and forking](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/issues/34) |
 | 2022-04-18 | 2     | [I11](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I11.md) - Request-Idea | Creation of the first output object in advance of acceptance by DC Pool QA |
 | 2022-04-18 | 2            | [R10](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/edit/master/website/nfas/Requests/R10.md) Request/Idea| Edits to link Request/Idea cycle back to [R01](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Requests/R01.md) - Dreamcatcher of which it's a part and to get bootstrapping wording right.  |
+| 2022-04-18 | 1            | [R10](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/edit/master/website/nfas/Requests/R10.md) Request/Idea| Edits to link [R10](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/edit/master/website/nfas/Requests/R10.md) to cycle back to [R01](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Requests/R01.md) - Dreamcatcher of which it's a part and to get bootstrapping wording right.  |
+| 2022-04-18 | 6            | [R10](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/edit/master/website/nfas/Requests/R10.md) Request/Idea| Process for many-to-many Requests-Ideas, and addition of wrapper (Proposal?)  See (https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/issues/31)
 
 ## Future Work Stack Rank
 
