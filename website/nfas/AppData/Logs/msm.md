@@ -22,7 +22,7 @@
 | 2022-04-14 | 1     | [How does the nesting of Requests and Ideas work in practice? #31](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/issues/31)        | Issue raised                                                                                                                                                                  |
 | 2022-04-14 | 1     | [The naive numbering for Requests and Ideas are already clashing #30](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/issues/30)     | Issue raised 
 | 2022-04-17 | 4     | [I11](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I11.md) - Request-Idea| Creation |
-| 2022-04-18 | 3     | [I05](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I05.md) - Markdown NFT Mode | Passing Pool QA and forking |
+| 2022-04-18 | 3     | [I05](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I05.md) - Markdown NFT Mode | [Passing Pool QA and forking](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/issues/34) |
 | 2022-04-18 | 2     | [I11](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I11.md) - Request-Idea | Creation of the first output object in advance of acceptance by DC Pool QA |
 | 2022-04-18 | 2            | [R10](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/edit/master/website/nfas/Requests/R10.md) Request/Idea| Edits to link Request/Idea cycle back to [R01](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Requests/R01.md) - Dreamcatcher of which it's a part and to get bootstrapping wording right.  |
 
