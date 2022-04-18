@@ -23,16 +23,19 @@
 | 2022-04-14 | 1     | [The naive numbering for Requests and Ideas are already clashing #30](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/issues/30)     | Issue raised 
 | 2022-04-17 | 4     | [I11](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I11.md) - Request-Idea| Creation |
 | 2022-04-18 | 4     | [I05](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I05.md) - Markdown NFT Mode | Passing Pool QA and forking |
+| 2022-04-18 | 2     | [I11](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I11.md) - Request-Idea | Creation of the first output object in advance of acceptance by DC Pool QA |
 
 ## Future Work Stack Rank
 
-1. Idea - [Dreamcatcher](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I01.md)
-2. Idea - [07 Yawp](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I07.md)
-3. Idea - [09 Journo](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Requests/R09.md)
-4. Idea - [08 Mayday](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I08.md)
-5. Blog post on difference between strategic and tactical intent, based on compressed version in Request template. See [Strategic Intent and Tactical intent are not defined #26](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/issues/26)
-6. Request - [02 Funding](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Requests/R02.md)
-7. Idea - [02 Funding](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I02.md)
+1. [I11](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I11.md) - Request-Idea
+2. [R10](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Requests/R10.md) - Request-Idea
+3. Idea - [Dreamcatcher](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I01.md)
+4. Idea - [07 Yawp](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I07.md)
+5. Idea - [09 Journo](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Requests/R09.md)
+6. Idea - [08 Mayday](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I08.md)
+7. Blog post on difference between strategic and tactical intent, based on compressed version in Request template. See [Strategic Intent and Tactical intent are not defined #26](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/issues/26)
+8. Request - [02 Funding](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Requests/R02.md)
+9. Idea - [02 Funding](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I02.md)
 
 ## Unsorted
 
