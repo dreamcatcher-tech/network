@@ -34,7 +34,7 @@
 | 2022-04-20 | 8            | [R10](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/edit/master/website/nfas/Requests/R10.md) Request/Idea| Getting it over the line |
 | 2022-04-20 | 8            | [I11](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/edit/master/website/nfas/Requests/R10.md) Request/Idea| Complete rewrite reflecting R10 discussion this morning  |
 | 2022-04-21 | 4            | [I11](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/edit/master/website/nfas/Requests/R10.md) Request/Idea| [QA Review of rewrite](https://youtu.be/oUGyXxIoscM)  |
-| 2022-04-20 | 8            | [I11](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/edit/master/website/nfas/Requests/R10.md) Request/Idea| Implementation of QA Review points  |
+| 2022-04-20 | 8            | [I11](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/edit/master/website/nfas/Requests/R10.md) Request/Idea| Implementation of QA Review points for resubmission |
 
 ## Future Work Stack Rank
 
