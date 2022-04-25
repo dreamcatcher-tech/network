@@ -33,3 +33,5 @@ This page is intended to be an ordered list of the headlines and tweets that bes
 > Where have all the da Vincis gone? They're still here, just drowned out. Let's get them together. #Dreamcatcher
 
 > Innovation v1.0 - installed 20 March 1602. Innovation v2.0 available. Do you want to upgrade? (Y/n) #Dreamcatcher
+
+> **Full Object Lifecycle** Persistent updating of contribution provenance in every object state change
