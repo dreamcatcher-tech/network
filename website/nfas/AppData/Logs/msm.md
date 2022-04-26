@@ -38,7 +38,9 @@
 | 2022-04-21 | 1            | [I11](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I11.md)) Request/Idea| [Escrowing Process #38](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/issues/38) |
 | 2022-04-21 | 2            | [I11](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I11.md) Request/Idea| [Removing and Changing Requests - Ideas #39](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/issues/39) |
 | 2022-04-21 | 2            | [I11](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I11.md)) Request/Idea| [Describing the concept of Pool and Escrow #40](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I11.md) |
-
+| 2022-04-21 | 2            | [I11](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I11.md)) Request/Idea| [Describing the concept of Pool and Escrow #40](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I11.md) |
+| 2022-04-25 | 7            | [I11](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I11.md)) Request/Idea| Update to I11 following QA feedback |
+| 2022-04-25 | 6            | [I11](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I11.md)) Request/Idea| I11 available for resubmission |
 
 ## Future Work Stack Rank
 
