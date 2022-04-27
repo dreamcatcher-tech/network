@@ -42,6 +42,9 @@
 | 2022-04-25 | 7            | [I11](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I11.md)) Request/Idea| Update to I11 following QA feedback |
 | 2022-04-26 | 6            | [I11](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I11.md)) Request/Idea| I11 available for resubmission |
 | 2022-04-27 | 2            | [I11](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I11.md) Request/Idea| [Fractional work/funding #43](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/issues/43)
+| 2022-04-27 | 1            | [I11](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I11.md) Request/Idea| [I11 too many actors - there should only be funders, workers, and QA #49](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/issues/49)
+| 2022-04-27 | 1            | [I11](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I11.md) Request/Idea| [I11 too many actors - there should only be funders, workers, and QA #49](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/issues/49) and [I11 ideas in dust mode should not be listed in market, nor should they be in drafts #48](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/issues/48)
+
 
 ## Future Work Stack Rank
 
