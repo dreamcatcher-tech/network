@@ -1,5 +1,4 @@
-# I00 Idea Template
-
+# Idea Template
 
 ## Targets
 
