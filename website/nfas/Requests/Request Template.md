@@ -1,4 +1,4 @@
-# R00 Request Template
+# Request Template
 
 ## Guidance
 
