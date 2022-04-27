@@ -30,7 +30,7 @@ Units used are pomodoros, or "pomos" - a 25 minute block of time dedicated to th
 | 2022-04-26   | 12    | [06 IPFS rewrite](../../Ideas/I06.md)      | Labour: engine being pierced     |
 | 2022-04-26   | 2     | [05 Markdown NFT Mode](../../Ideas/I05.md) | Meta: Init R11 R12 R13 R14       |
 | 2022-04-27   | 14    | [06 IPFS rewrite](../../Ideas/I06.md)      | Labour: engine being pierced     |
-| 2022-04-27   | 1     | [05 Markdown NFT Mode](../../Ideas/I05.md) | Meta: Review I11                 |
+| 2022-04-27   | 5     | [05 Markdown NFT Mode](../../Ideas/I05.md) | Meta: Review I11                 |
 
 _\* is where the pool counter is synced up to_
 
