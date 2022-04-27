@@ -46,6 +46,9 @@
 | 2022-04-27 | 1            | [I11](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I11.md) Request/Idea| [I11 too many actors - there should only be funders, workers, and QA #49](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/issues/49) and [I11 ideas in dust mode should not be listed in market, nor should they be in drafts #48](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/issues/48)
 | 2022-04-27 | 1            | [I11](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I11.md) Request/Idea| [lock to open reverse transition is not shown #47](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/issues/47) and [I11 open to locked transition is not funding/work #46](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/issues/46)
 | 2022-04-27 | 1            | [I11](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I11.md) Request/Idea| [I11 generating images should not be up to anyone but the submitter #45](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/issues/45) 
+| 2022-04-27 | 6            | [Pool Process](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/pool/Pool%20Process.md) | Creation, and associated issue responses (not listed)
+
+Pool Process
 
 ## Future Work Stack Rank
 
