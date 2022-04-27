@@ -1,6 +1,6 @@
 module.exports = {
   pool: [
-    'Market',
+    'Pool',
     {
       type: 'category',
       label: 'Requests',
