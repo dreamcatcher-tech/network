@@ -1,8 +1,18 @@
-Dump from comment in Strategic Intent and Tactical intent are not defined #26
+# Background for The Pool Process
 
+# IN DRAFT
+
+## Target
+
+[I11 Request-Idea](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I11.md)
+
+## Inherits
+
+## Dependencies
+
+
+## Why ask for Requests and Ideas to be divided?
 It's not a vague vs precise thing. It's headmark vs compass bearing thing.
-
-It's from hours of having it drilled into me at naval college. They summed it up as the difference between Ratcatchers and Regulators, and why you needed a middle way.
 
 The general rule is that you should always know what your '1-up' is trying to do, regardless is what he's telling you to do. It's recognising that centralised command and control is inferior to decentralised command and control, but by decentralising, you could give misfires. You need to let the guys know not only what you think they need to do, but why you've asked them to do it.
 
