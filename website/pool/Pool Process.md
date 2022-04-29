@@ -2,7 +2,7 @@
 
 ## Target
 
-[I11 Request-Idea](../nfas/Ideas/I11.md)
+[I11 Request-Idea](../nfas/Ideas/I11)
 
 ## Inherits
 
@@ -12,19 +12,19 @@
 
 ## License
 
-This Process is offered for further use and alteration under the [Core DPL](../docs/DPL/Core%20DPL.md)
+This Process is offered for further use and alteration under the [Core DPL](../docs/DPL/Core DPL)
 
 # Preface
 This is a process which takes Requests and Ideas from Dust through to having been completed with Outputs.
 
-It's currently in use by [Pool.md](../pool/Pool.md) and forms part of the QA Guidance for that pool, along with the templates for 
+It's currently in use by [Pool.md](../pool/Pool) and forms part of the QA Guidance for that pool, along with the templates for 
 
-For further reading on the background for this process, please see [Background for The Pool Process](../blog/drafts/Background%20Pool%20Process.md)
+For further reading on the background for this process, please see [Background for The Pool Process](../blog/drafts/Background Pool Process)
 
 For the templates referenced below see:
 
-1. [Request Template](../pool/Request%20Template.md) 
-1. [Idea Template](../pool/Idea%20Template.md)
+1. [Request Template](../pool/Request Template) 
+1. [Idea Template](../pool/Idea Template)
 
 
 ## Process
@@ -65,10 +65,10 @@ stateDiagram
 
 To implement the states and state transistions two different folders are used in git.
 
-1. Requests and Ideas in 'Dust' state are in the [website/nfas](../nfas) folder.  They are not listed in [Pool.md](../pool/Pool.md)
+1. Requests and Ideas in 'Dust' state are in the [website/nfas](../nfas) folder.  They are not listed in [Pool.md](../pool/Pool)
 2. Requests and Ideas in 'Open' state are in the [website/pool](../pool) folder, and linked from the Open grid in [Pool.md](../pool/Pool.md)
 3. Dust -> Open state change involves copying the file from one folder to the next, not moving it.  This way we replicate a fork.  The time/cost data grid in [Pool.md](../pool/Pool.md)
-4. Locked -> Finalised state change moves the link and time/cost data to the Finalised grid in [Pool.md](../pool/Pool.md)
+4. Locked -> Finalised state change moves the link and time/cost data to the Finalised grid in [Pool.md](../pool/Pool)
 
 In order to pass the Dust -> Open state change, Requests and Ideas will be checked by QA against the templates for [Requests](../pool/Request%20Template.md) and [Ideas](../pool/Idea%20Template.md).  
 
