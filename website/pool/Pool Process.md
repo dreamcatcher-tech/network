@@ -2,29 +2,29 @@
 
 ## Target
 
-[I11 Request-Idea](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/nfas/Ideas/I11.md)
+[I11 Request-Idea](../nfas/Ideas/I11.md)
 
 ## Inherits
 
-[User Dictionary](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/tree/master/website/docs/User_Dictionary)
+[User Dictionary](../docs/User_Dictionary)
 
 ## Dependencies
 
 ## License
 
-This Process is offered for further use and alteration under the [Core DPL](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/docs/DPL/Core%20DPL.md)
+This Process is offered for further use and alteration under the [Core DPL](../docs/DPL/Core%20DPL.md)
 
 # Preface
 This is a process which takes Requests and Ideas from Dust through to having been completed with Outputs.
 
-It's currently in use by [Pool.md](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/pool/Pool.md) and forms part of the QA Guidance for that pool, along with the templates for 
+It's currently in use by [Pool.md](../pool/Pool.md) and forms part of the QA Guidance for that pool, along with the templates for 
 
-For further reading on the background for this process, please see [Background for The Pool Process](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/blog/drafts/Background%20Pool%20Process.md)
+For further reading on the background for this process, please see [Background for The Pool Process](../blog/drafts/Background%20Pool%20Process.md)
 
 For the templates referenced below see:
 
-1. [Request Template](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/pool/Request%20Template.md) 
-1. [Idea Template](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/pool/Idea%20Template.md)
+1. [Request Template](../pool/Request%20Template.md) 
+1. [Idea Template](../pool/Idea%20Template.md)
 
 
 ## Process
@@ -65,22 +65,22 @@ stateDiagram
 
 To implement the states and state transistions two different folders are used in git.
 
-1. Requests and Ideas in 'Dust' state are in the [website/nfas](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/tree/master/website/nfas) folder.  They are not listed in [Pool.md](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/pool/Pool.md)
-2. Requests and Ideas in 'Open' state are in the [website/pool](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/tree/master/website/pool) folder, and linked from the Open grid in [Pool.md](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/pool/Pool.md)
-3. Dust -> Open state change involves copying the file from one folder to the next, not moving it.  This way we replicate a fork.  The time/cost data grid in [Pool.md](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/pool/Pool.md)
-4. Locked -> Finalised state change moves the link and time/cost data to the Finalised grid in [Pool.md](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/pool/Pool.md)
+1. Requests and Ideas in 'Dust' state are in the [website/nfas](../nfas) folder.  They are not listed in [Pool.md](../pool/Pool.md)
+2. Requests and Ideas in 'Open' state are in the [website/pool](../pool) folder, and linked from the Open grid in [Pool.md](../pool/Pool.md)
+3. Dust -> Open state change involves copying the file from one folder to the next, not moving it.  This way we replicate a fork.  The time/cost data grid in [Pool.md](../pool/Pool.md)
+4. Locked -> Finalised state change moves the link and time/cost data to the Finalised grid in [Pool.md](../pool/Pool.md)
 
-In order to pass the Dust -> Open state change, Requests and Ideas will be checked by QA against the templates for [Requests](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/pool/Request%20Template.md) and [Ideas](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/pool/Idea%20Template.md).  
+In order to pass the Dust -> Open state change, Requests and Ideas will be checked by QA against the templates for [Requests](../pool/Request%20Template.md) and [Ideas](../pool/Idea%20Template.md).  
 
 A Request/Idea pair, or a solo Idea, can pass from either from Open or Locked -> Finalised by passing QA, which will judge whether what was described in the Idea has been completed, and for Request/Ideas, whether or to which extent the end execution has held to the original Strategic and Tactical Intents in the Requst.
 
 Ideas that are inside of the Pool (either Open or Locked) are available for funding by pool members.
 
-A record of the states of all Requests/Ideas are maintained in the pool dashboard - [Pool.md](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/pool/Pool.md) which contains a markdown grid of Requests and the Ideas in each state.  For each row we track a tally of the USD funds and the time expenditure used against each one.  This information is moved, during state changes, not duplicated.
+A record of the states of all Requests/Ideas are maintained in the pool dashboard - [Pool.md](../Pool.md) which contains a markdown grid of Requests and the Ideas in each state.  For each row we track a tally of the USD funds and the time expenditure used against each one.  This information is moved, during state changes, not duplicated.
 
 All work carried out on Requests/Ideas inside the pool must track their time in pomos, being a 25 min segment of time.  Logging of these can be outside of the pool, but evidence must be provided to QA in the form of a time log when applying for Finalised.
 
-Funding for Locked Request/Ideas are required to have a contract, which includes the [Core DPL](https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/blob/master/website/docs/DPL/Core%20DPL.md). The Escrow Service used is [TBD]().  
+Funding for Locked Request/Ideas are required to have a contract, which includes the [Core DPL](../docs/DPL/Core%20DPL.md). The Escrow Service used is [TBD]().  
 
 When the lock times out, or the workers declare failure, or both parties agree, escrow is released back to the funder and the Idea moves back to Open state in the pool
 
