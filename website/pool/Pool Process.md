@@ -66,8 +66,8 @@ stateDiagram
 To implement the states and state transistions two different folders are used in git.
 
 1. Requests and Ideas in 'Dust' state are in the [website/nfas](../nfas) folder.  They are not listed in [Pool.md](../pool/Pool)
-2. Requests and Ideas in 'Open' state are in the [website/pool](../pool) folder, and linked from the Open grid in [Pool.md](../pool/Pool.md)
-3. Dust -> Open state change involves copying the file from one folder to the next, not moving it.  This way we replicate a fork.  The time/cost data grid in [Pool.md](../pool/Pool.md)
+2. Requests and Ideas in 'Open' state are in the [website/pool](../pool) folder, and linked from the Open grid in [Pool.md](../pool/Pool)
+3. Dust -> Open state change involves copying the file from one folder to the next, not moving it.  This way we replicate a fork.  The time/cost data grid in [Pool.md](../pool/Pool)
 4. Locked -> Finalised state change moves the link and time/cost data to the Finalised grid in [Pool.md](../pool/Pool)
 
 In order to pass the Dust -> Open state change, Requests and Ideas will be checked by QA against the templates for [Requests](../pool/Request%20Template.md) and [Ideas](../pool/Idea%20Template.md).  
