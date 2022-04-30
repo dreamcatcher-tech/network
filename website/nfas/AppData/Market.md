@@ -2,7 +2,7 @@ I'm not sure what goes in here exactly, but anything that smells like a negotiat
 
 Below are snippets from other files:
 
-# From Ideas Template.md
+# From Ideas Template
 
 ## Proposed Timeline/Cost
 
@@ -12,7 +12,7 @@ This is the estimate on the part of the Person doing the work.
 
 This is the Offer from the Person doing the work. It covers what the license would be, whether up-front payment in exchange for downstream Attribution is requested, or for example full payment upfront without Attribution, or no payment with full Attribution.
 
-# From Request Template.md
+# From Request Template
 
 ## Offer
 

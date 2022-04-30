@@ -20,7 +20,7 @@ slug: /
 | NFT                        |                                      | USD | [msm] | [inv] |
 | -------------------------- | ------------------------------------ | :-: | :---: | :---: |
 | ![](/nfts/R10.ico.png)     | [R10 Request-Idea](./Requests/R10)   |     |       |       |
-| └── ![](/nfts/I05.ico.png) | [I05 Markdown NFT Mode](./Ideas/I05) |     |       |  25   |
+
 
 ## Finalized
 
