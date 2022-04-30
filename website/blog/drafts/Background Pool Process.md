@@ -10,8 +10,8 @@
 
 ## Dependencies
 
-
 ## Why ask for Requests and Ideas to be divided?
+
 It's not a vague vs precise thing. It's headmark vs compass bearing thing.
 
 The general rule is that you should always know what your '1-up' is trying to do, regardless is what he's telling you to do. It's recognising that centralised command and control is inferior to decentralised command and control, but by decentralising, you could give misfires. You need to let the guys know not only what you think they need to do, but why you've asked them to do it.

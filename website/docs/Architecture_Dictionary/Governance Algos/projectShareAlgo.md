@@ -1,2 +1,1 @@
-Votes are distributed evenly, one to each entity listed in the input to the algorithm.  Each entity can be a Person or a Project.  If a Project, that vote may be split further by that Project’s Governance. 
-
+Votes are distributed evenly, one to each entity listed in the input to the algorithm. Each entity can be a Person or a Project. If a Project, that vote may be split further by that Project’s Governance.

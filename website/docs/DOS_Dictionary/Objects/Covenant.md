@@ -1,1 +1,1 @@
-A function that defines or can be run against an Object’s data.  There are two predefined covenants: datum and collection.  There can be any number of custom covenants.  Covenants may kick off work-flows or carry out work directly.
+A function that defines or can be run against an Object’s data. There are two predefined covenants: datum and collection. There can be any number of custom covenants. Covenants may kick off work-flows or carry out work directly.

@@ -1,1 +1,1 @@
-Distribution is based on the number of times a particular module of code is called when running live.  The distribution to each module is further divided by the Issues that have contributed to that module, in terms of successful Pull Requests. 
+Distribution is based on the number of times a particular module of code is called when running live. The distribution to each module is further divided by the Issues that have contributed to that module, in terms of successful Pull Requests.

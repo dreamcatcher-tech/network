@@ -1,1 +1,1 @@
-The default Fork in Interblock.  For any given Object that is to be Forked, every Object in the path up to the containing Project is Forked with it.  Any other Object which is not in that direct path maintains its reference to the original object.
+The default Fork in Interblock. For any given Object that is to be Forked, every Object in the path up to the containing Project is Forked with it. Any other Object which is not in that direct path maintains its reference to the original object.
