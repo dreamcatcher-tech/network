@@ -76,13 +76,13 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/dreamcatcher-tech',
+              label: 'YouTube',
+              href: 'https://www.youtube.com/channel/UCysqnESDAhA0NzfbS1GI9YQ/videos',
             },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/dreamcatcher-tech',
-            },
+            // {
+            //   label: 'Twitter',
+            //   href: 'https://twitter.com/dreamcatcher-tech',
+            // },
           ],
         },
         {
