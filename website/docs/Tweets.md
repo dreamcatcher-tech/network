@@ -36,4 +36,6 @@ This page is intended to be an ordered list of the headlines and tweets that bes
 
 > **Full Object Lifecycle** Persistent updating of contribution provenance in every object state change
 
-> **Fungible Computing** With non fungible automated attribution to all forms of contribution
+> **Fungible Computing** With non fungible automatic attribution to all forms of contribution
+
+> **Distributed OS** With embedded labour and equity markets in every object
