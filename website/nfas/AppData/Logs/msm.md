@@ -52,8 +52,8 @@
 | 2022-05-28 | 10     | [I15 DC Website (dust) ](https://dreamcatcher-tech.github.io/nfas/nfas/Ideas/I15) | Creation - initial proposal as to layout of website for Investors, Workers and Market Demand |
 | 2022-05-28 | 1     | [I16 Test Pitch Reports (dust) ](https://dreamcatcher-tech.github.io/nfas/nfas/Ideas/I16) | Creation |
 | 2022-05-28 | 2     | [I16 Test Pitch Reports (dust) ](https://dreamcatcher-tech.github.io/nfas/nfas/Ideas/I16) | Arrangements with [Jullian Bennet](https://www.linkedin.com/in/julian-bennet/) for test pitch meeting |
-
-
+| 2022-05-28 | 1     | [I17 DC Portal Company Formation (dust) ](https://dreamcatcher-tech.github.io/nfas/nfas/Ideas/I17) | creation |
+| 2022-05-28 | 2     | [I17 DC Portal Company Formation (dust) ](https://dreamcatcher-tech.github.io/nfas/nfas/Ideas/I17) | Investigation of use of https://osome.com/hk/ and availability of Company names |
 
 ## Future Work Stack Rank
 
