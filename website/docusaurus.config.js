@@ -2,6 +2,7 @@ const remarkPlugins = [
   require('mdx-mermaid'),
   { mermaid: { theme: { light: 'neutral', dark: 'forest' } } },
 ]
+
 module.exports = {
   title: 'Dreamcatcher',
   tagline: 'A Perpetual Invention Machine',
