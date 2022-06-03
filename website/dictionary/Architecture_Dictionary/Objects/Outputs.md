@@ -1,0 +1,1 @@
+Outputs are links to Instance Projects which the Project is working on and therefore changing. Every Instance Project must be in the Output of a Project or another Instance Project, even if that Project is a Ghost
