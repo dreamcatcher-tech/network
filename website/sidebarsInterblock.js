@@ -1,5 +1,5 @@
 module.exports = {
-  tech: [
+  interblock: [
 
     {
       type: 'category',

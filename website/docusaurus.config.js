@@ -40,8 +40,8 @@ module.exports = {
           position: 'left',
         },
         {
-          to: 'tech/',
-          activeBasePath: 'tech',
+          to: 'interblock/',
+          activeBasePath: 'interblock',
           label: 'Interblock',
           position: 'left',
         },
@@ -179,10 +179,10 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'tech',
-        path: 'tech',
-        routeBasePath: 'tech',
-        sidebarPath: require.resolve('./sidebarsTech.js'),
+        id: 'interblock',
+        path: 'interblock',
+        routeBasePath: 'interblock',
+        sidebarPath: require.resolve('./sidebarsInterblock.js'),
         editUrl:
           'https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/edit/master/website/',
         remarkPlugins,
