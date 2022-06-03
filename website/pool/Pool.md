@@ -1,4 +1,6 @@
 ---
+title: Dreamcatcher Gateway
+sidebar_label: Dreamcatcher Gateway
 slug: /
 ---
 

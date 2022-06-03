@@ -30,7 +30,7 @@ module.exports = {
         {
           to: 'docs/',
           activeBasePath: 'docs',
-          label: 'Docs',
+          label: 'Dreamcatcher',
           position: 'left',
         },
         {
@@ -60,7 +60,7 @@ module.exports = {
         {
           to: 'pool/',
           activeBasePath: 'pool',
-          label: 'Pool',
+          label: 'Dreamcatcher Gateway',
           position: 'left',
         },
         {
