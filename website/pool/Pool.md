@@ -33,7 +33,7 @@ slug: /
 1. [Pool governance]
 
 
-[msm]: ../dust/AppData/Logs/msm
+[msm]: ../dust/AppData/Logs/temperbead
 [inv]: ../dust/AppData/Logs/inverted-capital
 
 
