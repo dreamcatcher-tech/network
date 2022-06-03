@@ -34,12 +34,6 @@ module.exports = {
           position: 'left',
         },
         {
-          to: 'dust/',
-          activeBasePath: 'dust',
-          label: 'Dust',
-          position: 'left',
-        },
-        {
           to: 'interblock/',
           activeBasePath: 'interblock',
           label: 'Interblock',
@@ -58,15 +52,21 @@ module.exports = {
           position: 'left',
         },
         {
-          to: 'apps/',
-          activeBasePath: 'apps',
-          label: 'Apps',
+          to: 'dust/',
+          activeBasePath: 'dust',
+          label: 'Dust',
           position: 'left',
         },
         {
           to: 'pool/',
           activeBasePath: 'pool',
           label: 'Pool',
+          position: 'left',
+        },
+        {
+          to: 'apps/',
+          activeBasePath: 'apps',
+          label: 'Apps',
           position: 'left',
         },
         { to: 'blog', label: 'Blog', position: 'left' },
