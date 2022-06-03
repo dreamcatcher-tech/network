@@ -54,6 +54,8 @@
 | 2022-05-28 | 2     | [I16 Test Pitch Reports (dust) ](https://dreamcatcher-tech.github.io/dust/dust/Ideas/I16) | Arrangements with [Jullian Bennet](https://www.linkedin.com/in/julian-bennet/) for test pitch meeting |
 | 2022-05-28 | 1     | [I17 DC Portal Company Formation (dust) ](https://dreamcatcher-tech.github.io/dust/dust/Ideas/I17) | creation |
 | 2022-05-28 | 2     | [I17 DC Portal Company Formation (dust) ](https://dreamcatcher-tech.github.io/dust/dust/Ideas/I17) | Investigation of use of https://osome.com/hk/ and availability of Company names |
+| 2022-05-28 | 2     | [I17 DC Portal Company Formation (dust) ](https://dreamcatcher-tech.github.io/dust/dust/Ideas/I17) | Investigation of use of https://osome.com/hk/ and availability of Company names |
+| 2022-05-28 - 2022-06-02 | 70 | [I15 DC Website (dust) ](https://dreamcatcher-tech.github.io/dust/dust/Ideas/I15) | Planning, set-up, fucking around trying to get a fork to work nicely, implementation of the structure for the DC Website and drafting of the missing structural funnel bits with a view to the next pitch
 
 ## Future Work Stack Rank
 
