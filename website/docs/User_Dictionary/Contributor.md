@@ -1,1 +1,0 @@
-A Person or Project who has made any submissions to the Project, being metadata changes, issues, or direct contributions to the Output of the Project is working on and has submitted work to resolve an Issue.

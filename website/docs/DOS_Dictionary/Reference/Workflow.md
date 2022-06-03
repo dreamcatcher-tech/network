@@ -1,1 +1,0 @@
-A collection of functions that need to be carried out in order, which may call on resources or external services, and may call on external actors to carry out work on its behalf, and return the results to the next node in the workflow, or return the end result.

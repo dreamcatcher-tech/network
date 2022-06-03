@@ -1,11 +1,9 @@
 module.exports = {
   license: [
-    {
-      type: 'category',
-      label: 'Whitepapers',
-      items: [
-        'wp_dreamcatcher',
-      ],
+    { type: 'doc', id: 'dictionary-overview' },
+  {
+      type: 'doc',
+      id: 'Dictionary_Conventions',
     },
 {
       type: 'category',
