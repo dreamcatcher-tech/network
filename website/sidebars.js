@@ -18,8 +18,6 @@ module.exports = {
       label: 'Whitepapers',
       items: [
         'wp_dreamcatcher',
-        'wp_dos',
-        'wp_interblock',
         'wp_inversion',
         'wp_appstore',
       ],
