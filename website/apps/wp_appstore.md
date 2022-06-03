@@ -1,7 +1,7 @@
 ---
 id: wp_appstore
 title: The App Store Whitepaper
-sidebar_label: App Store
+sidebar_label: App Store Whitepaper
 ---
 
 ### Goal
@@ -24,7 +24,7 @@ sidebar_label: App Store
 
 <!-- What are the components of the system. How do they work and how do they interact -->
 
-All the components require at a minimum [DOS - upon which all applications run](./wp_dos.md) and [Interblock - the universal object protocol](./wp_interblock.md) which provides the underlying protocol for DOS and therefore all Dreamcatcher interactions.
+All the components require at a minimum [DOS - upon which all applications run](interblock/wp_dos/) and [Interblock - the universal object protocol](interblock/wp_interblock/) which provides the underlying protocol for DOS and therefore all Dreamcatcher interactions.
 
 Other components are:
 

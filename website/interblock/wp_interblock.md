@@ -1,7 +1,7 @@
 ---
 id: wp_interblock
 title: The Interblock Whitepaper
-sidebar_label: Interblock
+sidebar_label: Interblock Whitepaper
 ---
 
 ### Goal

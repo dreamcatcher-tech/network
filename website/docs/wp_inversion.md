@@ -112,7 +112,7 @@ This creates an incentive for others to improve the system to receive some of th
 
 <!-- What are the components of the system. How do they work and how do they interact -->
 
-[Interblock - the universal object protocol](./wp_interblock.md) which provides the underlying protocol for NVN, as well as the universal computing surface
+[Interblock - the universal object protocol](interblock/wp_interblock) which provides the underlying protocol for NVN, as well as the universal computing surface
 
 ## Properties
 

@@ -1,7 +1,7 @@
 ---
 id: wp_dos
 title: The DOS Whitepaper
-sidebar_label: DOS
+sidebar_label: DOS Whitepaper
 ---
 
 ### Goal

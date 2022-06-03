@@ -60,7 +60,7 @@ The primary motive of the system is the highest possible rate of innovation. The
 
 <!-- What are the components of the system. How do they work and how do they interact -->
 
-All the components require at a minimum [DOS - upon which all applications run](./wp_dos.md) and [Interblock - the universal object protocol](./wp_interblock.md) which provides the underlying protocol for DOS and therefore all Dreamcatcher interactions.
+All the components require at a minimum [DOS - upon which all applications run](interblock/wp_dos) and [Interblock - the universal object protocol](interblock/wp_interblock) which provides the underlying protocol for DOS and therefore all Dreamcatcher interactions.
 
 Other components with dependencies are (TODO):
 
