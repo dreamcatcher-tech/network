@@ -23,7 +23,7 @@ module.exports = {
         'wp_appstore',
       ],
     },
-    { type: 'doc', id: 'spec/Specification' },
+
     {
       type: 'category',
       label: 'Dreamcatcher License',

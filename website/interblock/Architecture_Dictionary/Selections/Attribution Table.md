@@ -1,1 +1,0 @@
-Algorithmic output from applying the Attribution Algorithms to the Project data. Attribution Tables are recalculated based on Project events, or can be calculated as part of an external query. Result is a plain ledger list of beneficiary/amount.
