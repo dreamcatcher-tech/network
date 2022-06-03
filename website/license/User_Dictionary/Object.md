@@ -1,1 +1,0 @@
-A uniquely identifiable chain within the DOS which contains data, an immutable history of how that data has changed over time and how it has interacted with other Objects and a Ghost with permissions to control Access Permissions (the Owner).
