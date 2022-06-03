@@ -2,7 +2,7 @@
 
 ## Target
 
-[I11 Request-Idea](../nfas/Ideas/I11)
+[I11 Request-Idea](../dust/Ideas/I11)
 
 ## Inherits
 
@@ -65,7 +65,7 @@ stateDiagram
 
 To implement the states and state transistions two different folders are used in git.
 
-1. Requests and Ideas in 'Dust' state are in the [website/nfas](../nfas) folder. They are not listed in [Pool.md](../pool)
+1. Requests and Ideas in 'Dust' state are in the [website/dust](../dust) folder. They are not listed in [Pool.md](../pool)
 2. Requests and Ideas in 'Open' state are in the [website/pool](.) folder, and linked from the Open grid in [Pool.md](.)
 3. Dust -> Open state change involves copying the file from one folder to the next, not moving it. This way we replicate a fork. The time/cost data grid in [Pool.md](.)
 4. Locked -> Finalised state change moves the link and time/cost data to the Finalised grid in [Pool.md](.)

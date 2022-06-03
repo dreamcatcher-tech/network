@@ -33,8 +33,8 @@ slug: /
 1. [Pool governance]
 
 
-[msm]: ../nfas/AppData/Logs/msm
-[inv]: ../nfas/AppData/Logs/inverted-capital
+[msm]: ../dust/AppData/Logs/msm
+[inv]: ../dust/AppData/Logs/inverted-capital
 
 
 [R10 request-idea]: ./Requests/R10

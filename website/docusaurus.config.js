@@ -34,9 +34,9 @@ module.exports = {
           position: 'left',
         },
         {
-          to: 'nfas/',
-          activeBasePath: 'nfas',
-          label: 'NFAs',
+          to: 'dust/',
+          activeBasePath: 'dust',
+          label: 'Dust',
           position: 'left',
         },
         {
@@ -135,10 +135,10 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'nfas',
-        path: 'nfas',
-        routeBasePath: 'nfas',
-        sidebarPath: require.resolve('./sidebarsNFAs.js'),
+        id: 'dust',
+        path: 'dust',
+        routeBasePath: 'dust',
+        sidebarPath: require.resolve('./sidebarsDust.js'),
         editUrl:
           'https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/edit/master/website/',
         remarkPlugins,
