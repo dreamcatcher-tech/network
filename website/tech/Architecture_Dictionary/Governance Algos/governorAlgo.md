@@ -1,0 +1,1 @@
+The Governor is provided by the whole share of votes assigned to this algorithm. These votes may be assigned further depending on the entities within the Governor (e.g. if there is a Project inside of the Governor structure, then that proportion of the vote will be assigned by that Project’s governance.

@@ -40,6 +40,12 @@ module.exports = {
           position: 'left',
         },
         {
+          to: 'tech/',
+          activeBasePath: 'dust',
+          label: 'Interblock',
+          position: 'left',
+        },
+        {
           to: 'pool/',
           activeBasePath: 'pool',
           label: 'Pool',
