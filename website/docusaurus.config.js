@@ -58,6 +58,12 @@ module.exports = {
           position: 'left',
         },
         {
+          to: 'apps/',
+          activeBasePath: 'apps',
+          label: 'Apps',
+          position: 'left',
+        },
+        {
           to: 'pool/',
           activeBasePath: 'pool',
           label: 'Pool',
@@ -150,6 +156,19 @@ module.exports = {
     ],
   ],
   plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'apps',
+        path: 'apps',
+        routeBasePath: 'apps',
+        sidebarPath: require.resolve('./sidebarsApps.js'),
+        editUrl:
+          'https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/edit/master/website/',
+        remarkPlugins,
+        sidebarCollapsed: false,
+      },
+    ],
     [
       '@docusaurus/plugin-content-docs',
       {
