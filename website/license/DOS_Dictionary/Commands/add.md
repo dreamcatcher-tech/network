@@ -1,0 +1,1 @@
+Executed within the folder of an Object, generates an instance based on the template of that Object. The instance is created as a sub-folder. Every blockchain has the ability to add a chain to itself. Add can be overridden by the context specific add for that place in the tree.

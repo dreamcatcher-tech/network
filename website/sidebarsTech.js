@@ -9,7 +9,6 @@ module.exports = {
         'wp_dos',
         'wp_interblock',
         'wp_inversion',
-
       ],
     },
   ],

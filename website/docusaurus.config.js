@@ -46,6 +46,12 @@ module.exports = {
           position: 'left',
         },
         {
+          to: 'license/',
+          activeBasePath: 'license',
+          label: 'License',
+          position: 'left',
+        },
+        {
           to: 'pool/',
           activeBasePath: 'pool',
           label: 'Pool',
@@ -138,6 +144,19 @@ module.exports = {
     ],
   ],
   plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'license',
+        path: 'license',
+        routeBasePath: 'license',
+        sidebarPath: require.resolve('./sidebarsLicense.js'),
+        editUrl:
+          'https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/edit/master/website/',
+        remarkPlugins,
+        sidebarCollapsed: false,
+      },
+    ],
     [
       '@docusaurus/plugin-content-docs',
       {

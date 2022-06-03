@@ -1,0 +1,1 @@
+The event where funds in a Project’s Bank are distributed via the logic contained in its Governance (for voting) and / or Attribution (for algorithmic division) to other Projects. Can be triggered by a payment coming in, or any other event that causes any of its algorithms to trigger.
