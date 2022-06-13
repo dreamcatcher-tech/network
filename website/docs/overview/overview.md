@@ -1,8 +1,8 @@
 ---
-id: dreamcatcher
-title: Dreamcatcher
-sidebar_label: Dreamcatcher
-slug: /dreamcatcher
+id: overview
+title: Overview
+sidebar_label: Overview
+slug: /overview
 ---
 
 ## Dreamcatcher test

@@ -6,6 +6,7 @@
  */
 
 .heroBanner {
+  background-color:LightSalmon;
   padding: 4rem 0;
   text-align: center;
   position: relative;
@@ -24,7 +25,39 @@
   justify-content: center;
 }
 
-.features {
+.hero_01 {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.hero_02 {
+  background-color:AliceBlue;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.hero_03 {
+  background-color:thistle;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.hero_04 {
+  background-color:red;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.hero_05 {
+  background-color:blue;
   display: flex;
   align-items: center;
   padding: 2rem 0;
