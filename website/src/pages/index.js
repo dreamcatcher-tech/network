@@ -8,33 +8,27 @@ import styles from './styles.module.css'
 const hero_01 = [
   {
 
-    title: 'One blockchain for every idea',
+    title: 'Permissionless Collaboration',
     imageUrl: 'img/dreamcatcher.svg',
     description: (
       <>
-        Project components are deduplicated, allowing greater reuse between
-        active projects, and broader chance of upside for dormant projects
-      </>
+    Dreamcatcher enables permissionless collaboration on Innovations, increasing the available pool of talent worldwide, while ensuring that output is incentivised, not busy-work.     </>
     ),
   },
   {
-    title: 'Deduplication of Effort',
+    title: 'Reuse and Recombination',
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Project components are deduplicated, allowing greater reuse between
-        active projects, and broader chance of upside for dormant projects
-      </>
+ Accelerate the time to market by using the work that already exists.  Build on Open Source knowing that the rights of all contributors are ensured, and they'll share fairly in the benefits.   </>
     ),
   },
   {
-    title: 'Automatic Equity',
+    title: 'start-up-as-code',
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        Every action in a natively project earns equity in the upside of the
-        project through Ambient Attribution
-      </>
+        Remove the overhead of constantly re-inventing the wheel when starting up a traditional company by working within a pre-agreed framework that's designed and certified once, automated in code, and used by all.      </>
     ),
   },
   {
@@ -42,25 +36,23 @@ const hero_01 = [
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Purchase applications that do not exist yet, and earn upside when they
-        do
+        Purchase applications that do not exist yet, that you don't pay for until they do, and earn you upside when they're reused.
       </>
     ),
   },
   {
-    title: 'Continuous Arbitrary Voting',
+    title: 'Algorithmic Cap-Table',
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Every transaction carries with it a vote on any possible state change in
-        the world
+From micro to macro investments, invest time or money behind good ideas, knowing who's behind them, and receive algorithmically your fair return.
       </>
     ),
   },
   {
-    title: 'Trading of Equity',
+    title: 'Perputual Equity',
     imageUrl: 'img/undraw_personal_finance_tqcd.svg',
-    description: <>Earned equity can be bought and sold with others</>,
+    description: <>Earn NFTs for every piece of work, every investment, every purchase and every collaboration. Own those as hard assets forever and share in the benefits whenever and forever how long they're used .</>,
   },
 ]
 
@@ -68,25 +60,26 @@ const hero_01 = [
 const hero_02 = [
   {
 
-    description: <><h1>Hero two title</h1> hero_02.01 hero_02.01 hero_02.01 hero_02.01 hero_02.01 hero_02.01 </>,
+    description: <><h1>Investors</h1>Learn how to harness the power of a business network without limits, target investment in exactly the right place and have complete transpareny on how your cash is being used.</>,
   },
     {
-    description: <><h1>Hero two title</h1> hero_02.01 hero_02.01 hero_02.01 hero_02.01 hero_02.01 hero_02.01 hero_02.01 </>,
+    description: <><h1>Builders</h1>Learn how to contribute from wherever you are in the areas you're most skilled in, knowing that you'll own and profit from the work you do.</>,
   },
     {
-    description: <><h1>Hero three title</h1>  hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02  </>,
+    description: <><h1>Buyers</h1>Learn more about forward apps and custom functions and custom service - benefiting from the need you have without the risk of paying for software developing, or the constraints of Off-the-Shelf packages.</>,
   },
 ]
 
 const hero_03 = [
   {
-    description: <><h1>Hero three title</h1>  hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02  </>,
+    description: <><h1>Investors</h1>Learn how to harness the power of a business network without limits, target investment in exactly the right place and have complete transpareny on how your cash is being used.</>,
   },
     {
-    description: <><h1>Hero three title</h1>  hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02  </>,
+    description: <><h1>Builders</h1>Learn how to contribute from wherever you are in the areas you're most skilled in, knowing that you'll own and profit from the work you do.</>,
+ 
   },
     {
-    description: <><h1>Hero three title</h1>  hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02  </>,
+    description: <><h1>Buyers</h1>Learn more about forward apps and custom functions and custom service - benefiting from the need you have without the risk of paying for software developing, or the constraints of Off-the-Shelf packages.</>,
   },
 ]
 
@@ -161,49 +154,30 @@ function Home() {
         {hero_01 && hero_01.length > 0 && (
           <section className={styles.hero_01}>
             <div className="container">
-              <h1> Accelerating the pace of Innovation </h1>
+              <h1> A new Framework for Taking Innovations to Market </h1>
               <div className="row">
                 {hero_01.map((props, idx) => (
                   <Feature key={idx} {...props} />
                 ))}
               </div>
-            <Link
-              className={clsx(
-                'button button--outline button--secondary button--lg',
-                styles.getStarted
-              )}
-              to={useBaseUrl('docs/overview/')}
-            >
-              Learn more
-            </Link>
             </div>
           </section>
         )}
         {hero_02 && hero_02.length > 0 && (
           <section className={styles.hero_02}>
             <div className="container">
-            <h1> For Investors </h1>
-              <div className="row">
-                {hero_02.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
-              </div>
-            <Link
-              className={clsx(
-                'button button--outline button--secondary button--lg',
-                styles.getStarted
-              )}
-              to={useBaseUrl('docs/overview/')}
-            >
-              Learn more
-            </Link>
+            <h1>Dreamcatcher</h1>
+           
+            <h1> The most transparent, efficient and fair marketplace for ideas </h1>
+              
+          
             </div>
           </section>
         )}
         {hero_03 && hero_03.length > 0 && (
           <section className={styles.hero_03}>
             <div className="container">
-            <h1> For Coders </h1>
+            <h1> Get Involved </h1>
               <div className="row">
                 {hero_03.map((props, idx) => (
                   <Feature key={idx} {...props} />
