@@ -186,7 +186,7 @@ function Home() {
 
                 ))}
               </div>
-            <Link
+            <center><Link
               className={clsx(
                 'button button--outline button--secondary button--lg',
                 styles.getStarted
@@ -194,7 +194,7 @@ function Home() {
               to={useBaseUrl('docs/overview/')}
             >
               Learn more
-            </Link>
+            </Link></center>
             </div>
           </section>
         )}
