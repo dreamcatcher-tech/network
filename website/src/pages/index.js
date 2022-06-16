@@ -80,6 +80,8 @@ const hero_03 = [
   },
     {
     description: <><h1>Buyers</h1>Learn more about forward apps and custom functions and custom service - benefiting from the need you have without the risk of paying for software developing, or the constraints of Off-the-Shelf packages.</>,
+  
+
   },
 ]
 
@@ -181,6 +183,7 @@ function Home() {
               <div className="row">
                 {hero_03.map((props, idx) => (
                   <Feature key={idx} {...props} />
+
                 ))}
               </div>
             <Link
