@@ -195,33 +195,13 @@ function Home() {
             </div>
           </section>
         )}
-        {hero_04 && hero_04.length > 0 && (
-          <section className={styles.hero_04}>
-            <div className="container">
-            <h1> For Users </h1>
-              <div className="row">
-                {hero_04.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
-              </div>
-            <Link
-              className={clsx(
-                'button button--outline button--secondary button--lg',
-                styles.getStarted
-              )}
-              to={useBaseUrl('docs/overview/')}
-            >
-              Learn more
-            </Link>
-            </div>
-          </section>
-        )}
+       
         {(
           <section className={styles.hero_05}>
             <div className="container">
             <h1> Get involved </h1>
-              
-            <Link
+             <center><img src="img/dreamcatcher.svg"/></center>
+            <center><Link
               className={clsx(
                 'button button--outline button--secondary button--lg',
                 styles.getStarted
@@ -229,7 +209,7 @@ function Home() {
               to={useBaseUrl('docs/overview/')}
             >
               Learn more
-            </Link>
+            </Link></center>
             </div>
           </section>
         )}
