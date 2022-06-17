@@ -24,7 +24,7 @@ module.exports = {
         {
           to: 'docs/',
           activeBasePath: 'docs',
-          label: 'Briefings',
+          label: 'Dreamcatcher',
           position: 'left',
         },
         {
@@ -57,13 +57,7 @@ module.exports = {
           label: 'Dreamcatcher Gateway',
           position: 'left',
         },
-        {
-          to: 'apps/',
-          activeBasePath: 'apps',
-          label: 'Apps',
-          position: 'left',
-        },
-        { to: 'blog', label: 'Blog', position: 'left' },
+        { to: 'blog', label: 'Blog', position: 'right' },
         {
           label: 'Apps',
           to: 'store',

@@ -263,7 +263,7 @@ function Home() {
                 'dreamcatcher_button buttonInterblock',
                 styles.getStarted
               )}
-              to={useBaseUrl('docs/buyers/')}
+              to={useBaseUrl('interblock/')}
             >
               Learn more about Interblock
             </Link></center>
