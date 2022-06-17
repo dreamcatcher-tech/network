@@ -2,7 +2,7 @@
 id: wp_dreamcatcher
 title: The Dreamcatcher Whitepaper
 sidebar_label: Dreamcatcher
-slug: /
+slug: /whitepaper
 ---
 
 ### Goal
