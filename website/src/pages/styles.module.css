@@ -6,7 +6,7 @@
  */
 
 .heroBanner {
-  background-color:LightSalmon;
+  background-color:var(--dreamcatcher-purple);
   padding: 4rem 0;
   text-align: center;
   position: relative;
@@ -20,8 +20,9 @@
 }
 
 .buttons {
+
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
 }
 
@@ -33,30 +34,38 @@
 }
 
 .hero_02 {
-  background-color:AliceBlue;
+  background-color:var(--dreamcatcher-blue);
   display: flex;
   align-items: center;
   padding: 2rem 0;
   width: 100%;
 }
 
-.hero_03 {
-  background-color:thistle;
+.hero_Investors {
+  background-color:var(--dreamcatcher-blue);
   display: flex;
   align-items: center;
   padding: 2rem 0;
   width: 100%;
 }
 
-.hero_04 {
-  background-color:red;
+.hero_Builders {
+  background-color:var(--dreamcatcher-pink);
   display: flex;
   align-items: center;
   padding: 2rem 0;
   width: 100%;
 }
 
-.hero_05 {
+.hero_Buyers {
+  background-color:var(--dreamcatcher-orange);
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.hero_06 {
   background-color:white;
   display: flex;
   align-items: center;

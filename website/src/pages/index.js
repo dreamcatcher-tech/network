@@ -52,58 +52,52 @@ From micro to macro investments, invest time or money behind good ideas, knowing
   {
     title: 'Perputual Equity',
     imageUrl: 'img/undraw_personal_finance_tqcd.svg',
-    description: <>Earn NFTs for every piece of work, every investment, every purchase and every collaboration. Own those as hard assets forever and share in the benefits whenever and forever how long they're used .</>,
+    description: <>Earn NFTs for every piece of work, every investment, every purchase and every collaboration. Own the rights forever and share in the benefits, or sell on as a hard asset.</>,
   },
 ]
 
 
 const hero_02 = [
   {
+    description: <><h1>Dreamcatcher</h1></>,
+  },
 
-    description: <><h1>Investors</h1>Learn how to harness the power of a business network without limits, target investment in exactly the right place and have complete transpareny on how your cash is being used.</>,
-  },
-    {
-    description: <><h1>Builders</h1>Learn how to contribute from wherever you are in the areas you're most skilled in, knowing that you'll own and profit from the work you do.</>,
-  },
-    {
-    description: <><h1>Buyers</h1>Learn more about forward apps and custom functions and custom service - benefiting from the need you have without the risk of paying for software developing, or the constraints of Off-the-Shelf packages.</>,
-  },
 ]
 
-const hero_03 = [
+const hero_Investors = [
   {
-    description: <><h1>Investors</h1>Learn how to harness the power of a business network without limits, target investment in exactly the right place and have complete transpareny on how your cash is being used.</>,
+    description: <><h1>Targetted Investment</h1>Fund precisely those areas that you believe will have most utility, down to a single line of code.</>,
   },
     {
-    description: <><h1>Builders</h1>Learn how to contribute from wherever you are in the areas you're most skilled in, knowing that you'll own and profit from the work you do.</>,
+    description: <><h1>Maximise a world-wide network</h1>Join with micro and macro investors around the world, sharing risk and knowledge.</>,
  
   },
     {
-    description: <><h1>Buyers</h1>Learn more about forward apps and custom functions and custom service - benefiting from the need you have without the risk of paying for software developing, or the constraints of Off-the-Shelf packages.</>,
+    description: <><h1>Complete Transparency</h1>Know exactly how and where your investment is being spent, and pay only for output, not just time.</>,
   
 
   },
 ]
 
-const hero_04 = [
+const hero_Builders = [
   {
-    description: <><h1>Hero three title</h1>  hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02  </>,
+    description: <><h1>Permissionless Work</h1>Contribute to on-going projects and own a permanent NFT Asset for that work.</>,
   },  {
-    description: <><h1>Hero three title</h1>  hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02  </>,
+    description: <><h1>Be the Expert</h1>Tap into your deep specialisation by contributing at exactly the right time to maximise your value.</>,
   },
     {
-    description: <><h1>Hero three title</h1>  hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02  </>,
+    description: <><h1>Earn the Rewards</h1>Every commit, every contribution, every comment recorded generates an NFT Tradable Asset that may attract royalties forever.</>,
   },
 ]
 
-const hero_05 = [
+const hero_Buyers = [
   {
-    description: <><h1>Hero three title</h1>  hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02  </>,
+    description: <><h1>Forward App Store</h1>You identify your business needs, others build, both share in the rewards.</>,
   },  {
-    description: <><h1>Hero three title</h1>  hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02  </>,
+    description: <><h1>Customisation Sniper</h1>An App out there that exists but isn't quite right?  Fund just the function changes you need and have that work done, safe in the knowledge that the licensing and payments are secure.</>,
   },
     {
-    description: <><h1>Hero three title</h1>  hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02 hero_02  </>,
+    description: <><h1>Get Rewarded for Ideas</h1>As the end user you can identify real needs that are probably world wide.  Identify those, and when they're built you'll be credited as a contributor.</>,
   },
 ]
 
@@ -142,7 +136,7 @@ function Home() {
           <div className={styles.buttons}>
             <Link
               className={clsx(
-                'button button--outline button--secondary button--lg',
+                'dreamcatcher_button button1',
                 styles.getStarted
               )}
               to={useBaseUrl('docs/overview/')}
@@ -165,57 +159,101 @@ function Home() {
             </div>
           </section>
         )}
-        {hero_02 && hero_02.length > 0 && (
-          <section className={styles.hero_02}>
+ 
+        {hero_Investors && hero_Investors.length > 0 && (
+          <section className={styles.hero_Investors}>
             <div className="container">
-            <h1>Dreamcatcher</h1>
-           
-            <h1> The most transparent, efficient and fair marketplace for ideas </h1>
-              
-          
-            </div>
-          </section>
-        )}
-        {hero_03 && hero_03.length > 0 && (
-          <section className={styles.hero_03}>
-            <div className="container">
-            <h1> Get Involved </h1>
+            <h1> Investors </h1>
+
               <div className="row">
-                {hero_03.map((props, idx) => (
+                {hero_Investors.map((props, idx) => (
                   <Feature key={idx} {...props} />
 
                 ))}
               </div>
             <center><Link
               className={clsx(
-                'button button--outline button--secondary button--lg',
+                'dreamcatcher_button buttonInvestors',
                 styles.getStarted
               )}
               to={useBaseUrl('docs/overview/')}
             >
-              Learn more
+              Investors Learn more
             </Link></center>
+
             </div>
           </section>
         )}
-       
-        {(
-          <section className={styles.hero_05}>
+
+        
+
+       {hero_Builders && hero_Builders.length > 0 && (
+          <section className={styles.hero_Builders}>
             <div className="container">
-            <h1> Get involved </h1>
+            <h1> Builders </h1>
+
+              <div className="row">
+                {hero_Builders.map((props, idx) => (
+                  <Feature key={idx} {...props} />
+
+                ))}
+              </div>
+            <center><Link
+              className={clsx(
+                'dreamcatcher_button buttonBuilders',
+                styles.getStarted
+              )}
+              to={useBaseUrl('docs/overview/')}
+            >
+              Builders Learn more
+            </Link></center>
+
+            </div>
+          </section>
+        )}
+        {hero_Buyers && hero_Buyers.length > 0 && (
+          <section className={styles.hero_Buyers}>
+            <div className="container">
+            <h1> Buyers </h1>
+
+              <div className="row">
+                {hero_Buyers.map((props, idx) => (
+                  <Feature key={idx} {...props} />
+
+                ))} 
+              </div>
+            <center><Link
+              className={clsx(
+                'dreamcatcher_button buttonBuyers',
+                styles.getStarted
+              )}
+              to={useBaseUrl('docs/overview/')}
+            >
+              Buyers Learn more
+            </Link></center>
+
+            </div>
+          </section>
+        )}
+        {(
+          <section className={styles.hero_06}>
+            <div className="container">
+ 
              <center><img src="img/dreamcatcher.svg"/></center>
             <center><Link
               className={clsx(
-                'button button--outline button--secondary button--lg',
+                'dreamcatcher_button button1',
                 styles.getStarted
               )}
               to={useBaseUrl('docs/overview/')}
             >
-              Learn more
+              Get Involved
             </Link></center>
             </div>
           </section>
         )}
+
+
       </main>
     </Layout>
   )
