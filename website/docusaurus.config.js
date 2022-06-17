@@ -22,15 +22,9 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/overview/',
-          activeBasePath: 'overview',
-          label: 'Overview',
-          position: 'left',
-        },
-        {
           to: 'docs/',
           activeBasePath: 'docs',
-          label: 'Dreamcatcher',
+          label: 'Overview',
           position: 'left',
         },
         {

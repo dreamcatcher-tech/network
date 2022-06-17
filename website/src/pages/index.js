@@ -139,7 +139,7 @@ function Home() {
                 'dreamcatcher_button button1',
                 styles.getStarted
               )}
-              to={useBaseUrl('docs/overview/')}
+              to={useBaseUrl('docs/')}
             >
               Get Started
             </Link>
@@ -176,7 +176,7 @@ function Home() {
                 'dreamcatcher_button buttonInvestors',
                 styles.getStarted
               )}
-              to={useBaseUrl('docs/overview/')}
+              to={useBaseUrl('docs/investors/')}
             >
               Investors Learn more
             </Link></center>
@@ -203,7 +203,7 @@ function Home() {
                 'dreamcatcher_button buttonBuilders',
                 styles.getStarted
               )}
-              to={useBaseUrl('docs/overview/')}
+              to={useBaseUrl('docs/builders/')}
             >
               Builders Learn more
             </Link></center>
@@ -227,7 +227,7 @@ function Home() {
                 'dreamcatcher_button buttonBuyers',
                 styles.getStarted
               )}
-              to={useBaseUrl('docs/overview/')}
+              to={useBaseUrl('docs/buyers/')}
             >
               Buyers Learn more
             </Link></center>
@@ -245,7 +245,7 @@ function Home() {
                 'dreamcatcher_button button1',
                 styles.getStarted
               )}
-              to={useBaseUrl('docs/overview/')}
+              to={useBaseUrl('docs/get-involved/')}
             >
               Get Involved
             </Link></center>
