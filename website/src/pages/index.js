@@ -245,7 +245,7 @@ function Home() {
                 'dreamcatcher_button button1',
                 styles.getStarted
               )}
-              to={useBaseUrl('docs/get-involved/')}
+              to={useBaseUrl('contributing/')}
             >
               Get Involved
             </Link></center>
