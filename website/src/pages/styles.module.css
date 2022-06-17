@@ -6,7 +6,7 @@
  */
 
 .heroBanner {
-  background-color:var(--dreamcatcher-purple);
+  background-color:var(--dreamcatcher-pastel-purple);
   padding: 4rem 0;
   text-align: center;
   position: relative;
@@ -22,7 +22,7 @@
 .buttons {
 
   display: flex;
-  align-items: left;
+  align-items: center;
   justify-content: center;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .hero_02 {
-  background-color:var(--dreamcatcher-blue);
+  background-color:var(--dreamcatcher-pastel-blue);
   display: flex;
   align-items: center;
   padding: 2rem 0;
@@ -42,7 +42,7 @@
 }
 
 .hero_Investors {
-  background-color:var(--dreamcatcher-blue);
+  background-color:var(--dreamcatcher-pastel-blue);
   display: flex;
   align-items: center;
   padding: 2rem 0;
@@ -50,7 +50,7 @@
 }
 
 .hero_Builders {
-  background-color:var(--dreamcatcher-pink);
+  background-color:white;
   display: flex;
   align-items: center;
   padding: 2rem 0;
@@ -58,20 +58,32 @@
 }
 
 .hero_Buyers {
-  background-color:var(--dreamcatcher-orange);
+  background-color:var(--dreamcatcher-pastel-orange);
   display: flex;
   align-items: center;
   padding: 2rem 0;
   width: 100%;
 }
 
-.hero_06 {
+.hero_Interblock {
   background-color:white;
   display: flex;
   align-items: center;
   padding: 2rem 0;
   width: 100%;
 }
+
+
+
+.hero_06 {
+  background-color:var(--dreamcatcher-pastel-purple);
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+
 
 .featureImage {
   height: 200px;

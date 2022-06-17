@@ -20,6 +20,16 @@
   --dreamcatcher-orange:  rgb(254,207,115);
   --dreamcatcher-blue:  rgb(155,232,248);
   --dreamcatcher-green:  rgb(201,229,102);
+
+  --dreamcatcher-pastel-pink:  rgb(178, 128, 140);
+  --dreamcatcher-pastel-purple:  rgb(225, 199, 238);
+  --dreamcatcher-pastel-orange:  rgb(255, 232, 182);
+  --dreamcatcher-pastel-blue:  rgb(203, 245, 254);
+  --dreamcatcher-pastel-green:  rgb(230, 245, 175);
+
+  --dreamcatcher-hover-pink:  rgb(255, 199, 210);
+
+
 }
 
 .docusaurus-highlight-code-line {
@@ -30,69 +40,73 @@
 }
 
 .dreamcatcher_button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
   padding: 5px 32px;
+  border-radius: 8px;
+  border: 4px solid #000000; 
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 24px;
 }
 
-.button1 {
-  border-radius: 8px;
-  background-color: #4CAF50; /* Green */;
+.buttonGetInvolved {
+  background-color: var(--dreamcatcher-pink);
   color: white;
-  border: 4px solid #000000; 
 }
 
-.button1:hover{
-  border-radius: 8px;
-  background-color: #4CAF50; /* Green */;
+.buttonGetInvolved:hover{
+  background-color: var(--dreamcatcher-hover-pink);
   color: black;
-  border: 4px solid #000000; 
   }
 
 .buttonInvestors {
-  border-radius: 8px;
-  background-color: var(--dreamcatcher-green);
-  color: black;
-  border: 4px solid #000000; 
+  background-color: var(--dreamcatcher-pink);
+  color: white;
 }
 
 .buttonInvestors:hover{
-  border-radius: 8px;
-  background-color: var(--dreamcatcher-green);
-  color: green;
-  border: 4px solid #000000; 
+  background-color: var(--dreamcatcher-hover-pink);
+  color: black;
   }
 
 .buttonBuilders {
-  border-radius: 8px;
-  background-color: var(--dreamcatcher-green);
-  color: black;
-  border: 4px solid #000000; 
+  background-color: var(--dreamcatcher-pink);
+  color: white;
 }
 
 .buttonBuilders:hover{
-  border-radius: 8px;
-  background-color: var(--dreamcatcher-green);
-  color: green;
-  border: 4px solid #000000; 
+  background-color: var(--dreamcatcher-hover-pink);
+  color: black;
   }
 
 
 .buttonBuyers {
-  border-radius: 8px;
-  background-color: var(--dreamcatcher-green);
-  color: black;
-  border: 4px solid #000000; 
+  background-color: var(--dreamcatcher-pink);
+  color: white;
 }
 
 .buttonBuyers:hover{
-  border-radius: 8px;
-  background-color: var(--dreamcatcher-green);
-  color: green;
-  border: 4px solid #000000; 
+  background-color: var(--dreamcatcher-hover-pink);
+  color: black;
   }
+
+.buttonInterblock {
+  background-color: var(--dreamcatcher-pink);
+  color: white;
+}
+
+.buttonInterblock:hover{
+  background-color: var(--dreamcatcher-hover-pink);
+  color: black;
+  }
+
+.buttonGetStarted {
+  background-color: var(--dreamcatcher-pink);
+  color: white;
+}
+
+.buttonGetStarted:hover{
+  background-color: var(--dreamcatcher-hover-pink);
+  color: black;
+  }
+  

@@ -99,6 +99,18 @@ const hero_Buyers = [
     {
     description: <><h1>Get Rewarded for Ideas</h1>As the end user you can identify real needs that are probably world wide.  Identify those, and when they're built you'll be credited as a contributor.</>,
   },
+
+]
+const hero_Interblock = [
+  {
+    description: <><h1>Data as NFAs</h1>Interblock is being built as a multi-blockchain architecture (measured in millions of chains) that structures each 'object' as a separate blockchain. <br></br><br></br>These blockchain-based serverless objects are designed to be shared securely between owners without being tied to any server or computer.  Each block can be considered a Non-Fungable Asset.</>,
+  },  {
+    description: <><h1>Granular Computation</h1>Serverless Objects are used to break a program down into its smallest useful components, like grains of sand. Each grain is then independently secured, distributed, and computed upon on any CPU, anywhere.<br></br><br></br>The author of those as well as their use can be tracked.</>,
+  },
+    {
+    description: <><h1>Dreamcatcher & Interblock</h1>Dreamcatcher's uniqueness relies on Interblock, and to reach it's full potential Interblock needs Dreamcatcher.<br></br><br></br>We invite all with an interest in either to get involved.</>,
+  },
+  
 ]
 
 
@@ -136,7 +148,7 @@ function Home() {
           <div className={styles.buttons}>
             <Link
               className={clsx(
-                'dreamcatcher_button button1',
+                'dreamcatcher_button buttonGetStarted',
                 styles.getStarted
               )}
               to={useBaseUrl('docs/')}
@@ -235,6 +247,30 @@ function Home() {
             </div>
           </section>
         )}
+        {hero_Interblock && hero_Interblock.length > 0 && (
+          <section className={styles.hero_Interblock}>
+            <div className="container">
+            <h1> Interblock </h1>
+
+              <div className="row">
+                {hero_Interblock.map((props, idx) => (
+                  <Feature key={idx} {...props} />
+
+                ))} 
+              </div>
+            <center><Link
+              className={clsx(
+                'dreamcatcher_button buttonInterblock',
+                styles.getStarted
+              )}
+              to={useBaseUrl('docs/buyers/')}
+            >
+              Learn more about Interblock
+            </Link></center>
+
+            </div>
+          </section>
+        )}
         {(
           <section className={styles.hero_06}>
             <div className="container">
@@ -242,7 +278,7 @@ function Home() {
              <center><img src="img/dreamcatcher.svg"/></center>
             <center><Link
               className={clsx(
-                'dreamcatcher_button button1',
+                'dreamcatcher_button buttonGetInvolved',
                 styles.getStarted
               )}
               to={useBaseUrl('contributing/')}
