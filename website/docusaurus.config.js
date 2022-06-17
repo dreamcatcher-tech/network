@@ -46,16 +46,22 @@ module.exports = {
           position: 'left',
         },
         {
+          to: 'live/',
+          activeBasePath: 'live',
+          label: 'Live',
+          position: 'left',
+        },
+        {
           to: 'dust/',
           activeBasePath: 'dust',
           label: 'Dust',
-          position: 'left',
+          position: 'right',
         },
         {
           to: 'pool/',
           activeBasePath: 'pool',
           label: 'Dreamcatcher Gateway',
-          position: 'left',
+          position: 'right',
         },
         { to: 'blog', label: 'Blog', position: 'right' },
         {
