@@ -39,12 +39,7 @@ module.exports = {
           label: 'License',
           position: 'left',
         },
-        {
-          to: 'dictionary/',
-          activeBasePath: 'dictionary',
-          label: 'Dictionary',
-          position: 'left',
-        },
+
         {
           to: 'live/',
           activeBasePath: 'live',
@@ -145,19 +140,6 @@ module.exports = {
         path: 'apps',
         routeBasePath: 'apps',
         sidebarPath: require.resolve('./sidebarsApps.js'),
-        editUrl:
-          'https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/edit/master/website/',
-        remarkPlugins,
-        sidebarCollapsed: true,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'dictionary',
-        path: 'dictionary',
-        routeBasePath: 'dictionary',
-        sidebarPath: require.resolve('./sidebarsDictionary.js'),
         editUrl:
           'https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/edit/master/website/',
         remarkPlugins,
