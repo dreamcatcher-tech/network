@@ -51,18 +51,6 @@ module.exports = {
           label: 'Live',
           position: 'left',
         },
-        {
-          to: 'dust/',
-          activeBasePath: 'dust',
-          label: 'Dust',
-          position: 'right',
-        },
-        {
-          to: 'pool/',
-          activeBasePath: 'pool',
-          label: 'Dreamcatcher Gateway',
-          position: 'right',
-        },
         { to: 'blog', label: 'Blog', position: 'right' },
         {
           label: 'Apps',
