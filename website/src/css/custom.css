@@ -32,6 +32,18 @@
 
 }
 
+.dreamcatcher_callout_padding {
+
+  padding: 20px;
+  padding-left: 80px;
+  padding-bottom:  10px;
+}
+.dreamcatcher_callout_alignment {
+    margin: auto;
+    text-align: center;
+}
+
+
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;

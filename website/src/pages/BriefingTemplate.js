@@ -58,7 +58,7 @@ const badgesMap = {
 function Call_out({ imageUrl, path, title, description, badges = [] }) {
   const imgUrl = useBaseUrl(imageUrl)
   return (
-    <div className={clsx('col col--4', styles.feature)}>
+    <div className={clsx('col col--4 dreamcatcher_callout_padding', styles.feature)}>
       {imgUrl && (
         <Link className="text--center" to={useBaseUrl(path)}>
           <img className={styles.featureImage} src={imgUrl} alt={title} />
@@ -146,7 +146,7 @@ function Briefing() {
  )}
       <main>
       {call_outs && call_outs.length > 0 && (
-          <section className={styles.features}>
+          <section className={'dreamcatcher_callout_alignment', styles.features}>
             <div className="container">
               <div className="row">
                 {call_outs.map((props, idx) => (
