@@ -51,7 +51,7 @@ From micro to macro investments, invest time or money behind good ideas, knowing
     ),
   },
   {
-    title: 'Perputual Equity',
+    title: 'Perpetual Equity',
     imageUrl: 'img/undraw_personal_finance_tqcd.svg',
     description: <>Earn NFTs for every piece of work, every investment, every purchase and every collaboration. Own the rights forever and share in the benefits, or sell on as a hard asset.</>,
   },
