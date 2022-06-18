@@ -20,7 +20,7 @@ const apps = [
   {
     title: 'Dreamcatcher Gateway',
     path: 'pool/',
-    imageUrl: 'img/undraw_candidate.svg',
+    imageUrl: 'img/undraw_gateway.svg',
     description: (
       <>
         The first Dreamcatcher Pool.

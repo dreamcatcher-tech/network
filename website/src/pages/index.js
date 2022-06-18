@@ -5,6 +5,7 @@ import Link from '@docusaurus/Link'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import styles from './styles.module.css'
+
 const hero_01 = [
   {
 
@@ -17,7 +18,7 @@ const hero_01 = [
   },
   {
     title: 'Reuse and Recombination',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    imageUrl: 'img/undraw_reuse.svg',
     description: (
       <>
  Accelerate the time to market by using the work that already exists.  Build on Open Source knowing that the rights of all contributors are ensured, and they'll share fairly in the benefits.   </>
@@ -25,7 +26,7 @@ const hero_01 = [
   },
   {
     title: 'start-up-as-code',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    imageUrl: 'img/undraw_startup.svg',
     description: (
       <>
         Remove the overhead of constantly re-inventing the wheel when starting up a traditional company by working within a pre-agreed framework that's designed and certified once, automated in code, and used by all.      </>
@@ -33,7 +34,7 @@ const hero_01 = [
   },
   {
     title: 'Forward App Store',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    imageUrl: 'img/undraw_appstore.svg',
     description: (
       <>
         Purchase applications that do not exist yet, that you don't pay for until they do, and earn you upside when they're reused.
@@ -42,7 +43,7 @@ const hero_01 = [
   },
   {
     title: 'Algorithmic Cap-Table',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    imageUrl: 'img/undraw_captable.svg',
     description: (
       <>
 From micro to macro investments, invest time or money behind good ideas, knowing who's behind them, and receive algorithmically your fair return.
