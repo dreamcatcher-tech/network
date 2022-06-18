@@ -6,39 +6,19 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import styles from './styles.module.css'
 
-
 const call_outs = [
   {
-    title: 'The Creation Process',
+    title: 'Dreamcatcher Charter',
     path: 'pool/Pool_Process',
-    imageUrl: 'img/undraw_lightbulb_moment.svg',
-    description: (
-      <>
-        Learn more about the process of using Dreamcatcher to go from an mote of dust as an idea to a product in the real world.
-      </>
-    ),
   },
   {
-    title: 'Dreamcatcher Gateway',
+    title: 'Dreamcatcher Whitepaper',
     path: 'pool/',
-    imageUrl: 'img/undraw_gateway.svg',
-    description: (
-      <>
-        The first Dreamcatcher Pool.
-      </>
-    ),
-    badges: ['ctf'],
   },
   {
-    title: 'Dust',
+    title: 'Get Started',
     path: 'dust/',
-    imageUrl: 'img/undraw_playing_cards_cywn.svg',
-    description: (
-      <>
-        The place where Ideas go to be listened to.
-      </>
-    ),
-    badges: ['service'],
+
   },
 ]
 
@@ -177,6 +157,17 @@ function Briefing() {
           </section>
         )}
 
+        {info && info.length > 0 && (
+          <section className={styles.heroBanner}>
+            <div className="container">
+              <div className="row">
+                {info.map((props, idx) => (
+                  <Info key={idx} {...props} />
+                ))}
+              </div>
+            </div>
+          </section>
+ )}
 
         )}
       </main>

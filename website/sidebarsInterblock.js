@@ -10,7 +10,7 @@ module.exports = {
         'wp_interblock',
       ],
     },
-        {
+    {
       type: 'category',
       label: 'Dictionary',
       items: [
