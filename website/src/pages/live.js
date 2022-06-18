@@ -9,6 +9,7 @@ import styles from './styles.module.css'
 const apps = [
   {
     title: 'The Creation Process',
+    path: 'pool/Pool_Process',
     imageUrl: 'img/undraw_lightbulb_moment.svg',
     description: (
       <>
@@ -18,6 +19,7 @@ const apps = [
   },
   {
     title: 'Dreamcatcher Gateway',
+    path: 'pool/',
     imageUrl: 'img/undraw_candidate.svg',
     description: (
       <>
@@ -28,6 +30,7 @@ const apps = [
   },
   {
     title: 'Dust',
+    path: 'dust/',
     imageUrl: 'img/undraw_playing_cards_cywn.svg',
     description: (
       <>
@@ -42,14 +45,14 @@ const badgesMap = {
   ctf: <span class="badge badge--danger">CTF</span>,
   service: <span class="badge badge--primary">service</span>,
 }
-function Feature({ imageUrl, title, description, badges = [] }) {
+function Feature({ imageUrl, path, title, description, badges = [] }) {
   const imgUrl = useBaseUrl(imageUrl)
   return (
     <div className={clsx('col col--4', styles.feature)}>
       {imgUrl && (
-        <div className="text--center">
+        <Link className="text--center" to={useBaseUrl(path)}>
           <img className={styles.featureImage} src={imgUrl} alt={title} />
-        </div>
+        </Link>
       )}
       <h3>
         <Link
@@ -57,7 +60,7 @@ function Feature({ imageUrl, title, description, badges = [] }) {
             'button button--outline button--secondary button--lg',
             styles.getStarted
           )}
-          to={useBaseUrl('dust/')}
+          to={useBaseUrl(path)}
         >
           {title}
         </Link>
