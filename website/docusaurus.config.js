@@ -15,15 +15,14 @@ module.exports = {
   projectName: 'dreamcatcher-tech', // do not add .github.io else will publish to master
   themeConfig: {
     navbar: {
-      title: 'Dreamcatcher',
       logo: {
         alt: 'Dreamcatcher',
         src: 'img/dreamcatcher.svg',
       },
       items: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
+          to: 'toplevel/',
+          activeBasePath: 'toplevel',
           label: 'Dreamcatcher',
           position: 'left',
         },
@@ -34,19 +33,23 @@ module.exports = {
           position: 'left',
         },
         {
+          to: 'live/',
+          activeBasePath: 'live',
+          label: 'Live',
+          position: 'left',
+        },
+        {
           to: 'license/',
           activeBasePath: 'license',
           label: 'License',
           position: 'left',
         },
 
-        {
-          to: 'live/',
-          activeBasePath: 'live',
-          label: 'Live',
-          position: 'left',
+
+        { to: 'blog', 
+          label: 'Blog', 
+          position: 'right' 
         },
-        { to: 'blog', label: 'Blog', position: 'right' },
         {
           label: 'Apps',
           to: 'store',
