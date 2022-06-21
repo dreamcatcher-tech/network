@@ -13,6 +13,19 @@
   overflow: hidden;
 }
 
+.heroBanner2 {
+  background-color:white;
+  padding: 4rem 0;
+    padding-top: 20px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+    color: black;
+}
+
 @media screen and (max-width: 966px) {
   .heroBanner {
     padding: 2rem;

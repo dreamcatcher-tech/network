@@ -36,15 +36,27 @@ const head_banners = [
   },
 ]
 
-const info = [
+const info_odd = [
 
   {
     title: 'Dust',
     path: 'dust/',
     imageUrl: 'img/dreamcatcher.svg',
+    background: 0,
     description: (
       <>
-        The place where Ideas go to be listened to.
+        The place where info goes 2. The place where info goes 2. The place where info goes 2. The place where info goes 2. 
+      </>
+    ),
+  },
+    {
+    title: 'Dust',
+    path: 'dust/',
+    imageUrl: 'img/dreamcatcher.svg',
+    background: 1,
+    description: (
+      <>
+        The place where info goes 3. The place where info goes 3. The place where info goes 3. The place where info goes 3. 
       </>
     ),
   },
@@ -104,24 +116,45 @@ function Head_Banner({ imageUrl, path, title, description, badges = [] }) {
   )
 }
 
-function Info({ imageUrl, path, title, description, badges = [] }) {
+function Info({ imageUrl, path, title, description, badges = [], background }) {
     const context = useDocusaurusContext()
   const { siteConfig = {} } = context
   const imgUrl = useBaseUrl(imageUrl)
-  return (
+    if (background==1) {
 
-    <div className={clsx('hero hero--primary', styles.heroBanner)}>
+      return (
 
-      <h1>
-        New info here New info here New info here New info here New info here New info here New info here New info here New info here New info here New info here New info here New info here New info here New info here New info here 
-        New info here New info here New info here New info here New info here New info here New info here New info here New info here New info here New info here New info here New info here New info here New info here New info here 
+        <div className={clsx('hero hero--primary', styles.heroBanner2)}>
+          {imgUrl && (
+            <Link className="text--center" to={useBaseUrl(path)}>
+              <img src={imgUrl} alt={title} />
+            </Link>
+        )}
 
-        New info here New info here New info here New info here New info here New info here New info here New info here New info here New info here New info here New info here New info here New info here New info here New info here 
-      </h1>
-      
-      <p></p>
-    </div>
-  )
+          {description}
+
+        </div>
+      )
+    }
+    else {
+
+            return (
+
+        <div className={clsx('hero hero--primary', styles.heroBanner2)}>
+          
+        
+          {description}
+        
+              {imgUrl && (
+            <Link className="text--center" to={useBaseUrl(path)}>
+              <img src={imgUrl} alt={title} />
+            </Link>
+        )}
+          <p></p>
+        </div>
+      )
+    }
+
 }
 
 function Briefing() {
@@ -157,17 +190,17 @@ function Briefing() {
           </section>
         )}
 
-        {info && info.length > 0 && (
-          <section className={styles.heroBanner}>
+        {info_odd && info_odd.length > 0 && (
+          <section>
             <div className="container">
               <div className="row">
-                {info.map((props, idx) => (
+                {info_odd.map((props, idx) => (
                   <Info key={idx} {...props} />
                 ))}
               </div>
             </div>
           </section>
- )}
+
 
         )}
       </main>
