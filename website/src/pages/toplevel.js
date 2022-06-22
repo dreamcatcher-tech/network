@@ -30,33 +30,37 @@ const head_banners = [
     imageUrl: 'img/dreamcatcher.svg',
     description: (
       <>
-        The place where Ideas go to be listened to.
+        Harnessing the raw power of creativity
+
       </>
     ),
   },
 ]
 
-const info_odd = [
+const info_sections = [
 
   {
-    title: 'Dust',
-    path: 'dust/',
     imageUrl: 'img/dreamcatcher.svg',
     background: 0,
+    title: (
+      <><h1>Hello World 6</h1>'    </>
+    ),
     description: (
       <>
-        The place where info goes 2. The place where info goes 2. The place where info goes 2. The place where info goes 2. 
+        The place where info goes 1. The place where info goes 1. The place where info goes 1. The place where info goes 1. The place where info goes 1. The place where info goes 1. The place where info goes 1. The place where info goes 1. The place where info goes 1. The place where info goes 1. The place where info goes 1. The place where info goes 1. The place where info goes 1. The place where info goes 1. The place where info goes 1. 
       </>
     ),
   },
-    {
-    title: 'Dust',
-    path: 'dust/',
+    
+  {
     imageUrl: 'img/dreamcatcher.svg',
-    background: 1,
+    background: 0,
+    title: (
+      <><h1>Hello World 7</h1>'    </>
+    ),
     description: (
       <>
-        The place where info goes 3. The place where info goes 3. The place where info goes 3. The place where info goes 3. 
+        The place where info goes 2. The place where info goes 2. The place where info goes 2. The place where info goes 2. The place where info goes 2. The place where info goes 2. The place where info goes 2. The place where info goes 2. The place where info goes 2. The place where info goes 2. The place where info goes 2. The place where info goes 2. The place where info goes 2. 
       </>
     ),
   },
@@ -123,22 +127,29 @@ function Info({ imageUrl, path, title, description, badges = [], background }) {
     if (background==1) {
 
       return (
+    <>
 
+      {title}
         <div className={clsx('hero hero--primary', styles.heroBanner2)}>
+
           {imgUrl && (
             <Link className="text--center" to={useBaseUrl(path)}>
               <img src={imgUrl} alt={title} />
             </Link>
         )}
+         {title}
 
           {description}
 
         </div>
+           </>
       )
     }
     else {
 
             return (
+    <>
+      {title}
 
         <div className={clsx('hero hero--primary', styles.heroBanner2)}>
           
@@ -152,6 +163,7 @@ function Info({ imageUrl, path, title, description, badges = [], background }) {
         )}
           <p></p>
         </div>
+               </>
       )
     }
 
@@ -190,11 +202,14 @@ function Briefing() {
           </section>
         )}
 
-        {info_odd && info_odd.length > 0 && (
+        {info_sections && info_sections.length > 0 && (
           <section>
             <div className="container">
+   
+
               <div className="row">
-                {info_odd.map((props, idx) => (
+          
+                {info_sections.map((props, idx) => (
                   <Info key={idx} {...props} />
                 ))}
               </div>
