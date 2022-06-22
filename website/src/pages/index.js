@@ -189,7 +189,7 @@ function Home() {
                 'dreamcatcher_button buttonInvestors',
                 styles.getStarted
               )}
-              to={useBaseUrl('docs/investors/')}
+              to={useBaseUrl('investors/')}
             >
               Investors Learn more
             </Link></center>

@@ -40,14 +40,15 @@ const head_banners = [
 const info_sections = [
 
   {
-    imageUrl: 'img/dreamcatcher.svg',
+
     background: 0,
     title: (
-      <><h1>Hello World 6</h1>'    </>
+      <><h1>Building an Innovation Machine</h1>    </>
     ),
     description: (
       <>
-        The place where info goes 1. The place where info goes 1. The place where info goes 1. The place where info goes 1. The place where info goes 1. The place where info goes 1. The place where info goes 1. The place where info goes 1. The place where info goes 1. The place where info goes 1. The place where info goes 1. The place where info goes 1. The place where info goes 1. The place where info goes 1. The place where info goes 1. 
+        When we started thinking about Dreamcatcher, we wanted to invent a machine that could invent itself.
+        and could do so without the inefficiencies we see in every new organisation.  
       </>
     ),
   },
@@ -56,7 +57,7 @@ const info_sections = [
     imageUrl: 'img/dreamcatcher.svg',
     background: 0,
     title: (
-      <><h1>Hello World 7</h1>'    </>
+      <><h1>Hello World 7</h1>    </>
     ),
     description: (
       <>
