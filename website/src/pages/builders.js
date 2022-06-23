@@ -8,15 +8,15 @@ import styles from './styles.module.css'
 
 const call_outs = [
   {
-    title: 'For Builders',
+    title: 'For Buyers',
     path: 'docs/Dreamcatcher%20Charter',
   },
   {
-    title: 'For Buyers',
+    title: 'For Investors',
     path: 'docs/whitepaper',
   },
   {
-    title: 'Investor Deep Dive',
+    title: 'Builder Deep Dive',
     path: 'pool/',
 
   },
@@ -258,7 +258,6 @@ function Briefing() {
           </header>
  )}
       <main>
-
       {call_outs && call_outs.length > 0 && (
           <section className={'dreamcatcher_callout_alignment', styles.features}>
             <div className="container">
