@@ -110,6 +110,10 @@ module.exports = {
               label: 'YouTube',
               href: 'https://www.youtube.com/channel/UCysqnESDAhA0NzfbS1GI9YQ/videos',
             },
+            {
+              label: 'Discord',
+              href: 'https://discord.com/invite/ZfTkcgaEmh'
+            }
             // {
             //   label: 'Twitter',
             //   href: 'https://twitter.com/dreamcatcher-tech',
