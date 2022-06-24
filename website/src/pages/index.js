@@ -152,9 +152,9 @@ function Home() {
                 'dreamcatcher_button buttonGetStarted',
                 styles.getStarted
               )}
-              to={useBaseUrl('docs/')}
+              to={useBaseUrl('toplevel')}
             >
-              Get Started
+              Learn about Dreamcatcher
             </Link>
           </div>
         </div>
