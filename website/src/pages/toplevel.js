@@ -9,15 +9,15 @@ import styles from './styles.module.css'
 const call_outs = [
   {
     title: 'Dreamcatcher Charter',
-    path: 'pool/Pool_Process',
+    path: 'docs/Dreamcatcher%20Charter',
   },
   {
     title: 'Dreamcatcher Whitepaper',
-    path: 'pool/',
+    path: 'docs/whitepaper',
   },
   {
-    title: 'Get Started',
-    path: 'dust/',
+    title: 'Go Live',
+    path: 'live/',
 
   },
 ]
@@ -419,6 +419,17 @@ function Briefing() {
           </section>
 
 
+        )}
+              {call_outs && call_outs.length > 0 && (
+          <section className={'dreamcatcher_callout_alignment', styles.features}>
+            <div className="container">
+              <div className="row">
+                {call_outs.map((props, idx) => (
+                  <Call_out key={idx} {...props} />
+                ))}
+              </div>
+            </div>
+          </section>
         )}
       </main>
     </Layout>
