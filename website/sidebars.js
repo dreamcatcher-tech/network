@@ -39,6 +39,7 @@ module.exports = {
       items: [
         'wp_dreamcatcher',
         'wp_inversion',
+        'test',
       ],
     },
     {

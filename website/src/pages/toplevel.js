@@ -61,19 +61,20 @@ Fundamentally, all Innovation occurs when three things align to make an Idea hap
       </>
     ),
   },
-    
+  
   {
-    imageUrl: 'img/dreamcatcher.svg',
-    background: 0,
     title: (
       <><h1>The Power of Enlightened Self-Interest</h1>    </>
     ),
+    background: 0,
+
     description: (
       <>
         An efficient market is characterized by complete, costless, and instant transmission of information.  Where information is withheld, the market becomes less efficient.  In addition, an efficient market is one where each actor pursues what's reasonable for them.
 
 Our current practice in nurturing Innovation withholds information in all directions and creates perverse incentives:
 <><br></br></><><br></br></>
+
 For Investors, it's often opaque whether the actions of Builders are correct and complete.  Quite reasonably the result is a reliance of reporting and inspection.  Share option schemes are often used to align incentives, but for the highest skilled Builders these rarely work.
 <><br></br></><><br></br></>
 For Builders, the actions of Investors and Boards are often opaque and counter intuitive, given that it is the Builders who can see most clearly how to build the product they've been asked to build.  From this point of view it can often seem like managers, C-Level and shareholders are at odds with the challenges of creating new products.  Moreover, new ideas can be hidden, as employment contracts often hold clauses for the transfer of all intellectual output from the Builder to the Investor.
@@ -90,6 +91,20 @@ In each case, the market falls far short of complete, costless and instant trans
     title: (
       <><h1>This is where Dreamcatcher comes in</h1>    </>
     ),
+    description: (
+      <>
+The Dreamcatcher aims to provide an efficient innovation market that has, as far as possible with the technology we now have, a complete, costless and instant transmission of information between actors in an Innovation Marketplace:
+<><br></br></><><br></br></>
+<img src="./img/DreamcatcherFlow.svg" alt="Dreamcatcher Flow"></img>
+
+
+      </>
+    ),
+  },
+
+    {
+    background: 0,
+
     description: (
       <>
 The Dreamcatcher aims to provide an efficient innovation market that has, as far as possible with the technology we now have, a complete, costless and instant transmission of information between actors in an Innovation Marketplace:
