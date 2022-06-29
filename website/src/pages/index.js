@@ -146,17 +146,7 @@ function Home() {
 
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
-            <Link
-              className={clsx(
-                'dreamcatcher_button buttonGetStarted',
-                styles.getStarted
-              )}
-              to={useBaseUrl('toplevel')}
-            >
-              Learn about Dreamcatcher
-            </Link>
-          </div>
+          
         </div>
       </header>
       <main>
@@ -216,7 +206,7 @@ function Home() {
                 'dreamcatcher_button buttonBuilders',
                 styles.getStarted
               )}
-              to={useBaseUrl('docs/builders/')}
+              to={useBaseUrl('builders/')}
             >
               Builders Learn more
             </Link></center>

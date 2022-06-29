@@ -10,6 +10,7 @@ const call_outs = [
   {
     title: 'Dreamcatcher Charter',
     path: 'docs/Dreamcatcher%20Charter',
+
   },
   {
     title: 'Dreamcatcher Whitepaper',
@@ -40,10 +41,8 @@ const head_banners = [
 const info_sections = [
 
   {
-    background: 0,
-    title: (
-      <><h1>Permissionless Innovation</h1>    </>
-    ),
+    background: 1,
+    title: ('Permissionless Innovation'),
     description: (
       <>
 The Dreamcatcher is a permissionless innovation framework that aims to outperform traditional methods of getting Ideas to Market.
@@ -63,10 +62,8 @@ Fundamentally, all Innovation occurs when three things align to make an Idea hap
   },
   
   {
-    title: (
-      <><h1>The Power of Enlightened Self-Interest</h1>    </>
-    ),
-    background: 0,
+    background: 1,
+    title: ('The Power of Enlightened Self-Interest'),
 
     description: (
       <>
@@ -82,38 +79,30 @@ For Builders, the actions of Investors and Boards are often opaque and counter i
 For Buyers, the information gradient is most extreme.  A manufacturing company with a clear need in their process, who believes software can help, must either buy off-the-shelf, and get a product that comes close to doing what's required, but doesn't do exactly what's required, or runs the gauntlet of hiring a software company who knows nothing about their business, but a lot about software, when the Buyer knows a lot about the business, but nothing about software.
 
 In each case, the market falls far short of complete, costless and instant transmission of information.  
-      </>
-    ),
-  },
 
-    {
-    background: 0,
-    title: (
-      <><h1>This is where Dreamcatcher comes in</h1>    </>
-    ),
-    description: (
-      <>
-The Dreamcatcher aims to provide an efficient innovation market that has, as far as possible with the technology we now have, a complete, costless and instant transmission of information between actors in an Innovation Marketplace:
-<><br></br></><><br></br></>
-<img src="./img/DreamcatcherFlow.svg" alt="Dreamcatcher Flow"></img>
 
 
       </>
     ),
   },
 
+
     {
     background: 0,
+    title: ('This is where Dreamcatcher comes in'),
+
 
     description: (
       <>
+
+
 The Dreamcatcher aims to provide an efficient innovation market that has, as far as possible with the technology we now have, a complete, costless and instant transmission of information between actors in an Innovation Marketplace:
 <><br></br></><><br></br></>
 We start by providing a decentralised perpetual record of events using Blockchain technology.  This makes trusted Transparency possible.
 <><br></br></><><br></br></>
 That Transparency of events leads to the possibility to track Reputation - what you have done in the past matters, and can't be spun on a CV or LinkedIn Profile.  Instead of a Profile, you now have Reputation-as-an-asset.
 <><br></br></><><br></br></>
-Reputation-as-an-asset breads Fairness - all actors seek the best for themselves through their actions, but moderate with an eye to what the wider community would see as reasonable.  The result is an increasingly even playing-field through the recognition that Fairness, not greed, is good.
+Reputation-as-an-asset breeds Fairness - all actors seek the best for themselves through their actions, but moderate with an eye to what the wider community would see as reasonable.  The result is an increasingly even playing-field through the recognition that Fairness, not greed, is good.
 <><br></br></><><br></br></>
 Because Fairness incentivises more to join the network, a permissionless network where you can work, invest, invent, and make a living, and where Reputation is valued, is likely to draw in more and higher skilled people than one that is mistrusted or zero-sum.  One-to-one deals can never defeat the power of Network effects. 
 <><br></br></><><br></br></>
@@ -126,10 +115,11 @@ Finally, Dreamcatcher recognises that the various roles - Builders, Buyers, Inve
 Dreamcatcher aims to incentivise all three in exactly the same way, in a manner than cannot be disputed, using automation to remove needless friction, in a framework that aims to maximise network size along with the promotion of Reputation as an highly valuable asset, which promotes Fairness, which maximises network size....
 <><br></br></><><br></br></>
 That's the Dream we aim to catch.
-
+      <img src="./img/DreamcatcherFlow.svg" alt="Dreamcatcher Flow"></img>
       </>
     ),
   },
+    
 
     {
     background: 0,
@@ -316,6 +306,34 @@ function Call_out({ imageUrl, path, title, description, badges = [] }) {
   )
 }
 
+function info_section({ imageUrl, path, title, description, badges = [], button_text }) {
+  const imgUrl = useBaseUrl(imageUrl)
+  return (
+    <div className={clsx('col col--4 dreamcatcher_callout_padding', styles.feature)}>
+      {imgUrl && (
+        <Link className="text--center" to={useBaseUrl(path)}>
+          <img className={styles.featureImage} src={imgUrl} alt={title} />
+        </Link>
+      )}
+      <h3>
+        <Link
+          className={clsx(
+            'button button--outline button--secondary button--lg',
+            styles.getStarted
+          )}
+          to={useBaseUrl(path)}
+        >
+          {button_text}
+        </Link>
+      </h3>
+      {badges.map((name) => (
+        <span>{badgesMap[name]} </span>
+      ))}
+      <p>{description}</p>
+    </div>
+  )
+}
+
 function Head_Banner({ imageUrl, path, title, description, badges = [] }) {
     const context = useDocusaurusContext()
   const { siteConfig = {} } = context
@@ -337,7 +355,7 @@ function Head_Banner({ imageUrl, path, title, description, badges = [] }) {
   )
 }
 
-function Info({ imageUrl, path, title, description, badges = [], background }) {
+function Info({ imageUrl, path, title, description, badges = [], background, button_text}) {
     const context = useDocusaurusContext()
   const { siteConfig = {} } = context
   const imgUrl = useBaseUrl(imageUrl)
@@ -346,7 +364,7 @@ function Info({ imageUrl, path, title, description, badges = [], background }) {
       return (
     <>
 
-      {title}
+      <h2>{title}</h2>
         <div className={clsx('hero hero--primary', styles.heroBanner2)}>
 
           {imgUrl && (
@@ -354,10 +372,22 @@ function Info({ imageUrl, path, title, description, badges = [], background }) {
               <img src={imgUrl} alt={title} />
             </Link>
         )}
-         {title}
 
-          {description}
 
+      {description}
+
+      {button_text && (
+        <Link
+          className={clsx(
+            'button button--outline button--secondary',
+    
+          )}
+          to={useBaseUrl(path)}
+        >
+          {button_text}
+        </Link>
+      )}
+    
         </div>
            </>
       )
@@ -366,19 +396,31 @@ function Info({ imageUrl, path, title, description, badges = [], background }) {
 
             return (
     <>
-      {title}
+      <h2>{title}</h2>
 
         <div className={clsx('hero hero--primary', styles.heroBanner2)}>
           
         
-          {description}
+
         
               {imgUrl && (
             <Link className="text--center" to={useBaseUrl(path)}>
               <img src={imgUrl} alt={title} />
             </Link>
         )}
+                  {description}
           <p></p>
+                {button_text && (
+        <Link
+          className={clsx(
+            'button button--outline button--secondary',
+    
+          )}
+          to={useBaseUrl(path)}
+        >
+          {button_text}
+        </Link>
+      )}
         </div>
                </>
       )
