@@ -30,7 +30,7 @@ const head_banners = [
     imageUrl: 'img/dreamcatcher.svg',
     description: (
       <>
-        Unleashing your potential
+        Tapping the value of your Knowledge
 
       </>
     ),
@@ -40,15 +40,27 @@ const head_banners = [
 const info_sections = [
 
   {
-    imageUrl: 'img/undraw_design_inspiration_re_tftx.svg',
+    imageUrl: 'img/undraw_knowledge_re_5v9l.svg',
     background: 0,
     title: (
-      <><h1>Section 1</h1>    </>
+      <><h1>Your Problems are your Goldmine</h1>    </>
     ),
     description: (
       <>
-Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 
+      As a Buyer you're sitting on a potential goldmine.  You understand what problem your company needs to have solved, how solving it may give your company a competitive advantage and how it can reduce costs.  
 <><br></br></><><br></br></>
+But the value of identifying those opportunities doesn't stop there; it's unlikely that the problem you're trying to solve is unique - it's likely felt by others.  Why not then reuse this work by allowing it to be resold to others on a world stage, and allowing others to build it out further?
+<><br></br></><><br></br></>
+Dreamcatcher does this by:
+<><br></br></><><br></br></>
+1. Providing an efficient marketplace to get software built at lower risk than directly contracting with a development company
+<><br></br></>
+2. Registering the work your company puts into helping mold and design that software as an asset in it's own right.  
+<><br></br></>
+3. Providing an automated marketplace which allows others to reuse and further improve the software, and 
+<><br></br></>
+4. Provides a revenue stream should it become adopted or incorporated into other software.  
+
 
  
       </>
@@ -58,99 +70,79 @@ Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 
 
   {
     background: 1,
+        imageUrl: 'img/undraw_questions_re_1fy7.svg',
     title: (
-      <><h1>Section 2</h1>    </>
+      <><h1>State the problem, not the solution</h1>    </>
     ),
     description: (
       <>
-Dreamcatcher works by giving a framework for maximising your own output, reducing barriers to entry, encouraging re-use and recombination of code and by aligning the incentives of all involved.
-      </>
+You know your business, software devs don't.  Software devs know software; there's a good chance you - not so much.
+<><br></br></><><br></br></>
+This information gradient - the difference between knowledge areas when two groups try to collaborate - is the leading reason software development projects for business go wrong.
+<><br></br></><><br></br></>
+As a Buyer in Dreamcatcher you start by stating the problem in business terms and inviting Ideas on how to solve it.  
+<><br></br></><><br></br></>
+Then it's openned up to all Innovation from all sides.
+<><br></br></><><br></br></>
+Perhaps this problem is commonplace, and you only need 5% change in existing code to make it perfect for you.  In which case your cost and risk has just plumated.  
+<><br></br></><><br></br></>
+Perhaps this problem is common in another industry and Ideas on how to solve it can be combined; perhaps together you come up with a ground-breaking Idea.
+<><br></br></><><br></br></>
+Perhaps you avoid the 'contract trap' many Buyers experience when hiring a software dev company - that of developers doing exactly what they're told through the contract, but not what you meant.  This leads to lengthy and ever more detailed specs that shut down Innovation, not open it up.
+<><br></br></><><br></br></>
+Innovation is cross-pollination      </>
     ),
   },
     {
-    imageUrl: 'img/undraw_stepping_up_g6oo.svg',
-    background: 1,
-    title: (
-<><h2>Section 2.1</h2>    </>
-    ),
-    description: (
-      <>
-A good job should be rewarded for the output, not the effort.  Wouldn't it be helpful then to get more returns from doing something you're more highly skilled at than others, spend less time doing it, and get paid for what it's worth.
-<><br></br></><><br></br></>
-Dreamcatcher focuses on this concept; it matches Ideas (a piece of work that others have identified as being useful), with those best placed to contribute to building those Ideas into Products.  
-<><br></br></><><br></br></>
-It focuses on outputs - finished, useful work - not time.  If you can solve a problem in an hour that takes another Builder 6 days, then the same level of rewards are due.  
-<><br></br></><><br></br></>
-It registers those outputs at a micro-level - down to a single commit - and then records your ownership of that output as an NFT.  That NFT is your asset; you may choose to sell the royalty stream from that asset up front if you need the money, split the cost based on your day rate and share the rewards, or turn up without permission, solve the problem and keep the ownership.
-<><br></br></><><br></br></>
-Perhaps those assets can generate a revenue stream over years or decades - for as long as they're still proving useful.  If you solve a particularly useful problem, that revenue stream could be generational.
-<><br></br></><><br></br></>
-We call this Ambient Attribution.
-<><br></br></>
-      </>
-    ),
-  },
-  
-  {
-    imageUrl: 'img/undraw_interview_re_e5jn.svg',
     background: 0,
+        imageUrl: 'img/undraw_moving_forward_re_rs8p.svg',
     title: (
-      <><h2>Section 2.2</h2>    </>
+      <><h1>Forward Apps</h1>    </>
     ),
     description: (
       <>
-            Dreamcatcher is built on the concept of Ambient Attribution.  
+How does having an app built for your company with zero up-front cost sound, where you only pay when it's delivered and you use it?
 <><br></br></><><br></br></>
-    Ambient Attribution ensures everyone involved knows that they will get their fair share of any and all rewards coming from the completion of a task.  Those tasks can be big or small.  It can involve a Buyer suggesting a feature, an innovator proposing a completely new product, an investor taking an early position on a great new idea - it's the impact of each contribution that dictates the Algorithmic Cap Table.
+That's the concept behind Forward Apps
 <><br></br></><><br></br></>
-    That Algorithmic Cap Table is guaranteed in code, and ensures that all incentives, throughout the whole project team, are pointing in the same direction.
+You as the Buyer write clearly what the problem is that you're trying to solve, and put that problem in a Dreamcatcher Pool.
 <><br></br></><><br></br></>
-    Ambient Attribution ensures transparency; with transparency, an Investor can be sure that the investment put forward is being spent on what matters.        </>
+Developers from around the world can pick it up, work on it and deliver it back to you for consideration.
+<><br></br></><><br></br></>
+If you want to incentivise it to be done faster, put a bounty into escrow, and offer that to whoever delivers what you asked for.  You then share in the rewards if that solution gets reused.
+<><br></br></><><br></br></>
+If time is not of the essence, allow the market to decide if it's worth solving or to propose solutions that already exist.  You get recognition for identifying a problem, but more importantly you get the software you want without the risk, cost and distraction of hiring a dev company.
+<><br></br></><><br></br></>
+Forward Apps shows the market what's needed.
+
+</>
     ),
   },
     {
-    imageUrl: 'img/undraw_creative_thinking_re_9k71.svg',
     background: 1,
+        imageUrl: 'img/undraw_engineering_team_re_fvat.svg',
     title: (
-      <><h2>Section 2.3</h2>    </>
+      <><h1>A Trusted Environment</h1>    </>
     ),
     description: (
       <>
-One of the other great barriers to making a decent living as an independent Builder is maximising the utility of your work.  
+The primary method of making these deals on the Dreamcatcher is through Pools.  Pools are like a club, where all involved agree to abide by the rules.
 <><br></br></><><br></br></>
-In general, there are very few unique problems out there to be solved.  More usually a solution to a problem can be re-used wherever that problem is felt.
+This includes off-the-shelf licensing and contracting, including arbitration for disputes and QA for the release of escrowed funds for work completed.
 <><br></br></><><br></br></>
-Dreamcatcher encourages this reuse by providing an off-the-shelf licensing and legal framework that allows others to use your work without further interaction, while ensuring through Ambient Attribution that you get paid for that re-use.
+It allows all to get on with the job of building software rather bearing the cost and time of recruiting, sifting, tendering, contracting and policing that contract. 
 <><br></br></><><br></br></>
-This also works both ways.  Duplication in software development is inefficient.  If a Product only needs 10% new code to be written, why re-write the other 90%?  Someone else has already done that.  Under the same licensing scheme Dreamcatcher allows you to make use of the work of others on new Projects, and ensures that, just as with your own work, they get their fair share should the revenue come.
-    </>
+It provides third party protection, backed by automated execution of contracts and redress ultimatedly through the usual channels.  And so you get all the upside of working in a trusted network, without the cost of one-to-one negotiations.
+<><br></br></><><br></br></>
+This allows the problems to be solved to get smaller, as the overhead is close to zero.  With smaller problems to solve, there can be greater speed of innovation.
+<><br></br></><><br></br></>
+Trust leads to cooperation, leads to Innovation.
+
+
+</>
     ),
   },
 
-    {
-    imageUrl: 'img/undraw_treasure_of-9-i.svg',
-    background: 0,
-    title: (
-      <><h2>Section 2.4</h2>    </>
-    ),
-    description: (
-      <>
-So Dreamcatcher is a great deal for Builders.  But what about the Buyers and Investors?  If this is a zero-sum game then they won't turn up.
-<><br></br></><><br></br></>
-Code is not the only way to contribute.  A Buyer who identifies a problem in their company that they want solved by software is contributing by clearly identifying that problem.  That's a contribution which should be recognised.
-<><br></br></><><br></br></>
-Investors willing to back work undertaken to solve a problem are likewise contributing.  That again is a contribution that should be recognised.
-<><br></br></><><br></br></>
-All of these contributions are considered through Ambient Attribution, secured through the Dreamcatcher License and arbitrated by independent QAs arbiters.
-<><br></br></><><br></br></>
-Moreover, the reality is that we all, at different times, take on these different hats.  They're not mutually exclusive and neither they should be.  A Builder who includes a library in their code is a Buyer; a Buyer who offers an escrowed pool of money for something they need is an Investor; an Investor who improves and promotes a good Idea is a Builder.  There are many ways that the lines between these three are grey.
-<><br></br></><><br></br></>
-But by making the rules the same for all, everyone's incentives align, reducing the cost and improving the competitiveness of all who contribute.
-<><br></br></><><br></br></>
-Under Dreamcatcher, you share in the benefits through cooperation.
-   </>
-    ),
-  },
 ]
 
 
