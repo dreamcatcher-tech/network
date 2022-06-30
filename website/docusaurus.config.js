@@ -21,15 +21,21 @@ module.exports = {
       },
       items: [
         {
-          to: 'toplevel/',
-          activeBasePath: 'toplevel',
-          label: 'Dreamcatcher',
+          to: 'builders/',
+          activeBasePath: 'builders',
+          label: 'Builders',
           position: 'left',
         },
         {
-          to: 'interblock/',
-          activeBasePath: 'interblock',
-          label: 'Interblock',
+          to: 'investors/',
+          activeBasePath: 'investors',
+          label: 'Investors',
+          position: 'left',
+        },
+        {
+          to: 'buyers/',
+          activeBasePath: 'buyers',
+          label: 'Buyers',
           position: 'left',
         },
         {
@@ -38,12 +44,7 @@ module.exports = {
           label: 'Live',
           position: 'left',
         },
-        {
-          to: 'license/',
-          activeBasePath: 'license',
-          label: 'License',
-          position: 'left',
-        },
+
 
 
         { to: 'blog', 

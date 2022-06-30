@@ -287,18 +287,23 @@ function Briefing() {
           </header>
  )}
       <main>
-      {call_outs && call_outs.length > 0 && (
-          <section className={'dreamcatcher_callout_alignment', styles.features}>
+                {(
+          <section className={styles.hero_01}>
             <div className="container">
-              <div className="row">
-                {call_outs.map((props, idx) => (
-                  <Call_out key={idx} {...props} />
-                ))}
-              </div>
+ 
+            <center><Link
+              className={clsx(
+                'dreamcatcher_button buttonGetInvolved',
+                styles.getStarted
+              )}
+              to={useBaseUrl('live/')}
+            >
+              Go Live
+            </Link></center>
             </div>
           </section>
         )}
-
+        
         {info_sections && info_sections.length > 0 && (
           <section>
             <div className="container">
@@ -315,17 +320,29 @@ function Briefing() {
 
 
         )}
-        {call_outs && call_outs.length > 0 && (
-          <section className={'dreamcatcher_callout_alignment', styles.features}>
+
+
+
+                {(
+          <section className={styles.hero_06}>
             <div className="container">
-              <div className="row">
-                {call_outs.map((props, idx) => (
-                  <Call_out key={idx} {...props} />
-                ))}
-              </div>
+ 
+            <center><Link
+              className={clsx(
+                'dreamcatcher_button buttonGetInvolved',
+                styles.getStarted
+              )}
+              to={useBaseUrl('live/')}
+            >
+              Go Live
+            </Link></center>
             </div>
           </section>
         )}
+
+
+
+
       </main>
     </Layout>
   )

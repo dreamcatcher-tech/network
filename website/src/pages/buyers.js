@@ -43,23 +43,13 @@ const info_sections = [
     imageUrl: 'img/undraw_design_inspiration_re_tftx.svg',
     background: 0,
     title: (
-      <><h1>What is your Talent worth?</h1>    </>
+      <><h1>Section 1</h1>    </>
     ),
     description: (
       <>
-        What is the value of your work?  Is it just the value of your time?  Most jobs, including gig-work, exchange money for your time and your copyright.  
+Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 
 <><br></br></><><br></br></>
-    By selling yourself as timeslices, you also lose a great deal of control.  What if the task takes twice as long?  Or half as long?  Or if there's an entirely novel way to do it that isn't in the jobsheet but you're stopped from pursuing it?  Or worse, you can pursue it but because you're 'on-the-clock' ownership of that idea now belongs to someone else?
-<><br></br></><><br></br></>
-By selling yourself in timeslices you don't necessarily get the freedom to spot and do what you know is necessary.
-<><br></br></><><br></br></>
-So many Builders would prefer not to sell their time and copyright for a one-off fee.  The most talented want to build software and generate an income stream from how successful it is.
-<><br></br></><><br></br></>
-But the majority of the job market in software construction doesn't allow that.  
-<><br></br></><><br></br></>
-You also don't get to self-select jobs that you can make a real impact with.  Those jobs that you can do better than most, maybe even better than everyone, but which come up rarely and when they do, because you're skilled, it takes you less time and so you get paid less.
 
-<><br></br></>
  
       </>
     ),
@@ -69,7 +59,7 @@ You also don't get to self-select jobs that you can make a real impact with.  Th
   {
     background: 1,
     title: (
-      <><h1>The Dreamcatcher Way</h1>    </>
+      <><h1>Section 2</h1>    </>
     ),
     description: (
       <>
@@ -81,7 +71,7 @@ Dreamcatcher works by giving a framework for maximising your own output, reducin
     imageUrl: 'img/undraw_stepping_up_g6oo.svg',
     background: 1,
     title: (
-<><h2>Maximising your Value</h2>    </>
+<><h2>Section 2.1</h2>    </>
     ),
     description: (
       <>
@@ -105,7 +95,7 @@ We call this Ambient Attribution.
     imageUrl: 'img/undraw_interview_re_e5jn.svg',
     background: 0,
     title: (
-      <><h2>No More Gatekeepers</h2>    </>
+      <><h2>Section 2.2</h2>    </>
     ),
     description: (
       <>
@@ -122,7 +112,7 @@ We call this Ambient Attribution.
     imageUrl: 'img/undraw_creative_thinking_re_9k71.svg',
     background: 1,
     title: (
-      <><h2>Reuse and Recombination</h2>    </>
+      <><h2>Section 2.3</h2>    </>
     ),
     description: (
       <>
@@ -141,7 +131,7 @@ This also works both ways.  Duplication in software development is inefficient. 
     imageUrl: 'img/undraw_treasure_of-9-i.svg',
     background: 0,
     title: (
-      <><h2>Aligning Incentives</h2>    </>
+      <><h2>Section 2.4</h2>    </>
     ),
     description: (
       <>
@@ -287,14 +277,19 @@ function Briefing() {
           </header>
  )}
       <main>
-      {call_outs && call_outs.length > 0 && (
-          <section className={'dreamcatcher_callout_alignment', styles.features}>
+                {(
+          <section className={styles.hero_01}>
             <div className="container">
-              <div className="row">
-                {call_outs.map((props, idx) => (
-                  <Call_out key={idx} {...props} />
-                ))}
-              </div>
+ 
+            <center><Link
+              className={clsx(
+                'dreamcatcher_button buttonGetInvolved',
+                styles.getStarted
+              )}
+              to={useBaseUrl('live/')}
+            >
+              Go Live
+            </Link></center>
             </div>
           </section>
         )}
@@ -315,17 +310,28 @@ function Briefing() {
 
 
         )}
-        {call_outs && call_outs.length > 0 && (
-          <section className={'dreamcatcher_callout_alignment', styles.features}>
+
+
+
+
+                {(
+          <section className={styles.hero_06}>
             <div className="container">
-              <div className="row">
-                {call_outs.map((props, idx) => (
-                  <Call_out key={idx} {...props} />
-                ))}
-              </div>
+ 
+            <center><Link
+              className={clsx(
+                'dreamcatcher_button buttonGetInvolved',
+                styles.getStarted
+              )}
+              to={useBaseUrl('live/')}
+            >
+              Go Live
+            </Link></center>
             </div>
           </section>
         )}
+
+
       </main>
     </Layout>
   )
