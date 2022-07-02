@@ -229,23 +229,23 @@ function Home() {
         )}
         
         {(
-          <section className={styles.hero_06}>
+          <section className={styles.hero_white}>
             <div className="container">
  
-             <center><img src="img/dreamcatcher.svg"/></center>
-            <center><Link
-              className={clsx(
-                'dreamcatcher_button buttonGetInvolved',
-                styles.getStarted
-              )}
-              to={useBaseUrl('live/')}
-            >
-              Go Live
-            </Link></center>
+
             </div>
           </section>
         )}
 
+        {(
+          <section className={styles.hero_06}>
+            <div className="container">
+ 
+             <center><img src="img/dreamcatcher.svg"/></center>
+           
+            </div>
+          </section>
+        )}
 
       </main>
     </Layout>

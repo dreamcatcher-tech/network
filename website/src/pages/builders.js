@@ -202,7 +202,7 @@ function Head_Banner({ imageUrl, path, title, description, badges = [] }) {
   const imgUrl = useBaseUrl(imageUrl)
   return (
 
-    <div className={clsx('hero hero--primary', styles.heroBanner)}>
+    <div className={clsx('hero hero--primary', styles.hero_Builders)}>
       {imgUrl && (
         <Link className="text--center" to={useBaseUrl(path)}>
           <img src={imgUrl} alt={title} />
@@ -276,7 +276,7 @@ function Briefing() {
     >
 
    {head_banners && head_banners.length > 0 && (
-          <header className={styles.heroBanner}>
+          <header className={styles.hero_Builders}>
             <div className="container">
               <div className="row">
                 {head_banners.map((props, idx) => (
@@ -322,9 +322,8 @@ function Briefing() {
         )}
 
 
-
                 {(
-          <section className={styles.hero_06}>
+          <section className={styles.hero_Builders}>
             <div className="container">
  
             <center><Link

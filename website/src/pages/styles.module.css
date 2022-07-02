@@ -11,6 +11,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  color: black;
 }
 
 .heroBanner2 {
@@ -60,22 +61,25 @@
   align-items: center;
   padding: 2rem 0;
   width: 100%;
+  color: black;
 }
 
 .hero_Builders {
-  background-color:white;
+  background-color:var(--dreamcatcher-pastel-green);
   display: flex;
   align-items: center;
   padding: 2rem 0;
   width: 100%;
+  color: black;
 }
 
 .hero_Buyers {
-  background-color:var(--dreamcatcher-pastel-orange);
+  background-color:var(--dreamcatcher-pastel-pink);
   display: flex;
   align-items: center;
   padding: 2rem 0;
   width: 100%;
+  color: black;
 }
 
 .hero_Interblock {
@@ -94,8 +98,16 @@
   align-items: center;
   padding: 2rem 0;
   width: 100%;
+
 }
 
+.hero_white {
+  background-color:white;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
 
 
 .featureImage {

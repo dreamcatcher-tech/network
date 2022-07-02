@@ -15,17 +15,30 @@
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
-  --dreamcatcher-pink:  rgb(255,130,153);
-  --dreamcatcher-purple:  rgb(194,147,218);
-  --dreamcatcher-orange:  rgb(254,207,115);
-  --dreamcatcher-blue:  rgb(155,232,248);
-  --dreamcatcher-green:  rgb(201,229,102);
 
-  --dreamcatcher-pastel-pink:  rgb(178, 128, 140);
-  --dreamcatcher-pastel-purple:  rgb(225, 199, 238);
-  --dreamcatcher-pastel-orange:  rgb(255, 232, 182);
-  --dreamcatcher-pastel-blue:  rgb(203, 245, 254);
-  --dreamcatcher-pastel-green:  rgb(230, 245, 175);
+  --dreamcatcher-pink:  #D02F9A;
+  --dreamcatcher-purple:  #B650DC;
+  --dreamcatcher-orange:  #E0591F;
+  --dreamcatcher-blue:  #3E74C1;
+  --dreamcatcher-green:  #48B77B;
+
+  --dreamcatcher-pastel-pink:  #E795CB;
+  --dreamcatcher-pastel-purple:  #E1B8F1;
+  --dreamcatcher-pastel-orange:  #EEA383;
+  --dreamcatcher-pastel-blue:  #98B5DE;
+  --dreamcatcher-pastel-green:  #B3E1C8;
+
+  --dreamcatcher-pink-opposite:  #2FD065;
+  --dreamcatcher-purple-opposite:  #77DC50;
+  --dreamcatcher-orange-opposite: #1FA6E0;
+  --dreamcatcher-blue-opposite:  #C18B3E;
+  --dreamcatcher-green-opposite:  #B74884;
+
+  --dreamcatcher-pastel-pink-opposite:  #95E7B0;
+  --dreamcatcher-pastel-purple-opposite:  #C7F1B8;
+  --dreamcatcher-pastel-orange-opposite:  #83CDEE;
+  --dreamcatcher-pastel-blue-opposite:  #DEC198;
+  --dreamcatcher-pastel-green-opposite:  #E1B3CC;
 
   --dreamcatcher-hover-pink:  rgb(255, 199, 210);
 
