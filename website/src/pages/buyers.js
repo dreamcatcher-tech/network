@@ -278,7 +278,7 @@ function Briefing() {
                 'dreamcatcher_button buttonGetInvolved',
                 styles.getStarted
               )}
-              to={useBaseUrl('live/')}
+              to={useBaseUrl('buyers-go-live/')}
             >
               Go Live
             </Link></center>
@@ -315,7 +315,7 @@ function Briefing() {
                 'dreamcatcher_button buttonGetInvolved',
                 styles.getStarted
               )}
-              to={useBaseUrl('live/')}
+              to={useBaseUrl('buyers-go-live/')}
             >
               Go Live
             </Link></center>

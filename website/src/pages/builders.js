@@ -296,14 +296,14 @@ function Briefing() {
                 'dreamcatcher_button buttonGetInvolved',
                 styles.getStarted
               )}
-              to={useBaseUrl('live/')}
+              to={useBaseUrl('builders-go-live/')}
             >
               Go Live
             </Link></center>
             </div>
           </section>
         )}
-        
+
         {info_sections && info_sections.length > 0 && (
           <section>
             <div className="container">
@@ -332,7 +332,7 @@ function Briefing() {
                 'dreamcatcher_button buttonGetInvolved',
                 styles.getStarted
               )}
-              to={useBaseUrl('live/')}
+              to={useBaseUrl('builders-go-live/')}
             >
               Go Live
             </Link></center>
