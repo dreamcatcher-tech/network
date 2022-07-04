@@ -40,7 +40,7 @@ const head_banners = [
 const info_sections = [
 
   {
-    imageUrl: 'img/undraw_design_inspiration_re_tftx.svg',
+    imageUrl: 'img/undraw_work_chat_re_qes4.svg',
     background: 0,
 
     description: (
@@ -54,9 +54,21 @@ const info_sections = [
       </>
     ),
   },
+  {
+
+    background: 1,
+
+    description: (
+      <>
+      <h1>INSERT SIGN UP HERE</h1>
+ 
+      </>
+    ),
+  },
+
 
   {
-    imageUrl: 'img/undraw_design_inspiration_re_tftx.svg',
+    imageUrl: 'img/undraw_savings_re_eq4w.svg',
     background: 1,
 
     description: (

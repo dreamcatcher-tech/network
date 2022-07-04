@@ -237,15 +237,20 @@ function Home() {
           </section>
         )}
 
-        {(
-          <section className={styles.hero_06}>
+
+ {hero_01 && hero_01.length > 0 && (
+          <section className={styles.hero_01}>
             <div className="container">
- 
+                          <h1> Dreamcatcher </h1>
+              <h1> Maximising Innovation </h1>
              <center><img src="img/dreamcatcher.svg"/></center>
-           
             </div>
           </section>
         )}
+
+
+
+
 
       </main>
     </Layout>
