@@ -23,13 +23,13 @@ module.exports = {
         {
           to: 'builders/',
           activeBasePath: 'builders',
-          label: 'Builders',
+          label: 'Do-ers',
           position: 'left',
         },
         {
           to: 'investors/',
           activeBasePath: 'investors',
-          label: 'Investors',
+          label: 'Funders',
           position: 'left',
         },
         {
