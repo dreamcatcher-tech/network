@@ -18,17 +18,17 @@ Dreamcatcher directly connects economic reward to the value of Members' contribu
     ),
   },
   {
-    title: 'Open Collaboration',
+    title: 'Open and Incentivised',
     imageUrl: 'img/undraw_reuse.svg',
     description: (
       <>
- Dreamcatcher allows anyone, anywhere, to turn up and just 'do' - allowing you to contribute without permission in turning Ideas into Products.  The pool is worldwide and without barriers - only talent and reputation matter.
+ Dreamcatcher allows anyone, anywhere, to turn up and just 'do' - allowing you to contribute without permission in an open Market that turns Ideas into Products.  Membership is worldwide, has no barrier to entry and incentivises high quality contributions.
 
  </>
     ),
   },
   {
-    title: 'Packetisation',
+    title: 'Packetised',
     imageUrl: 'img/undraw_startup.svg',
     description: (
       <>
@@ -36,15 +36,25 @@ Dreamcatcher directly connects economic reward to the value of Members' contribu
         </>
     ),
   },
-  {
+
+    {
+    title: 'Quality Guardians',
+    imageUrl: 'img/undraw_personal_finance_tqcd.svg',
+    description: <>
+    Dreamcatcher ensures all Members can see when a Packet is 'done' or 'not done'.  This reduces the cost to all involved by eliminating ambiguity both when specifying an Idea, and when claiming it's solved.  It does this by incentivising Members to become QA Guardians who rely on their own Reputation to either release escrow or withhold it, a process which is automated and transparent from the start.
+    </>,
+  },
+
+    {
     title: 'Attribution',
     imageUrl: 'img/undraw_appstore.svg',
     description: (
       <>
-     Packets act like immutable equity that cannot be diluted or taken away; they're Attributed - i.e. owned - by all Members who contributed to their creation.  They can be traded and can generate revenue streams, all with the certain knowledge that those who contributed get rewarded.
+     Once 'done', Packets act like immutable equity that cannot be diluted or taken away; they're Attributed - i.e. owned - by all Members who contributed to their creation.  They can be traded and can generate revenue streams, all with the certain knowledge that those who contributed get rewarded.
  </>
     ),
   },
+
   {
     title: 'Reuse and Recombination',
     imageUrl: 'img/undraw_captable.svg',
@@ -54,13 +64,7 @@ Packets aren't just for one App; they can be re-used in many Apps and improved o
       </>
     ),
   },
-  {
-    title: 'Forward App Store',
-    imageUrl: 'img/undraw_personal_finance_tqcd.svg',
-    description: <>
-    Dreamcatcher allows Buyers to ask for something to be built, to put up escrowed funds to attract others to build it, or to just sit back and only pay when it's built.  These 'asks' - Requests - are valuable in their own right as they show a real demand.  Requests are also Packetised and Attributed, potentially giving returns to the Buyer if they discover a problem that can be solved once and which many can benefit from.
-    </>,
-  },
+
 ]
 
 
@@ -93,23 +97,27 @@ const hero_Builders = [
   {
     description: <><h1>Permissionless Work</h1>As a Do-er - someone who gets something done - there are no arbitrary gatekeepers on Dreamcatcher.  If you have the skill, search for a Packet that's needing done and do it.  That Packet will be Attributed to you and those who helped, can be re-used passively to generate income, and any escrowed fees offered will be released solely on the quality of your work.</>,
   },  {
-    description: <><h1>Be the Expert</h1>Tap into your deep specialisation by contributing at exactly the right time to maximise your value.  Have a skill few others do?  Use that to specialise and outcompete the market.  You're not being paid for your time, you're being rewarded for high quality, completed, granular Packages.</>,
+    description: <><h1>Be the Expert</h1>Tap into your deep specialisation by contributing at exactly the right time to maximise your value.  Have a skill few others do?  Use that to specialise and outcompete the market.  You're not being paid for your time, you're being rewarded for high quality, completed, granular Packets.</>,
   },
     {
-    description: <><h1>Improve, Innovate, Earn</h1>If you see an App on Dreamcatcher aimed at one industry, and know that it can be used elsewhere, build on it, customise it, improve it, or just sell it.  Dreamcatcher tracks that effort and value like any other Package, and takes care of licensing, revenue collection and payments automatically.</>,
+    description: <><h1>Improve, Innovate, Earn</h1>If you see an App on Dreamcatcher aimed at one industry, and know that it can be used elsewhere, build on it, customise it, improve it, or just sell it.  Dreamcatcher tracks that effort and value like any other Packet, and takes care of licensing, revenue collection and payments automatically.</>,
   },
 ]
 
 const hero_Buyers = [
   {
     description: <><h1>Your Needs are Gold-Dust</h1>There's nothing more valuable when building a Product as knowing that someone will buy it.  As a Buyer, you need that piece of software, and if you do, more than likely many will.  That's Gold-Dust.  Dreamcatcher ensures that Buyers receive Attribution for submitting Requests and share in the rewards when it's built and being used.</>,
-  },  {
-    description: <><h1>Zero Cost Development</h1>Dreamcatcher allows Buyers to escrow funds to have a feature or a new piece of software built.  Those funds are released through QA, and so you can be sure of getting what you wanted.  However, how about zero-up front costs?  If it's not urgent, submit a Request and allow the Dreamcatcher's Direct Connection between incentives to allow others to build it.  This removes all development risk and allowing you to get one with business.</>,
-  },
+  },  
     {
     description: <><h1>Customisation Sniper</h1>Is there an App out there that exists but isn't quite right? Dreamcatcher's use of Packets of work allows you to fund just the function changes you need, building on the original to get precisely what you want.  This is enabled through Dreamcatcher's licensing framework which gives access to the App source, and Attribution to automatically ensure everyone gets paid.
 </>,
   },
+
+    {
+    description: <><h1>Forward App Store</h1>Dreamcatcher allows Buyers to ask for something to be built, to put up escrowed funds to attract others to build it, or to just sit back and only pay when it's built.  These 'asks' - Requests - are valuable in their own right as they show a real demand.  Requests are also Packetised and Attributed, potentially giving returns to the Buyer if they discover a problem that can be solved once and which many can benefit from.
+</>,
+  },
+
 
 ]
 
@@ -136,7 +144,7 @@ function Home() {
     <Layout
       title={`${siteConfig.title}`}
 
-      description="Perpetual Invention Machine"
+      description="Perpetual Innovation Machine" 
     >
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
 
@@ -152,7 +160,7 @@ function Home() {
         {hero_01 && hero_01.length > 0 && (
           <section className={styles.hero_01}>
             <div className="container">
-              <h1> A new Framework for Taking Innovations to Market </h1>
+              <h1> An Open, Packetised Innovation Market </h1>
               <div className="row">
                 {hero_01.map((props, idx) => (
                   <Feature key={idx} {...props} />

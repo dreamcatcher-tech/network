@@ -16,6 +16,10 @@
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
 
+
+/* Dreamcatcher Pallete. */
+/* Worked out in rough here:  https://www.canva.com/colors/color-wheel/ using complementary setting. */
+
   --dreamcatcher-pink:  #D02F9A;
   --dreamcatcher-purple:  #B650DC;
   --dreamcatcher-orange:  #E0591F;
