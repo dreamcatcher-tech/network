@@ -32,7 +32,7 @@ For the templates referenced below see:
 ```mermaid
 
 stateDiagram
-    direction LR
+    direction TD
 
 
     [*] --> Dust
