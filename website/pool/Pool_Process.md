@@ -32,22 +32,18 @@ For the templates referenced below see:
 ```mermaid
 
 stateDiagram
-    direction LR
-
-
     [*] --> Dust
     Dust --> poolEntryQA : submit
     poolEntryQA --> Dust : fail
     poolEntryQA --> inPool : pass
     state inPool {
-      direction LR
-    [*] --> Open
+      [*] --> Open
       inCompletionQA --> Locked : fail
       Locked --> inCompletionQA : submit
       Open --> Locked : Contract/Escrow lock
       Locked --> Open : Contract/Escrow release
       Locked --> Locked : Funding / Work
-    inCompletionQA --> Finalised : Pass
+      inCompletionQA --> Finalised : Pass
     }
 
 ```
