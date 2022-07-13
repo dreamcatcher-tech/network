@@ -34,5 +34,5 @@ slug: /
 
 ### Logs
 
-[msm]: ./AppData/Logs/msm
+[msm]: ./AppData/Logs/temperbead
 [inv]: ./AppData/Logs/inverted-capital
