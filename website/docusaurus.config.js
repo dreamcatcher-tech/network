@@ -6,7 +6,7 @@ const remarkPlugins = [
 
 module.exports = {
   title: 'Dreamcatcher',
-  tagline: 'A Perpetual Innovation Machine',
+  tagline: 'A Packetized Invention Machine',
   url: 'https://dreamcatcher.land',
   baseUrl: '/',
   onBrokenLinks: 'throw',
