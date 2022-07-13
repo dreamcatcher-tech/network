@@ -34,5 +34,5 @@ slug: /
 
 ### Logs
 
-[msm]: ../AppData/Logs/msm
-[inv]: ../AppData/Logs/inverted-capital
+[msm]: ./AppData/Logs/msm
+[inv]: ./AppData/Logs/inverted-capital
