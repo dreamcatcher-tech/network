@@ -54,7 +54,7 @@ To do this, you need to know that your funds are being cautiously and well spent
 Dreamcatcher brings those together:
 <><br></br></><><br></br></>
     1. Through Packetisation, funds are only released for finished Packets of Software, independently verified through QA.  Your committment is therefore only to the escrow, and you can pull out at any time and retain Attribution for what was successfully produced.<><br></br></>
-    2. Open Collaboration provides access to more highly skilled people.  Through Attribution you're funding results - Packets - not time.  This attracts the best who can do more in less time, and can therefore afford to specialise.<><br></br></>
+    2. Open Incentivisation provides access to more highly skilled people.  Through Attribution you're funding results - Packets - not time.  This attracts the best who can do more in less time, and can therefore afford to specialise.<><br></br></>
     3. The Forward App Store indicates a real need from a specific Buyer, with aggregation indicating wider demand. A Buyer may also join you in Funding the Product, sharing the risk and reward. <><br></br></>
  <><br></br></>
  
@@ -85,7 +85,7 @@ Dreamcatcher brings those together:
   },
     {
     imageUrl: 'img/undraw_treasure_of-9-i.svg',
-    background: 1,
+    background: 0,
     title: (
       <><h1>What is the mechanism of Funding?</h1>    </>
     ),

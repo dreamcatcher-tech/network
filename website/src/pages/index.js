@@ -188,7 +188,7 @@ function Home() {
               )}
               to={useBaseUrl('investors/')}
             >
-              Investors Learn more
+              Funders Learn more
             </Link></center>
 
             </div>
@@ -215,7 +215,7 @@ function Home() {
               )}
               to={useBaseUrl('builders/')}
             >
-              Builders Learn more
+              Do-ers Learn more
             </Link></center>
 
             </div>
