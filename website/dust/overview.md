@@ -2,13 +2,12 @@
 id: dust-overview
 title: Dust Overview
 sidebar_label: Overview
-slug: /dust-overview
+slug: /
 ---
-
 
 ## Open
 
-| Packet                        |                                           | USD | [msm] | [inv] |
+| Packet                     |                                           | USD | [msm] | [inv] |
 | -------------------------- | ----------------------------------------- | :-: | :---: | :---: |
 | ![](/nfts/R03.ico.png)     | [R03 Ethereum Bridge](./Requests/R03)     |     |       |       |
 | ![](/nfts/R04.ico.png)     | [R04 Securities Guardian](./Requests/R04) |     |       |       |
@@ -21,13 +20,13 @@ slug: /dust-overview
 
 ## Locked
 
-| Packet                    |                                    | USD | [msm] | [inv] |
+| Packet                 |                                    | USD | [msm] | [inv] |
 | ---------------------- | ---------------------------------- | :-: | :---: | :---: |
 | ![](/nfts/R10.ico.png) | [R10 Request-Idea](./Requests/R10) |     |       |       |
 
 ## Finalized
 
-| Packet                        |                                          | USD | [msm] | [inv] |
+| Packet                     |                                          | USD | [msm] | [inv] |
 | -------------------------- | ---------------------------------------- | :-: | :---: | :---: |
 | ![](/nfts/R01.ico.png)     | [R01 Dreamcatcher](./Requests/R01)       |     |       |   2   |
 | └── ![](/nfts/I07.ico.png) | [I07 Web Liquidity Pooling](./Ideas/I07) |     |       |       |
