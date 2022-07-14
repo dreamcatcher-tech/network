@@ -3,9 +3,10 @@ const remarkPlugins = [
   { mermaid: { theme: { light: 'neutral', dark: 'forest' } } },
 ]
 
+
 module.exports = {
   title: 'Dreamcatcher',
-  tagline: 'A Perpetual Invention Machine',
+  tagline: 'A Packetised Invention Machine',
   url: 'https://dreamcatcher.land',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -23,13 +24,13 @@ module.exports = {
         {
           to: 'builders/',
           activeBasePath: 'builders',
-          label: 'Builders',
+          label: 'Do-ers',
           position: 'left',
         },
         {
           to: 'investors/',
           activeBasePath: 'investors',
-          label: 'Investors',
+          label: 'Funders',
           position: 'left',
         },
         {

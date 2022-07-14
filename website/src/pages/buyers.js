@@ -12,7 +12,7 @@ const call_outs = [
     path: 'docs/Dreamcatcher%20Charter',
   },
   {
-    title: 'For Investors',
+    title: 'For Funders',
     path: 'docs/whitepaper',
   },
   {
@@ -43,19 +43,19 @@ const info_sections = [
     imageUrl: 'img/undraw_knowledge_re_5v9l.svg',
     background: 0,
     title: (
-      <><h1>Your Problems are your Goldmine</h1>    </>
+      <><h1>Your Needs are Gold-Dust</h1>    </>
     ),
     description: (
       <>
       As a Buyer you're sitting on a potential goldmine.  You understand what problem your company needs to have solved, how solving it may give your company a competitive advantage and how it can reduce costs.  
 <><br></br></><><br></br></>
-But the value of identifying those opportunities doesn't stop there; it's unlikely that the problem you're trying to solve is unique - it's likely felt by others.  Why not then reuse this work by allowing it to be resold to others on a world stage, and allowing others to build it out further?
+But the value of identifying those opportunities doesn't stop there; it's likely that the problem you're trying to solve isn't unique - it's likely felt by others.  Why not then reuse this work by allowing it to be resold to others on a world stage, and allowing others to build it out further while benefitting from their improvements?
 <><br></br></><><br></br></>
 Dreamcatcher does this by:
 <><br></br></><><br></br></>
 1. Providing an efficient marketplace to get software built at lower risk than directly contracting with a development company
 <><br></br></>
-2. Registering the work your company puts into helping mold and design that software as an asset in it's own right.  
+2. Registering the contribution your company puts into helping mold and design that software, and owning those Packets as an asset.  
 <><br></br></>
 3. Providing an automated marketplace which allows others to reuse and further improve the software, and 
 <><br></br></>
@@ -80,17 +80,16 @@ You know your business, software devs don't.  Software devs know software; there
 <><br></br></><><br></br></>
 This information gradient - the difference between knowledge areas when two groups try to collaborate - is the leading reason software development projects for business go wrong.
 <><br></br></><><br></br></>
-As a Buyer in Dreamcatcher you start by stating the problem in business terms and inviting Ideas on how to solve it.  
+As a Buyer in the Dreamcatcher you start by stating the problem in business terms and inviting Ideas on how to solve it.  
 <><br></br></><><br></br></>
-Then it's openned up to all Innovation from all sides.
+Then through Open Collaboration any Member is free to Innovation and improve.
 <><br></br></><><br></br></>
 Perhaps this problem is commonplace, and you only need 5% change in existing code to make it perfect for you.  In which case your cost and risk has just plumated.  
 <><br></br></><><br></br></>
-Perhaps this problem is common in another industry and Ideas on how to solve it can be combined; perhaps together you come up with a ground-breaking Idea.
+Perhaps this problem is common in another industry and Ideas on how to solve it can be combined; perhaps through the Dreamcatcher Marketplace you contribute to ground-breaking Idea.
 <><br></br></><><br></br></>
-Perhaps you avoid the 'contract trap' many Buyers experience when hiring a software dev company - that of developers doing exactly what they're told through the contract, but not what you meant.  This leads to lengthy and ever more detailed specs that shut down Innovation, not open it up.
-<><br></br></><><br></br></>
-Innovation is cross-pollination      </>
+Perhaps you avoid the 'contract trap' many Buyers experience when hiring a software dev company - that of developers doing exactly what they're told through the contract, but not what you want.  This leads to lengthy and ever more detailed specs that shut down Innovation, not open it up.
+    </>
     ),
   },
     {

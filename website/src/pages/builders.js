@@ -53,7 +53,7 @@ const info_sections = [
 <><br></br></><><br></br></>
 By selling yourself in timeslices you don't necessarily get the freedom to spot and do what you know is necessary.
 <><br></br></><><br></br></>
-So many Builders would prefer not to sell their time and copyright for a one-off fee.  The most talented want to build software and generate an income stream from how successful it is.
+So many Do-ers would prefer not to sell their time and copyright for a one-off fee.  The most talented want to build software and generate an income stream from how successful it is.
 <><br></br></><><br></br></>
 But the majority of the job market in software construction doesn't allow that.  
 <><br></br></><><br></br></>
@@ -89,7 +89,7 @@ A good job should be rewarded for the output, not the effort.  Wouldn't it be he
 <><br></br></><><br></br></>
 Dreamcatcher focuses on this concept; it matches Ideas (a piece of work that others have identified as being useful), with those best placed to contribute to building those Ideas into Products.  
 <><br></br></><><br></br></>
-It focuses on outputs - finished, useful work - not time.  If you can solve a problem in an hour that takes another Builder 6 days, then the same level of rewards are due.  
+It focuses on outputs - finished, useful work - not time.  If you can solve a problem in an hour that takes another Do-er 6 days, then the same level of rewards are due.  
 <><br></br></><><br></br></>
 It registers those outputs at a micro-level - down to a single commit - and then records your ownership of that output as an NFT.  That NFT is your asset; you may choose to sell the royalty stream from that asset up front if you need the money, split the cost based on your day rate and share the rewards, or turn up without permission, solve the problem and keep the ownership.
 <><br></br></><><br></br></>
@@ -111,11 +111,11 @@ We call this Ambient Attribution.
       <>
             Dreamcatcher is built on the concept of Ambient Attribution.  
 <><br></br></><><br></br></>
-    Ambient Attribution ensures everyone involved knows that they will get their fair share of any and all rewards coming from the completion of a task.  Those tasks can be big or small.  It can involve a Buyer suggesting a feature, an innovator proposing a completely new product, an investor taking an early position on a great new idea - it's the impact of each contribution that dictates the Algorithmic Cap Table.
+    Ambient Attribution ensures everyone involved knows that they will get their fair share of any and all rewards coming from the completion of a task.  Those tasks can be big or small.  It can involve a Buyer suggesting a feature, an innovator proposing a completely new product, a Funder taking an early position on a great new idea - it's the impact of each contribution that dictates the Algorithmic Cap Table.
 <><br></br></><><br></br></>
     That Algorithmic Cap Table is guaranteed in code, and ensures that all incentives, throughout the whole project team, are pointing in the same direction.
 <><br></br></><><br></br></>
-    Ambient Attribution ensures transparency; with transparency, an Investor can be sure that the investment put forward is being spent on what matters.        </>
+    Ambient Attribution ensures transparency; with transparency, a Funder can be sure that the funds put forward is being spent on what matters.        </>
     ),
   },
     {
@@ -126,7 +126,7 @@ We call this Ambient Attribution.
     ),
     description: (
       <>
-One of the other great barriers to making a decent living as an independent Builder is maximising the utility of your work.  
+One of the other great barriers to making a decent living as an independent Do-er is maximising the utility of your work.  
 <><br></br></><><br></br></>
 In general, there are very few unique problems out there to be solved.  More usually a solution to a problem can be re-used wherever that problem is felt.
 <><br></br></><><br></br></>
@@ -145,15 +145,15 @@ This also works both ways.  Duplication in software development is inefficient. 
     ),
     description: (
       <>
-So Dreamcatcher is a great deal for Builders.  But what about the Buyers and Investors?  If this is a zero-sum game then they won't turn up.
+So Dreamcatcher is a great deal for Do-ers.  But what about the Buyers and Funders?  If this is a zero-sum game then they won't turn up.
 <><br></br></><><br></br></>
 Code is not the only way to contribute.  A Buyer who identifies a problem in their company that they want solved by software is contributing by clearly identifying that problem.  That's a contribution which should be recognised.
 <><br></br></><><br></br></>
-Investors willing to back work undertaken to solve a problem are likewise contributing.  That again is a contribution that should be recognised.
+Funders willing to back work undertaken to solve a problem are likewise contributing.  That again is a contribution that should be recognised.
 <><br></br></><><br></br></>
 All of these contributions are considered through Ambient Attribution, secured through the Dreamcatcher License and arbitrated by independent QAs arbiters.
 <><br></br></><><br></br></>
-Moreover, the reality is that we all, at different times, take on these different hats.  They're not mutually exclusive and neither they should be.  A Builder who includes a library in their code is a Buyer; a Buyer who offers an escrowed pool of money for something they need is an Investor; an Investor who improves and promotes a good Idea is a Builder.  There are many ways that the lines between these three are grey.
+Moreover, the reality is that we all, at different times, take on these different hats.  They're not mutually exclusive and neither they should be.  A Do-er who includes a library in their code is a Buyer; a Buyer who offers an escrowed pool of money for something they need is a Funder; a Funder who improves and promotes a good Idea is a Do-er.  There are many ways that the lines between these three are grey.
 <><br></br></><><br></br></>
 But by making the rules the same for all, everyone's incentives align, reducing the cost and improving the competitiveness of all who contribute.
 <><br></br></><><br></br></>
