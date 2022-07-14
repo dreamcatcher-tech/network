@@ -256,6 +256,17 @@ function Store() {
         <div className="container">
           <h1 className="hero__title">App Store</h1>
           <p className="hero__subtitle">The core suite of Dreamcatcher apps</p>
+          <div className={styles.buttons}>
+            <Link
+              className={clsx(
+                'dreamcatcher_button buttonGetStarted',
+                styles.getStarted
+              )}
+              to={useBaseUrl('apps/')}
+            >
+              Learn About Apps
+            </Link>
+          </div>
         </div>
       </header>
       <main>

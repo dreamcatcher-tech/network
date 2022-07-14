@@ -2,7 +2,7 @@
 id: dust-overview
 title: Dust Overview
 sidebar_label: Overview
-slug: /
+slug: /dust-overview
 ---
 
 

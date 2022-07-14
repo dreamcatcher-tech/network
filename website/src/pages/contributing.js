@@ -79,11 +79,13 @@ function Feature({ imageUrl, title, description }) {
   const imgUrl = useBaseUrl(imageUrl)
   return (
     <div className={clsx('col col--4', styles.feature)}>
+
       {imgUrl && (
         <div className="text--center">
           <img className={styles.featureImage} src={imgUrl} alt={title} />
         </div>
       )}
+
       <h3>{title}</h3>
       <p>{description}</p>
       <Link
@@ -103,12 +105,15 @@ function Contributing() {
   const context = useDocusaurusContext()
   const { siteConfig = {} } = context
   return (
+
     <Layout
+
       title={`${siteConfig.title} Contributing`}
       description="The various ways contribution can be made to the Dreamcatcher"
     >
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
+        <img src="img/dreamcatcher.svg" />
           <h1 className="hero__title">Contributing</h1>
           <p className="hero__subtitle">
             Ambient Attribution based ways to contribute

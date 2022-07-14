@@ -15,61 +15,42 @@ module.exports = {
   projectName: 'dreamcatcher-tech', // do not add .github.io else will publish to master
   themeConfig: {
     navbar: {
-      title: 'Dreamcatcher',
       logo: {
         alt: 'Dreamcatcher',
         src: 'img/dreamcatcher.svg',
       },
       items: [
         {
-          to: 'docs/overview/',
-          activeBasePath: 'overview',
-          label: 'Overview',
+          to: 'builders/',
+          activeBasePath: 'builders',
+          label: 'Builders',
           position: 'left',
         },
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Dreamcatcher',
+          to: 'investors/',
+          activeBasePath: 'investors',
+          label: 'Investors',
           position: 'left',
         },
         {
-          to: 'interblock/',
-          activeBasePath: 'interblock',
-          label: 'Interblock',
+          to: 'buyers/',
+          activeBasePath: 'buyers',
+          label: 'Buyers',
           position: 'left',
         },
         {
-          to: 'license/',
-          activeBasePath: 'license',
-          label: 'License',
+          to: 'live/',
+          activeBasePath: 'live',
+          label: 'Live',
           position: 'left',
         },
-        {
-          to: 'dictionary/',
-          activeBasePath: 'dictionary',
-          label: 'Dictionary',
-          position: 'left',
+
+
+
+        { to: 'blog', 
+          label: 'Blog', 
+          position: 'right' 
         },
-        {
-          to: 'dust/',
-          activeBasePath: 'dust',
-          label: 'Dust',
-          position: 'left',
-        },
-        {
-          to: 'pool/',
-          activeBasePath: 'pool',
-          label: 'Dreamcatcher Gateway',
-          position: 'left',
-        },
-        {
-          to: 'apps/',
-          activeBasePath: 'apps',
-          label: 'Apps',
-          position: 'left',
-        },
-        { to: 'blog', label: 'Blog', position: 'left' },
         {
           label: 'Apps',
           to: 'store',
@@ -167,19 +148,6 @@ module.exports = {
         path: 'apps',
         routeBasePath: 'apps',
         sidebarPath: require.resolve('./sidebarsApps.js'),
-        editUrl:
-          'https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/edit/master/website/',
-        remarkPlugins,
-        sidebarCollapsed: true,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'dictionary',
-        path: 'dictionary',
-        routeBasePath: 'dictionary',
-        sidebarPath: require.resolve('./sidebarsDictionary.js'),
         editUrl:
           'https://github.com/dreamcatcher-tech/dreamcatcher-tech.github.io/edit/master/website/',
         remarkPlugins,

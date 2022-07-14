@@ -6,10 +6,25 @@
  */
 
 .heroBanner {
+  background-color:var(--dreamcatcher-pastel-purple);
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  color: black;
+}
+
+.heroBanner2 {
+  background-color:white;
+  padding: 4rem 0;
+    padding-top: 20px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+    color: black;
 }
 
 @media screen and (max-width: 966px) {
@@ -19,19 +34,88 @@
 }
 
 .buttons {
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.features {
+.hero_01 {
   display: flex;
   align-items: center;
   padding: 2rem 0;
   width: 100%;
 }
 
+.hero_02 {
+  background-color:var(--dreamcatcher-pastel-blue);
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.hero_Investors {
+  background-color:var(--dreamcatcher-pastel-blue);
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+  color: black;
+}
+
+.hero_Builders {
+  background-color:var(--dreamcatcher-pastel-green);
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+  color: black;
+}
+
+.hero_Buyers {
+  background-color:var(--dreamcatcher-pastel-pink);
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+  color: black;
+}
+
+.hero_Interblock {
+  background-color:white;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+
+
+.hero_06 {
+  background-color:var(--dreamcatcher-pastel-purple);
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+
+}
+
+.hero_white {
+  background-color:white;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+
 .featureImage {
   height: 200px;
   width: 200px;
+}
+
+h1 {
+  text-align: center;
+
 }
