@@ -15,8 +15,8 @@
     "resize": "rm static/nfts/*ico* && node node_modules/resize-cli/dist/index.js static/nfts/* -w 32 -s .ico -o static/nfts/"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-beta.20",
-    "@docusaurus/preset-classic": "^2.0.0-beta.20",
+    "@docusaurus/core": "^2.0.0-rc.1",
+    "@docusaurus/preset-classic": "^2.0.0-rc.1",
     "@mdx-js/react": "^1.6.22",
     "clsx": "^1.1.1",
     "dev-to-git": "^1.4.9",

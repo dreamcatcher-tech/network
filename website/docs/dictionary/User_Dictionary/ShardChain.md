@@ -1,0 +1,1 @@
+An installed and running version of the Dreamcatcher source node that is able to interact with other Dreamcatcher Shard Chains over the Dreamcatcher Protocol.[a]

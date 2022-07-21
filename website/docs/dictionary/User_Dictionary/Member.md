@@ -1,0 +1,1 @@
+Refers to any person interacting with the Dreamcatcher, whether as a Buyer, Funder or Do-er.

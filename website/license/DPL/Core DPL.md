@@ -1,79 +1,81 @@
-## Preface
+---
+id: DPL
+title: Dreamcatcher Public License
+sidebar_label: Dreamcatcher Public License
+slug: /DPL
+---
 
-The Dreamcatcher core dev team recognizes both the lack and inability to currently inact good samaritan laws on the blockchain.There are many legal gaps including but not limited to: Who is liable if a project goes wrong? What are the local juristical implications (i.e. taxes, jurisprudence, etc). This document attempts to lay the foundation of blockchain best practices around basic contract law.  
-Guidance on this document
+## Precedence
 
-This document is the briefing material to a Legal Professional to generate the Dreamcatcher Public Smart-License (DPL.)
+This Agreement forms part of a 'license stack', the combination of which the Signatories agree to be held to while transacting through the Dreamcatcher.
 
-The Dreamcatcher is a blockchain-based Innovation Platform that brings together Talent (workers), Capital (investors), Prior Art (existing tech) and Demand. There is no preferred or authoritative organisation within the Dreamcatcher - and so there is a need to offer to Users a legal template under which they can do business with each other.
+This 'license stack' is formed as follows:
 
-The Core DPL is the root of the Licence Stack and is intended to form the foundation of that template. The DPL comes into force between any two Users of the system who have unilaterally “Signed”[1] it. It forms the lowest common denominator (i.e. the core licence P2P connection) for doing business on the Dreamcatcher.
+1. Dreamcatcher Public License (this Agreement)
+1. Optionally, Modules, referenced in a Dreamcatcher Contract
+1. A Dreamcatcher Contract
 
-The Core DPL can optionally be extended by the use of Licence Modules which are unilaterally signed and sit on top of Core DPL. If a Module has been independently and unilaterally signed by two parties, it is available to those two parties should they want to do business. I.e. it forms a menu of pre-signed P2P options that can be selected.
+The precedence of Clauses within these three are in this order.  I.e. DPL first, Modules then Contract. 
 
-Finally, the details of the specific work to be carried out are held in DCM Contracts. DCM Contracts are not signed unilaterally in advance but rather are agreed between two parties before signature. For example they hold the parameters of the work to be carried out, the specific details of the agreement, and deliverables.
+In order to be in force, each item in the stack must be signed by all signatories.
 
-See Definitions: License Stack for how these three interact.
 
-The aim is therefore to provide the DPL generally, optionally to provide Modules (of which we have one example - an NDA), and to allow hooks in the legal wording that binds these with DCM Contracts to provide a legal agreement.
+## Signatories
 
-The DPL stack is not only captured in code but can be both filtered and condensed into a printable format that can be read by legal professionals and signed by third parties if necessary.
+The list of all Members who have signed and are bound by this DPL Agreement can be found (here)[].
 
-At this stage we’re intending only to provide a core license framework, at the atomic level, that reaches this goal.
+Any Dreamcatcher Contract that references this Agreement includes all clauses in this Agreement, and is bound by the signatories of that Contract.
 
-As a test case, we have four independent Users of the Dreamcatcher who wish to collaborate on a project, to record each contribution to that project but to leave attribution (division of any benefit) to a future point.
-
-Note that the Core DPL offered here does not have preferential rights over any other framework License Stack offered on the DCM. Any User may construct and offer a License for conducting work on the DCM. The intention however if to make the Core DPL, and the framework it provides through compatible Modules and Contracts, useful to Users of the DCM.
 
 ## Definitions
 
 ### ACL
 
-Access Control List, a list of Users or types of Users that may read, submit Pull Request or comment on an Object within the DCM. ACLs are enforced through Access Control..
+C/f User Dictionary, [ACL].
 
 ### Arbiter
 
-C/f The Dictionary, Arbiter.
+C/f User Dictionary, [Arbiter].
 
 ### Arbitration
 
-C/f The Dictionary, Arbitration.
+C/f User Dictionary, [Arbitration].
 
 ### Asset
 
-C/f The Dictionary, Asset.
+C/f User Dictionary, [Asset].
 
 ### Attribution
 
-C/f The Dictionary, Attribution.
+C/f User Dictionary, [Attribution].
 
 ### Contribution
 
-C/f The Dictionary, Contribution.
+C/f User Dictionary, [Contribution].
 
-### Core DPL
+### Dreamcatcher Public License (DPL)
 
-The Dreamcatcher Public Smart-License, which covers the lowest common set of rights and responsibilities necessary to hold Modules and DCM Contracts enforceable, and which dictates the working context for the Dreamcatcher (such as the use of Arbitration, the use of Blockchain and so forth.) The Core DPL represents the lowest level of the License Stack
+C/f User Dictionary, [DPL].
 
 ### DCM
 
-C/f The Dictionary, DCM
+C/f The Dictionary, [DCM]
 
-### DCM Contract
+### Dreamcatcher Contract (DCC)
 
-C/f The Dictionary, DCM Contract
+C/f The Dictionary, [DCContract]
 
 ### Dream
 
-C/f Dictionary.
+C/f Dictionary. [Dream]
 
 ### Dreamcatcher Protocol
 
-The technical method, as encoded in the Dreamcatcher source, which stipulates how separate Dreamcatcher instances must interact. Dreamcatcher Protocol is similar in operation to an Application Programming Interface (API).[b]
+C/f User Dictionary, [Dreamcatcher Protocol].
 
 ### Dreamcatcher Shard Chain
 
-An installed and running version of the Dreamcatcher source node that is able to interact with other Dreamcatcher Shard Chains over the Dreamcatcher Protocol.[a]
+C/f User Dictionary, [Shard Chain].
 
 ### Force Majeure
 
@@ -81,45 +83,32 @@ Force majeure is the situation-based doctrine under which a supervening event ma
 
 ### LDE
 
-(Also, Legal Dreamcatcher Entity) C/f The Dictionary, LDE
+(Also, Legal Dreamcatcher Entity) C/f The Dictionary, [LDE]
 
 ### License Stack
 
-The full Dreamcatcher legal agreement available to Users:
+C/f User Dictionary, [License Stack].
 
-#### Dreamcatcher Public Smart License
+### Dreamcatcher Public License (DPL)
 
-(Otherwise known as Core DPL). Signed unilaterally and broadcast to all other Users. If two Users have both signed and they transact or interact, the DPL is in force.
-
-#### Modules (optional)
-
-Signed unilaterally and advertised. Comes into force by agreement between two parties. “Off the shelf” re-usable extensions
-
-#### DCM Contract
-
-Specific one-off parameters that apply to this transaction/agreement only.
-Note that the Core DPL is an Asset controlled by a Project, and under the Governance of that Project.
+C/f User Dictionary, [DPL].
 
 ### Module
 
-A stand-alone supplemental extension to the Core DPL which a Signatory may advertise that they are willing to be held by. A Module is in force only when Signatories both advertise it is available and agree that they will be bound by it, and that it is in force when conducting business together. E.g. an NDA Module may specify constraints on data usage; a Usage Module may specify constraints on the use of an Asset.
+C/f User Dictionary, [Module].
 
-Module(s) are considered supplemental declarations to the DCL stack, and make up the appendix to the DPL, and are only in-force insofar as they can be combined with the DPL stack in question to create a single coherent legal document. Any module with clause(s) in breach of the core DPL and operating on the DCM will be considered unenforceable.
-Contract
-
-Refers to that part of the License Stack that contains unique parameters and clauses pertaining to a specific agreement for services or an Asset to be produced/worked on, on the DCM. When taken alongside any included Modules and the Core DPL, it forms part of a legal agreement, smart contract, or code which may be enforced through Corporate Law.
 
 ### Project
 
-C/f Dictionary.
+C/f User Dictionary, [Project].
 
 ### Object
 
-cf The Dictionary
+C/f User Dictionary, [Object].
 
 ### On Chain
 
-Refers to data stored in an Object in the DCM. Likewise, data that is committed ‘to-chain’ is data that is written to an Object in the DCM.
+C/f User Dictionary, [On Chain].
 
 ### Open Source
 
@@ -127,7 +116,7 @@ Cf [AGPL v3](https://www.gnu.org/licenses/agpl-3.0.en.html)
 
 ### Signatory
 
-Any User who states within the DCM, by way of key hash -signature, and/or uploading a copy of a physically signed version of this DPL, that they agree to be held by the terms of the DPL.
+Any User who states within the DCM, by way of key hash -signature, and/or uploading a copy of a physically signed version of this DPL, a Module or a DCC, that they agree to be held by the terms of the License Stack.
 
 ### Trace
 
@@ -142,7 +131,7 @@ A function of the DCM, Access Control states the conditions under which an Objec
 
 ### Reputation Ledger
 
-C/f The Dictionary, Reputation Ledger
+C/f The Dictionary, [Reputation Ledger]
 
 ### Rights Holder
 
@@ -150,15 +139,16 @@ The User who is the current beneficiary of some or all of the Attribution from a
 
 ### Signed
 
-The Core DPL, Modules and DCM Contracts are considered Signed when a User commits to their Dreamcatcher Ghost Blockchain evidence that they are willing to be bound by it. This evidence may be a scanned copy with physical signature or a key-hash signature.
+The DPL, Modules and DCC are considered Signed when a User commits to their Dreamcatcher Ghost Blockchain evidence that they are willing to be bound by it. This evidence may be a scanned copy with physical signature or a key-hash signature.
 
 Signed = physical signed copy, scanned, uploaded to the Evidence Object of the Ghost that represents the LDE, which by definition can only be done by the holder of the Private key for that Ghost.
 
-### User
-
-C/f The Dictionary, User.
-
 The least level of Evidence that a Signatory can provide is self-certification of Identification through unilaterally posting a ‘signed’ copy of the DPL on-chain. It may be the case that other Signatories will only do business with those who have posted additional evidence, such as a third party Notary service, or document checking service.
+
+### Member
+
+C/f The Dictionary, [Member].
+
 
 ## Terms
 
@@ -275,3 +265,47 @@ Any Asset that has been made public through the ACL can never be removed from th
 ### Revocation of Access to Assets
 
 Any Asset that has been made public through the ACL can never be removed from the DCM. An Asset that has been limited through an ACL to a defined list of Signatories may be removed. In this case, the Signatories who previously have had access to the Asset, when notified or automated through the DCM, will no longer have legal access to that Asset.
+
+
+
+
+[Arbiter]: ../docs/dictionary/User_Dictionary/Arbiter
+[Arbitration]: ../docs/dictionary/User_Dictionary/Arbitration
+[Asset]: ../docs/dictionary/User_Dictionary/Asset
+[Attribution]: ../docs/dictionary/User_Dictionary/Attribution
+[Contribution]: ../docs/dictionary/User_Dictionary/Contribution
+[Dream]: ../docs/dictionary/User_Dictionary/Dream
+[LDE]: ../docs/dictionary/User_Dictionary/LDE
+[License Stack]: ./
+[Dreamcatcher Public License]: ./
+[Module]: ./
+[DCC]: ./
+[Project]: ./
+[Object]: ../docs/dictionary/User_Dictionary/Object
+[On Chain]: ../docs/dictionary/User_Dictionary/OnChain
+[Signatory]: ./
+[Trace]: ./
+[Public]: ./
+[Access Control]: ./
+[Reputation Ledger]: ../docs/dictionary/User_Dictionary/Reputation%20Ledger
+[Rights Holder]: ./
+[Signed]: ./
+[User]: ./
+[DCM]: ../docs/dictionary/User_Dictionary/DCM
+[DCContract]: ../docs/dictionary/User_Dictionary/DCContract
+[Shard Chain]: ../docs/dictionary/User_Dictionary/ShardChain
+[License Stack]: ../docs/dictionary/User_Dictionary/LicenseStack
+[Module]: ../docs/dictionary/User_Dictionary/Module
+[Member]: ../docs/dictionary/User_Dictionary/Member
+[ACL]: ../docs/dictionary/User_Dictionary/ACL
+[DPL]: ../docs/dictionary/User_Dictionary/DPL
+[Dreamcatcher Protocol]: ../docs/dictionary/User_Dictionary/DCProtocol
+
+
+
+
+
+
+
+
+

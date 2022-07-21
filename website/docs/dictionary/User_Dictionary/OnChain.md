@@ -1,0 +1,1 @@
+Refers to data stored in an Object in the DCM. Likewise, data that is committed ‘to-chain’ is data that is written to an Object in the DCM.

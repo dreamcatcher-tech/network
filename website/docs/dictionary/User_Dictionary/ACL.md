@@ -1,0 +1,1 @@
+Access Control List, a list of Users or types of Users that may read, submit Pull Request or comment on an Object within the DCM. ACLs are enforced through Access Control.
