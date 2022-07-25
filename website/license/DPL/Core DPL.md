@@ -22,9 +22,9 @@ In order to be in force, each item in the stack must be signed by all signatorie
 
 ## Signatories
 
-The list of all Members who have signed and are bound by this DPL Agreement can be found (here)[].
+The list of all Members who have signed and are bound by this DPL Agreement can be found within the Dreamcatcher (here)[].  
 
-Any Dreamcatcher Contract that references this Agreement includes all clauses in this Agreement, and is bound by the signatories of that Contract.
+Any Dreamcatcher Contract that references this Agreement includes all clauses in this Agreement, and is bound by the signatories of both the Members' List within the Dreamcatcher and any executed paper/pdf copy. 
 
 
 ## Definitions
@@ -73,10 +73,6 @@ C/f Dictionary. [Dream]
 
 C/f User Dictionary, [Dreamcatcher Protocol].
 
-### Dreamcatcher Shard Chain
-
-C/f User Dictionary, [Shard Chain].
-
 ### Force Majeure
 
 Force majeure is the situation-based doctrine under which a supervening event may excuse liability for non-performance, provided the supervening event is unforeseeable, uncontrollable, and makes the performance of an obligation impossible. The decision as to what constitutes unforeseeable and uncontrollable lies with the Arbiter overseeing the License Stack in force.
@@ -116,7 +112,7 @@ Cf [AGPL v3]
 
 ### Signatory
 
-Any User who states within the DCM, by way of key hash -signature, and/or uploading a copy of a physically signed version of this DPL, a Module or a DCC, that they agree to be held by the terms of the License Stack.
+Any User who states within the DCM, by way of key hash signature, and/or uploading a copy of a physically signed version of this DPL, a Module or a DCC, that they agree to be held by the terms of the License Stack.
 
 ### Trace
 
@@ -128,10 +124,6 @@ Descriptive of an Object within the DCM where the ACL states that there are no r
 Access Control
 
 A function of the DCM, Access Control states the conditions under which an Object (c/f Dictionary) on the DCM is accessible to Users other than the User who holds the key hash that proves ownership of that Object.. Once stated, Access Control is enforced by the DCM.
-
-### Reputation Ledger
-
-C/f The Dictionary, [Reputation Ledger]
 
 ### Rights Holder
 
@@ -181,7 +173,7 @@ The Arbiter has the right to judge the merits of any dispute, and has available 
 
 In all Arbitrations, the claimant and the respondent agree that there can be no renegotiation of the ruling after the fact.
 
-Any controversy or claim arising out of or relating to this license, the use or misuse of the DCM or the breach thereof, shall be settled by binding Arbitration administered in accordance to the structure specified by the DCM. The place of Arbitration shall be within the DCM and all applicable DCM jurisprudence and, when necessary, applicable previous case law shall apply. Judgment on the award rendered by the Arbitrator shall be entered into the Reputation ledger of all parties involved.
+Any controversy or claim arising out of or relating to this license, the use or misuse of the DCM or the breach thereof, shall be settled by binding Arbitration administered in accordance to the structure specified by the DCM. The place of Arbitration shall be within the DCM and all applicable DCM jurisprudence and, when necessary, applicable previous case law shall apply. 
 
 ### Open Pursuance
 
@@ -210,8 +202,9 @@ If you choose to expunge your Ghost, all attribution and contribution rights are
 ### Free Speech
 
 Any Signatory can publicly comment on the activities or validity of any other Signatory without fear of libel. Such comments are noted within the Ghost of both Signatories, and is admissible to an Arbiter.
-Reputation
-All Public transactions and interactions carried out on the DCM are recorded immutably on that User’s Reputation Ledger, and are available to view by all other Users.
+
+### Reputation
+All Public transactions and interactions carried out on the DCM are recorded immutably, and are available to view by all other Users.
 
 ### Persistence
 
@@ -241,24 +234,25 @@ Users agree to be held to the DCM Contract for Attribution under which their Con
 
 ### Agreement to Mediation
 
-In the event of any controversy or claim arising out of or relating to this agreement, or a breach thereof, the parties hereto shall first attempt to settle the dispute by mediation, administered by an Arbiter through the DCM. There will be no final decision or ruling. Any decision rendered may not be binding. The Arbiter role is to supervise and help the parties come to a mutual agreement on their own. If the parties do come to an agreement and make it binding then the matter will be settled there and the Arbitrator then has the authority to release any Assets, Escrow funds, or Reputation Ledger modifications the parties agreed upon.
+In the event of any controversy or claim arising out of or relating to this agreement, or a breach thereof, the parties hereto shall first attempt to settle the dispute by mediation, administered by an Arbiter through the DCM. There will be no final decision or ruling. Any decision rendered may not be binding. The Arbiter role is to supervise and help the parties come to a mutual agreement on their own. If the parties do come to an agreement and make it binding then the matter will be settled there and the Arbitrator then has the authority to release any Assets and/or Escrow funds agreed in the Contract in dispute.
 
 ### Damages
 
 Representation or Warranty Claims are beyond the scope of the DPL, other than those imposed through Arbitration, which are:
 
-1. Recording on the Reputation Ledger of either party.
+1. Recording on-chain of the facts and judgement of the Arbitration involving either party.
 2. Releasing funds held in escrow.
 3. Transfer of disputed Assets
 
 ### Reputation
 
-Data generated by the activity of a User provides an indelible record and may be available for other Users to view. Such data is not owned by the User and may be freely shared once anonymised under the Right to be Forgotten clause.
+Data generated by the activity of a User provides an indelible record and may be available for other Users to view. Such data is not owned by the User and may be freely shared once anonymised under the Right to be Forgotten clause.  A collation of this information for a Member is known as Reputation.
 
-An Arbiter in a dispute may record their own notes on the Reputation Ledger of both the Plaintiff and Defendant. Such notes are not editable by the Users concerned, although entries may be challenged by reference to a different Arbiter.
+An Arbiter in a dispute may record their own notes on-chain of both the Plaintiff and Defendant. Such notes are not editable by the Users concerned, although entries may be challenged and added to (but not amended) by reference to a different Arbiter.
 
-Any User, including the User to whom the Reputation applies, may record their own annotations against their Reputation Ledger.
-Revocation of Access to Assets
+Any User, including the User to whom the Reputation applies, may record their own annotations.
+
+### Revocation of Access to Assets
 
 Any Asset that has been made public through the ACL can never be removed from the DCM. An Asset that has been limited through an ACL to a defined list of Signatories may be removed. In this case, the Signatories who previously have had access to the Asset, when notified or automated through the DCM, will no longer have legal access to that Asset.
 
@@ -287,13 +281,11 @@ Any Asset that has been made public through the ACL can never be removed from th
 [Trace]: ./
 [Public]: ./
 [Access Control]: ./
-[Reputation Ledger]: ../docs/dictionary/User_Dictionary/Reputation%20Ledger
 [Rights Holder]: ./
 [Signed]: ./
 [User]: ./
 [DCM]: ../docs/dictionary/User_Dictionary/DCM
 [DCContract]: ../docs/dictionary/User_Dictionary/DCContract
-[Shard Chain]: ../docs/dictionary/User_Dictionary/ShardChain
 [License Stack]: ../docs/dictionary/User_Dictionary/LicenseStack
 [Module]: ../docs/dictionary/User_Dictionary/Module
 [Member]: ../docs/dictionary/User_Dictionary/Member
