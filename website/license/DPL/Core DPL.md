@@ -112,7 +112,7 @@ C/f User Dictionary, [On Chain].
 
 ### Open Source
 
-Cf [AGPL v3](https://www.gnu.org/licenses/agpl-3.0.en.html)
+Cf [AGPL v3]
 
 ### Signatory
 
@@ -303,7 +303,7 @@ Any Asset that has been made public through the ACL can never be removed from th
 
 
 
-
+[AGPL v3]: (https://www.gnu.org/licenses/agpl-3.0.en.html)
 
 
 
