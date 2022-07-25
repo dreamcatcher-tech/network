@@ -8,6 +8,8 @@ This page is intended to be an ordered list of the headlines and tweets that bes
 
 > **(Headline)** (tweet - max 160 chars)
 
+> **Packetized Invention Machine** An Open, Packetized, Innovation Market Network
+
 > **Ambient Attribution** A peer-to-peer attribution engine protocol for works of knowledge
 
 > **Networked Open Innovation** Ambient Attribution for Works of Knowledge
