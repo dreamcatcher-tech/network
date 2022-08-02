@@ -309,6 +309,6 @@ Any [Packet] that has been made public through the Access Control List [ACL] can
 [Reputation]: ../docs/dictionary/User_Dictionary/Reputation
 [Public]: ../docs/dictionary/User_Dictionary/Public
 [ACL]: ../docs/dictionary/User_Dictionary/ACL
-[AGPL v3]: (https://www.gnu.org/licenses/agpl-3.0.en.html)
+[AGPL v3]: ./
 
 
