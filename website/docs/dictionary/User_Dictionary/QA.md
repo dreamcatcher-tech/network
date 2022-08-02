@@ -1,0 +1,3 @@
+QA is a service that can be provided by any Member, and which aims to provide advice and proposed changes to the manin stagegates of a Pool.
+
+The selection of the QA is in two parts; a Pool may specify a short-list of QA providers that have signed up to that Pools requirements in terms of DPL and License Modules, and from that short-list two Members entering into a Dreamcatcher Contract may specify in advance one of those short-listed QA Members by mutual agreement.

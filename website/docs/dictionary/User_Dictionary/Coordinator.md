@@ -4,9 +4,9 @@ Coordinators always include:
 
 1.  Governance
 1.  Attribution
-1.  Assets
+1.  Packets
 
-These three are the minimal set to allow the ownership and dispersal of benefits from Assets.
+These three are the minimal set to allow the ownership and dispersal of benefits from Packets.
 
 Coordinators can be extended to include (e.g.):
 

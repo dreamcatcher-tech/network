@@ -1,1 +1,1 @@
-Access Control List, a list of Users or types of Users that may read, submit Pull Request or comment on an Object within the DCM. ACLs are enforced through Access Control.
+A function of the DCM, Access Control states the conditions under which a Packet on the DCM is accessible to Members other than the Member who holds the key hash that proves ownership of that Packet. Once stated, Access Control is enforced by the DCM.
