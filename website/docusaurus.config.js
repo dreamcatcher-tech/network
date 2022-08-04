@@ -3,7 +3,6 @@ const remarkPlugins = [
   { mermaid: { theme: { light: 'neutral', dark: 'forest' } } },
 ]
 
-
 module.exports = {
   title: 'Dreamcatcher',
   tagline: 'A Packetised Invention Machine',
@@ -15,6 +14,11 @@ module.exports = {
   organizationName: 'dreamcatcher-tech', // Usually your GitHub org/user name.
   projectName: 'dreamcatcher-tech', // do not add .github.io else will publish to master
   themeConfig: {
+    announcementBar: {
+      id: 'announcement_1',
+      content: '🚧 DRAFT - UNDER CONSTRUCTION 🚧',
+      isCloseable: false,
+    },
     navbar: {
       logo: {
         alt: 'Dreamcatcher',
@@ -46,12 +50,7 @@ module.exports = {
           position: 'left',
         },
 
-
-
-        { to: 'blog', 
-          label: 'Blog', 
-          position: 'right' 
-        },
+        { to: 'blog', label: 'Blog', position: 'right' },
         {
           label: 'Apps',
           to: 'store',
@@ -94,8 +93,8 @@ module.exports = {
             },
             {
               label: 'Discord',
-              href: 'https://discord.com/invite/ZfTkcgaEmh'
-            }
+              href: 'https://discord.com/invite/ZfTkcgaEmh',
+            },
             // {
             //   label: 'Twitter',
             //   href: 'https://twitter.com/dreamcatcher-tech',

@@ -15,51 +15,46 @@
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
+  --site-primary-hue-saturation: 167 68%;
+  /* Dreamcatcher Pallete. */
+  /* Worked out in rough here:  https://www.canva.com/colors/color-wheel/ using complementary setting. */
 
+  --dreamcatcher-pink: #d02f9a;
+  --dreamcatcher-purple: #b650dc;
+  --dreamcatcher-orange: #e0591f;
+  --dreamcatcher-blue: #3e74c1;
+  --dreamcatcher-green: #48b77b;
 
-/* Dreamcatcher Pallete. */
-/* Worked out in rough here:  https://www.canva.com/colors/color-wheel/ using complementary setting. */
+  --dreamcatcher-pastel-pink: #e795cb;
+  --dreamcatcher-pastel-purple: #e1b8f1;
+  --dreamcatcher-pastel-orange: #eea383;
+  --dreamcatcher-pastel-blue: #98b5de;
+  --dreamcatcher-pastel-green: #b3e1c8;
 
-  --dreamcatcher-pink:  #D02F9A;
-  --dreamcatcher-purple:  #B650DC;
-  --dreamcatcher-orange:  #E0591F;
-  --dreamcatcher-blue:  #3E74C1;
-  --dreamcatcher-green:  #48B77B;
+  --dreamcatcher-pink-opposite: #2fd065;
+  --dreamcatcher-purple-opposite: #77dc50;
+  --dreamcatcher-orange-opposite: #1fa6e0;
+  --dreamcatcher-blue-opposite: #c18b3e;
+  --dreamcatcher-green-opposite: #b74884;
 
-  --dreamcatcher-pastel-pink:  #E795CB;
-  --dreamcatcher-pastel-purple:  #E1B8F1;
-  --dreamcatcher-pastel-orange:  #EEA383;
-  --dreamcatcher-pastel-blue:  #98B5DE;
-  --dreamcatcher-pastel-green:  #B3E1C8;
+  --dreamcatcher-pastel-pink-opposite: #95e7b0;
+  --dreamcatcher-pastel-purple-opposite: #c7f1b8;
+  --dreamcatcher-pastel-orange-opposite: #83cdee;
+  --dreamcatcher-pastel-blue-opposite: #dec198;
+  --dreamcatcher-pastel-green-opposite: #e1b3cc;
 
-  --dreamcatcher-pink-opposite:  #2FD065;
-  --dreamcatcher-purple-opposite:  #77DC50;
-  --dreamcatcher-orange-opposite: #1FA6E0;
-  --dreamcatcher-blue-opposite:  #C18B3E;
-  --dreamcatcher-green-opposite:  #B74884;
-
-  --dreamcatcher-pastel-pink-opposite:  #95E7B0;
-  --dreamcatcher-pastel-purple-opposite:  #C7F1B8;
-  --dreamcatcher-pastel-orange-opposite:  #83CDEE;
-  --dreamcatcher-pastel-blue-opposite:  #DEC198;
-  --dreamcatcher-pastel-green-opposite:  #E1B3CC;
-
-  --dreamcatcher-hover-pink:  rgb(255, 199, 210);
-
-
+  --dreamcatcher-hover-pink: rgb(255, 199, 210);
 }
 
 .dreamcatcher_callout_padding {
-
   padding: 20px;
   padding-left: 80px;
-  padding-bottom:  10px;
+  padding-bottom: 10px;
 }
 .dreamcatcher_callout_alignment {
-    margin: auto;
-    text-align: center;
+  margin: auto;
+  text-align: center;
 }
-
 
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
@@ -71,7 +66,7 @@
 .dreamcatcher_button {
   padding: 5px 32px;
   border-radius: 8px;
-  border: 4px solid #000000; 
+  border: 4px solid #000000;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -83,59 +78,74 @@
   color: white;
 }
 
-.buttonGetInvolved:hover{
+.buttonGetInvolved:hover {
   background-color: var(--dreamcatcher-hover-pink);
   color: black;
-  }
+}
 
 .buttonInvestors {
   background-color: var(--dreamcatcher-pink);
   color: white;
 }
 
-.buttonInvestors:hover{
+.buttonInvestors:hover {
   background-color: var(--dreamcatcher-hover-pink);
   color: black;
-  }
+}
 
 .buttonBuilders {
   background-color: var(--dreamcatcher-pink);
   color: white;
 }
 
-.buttonBuilders:hover{
+.buttonBuilders:hover {
   background-color: var(--dreamcatcher-hover-pink);
   color: black;
-  }
-
+}
 
 .buttonBuyers {
   background-color: var(--dreamcatcher-pink);
   color: white;
 }
 
-.buttonBuyers:hover{
+.buttonBuyers:hover {
   background-color: var(--dreamcatcher-hover-pink);
   color: black;
-  }
+}
 
 .buttonInterblock {
   background-color: var(--dreamcatcher-pink);
   color: white;
 }
 
-.buttonInterblock:hover{
+.buttonInterblock:hover {
   background-color: var(--dreamcatcher-hover-pink);
   color: black;
-  }
+}
 
 .buttonGetStarted {
   background-color: var(--dreamcatcher-pink);
   color: white;
 }
 
-.buttonGetStarted:hover{
+.buttonGetStarted:hover {
   background-color: var(--dreamcatcher-hover-pink);
   color: black;
-  }
-  
+}
+
+div[class^='announcementBar_'] {
+  --site-announcement-bar-stripe-color1: hsl(
+    var(--site-primary-hue-saturation) 85%
+  );
+  --site-announcement-bar-stripe-color2: hsl(
+    var(--site-primary-hue-saturation) 95%
+  );
+  background: repeating-linear-gradient(
+    35deg,
+    var(--site-announcement-bar-stripe-color1),
+    var(--site-announcement-bar-stripe-color1) 20px,
+    var(--site-announcement-bar-stripe-color2) 10px,
+    var(--site-announcement-bar-stripe-color2) 40px
+  );
+  font-weight: bold;
+}
