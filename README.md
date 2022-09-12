@@ -1,7 +1,6 @@
 ---
 title: Dreamcatcher
 ---
-# Dreamcatcher
 
 [[Requests]]
 
