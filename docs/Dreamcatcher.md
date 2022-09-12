@@ -1,3 +1,6 @@
+---
+title: Dreamcatcher
+---
 # Dreamcatcher
 
 [[Discord Member Count]]
