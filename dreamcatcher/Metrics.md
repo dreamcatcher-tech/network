@@ -1,0 +1,3 @@
+# Metrics
+
+[[Discord Member Count]]

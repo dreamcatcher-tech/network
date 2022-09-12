@@ -17,7 +17,7 @@
   "files.watcherExclude": {
     "**/node_modules": true
   },
-  "foam.edit.linkReferenceDefinitions": "withoutExtensions",
+  "foam.edit.linkReferenceDefinitions": "off",
   "foam.openDailyNote.directory": "journal",
   "foam.openDailyNote.titleFormat": "fullDate",
   "git.enableSmartCommit": true,
@@ -33,11 +33,10 @@
     "node": {
       "note": "#277da1",
       "placeholder": "#545454",
-      "feature": "green",
-      "member": "red",
+      "member": "blue",
       "request": "purple",
-      "idea": "#fa1b49",
-      "pool": "green"
+      "idea": "green",
+      "pool": "yellow"
     }
   },
   "workbench.colorCustomizations": {
@@ -60,5 +59,7 @@
     "titleBar.inactiveForeground": "#e7e7e799"
   },
   "peacock.remoteColor": "#dd0531",
-  "workbench.colorTheme": "Visual Studio Dark"
+  "workbench.colorTheme": "Visual Studio Dark",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
 }
