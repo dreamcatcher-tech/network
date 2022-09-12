@@ -35,9 +35,16 @@ The state could be stored in a separate slice in the channel, and reference the 
 
 ## Proposal
 
+### Inside each Pulse
+
 For each channel, place an optional key `latest` which references the Pulse of that child.  This alone ensures the approot pulse will be updated if any of the children have updated.
-This is walkable by using the alias names of
-If a channel has its pulse updated, we mark its id in a transient array `cxs` representing changes.
-If a child alias is modified, this also results in a `cxs` update.
+This is walkable by using the alias names of the network object in the tree object.
+If a channel has its pulse updated, we mark its id in a transient array `cxs` meaning "child changes".
+If the alias of a child is modified, this also results in a `cxs` update.
 At Pulse making time, every channel in the `cxs` array is called up, and modifications are made to the `stateTree` and `binaryTree` keys in `Provenance` if required.
 Then the `cxs` key is deleted.
+
+### Engine response
+
+After each pulse is made, an interpulse action in the engine is queued up as part of transmit.
+Eventually, the updated Pulse will make it into the parent Pool, and be increased into a Pulse.
