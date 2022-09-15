@@ -22,20 +22,16 @@ And the problem is that each one needs to list out its children, too.
 3. Change of the name of a child is the same as changing all three trees
 4. If no state change occured anywhere in the tree, the hash of the approot state tree should remain unchanged
 5. If no binary change occured anywhere in the tree, the hash of the approot binary tree should remain unchanged
+6. If a [[PulseChain]] is under [[Tension]] then the tree should be marked as under tension, and permit rapid location of all such [[PulseChain]]s
 
-## Where should the references be stored ?
+## Why the existing `tip` model cannot be reused
 
-### In each network channel
-
-Cannot be stored as part of tip, as it needs to be a one way update to avoid the engine running forever.
-If store a reference to the complete pulse of each child, then we would cause the channel to update each time a child changed, which would ripple up to the approot.
-The state could be stored in a separate slice in the channel, and reference the same subslice in each child
-
-### In the `states` slice of provenance
+`tip` is a request reply style protocol, but approot updates need to be a one way update to avoid the engine running forever.
+If we store a reference to the complete pulse of each child, then we would cause the channel to update each time a child changed, which would ripple up to the approot, however the state tree must be stored in a separate slice outside of the channel
 
 ## Proposal
 
-### Inside each Pulse
+### Pulse structural changes
 
 For each channel, place an optional key `latest` which references the Pulse of that child.  This alone ensures the approot pulse will be updated if any of the children have updated.
 This is walkable by using the alias names of the network object in the tree object.
@@ -44,7 +40,7 @@ If the alias of a child is modified, this also results in a `cxs` update.
 At Pulse making time, every channel in the `cxs` array is called up, and modifications are made to the `stateTree` and `binaryTree` keys in `Provenance` if required.
 Then the `cxs` key is deleted.
 
-### Engine response
+### Engine procedure changes
 
 After each pulse is made, an interpulse action in the engine is queued up as part of transmit.
 Eventually, the updated Pulse will make it into the parent Pool, and be increased into a Pulse.

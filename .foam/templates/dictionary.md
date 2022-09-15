@@ -1,9 +1,9 @@
 ---
-type: idea
+type: definition
 foam_template:
-  name: 'Idea'
-  description: 'Idea starting as Dust that may enter a pool'
-  filepath: 'dreamcatcher/ideas/$FOAM_TITLE.md'
+  name: 'Dictionary'
+  description: 'Definition of a Concept'
+  filepath: 'dreamcatcher/dictionary/$FOAM_TITLE.md'
 ---
 # ${TM_FILENAME_BASE}
 

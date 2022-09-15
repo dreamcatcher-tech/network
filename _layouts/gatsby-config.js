@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     // some SEO configs using by gatsby-theme-kb
     title: `Dreamcatcher Network`, // Replace it with your site's title
-    author: `inverted-capital`, // Replace it with your name
+    author: `Dreamcatcher`, // Replace it with your name
     description: `The knowledge graph of the Dreamcatcher`, // Replace it with your site's description
   },
   plugins: [
