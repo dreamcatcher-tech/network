@@ -1,6 +1,4 @@
----
-type: definition
----
+
 # App Complex
 
 > [2022-09-15 Thu 16:56] <br/>

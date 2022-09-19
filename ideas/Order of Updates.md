@@ -1,6 +1,4 @@
----
-type: idea
----
+
 # Order of Updates
 
 > [2022-09-15 Thu 15:53] <br/>

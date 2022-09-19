@@ -1,6 +1,4 @@
----
-type: definition
----
+
 # Pulse
 
 > [2022-09-15 Thu 16:28] <br/>

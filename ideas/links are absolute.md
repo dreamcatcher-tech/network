@@ -1,6 +1,4 @@
----
-type: idea
----
+
 # links are absolute
 
 > [2022-09-14 Wed 19:56] <br/>

@@ -1,6 +1,4 @@
----
-type: idea
----
+
 # Dirty Backups
 
 > [2022-09-12 Mon 21:30] <br/>

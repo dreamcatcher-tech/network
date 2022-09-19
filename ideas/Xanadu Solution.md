@@ -1,6 +1,4 @@
----
-type: idea
----
+
 # Xanadu Solution
 
 > [2022-09-12 Mon 19:44] _[[Ideas]]_ <br/>

@@ -1,6 +1,4 @@
----
-type: idea
----
+
 # Interplanetary Operation
 
 > [2022-09-15 Thu 16:10] <br/>

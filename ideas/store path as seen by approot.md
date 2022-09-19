@@ -1,6 +1,4 @@
----
-type: idea
----
+
 # store path as seen by approot
 
 > [2022-09-14 Wed 20:01] <br/>

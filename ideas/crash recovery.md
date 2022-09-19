@@ -1,6 +1,4 @@
----
-type: idea
----
+
 # crash recovery
 
 > [2022-09-14 Wed 21:34] <br/>

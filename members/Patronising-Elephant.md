@@ -1,6 +1,4 @@
----
-type: member
---- 
+
 # Patronising-Elephant
 
 > [2022-09-12 Mon 17:10] _[[network/dreamcatcher/Members]]_

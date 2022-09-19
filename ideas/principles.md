@@ -1,6 +1,4 @@
----
-type: idea
----
+
 # principles
 
 > [2022-09-14 Wed 19:55]  <br/>

@@ -1,6 +1,4 @@
----
-type: definition
----
+
 # PulseChain
 
 > [2022-09-15 Thu 16:29] <br/>

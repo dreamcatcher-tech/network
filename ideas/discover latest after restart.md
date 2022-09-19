@@ -1,6 +1,4 @@
----
-type: idea
----
+
 # discover latest after restart
 
 > [2022-09-14 Wed 20:09] <br/>

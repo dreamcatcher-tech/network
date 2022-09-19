@@ -1,6 +1,4 @@
----
-type: idea
----
+
 # hamt of every latest
 
 > [2022-09-14 Wed 20:05] <br/>

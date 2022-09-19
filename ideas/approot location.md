@@ -1,6 +1,4 @@
----
-type: idea
----
+
 # approot location
 
 > [2022-09-12 Mon 19:30] <br/>
