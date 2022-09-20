@@ -1,8 +1,8 @@
 
 # discover latest after restart
 
-> [2022-09-14 Wed 20:09] <br/>
-> Targets: [[approot]] <br/>
+> [2022-09-14 Wed 20:09] 
+> Targets: [[approot]] 
 > Depends: [[]]
 
 The problem is being able to discover the latest pulse of arbitrary pulses during engine processing after a restart has wiped the cache.  We must avoid storing references to latest directly as this can fall out of sync, and requires  more than twice the amount of writes to store.  The solution should use the [[App Complex]] alone to rebuild the in memory cache of what latest means for each address

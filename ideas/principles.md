@@ -1,8 +1,8 @@
 
 # principles
 
-> [2022-09-14 Wed 19:55]  <br/>
-> Targets: [[Interpulse]] <br/>
+> [2022-09-14 Wed 19:55]  
+> Targets: [[Interpulse]] 
 > Depends: [[]]
 
 A collection of principles that guide the characteristics of [[dictionary/Interpulse]].

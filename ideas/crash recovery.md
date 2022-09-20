@@ -1,8 +1,8 @@
 
 # crash recovery
 
-> [2022-09-14 Wed 21:34] <br/>
-> Targets: [[Interpulse]] <br/>
+> [2022-09-14 Wed 21:34] 
+> Targets: [[Interpulse]] 
 > Depends: [[]]
 
 Upon restart, the engine may not have run to exhaustion.  Key to recovery is being able to start processing again from external stimulus and update only those things that had not been updated at the time of the crash.

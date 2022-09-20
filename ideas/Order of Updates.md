@@ -1,8 +1,8 @@
 
 # Order of Updates
 
-> [2022-09-15 Thu 15:53] <br/>
-> Targets: [[approot]] <br/>
+> [2022-09-15 Thu 15:53] 
+> Targets: [[approot]] 
 > Depends: [[]]
 
 In order to be deterministic, the order that updates occur must be predictable and guaranteed to be stable.

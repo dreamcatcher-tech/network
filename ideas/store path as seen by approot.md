@@ -1,8 +1,8 @@
 
 # store path as seen by approot
 
-> [2022-09-14 Wed 20:01] <br/>
-> Targets: [[approot]] <br/>
+> [2022-09-14 Wed 20:01] 
+> Targets: [[approot]] 
 > Depends: [[]]
 
 If each chain was aware of its path relative to the approot, then

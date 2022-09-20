@@ -1,9 +1,9 @@
 
 # Interplanetary Operation
 
-> [2022-09-15 Thu 16:10] <br/>
-> Targets: [[Exemplary Use Cases]] <br/>
-> Depends: [[]] <br/>
+> [2022-09-15 Thu 16:10] 
+> Targets: [[Exemplary Use Cases]] 
+> Depends: [[]] 
 > References: <https://discord.com/channels/905191169498157159/912119460746367027/1019801291523903529>
 
 Ethereum probably couldn’t survive relativistic effects because it needs to be so absolute about it’s timeline.

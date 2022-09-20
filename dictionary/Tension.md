@@ -1,8 +1,8 @@
 
 # Tension
 
-> [2022-09-15 Thu 16:29] <br/>
-> Targets: [[PulseChain]] <br/>
+> [2022-09-15 Thu 16:29] 
+> Targets: [[PulseChain]] 
 > Depends: [[]]
 
 A [[PulseChain]] is said to be under tension if any of its requests have not been settled.  Its requests may have received a promise, but the tension still remains.

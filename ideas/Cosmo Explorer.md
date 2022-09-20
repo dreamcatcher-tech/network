@@ -1,8 +1,8 @@
 
 # Cosmo Explorer
 
-> [2022-09-12 Mon 20:44] _[[Ideas]]_ <br/>
-> Targets: [[Pulse Explorer]] <br/>
+> [2022-09-12 Mon 20:44] _[[Ideas]]_ 
+> Targets: [[Pulse Explorer]] 
 > Depends: [[Cosmo Viewer]]
 
 The [Cosmo Viewer](https://cosmograph.app/run/?data=https://cosmograph.app/data/184R7cFG-4lv.csv) offers GPU accelerated graph display for graphs with millions of nodes.

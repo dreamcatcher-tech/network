@@ -1,8 +1,8 @@
 
 # Dirty Backups
 
-> [2022-09-12 Mon 21:30] <br/>
-> Targets: [[Blogs]] <br/>
+> [2022-09-12 Mon 21:30] 
+> Targets: [[Blogs]] 
 > Depends: [[]]
 
 Because of the Copy on Write nature of all blockchain based systems, the backups required (if any) can be dirty.  

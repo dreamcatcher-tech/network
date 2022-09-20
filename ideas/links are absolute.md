@@ -1,8 +1,8 @@
 
 # links are absolute
 
-> [2022-09-14 Wed 19:56] <br/>
-> Targets: [[principles]] <br/>
+> [2022-09-14 Wed 19:56] 
+> Targets: [[principles]] 
 > Depends: [[]]
 
 If a validator has just rebooted and has only disk information to build on, then it needs a way to look up links as well as other peers.  Relative links seem impossible to lookup.

@@ -1,8 +1,8 @@
 
 # Pulse
 
-> [2022-09-15 Thu 16:28] <br/>
-> Targets: [[dictionary/Interpulse]] <br/>
+> [2022-09-15 Thu 16:28] 
+> Targets: [[dictionary/Interpulse]] 
 > Depends: [[]]
 
 The unit of permanence in [[PulseChain]]s. Equivalent to blocks in a traditional blockchain.

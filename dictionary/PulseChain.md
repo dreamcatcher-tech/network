@@ -1,8 +1,8 @@
 
 # PulseChain
 
-> [2022-09-15 Thu 16:29] <br/>
-> Targets: [[dictionary/Interpulse]] <br/>
+> [2022-09-15 Thu 16:29] 
+> Targets: [[dictionary/Interpulse]] 
 > Depends: [[]]
 
 A linkage of Pulses.
