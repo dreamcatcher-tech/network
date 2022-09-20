@@ -1,10 +1,11 @@
 
 # Xanadu Solution
 
-> [2022-09-12 Mon 19:44] _[[Ideas]]_ <br/>
-> Targets: [[requests/Xanadu]] <br/>
+> [2022-09-12 Mon 19:44] _[[Ideas]]_ 
+> Targets: [[requests/Xanadu]] 
 > Depends: [[]]
 
+[[Xanadu Principles]]
 Some fundamental problems with the way the web was built that Xanadu objects to and which we hope to solve:
 
 ## Servers cannot be transmitted easily
