@@ -1,4 +1,5 @@
 {
   "newLinkFormat": "shortest",
-  "promptDelete": false
+  "promptDelete": false,
+  "newFileLocation": "current"
 }
