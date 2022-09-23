@@ -15,6 +15,9 @@ Servers is mentioned heavily in the Xanadu model, and we would propose they are 
 They are special in that they are content that can generate more content - a Process - but this property is shared by other objects in the system, such as People, and Programs, and Sensors.
 Content itself is merely the past states of Processes
 
+We need to redefine server as:
+> 
+
 ## Folders cannot contain information
 
 At some point, folders were made different from files, but they should be the same thing
