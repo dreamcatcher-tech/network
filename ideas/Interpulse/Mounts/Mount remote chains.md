@@ -7,6 +7,18 @@ This is how clients connect to remotely running applications and interact with t
 ## Implementation
 Mounts are stored in an `mtab` slice either in their own chain, or in the shell state.  This contains all the information needed to start the mount, such as peer addresses, validator public keys, and last known hash.
 
+Announcements are made to any subscribers, for any chains - the remote side must have send a subscription request beforehand.
+
+## Cycles in the Mount tree
+If `A/chain1` mounts `B/chain2` such that the tree of A is `A/chain1/chain2` and then chain2 mounts chain1 such that the tree of B is `B/chain2/chain1` and auto updates are turned on, then a never ending cycle of updates may be triggered.
+
+Some part of the parent update mechanism has to stop the flow of updates somehow.
+
+This may be mitigated by:
+1. Requiring all mountable chains to be registered in `mtab` too, so that loops can be detected somehow
+2. Separate trees for children and links, where mounts would be considered links, and would not trigger a state update
+3. If mtab stored latest hash directly, then the local child would have no need to update its parent if the remote changed.  Remotes would only trigger updates if the [[Supervisor Tree]] changed, which can only be from direct children changing
+
 ## Problems
 1. Data leakage from the parents of any remote chain
 2. If [[approot]]s are the only thing that can be subscribed to, then what if the path changes to point to a different chain ?
