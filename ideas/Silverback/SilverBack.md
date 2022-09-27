@@ -11,7 +11,7 @@
 ### Situation
 Cryptocurrencies have demonstrated excellent transmission of value properties but continually falter at storing intrinsic value.  Fiat value is being tested by inflation, and its transmissibility is being hampered by an ever tightening reporting quagmire.  Silver has good vaulting services but the price appears manipulated, making it susceptible to a short squeeze.  Gen3 blockchains are on the near horizon, and billions of dollars in crypto currency gains needs a new safe, stable home.
 ### Concept
-The idea is to make a stable blockchain currency collateralized by multiple independent silver vaults that provides instant global value storage and transmission with the side effect of causing a silver short squeeze resulting in a payday for all holders and freeing of the silver markets.
+The idea is to make a stable blockchain currency collateralized by multiple independent silver vaults that provides instant global value storage and transmission with the side effect of causing a silver short squeeze resulting in a payday for all holders and opening of the silver markets.
 
 The cost of vaulting, software, and operating would be met by a small fee extracted from every transaction, effectively allowing members to vault their silver for free.  Liquidity for trading would be provided by holders of the currency pooling their silver in exchange for part of the transaction fee.
 
