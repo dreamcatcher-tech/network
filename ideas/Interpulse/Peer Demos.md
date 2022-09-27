@@ -1,3 +1,4 @@
+A set of demos that indicate true peer to peer functionality has been achieved
 ## Two engines connected
 In a jest test, start up two engines, each listening on a different tcp address. Tell the first one to dial the second.
 

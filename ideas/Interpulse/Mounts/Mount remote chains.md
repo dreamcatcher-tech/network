@@ -17,7 +17,10 @@ Some part of the parent update mechanism has to stop the flow of updates somehow
 This may be mitigated by:
 1. Requiring all mountable chains to be registered in `mtab` too, so that loops can be detected somehow
 2. Separate trees for children and links, where mounts would be considered links, and would not trigger a state update
-3. If mtab stored latest hash directly, then the local child would have no need to update its parent if the remote changed.  Remotes would only trigger updates if the [[Supervisor Tree]] changed, which can only be from direct children changing
+3. If mtab stored latest hash directly, then the local child would have no need to update its parent if the remote changed.  Remotes would only trigger updates if the [[Supervisor Tree]] changed, which can only be from direct children changing.  Resolving paths to a remote mount would necessarily go via mtab.
+
+## Name resolution
+A remote chain should be able to use the same name resolution system as the covenant resolution system.
 
 ## Problems
 1. Data leakage from the parents of any remote chain
