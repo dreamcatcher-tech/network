@@ -1,0 +1,1 @@
+The technical method, as encoded in the Dreamcatcher source, which stipulates how separate Dreamcatcher instances must interact. Dreamcatcher Protocol is similar in operation to an Application Programming Interface (API).[b]

@@ -1,0 +1,1 @@
+The Target is the Object that would be changed following a Pull Request for a Merge. The Governance which controls the Target is the authority against which a Pull Request is raised and which therefore has the authority to deny that Pull Request. NB, the Origin may also change. However, as the Origin instigates the Pull Request, consent from its Governance is already given.

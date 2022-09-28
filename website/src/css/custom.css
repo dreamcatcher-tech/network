@@ -1,0 +1,151 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: rgb(33, 175, 144);
+  --ifm-color-primary-darker: rgb(31, 165, 136);
+  --ifm-color-primary-darkest: rgb(26, 136, 112);
+  --ifm-color-primary-light: rgb(70, 203, 174);
+  --ifm-color-primary-lighter: rgb(102, 212, 189);
+  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-code-font-size: 95%;
+  --site-primary-hue-saturation: 167 68%;
+  /* Dreamcatcher Pallete. */
+  /* Worked out in rough here:  https://www.canva.com/colors/color-wheel/ using complementary setting. */
+
+  --dreamcatcher-pink: #d02f9a;
+  --dreamcatcher-purple: #b650dc;
+  --dreamcatcher-orange: #e0591f;
+  --dreamcatcher-blue: #3e74c1;
+  --dreamcatcher-green: #48b77b;
+
+  --dreamcatcher-pastel-pink: #e795cb;
+  --dreamcatcher-pastel-purple: #e1b8f1;
+  --dreamcatcher-pastel-orange: #eea383;
+  --dreamcatcher-pastel-blue: #98b5de;
+  --dreamcatcher-pastel-green: #b3e1c8;
+
+  --dreamcatcher-pink-opposite: #2fd065;
+  --dreamcatcher-purple-opposite: #77dc50;
+  --dreamcatcher-orange-opposite: #1fa6e0;
+  --dreamcatcher-blue-opposite: #c18b3e;
+  --dreamcatcher-green-opposite: #b74884;
+
+  --dreamcatcher-pastel-pink-opposite: #95e7b0;
+  --dreamcatcher-pastel-purple-opposite: #c7f1b8;
+  --dreamcatcher-pastel-orange-opposite: #83cdee;
+  --dreamcatcher-pastel-blue-opposite: #dec198;
+  --dreamcatcher-pastel-green-opposite: #e1b3cc;
+
+  --dreamcatcher-hover-pink: rgb(255, 199, 210);
+}
+
+.dreamcatcher_callout_padding {
+  padding: 20px;
+  padding-left: 80px;
+  padding-bottom: 10px;
+}
+.dreamcatcher_callout_alignment {
+  margin: auto;
+  text-align: center;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+.dreamcatcher_button {
+  padding: 5px 32px;
+  border-radius: 8px;
+  border: 4px solid #000000;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+}
+
+.buttonGetInvolved {
+  background-color: var(--dreamcatcher-pink);
+  color: white;
+}
+
+.buttonGetInvolved:hover {
+  background-color: var(--dreamcatcher-hover-pink);
+  color: black;
+}
+
+.buttonInvestors {
+  background-color: var(--dreamcatcher-pink);
+  color: white;
+}
+
+.buttonInvestors:hover {
+  background-color: var(--dreamcatcher-hover-pink);
+  color: black;
+}
+
+.buttonBuilders {
+  background-color: var(--dreamcatcher-pink);
+  color: white;
+}
+
+.buttonBuilders:hover {
+  background-color: var(--dreamcatcher-hover-pink);
+  color: black;
+}
+
+.buttonBuyers {
+  background-color: var(--dreamcatcher-pink);
+  color: white;
+}
+
+.buttonBuyers:hover {
+  background-color: var(--dreamcatcher-hover-pink);
+  color: black;
+}
+
+.buttonInterblock {
+  background-color: var(--dreamcatcher-pink);
+  color: white;
+}
+
+.buttonInterblock:hover {
+  background-color: var(--dreamcatcher-hover-pink);
+  color: black;
+}
+
+.buttonGetStarted {
+  background-color: var(--dreamcatcher-pink);
+  color: white;
+}
+
+.buttonGetStarted:hover {
+  background-color: var(--dreamcatcher-hover-pink);
+  color: black;
+}
+
+div[class^='announcementBar_'] {
+  --site-announcement-bar-stripe-color1: hsl(
+    var(--site-primary-hue-saturation) 85%
+  );
+  --site-announcement-bar-stripe-color2: hsl(
+    var(--site-primary-hue-saturation) 95%
+  );
+  background: repeating-linear-gradient(
+    35deg,
+    var(--site-announcement-bar-stripe-color1),
+    var(--site-announcement-bar-stripe-color1) 20px,
+    var(--site-announcement-bar-stripe-color2) 10px,
+    var(--site-announcement-bar-stripe-color2) 40px
+  );
+  font-weight: bold;
+}
