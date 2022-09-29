@@ -4,3 +4,4 @@ As the consumer of Interpulse, developers will want to subscribe to a specific c
 ## Discussions
  - it might be only required to subscribe to the state, not the full pulse, as a UI developer
 	 - definitely need to know what covenant is running, to decide what component to display
+	 - sometimes children are required, but children are available in the statetree too

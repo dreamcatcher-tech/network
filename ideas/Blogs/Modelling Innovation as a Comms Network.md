@@ -42,10 +42,16 @@ This network component controls multiple transmission lines, and presents a virt
 Companies act as a forced router, where traffic must pass through.  They are also selective, and will reject some transmissions if it does not serve them directly.
 
 These components also modify the solution components, and combine them with each other - very rarely does a solution make it all the way through the org with fidelity.  It also strives to provide the same solution to multiple people.
+
 ### Packet loss
 This component receives innovation but destroys them upon receipt.  The loss may be partial, and per part of a packet, or randomly be the full packet.
+
 ### Buffers
-These components can store up innovation
+These components can store up innovation for an arbitrary time before continuing transmission.  A Buffer has a decay function built in, as innovation does not store well.
+
+### Connection Broker
+A common component in Innovaiton networks is a switch that brokers connections before allowing innovation to flow.  This component is seen in [[Upwork Model|Upwork]], and represents the portion of their model that requires [[Funders]] and [[Do-ers]] to negotiate with each other before Innovation can be attempted.  This places extra load on both transmission lines and 
+
 ## Effects
 ### Backpressure
 When the target cannot receive all the solutions being pushed to it
