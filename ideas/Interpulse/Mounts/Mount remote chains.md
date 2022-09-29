@@ -9,6 +9,20 @@ Mounts are stored in an `mtab` slice either in their own chain, or in the shell 
 
 Announcements are made to any subscribers, for any chains - the remote side must have send a subscription request beforehand.
 
+### Treat each mount as a channel
+If `.mtab` was a child of `/` then each remote chain can be treated like a channel, with the only difference being that the engine will attempt to keep `latest` up to date with the remote side
+
+### Proxying writes
+Just because a chain is mounted, doesn't mean the mounter has any kind of write connection to the chain.  We would like all writes in an app complex to go via a single proxy chain, and so 
+
+### Cutting off permissions
+If one app complex wants to cut off another one, but there are a large number of channels open between multiple chains in each complex, a coherence problem occurs.  If any writes from external complexes are first checked by the engine for permissions at the `approot` then any denial can be effectively instant.  
+
+This would avoid the socket chain concept, where socket chains can easily become a bottleneck for inter complex communications.
+
+### Speeding up write opening
+Time delays in opening a remote chain for writing can be mitigated by allowing remote chains to request write action directly and the engine doing a lookup to verify permissions or not.  If permissions pass, then the interpulse is accepted by way of creating a recipient channel in pool.
+
 ## Cycles in the Mount tree
 If `A/chain1` mounts `B/chain2` such that the tree of A is `A/chain1/chain2` and then chain2 mounts chain1 such that the tree of B is `B/chain2/chain1` and auto updates are turned on, then a never ending cycle of updates may be triggered.
 
