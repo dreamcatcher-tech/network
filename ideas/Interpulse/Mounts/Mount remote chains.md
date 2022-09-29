@@ -23,6 +23,15 @@ This would avoid the socket chain concept, where socket chains can easily become
 ### Speeding up write opening
 Time delays in opening a remote chain for writing can be mitigated by allowing remote chains to request write action directly and the engine doing a lookup to verify permissions or not.  If permissions pass, then the interpulse is accepted by way of creating a recipient channel in pool.
 
+### Mounting a complete tree
+For the CRM app, each client needs to mount the complete app, and keep a local copy of all changes that occur in the [[App Complex]]. To do this, we need to specify in config options that this chain will be kept up to date and its full children fetched to the local engine.
+
+Each time a new pulse is received, then we will look to the change tree, and walk it completely, fetching any new pulses.  This diff seeking can begin right from the first pulse, as the initial depth first search can run in parallel to changes.
+
+Depending on the design, it may be that only the statetree is required to be synced fully.
+
+Some kind of batching will be required for HAMT structures, so as not to try fetch the whole thing at once.  Any time a HAMT is encountered, it will need to be fulfilled depth first fully in segments, as it cannot be done breadth first due to memory constraints
+
 ## Cycles in the Mount tree
 If `A/chain1` mounts `B/chain2` such that the tree of A is `A/chain1/chain2` and then chain2 mounts chain1 such that the tree of B is `B/chain2/chain1` and auto updates are turned on, then a never ending cycle of updates may be triggered.
 

@@ -75,3 +75,5 @@ Show how having layers of management ruins network performance even more
 
 ### Upwork
 Upwork has a permissioned gateway component that requires transmitter and received to agree to the terms of transmission before transmission can occur.  The gateway also guarantees exclusivity of transmission, for the purposes of exclusivity of incentive.  As the number of bidders gets large, this gateway delay causes significant backpressure and an unsatisfactory level of service to both transmitters and receivers due to the overhead of permissioned negotiation.
+
+We can show that the cost of this gateway negotiation drains the incentive buffer of both transmitter and receivers in ways that can cause the negotiation to fail because it ran out of energy.  This overhead is not strictly in money, but in time, which can be far more costly to either party, and it always requires double coincidence of onlineness.
