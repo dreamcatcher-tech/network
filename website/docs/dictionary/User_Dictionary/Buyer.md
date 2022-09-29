@@ -1,0 +1,1 @@
+A Member who purchases either the rights to Attribution of a Packet, or Services for the use of that Packet.
