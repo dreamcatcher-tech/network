@@ -1,0 +1,1 @@
+Need a way to test the system by simulating crash and recovery at any stage that the engine is at.  Currently there is no way to recover if a crash occurs before the app complex has fully settled.

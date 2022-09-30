@@ -1,5 +1,6 @@
 {
   "newLinkFormat": "shortest",
   "promptDelete": false,
-  "newFileLocation": "current"
+  "newFileLocation": "current",
+  "attachmentFolderPath": "website/static/obsidian"
 }
