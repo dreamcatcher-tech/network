@@ -9,6 +9,7 @@ A set of demos that indicate true peer to peer functionality has been achieved
 In a jest test, start up two engines, each listening on a different tcp address. Tell the first one to dial the second.
 
 Then mount the crm app stored on one inside the tree of the other.
+Write between one and the other.
 ## Node and webpage connecting
 Start DOS A in the terminal. Issue commands to start listening on tcp socket.
 

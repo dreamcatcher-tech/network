@@ -1,15 +1,16 @@
+>[!tip] Created: [2022-09-14 Wed 20:09]
 
-# discover latest after restart
+>[!question] Targets: [[approot]]
 
-> [2022-09-14 Wed 20:09] 
-> Targets: [[approot]] 
-> Depends: [[]]
+>[!danger] Depends: 
 
-The problem is being able to discover the latest pulse of arbitrary pulses during engine processing after a restart has wiped the cache.  We must avoid storing references to latest directly as this can fall out of sync, and requires  more than twice the amount of writes to store.  The solution should use the [[App Complex]] alone to rebuild the in memory cache of what latest means for each address
+The problem is being able to discover the latest pulse of arbitrary pulses during engine processing after a restart has wiped the cache.  We must avoid storing references to latest directly as this can fall out of sync, and requires  more than twice the amount of writes to store.  **The solution should use the [[App Complex]] alone to rebuild the in memory cache of what latest means for each address.** This means using pathing to contain information about how to walk the [[Supervisor Tree]].
 
 Every stream of interpulses starts from a piercing, and the pierced chains all know how to be discovered by approot.  This principle may be exploited to walk the app complex whenever a 'latest' reference is required.
 
 Each time a pierce enters, it will either go to a child, or to a symlink.  All symlinks are done by paths, and so we should walk the path to the target, caching latest as we go.  This way, when the updates go back up to approot, parent latests will all be known already.  This should work even for relative paths.
+
+We may also push up the [[Supervisor Tree]] whenever chains are in [[Tension]] so that recovery of partially processed interpulses can be restarted.
 
 Cases to consider:
 
@@ -26,3 +27,11 @@ This might cause problems as a relative path cannot be walked without knowing ou
 ### Interpulse from network
 
 This should always come in to something listed in `mtab` which means it knows how to get to approot.  If a remote connection is not listed in mtab we have no hope of looking it up efficiently using address alone.  mtab allows us to resolve a path to an address that the interpulse targets.
+
+## Implementation
+Uplinks cannot be to addresses alone.   In fact, no type of communication can be to addresses alone at the chain level - only at the hardware transport level is this ever permitted.
+
+### Talking to a remote chain
+The Engine needs some long term storage to effectively function as a network node after rebooting and during intermittent network activity.  Pulses are long term storage, and so the network configuration should be stored as part of the [[App Complex]], because each chain in the complex will need similar network services.
+
+In order to talk to a remote chain, a connection must be opened first.  In order to navigate an [[App Complex]], an authentication must be performed.
