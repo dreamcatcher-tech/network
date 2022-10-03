@@ -13,6 +13,9 @@ Instead of a separate permissions chain that needs to be looked up by each
 ### Interpulse pooling only ever needs to be done for the sockets
 If a remote chain can write to any other chain, we can have the pools in all kinds of states.  With sockets, the app complex is always drained, and has almost no catchup tasks to do, and no out of order interpulses.  Instictively it seems useful to be able to shut the outside world off and do internal processing only
 
+### [[crash recovery]] knows how to resume sending interpulses
+After reboot, if internal chains are trying to talk to a remote chain, they will need a way to determine what peerId they should transmit to.  Starting at a random point in the complex and having to figure this out might require large amounts of bookkeeping and other side-channel activity.  But if all remote writes came and went thru sockets, then we can store the peer information alongside each socket chain, much like how mounts work.
+
 ## Disadvantages
 1. Everything is delayed by an extra chain hop
-2. Some extra programming required to do the proxy activit, 
+2. Some extra programming required to do the proxy activity, 
