@@ -40,6 +40,8 @@ Sockets offer a public facing chain that will accept connections from any other 
 
 Children of the authenticated chain may also be granted access.  When introducing themselves, they will need to supply their path back to their authenticated parent.  This path will be used whenever they interact in the complex.
 
+The path of the remote channel needs to be verified somehow.  Each time the request is sent, we must verify the address is valid, else we should require a new connection to be made for the uplink.
+
 Is there a requirement for a treewalking object, so that verification of a path can occur ? [[Rapid path verification]]
 
 Can we leverage that all remote connections must have been started at some point ?
