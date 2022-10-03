@@ -46,3 +46,12 @@ Is there a requirement for a treewalking object, so that verification of a path 
 
 Can we leverage that all remote connections must have been started at some point ?
 	if our parent must have told us to open up, we could walk the parent to find the path back ?
+
+### Merging uplinks and downlinks as commslinks
+These links are not part of the [[Supervisor Tree]] and not browseable by the filesystem in any way.  They both need to represent a path based connection to a chain, which may be remote.  The path is required so we discover the latest pulse of that chain, and so we can know if the chain specified is remote or not.
+
+We could rename hardlinks as remotelinks, and so a link is declared as remote at the time it is made.  It is required that this link have some peering information in it - this could be referenced to some entry in mtab, by pointing by path.
+
+Connect need not know the chainId, of the next child in the path, since we can look this up directly now.  Downlinks need not be resolved either, as this can be looked up directly.
+
+If connect was replaced by a permissions lookup, then we could open up the connection directly, with no burden on the tree at all.  This would occur in the engine, rather than in the reducer.
