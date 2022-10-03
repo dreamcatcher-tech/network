@@ -1,0 +1,3 @@
+The number of personal notes that someone can make in obsidian is large.  Not all of these belong in the projects that a person takes part in.  But not all of them are worthless to those projects either.  Where should the line be drawn ?  How should others filter them ?
+
+If each node had a grade, or an upvote attached, then peoples filters can seek only those nodes above a certain threshold, and then if something above refers to something below, then you can follow that but with a notional color coding.

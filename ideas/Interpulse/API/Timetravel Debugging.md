@@ -1,1 +1,1 @@
-Being able 
+Being able to run a test, store the results, then be able to walk back to an individual pulse for it to be replayed could help significantly in the debugging efforts.  Having code that repeatedly executes makes it hard to pinpoint bugs, since need to break on something other than the codepath.

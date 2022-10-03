@@ -19,3 +19,12 @@ After reboot, if internal chains are trying to talk to a remote chain, they will
 ## Disadvantages
 1. Everything is delayed by an extra chain hop
 2. Some extra programming required to do the proxy activity, 
+
+## Other Options
+### path all foreign chains by reverse mount
+Mounts let us know that the path refers to a foreign chain.  So if we only allow access to chains that have registered first - been valeted into the [[App Complex]] then we can reverse mount them, using this valet point as a reference, eg: `/sockets/peerId/address` where ABC is a system generated short name of a chain that represents a remote peerId, and address is a system generated short name for a chain that is communicating with this complex.
+
+Problem is recovering a chain, but not knowing how to contact one of the addresses that it wants to reply back to - where can we get peering information, just based on an address ?
+We could rely on the originator seeking us out, since they want their reply, but it would be faster if we could seek them too.
+
+This problem is compounded when multiple chains want to talk to multiple chains.

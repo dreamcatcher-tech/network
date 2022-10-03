@@ -22,8 +22,32 @@ Due to pessimism of the effectiveness of the router, how many Funders or Do-ers 
 ### Stickiness
 Once a transmission line has been used, how likely is it that this line gets used again ?  This is of interest since if the overhead of selecting initially is high, the chance that this is the best transmission line is low, but with high stickiness the network is doomed to a lower performance.  Cheap and easy switching allows the network to reconfigure itself quickly towards optimal thruput. Greater performance quicker means that, as environment conditions change, the network will spend a greater overall time near peak performance.
 
+### Self organization
+How much did multiple Do-ers coordinate with each other to tackle a task piecemeal ?  How much did Funders coordinate to save their costs ?
+
 ## The Upwork Raw Router
 This is a manual router, that requires the participants themselves to negotiate their routes themselves, using a messaging system it provides.  In exchange for this service, the Upwork Raw Router charges 20% of the incentive throughput.
 
 ## The Dreamcatcher Router
 This is a permissionless router that requires transmissions to be formed into Packets.
+
+## Implementation
+We can operate this model using UpWork as it is right now, and present ourselves as a freelance company that bids for work, then publishes the jobs we want fulfilled on upwork too.  We would seek to deduplicate Funders so they can share their costs, and we would seek to engage Do-ers.
+
+Ultimately we would seek to have Do-ers themselves taking over some of our roles, and so long as eveyone honours ambient attribution, we would all
+
+The attirbution model is what we hope leads to greater coordination between competing Do-ers, and coordination between Funders.
+
+We would be the salespeople of the Dreamcatcher way of doing things to Funders.  We may need to float some of the jobs with a small amount of funding to entice people in at first.  This should be very cheap compared to the lessons we will learn.
+
+### Tooling
+1. Some searching tool that helps narrow down jobs that would be suitable for us
+2. Store the UpWork screen grabs on our own chains, if permitted to do so
+3. Chat for Do-ers and Funders to communicate and make promises to each other
+4. Pull the status of the UpWork escrow and jobs into our system
+
+
+### Problems
+1. Can we do this on non blockchain work ?
+2. What if Funders make use of the work and pay no Royalties ?
+3. Is pulling info out of UpWork breaking T&C's ?
