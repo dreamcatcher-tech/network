@@ -35,3 +35,12 @@ Uplinks cannot be to addresses alone.   In fact, no type of communication can be
 The Engine needs some long term storage to effectively function as a network node after rebooting and during intermittent network activity.  Pulses are long term storage, and so the network configuration should be stored as part of the [[App Complex]], because each chain in the complex will need similar network services.
 
 In order to talk to a remote chain, a connection must be opened first.  In order to navigate an [[App Complex]], an authentication must be performed.
+
+Sockets offer a public facing chain that will accept connections from any other chain.  While connected, the remote chain may need to complete a handshake.  If the handshake completes, then it is granted access to the complex.  Whenever this chain interacts with the complex, 
+
+Children of the authenticated chain may also be granted access.  When introducing themselves, they will need to supply their path back to their authenticated parent.  This path will be used whenever they interact in the complex.
+
+Is there a requirement for a treewalking object, so that verification of a path can occur ? [[Rapid path verification]]
+
+Can we leverage that all remote connections must have been started at some point ?
+	if our parent must have told us to open up, we could walk the parent to find the path back ?
