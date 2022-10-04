@@ -55,3 +55,6 @@ We could rename hardlinks as remotelinks, and so a link is declared as remote at
 Connect need not know the chainId, of the next child in the path, since we can look this up directly now.  Downlinks need not be resolved either, as this can be looked up directly.
 
 If connect was replaced by a permissions lookup, then we could open up the connection directly, with no burden on the tree at all.  This would occur in the engine, rather than in the reducer.
+
+**The path must contain information about how to locate the validators for a given chain**
+
