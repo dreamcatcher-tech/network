@@ -16,3 +16,7 @@ Links can be made to chains that are not part of the current [[App Complex]] by 
 
 A nested path to the `mtab` reference may be specified too: `/.mtab/mountName/some/nested/path`
 
+## Hard Links
+Hardlinks should be mapping address to path.  The path is used to do the initial lookup, but from then on, the address is primary, path is derived.  So if the target chain moves to a new path, the engine should update our derived path.  This is the inverse of a symlink, where the path is primary, the address is derived and updated if it changes.
+
+

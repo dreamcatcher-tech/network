@@ -2,5 +2,11 @@
   "newLinkFormat": "shortest",
   "promptDelete": false,
   "newFileLocation": "current",
-  "attachmentFolderPath": "website/static/obsidian"
+  "attachmentFolderPath": "website/static/obsidian",
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
 }
