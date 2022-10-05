@@ -32,6 +32,11 @@ Depending on the design, it may be that only the statetree is required to be syn
 
 Some kind of batching will be required for HAMT structures, so as not to try fetch the whole thing at once.  Any time a HAMT is encountered, it will need to be fulfilled depth first fully in segments, as it cannot be done breadth first due to memory constraints
 
+### Full Sync
+This option will keep the full remote tree available on the local machine.  To avoid walking the full tree every time, we would calculate the diffs with the previous pulse.  Each request to uncrush the new tree would consider the previous location, and only fetch the changed paths.
+
+This would pull in all children too.
+
 ## Cycles in the Mount tree
 If `A/chain1` mounts `B/chain2` such that the tree of A is `A/chain1/chain2` and then chain2 mounts chain1 such that the tree of B is `B/chain2/chain1` and auto updates are turned on, then a never ending cycle of updates may be triggered.
 
