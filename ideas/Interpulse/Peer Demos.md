@@ -22,15 +22,6 @@ Observe all DOS instances able to make changes to others, and perceive the chang
 
 Be able to set networking parameters directly in DOS instance with a command.
 
-## Deployment
-Start nodejs version with a preset listen address in code.
-Start browser, connecting to preconfigured address.
-Browser auto mounts the remote chain address.
-Let the browser clients interact - observe their changes on each other
-
-## Update a deployed instance
-Be able to pull down new code, ensure the current data is still compatible, then publish the new version for use by the clients.
-
 ## Peer Browsers
 This is the ultimate in connectivity. DOS A is a server on node, DOS B and DOS C are browser instances. DOS B can mount something on DOS C and interact, by using DOS A as a webrtc signalling server.
 
