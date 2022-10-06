@@ -4,6 +4,8 @@ Alternatively there might be a post processor that runs on the shell to turn the
 
 Ideally the same components that are used to present datum state are used to present shell responses.
 
+We should hook the CLI UI component for each command that we want to format specially, such as ls giving colors to different types of file item
+
 ## CLI
 
 ### Prompt
