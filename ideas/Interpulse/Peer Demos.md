@@ -10,6 +10,7 @@ In a jest test, start up two engines, each listening on a different tcp address.
 
 Then mount the crm app stored on one inside the tree of the other.
 Write between one and the other.
+
 ## Node and webpage connecting
 Start DOS A in the terminal. Issue commands to start listening on tcp socket.
 
@@ -28,7 +29,7 @@ Browser auto mounts the remote chain address.
 Let the browser clients interact - observe their changes on each other
 
 ## Update a deployed instance
-
+Be able to pull down new code, ensure the current data is still compatible, then publish the new version for use by the clients.
 
 ## Peer Browsers
 This is the ultimate in connectivity. DOS A is a server on node, DOS B and DOS C are browser instances. DOS B can mount something on DOS C and interact, by using DOS A as a webrtc signalling server.
