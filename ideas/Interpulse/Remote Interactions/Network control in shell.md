@@ -13,6 +13,12 @@ Repo could be started and then connected to the `@@io` channel like a dependency
 
 Ideally only control instructions should go to the side effects.
 
+## Issues
+### Specifying listen addresses
+Due to difficulty with 
+Restart the networking if the listen stats change in any way.
+Wait till we have the latest pulse, and the network configuration.
+
 ## Proposals
 ### Boot raw shell with late net
 Engine starts up with no networking, then when it wishes to communicate it creates a child chain called `net`. This chain has a side effect assosciated with it, which is the libp2p library.

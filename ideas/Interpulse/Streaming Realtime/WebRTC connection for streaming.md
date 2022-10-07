@@ -1,0 +1,1 @@
+Using the webrtc transport for low latency we can offer a voip app that can give high quality low latency calling between staff and the rest of the internet using gateways.
