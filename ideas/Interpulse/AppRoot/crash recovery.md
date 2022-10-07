@@ -1,6 +1,6 @@
 >[!tip] Created: [2022-09-14 Wed 21:34]
 
->[!question] Targets: [[Interpulse]]
+>[!question] Targets: [[Interpulse Blockchain]]
 
 >[!danger] Depends:
 

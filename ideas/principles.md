@@ -2,7 +2,7 @@
 # principles
 
 > [2022-09-14 Wed 19:55]  
-> Targets: [[Interpulse]] 
+> Targets: [[Interpulse Blockchain]] 
 > Depends: [[]]
 
 A collection of principles that guide the characteristics of [[dictionary/Interpulse]].

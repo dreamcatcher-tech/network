@@ -1,3 +1,9 @@
+>[!tip] Created: [2022-10-07 Fri 15:35]
+
+>[!question] Targets: 
+
+>[!danger] Depends: 
+
 To allow browser peers and nodejs peers to all find each other and talk using webrtc, signalling is required.  This requires a separate set of infrastructure to be set up and maintained.
 
 If we could do all the signalling via chains, then all we need is a public facing chain host that can do some interaction with chains (like injecting what address it saw the signal come from), host some small chains (like a chain used by two peers to handshake), and receive inbound connections.

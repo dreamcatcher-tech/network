@@ -11,7 +11,7 @@ Using as few of the features of Obsidian as are possible, we define here a set o
 ### Idea
 >[!tip] Created: [2022-09-14 Wed 21:34]
 
->[!question] Targets: [[Interpulse]] [[Another Target]]
+>[!question] Targets: [[Interpulse Blockchain]] [[Another Target]]
 
 >[!danger] Depends: [[Some Request]] [[Another Thing]]
 
@@ -19,7 +19,7 @@ Content of the idea goes here
 ### Request
 >[!tip] Created: [2022-09-14 Wed 21:34]
 
->[!question] Targets: [[Interpulse]] [[Another Target]]
+>[!question] Targets: [[Interpulse Blockchain]] [[Another Target]]
 
 >[!danger] Depends: [[Some Request]] [[Another Thing]]
 
@@ -27,7 +27,7 @@ Content of the Request goes here
 ### Definition
 >[!tip] Created: [2022-09-14 Wed 21:34]
 
->[!question] Targets: [[Interpulse]] [[Another Target]]
+>[!question] Targets: [[Interpulse Blockchain]] [[Another Target]]
 
 Content of the Definition goes here
 
