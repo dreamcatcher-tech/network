@@ -27,3 +27,6 @@ For this reason, we may require listen addresses to be specified at boot for now
 Engine starts up with no networking, then when it wishes to communicate it creates a child chain called `net`. This chain has a side effect assosciated with it, which is the libp2p library.  This contains all the config we wish to enact.  Shell needs to tell net to actively start before it does anything.  Here if the listen addresses are problematic, we would reject the outbound io request.
 
 If during running an error occurs, we would send this error back into the net object, and await further instructions.
+
+## Extras
+Share access to each root chains net chain, so peers can read and gossip their information as chains.  Implements our own gossip.  Should not make an action to do a read, so being able to read a chain is preferred, rather than a request.
