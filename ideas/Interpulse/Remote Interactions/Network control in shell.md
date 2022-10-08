@@ -15,10 +15,15 @@ Ideally only control instructions should go to the side effects.
 
 ## Issues
 ### Specifying listen addresses
-Due to difficulty with 
-Restart the networking if the listen stats change in any way.
-Wait till we have the latest pulse, and the network configuration.
+Due to difficulty with changing the listen addresses in libp2p, we could require the listen addresses to be specified at startup ?  Or, we would have to restart the networking if the listen addresses change in any way.
+Wait till we have the latest pulse, and the network configuration, then apply the changes to bring the running system in line with requested.
+
+What if an error occurs, or the listen address is infeasible ?  Should we send a failure back into the chain to change the listen address ?
+
+For this reason, we may require listen addresses to be specified at boot for now.
 
 ## Proposals
 ### Boot raw shell with late net
-Engine starts up with no networking, then when it wishes to communicate it creates a child chain called `net`. This chain has a side effect assosciated with it, which is the libp2p library.
+Engine starts up with no networking, then when it wishes to communicate it creates a child chain called `net`. This chain has a side effect assosciated with it, which is the libp2p library.  This contains all the config we wish to enact.  Shell needs to tell net to actively start before it does anything.  Here if the listen addresses are problematic, we would reject the outbound io request.
+
+If during running an error occurs, we would send this error back into the net object, and await further instructions.
