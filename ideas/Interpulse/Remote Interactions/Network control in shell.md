@@ -36,3 +36,8 @@ Based on the assumption that network topology changes far slower than chain topo
 1. Listen ports are required to be specified at boot time.
 2. Libp2p config is stored in code alone, as it does not need to change yet.  When it does change, we would need to restrt the whole libp2p library as the simplest option. 
 3. peerId to addresses and multiaddr mappings are stored in [[mtab]] as: `peerId: { multiaddrs: [], hardlinks: []}` where hardlinks are stored by name, so getting the address requires a network hamt lookup
+4. Web client will automatically add the server it was loaded from as a default peerId, so that as soon as a mapping of peerId to address is made, it may have no use for a multiaddr addition.
+
+
+## Problems
+1. How to 
