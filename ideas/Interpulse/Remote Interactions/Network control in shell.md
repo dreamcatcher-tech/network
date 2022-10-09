@@ -30,3 +30,9 @@ If during running an error occurs, we would send this error back into the net ob
 
 ## Extras
 Share access to each root chains net chain, so peers can read and gossip their information as chains.  Implements our own gossip.  Should not make an action to do a read, so being able to read a chain is preferred, rather than a request.
+
+## Implementation
+Based on the assumption that network topology changes far slower than chain topology, we make the following implementation shortcuts:
+1. Listen ports are required to be specified at boot time.
+2. Libp2p config is stored in code alone, as it does not need to change yet.  When it does change, we would need to restrt the whole libp2p library as the simplest option. 
+3. peerId to addresses and multiaddr mappings are stored in [[mtab]] as `peerId: {} 
