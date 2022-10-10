@@ -31,6 +31,9 @@ If during running an error occurs, we would send this error back into the net ob
 ## Extras
 Share access to each root chains net chain, so peers can read and gossip their information as chains.  Implements our own gossip.  Should not make an action to do a read, so being able to read a chain is preferred, rather than a request.
 
+## Hard coding server info
+We can get vite to build with some ENV vars that get baked into the page, that the loaded blockchain can then inject into itself, to start running with zero config.  Ie: First time the webpage loads, the user should not have to do anything at all, but should be automatically connected up.
+
 ## Implementation
 Based on the assumption that network topology changes far slower than chain topology, and that the number of chains to be subscribed to as subscription roots is small, we make the following implementation shortcuts:
 1. Listen ports are required to be specified at boot time.
@@ -40,4 +43,6 @@ Based on the assumption that network topology changes far slower than chain topo
 
 
 ## Problems
-1. How to 
+1. How to query the server for:
+	1. what chains it has available ?
+	2. what its public key is ?
