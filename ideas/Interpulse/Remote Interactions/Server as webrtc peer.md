@@ -15,12 +15,17 @@ This solution needs to only allow LAN computers to connect to the server as it w
 
 The main page can be cached by a service worker so that if a network outage occurs, it should still work.  Hopefully webRTC information lasts ?
 
+Might allow for fully remote access to take place, if the remote device was whitelisted on the server.
+
 ## V2
 Use cloudflare VPN as a way to expose the local app using SSL
 
 ## V3
 Run the app on the LAN, use cloudflare to expose it enough to generate an SSL cert using lets-encrypt.
 Domain set a DNS record to point at the LAN address.
+Then everyone starts their connections, and gets local speed.
 
 ## V4
 Generate a domain SSL cert and DNS address that is trusted by the clients.  Let them access the server directly.
+Downside is no remote access.
+Also server is running onsite.
