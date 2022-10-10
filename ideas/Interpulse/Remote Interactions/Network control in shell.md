@@ -34,6 +34,13 @@ Share access to each root chains net chain, so peers can read and gossip their i
 ## Hard coding server info
 We can get vite to build with some ENV vars that get baked into the page, that the loaded blockchain can then inject into itself, to start running with zero config.  Ie: First time the webpage loads, the user should not have to do anything at all, but should be automatically connected up.
 
+## DNS
+The mtab mapping of names to addresses is a form of DNS.  A compound lookup may be employed if we want to make dns work for remote advisory chains.  We would still need a basic mapping to each DNS chain in mtab, but once we were connected we could do lookups to paths we didn't have hard coded.  In this sense, `mtab` is like a `/etc/hosts` file.
+
+This would require the `mount` command to take `string: string`  form as well as `string: chainId` and a lookup strategy would need to be employed to ultimately resolve to a chainId. 
+
+Charging for DNS lookups is done by charging for a request, or charging for access to the DNS table.
+
 ## Implementation
 Based on the assumption that network topology changes far slower than chain topology, and that the number of chains to be subscribed to as subscription roots is small, we make the following implementation shortcuts:
 1. Listen ports are required to be specified at boot time.
