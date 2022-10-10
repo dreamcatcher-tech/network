@@ -15,6 +15,5 @@ The main page can be cached by a service worker so that if a network outage occu
 ## V2
 Use cloudflare VPN as a way to expose the local app using SSL
 
-Weakness is that the central page needs to be available, or
-
-Question is: can webrtc peers be stored and connected to locally ?
+## V3
+Host the nodejs version in the cloud, using ssl, and use cloudflare as a front
