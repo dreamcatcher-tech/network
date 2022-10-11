@@ -1,0 +1,1 @@
+An agent that listens to changes to git commits, then upon detecting changes, pulls down new code and restarts any services that may have been running.
