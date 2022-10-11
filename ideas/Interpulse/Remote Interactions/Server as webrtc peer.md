@@ -31,6 +31,8 @@ vite can be set up to serve over https and proxy certain urls.  We might be able
 ## Running a signalling server
 Docker image for a [signalling server](https://hub.docker.com/layers/libp2p/js-libp2p-webrtc-star/latest/images/sha256-c4e75e1cef07c048180b5ae957f373889a51098fbf951e3c616a40f03131e6ec?context=explore) which could be run locally.  Would need to be put behind an nginx proxy or something to make it ssl capable.  Or we could proxy it thru vite.
 
+Could run it with the nodejs server, and simply expose it on a different port, or path, if we ran our own proxy implementation in vite.
+
 ## Implementation
 Get vite serving the dev server over https locally.
 serve using certs on remote computer.
