@@ -21,11 +21,15 @@ Might allow for fully remote access to take place, if the remote device was whit
 Use cloudflare VPN as a way to expose the local app using SSL
 
 ## V3
-Run the app on the LAN, use cloudflare to expose it enough to generate an SSL cert using lets-encrypt.
-Domain set a DNS record to point at the LAN address.
-Then everyone starts their connections, and gets local speed.
+Set a DNS record to point at the LAN address.
+Generate a public SSL cert.
+Dos and webpage both pull the certs in and serve them up on different ports.
 
-## V4
-Generate a domain SSL cert and DNS address that is trusted by the clients.  Let them access the server directly.
-Downside is no remote access.
-Also server is running onsite.
+## Proxy to DOS
+vite can be set up to serve over https and proxy certain urls.  We might be able to expose a single port on the lan and proxy libp2p calls to DOS, where dos has no encryption.  Websocket address would be in [multiaddress format](https://multiformats.io/multiaddr/) such as: `/dns4/foo.com/tcp/443/wss/bar` but not sure libp2p can work like that.
+
+## Running a signalling server
+Docker image for a [signalling server](https://hub.docker.com/layers/libp2p/js-libp2p-webrtc-star/latest/images/sha256-c4e75e1cef07c048180b5ae957f373889a51098fbf951e3c616a40f03131e6ec?context=explore) which could be run locally.  Would need to be put behind an nginx proxy or something to make it ssl capable.  Or we could proxy it thru vite.
+
+## Implementation
+Get vite serving the dev server over https
