@@ -24,3 +24,11 @@ This remote info is added in at boot in the client.
 
 ## Update a deployed instance
 Be able to pull down new code, ensure the current data is still compatible, then publish the new version for use by the clients.
+
+## Using github actions
+Fork the repo somewhere private, and when ready to push an update, PR across to this fork.
+
+1. Install a self hosted github actions runner on the host machine.
+2. Set up a server using [InstallUtil](https://learn.microsoft.com/en-us/dotnet/framework/windows-services/how-to-install-and-uninstall-services) to do `yarn dev` and start the vite dev server using nohup
+3. ga pulls on any new code, runs all the tests, if pass, copy over, restarts the service
+4. tail the nohup logs so they are visible on the github actions screen
