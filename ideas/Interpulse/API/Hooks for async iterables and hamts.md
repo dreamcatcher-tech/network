@@ -12,3 +12,8 @@ Walks a HAMT, which is async in nature, and as children are resovled, the return
 
 ## `pulse = usePulseStream( engine, path )`
 Provides a hook that updates with the next Pulse in a stream.  Under the hood this wraps an async interable subscription, and uses React's `useState` hook to trigger a re-render when a new value is received
+
+## Extras
+It may be helpful to use only paths and state in the UI - there is not need to be processing pulses directly nor pass them around anywhere.  
+
+We may need some interface objects to represent a pulse and a child, which are meant for UI consumption.
