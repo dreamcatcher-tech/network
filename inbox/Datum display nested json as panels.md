@@ -1,0 +1,3 @@
+Currently we rely on nested child chains to indicate a new panel is needed to display some data.  But having large numbers of child chains hurts system performance, so if a graphical interpretation of a datum was that nested data goes in its own panel with no shadow and rounded edges, and child chain data goes in its own panel with shadow and hard edges, then we can lower the number of child chains, and decoupld child chains from data structure.
+
+Adding in a child chain within some nested data requires a [[Symbol for Child in State]]
