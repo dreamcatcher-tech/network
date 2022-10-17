@@ -21,6 +21,19 @@
             }
           },
           {
+            "id": "e6ae7ced44499c65",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Inbox/Shared Geocoding.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "d4b2521dfef22ef3",
             "type": "leaf",
             "state": {
@@ -248,9 +261,17 @@
                 "file": "ideas/Interpulse/CRM/CRM DB Sync.md"
               }
             }
+          },
+          {
+            "id": "f4b588c79367d132",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -261,15 +282,15 @@
   },
   "active": "a256d0ca27dcbbf6",
   "lastOpenFiles": [
-    "Inbox/Programming Model Diagram.md",
+    "ideas/Interpulse/CRM/CRM in truck nav with POI.md",
     "ideas/Interpulse/CRM/CRM DB Sync.md",
+    "Inbox/Shared Geocoding.md",
+    "Inbox/Programming Model Diagram.md",
     "Inbox/Datum display nested json as panels.md",
     "ideas/Interpulse/CRM/CRM Goals.md",
     "Inbox/SetState as a blockmaking operation.md",
     "Inbox/Pitch Layouts.md",
     "Inbox/Symbol for Child in State.md",
-    "ideas/Silverback/SilverBack.md",
-    "ideas/Interpulse/API/Hooks for async iterables and hamts.md",
-    "Inbox/Runner for Interpulse.md"
+    "ideas/Silverback/SilverBack.md"
   ]
 }
