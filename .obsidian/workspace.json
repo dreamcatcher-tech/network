@@ -11,8 +11,26 @@
             "id": "a256d0ca27dcbbf6",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "ideas/Interpulse/CRM/CRM DB Sync.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d4b2521dfef22ef3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Inbox/Programming Model Diagram.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           },
           {
@@ -55,20 +73,19 @@
             }
           },
           {
-            "id": "ec45fc1bbe70e5f6",
+            "id": "2e515e320784157e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inbox/SetState as a blockmaking operation.md",
+                "file": "ideas/Interpulse/CRM/CRM Goals.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       },
       {
         "id": "bcf50098c73337b8",
@@ -80,7 +97,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Inbox/Pitch Layouts.md",
+                "file": "ideas/Interpulse/CRM/CRM DB Sync.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -188,7 +205,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Inbox/Pitch Layouts.md",
+                "file": "ideas/Interpulse/CRM/CRM DB Sync.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -205,7 +222,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Inbox/Pitch Layouts.md",
+                "file": "ideas/Interpulse/CRM/CRM DB Sync.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,7 +245,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Inbox/Pitch Layouts.md"
+                "file": "ideas/Interpulse/CRM/CRM DB Sync.md"
               }
             }
           }
@@ -242,17 +259,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "545d86630edd7cec",
+  "active": "a256d0ca27dcbbf6",
   "lastOpenFiles": [
-    "Inbox/Symbol for Child in State.md",
+    "Inbox/Programming Model Diagram.md",
+    "ideas/Interpulse/CRM/CRM DB Sync.md",
     "Inbox/Datum display nested json as panels.md",
+    "ideas/Interpulse/CRM/CRM Goals.md",
     "Inbox/SetState as a blockmaking operation.md",
+    "Inbox/Pitch Layouts.md",
+    "Inbox/Symbol for Child in State.md",
     "ideas/Silverback/SilverBack.md",
     "ideas/Interpulse/API/Hooks for async iterables and hamts.md",
-    "Inbox/Runner for Interpulse.md",
-    "Inbox/Slide deck using reveal.js.md",
-    "ideas/Interpulse/CRM/CRM Deployment.md",
-    "ideas/Interpulse/CRM/PDF editor for invoices.md",
-    "ideas/Interpulse/Remote Interactions/Network control in shell.md"
+    "Inbox/Runner for Interpulse.md"
   ]
 }
