@@ -5,3 +5,5 @@ Repeated execution and the ability to audit what the system did at any point.
 Make a diagram of a computer, show the things it needs to do, show how we do that vs a conventional machine.
 
 In browser, things like a local cache, some preferences of this specific user that are queried before final render.
+
+[[Local User Preferences]]

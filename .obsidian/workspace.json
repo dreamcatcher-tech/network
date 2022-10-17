@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inbox/Programming Model Diagram.md",
+                "file": "ideas/Interpulse/DOS/Local User Preferences.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -111,7 +111,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Inbox/Programming Model Diagram.md",
+                "file": "ideas/Interpulse/DOS/Local User Preferences.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -219,7 +219,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Inbox/Programming Model Diagram.md",
+                "file": "ideas/Interpulse/DOS/Local User Preferences.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -236,7 +236,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Inbox/Programming Model Diagram.md",
+                "file": "ideas/Interpulse/DOS/Local User Preferences.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -259,7 +259,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Inbox/Programming Model Diagram.md"
+                "file": "ideas/Interpulse/DOS/Local User Preferences.md"
               }
             }
           },
@@ -283,10 +283,10 @@
   },
   "active": "d4b2521dfef22ef3",
   "lastOpenFiles": [
+    "Inbox/Programming Model Diagram.md",
     "ideas/Interpulse/CRM/CRM DB Sync.md",
     "ideas/Interpulse/CRM/CRM in truck nav with POI.md",
     "Inbox/Shared Geocoding.md",
-    "Inbox/Programming Model Diagram.md",
     "Inbox/Datum display nested json as panels.md",
     "ideas/Interpulse/CRM/CRM Goals.md",
     "Inbox/SetState as a blockmaking operation.md",
