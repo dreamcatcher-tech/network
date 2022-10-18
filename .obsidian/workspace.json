@@ -24,13 +24,8 @@
             "id": "e6ae7ced44499c65",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Inbox/Shared Geocoding.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           },
           {
@@ -47,42 +42,40 @@
             }
           },
           {
-            "id": "be14d280261e5191",
+            "id": "e0723b9f2f8a3595",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inbox/Datum display nested json as panels.md",
+                "file": "ideas/Coops/Intents.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
+            }
+          },
+          {
+            "id": "be14d280261e5191",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
             }
           },
           {
             "id": "ed99024b486570a0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Inbox/Symbol for Child in State.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           },
           {
             "id": "545d86630edd7cec",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Inbox/Pitch Layouts.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           },
           {
@@ -99,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       },
       {
         "id": "bcf50098c73337b8",
@@ -111,7 +104,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "ideas/Interpulse/DOS/Local User Preferences.md",
+                "file": "ideas/Coops/Intents.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -219,7 +212,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ideas/Interpulse/DOS/Local User Preferences.md",
+                "file": "ideas/Coops/Intents.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -236,7 +229,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ideas/Interpulse/DOS/Local User Preferences.md",
+                "file": "ideas/Coops/Intents.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -259,7 +252,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ideas/Interpulse/DOS/Local User Preferences.md"
+                "file": "ideas/Coops/Intents.md"
               }
             }
           },
@@ -281,8 +274,9 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "d4b2521dfef22ef3",
+  "active": "e0723b9f2f8a3595",
   "lastOpenFiles": [
+    "ideas/Interpulse/DOS/Local User Preferences.md",
     "Inbox/Programming Model Diagram.md",
     "ideas/Interpulse/CRM/CRM DB Sync.md",
     "ideas/Interpulse/CRM/CRM in truck nav with POI.md",
@@ -291,7 +285,6 @@
     "ideas/Interpulse/CRM/CRM Goals.md",
     "Inbox/SetState as a blockmaking operation.md",
     "Inbox/Pitch Layouts.md",
-    "Inbox/Symbol for Child in State.md",
-    "ideas/Silverback/SilverBack.md"
+    "Inbox/Symbol for Child in State.md"
   ]
 }
