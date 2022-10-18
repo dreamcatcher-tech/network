@@ -24,3 +24,8 @@ The database might keep a sequence number, so we could pull down only those thin
 
 ### Single Chain Customers
 If we do not use multiple different chains to represent customers, then the update speed will be faster.
+
+### Polling
+We can avoid the daily pull, or the feeling that the system is out of date if we pull from the DB every 5 minutes, or some other interval.  Manual should be allowed too, as well as changing the interval, and showing records of the last modifications made.
+
+History would be done showing the previous pulses, where the state holds the results of the last poll.  Should contain links to the customers and transactions that were updated last, and from which computer the request was started from.

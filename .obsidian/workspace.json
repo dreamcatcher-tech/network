@@ -86,7 +86,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ideas/Dreamcatcher/Attribution/Problems with Ambient Attribution.md",
+                "file": "ideas/Interpulse/CRM/CRM DB Sync.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -143,7 +143,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "ideas/Dreamcatcher/Attribution/Problems with Ambient Attribution.md",
+                "file": "ideas/Interpulse/CRM/CRM DB Sync.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -251,7 +251,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ideas/Dreamcatcher/Attribution/Problems with Ambient Attribution.md",
+                "file": "ideas/Interpulse/CRM/CRM DB Sync.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -268,7 +268,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ideas/Dreamcatcher/Attribution/Problems with Ambient Attribution.md",
+                "file": "ideas/Interpulse/CRM/CRM DB Sync.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -291,7 +291,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ideas/Dreamcatcher/Attribution/Problems with Ambient Attribution.md"
+                "file": "ideas/Interpulse/CRM/CRM DB Sync.md"
               }
             }
           },
@@ -315,6 +315,7 @@
   },
   "active": "07997b7619618b0b",
   "lastOpenFiles": [
+    "ideas/Dreamcatcher/Attribution/Problems with Ambient Attribution.md",
     "ideas/Interpulse/CRM/CRM DB Sync.md",
     "ideas/Interpulse/DOS/Virtual State Tree.md",
     "ideas/Blogs/Freedom of pricing leads to non maximum.md",
@@ -323,7 +324,6 @@
     "Inbox/Programming Model Diagram.md",
     "ideas/Interpulse/CRM/CRM in truck nav with POI.md",
     "Inbox/Shared Geocoding.md",
-    "Inbox/Datum display nested json as panels.md",
-    "ideas/Interpulse/CRM/CRM Goals.md"
+    "Inbox/Datum display nested json as panels.md"
   ]
 }
