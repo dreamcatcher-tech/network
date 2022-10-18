@@ -81,6 +81,19 @@
             }
           },
           {
+            "id": "07997b7619618b0b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ideas/Dreamcatcher/Attribution/Problems with Ambient Attribution.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "be14d280261e5191",
             "type": "leaf",
             "state": {
@@ -118,7 +131,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       },
       {
         "id": "bcf50098c73337b8",
@@ -130,7 +143,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "ideas/Interpulse/CRM/CRM DB Sync.md",
+                "file": "ideas/Dreamcatcher/Attribution/Problems with Ambient Attribution.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,7 +251,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ideas/Interpulse/CRM/CRM DB Sync.md",
+                "file": "ideas/Dreamcatcher/Attribution/Problems with Ambient Attribution.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -255,7 +268,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ideas/Interpulse/CRM/CRM DB Sync.md",
+                "file": "ideas/Dreamcatcher/Attribution/Problems with Ambient Attribution.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -278,7 +291,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ideas/Interpulse/CRM/CRM DB Sync.md"
+                "file": "ideas/Dreamcatcher/Attribution/Problems with Ambient Attribution.md"
               }
             }
           },
@@ -300,14 +313,14 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "515d1a78664c54da",
+  "active": "07997b7619618b0b",
   "lastOpenFiles": [
+    "ideas/Interpulse/CRM/CRM DB Sync.md",
     "ideas/Interpulse/DOS/Virtual State Tree.md",
     "ideas/Blogs/Freedom of pricing leads to non maximum.md",
     "ideas/Coops/Intents.md",
     "ideas/Interpulse/DOS/Local User Preferences.md",
     "Inbox/Programming Model Diagram.md",
-    "ideas/Interpulse/CRM/CRM DB Sync.md",
     "ideas/Interpulse/CRM/CRM in truck nav with POI.md",
     "Inbox/Shared Geocoding.md",
     "Inbox/Datum display nested json as panels.md",
