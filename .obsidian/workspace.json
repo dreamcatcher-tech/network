@@ -94,19 +94,29 @@
             }
           },
           {
-            "id": "be14d280261e5191",
+            "id": "0c5a9503e96af736",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "ideas/Interpulse/Permissions/Inheritable Permissions.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           },
           {
-            "id": "ed99024b486570a0",
+            "id": "5eb3c02dfa959dc4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "ideas/Interpulse/DOS/Storybook for components.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           },
           {
@@ -131,7 +141,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 8
       },
       {
         "id": "bcf50098c73337b8",
@@ -143,7 +153,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "ideas/Interpulse/CRM/CRM DB Sync.md",
+                "file": "ideas/Interpulse/DOS/Storybook for components.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -201,7 +211,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "async",
+                "query": "ink]",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -231,7 +241,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -251,7 +262,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ideas/Interpulse/CRM/CRM DB Sync.md",
+                "file": "ideas/Interpulse/DOS/Storybook for components.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -268,7 +279,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ideas/Interpulse/CRM/CRM DB Sync.md",
+                "file": "ideas/Interpulse/DOS/Storybook for components.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -291,7 +302,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ideas/Interpulse/CRM/CRM DB Sync.md"
+                "file": "ideas/Interpulse/DOS/Storybook for components.md"
               }
             }
           },
@@ -313,17 +324,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "07997b7619618b0b",
+  "active": "5eb3c02dfa959dc4",
   "lastOpenFiles": [
-    "ideas/Dreamcatcher/Attribution/Problems with Ambient Attribution.md",
+    "ideas/Interpulse/API/Shell/GUIs in the terminal.md",
+    "ideas/Interpulse/DOS/Storybook for components.md",
+    "ideas/Interpulse/Permissions/Inheritable Permissions.md",
     "ideas/Interpulse/CRM/CRM DB Sync.md",
+    "ideas/Dreamcatcher/Attribution/Problems with Ambient Attribution.md",
     "ideas/Interpulse/DOS/Virtual State Tree.md",
     "ideas/Blogs/Freedom of pricing leads to non maximum.md",
     "ideas/Coops/Intents.md",
     "ideas/Interpulse/DOS/Local User Preferences.md",
-    "Inbox/Programming Model Diagram.md",
-    "ideas/Interpulse/CRM/CRM in truck nav with POI.md",
-    "Inbox/Shared Geocoding.md",
-    "Inbox/Datum display nested json as panels.md"
+    "Inbox/Programming Model Diagram.md"
   ]
 }
