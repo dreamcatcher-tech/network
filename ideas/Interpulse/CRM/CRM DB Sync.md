@@ -16,3 +16,6 @@ Each action causes the reducer to check the network slice to see if an action is
 ## State
 State is used to track last pull time, location of any cache files, and use the binary to store the results on chain.
 Network state is used to track what actions have been sent.
+
+## Optimizations
+The database might keep a sequence number, so we could pull down only those things that altered since the last update, saving much time and load on the DB.

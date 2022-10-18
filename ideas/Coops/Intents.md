@@ -2,4 +2,6 @@ The ability to sniff or be told what the users intent is, and help them achieve 
 
 ## Examples
 
-### 
+### Flashmob style catchups
+New parents lives are chaotic, reactive, and always in need of coordination with others.  Arranging events is hard, particularly with groups of weak social ties, or high burden of event activation.
+
