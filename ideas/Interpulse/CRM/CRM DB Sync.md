@@ -18,4 +18,9 @@ State is used to track last pull time, location of any cache files, and use the 
 Network state is used to track what actions have been sent.
 
 ## Optimizations
-The database might keep a sequence number, so we could pull down only those things that altered since the last update, saving much time and load on the DB.
+
+### Diffing at source
+The database might keep a sequence number, so we could pull down only those things that altered since the last update, saving much time and load on the DB.  Using `LastModifiedTime` we should be able to pull down only those customers and transactions that have changed since the last sync occured.
+
+### Single Chain Customers
+If we do not use multiple different chains to represent customers, then the update speed will be faster.
