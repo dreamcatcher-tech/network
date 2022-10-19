@@ -20,6 +20,10 @@ Can make tests for the hooks like `usePathStream()` that is focused strictly on 
 
 A mock engine could be constructed and injected to be able to experiment with precise conditions.  Or we can preconfigure one using a covenant.
 
+### Connecting to State
+`connectStateToProps( path )`  to get the state of the pulse passed in as a prop to the component.
+`connectChannelsToProps( path )` to get the network channels passed in as a prop to the component.  These should stream in as they are discovered, and cached.  If the channels list is too big for the heap, then we can impose limits, or can fetch using a window, or using some search parameters.  Could build an index or build in a bloom filter to the network object.
+
 ## Routing
 The route components can be tested for their expected interfaces directly too.
 
