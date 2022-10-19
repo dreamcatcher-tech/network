@@ -24,90 +24,17 @@
             "id": "e6ae7ced44499c65",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Inbox/Shared Geocoding.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           },
           {
             "id": "d4b2521dfef22ef3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ideas/Interpulse/DOS/Local User Preferences.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e0723b9f2f8a3595",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ideas/Coops/Intents.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e2bc2d170573eb6a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ideas/Blogs/Freedom of pricing leads to non maximum.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "515d1a78664c54da",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ideas/Interpulse/CRM/CRM DB Sync.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "07997b7619618b0b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ideas/Interpulse/CRM/CRM DB Sync.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0c5a9503e96af736",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ideas/Interpulse/Permissions/Inheritable Permissions.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5eb3c02dfa959dc4",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -120,12 +47,51 @@
             }
           },
           {
-            "id": "037c09d4b1fde0dd",
+            "id": "3e8f3f38444200c7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ideas/Interpulse/DOS/Visual Diffing.md",
+                "file": "ideas/Interpulse/CRM/CRM Deployment.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "85a96fef7d01f3ff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ideas/Interpulse/CRM/Import Geometry.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "be14d280261e5191",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Inbox/Datum display nested json as panels.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ed99024b486570a0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Inbox/Symbol for Child in State.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -136,8 +102,13 @@
             "id": "545d86630edd7cec",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Inbox/Pitch Layouts.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           },
           {
@@ -154,7 +125,7 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 4
       },
       {
         "id": "bcf50098c73337b8",
@@ -166,7 +137,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "ideas/Interpulse/DOS/Visual Diffing.md",
+                "file": "ideas/Interpulse/CRM/Import Geometry.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -224,7 +195,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ink]",
+                "query": "async",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -274,7 +245,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ideas/Interpulse/DOS/Visual Diffing.md",
+                "file": "ideas/Interpulse/CRM/Import Geometry.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -291,7 +262,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ideas/Interpulse/DOS/Visual Diffing.md",
+                "file": "ideas/Interpulse/CRM/Import Geometry.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -314,7 +285,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ideas/Interpulse/DOS/Visual Diffing.md"
+                "file": "ideas/Interpulse/CRM/Import Geometry.md"
               }
             }
           },
@@ -336,17 +307,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "037c09d4b1fde0dd",
+  "active": "85a96fef7d01f3ff",
   "lastOpenFiles": [
+    "ideas/Interpulse/CRM/CRM Deployment.md",
     "ideas/Interpulse/DOS/Storybook for components.md",
-    "ideas/Interpulse/CRM/Links for route order.md",
     "ideas/Dreamcatcher/Attribution/AI Attribution.md",
-    "ideas/Interpulse/API/Shell/GUIs in the terminal.md",
-    "ideas/Interpulse/Permissions/Inheritable Permissions.md",
+    "ideas/Interpulse/CRM/Links for route order.md",
+    "ideas/Interpulse/DOS/Local User Preferences.md",
+    "Inbox/Programming Model Diagram.md",
     "ideas/Interpulse/CRM/CRM DB Sync.md",
-    "ideas/Dreamcatcher/Attribution/Problems with Ambient Attribution.md",
-    "ideas/Interpulse/DOS/Virtual State Tree.md",
-    "ideas/Blogs/Freedom of pricing leads to non maximum.md",
-    "ideas/Coops/Intents.md"
+    "ideas/Interpulse/CRM/CRM in truck nav with POI.md",
+    "Inbox/Shared Geocoding.md",
+    "Inbox/Datum display nested json as panels.md"
   ]
 }
