@@ -133,6 +133,19 @@
             }
           },
           {
+            "id": "12d254cd0cac01cc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ideas/Dreamcatcher/Apps/Storybook with gallery.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "545d86630edd7cec",
             "type": "leaf",
             "state": {
@@ -154,7 +167,7 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 10
       },
       {
         "id": "bcf50098c73337b8",
@@ -166,7 +179,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "ideas/Interpulse/DOS/Visual Diffing.md",
+                "file": "ideas/Dreamcatcher/Apps/Storybook with gallery.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -274,7 +287,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ideas/Interpulse/DOS/Visual Diffing.md",
+                "file": "ideas/Dreamcatcher/Apps/Storybook with gallery.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -291,7 +304,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ideas/Interpulse/DOS/Visual Diffing.md",
+                "file": "ideas/Dreamcatcher/Apps/Storybook with gallery.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -314,7 +327,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ideas/Interpulse/DOS/Visual Diffing.md"
+                "file": "ideas/Dreamcatcher/Apps/Storybook with gallery.md"
               }
             }
           },
@@ -336,8 +349,9 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "037c09d4b1fde0dd",
+  "active": "12d254cd0cac01cc",
   "lastOpenFiles": [
+    "ideas/Interpulse/DOS/Visual Diffing.md",
     "ideas/Interpulse/DOS/Storybook for components.md",
     "ideas/Interpulse/CRM/Links for route order.md",
     "ideas/Dreamcatcher/Attribution/AI Attribution.md",
@@ -346,7 +360,6 @@
     "ideas/Interpulse/CRM/CRM DB Sync.md",
     "ideas/Dreamcatcher/Attribution/Problems with Ambient Attribution.md",
     "ideas/Interpulse/DOS/Virtual State Tree.md",
-    "ideas/Blogs/Freedom of pricing leads to non maximum.md",
-    "ideas/Coops/Intents.md"
+    "ideas/Blogs/Freedom of pricing leads to non maximum.md"
   ]
 }

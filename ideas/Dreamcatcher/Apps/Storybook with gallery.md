@@ -1,0 +1,3 @@
+[Storybook](https://storybook.js.org/) has a [glossary](https://storybook.js.org/showcase/glossary) of components, but the trouble is that each one opens a link to the hosted site.  If Storybook was made as a swarm app, then each instance could automatically link to other running instances, and components would have a greater chance of being collaboratively developed.
+
+The hosting of each component should be able to be independent of anything else, and the composition into a storybook is a matter of search filters, rather than a grouping that indicates ownership.
