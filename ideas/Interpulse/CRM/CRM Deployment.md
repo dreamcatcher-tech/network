@@ -41,4 +41,7 @@ Each time a customer is updated, the products like is updated automatically.
 	1. Pull in the sector geometry
 	2. Pull in the gps locations
 
-Ensure that we save the manual updates.
+## Update
+
+
+## Recovery

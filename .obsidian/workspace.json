@@ -52,7 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ideas/Interpulse/CRM/CRM Deployment.md",
+                "file": "Inbox/2022-10-22 Data Channels.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -276,7 +276,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ideas/Interpulse/CRM/CRM Deployment.md",
+                "file": "Inbox/2022-10-22 Data Channels.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -293,7 +293,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ideas/Interpulse/CRM/CRM Deployment.md",
+                "file": "Inbox/2022-10-22 Data Channels.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -316,7 +316,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ideas/Interpulse/CRM/CRM Deployment.md"
+                "file": "Inbox/2022-10-22 Data Channels.md"
               }
             }
           },
@@ -340,13 +340,13 @@
   },
   "active": "c97cc2893382bf67",
   "lastOpenFiles": [
+    "ideas/Interpulse/CRM/CRM Deployment.md",
     "Inbox/Deployment flow.md",
     "ideas/Interpulse/CRM/Manifest Generation.md",
     "ideas/Interpulse/CRM/Routing Structure.md",
     "ideas/Interpulse/DOS/Storybook for components.md",
     "Inbox/2022-10-21 Raytio signup flow.md",
     "ideas/Interpulse/DOS/Visual Diffing.md",
-    "ideas/Interpulse/CRM/CRM Deployment.md",
     "Inbox/Shared Geocoding.md",
     "ideas/Interpulse/CRM/Import Geometry.md",
     "ideas/Interpulse/CRM/Geometry Structure.md"
