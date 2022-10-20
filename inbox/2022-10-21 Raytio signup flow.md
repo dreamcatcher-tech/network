@@ -23,6 +23,8 @@ Once Raytio have enough users that have modelled uncooperative companies, the sa
 
 Companies can make Raytio optional to their users to make their adoption easy and gradual.  Offer it as a jump off point in their sign up flows.
 
+Offer commission to users who convince a company to sign up, and who are their first N users.
+
 ```mermaid
 graph TD
 	S(Salesperson) -->|sells to| C(Company)
