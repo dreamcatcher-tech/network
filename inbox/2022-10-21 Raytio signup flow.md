@@ -5,7 +5,7 @@
 >[!danger] Depends: 
 
 
-
+![[DALL·E 2022-10-20 16.47.20 - passports into a small funnel at the top, many more out a large funnel at the bottom.png]]
 
 Should be able to have customers push to use their Raytio ID with companies, instead of requiring a company to be sold on using it first.
 
