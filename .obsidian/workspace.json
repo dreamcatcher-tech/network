@@ -73,6 +73,19 @@
             }
           },
           {
+            "id": "f70cc1129a13d31f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ideas/Interpulse/CRM/Geometry Structure.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "be14d280261e5191",
             "type": "leaf",
             "state": {
@@ -125,7 +138,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       },
       {
         "id": "bcf50098c73337b8",
@@ -137,7 +150,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "ideas/Interpulse/CRM/Import Geometry.md",
+                "file": "ideas/Interpulse/CRM/Geometry Structure.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -245,7 +258,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ideas/Interpulse/CRM/Import Geometry.md",
+                "file": "ideas/Interpulse/CRM/Geometry Structure.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -262,7 +275,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ideas/Interpulse/CRM/Import Geometry.md",
+                "file": "ideas/Interpulse/CRM/Geometry Structure.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -285,7 +298,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ideas/Interpulse/CRM/Import Geometry.md"
+                "file": "ideas/Interpulse/CRM/Geometry Structure.md"
               }
             }
           },
@@ -307,17 +320,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "85a96fef7d01f3ff",
+  "active": "f70cc1129a13d31f",
   "lastOpenFiles": [
+    "dictionary/PIP.md",
+    "ideas/Interpulse/CRM/Geometry Structure.md",
+    "ideas/Interpulse/CRM/Import Geometry.md",
     "ideas/Interpulse/CRM/CRM Deployment.md",
     "ideas/Interpulse/DOS/Storybook for components.md",
     "ideas/Dreamcatcher/Attribution/AI Attribution.md",
     "ideas/Interpulse/CRM/Links for route order.md",
     "ideas/Interpulse/DOS/Local User Preferences.md",
     "Inbox/Programming Model Diagram.md",
-    "ideas/Interpulse/CRM/CRM DB Sync.md",
-    "ideas/Interpulse/CRM/CRM in truck nav with POI.md",
-    "Inbox/Shared Geocoding.md",
-    "Inbox/Datum display nested json as panels.md"
+    "ideas/Interpulse/CRM/CRM DB Sync.md"
   ]
 }
