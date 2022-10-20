@@ -32,3 +32,13 @@ Fork the repo somewhere private, and when ready to push an update, PR across to 
 2. Set up a server using [InstallUtil](https://learn.microsoft.com/en-us/dotnet/framework/windows-services/how-to-install-and-uninstall-services) to do `yarn dev` and start the vite dev server using nohup
 3. ga pulls on any new code, runs all the tests, if pass, copy over, restarts the service
 4. tail the nohup logs so they are visible on the github actions screen
+
+## Fresh Install
+Each time a customer is updated, the products like is updated automatically.
+1. Import all customers from moneyworks file
+2. Import any customer updates from moneyworks live
+3. Import the redux state from state.json
+	1. Pull in the sector geometry
+	2. Pull in the gps locations
+
+Ensure that we save the manual updates.
