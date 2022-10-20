@@ -20,3 +20,8 @@ Create a child for each sector, which might be the actual children.
 In the state of each child, store a list of customer ids that.
 
 Keep two arrays in each child, `routed` and `unrouted` 
+
+## Notes
+The customer object can find itself in the sector it is included in, to determine its next cycle ?
+Customer membership in a sector is set by the gps in the customer and the geometry in the sectory - nothing else.
+? how to handle new data being stored exclusively in our system, like the generated manifests ?
