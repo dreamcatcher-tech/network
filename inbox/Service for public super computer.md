@@ -1,0 +1,1 @@
+Be able to connect a service to offer apps in our framework access to a standard super computer.  They can take their workloads private, public, or hybrid.  They can share between permissioned networks, and can sell off their spare capacity.

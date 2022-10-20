@@ -86,6 +86,19 @@
             }
           },
           {
+            "id": "543d73907a14328c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Inbox/Service for public super computer.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "be14d280261e5191",
             "type": "leaf",
             "state": {
@@ -138,7 +151,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       },
       {
         "id": "bcf50098c73337b8",
@@ -150,7 +163,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "ideas/Interpulse/CRM/Geometry Structure.md",
+                "file": "Inbox/Service for public super computer.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -258,7 +271,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ideas/Interpulse/CRM/Geometry Structure.md",
+                "file": "Inbox/Service for public super computer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -275,7 +288,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ideas/Interpulse/CRM/Geometry Structure.md",
+                "file": "Inbox/Service for public super computer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -298,7 +311,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ideas/Interpulse/CRM/Geometry Structure.md"
+                "file": "Inbox/Service for public super computer.md"
               }
             }
           },
@@ -320,10 +333,10 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "f70cc1129a13d31f",
+  "active": "543d73907a14328c",
   "lastOpenFiles": [
-    "dictionary/PIP.md",
     "ideas/Interpulse/CRM/Geometry Structure.md",
+    "dictionary/PIP.md",
     "ideas/Interpulse/CRM/Import Geometry.md",
     "ideas/Interpulse/CRM/CRM Deployment.md",
     "ideas/Interpulse/DOS/Storybook for components.md",
