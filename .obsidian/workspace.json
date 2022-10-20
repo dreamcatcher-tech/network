@@ -89,8 +89,39 @@
             "id": "543d73907a14328c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "ideas/Coops/Intents.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1f68aa3e0033e3b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ideas/Interpulse/CRM/Geometry Structure.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7e53293cfc956d38",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Inbox/2022-10-20 Links with updates.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           },
           {
@@ -146,7 +177,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -175,7 +206,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "async",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -205,7 +236,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -225,6 +257,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "ideas/Interpulse/CRM/CRM Deployment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -241,6 +274,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "ideas/Interpulse/CRM/CRM Deployment.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -262,7 +296,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "ideas/Interpulse/CRM/CRM Deployment.md"
+              }
             }
           },
           {
@@ -283,17 +319,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "543d73907a14328c",
+  "active": "3e8f3f38444200c7",
   "lastOpenFiles": [
-    "Inbox/2022-10-20 HHmm.md",
-    "Inbox/Service for public super computer.md",
-    "Inbox/2022-10-20 [1512].md",
-    "Inbox/Milestones.md",
-    "Inbox/Untitled.md",
-    "ideas/Interpulse/CRM/Geometry Structure.md",
-    "dictionary/PIP.md",
-    "ideas/Interpulse/CRM/Import Geometry.md",
+    "ideas/Interpulse/DOS/Storybook for components.md",
+    "Inbox/Shared Geocoding.md",
     "ideas/Interpulse/CRM/CRM Deployment.md",
-    "ideas/Interpulse/DOS/Storybook for components.md"
+    "ideas/Interpulse/CRM/Import Geometry.md",
+    "ideas/Interpulse/CRM/Geometry Structure.md",
+    "ideas/Coops/Intents.md",
+    "Inbox/2022-10-20 Links with updates.md",
+    "Inbox/Datum display nested json as panels.md",
+    "Inbox/Symbol for Child in State.md",
+    "ideas/Interpulse/CRM/Routing Structure.md"
   ]
 }
