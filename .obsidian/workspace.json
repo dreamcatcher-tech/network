@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ideas/Interpulse/DOS/Storybook for components.md",
+                "file": "ideas/Interpulse/CRM/Routing Structure.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -47,12 +47,12 @@
             }
           },
           {
-            "id": "3e8f3f38444200c7",
+            "id": "c97cc2893382bf67",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inbox/2022-10-21 Raytio signup flow.md",
+                "file": "ideas/Interpulse/CRM/Manifest Generation.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -276,7 +276,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Inbox/2022-10-21 Raytio signup flow.md",
+                "file": "ideas/Interpulse/CRM/Manifest Generation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -293,7 +293,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Inbox/2022-10-21 Raytio signup flow.md",
+                "file": "ideas/Interpulse/CRM/Manifest Generation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -316,7 +316,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Inbox/2022-10-21 Raytio signup flow.md"
+                "file": "ideas/Interpulse/CRM/Manifest Generation.md"
               }
             }
           },
@@ -338,17 +338,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "3e8f3f38444200c7",
+  "active": "c97cc2893382bf67",
   "lastOpenFiles": [
-    "ideas/Interpulse/DOS/Visual Diffing.md",
-    "Inbox/2022-10-21 Raytio signup flow.md",
-    "ideas/Interpulse/CRM/CRM Deployment.md",
+    "ideas/Interpulse/CRM/Routing Structure.md",
     "ideas/Interpulse/DOS/Storybook for components.md",
+    "Inbox/2022-10-21 Raytio signup flow.md",
+    "ideas/Interpulse/DOS/Visual Diffing.md",
+    "ideas/Interpulse/CRM/CRM Deployment.md",
     "Inbox/Shared Geocoding.md",
     "ideas/Interpulse/CRM/Import Geometry.md",
     "ideas/Interpulse/CRM/Geometry Structure.md",
     "ideas/Coops/Intents.md",
-    "Inbox/2022-10-20 Links with updates.md",
-    "Inbox/Datum display nested json as panels.md"
+    "Inbox/2022-10-20 Links with updates.md"
   ]
 }
