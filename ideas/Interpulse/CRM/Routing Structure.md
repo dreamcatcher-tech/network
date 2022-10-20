@@ -1,8 +1,8 @@
-Setting the order of the customers in their respective [[Sectors]], while accounting for new additions, removals, geometry changes, location changes.
+Routing is the setting the order of the customers in their respective [[Sectors]], while accounting for new additions, removals, geometry changes, location changes.  Orphaned locations must be considered part of a special sector which has null geometry.
 
-## Changes
+## Changes To Handle
 ### Geometry changes
-Whenever the
+Whenever the polygons change, the routing changes.  Locations are removed
 
 
 ### Location changes
