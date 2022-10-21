@@ -175,7 +175,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inbox/2022-10-23 Detecting React components.md",
+                "file": "ideas/Interpulse/DOS/Top Level State Tree in Apps.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -261,7 +261,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Inbox/2022-10-23 Detecting React components.md",
+                "file": "ideas/Interpulse/DOS/Top Level State Tree in Apps.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -278,7 +278,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Inbox/2022-10-23 Detecting React components.md",
+                "file": "ideas/Interpulse/DOS/Top Level State Tree in Apps.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -301,7 +301,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Inbox/2022-10-23 Detecting React components.md"
+                "file": "ideas/Interpulse/DOS/Top Level State Tree in Apps.md"
               }
             }
           },
@@ -325,6 +325,7 @@
   },
   "active": "1f6fb024f09a7265",
   "lastOpenFiles": [
+    "Inbox/2022-10-23 Detecting React components.md",
     "ideas/Interpulse/DOS/Top Level State Tree in Apps.md",
     "ideas/Interpulse/CRM/CRM DB Sync.md",
     "Inbox/Shared Geocoding.md",
@@ -333,7 +334,6 @@
     "Inbox/2022-10-21 Raytio signup flow.md",
     "Inbox/2022-10-20 Links with updates.md",
     "ideas/Interpulse/CRM/Geometry Structure.md",
-    "Inbox/Datum display nested json as panels.md",
-    "Inbox/Symbol for Child in State.md"
+    "Inbox/Datum display nested json as panels.md"
   ]
 }

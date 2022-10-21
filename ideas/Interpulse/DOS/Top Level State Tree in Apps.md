@@ -24,6 +24,16 @@ Actions is spread from above, so children get given their parents actions, scope
 
 Actions that are not meant to be passed down should be indicated somehow.
 
+Actions have a `.schema` key attached, so that schema forms can be provided for actions that require params.
+
+May make a dedicated action params modal pop up when about to execute, rather than getting a form filled in first.
+
+### Calling back to the engine
+Pass down a stripped down version of the engine to perform:
+1. `dispatch`
+2. `cd`
+3. 
+
 ## Implementation
 
 
