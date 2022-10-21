@@ -163,8 +163,7 @@
               }
             }
           }
-        ],
-        "currentTab": 7
+        ]
       },
       {
         "id": "46959ef9617a8aad",
@@ -177,7 +176,7 @@
               "type": "markdown",
               "state": {
                 "file": "ideas/Interpulse/DOS/Top Level State Tree in Apps.md",
-                "mode": "preview",
+                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
@@ -262,7 +261,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Inbox/2022-10-24 Adding actions to Datums.md",
+                "file": "ideas/Interpulse/DOS/Top Level State Tree in Apps.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -279,7 +278,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Inbox/2022-10-24 Adding actions to Datums.md",
+                "file": "ideas/Interpulse/DOS/Top Level State Tree in Apps.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -302,7 +301,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Inbox/2022-10-24 Adding actions to Datums.md"
+                "file": "ideas/Interpulse/DOS/Top Level State Tree in Apps.md"
               }
             }
           },
@@ -324,17 +323,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "7e53293cfc956d38",
+  "active": "1f6fb024f09a7265",
   "lastOpenFiles": [
+    "ideas/Interpulse/CRM/CRM DB Sync.md",
+    "Inbox/Shared Geocoding.md",
+    "Inbox/2022-10-24 Adding actions to Datums.md",
     "ideas/Interpulse/DOS/Top Level State Tree in Apps.md",
     "ideas/Interpulse/DOS/Virtual State Tree.md",
     "Inbox/2022-10-21 Raytio signup flow.md",
     "Inbox/2022-10-20 Links with updates.md",
     "ideas/Interpulse/CRM/Geometry Structure.md",
     "Inbox/Datum display nested json as panels.md",
-    "Inbox/Symbol for Child in State.md",
-    "Inbox/Pitch Layouts.md",
-    "ideas/Interpulse/CRM/CRM DB Sync.md",
-    "Inbox/Shared Geocoding.md"
+    "Inbox/Symbol for Child in State.md"
   ]
 }

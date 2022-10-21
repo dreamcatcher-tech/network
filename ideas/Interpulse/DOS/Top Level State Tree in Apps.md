@@ -17,6 +17,13 @@ GUI just needs the state from inside all the the chains, and the children.  The 
 If a GUI component requires data from the past, how should it request this ?
 Could supply options like `onLoadPath( path, -5)` to get the item 5 back from current along the current main path. 
 
+### Passing Actions
+Each React component could recieve as props: `{ state, network, actions }` where the actions object contains functions which cause a dispatch to the shell.  Actions could contain the schema, so that a UI can be built for those actions.
+
+Actions is spread from above, so children get given their parents actions, scoped to their current directory.  If a child covenant overrides a parents actions, then
+
+Actions that are not meant to be passed down should be indicated somehow.
+
 ## Implementation
 
 
