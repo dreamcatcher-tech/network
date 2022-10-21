@@ -175,7 +175,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ideas/Interpulse/DOS/Top Level State Tree in Apps.md",
+                "file": "Inbox/2022-10-26 React Children instead of Routes.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -261,7 +261,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ideas/Interpulse/DOS/Top Level State Tree in Apps.md",
+                "file": "Inbox/2022-10-26 React Children instead of Routes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -278,7 +278,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ideas/Interpulse/DOS/Top Level State Tree in Apps.md",
+                "file": "Inbox/2022-10-26 React Children instead of Routes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -301,7 +301,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ideas/Interpulse/DOS/Top Level State Tree in Apps.md"
+                "file": "Inbox/2022-10-26 React Children instead of Routes.md"
               }
             }
           },
@@ -325,8 +325,8 @@
   },
   "active": "1f6fb024f09a7265",
   "lastOpenFiles": [
-    "Inbox/2022-10-23 Detecting React components.md",
     "ideas/Interpulse/DOS/Top Level State Tree in Apps.md",
+    "Inbox/2022-10-23 Detecting React components.md",
     "ideas/Interpulse/CRM/CRM DB Sync.md",
     "Inbox/Shared Geocoding.md",
     "Inbox/2022-10-24 Adding actions to Datums.md",
