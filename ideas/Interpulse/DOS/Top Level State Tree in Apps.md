@@ -34,6 +34,17 @@ Pass down a stripped down version of the engine to perform:
 2. `cd`
 3. 
 
+### Wrap all components in a switcher
+Build all components in isolation, then make a wrapper that processes the root element into what the children should receive, rather than that being the responsibility of any higher component.
+
+### Remote shell control
+
+### Proxying commands
+Eg: making settings datum have controls to execute an [[Accounting System]] sync.  It would have reference to the chain that holds this covenant, and it would import its api, then reroute the actions it receives.
+
+### Pass down the root object
+Any component that needs to pull in info from elsewhere can do so in this fashion.  Eg: the routing component has only references to customerIds, so it can lookup the root for these names.
+
 ## Implementation
 
 

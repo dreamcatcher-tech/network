@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ideas/Interpulse/CRM/CRM DB Sync.md",
+                "file": "ideas/Blogs/Networked Componentized Development.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -21,12 +21,12 @@
             }
           },
           {
-            "id": "e6ae7ced44499c65",
+            "id": "f980e47ca57f29c1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inbox/Shared Geocoding.md",
+                "file": "ideas/Interpulse/DOS/Top Level State Tree in Apps.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -34,155 +34,16 @@
             }
           },
           {
-            "id": "d4b2521dfef22ef3",
+            "id": "bacf07b9be2675f9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ideas/Interpulse/CRM/Routing Structure.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "85a96fef7d01f3ff",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ideas/Interpulse/CRM/Import Geometry.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f70cc1129a13d31f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ideas/Interpulse/CRM/Geometry Structure.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "543d73907a14328c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ideas/Coops/Intents.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1f68aa3e0033e3b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ideas/Interpulse/CRM/Geometry Structure.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7e53293cfc956d38",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Inbox/2022-10-24 Adding actions to Datums.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "be14d280261e5191",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Inbox/Datum display nested json as panels.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ed99024b486570a0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Inbox/Symbol for Child in State.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "545d86630edd7cec",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Inbox/Pitch Layouts.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2e515e320784157e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ideas/Interpulse/CRM/CRM Goals.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ]
-      },
-      {
-        "id": "46959ef9617a8aad",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "1f6fb024f09a7265",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Inbox/2022-10-21 Team browsing.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          }
-        ]
+        ],
+        "currentTab": 1,
+        "stacked": true
       }
     ],
     "direction": "vertical"
@@ -211,7 +72,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "ink]",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -261,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Inbox/2022-10-21 Team browsing.md",
+                "file": "ideas/Interpulse/DOS/Top Level State Tree in Apps.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -278,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Inbox/2022-10-21 Team browsing.md",
+                "file": "ideas/Interpulse/DOS/Top Level State Tree in Apps.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -301,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Inbox/2022-10-21 Team browsing.md"
+                "file": "ideas/Interpulse/DOS/Top Level State Tree in Apps.md"
               }
             }
           },
@@ -323,17 +184,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "1f6fb024f09a7265",
+  "active": "f980e47ca57f29c1",
   "lastOpenFiles": [
-    "Inbox/2022-10-26 React Children instead of Routes.md",
-    "ideas/Interpulse/DOS/Top Level State Tree in Apps.md",
-    "Inbox/2022-10-23 Detecting React components.md",
+    "ideas/Blogs/Elements of the Dreamcatcher Framework.md",
+    "ideas/Blogs/Networked Componentized Development.md",
+    "ideas/Interpulse/CRM/asdf.md",
     "ideas/Interpulse/CRM/CRM DB Sync.md",
-    "Inbox/Shared Geocoding.md",
-    "Inbox/2022-10-24 Adding actions to Datums.md",
-    "ideas/Interpulse/DOS/Virtual State Tree.md",
-    "Inbox/2022-10-21 Raytio signup flow.md",
-    "Inbox/2022-10-20 Links with updates.md",
-    "ideas/Interpulse/CRM/Geometry Structure.md"
+    "ideas/Interpulse/DOS/Local User Preferences.md",
+    "ideas/Coops/Intents.md",
+    "ideas/Blogs/Freedom of pricing leads to non maximum.md",
+    "ideas/Interpulse/Permissions/Inheritable Permissions.md",
+    "ideas/Interpulse/DOS/Storybook for components.md",
+    "ideas/Interpulse/CRM/Links for route order.md"
   ]
 }
