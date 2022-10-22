@@ -37,6 +37,15 @@ Pass down a stripped down version of the engine to perform:
 ### Wrap all components in a switcher
 Build all components in isolation, then make a wrapper that processes the root element into what the children should receive, rather than that being the responsibility of any higher component.
 
+### Displaying customers
+They can be navigated to from both the collection and from Routing.  In routing there is no path, so the display would be a component entirely controlled by the routing component.
+
+It would walk across the tree and fetch as much of the customer data as was present, then display this in a modal or overlay page
+
+
+
+
+
 ### Remote shell control
 
 ### Proxying commands
