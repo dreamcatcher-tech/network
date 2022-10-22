@@ -1,0 +1,1 @@
+Every network costs energy.  There is always a commercial aspect to any network, but most of the time this is out of band.  
