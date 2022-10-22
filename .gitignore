@@ -126,3 +126,4 @@ yarn-debug.log*
 .obsidian/hotkeys.json
 
 yarn-error.log*
+.obsidian/workspace.json
