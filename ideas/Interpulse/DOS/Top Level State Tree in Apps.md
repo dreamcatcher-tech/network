@@ -32,6 +32,9 @@ If the data is out of date and the engine is currently trying to update it, or a
 
 ## Features
 
+### Overridding chain behaviour
+Sometimes a visual component may wish to provide some actions that do not require chain state to enact, such as printing a page.  In this case, extra actions can be dropped into the actions json, and so the datums will display it as tho it came from a chains api.
+
 ### On Demand Data
 
 Sometimes there is too much data to be fully loaded.  The UI should be able to display subsets of data, and to load more fluidly as the user navigates the site.
