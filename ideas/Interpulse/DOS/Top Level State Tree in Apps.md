@@ -15,7 +15,7 @@ A mapping between covenants and components, and between paths and components is 
 
 ## Format
 
-`{ state, network, actions, isLoading }`
+`{ state, network, actions, isLoading, wd, tree }`
 
 ### `state`
 This is the json state of the chain.
@@ -30,10 +30,18 @@ Object of functions that the current chain can execute.  Has schemas attached so
 ### `isLoading`
 If the data is out of date and the engine is currently trying to update it, or any of the children are not loaded or out of date, or the list of children has not loaded fully yet.
 
+### `wd`
+The current working directory of the engine
+
+### `tree`
+The entire application object.  This contains everything that the engine currently knows.
+
 ## Features
 
 ### Overridding chain behaviour
 Sometimes a visual component may wish to provide some actions that do not require chain state to enact, such as printing a page.  In this case, extra actions can be dropped into the actions json, and so the datums will display it as tho it came from a chains api.
+
+Eg: routing in the CRM stores only references to customers, but we would like to view and edit those customers.  They are not real children of the routing chain, but because we have the top level object, we can get the items out.  The root object
 
 ### On Demand Data
 
