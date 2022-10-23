@@ -10,7 +10,7 @@
 	Customers
 		custNo-0005
 		custNo-1564
-	Routing               // unrouted customers, changes to customers
+	Routing               // unrouted customers, tracks changes to customers
 		Tuesday Day 5     // geometry, name, color, day offset, order of customers
 		Cambridge 
 	About
