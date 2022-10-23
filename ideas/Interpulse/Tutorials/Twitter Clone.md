@@ -8,9 +8,14 @@ Make a command based api that demonstrates multiple users being able to load up 
 
 Replies should be filterable by the original tweeter
 
-Extensions
+## Extensions
 
 ### Booster nodes
 If you're worried about your single node going down, or want to store more data than your node can hold, you may wish to run a server.  Here we should you how this can be done without SSL certs and without any port forwarding behind a NAT.
 
 ### Payments
+
+### Large lists
+When you data is too large to fit on a single device, be able to lazy load data from the network
+
+### Anonymity

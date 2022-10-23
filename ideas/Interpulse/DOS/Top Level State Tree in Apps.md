@@ -9,9 +9,42 @@ Fundamentally a Reactive GUI application represents a snapshot of state, even th
 
 The UI data binding can specify what type of sync it would like for different paths in the app, such as collections being fully synced, or on demand, permitting lazy load apps.
 
+A recursive structure is defined here, which can be used to render a reactive GUI application as a surface to the chain tree underneath.
+
+A mapping between covenants and components, and between paths and components is shown.  This lets UIs be composed by unit tested components, which are laid out based on the chain structure.  
+
+## Format
+
+`{ state, network, actions, isLoading }`
+
+### `state`
+This is the json state of the chain.
+
+### `network`
+The recursion point.  This is an array, in chain order, of all the network elements of this chain.
+eg: `[{ path, type, state, network, actions, isLoading`
+
+### `actions`
+Object of functions that the current chain can execute.  Has schemas attached so that a crude UI can be provided.
+
+### `isLoading`
+If the data is out of date and the engine is currently trying to update it, or any of the children are not loaded or out of date, or the list of children has not loaded fully yet.
+
+## Features
+
+### On Demand Data
+
+Sometimes there is too much data to be fully loaded.  The UI should be able to display subsets of data, and to load more fluidly as the user navigates the site.
+
 On demand would pass a call to the `onLoadPath( path )` function that gets passed down from the top, which would cause a new path to be loaded.  This would also get called for sync apps to prioritize the loading, and to indicate freshness for cache ejection if the top level object is getting big.  Basically API queries are handled by `onLoadPath( path )` calls, and the engine modifies the top level state as things change.
 
+Might use an `onUnloadPath( path )` call to signal to the engine that the data is no longer being viewed
+
 GUI just needs the state from inside all the the chains, and the children.  The children can be supplied using a Symbol as a key so that state can be consumed directly rather than behind the `state` key.
+
+Inside each child there is an extra key `loading: true` to show that the child has not fully loaded.  The current chain state is always loaded, 
+
+
 
 ### Past data
 If a GUI component requires data from the past, how should it request this ?
