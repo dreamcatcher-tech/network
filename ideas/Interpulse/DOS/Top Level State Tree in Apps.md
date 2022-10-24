@@ -15,7 +15,7 @@ A mapping between covenants and components, and between paths and components is 
 
 ## Format
 
-`{ state, network, actions, isLoading, wd, tree }`
+`{ state, binary, network, actions, isLoading, wd, tree }`
 
 ### `state`
 This is the json state of the chain.
