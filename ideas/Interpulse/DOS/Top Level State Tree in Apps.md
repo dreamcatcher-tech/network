@@ -104,3 +104,5 @@ Any component that needs to pull in info from elsewhere can do so in this fashio
 
 ### Alternatives
 A proxy function to log what paths were getting read during renders, and prune the state.
+
+Covenant and UI together in the storybook
