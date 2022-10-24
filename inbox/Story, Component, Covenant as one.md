@@ -10,3 +10,5 @@ Submit your changes back.
 Pay attribution.
 
 Do covenant debugging and testing inside the storybook.
+
+Reference other chains, even direct user sessions, and see how this component displays.
