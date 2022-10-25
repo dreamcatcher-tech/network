@@ -1,0 +1,1 @@
+Consider putting the leveldb store into the blockchain as a filesystem watcher.  Some of those files would match their hashes, and so they would be stored as themselves, causing no changes to the database.  This is the termination of the recursion.
