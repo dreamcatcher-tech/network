@@ -1,5 +1,5 @@
 {
   "template": "_templates/idea",
   "folder": "Inbox",
-  "format": "YYYY-MM-DD"
+  "format": "YYYY-MM-DD HHmm"
 }
