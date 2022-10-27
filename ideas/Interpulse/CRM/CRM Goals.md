@@ -4,3 +4,4 @@ Take a complete copy of the entire company application on your cellphone and go 
 
 Have two trucks that are disconnected pass each other in the street and each pass as much new offline data as they have, so that the first one to get back to base synchronizes on behalf of the other one.
 
+Load a page on a single port which also holds the DOS libp2p port.
