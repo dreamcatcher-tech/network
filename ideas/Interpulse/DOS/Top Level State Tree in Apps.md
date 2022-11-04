@@ -4,8 +4,10 @@
 
 >[!danger] Depends: 
 
+Key concept is to represent the current chain tree as a single large JS object, and provide a mechanism to eject stale parts, or load needed parts from the [[App Complex]]
+
 Building a GUI application in react is best done as props passed down from the top.
-Fundamentally a Reactive GUI application represents a snapshot of state, even tho that state may have been assembled from present and past state.  And so, the engine would build and maintain a large object that gets dropped down via props, 
+Fundamentally a Reactive GUI application represents a snapshot of state, even tho that state may have been assembled from present and past state.  And so, the engine would build and maintain a large JS object that gets dropped down via props, 
 
 The UI data binding can specify what type of sync it would like for different paths in the app, such as collections being fully synced, or on demand, permitting lazy load apps.
 
@@ -21,8 +23,8 @@ A mapping between covenants and components, and between paths and components is 
 This is the json state of the chain.
 
 ### `network`
-The recursion point.  This is an array, in chain order, of all the network elements of this chain.
-eg: `[{ path, type, state, network, actions, isLoading`
+The recursion point.  This is an array, in channelId order, of all the network elements of this chain.
+eg: `[{ path, type, state, network, actions, isLoading}]`
 
 ### `actions`
 Object of functions that the current chain can execute.  Has schemas attached so that a crude UI can be provided.
@@ -54,8 +56,6 @@ Might use an `onUnloadPath( path )` call to signal to the engine that the data i
 GUI just needs the state from inside all the the chains, and the children.  The children can be supplied using a Symbol as a key so that state can be consumed directly rather than behind the `state` key.
 
 Inside each child there is an extra key `loading: true` to show that the child has not fully loaded.  The current chain state is always loaded, 
-
-
 
 ### Past data
 If a GUI component requires data from the past, how should it request this ?
