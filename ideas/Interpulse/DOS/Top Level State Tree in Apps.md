@@ -24,7 +24,7 @@ This is the json state of the chain.
 
 ### `network`
 The recursion point.  This is an array, in channelId order, of all the network elements of this chain.
-eg: `[{ path, type, state, network, actions, isLoading}]`
+eg: `[{ path, type, state, network, actions, isLoading}]`.  Array is used for performance reasons over object, as `{...largeObject}` gets slow as the key count gets large, but `[...largeArray]` stays at 0ms regardless of array size.
 
 ### `actions`
 Object of functions that the current chain can execute.  Has schemas attached so that a crude UI can be provided.
