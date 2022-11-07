@@ -26,3 +26,4 @@ This means there is a full computation mode, and a single computation mode.  We 
 - [ ] Routing `cd` into sectors
 - [ ] Fake customer data
 - [ ] Sorting tool
+- [ ] Sectors move to being a collection
