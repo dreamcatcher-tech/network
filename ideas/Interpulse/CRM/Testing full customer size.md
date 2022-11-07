@@ -5,15 +5,22 @@ Take the sectors object, randomly spread customers out around the bounding box o
 Schedules component needs to do calculations of what sectors appear on what day.
 
 ## Manifest generation
-Pick todays date, and generate some manifests for some past and future dates, to test how the scheduling component handles having no manifest saved
+Pick todays date, and generate some manifests for some past and future dates, to test how the scheduling component handles having no manifest saved.  To get there, we need to generate sector membership for customer locations, generate some products but start with every cycle being a collection first, 
+
+## PIP triggers
+1. When a location changes its gps, it removes itself from the currently assigned sector, and finds its new sector location.
+2. When sector geometry changes, all sectors recompute for all customers.
+
+This means there is a full computation mode, and a single computation mode.  We can start with the full computation, and redo this whenever any customer changes.
 
 - [x] Schedule showing sectors on date
-- [ ] Routing page
+- [ ] Customers on the map
 - [ ] PIP integration
+- [ ] Routing page
+- [ ] Generate fake product data for customers
 - [ ] Datum edit and readonly buttons
 - [ ] Datum sorter integration
 - [ ] Click geometry to select sector
-- [ ] Customers on the map
 - [ ] Schedule adding and removing manifests
 - [ ] Schedule showing created manifests
 - [ ] Routing `cd` into sectors
