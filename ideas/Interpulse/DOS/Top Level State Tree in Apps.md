@@ -61,6 +61,8 @@ By calling the function `complex.child('path')` the engine is signaled that some
 Ejection from the cache should be allowed for anything that hasn't had the `child(path)` call made in a while.  If something is evicted prematurely, the UI render should call it to load again.
 In this way, the GUI could drive the engine to fetch whatever it can.  
 
+This format can be used for data from any source - if we choose to do some presentational logic that is computationally heavy in a worker thread, then this same interface can be used to express to the user that the data is still loading, and allow the results to stream in with corresponding partial changes to the UI.  This generalized data interface need not be blockchain only.
+
 ### Past data
 If a GUI component requires data from the past, how should it request this ?
 Could supply options like `onLoadPath( path, -5)` to get the item 5 back from current along the current main path. 
