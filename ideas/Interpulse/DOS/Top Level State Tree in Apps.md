@@ -17,6 +17,10 @@ A mapping between covenants and components, and between paths and components is 
 
 Testing of the UI can be done with mocked up js objects.  Testing of the blockchain can be done with jest unit tests.  Testing of the interface between blockchain and UI can be done by verifying the js object reflects the changes in the blockchain.
 
+It may be convenient to use the Complex constructor function within the covenants themselves, as it presents a simpler interface to use data from multiple chains easily.  Then some of the reducer logic can be moved to things that only process Complex objects, allowing code reuse in the UI.
+
+
+
 ## Format
 
 `{ state, binary, network, actions, isLoading, wd, tree }`
@@ -68,6 +72,10 @@ This format can be used for data from any source - if we choose to do some prese
 ### Past data
 If a GUI component requires data from the past, how should it request this ?
 Could supply options like `onLoadPath( path, -5)` to get the item 5 back from current along the current main path. 
+
+The creation function should be able to use structural sharing with latest or any other, since it will be referenced by hash.  So an object representing a past snapshot of the [[App Complex]] should take up only the diff space.  Fetching should only take as long as fetching the diffs too.
+
+Some parts of the app should have these diffs preloaded always, rather than being treated like onDemand data.
 
 ### Passing Actions
 Each React component could recieve as props: `{ state, network, actions }` where the actions object contains functions which cause a dispatch to the shell.  Actions could contain the schema, so that a UI can be built for those actions.
