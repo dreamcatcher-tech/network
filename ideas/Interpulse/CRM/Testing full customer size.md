@@ -13,17 +13,4 @@ Pick todays date, and generate some manifests for some past and future dates, to
 
 This means there is a full computation mode, and a single computation mode.  We can start with the full computation, and redo this whenever any customer changes.
 
-- [x] Schedule showing sectors on date
-- [ ] Customers on the map
-- [x] PIP integration
-- [ ] Routing page
-- [ ] Generate fake product data for customers
-- [ ] Datum edit and readonly buttons
-- [ ] Datum sorter integration
-- [ ] Click geometry to select sector
-- [ ] Schedule adding and removing manifests
-- [ ] Schedule showing created manifests
-- [ ] Routing `cd` into sectors
-- [ ] Fake customer data
-- [ ] Sorting tool
-- [ ] Sectors move to being a collection
+
