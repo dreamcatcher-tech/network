@@ -15,7 +15,7 @@ This means there is a full computation mode, and a single computation mode.  We 
 
 - [x] Schedule showing sectors on date
 - [ ] Customers on the map
-- [ ] PIP integration
+- [x] PIP integration
 - [ ] Routing page
 - [ ] Generate fake product data for customers
 - [ ] Datum edit and readonly buttons
