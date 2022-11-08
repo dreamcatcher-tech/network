@@ -19,7 +19,7 @@ Testing of the UI can be done with mocked up js objects.  Testing of the blockch
 
 It may be convenient to use the Complex constructor function within the covenants themselves, as it presents a simpler interface to use data from multiple chains easily.  Then some of the reducer logic can be moved to things that only process Complex objects, allowing code reuse in the UI.
 
-
+Complex could include functions to virtually dispatch actions, using the covenant reducer to say what the next state is.  This would allow a simulated version of the app to be presented.  Then it could attempt a merge back with the main app branch.  This can be faster than redispatching the individual actions, is easier to merge than handling actions from multiple sources causing conflicts.  This is offline first, and should be the default way that changes are made to the main app, so the app is always operating in offline mode, and the only variable is how long it is offline for.
 
 ## Format
 
