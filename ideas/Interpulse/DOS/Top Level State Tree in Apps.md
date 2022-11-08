@@ -15,6 +15,8 @@ A recursive structure is defined here, which can be used to render a reactive GU
 
 A mapping between covenants and components, and between paths and components is shown.  This lets UIs be composed by unit tested components, which are laid out based on the chain structure.  
 
+Testing of the UI can be done with mocked up js objects.  Testing of the blockchain can be done with jest unit tests.  Testing of the interface between blockchain and UI can be done by verifying the js object reflects the changes in the blockchain.
+
 ## Format
 
 `{ state, binary, network, actions, isLoading, wd, tree }`
