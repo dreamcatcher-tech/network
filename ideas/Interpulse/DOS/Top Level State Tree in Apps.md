@@ -88,6 +88,13 @@ Actions have a `.schema` key attached, so that schema forms can be provided for 
 
 May make a dedicated action params modal pop up when about to execute, rather than getting a form filled in first.
 
+### Generating mock data from covenants
+The Complex object for the CRM was handcrafted.  What should be happening is that the covenant should be used to generate mock data using fakerjs.  Params for a specific path can be supplied, such as number of fake children to generate for a collection at a given path, how many edits to run so that history can be populated.  
+
+This generated data should be able to write to disk, for rapid call up.
+
+When loaded, it should be schema checked against the app covenant for correctness.
+
 ### Calling back to the engine
 Pass down a stripped down version of the engine to perform:
 1. `dispatch`
