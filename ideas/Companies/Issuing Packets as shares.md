@@ -1,0 +1,1 @@
+If we were a registered issuer, then packets could be issued as stock directly, rather than stock being a proxy for packet ownership.  The packets would then be treated as registered securities.
