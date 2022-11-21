@@ -24,3 +24,15 @@ The customer has existing invoices that are intricately designed and fit for pur
 3. Replace text in the template with instance values
 4. Copy invoices to the end of the manifest pdf each time it is modified
 5. render the blob in the browser window
+
+Problem is accessing the text in the pdf - this is not supported by pdf-lib
+
+### Using an image backdrop
+We can take a screenshot of the existing invoices, and then use [react-pdf](https://react-pdf.org/) with css to write the text we need over the top.
+
+This will increase the size of the file, but 
+
+### Receive the invoices printed straight from moneyworks
+If we were to receive all the invoices from moneyworks in a jumbled order, then we could make a pdf that joined them all together.  So we generate the manifest checklist in order, then the user uploads all the invoices from moneyworks, then a single large pdf is generated with all the invoices inside.
+
+This means we do not have to handle invoice and bank balance data immediately.  The only thing we would need to handle is sectors, run order, customer collection dates.  These could all be imported into a large json object and loaded directly in the browser.  This may circumvent the blockchain initially, just to get up and running.
