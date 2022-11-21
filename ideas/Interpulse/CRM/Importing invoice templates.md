@@ -37,5 +37,8 @@ If we were to receive all the invoices from moneyworks in a jumbled order, then 
 
 This means we do not have to handle invoice and bank balance data immediately.  The only thing we would need to handle is sectors, run order, customer collection dates.  These could all be imported into a large json object and loaded directly in the browser.  This may circumvent the blockchain initially, just to get up and running.
 
+### Generate invoices as HTML
+Then use the system print preview to 
+
 ## Decision
 We can either use the existing invoices, or we can strip down what the invoices contain, and work
