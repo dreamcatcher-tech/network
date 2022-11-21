@@ -1,0 +1,1 @@
+The prop passed down to all React children that holds a static snapshot of the chainstate.

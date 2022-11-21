@@ -4,3 +4,6 @@ Each customer needs their own custom `.jsx` component for the invoicing template
 	1. store the html in the database
 3. Use a private build to wrap the webdos components
 4. Develop in a private fork, then split the components out later
+
+## What are Templates ?
+They expect a [[Complex]] which contains 
