@@ -36,3 +36,6 @@ This will increase the size of the file, but
 If we were to receive all the invoices from moneyworks in a jumbled order, then we could make a pdf that joined them all together.  So we generate the manifest checklist in order, then the user uploads all the invoices from moneyworks, then a single large pdf is generated with all the invoices inside.
 
 This means we do not have to handle invoice and bank balance data immediately.  The only thing we would need to handle is sectors, run order, customer collection dates.  These could all be imported into a large json object and loaded directly in the browser.  This may circumvent the blockchain initially, just to get up and running.
+
+## Decision
+We can either use the existing invoices, or we can strip down what the invoices contain, and work
