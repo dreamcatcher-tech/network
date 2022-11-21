@@ -7,3 +7,11 @@ Each customer needs their own custom `.jsx` component for the invoicing template
 
 ## What are Templates ?
 They expect a [[Complex]] which contains the current customer, 
+
+## Notes
+2. Storybook for each invoice template
+3. Storybook for the manifest list of collections
+4. Storybook of the complete manifest including invoices for all sectors
+5. Opener code to trigger the browsers PDF renderer
+
+Can we make the trigger code work for invoices in standalone mode ?
