@@ -8,6 +8,9 @@ Each customer needs their own custom `.jsx` component for the invoicing template
 ## What are Templates ?
 They expect a [[Complex]] which contains the current customer, 
 
+### Editor
+Ultimately we want customers to generate their own templates.  
+
 ## Notes
 2. Storybook for each invoice template
 3. Storybook for the manifest list of collections
@@ -39,6 +42,9 @@ This means we do not have to handle invoice and bank balance data immediately.  
 
 ### Generate invoices as HTML
 Then use the system print preview to 
+
+### Convert the PDF into a form
+Then process with pdf-lib, which can easily process form fields.
 
 ## Decision
 We can either use the existing invoices, or we can strip down what the invoices contain, and work
