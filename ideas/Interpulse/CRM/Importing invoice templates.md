@@ -42,6 +42,8 @@ If we were to receive all the invoices from moneyworks in a jumbled order, then 
 
 This means we do not have to handle invoice and bank balance data immediately.  The only thing we would need to handle is sectors, run order, customer collection dates.  These could all be imported into a large json object and loaded directly in the browser.  This may circumvent the blockchain initially, just to get up and running.
 
+Impossible due to inability to name the invoices as they come out of moneyworks.
+
 ### Generate invoices as HTML
 Then use the system print preview to convert to pdf.  Or use pdf to image conversion.  So long as the HTML was configured to be page like, this should be fine.
 
@@ -53,8 +55,5 @@ This gives people the full power of a dedicated PDF editor, as it seems online e
 ### CKEditor cloud service
 Service converts from their editor into a pdf that can be downloaded.  We might be able to use form names to allow this generated pdf to be edited.
 
-### Canvas editor in pdf-lib
-
-
 ## Decision
-We can either use the existing invoices, or we can strip down what the invoices contain, and work
+Best to use a pdf editor to make forms. [[#Convert the PDF into a form]] 
