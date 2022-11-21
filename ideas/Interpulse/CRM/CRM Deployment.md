@@ -4,6 +4,8 @@ Start browser, connecting to preconfigured address.
 Browser auto mounts the remote chain address.
 Let the browser clients interact - observe their changes on each other
 
+Load a page on a single port which also holds the DOS libp2p port.
+
 Problem is the server might need an ssl cert 
 
 ## Phase 1: Demo
