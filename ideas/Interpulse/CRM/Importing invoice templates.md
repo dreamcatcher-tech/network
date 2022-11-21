@@ -19,7 +19,7 @@ Can we make the trigger code work for invoices in standalone mode ?
 ### Rewriting existing invoices
 The customer has existing invoices that are intricately designed and fit for purpose.  We may be able to parse these items and then inject our text directly in them, to avoid having to design our own each time they want changes.  We could merge a whole string of pdf files into the manifests
 
-1. Generate Manifest pdf pages, or use a monospaced font page
+1. Generate Manifest pdf pages, or use a monospaced font text page
 2. Load the invoice template pdf using [pdf-lib](https://github.com/Hopding/pdf-lib#features)
 3. Replace text in the template with instance values
 4. Copy invoices to the end of the manifest pdf each time it is modified
