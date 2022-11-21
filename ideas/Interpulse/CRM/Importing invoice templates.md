@@ -9,7 +9,9 @@ Each customer needs their own custom `.jsx` component for the invoicing template
 They expect a [[Complex]] which contains the current customer, 
 
 ### Editor
-Ultimately we want customers to generate their own templates.  
+Ultimately we want customers to generate their own templates.  Making a PDF template editor seems beyond scope.  Making an HTML editor is feasible, then we could convert to pdfs, but this conversion is always messy.
+
+We could make a wysiwyg editor for pdfs that stores the instructions sent to pdf-lib, with realtime feedback for the user, who can keep fiddling until they are happy with the result.
 
 ## Notes
 2. Storybook for each invoice template
@@ -41,10 +43,18 @@ If we were to receive all the invoices from moneyworks in a jumbled order, then 
 This means we do not have to handle invoice and bank balance data immediately.  The only thing we would need to handle is sectors, run order, customer collection dates.  These could all be imported into a large json object and loaded directly in the browser.  This may circumvent the blockchain initially, just to get up and running.
 
 ### Generate invoices as HTML
-Then use the system print preview to 
+Then use the system print preview to convert to pdf.  Or use pdf to image conversion.  So long as the HTML was configured to be page like, this should be fine.
 
 ### Convert the PDF into a form
-Then process with pdf-lib, which can easily process form fields.
+Then process with pdf-lib, which can easily process form fields.  If the client is reponsible for creating the PDF forms, then this takes a large load off from us.  They can name the form fields to use the standard.  If these forms can be styled to be hidden, then this represents the simplest way to get going now, and also in the future to give clients the ability to make their own invoices.
+
+This gives people the full power of a dedicated PDF editor, as it seems online editors are not easy to make.  If they want html templates, then we may look at providing that.  We could also let them upload code directly, or reference an NPM package.
+
+### CKEditor cloud service
+Service converts from their editor into a pdf that can be downloaded.  We might be able to use form names to allow this generated pdf to be edited.
+
+### Canvas editor in pdf-lib
+
 
 ## Decision
 We can either use the existing invoices, or we can strip down what the invoices contain, and work
