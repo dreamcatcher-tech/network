@@ -6,7 +6,11 @@ Sometimes we want to do a single invoice, other times all invoices, or a subset,
 
 ### useInvoice()
 
+## Uses
+
 ### With Manifest
 1. Generate the manifest pdf as a standalone pdf
 2. Load this into output pdf using insertPage
 3. Load the invoice template pdf from bytestream
+
+### 
