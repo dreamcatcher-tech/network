@@ -5,7 +5,7 @@ Might be able to write the manifest lines using pdf-lib, reducing the gymnastics
 Loading the template is always async.  Interface has to allow for that.
 Sometimes we want to do a single invoice, other times all invoices, or a subset, or the invoices plus the runsheet for each Manifest.
 
-### useInvoice( templateUrl, customer )
+### `useInvoice( templateUrl, customer ) -> [ ...pages]`
 Given a template url and a customer complex, return a PdfPage with the form flattened.
 
 ### `useManifest( complex ) -> [isReady, pdf]`
