@@ -31,3 +31,7 @@ Loads up the pdf form ready for use
 ### Show a single invoice
 1. Load the invoice template
 2. Fill in the
+
+## Status during processing
+Handling up to 1,000 invoices is slow for the system, so some progress needs to be shown.
+
