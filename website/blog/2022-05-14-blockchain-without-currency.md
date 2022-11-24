@@ -33,3 +33,5 @@ Any arbitrary fungible unit of value that has no internal control mechanism will
 With no regulation, this cycle is accelerated, as the system can be used as a 'bigger fool' scheme, but is harder to squash due to its distributed nature, with a multitude of bad actors having no coordination except the same pattern of ill intent.
 
 Systems that launch with a 'shares' like nature, such as ICOs and other "Initial \*" offerings bake in their demise from inception by setting the exectations and incentives of multiple powerful actors in the system.
+
+There is no need for a currency inside the Dreamcatcher.  The Dreamcatcher is an object model that can capture any object in the world, both real and imaginary.  This is all that is required for trade.  We can model a unit of USD as an object and then allow it to be transacted in a programmable way.  There is no need to attempt to put an intrinsic value inside our network - we derive our value from being the interaction choice for all other objects, of which other blockchain networks are but a small subset.
