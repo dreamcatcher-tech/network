@@ -35,3 +35,21 @@ Loads up the pdf form ready for use
 ## Status during processing
 Handling up to 1,000 invoices is slow for the system, so some progress needs to be shown.
 
+## Async Iterators
+The PDF generation should be an async iterator so that it can break the main UI thread, and so it can provide updates on progress.  Process is reported in pages generatored
+
+Process:
+1. Generate the output pdf.
+2. Estimate the total page count as 1 manifest + N invoices
+3. For each sector:
+	1. generate the manifest
+	2. copy each page into output.pdf
+	3. update the total page count
+	4. generate each invoice, updating the total page count each time
+4. Display indeterminate progress while saving the pdf
+5. Display total PDF size, name, and buttons to open or download
+
+### Functions:
+#### manifestPage( sector ) -> pdf
+#### invoice( customer, template ) -> pdf
+#### merge( base, donor ) -> pageCount
