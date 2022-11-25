@@ -14,3 +14,13 @@ Pick todays date, and generate some manifests for some past and future dates, to
 This means there is a full computation mode, and a single computation mode.  We can start with the full computation, and redo this whenever any customer changes.
 
 
+## Fake realistic data
+Read in the real data.
+Find which sector each customer is in.
+Generate a random gps location that is within that sector.
+
+
+## Working with real data
+If an import path points to the private data,
+
+We can maintain this json object in sync with moneyworks.
