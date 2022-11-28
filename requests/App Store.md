@@ -14,3 +14,5 @@ Each module can have a connection to a marketplace, so the pdf templates module 
 API lib lets you ask for different connections to different pieces of software.
 
 Diagram showing upstream and downstream of this given module.  Show revenue streams flowing between all modules.  Jump off point to see attribution to npm packages and the rest of the world.
+
+Be able to express plans, and the packets that aim to achieve the planned changes, to show how the modules build out over time.  These plans should have revenue forecasts attached, by connecting to customers, both theoretical and confirmed, and the amount of value provided to them along with the expected revenue.  Then extrapolate to other customers that we think are similar to them.
