@@ -24,3 +24,9 @@ Generate a random gps location that is within that sector.
 If an import path points to the private data,
 
 We can maintain this json object in sync with moneyworks.
+
+## Plan
+Get the whole app working completely with fake static data.
+Load up this fake data on the blockchain.
+Set up an onsite demo using fake data.
+Only once fully operational, move to live data.
