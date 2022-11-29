@@ -7,5 +7,7 @@ This seems exclusively tied to the geometry aspect of the CRM.
 ### Sequencing
 Select any item using the map or otherwise to have it move beneath the most recently selected item.  Highlight the currently selected item, then when moving the next one, maybe back shadow the previous selection ?
 
+The sorter could be kept completely separate from the sector datum.
+
 
 
