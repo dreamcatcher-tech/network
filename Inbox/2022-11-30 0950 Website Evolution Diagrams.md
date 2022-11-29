@@ -27,6 +27,8 @@ Ultimately the packetization of work offers a solution to all these problems.
 
 Model the pool of all ideas, vs the pool that we have access to, and show how it was weak when compared to the dreamcatcher being operated within the dreamcatcher.  Use our own tools to model how we used to be.  Express our company goals as formulas - measurements of a state model that we want to see.
 
+Use the [models of concurrency](https://zguide.zeromq.org/docs/chapter2/#The-Dynamic-Discovery-Problem) to describe workers and the power of their 'company' as a distributed system that attempts to process and burst and do so cheaply and quickly.  Highlight how discovery is a problem that takes time and results in poor matches.  Show how even basic modifications to the traditional company aspects can offer performance improvements.  Can frame the problem as a messaging problem.
+
 ## Example
 ### Make a blockchain
 
