@@ -21,6 +21,12 @@ Progression of the realization as to how far reaching blockchain can be.  Descri
 
 How to capture innovation, how to reward it, the meeting of Xinova, our reaction and restructuring of that.  The description of the fundamental problem of how to value human contribution compared with resources, and with different types of human contribution.  Then extend to what price should something be.  These are country foundational type of problems.
 
+Show how problems like project management, reporting, fundraising - these are all general problems that are shared by everyone.
+
+Ultimately the packetization of work offers a solution to all these problems.
+
+Model the pool of all ideas, vs the pool that we have access to, and show how it was weak when compared to the dreamcatcher being operated within the dreamcatcher.  Use our own tools to model how we used to be.  Express our company goals as formulas - measurements of a state model that we want to see.
+
 ## Example
 ### Make a blockchain
 
