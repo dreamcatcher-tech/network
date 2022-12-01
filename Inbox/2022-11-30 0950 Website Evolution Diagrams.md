@@ -29,6 +29,8 @@ Model the pool of all ideas, vs the pool that we have access to, and show how it
 
 Use the [models of concurrency](https://zguide.zeromq.org/docs/chapter2/#The-Dynamic-Discovery-Problem) to describe workers and the power of their 'company' as a distributed system that attempts to process and burst and do so cheaply and quickly.  Highlight how discovery is a problem that takes time and results in poor matches.  Show how even basic modifications to the traditional company aspects can offer performance improvements.  Can frame the problem as a messaging problem.
 
+Starting with the finished tooling, let us retrospect how we got here.  We will attempt to model our software meta state progression - that is, the forces that shaped the construction of the software that we use to model and attibute at the meta level of software - the human reward level.
+
 ## Example
 ### Make a blockchain
 
