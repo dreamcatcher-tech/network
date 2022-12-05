@@ -9,6 +9,9 @@ Callback to tell the top level stack to grow to full height
 
 Put each accordion in its own box with its own overflows - turn overflow off if not expanded, once transition has completed.
 
+Make a filler at the bottom of the max stack that passed thru pointer events.
+
+
 ## Problems
 1. Accordions need to 'discover' their size nad squash other panels
 2. Virtual lists need to be told what their size is
