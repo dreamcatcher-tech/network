@@ -11,6 +11,9 @@ Put each accordion in its own box with its own overflows - turn overflow off if 
 
 Make a filler at the bottom of the max stack that passed thru pointer events.
 
+make a 100vh div, then use a hook to measure what the size of the parent is, then supply this to the function that sets the height
+
+Measure the height of the whole left column, then calculate the height of each child to work out space remaining.
 
 ## Problems
 1. Accordions need to 'discover' their size nad squash other panels
