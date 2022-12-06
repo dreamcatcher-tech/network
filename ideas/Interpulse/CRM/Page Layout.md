@@ -17,6 +17,8 @@ Measure the height of the whole left column, then calculate the height of each c
 
 Make the stack be max height, then wrap each child to turn on pointer events.  Could wrap each in a Box and hook the size of the element, which can then feed in to any children.
 
+Build our own Accordion, flick the stack to max, transition in the body of the sorter, then transition out again.
+
 ## Problems
 1. Accordions need to 'discover' their size nad squash other panels
 2. Virtual lists need to be told what their size is
@@ -25,3 +27,4 @@ Make the stack be max height, then wrap each child to turn on pointer events.  C
 ## Conclusions
 1. Cannot get the Stack container to grow any more than it is asking for, so child components cannot make it get larger just by setting flexGrow
 2. Because overflow in AccordionDetails seems impossible, go with a static panel with scroll managed by react-virtualized component.
+3. Accordions must have a minHeight set to prevent overflow occuring when collapsed.  They cannot have overflow turned off until they have settled
