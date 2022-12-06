@@ -15,7 +15,13 @@ make a 100vh div, then use a hook to measure what the size of the parent is, the
 
 Measure the height of the whole left column, then calculate the height of each child to work out space remaining.
 
+Make the stack be max height, then wrap each child to turn on pointer events.  Could wrap each in a Box and hook the size of the element, which can then feed in to any children.
+
 ## Problems
 1. Accordions need to 'discover' their size nad squash other panels
 2. Virtual lists need to be told what their size is
 3. Sometimes the virtual list reaches its maximum size, in which case it should not push the accordion to grow any more
+
+## Conclusions
+1. Cannot get the Stack container to grow any more than it is asking for, so child components cannot make it get larger just by setting flexGrow
+2. Because overflow in AccordionDetails seems impossible, go with a static panel with scroll managed by react-virtualized component.
