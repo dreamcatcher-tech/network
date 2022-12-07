@@ -37,3 +37,7 @@ control the saving inside each component but send edits up to be relayed down to
 make map be a child of sorter so the props go down
 
 have sorter call up to a function for its props which are then passed down to the map
+
+pass down ONLY the edited order, and overlay this on the map in a separate pass.  Benefit is that it is very explicit what changes have been made, very easy to undo.  Allows both panels to operate independently.  Quick to implement.
+
+Unify the save logic for both panels as pass down props.  Downside is now the routing component is much smarter than it should be.
