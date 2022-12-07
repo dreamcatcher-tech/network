@@ -32,4 +32,8 @@ Build our own Accordion, flick the stack to max, transition in the body of the s
 ## Hoisting editing in Routing
 If Sector and Sorter can both do editing and submission, then how can order updates be passed on to the map ?
 
+control the saving inside each component but send edits up to be relayed down to the map
 
+make map be a child of sorter so the props go down
+
+have sorter call up to a function for its props which are then passed down to the map
