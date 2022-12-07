@@ -28,3 +28,8 @@ Build our own Accordion, flick the stack to max, transition in the body of the s
 1. Cannot get the Stack container to grow any more than it is asking for, so child components cannot make it get larger just by setting flexGrow
 2. Because overflow in AccordionDetails seems impossible, go with a static panel with scroll managed by react-virtualized component.
 3. Accordions must have a minHeight set to prevent overflow occuring when collapsed.  They cannot have overflow turned off until they have settled
+
+## Hoisting editing in Routing
+If Sector and Sorter can both do editing and submission, then how can order updates be passed on to the map ?
+
+
