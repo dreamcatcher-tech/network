@@ -36,6 +36,9 @@ Boots up its own chain, then makes changes so it shows up as coming from a forei
 ### Download the complex
 In browser, dump the full complex to json object, then use this to do a manual import of the complex using the DOS tools.  So all private data needs to be transformed into complex format first, and then loaded.  Can do either merge or replace.  Complex format must match the covenants.
 
+## Boot
+### 
+
 ## Problems
 ### Keeping in sync
 Client would subscribe to the servers approot broadcasts.
