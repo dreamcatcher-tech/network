@@ -40,3 +40,12 @@ Client would subscribe to the servers approot broadcasts.
 If sync came in as a change to the complex, then it wouldn't matter what was backing the complex.
 
 ### initial sync
+
+### How to test ?
+DOS needs to be able to test against another DOS instance.
+Use the two engines test method in `full.test.js` we can set up client server test environments.
+
+Make test data loaders so can see how the whole system performs with large and small data sets loaded.
+
+### Writing data to server
+Add customer needs to write to the server chain, not its own chain.
