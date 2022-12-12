@@ -6,10 +6,10 @@
 
 
 ## Requirements
-Load in a secure manner, holding private customer data securely
-Pull based sync with Moneyworks
-Save backups somewhere with a tested restore procedure
-Load existing customer data quickly
+1. Load in a secure manner, holding private customer data securely
+2. Pull based sync with Moneyworks
+3. Save backups somewhere with a tested restore procedure
+4. Load existing customer data quickly
 
 ## Layout
 GHPages holds a vite static page which includes the UI, loads the chain, syncs the complex, causes the gui to load.  Connects via a set URL which only LAN can access.  Is given a chainUrl, and a chainId.
@@ -33,6 +33,8 @@ If sync is needed, browser pulls data in, then pushes out to the app.
 Periodically, the sync runs on the server, and injects changed data using the api port.  
 Boots up its own chain, then makes changes so it shows up as coming from a foreign chain.
 
+### Download the complex
+In browser, dump the full complex to json object, then use this to do a manual import of the complex using the DOS tools.  So all private data needs to be transformed into complex format first, and then loaded.  Can do either merge or replace.  Complex format must match the covenants.
 
 ## Problems
 ### Keeping in sync
