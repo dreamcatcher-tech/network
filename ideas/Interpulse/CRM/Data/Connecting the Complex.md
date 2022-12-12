@@ -37,7 +37,12 @@ Boots up its own chain, then makes changes so it shows up as coming from a forei
 In browser, dump the full complex to json object, then use this to do a manual import of the complex using the DOS tools.  So all private data needs to be transformed into complex format first, and then loaded.  Can do either merge or replace.  Complex format must match the covenants.
 
 ## Boot
-### 
+### App loads and offers instances
+Can add a new chainId into the list, and can add multiple peers to each one.  This is basically a datum over the .mtab chain.  Can select one to boot in to.  Connection status of all are shown.
+
+Option to create a new one is available.
+Option to add validators to ones you control is available.
+Acts like a chain backstage view.
 
 ## Problems
 ### Keeping in sync
