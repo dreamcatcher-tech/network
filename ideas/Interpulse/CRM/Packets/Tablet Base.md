@@ -23,14 +23,14 @@ Basically will be dictated by the maps SDK that we need to use on an android tab
 11. Live feedback to the central application of truck progress
 12. May capture the camera feed for events
 13. Gate codes and notes shows info for each collection
-14. Bin number
-15. Side rubbish, christmas trees
-16. Phone version that has onsite 
-17. Phone with overload photos
-18. no access blocking photos
-19. still print out manifest with gate codes
-20. Phone and tablet versions need to have exact same functionality
-21. No need to have phone and tablet communicate while offline
+14. Bin number must be displayed
+15. Near collections must show
+16. Selection options for casual collections nearby
+17. Side rubbish, christmas trees, overload, no access - must take a photo
+18. Phone version that can act as backup and can be taken with the driver
+21. still print out manifest with gate codes as backup
+22. Phone and tablet versions need to have exact same functionality so they act as failover
+23. No need to have phone and tablet communicate while offline
 
 
 ## Device Requirements
