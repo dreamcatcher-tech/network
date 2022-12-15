@@ -26,3 +26,6 @@ DOS should be able to run as a Comlex based application.
 `<Engine>` passes down the raw blockchain to its child.
 ? Where to put the path in the current engine ?
 Must be able to declare all the config for the chain in the React component
+? What happened to being able to include the blockchain with each component ?
+? Would storybook be able to use the same engine in a service worker, so each test component would load the same chain ?
+? Each storybook should fork some base chain, so all changes are independent and discards.
