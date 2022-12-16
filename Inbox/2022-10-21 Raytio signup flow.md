@@ -58,3 +58,5 @@ graph TD
 5. Phone proxy service - in all your deailings with a company, Raytio proxies the call and records it, for your private records if required
 6. Manage payment processing, like paypal, with unique credit card numbers for each transaction allowing precise cancellation and safety
 7. Discovery marketplace of other companies that are Raytio compatible
+8. Steganographic prints on passport images
+9. Monitor darknet for your images being leaked, so you know to revoke your identities

@@ -14,3 +14,5 @@ Virtual overlay shows the dreamcatcher status.  ChainId, approot, pulseheight, l
 
 If git repo, use the same hashing as the object in the git repo.
 Store the config in a file in the root, like `.dreamcatcher` or similar, to have the approot chainId and some bootstrap nodes.
+
+Generate a QR url in each page so if you print it, people are taken to the blockchain version.
