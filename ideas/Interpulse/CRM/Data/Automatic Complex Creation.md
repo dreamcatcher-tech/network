@@ -25,6 +25,7 @@ This would wrap the whole app, passing `complex` down to its child.
 
 Engine is the interface between React and the interpulse engine.
 Complex is the interface between React and the interpulse models.
+Complex flattens history into a single structure, and would usually treat all history as ejectable.
 
 DOS should be able to run as a Comlex based application.
 `<Engine>` passes down the raw blockchain to its child.
@@ -51,3 +52,6 @@ By making the complex separate, we can include spliced data.  Also a Complex can
 
 ## Complex Specs
 1. Sync strategy - full, mru, depthLimit, etc
+
+## Sync
+Abortable requests for children.  If latest updates and a given child is no longer needed, we should abort the request to the engine to save resources.
