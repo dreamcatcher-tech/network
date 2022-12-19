@@ -23,6 +23,9 @@ This would wrap the whole app, passing `complex` down to its child.
 </Engine>
 ```
 
+Engine is the interface between React and the interpulse engine.
+Complex is the interface between React and the interpulse models.
+
 DOS should be able to run as a Comlex based application.
 `<Engine>` passes down the raw blockchain to its child.
 ? Where to put the path in the current engine ?
