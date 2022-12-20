@@ -18,3 +18,8 @@ Offline versions of your api calls can be downloaded and used as a cache.
 Certification of results gives provable api performance monitoring.
 Errors in the api can be tackled by workers in the api marketplace, so it keeps your code maintained.
 Errors are replayable.
+API key management and rotation.
+Small group teaming where you have a cluster of people sharing the api key.
+Invite a competitive service to appear that does the equivalent thing, better - starts by knowing the api shape, 
+Allow interchange between multiple similar apis, then make a pure service that targets the standard api directly, rather than a translation.
+Offer shared  / multi target api service, where results from multiple sources are combined.
