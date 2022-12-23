@@ -15,8 +15,8 @@ REPL access can be given via the `globalThis.interpulse` object.
 
 This would wrap the whole app, passing `complex` down to its child.
 ```jsx
-<Engine repo="interpulse-1" dev={{...covenants}} peers  >
-	<Complex path="mtab/test-1" chainId="ABCDEF" engine={engine}>
+<Engine repo="interpulse-1" dev={covenants} peers mounts={mtab}>
+	<Complex large path="mtab/test-1">
 		<App />
 	</Complex>
 </Engine>
