@@ -35,4 +35,4 @@ Request a device or connection type to appear by logging and funding a request b
 
 Can UDP packets start to be relayed before the complete packet has been received ?
 Then large packets can be set up that carry smaller packets inside of them, to drastically reduce multihop latency.
-Connections would auto tune to the error rate
+Connections would auto tune to the error rate.
