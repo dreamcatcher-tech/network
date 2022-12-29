@@ -23,6 +23,7 @@ Make a replica of the network object in Pulse, but update alias tables based ent
 
 But can the pulse itself be used as the complex object somehow ?
 A thin facade over the top of the pulse could simplify construction and syncing of the Complex.
+What about the state tree ?
 
 So maintain the channels list, and update alias tables based on the channel list, and for each child, pass in the pulse that it is made from along with the abortable resolver.
 
@@ -47,9 +48,38 @@ Each complex knows its path from root, and is responsible for resolving itself a
 
 Children are stored as Complex objects.
 
-Network is a map of paths to Complex objects or an integer for the channelid if not loaded ?
+Network is an immutable map of paths to Complex objects or an integer for the channelid if not loaded ?
+The type of the path can be determined by getting the channel and getting the aliases.
+So names map goes to channelIds, which then gets looked up directly.
+
+Loaders should be separate objects to the complex, and they service the complex, because each time a change occurs, the reference is stale.
+
+? why do we need to subscribe to changes ?  this is a reactive app, so the root complex is always replaced.  Loaders are passed the root complex update function.
+Update takes the Store, calls `store.setState( path, next )`
+Would have passed the store down to the children too.
+Tree is set AFTER the child has been updated based on the new root.
+BUT tree needs to be live, so might be the store, so you can get the latest.
+BUT if we want the old version, we should allow that to be kept hold of ?
+Or, are we saying that each item holds the last tree that contained this version.
+
+Complex made from a hashlocked pulse is how to use past trees ?
+mutable reference to root ?
+
+### Update to parent only
+Updates are done the same as the chains do it - to the parent only.
+Parent then broadcasts to any listeners, and also updates itself, which updates its own parent.
+This only stops at the root.
+Each update, the child is now the update target, not current version any more.
+If you hold a reference to a complex, it will only update once, then that one will update.
+
+### Update via root
+To subscribe to a specific complex, it would subscribe to the root, then check its own path for changes each time.  If its own path has changed, it will update the subscribers.
+But, now the listener has a stale reference.
+If the callback was just a single call like in redux, then the caller would have to call getState or similar.
+
 
 BUT this might ruin how virtual children are created.
+Need to indicate when a Complex is virtual, and has no pulse attached to it.
 
 BECAUSE THE CHANNELID SYSTEM IS COW, the path never mutates, but it can be deleted.
 Each complex tracks a chainId, so moving that chainId causes the complex to move from it.
@@ -57,5 +87,7 @@ Each complex tracks a chainId, so moving that chainId causes the complex to move
 
 ? What about if the previous complex did not finish resolving fully, but now the next one is starting ?
 Just mark as incomplete, so we know to use the pulse that came before as base.
+Should be able to restart with a new pulse and have it ripple down, updating whatever the current state of affairs is.
+Optionally stop any further updates at the root, or listen to them and use this to inform the comparisons.
 
 `complex.update( pulse, pulseResolver )`
