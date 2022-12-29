@@ -47,6 +47,7 @@ Each complex knows its path from root,
 
 BECAUSE THE CHANNELID SYSTEM IS COW, the path never mutates, but it can be deleted.
 Each complex tracks a chainId, so moving that chainId causes the complex to move from it.
+? What about if the complex is forked ?  It is defined by its path, so the original path is what matters.
 
 ? What about if the previous complex did not finish resolving fully, but now the next one is starting ?
 Just mark as incomplete, so we know to use the pulse that came before as base.
