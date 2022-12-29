@@ -43,7 +43,13 @@ They need to use async, since we cannot have a long lasting cache of all data, a
 Build the complex from a pulse, start a new one from the next pulse, which only deals in diffs.
 Subscribe to any complex to get updates when a new version of this complex is discovered due to asynchronous loading.  Updates to a given complex come with a new root.
 
-Each complex knows its path from root, 
+Each complex knows its path from root, and is responsible for resolving itself and then notifying the root
+
+Children are stored as Complex objects.
+
+Network is a map of paths to Complex objects or an integer for the channelid if not loaded ?
+
+BUT this might ruin how virtual children are created.
 
 BECAUSE THE CHANNELID SYSTEM IS COW, the path never mutates, but it can be deleted.
 Each complex tracks a chainId, so moving that chainId causes the complex to move from it.
