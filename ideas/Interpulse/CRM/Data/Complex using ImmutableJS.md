@@ -34,3 +34,21 @@ Pass down the resolver, the root callback, the pulselink to use, the path back t
 Could deduce by getting the parent, asking the parent for our id, then repeat until hit the root.
 Path would be a series of integers: [4,3,5,4,39,12] which would be all that is required to update the whole tree.
 Buffering can occur if the rate of updates is high, and multiple updates can be merged into one.
+All updates are merged until the consumer next pulls from the iterable.
+
+? How can covenant authors also use the complex for writing apps with ?
+They need to use async, since we cannot have a long lasting cache of all data, and want to drop each chain from ram asap, plus they have no strong need for sync, nor for views of all the data all at once, unlike a react front end app.
+
+## V1
+Build the complex from a pulse, start a new one from the next pulse, which only deals in diffs.
+Subscribe to any complex to get updates when a new version of this complex is discovered due to asynchronous loading.  Updates to a given complex come with a new root.
+
+Each complex knows its path from root, 
+
+BECAUSE THE CHANNELID SYSTEM IS COW, the path never mutates, but it can be deleted.
+Each complex tracks a chainId, so moving that chainId causes the complex to move from it.
+
+? What about if the previous complex did not finish resolving fully, but now the next one is starting ?
+Just mark as incomplete, so we know to use the pulse that came before as base.
+
+`complex.update( pulse, pulseResolver )`
