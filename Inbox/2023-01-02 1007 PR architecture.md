@@ -16,5 +16,8 @@ So the majority of operations happen within an app complex, with the result bein
 
 Pool is an object
 Branch tip is just HEAD + pool.
+Validators sync with each other by continually seeking to merge with other validators.
+BFT busting would be easy - can just share the branch of a validator showing different commits being signed.
+Each message from the other validators includes all the included messages from other validators, so Byzantine behaviour is super easy to detect.
 
 Make an algebra that describes how any blockchain system must work - anything with history and consensus.

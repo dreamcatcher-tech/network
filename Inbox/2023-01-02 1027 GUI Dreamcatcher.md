@@ -15,3 +15,5 @@ The GUI should come with the project in its entirety.  Includes issues, discussi
 Syncing the full repo should not be needed, as you may only want the code.
 
 Make a CI pipeline that can auto run using shared compute resources with incentives and repercussions.
+
+Show the complete workflow form core to store.
