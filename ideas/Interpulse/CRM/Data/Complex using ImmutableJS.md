@@ -91,3 +91,10 @@ Should be able to restart with a new pulse and have it ripple down, updating wha
 Optionally stop any further updates at the root, or listen to them and use this to inform the comparisons.
 
 `complex.update( pulse, pulseResolver )`
+
+## Error was removing too much of the chain
+The Complex should be a synchronous representation of the chain logic.
+Benefit
+
+There should not be virtual Complex modification - there should be virtual chain constructions
+
