@@ -11,7 +11,7 @@ Merge may be rejected because master said it had conflicts - means the requester
 
 Each reducer would be given the option to reject a PR, otherwise if the system can merge without conflict, it will.
 
-This architecture means each actor is doing the exact same operation - trying to get their changes merged in.  So a client with no validator permissions can still fork the validators chain and promote its changes between all the other clients, allowing them all to reach consensus even tho they are offline.
+This architecture means each actor is doing the exact same operation - trying to get their changes merged in.  So a client with no validator permissions can still fork the validators chain and promote its changes between all the other clients, allowing them all to reach consensus even tho they are offline.  This enables [[Quorumless apps]]
 
 ## Validation
 Validators execute inbound actions from other Complexes and continually try to merge with each other.  Each time they merge another validators chain, they sign it, so consensus of varying levels is achieved rapidly.  Validators can sign something that is different to what they have since they can merge in one of their states that came before their unique changes, to get the agreed head into consensus as fast as possible.
