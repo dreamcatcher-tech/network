@@ -24,3 +24,6 @@ I should be able to get structural sharing between the immutable map used in the
 Ie: if I have an async IPORM instantiation of a class, and I call `.snapshot()` I should get back a large js object suitable to be passed as a React prop that increases the heap by near zero.
 
 it would extend IPORM with more fine grained reconciliation control, and by constricting the interface between dev objects and IPORM base classes, so that they can work nicely with both sync and async modes
+
+### Separating IPORM functions from domain logic
+Some options in the HAMT are there purely because of the async nature of the HAMT, such as has() and get().  These options should be provided as clearly defined to be part of the IPORM functions, and not actually part of the domain logic.
