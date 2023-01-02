@@ -18,6 +18,11 @@ As new crawl events occur when new parts of the focused Pulse are retrieved, the
 
 Look inside the HAMT maps and reuse the immutable contents so we are sharing the same maps.
 
+### Configuring the reconciliation strategy
+When the reconciler is started, it is passed an options object that tells it what goals to pursue while doing its requested reconciliation.  By default it will synchronize only on demand, requiring the application to explicitly tell it to pull something down.
+
+### Emitting partial reconciled events
+Each time a new IPFS block is received, the reconciliation boundary will move forwards.  Currently we only announce when the full pulse is reconciled, but it is useful to announce before this as it can speed up React rendering opportunities.  To do this we would return a stream of events from `uncrush()` that returns a new iteration whenever a new block has been processed.  The async iterable would yield classes with CID links represented by a special Symbol, and the `isLoading` flag raised.  The async iterable would finish with the fully inflated pulse.  This would not include the network.  
 
 ### Marking punched out state
 The React app needs to be aware of some portions of the complex that may not have resolved from [[CID]]s yet.
@@ -37,4 +42,4 @@ Some applications want to use a previous version of the application where the da
 When an engine is receiving pulses from a previous engine, it is responsible for making structural sharing happen between the pulses.  This will require the engine to be aware of what requests for CIDs it is currently fulfilling, and deduplicating these requests to ensure the same object is passed back by reference.  This means the Complex structural sharing is a substructure of the Pulse structural sharing.
 
 ### Mocking the complex during storybooking
-Rapid mocking could be done by crafting a plain json object and then creating a mock Complex class out of it.
+Rapid mocking could be done by crafting a plain json object and then creating a mock Complex class out of it.  We could use the pulse updating tools directly for things like `setState` and for updating the network slice, and then generate a complex object from this.  Preferably actual chains would be used to create disposable temporary chains, then make a Crisp out of that.

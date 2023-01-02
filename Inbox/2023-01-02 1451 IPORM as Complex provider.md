@@ -12,7 +12,8 @@ Benefit would be that much of the class logic can be reused in the prop, since i
 Have built in functions for retriving past history of a specific chain.
 
 > iporm basically is a reconciler already
-> Basically decorate the object correctly depending on where it’s meant to land in order to eliminate impedance mismatch and still give good dx in each domain
+> Basically decorate the object correctly depending on where it’s meant to land in order to eliminate impedance mismatch and still give good dx in each domain.
+> Prevents the frontend walking away from the backend
 >  - *@rexmondo*
 
 if the IPORM interface was chosen wisely, then classes that inherit from IPORM could be instantiated as async chainland objects, or sync reactland objects
@@ -25,5 +26,8 @@ Ie: if I have an async IPORM instantiation of a class, and I call `.snapshot()` 
 
 it would extend IPORM with more fine grained reconciliation control, and by constricting the interface between dev objects and IPORM base classes, so that they can work nicely with both sync and async modes
 
+
+
 ### Separating IPORM functions from domain logic
 Some options in the HAMT are there purely because of the async nature of the HAMT, such as has() and get().  These options should be provided as clearly defined to be part of the IPORM functions, and not actually part of the domain logic.
+
