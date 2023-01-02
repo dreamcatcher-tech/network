@@ -89,3 +89,6 @@ If each node in the Crisp could walk up to its parent, then a path to root could
 Making a second layer that produces Crisps is annoying - the Pulse should be able to be passed in raw and used.  The only different to a Crisp is that the network is represented synchronously, and 
 
 ? Could the state tree be the Crisp ?
+
+### Crisp as a wrapper
+If a Crisp wraps a Pulse, and uses its access to the Pulse internals 
