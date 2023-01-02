@@ -41,7 +41,7 @@ This would wrap the whole app, passing `crisp` down to its child each time a n
 
 ```jsx
 <Engine repo="interpulse-1" dev={{...covenants}} peers={chainId: [peerId1,...]}  >
-	<Baker path="mtab/test-1" strategy={full: true}>
+	<Syncer path="mtab/test-1" inflation='full' subscription='latest' eviction='none'>
 		<App />
 	</Complex>
 </Engine>
@@ -49,6 +49,16 @@ This would wrap the whole app, passing `crisp` down to its child each time a n
 
 ### Configuring the reconciliation strategy
 When the reconciler is started, it is passed an options object that tells it what goals to pursue while doing its requested reconciliation.  By default it will synchronize only on demand, requiring the application to explicitly tell it to pull something down.
+
+#### `subscription = 'latest' | 'deepest' | 'every'`
+Upon receipt of a new Pulse, the strategies will:
+1. Latest: abandon the current inflation and immediately restart on the latest Pulse
+2. Deepest: await the current inflation reaching completion, then restart on the latest Pulse at time of completion.  This may skip some Pulses.
+3. Every: await the current inflation, then move on to the next Pulse in the stream.  This may quickly fall behind.
+#### `inflation = 'full' | 'lazy' | object`
+1. Full will walk the entire [[App Complex]] 
+2. Lazy will only walk what the application requests it to
+3. Object contains a template for what strategy to apply based on the path within the [[App Complex]].  This allows for discrete controls over keeping some parts fully inflated and other parts (such as long customer lists) lazy updated
 
 ### Emitting partial reconciled events
 Each time a new IPFS block is received, the reconciliation boundary will move forwards.  Currently we only announce when the full pulse is reconciled, but it is useful to announce before this as it can speed up React rendering opportunities.  To do this we would return a stream of events from `uncrush()` that returns a new iteration whenever a new block has been processed.  The async iterable would yield classes with CID links represented by a special Symbol, and the `isLoading` flag raised.  The async iterable would finish with the fully inflated pulse.  This would not include the network.  
@@ -86,9 +96,29 @@ Calling `bake()` at the top level causes all below to bake too.  The last bake r
 If each node in the Crisp could walk up to its parent, then a path to root could be discovered.  The engine could then be asked for the actions at that path, at a given approot hash, then functions mapped back and returned to the caller.  It could use context, rather than passing down actions that modify each Crisp: `useActions( crisp )` which gets the engine from context, then walks a path to root.
 
 ## Using the Pulse raw
-Making a second layer that produces Crisps is annoying - the Pulse should be able to be passed in raw and used.  The only different to a Crisp is that the network is represented synchronously, and 
+Making a second layer that produces Crisps is annoying - the Pulse should be able to be passed in raw and used.  The only different to a Crisp is that the network is represented synchronously, and there are more convenient methods available on a Crisp as the internals of Pulses are hidden away.
+
+Each Crisp has an approot pulse, and a path based on that approot Pulse that fully defines the Crisp.
 
 ? Could the state tree be the Crisp ?
 
+Move all async queries into the pulse into requiring an async inflation call first, so that the internals are a little inconvenienced, but can quickly end up in sync land.
+
+
+
 ### Crisp as a wrapper
-If a Crisp wraps a Pulse, and uses its access to the Pulse internals 
+If a Crisp wraps a Pulse, and uses its access to the Pulse internals to provide instant access to the Pulse, and it intercepts methods to get children, then Crisp can be a standalone object ?
+
+This might be a wrapper around the state tree, with some convenience methods.  The state tree is a DAG and so it can include all different link types.
+
+Provide the Pulse within the Crisp so that for any given Crisp, can walk down again from root.  Crisps can be generated new each request, 
+Calling `ensureChild( key )` signals the reconciler to fulfill the path to the requested slice.  If it returns false, it means it is attempting to load, if true then it has completed the load.  Presence is then ensured to be correct, so calls to `.has( key )` will be authoritative.
+
+Requesting a Crisp child can be a signal to the reconciler that it needs to load that portion of the state.  If you ask for a child and it doesn't know if it exists or not, you receive a Symbol back indicating that
+
+Crisp may allow deviation from the pulse by the use of get and set, to produce views.  These should be done as actual pulses tho ?
+
+The reconcilers job is to:
+1. walk each pulse it receives and apply the inflation strategy to load the data up into ram, based on the configurable inflation strategy
+2. receive new pulses, abandoning the previous pulse and walking only the differences of the new pulse, based on subscription strategy
+3. evict portions of the current pulse from ram to reduce footprint based on eviction strategy.
