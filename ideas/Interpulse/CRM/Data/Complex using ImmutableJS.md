@@ -93,8 +93,17 @@ Optionally stop any further updates at the root, or listen to them and use this 
 `complex.update( pulse, pulseResolver )`
 
 ## Error was removing too much of the chain
-The Complex should be a synchronous representation of the chain logic.
-Benefit
+The Complex should be a synchronous representation of the chain logic. It should contain everything that the chain does, have the same structure, and even have the same functions.  To remove the direct chain connection is to remake redux, and the whole thing falls apart.
+
+If the Complex is not made to be strongly linked to the chain complex, then devs will take many shortcuts too, further dissolving the utility of holding to the tree structure of DOS.
+
+The mapping between async and sync is handled by a reconciler, that can indicate inband if things are still loading, and can do cache ejection if memory gets tight.  The reconciler can be configured with fine grained synchronization settings for how to keep the Complex in sync with the chain.
+
+It might be possible to use the exact same classes that make up chains, but replace their IPFS parts with a synchronous representation.
 
 There should not be virtual Complex modification - there should be virtual chain constructions
+Benefit is to use the covenant logic for all operations, not having functions used in both contexts.
 
+External data should be ingested into chains then converted to complex, rather than attempting to connect to the Complex itself.  Modifying the meaning of the Complex leads people away from chainland, and back to the unstructured world of arbitrary objects composed for convenience, at the sake of long term preservation of app structure.
+
+The Complex must not have its own features, as this leads to a separate system that needs to be maintained, understood, and can grow apart from the core chain logic.
