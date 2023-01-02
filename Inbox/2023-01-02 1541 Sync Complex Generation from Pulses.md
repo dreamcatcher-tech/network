@@ -63,6 +63,8 @@ Querying the Map means different things, depending on the reconciliation state a
 
 Diff generation is done by taking the Pulse from the previous Crisp, and checking for diffs in the network.  Any diffs found are loaded up into the network slice by the
 
+If the HAMT is not fully loaded, we set the `isLoading` flag, and continue to walk the HAMT until all nodes have been visited.  This will ensure that the gets cache is inflated fully, and this should be trimmed at crush time.  Each time a pulse is cloned, the last crisp is carried thru to allow reconciliation next time.
+
 ### Signalling to the reconciler
 The App should be able to signal to the Reconciler that it needs different slices loaded.  This would be done with react context and a hook ?  Or pass in the complex object that you want to load, and the reconciler will figure out what you meant.
 
@@ -76,3 +78,14 @@ When an engine is receiving pulses from a previous engine, it is responsible for
 
 ### Mocking the complex during storybooking
 Rapid mocking could be done by crafting a plain json object and then creating a mock Complex class out of it.  We could use the pulse updating tools directly for things like `setState` and for updating the network slice, and then generate a complex object from this.  Preferably actual chains would be used to create disposable temporary chains, then make a Crisp out of that.
+
+### Recursive baking
+Calling `bake()` at the top level causes all below to bake too.  The last bake result is held in a cache for all non-hamt objects.  All 
+
+## Actions deep in the App
+If each node in the Crisp could walk up to its parent, then a path to root could be discovered.  The engine could then be asked for the actions at that path, at a given approot hash, then functions mapped back and returned to the caller.  It could use context, rather than passing down actions that modify each Crisp: `useActions( crisp )` which gets the engine from context, then walks a path to root.
+
+## Using the Pulse raw
+Making a second layer that produces Crisps is annoying - the Pulse should be able to be passed in raw and used.  The only different to a Crisp is that the network is represented synchronously, and 
+
+? Could the state tree be the Crisp ?
