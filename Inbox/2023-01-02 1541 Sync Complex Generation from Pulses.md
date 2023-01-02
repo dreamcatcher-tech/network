@@ -109,6 +109,10 @@ Move all async queries into the pulse into requiring an async inflation call fir
 ### Crisp as a wrapper
 If a Crisp wraps a Pulse, and uses its access to the Pulse internals to provide instant access to the Pulse, and it intercepts methods to get children, then Crisp can be a standalone object ?
 
+Hiding the internals of Pulses, but making them available upon request is good.  Using deep object access rules to trigger the reconciler is also good, since it is one less thing the dev has to manage.
+
+`.has( key )` returns a symbol if it doesn't know for sure, and dev must call `isLoading( result )` to determine.  The first call to `.has( key )` will trigger the reconciler, so on subsequent rerenders `isLoading( result )` will return false, and so the result can be relied upon as definitive.
+
 This might be a wrapper around the state tree, with some convenience methods.  The state tree is a DAG and so it can include all different link types.
 
 Provide the Pulse within the Crisp so that for any given Crisp, can walk down again from root.  Crisps can be generated new each request, 
