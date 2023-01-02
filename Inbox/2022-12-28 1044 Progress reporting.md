@@ -11,3 +11,5 @@ Progress and packets should be published.
 
 Graphs of time spent, money spent, competitor arrival risk, funds diminishing risk.
 Show different scenarios of money burn.
+
+Be able to indicate where investment should be placed.
