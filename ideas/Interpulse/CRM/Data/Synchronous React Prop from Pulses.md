@@ -89,5 +89,16 @@ The inflation map holds a marker for what count it was up to in the previous inf
 
 Syncing in only possible for crushed Pulses for simplicity right now.
 
+## Tracking the inflations
+Because the inflation state is independent of a Pulse, we must track it separately.  Because we want Crisps to be deterministic, we must snapshot the current sync state.  But we also want structural sharing and good garbage collection properties.  
+
 ### A Map of Maps
-Because the inflation state is independent of a Pulse, we must track it separately.  Because 
+To solve these constraints we opt for a map of maps.  The top level map is held by the Syncer instance, and is a map of pulseIds to a map of channelIds.  The map of channelIds relates each channelId to a pulseId.  A Pulse is considered 'synced' if all the channelIds have been matched to pulseIds and all diffs have also been related to pulseIds.
+
+This MapMap is passed to each Crisp at creation, and each child from that Crisp also receives it.  Each call to `.bakeCrisp( path )` uses the MapMap to get the pulseId that will back the child.  The child will attempt to fetch the Pulse synchronously from the Syncer, and will return a Crisp wrapping the result, whatever it might be.
+
+### A Tree of Maps
+Alternatively if we held a Map for each root pulse that mapped its channelIds to other maps
+
+### The Syncing Process
+First update all the diffs - the pulse is not replaced until this completes, since the next pulse needs to use the existing base if this is the case.  Once complete, replace the backing pulse with the new one.  Check for an 'up to' counter in chain Ids, and continue inflation from that point on.  If the map already has this item, then skip it as it would have been updated by a diff check earlier.
