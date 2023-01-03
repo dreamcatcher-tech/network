@@ -91,8 +91,20 @@ Later, your app will receive a prop that has an expanded slice at the location y
 ### Reconciling History
 Some applications want to use a previous version of the application where the data is frozen in place. This would need to be registered as a frozen hardlink in chainland, and is treated no different by the reconcilation process.
 
-### Pulse structural sharing
+### Pulse deduplication
 When an engine is receiving pulses from a previous engine, it is responsible for making structural sharing happen between the pulses.  This will require the engine to be aware of what requests for CIDs it is currently fulfilling, and deduplicating these requests to ensure the same object is passed back by reference.  This means the Complex structural sharing is a substructure of the Pulse structural sharing.
+
+### Crisp HAMT structural sharing
+When an engine is syncing from a remote, as new Pulses become available, the Syncer is responsible for ensuring the Immutable Map inside the Pulse is managed in a way that reuses inflation from the most recent Pulse.
+
+During pulsemaking, the gets and puts inside the HAMT are cached, but the focus of these caches is on rapid diff detection from the previous Pulse, not on complete inflation with a possibly skipped lineage.  For this reason, the map inside the HAMT used to cache gets must be managed by the Syncer differently when the Engine is in follow mode with a remote Pulsestream.
+
+Whenever a new Pulse is received, the inflater looks at the last known Pulse that it received, which may not be any of the immediate parents.  For the Network item, it calculates the diff between the two.  It then takes the get cache of the previous Pulse and updates it with the detected differences.
+
+If the inflation had not finished with the previous object, it will continue on where it left off, storing its progress as the channelId count that it is up to.  The other HAMTs for hardlinks and other types are synced in the same way.  It is possible to generate them based on the contents of the channels list, but it seems more generic to handle each HAMT individually, rather than rely on unique knowledge of this particular implementation.
+
+Syncing in only possible for crushed Pulses for simplicity right now.
+
 
 ### Mocking the complex during storybooking
 Rapid mocking could be done by crafting a plain json object and then creating a mock Complex class out of it.  We could use the pulse updating tools directly for things like `setState` and for updating the network slice, and then generate a complex object from this.  Preferably actual chains would be used to create disposable temporary chains, then make a Crisp out of that.
