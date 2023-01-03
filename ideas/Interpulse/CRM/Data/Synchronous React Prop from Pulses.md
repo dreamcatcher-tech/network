@@ -97,8 +97,14 @@ To solve these constraints we opt for a map of maps.  The top level map is held 
 
 This MapMap is passed to each Crisp at creation, and each child from that Crisp also receives it.  Each call to `.bakeCrisp( path )` uses the MapMap to get the pulseId that will back the child.  The child will attempt to fetch the Pulse synchronously from the Syncer, and will return a Crisp wrapping the result, whatever it might be.
 
+Downside is the performance of a large map, but given that Crisps are only needed in memory constrained environments anyway, the map will have other limits on it, so performance should remain strong.
+
 ### A Tree of Maps
-Alternatively if we held a Map for each root pulse that mapped its channelIds to other maps
+Alternatively if we held a Map for each root pulse that mapped its channelIds to other maps then this would more closely model how a Pulse holds symlinks and children.  Symlinks would be resolved by path and then pointed to if valid, but if the pointer was out of date we would just make a new map of the historical Pulse.
+
+Has some speed advantages over a large map.
+
+Fails because as the Syncer expands, shared pointers would need updating too, or else they will be stuck on an uninflated version.  Stale pointers would need special treatment too, so MapMap is simpler.
 
 ### The Syncing Process
 First update all the diffs - the pulse is not replaced until this completes, since the next pulse needs to use the existing base if this is the case.  Once complete, replace the backing pulse with the new one.  Check for an 'up to' counter in chain Ids, and continue inflation from that point on.  If the map already has this item, then skip it as it would have been updated by a diff check earlier.
