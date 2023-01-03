@@ -39,17 +39,22 @@ Control behaviour upon receipt of a new Pulse
 1. Latest: abandon the current inflation and immediately restart on the latest Pulse
 2. Deepest: await the current inflation reaching completion, then restart on the latest Pulse at time of completion.  This may skip some Pulses.
 3. Every: await the current inflation, then move on to the next Pulse in the stream.  This may quickly fall behind.
+
 #### `inflation = 'full' | 'lazy' | object`
 Control what inflation goals to pursue
 1. Full will walk the entire [[App Complex]] 
 2. Lazy will only walk what the application requests it to
 3. Object contains a template for what strategy to apply based on the path within the [[App Complex]].  This allows for discrete controls over keeping some parts fully inflated and other parts (such as long customer lists) lazy updated
+
 #### `eviction = 'none' | 'lru'`
 Strategy for memory management thru cache eviction
 1. None will never evict anything, and will eventually crash the machine
 2. LRU will detect memory pressure and remove from cache whatever was least recently signaled by the app as being used.  
-
 Eviction is a two stage process.  Evicted items are put in a recycle bin, then Eviction causes React to rerender by creating a new root Crisp.  If anything re-renders the app signals it need something in the recycle bin it will be moved back into the current cache.  On the next re-render the bin will be deleted.
+
+#### `concurrency = N`
+0 or default is unthrottled.
+Otherwise at most N requests for channel objects or Pulses will be underway.
 
 ### Signalling to the Syncer
 Signaling to the reconciler occurs implicitly using the two map based access methods on the Crisp:
