@@ -51,7 +51,7 @@ Strategy for memory management thru cache eviction
 
 Eviction is a two stage process.  Evicted items are put in a recycle bin, then Eviction causes React to rerender by creating a new root Crisp.  If anything re-renders the app signals it need something in the recycle bin it will be moved back into the current cache.  On the next re-render the bin will be deleted.
 
-### Signalling to the reconciler
+### Signalling to the Syncer
 Signaling to the reconciler occurs implicitly using the two map based access methods on the Crisp:
 1. `hasChild( path )` will trigger the reconciler to seek to inflate that path if it has not done so already, or if it has inflated already it will reinsert it to the top of the LRU queue.  If this path exists in the [[App Complex]] then in some future render, this test will return `true`.
 2. `bakeChild( path )` will remind the reconciler to keep this piece inflated, as it is being used.  It will throw an error if `hasChild( path )` is `false`
@@ -89,3 +89,5 @@ The inflation map holds a marker for what count it was up to in the previous inf
 
 Syncing in only possible for crushed Pulses for simplicity right now.
 
+### A Map of Maps
+Because the inflation state is independent of a Pulse, we must track it separately.  Because 
