@@ -33,10 +33,10 @@ The interface may be decorated with convenience methods much as the Pulse class 
 ## Actors
 ### Crisp
 ### Pulse
-### Baker
+### Syncer
 ### Engine
 
-## The Baker
+## The Syncer
 This would wrap the whole app, passing `crisp` down to its child each time a new Pulse was received by the Engine.
 
 ```jsx
@@ -59,6 +59,14 @@ Upon receipt of a new Pulse, the strategies will:
 1. Full will walk the entire [[App Complex]] 
 2. Lazy will only walk what the application requests it to
 3. Object contains a template for what strategy to apply based on the path within the [[App Complex]].  This allows for discrete controls over keeping some parts fully inflated and other parts (such as long customer lists) lazy updated
+#### `eviction = 'none' | 'lru'`
+1. None will never evict anything, and will eventually crash the machine
+2. LRU will detect memory pressure and remove from cache whatever was least recently signaled by the app as being used.  
+
+Signaling to the reconciler occurs using `has( key )` and `get( key )`.  `has( key )` will trigger the reconciler to seek to inflate, `get( key )` will remind the reconciler to keep this piece inflated, as it is being used.  Eviction is a two stage process.  Evicted items are put in a recycle bin, then Eviction causes React to rerender by creating a new root Crisp.  If anything renders and calls `.has( key )`, if it is in the recycle bin it will be moved back into the current cache.
+
+### Reducing re-renders
+Creating a new Crisp each top level render may be avoided if `getChild( path )` can tell if the cached map is still the same as last time, and providing the exact same object back.  This would need to be made aware if an eviction test is currently taking place so that a new object was constructed only for this purpose.
 
 ### Emitting partial reconciled events
 Each time a new IPFS block is received, the reconciliation boundary will move forwards.  Currently we only announce when the full pulse is reconciled, but it is useful to announce before this as it can speed up React rendering opportunities.  To do this we would return a stream of events from `uncrush()` that returns a new iteration whenever a new block has been processed.  The async iterable would yield classes with CID links represented by a special Symbol, and the `isLoading` flag raised.  The async iterable would finish with the fully inflated pulse.  This would not include the network.  
