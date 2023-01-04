@@ -107,9 +107,18 @@ Downside is the performance of a large map, but given that Crisps are only neede
 ### A Tree of Maps
 Alternatively if we held a Map for each root pulse that mapped its channelIds to other maps then this would more closely model how a Pulse holds symlinks and children.  Symlinks would be resolved by path and then pointed to if valid, but if the pointer was out of date we would just make a new map of the historical Pulse.
 
-Has some speed advantages over a large map.
-
-Fails because as the Syncer expands, shared pointers would need updating too, or else they will be stuck on an uninflated version.  Stale pointers would need special treatment too, so MapMap is simpler.
+Has some speed advantages over a large map, but fails because as the Syncer expands, shared pointers would need updating too, or else they will be stuck on an uninflated version.  Stale pointers would need special treatment too, so MapMap is simpler.
 
 ### The Syncing Process
 First update all the diffs - the pulse is not replaced until this completes, since the next pulse needs to use the existing base if this is the case.  Once complete, replace the backing pulse with the new one.  Check for an 'up to' counter in chain Ids, and continue inflation from that point on.  If the map already has this item, then skip it as it would have been updated by a diff check earlier.
+
+## Change awareness
+When a new approot pulse arrives but is not fully synced, the previous channels map cannot be used as we may present inconsistent data to the application by bluring the old and the new Pulse together unintentionally.
+
+This can be mitigated by only reacting to the new Crisp after it is fully synchronized, but this may take a long time and may be concerned with regions of the application not of interest to the user immediately.
+
+By providing `crisp.isPending()` we can allow a crisp to be aware if it *might* be succeeded by different data.  As the syncer walks the diffs and finds out, we can add certainty to different paths in the tree.  `crisp.isSucceeded()` checks if we have been succeeded by new data, but the syncer has not completed yet so cannot provide a consistent top level prop yet.  `crisp.getSuccessor()` if can be used to get the successor, if there is one.
+
+This approach leaves it to the app to show new data quickly, or wait for the full sync to complete, or offer some visual cues to the user that change is occuring.
+
+This is especially interesting to the user if we are waiting on their changes to be rippled thru the tree.
