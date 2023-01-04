@@ -117,7 +117,22 @@ Alternatively if we held a Map for each root pulse that mapped its channelIds to
 
 Since the goal of the Crisp is a synchronous version of the app complex that exactly mirrors the Pulse structure, modelling as a tree of maps is closer.  It has better garbage collection properties as the previous tree can be discarded fully with no need to check anything.
 
+The inflated map should be exactly the HAMT, with the exact same objects within it.  This minimizes new object creation, and eases debugging and architecting.  The object will grow as the map is inflated since we use object reference in place of hash reference.
+
 Has some speed advantages over a large map, but fails because as the Syncer expands, shared pointers would need updating too, or else they will be stuck on an uninflated version.  Stale pointers would need special treatment too, so MapMap is simpler.
+
+Big advantage is in deletion - removing a single reference deletes the whole tree, rather than incuring the cost of walking the tree.
+
+In a synchronous context IPORM translates in the following 3 ways:
+1. For regular IPORM objects we are providing some simplified version of them.  
+2. For HAMT objects we are providing a Map with optional inflation params.  
+3. For hashlinked objects we are using object references with some inflation params.
+So IPORM would provide different objects back for HAMTs based on context, then devs could make optional wrappers around those objects.  For any given IPORM model, the syncer can produce back class objects with different properties within them.  HAMTs are a wrapped form of hashlinked data.
+
+So the dev needs to tell IPORM where the hashlink breaks are using schema, and then if in hashlinked or referenced mode, the calls to retrieve that data need to
+IPORM should allow for an object to be fully inflated based on some params, like how `.crush()` works.  Hashlinked boundaries are marked as either an inflation boundary or a hash boundary.
+
+In a synchronous context the data is returned directly or an error thrown if not inflated, in an asynchronous
 
 ### The Syncing Process
 First update all the diffs - the pulse is not replaced until this completes, since the next pulse needs to use the existing base if this is the case.  Once complete, replace the backing pulse with the new one.  Check for an 'up to' counter in chain Ids, and continue inflation from that point on.  If the map already has this item, then skip it as it would have been updated by a diff check earlier.
