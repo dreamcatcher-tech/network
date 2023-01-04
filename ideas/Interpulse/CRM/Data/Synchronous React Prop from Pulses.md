@@ -46,6 +46,9 @@ Control what inflation goals to pursue
 2. Lazy will only walk what the application requests it to
 3. Object contains a template for what strategy to apply based on the path within the [[App Complex]].  This allows for discrete controls over keeping some parts fully inflated and other parts (such as long customer lists) lazy updated
 
+### `direction = 'breadth' | 'width'`
+How to walk the [[App Complex]] - breadth first, or depth first.
+
 #### `eviction = 'none' | 'lru'`
 Strategy for memory management thru cache eviction
 1. None will never evict anything, and will eventually crash the machine
@@ -68,6 +71,11 @@ Creating a new Crisp each top level render may be avoided if `bakeChild( path )`
 Each time a new IPFS block is received, the inflation boundary will move forwards.  Currently we only announce when the full pulse (minus any HAMTs) is inflated, but it is useful to announce before this as it can speed up React rendering opportunities.  To do this we would return a stream of events from `uncrush()` that returns a new iteration whenever a new block has been processed.  The async iterable would yield classes with CID links represented by a special Symbol, and the `isLoading` flag raised.  The async iterable would finish with the fully inflated pulse.  This would not include the network slice.  The advantage is that providing `state` to the app would be as fast as possible, and would not wait for the rest of the Pulse to inflate.
 
 Using the Statetree as the basis for Crisps would speed this up even more.
+
+### Progressive first sync
+Waiting for the first sync to complete could be painful.
+If we have reached the end of diffing with the previous pulsemap, then we should emit new Crisps rapidly, since incomplete but consistent information is better than no information.
+Crisps that are undergoing mutation rather than deletion or addition could provide an extra `isUpdating` flag that indicates the view you have right now is stale and a new one is coming, so you can choose to keep displaying it, or signal to the users somehow, or use the old version.
 
 ### Inflating History
 Some applications want to use a previous version of the application where the data is frozen in place. This would need to be registered as a frozen hardlink in chainland, and is treated no different by the reconcilation process.
@@ -106,6 +114,8 @@ Downside is the performance of a large map, but given that Crisps are only neede
 
 ### A Tree of Maps
 Alternatively if we held a Map for each root pulse that mapped its channelIds to other maps then this would more closely model how a Pulse holds symlinks and children.  Symlinks would be resolved by path and then pointed to if valid, but if the pointer was out of date we would just make a new map of the historical Pulse.
+
+Since the goal of the Crisp is a synchronous version of the app complex that exactly mirrors the Pulse structure, modelling as a tree of maps is closer.  It has better garbage collection properties as the previous tree can be discarded fully with no need to check anything.
 
 Has some speed advantages over a large map, but fails because as the Syncer expands, shared pointers would need updating too, or else they will be stuck on an uninflated version.  Stale pointers would need special treatment too, so MapMap is simpler.
 
