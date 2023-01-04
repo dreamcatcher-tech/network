@@ -132,7 +132,13 @@ So IPORM would provide different objects back for HAMTs based on context, then d
 So the dev needs to tell IPORM where the hashlink breaks are using schema, and then if in hashlinked or referenced mode, the calls to retrieve that data need to
 IPORM should allow for an object to be fully inflated based on some params, like how `.crush()` works.  Hashlinked boundaries are marked as either an inflation boundary or a hash boundary.
 
-In a synchronous context the data is returned directly or an error thrown if not inflated, in an asynchronous
+To make the IPORM model work with both raw IPFS and Chains, all that is required is how it resolves links and inflation boundaries.  The same interface can be supplied to the consumer, which is classes with logic of their description,
+
+Both levels could be used together, mixing IPFS and chain data if required. 
+
+In a synchronous context the data is returned directly or an error thrown if not inflated, in an asynchronous context the result must be awaited, but it is definitive.
+
+Reducers might be able to use the IPORM objects as a means of doing things like `useState` and other inflation related things.
 
 ### The Syncing Process
 First update all the diffs - the pulse is not replaced until this completes, since the next pulse needs to use the existing base if this is the case.  Once complete, replace the backing pulse with the new one.  Check for an 'up to' counter in chain Ids, and continue inflation from that point on.  If the map already has this item, then skip it as it would have been updated by a diff check earlier.
