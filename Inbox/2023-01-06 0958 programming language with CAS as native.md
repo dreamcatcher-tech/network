@@ -10,3 +10,12 @@ If a language was made so that all objects were internally always hashed, and th
 We can provide a notion of this language on top of the blockchain system, but it would be faster if implemented natively.
 
 Perhaps IPORM can give us a form of this, but using functions inside JS.
+
+## Operations
+### Equality
+
+
+## Fetching
+Once have a handle on some content, could inflate it from anywhere.
+Store has special meaning as it depends on the amount of replication you want.
+We are basically moving all interpulse operations to be language features.
