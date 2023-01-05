@@ -160,11 +160,6 @@ The consistency model of a Crisp then, is that for a given Crisp it will always 
 
 We can use a weakmap to cache the crisp against the map that is supplied to it, so we can cache all crisps if the map they were given is still the same, allowing React to speed up its renders.
 
-Need 3 kinds of hashlinks:
-1. Internal to the object
-2. External to the object
-3. Historical to the object (could be internal or external)
-All Content Addressed systems have a notion of current and history, since they are all implicitly CoW.  Having content that points to other content addresses is common.  When the content is mutated, the new content should reference the old, for audit reasons.  When asking to view the content in full, with all links resolved, we often do not want the historical view unless we specifically ask for it.
 
 ### The Syncing Process
 First update all the diffs - the pulse is not replaced until this completes, since the next pulse needs to use the existing base if this is the case.  Once complete, replace the backing pulse with the new one.  Check for an 'up to' counter in chain Ids, and continue inflation from that point on.  If the map already has this item, then skip it as it would have been updated by a diff check earlier.
