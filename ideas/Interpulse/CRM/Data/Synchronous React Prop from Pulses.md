@@ -156,6 +156,10 @@ When there is a predecessor, do not emit new rootCrisp events until the deletes 
 
 Ensure Crisp is singular and consistent by memoizing each call to its children, and using only the map at the instant the call was made.  This also stops wasteful re-renders since the object is the same.  Each new root causes all previous calls to be discarded.
 
+The consistency model of a Crisp then, is that for a given Crisp it will always give the same structure results whenever its children are accessed, but the later the Crisp is asked for its first piece of data, the more the data would have been inflated by the Syncer.  So once asked it will always give the same answer, but it only reifies itself at the instant of asking - before asking you can't say for sure what the answer will be, as it depends on the hydration boundary.
+
+We can use a weakmap to cache the crisp against the map that is supplied to it, so we can cache all crisps if the map they were given is still the same, allowing React to speed up its renders.
+
 ### The Syncing Process
 First update all the diffs - the pulse is not replaced until this completes, since the next pulse needs to use the existing base if this is the case.  Once complete, replace the backing pulse with the new one.  Check for an 'up to' counter in chain Ids, and continue inflation from that point on.  If the map already has this item, then skip it as it would have been updated by a diff check earlier.
 
