@@ -142,6 +142,18 @@ Reducers might be able to use the IPORM objects as a means of doing things like 
 
 The whole process of inflation is really turning the `tip` in each channel into a fully resolved Pulse, rather than stopping at the object boundary.  Internal and external boundaries.
 
+
+### Storing the inflations inside Ipld classes
+Make the Pulselink class store an object that represents its inflation.
+Make the HAMT class able to store a map of its contents which is abandoned upon clone.
+
+So given a IPORM object (such as a Pulse) and optionally its predecessor from arbitrarily long ago, walk the class deeply to find any instances of HAMT or PulseLink.  Use the classmap in the class to get this information without walking super deep like in State.
+
+Begin inflation using diffing, doing all the mods and deletes first.  Then emit new rootCrisp events as the adds are inflated.  Store the objects in the HAMT and Pulselink classes as Immutable.Map and the pulselinked IPORM class.  Recursively do the same inflation based on the inflation strategy.
+
+While there is no previous instance, emit new rootCrisp events so the app can render progressively.
+When there is a predecessor, do not emit new rootCrisp events until the deletes and modifies are fully updated, to avoid flickering in the app.  Then emit new rootCrisp events for each add, so the app can progressively render and be constent the whole way along.
+
 ### The Syncing Process
 First update all the diffs - the pulse is not replaced until this completes, since the next pulse needs to use the existing base if this is the case.  Once complete, replace the backing pulse with the new one.  Check for an 'up to' counter in chain Ids, and continue inflation from that point on.  If the map already has this item, then skip it as it would have been updated by a diff check earlier.
 
