@@ -140,6 +140,8 @@ In a synchronous context the data is returned directly or an error thrown if not
 
 Reducers might be able to use the IPORM objects as a means of doing things like `useState` and other inflation related things.
 
+The whole process of inflation is really turning the `tip` in each channel into a fully resolved Pulse, rather than stopping at the object boundary.  Internal and external boundaries.
+
 ### The Syncing Process
 First update all the diffs - the pulse is not replaced until this completes, since the next pulse needs to use the existing base if this is the case.  Once complete, replace the backing pulse with the new one.  Check for an 'up to' counter in chain Ids, and continue inflation from that point on.  If the map already has this item, then skip it as it would have been updated by a diff check earlier.
 
