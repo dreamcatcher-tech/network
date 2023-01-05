@@ -154,6 +154,8 @@ Begin inflation using diffing, doing all the mods and deletes first.  Then emit 
 While there is no previous instance, emit new rootCrisp events so the app can render progressively.
 When there is a predecessor, do not emit new rootCrisp events until the deletes and modifies are fully updated, to avoid flickering in the app.  Then emit new rootCrisp events for each add, so the app can progressively render and be constent the whole way along.
 
+Ensure Crisp is singular and consistent by memoizing each call to its children, and using only the map at the instant the call was made.  This also stops wasteful re-renders since the object is the same.  Each new root causes all previous calls to be discarded.
+
 ### The Syncing Process
 First update all the diffs - the pulse is not replaced until this completes, since the next pulse needs to use the existing base if this is the case.  Once complete, replace the backing pulse with the new one.  Check for an 'up to' counter in chain Ids, and continue inflation from that point on.  If the map already has this item, then skip it as it would have been updated by a diff check earlier.
 
