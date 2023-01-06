@@ -160,6 +160,7 @@ The consistency model of a Crisp then, is that for a given Crisp it will always 
 
 We can use a weakmap to cache the crisp against the map that is supplied to it, so we can cache all crisps if the map they were given is still the same, allowing React to speed up its renders.
 
+Be able to flag an IPORM class or field as not part of the Syncer, so only specific things come thru.
 
 ### The Syncing Process
 First update all the diffs - the pulse is not replaced until this completes, since the next pulse needs to use the existing base if this is the case.  Once complete, replace the backing pulse with the new one.  Check for an 'up to' counter in chain Ids, and continue inflation from that point on.  If the map already has this item, then skip it as it would have been updated by a diff check earlier.
