@@ -175,3 +175,11 @@ By providing `crisp.isPending()` we can allow a crisp to be aware if it *might* 
 This approach leaves it to the app to show new data quickly, or wait for the full sync to complete, or offer some visual cues to the user that change is occuring.
 
 This is especially interesting to the user if we are waiting on their changes to be rippled thru the tree.
+
+## Testing with Crisps
+### Options
+1. Make a test engine, and fork the root chain each time
+2. Make a crisp from js, and reload a mock
+3. Load up chains from CAR files, allowing browser to cache them
+
+Loading the data into the chains directly would take too much time, 
