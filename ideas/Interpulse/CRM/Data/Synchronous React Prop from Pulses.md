@@ -183,3 +183,16 @@ This is especially interesting to the user if we are waiting on their changes to
 3. Load up chains from CAR files, allowing browser to cache them
 
 Loading the data into the chains directly would take too much time, 
+Make an alternate endurance source, so when supplied, pulse data is looked up using one of the alternate sources.
+Make a separate repo that holds large binary commits.  Download the whole file, parse it, then have a map of all the bytes in that large array.
+
+### Exporting
+First load up all the data by doing an import on json data and creating customers.  This may take some time.  Then do a walk using the syncer to pass back a map with every Pulse that is required to be synced from the given pulse.  Ensure these are stored in order.  
+
+### Importing
+Get a handle on a stream to the large data file using `fetch()`.  This should be cached by the browser.
+Begin processing the stream to turn it into blocks that can sit in ram in a large Map object.  We need not decode everything, but we do need to be able to call on the bytes if required.
+Better would be a binary format that lets us walk some kind of tree index to get the CIDs out.
+Better still would be a remote server that held the chain live and could sync it down using no intermediate format.
+
+Probably still useful to have an http fetcher.  Each block to disk independently seems  a bit too much load.
