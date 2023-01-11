@@ -14,3 +14,7 @@ Can let people submit results from their own machines, so different platforms ca
 Matrix comparison between different versions of the library.
 
 Comparisons using ranges of inputs.
+
+Making it distributed would allow you to publish in README.md but also people can download it, run it, fork it.  Can run it live in your browser or select some other machines on the public cloud to execute it.  Can select from the matrix of versions, can add your own row to it, can supply your own results to it.
+
+Can be extended out to opinions, like features in software, and can use wikipedia as a reference.
