@@ -41,3 +41,6 @@ This can be done by wrapping the request into something that goes into the IO ch
 If we run a specific side effect with no containment, then the programming interface may feel like it is running in isolation, but its context is actually the whole machine that it is running on.  In this way we can run any function, like write a file to the disk at the users requested location.
 
 But for testing, the same code can run in any context we provide it with.
+
+## `useRef()`
+Often we want some piece of mutable data to last longer than just the current side effect - we want it for the life of the effect context.  Here we can provide a hook into some part of the isolation boundary that is consistently available.  This could be used to store a `libp2p` instance in the case of the network.
