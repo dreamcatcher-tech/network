@@ -21,13 +21,23 @@ On this action it will update the new pulses parent info.
 If a child is attached and it is not
 
 ## Awareness
-If we always walked down from root, we would be aware of a fork having occured if we marked it so in the network slice.  However we should be able to infer this information from the status of the children.
+If we always walked down from root, we would be aware of a fork having occured if we marked it so in the network slice.  However we should be able to infer this information from the status of the children.  The signature that a fork has occured is by looking at the child, and seeing a mismatch between what it thinks its parentId is, and what its attached parent is.
+
+Forks should assert the channel is empty before proceeding.
+
+## Attaching a root pulse
+Attachment is detectable here since the parent is stated as being root, but its true parent has an actual chainId, so the discrepancy is obvious.
 
 ## V1 - incremental openPaths
 Insert the imported pulse as a child of any chain in the system using `@@INSERT` command.
 Reading by path will walk as normal.
 Writes will go thru the path opening procedure.
-When a chain receives
+When the parent recieves `OPEN_CHILD` then it sends it to the inserted pulse as normal.
+The engine 
+
+We may need to allow a channel to change its chainId, so long as it is empty, to accomodate forking.  Or the fork destination can be recomputed on the fly as a single pulse, like a genesis pulse, which becomes the new chainId.  It can be determined repeatably from the previous pulse, so it can be computed before the transmission to the child occurs.
+
+The first action to the child can be `@@FORK` which acts like `@@GENESIS` in that it contains the old pulseId, and old chainId, but is addressed to the forked version of the pulse.  The engine, when it sees this, knows to look at the prior address in the action, and creates the new chainId from it.
 
 The insertion point must be forked, because the parent needs to be able to talk to it without having its chainId shift.  `REPLACE`  would force a pulse into place where it was newer or older but was from the same lineage as the thing it was replacing.  Like doing a hard reset in git, or checking out a prior version of a file.
 
