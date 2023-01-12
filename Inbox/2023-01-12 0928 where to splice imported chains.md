@@ -15,7 +15,10 @@ If we want to fork it if changes occur, then we need a means of updating the par
 
 Turns out that the `OPEN_PATH` strategy is important since it needs to be fork aware.  Also the update strategy must be able to detect when a fork has occured.
 
+## JIT Forking
 Requires that forks be lazy, so no operations are required as the inserted tree might be large.  Instead this will require that each transmission to a child first check that it doesn't need to fork its child first.  This appears the only way that allows no data changes up front.
+
+Relies on all comms with the new chains being initiated from the parent, so the first chain to talk to the freshly forked chains is always their parent.  Could have a drilldown action so that `@@FORK` can carry an optional path that each parent passes to its child, to ensure we can directly access a child.  The Engine would need to check for any forks in the path before opening up direct access.
 
 ## Editing
 Reading by path is easy to do.  Writing means we would have to call `@@OPEN_PATH` on the parents all the way down.  When a chain knows it has a forked child, then it will send its action as normal, but the blockmaker will create a fork.
@@ -42,11 +45,10 @@ Sents out `@@FORK` with the old and new addresses.
 Seals its own block.
 These steps should be done as the last part of transmission, by the engine, rather than in the DMZ.
 
+Outstanding promises need to be blanked to the child, and any replies should cause error.
 
 Then when the engine attempts to transmit, if the transmission is a fork, it applies the fork to the existing pulse, and then stores the new pulse as a genesis pulse, having no requirements for signing since only the next pulse is important for signature verification.
 Engine blanks all tx channels, and resets anything that was waiting with a 'forked' error.
-
-Relies on all comms with the new chains being
 
 The inserted chains should be free of tension, but their comms will
 
