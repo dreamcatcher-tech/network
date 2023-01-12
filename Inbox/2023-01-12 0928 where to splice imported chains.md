@@ -68,6 +68,10 @@ Access to a child can be granted instantaneously by using ACL rules in the appco
 
 So granting access would be paused until the prior chains had completed blocking and the fork had occured correctly.  This is less load on the system.  Instant access means instant close, too, so we can clean up the channel tables.  Cleaning these channels makes exports more direct as the alias tables will be smaller.  
 
+## V3 - 
+If we rely on the first actions into any part of the forked tree always coming from its forked parent, we can simplify how forking is handled in the engine.
+
+When attaching the pulse to the existing complex, we do not yet know the address of the chain, since all the additions are done using just a pulselink.  It might 
 
 ## Problems
 
