@@ -46,3 +46,13 @@ The filesystem is a type of commit, so why not just make it all be uncommited, a
 Can make a form of micro commit if you want to take a little snapshot, to go back to or to cause file runners to kick in.
 
 Could share little gists of code around with a full environment attached, and access to large compute resource to try it out.  Same as the [[2023-01-11 1905 Comparators site]].
+
+There would be no boot time for codespaces and they would work offline or during intermittent network easily.  Would be like 
+
+Run multiple branches simultaneously - so we could dance between git branches while at the same time dancing between branches for the node_modules folder, so we can see the impact of another persons node_modules on our particular branch.  Each folder and file can be treated as an independent git repo, as git is built in to all files and directories seamlessly.
+
+If Git was a part of all files by default, would we still need git ?
+File saves would be commits, commits would be like tags, and tags would be like, releases (or something - super commits)
+A git based filesystem.  Git native fs.
+Might need a platform where these files get shared around and provide a web interface to them.
+Dropbox alternative would treat saves to the fs as a commit to one of these shared files.
