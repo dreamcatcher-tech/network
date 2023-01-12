@@ -15,6 +15,8 @@ If we want to fork it if changes occur, then we need a means of updating the par
 
 Turns out that the `OPEN_PATH` strategy is important since it needs to be fork aware.  Also the update strategy must be able to detect when a fork has occured.
 
+Requires that forks be lazy, so no operations are required as the inserted tree might be large.  Instead this will require that each transmission to a child first check that it doesn't need to fork its child first.  This appears the only way that allows no data changes up front.
+
 ## Editing
 Reading by path is easy to do.  Writing means we would have to call `@@OPEN_PATH` on the parents all the way down.  When a chain knows it has a forked child, then it will send its action as normal, but the blockmaker will create a fork.
 On this action it will update the new pulses parent info.
@@ -32,8 +34,21 @@ Attachment is detectable here since the parent is stated as being root, but its 
 Insert the imported pulse as a child of any chain in the system using `@@INSERT` command.
 Reading by path will walk as normal.
 Writes will go thru the path opening procedure.
-When the parent recieves `OPEN_CHILD` then it sends it to the inserted pulse as normal.
-The engine 
+When the parent goes to transmit, it checks if the child is actually a fork by detecting parental mismatch.
+First it checks if the fork action has been dispatched already, and does nothing if so.
+If a fork is detected, it asserts that nothing else was being sent to that channel.
+Then readdresses the channel with the new chainId.  
+Sents out `@@FORK` with the old and new addresses.
+Seals its own block.
+These steps should be done as the last part of transmission, by the engine, rather than in the DMZ.
+
+
+Then when the engine attempts to transmit, if the transmission is a fork, it applies the fork to the existing pulse, and then stores the new pulse as a genesis pulse, having no requirements for signing since only the next pulse is important for signature verification.
+Engine blanks all tx channels, and resets anything that was waiting with a 'forked' error.
+
+Relies on all comms with the new chains being
+
+The inserted chains should be free of tension, but their comms will
 
 We may need to allow a channel to change its chainId, so long as it is empty, to accomodate forking.  Or the fork destination can be recomputed on the fly as a single pulse, like a genesis pulse, which becomes the new chainId.  It can be determined repeatably from the previous pulse, so it can be computed before the transmission to the child occurs.
 

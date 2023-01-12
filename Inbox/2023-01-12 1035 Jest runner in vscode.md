@@ -40,3 +40,7 @@ Can also run the whole thing on your local machine, or you can make your local m
 These same resources can also serve as hosting for things like webservers, or chain services.
 
 Make a strong gateway that hosts static content and then allow more transient computers to provide chain compute for services.
+
+Weird to have save files, unsaved files, and committed files.
+The filesystem is a type of commit, so why not just make it all be uncommited, and edits are just saved instantly to chain ?
+Can make a form of micro commit if you want to take a little snapshot, to go back to or to cause file runners to kick in.
