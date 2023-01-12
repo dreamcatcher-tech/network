@@ -22,6 +22,15 @@ Relies on all comms with the new chains being initiated from the parent, so the 
 
 This is similar to the requirement that all read access reads the parent first.
 
+## Keeping updated with remote chains
+If the fork is configured this way, probably with a flag in the channel of the attachment point, then at the instant a forked chain is being written to for the first time (necessarily by its parent), its already forked parent will have its latest field updated to the latest the engine can attain.  Latest is stored in mtab and tracked live if at all, so that blockmaking will not stall for some indefinite period of time.  Mtab has flags available for auto follow or manual update, so what 'latest' means is defined using these tools.
+
+So channels need an extra field where if they are being used as a fork mount point, the parameters of that point are stored in this object.  Can indicate if the chain is allowed to be written to in the first place, altho a hardlink may be the place for that.
+
+Chains that have been forked can, optionally, have changes in the origin merged in, providing there are no conflicts.  Unsure of the usecase for this.
+
+
+
 ## Editing
 Reading by path is easy to do.  Writing means we would have to call `@@OPEN_PATH` on the parents all the way down.  When a chain knows it has a forked child, then it will send its action as normal, but the blockmaker will create a fork.
 On this action it will update the new pulses parent info.
