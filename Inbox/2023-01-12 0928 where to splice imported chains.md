@@ -20,6 +20,8 @@ Requires that forks be lazy, so no operations are required as the inserted tree 
 
 Relies on all comms with the new chains being initiated from the parent, so the first chain to talk to the freshly forked chains is always their parent.  Could have a drilldown action so that `@@FORK` can carry an optional path that each parent passes to its child, to ensure we can directly access a child.  The Engine would need to check for any forks in the path before opening up direct access.
 
+This is similar to the requirement that all read access reads the parent first.
+
 ## Editing
 Reading by path is easy to do.  Writing means we would have to call `@@OPEN_PATH` on the parents all the way down.  When a chain knows it has a forked child, then it will send its action as normal, but the blockmaker will create a fork.
 On this action it will update the new pulses parent info.
