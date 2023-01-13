@@ -56,3 +56,6 @@ File saves would be commits, commits would be like tags, and tags would be like,
 A git based filesystem.  Git native fs.
 Might need a platform where these files get shared around and provide a web interface to them.
 Dropbox alternative would treat saves to the fs as a commit to one of these shared files.
+
+SaveAll would be atomic.
+Stepback / undo could be across multiple files, and would be part of the filesystem, not part of the editor.
