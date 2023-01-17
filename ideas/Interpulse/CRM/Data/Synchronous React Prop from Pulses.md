@@ -175,3 +175,9 @@ By providing `crisp.isPending()` we can allow a crisp to be aware if it *might* 
 This approach leaves it to the app to show new data quickly, or wait for the full sync to complete, or offer some visual cues to the user that change is occuring.
 
 This is especially interesting to the user if we are waiting on their changes to be rippled thru the tree.
+
+The diffs should be inserted into each Hamt and as the map is expanded, the diff is decreased.  This way a new pulse can begin syncing and carry on where the last one left off by merging the new diff with the remaining diff.
+
+The diffs themselves could be built up gradually, but this might be quick enough to not be required.  We would simply mark the diff as incomplete.
+
+Hamts might have a bake reference to the previous hamt that was synced, so that if a Crisp wants to get the last consistent view, it has a way.  In general, the Crisp is more useful to be inconsistent but current.  The crisp would be aware of what was possibly different by looking at the diff, and would know the sync hadn't yet completed.
