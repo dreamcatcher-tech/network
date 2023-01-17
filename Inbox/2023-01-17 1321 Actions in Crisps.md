@@ -13,3 +13,9 @@ Means there is no need to have mutability in the root crisp, and the mutability 
 Also syncer need not keep a separate list of covenants, but can just walk as usual.
 
 Makes segments of the crawl portable.
+
+What about accumulated actions higher up in the path ?  what should their target be ?
+### eg: cd()
+Could walk up the tree and get the actions of everything in the path ?
+
+? how to handle the root of the sync, where there are higher path segments, like the shell ?
