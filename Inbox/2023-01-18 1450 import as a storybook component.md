@@ -7,6 +7,8 @@
 
 Should be able to run and test the import logic and the auto data generation logic within storybook itself to get quick feedback on how the code should work, and once working stays there as a test.
 
+CollectionsList could have an import function
+
 ## Fake data generation
 Run a batch script.
 Click a download button to cause the import to run.
