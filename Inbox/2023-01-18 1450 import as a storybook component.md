@@ -9,6 +9,8 @@ Should be able to run and test the import logic and the auto data generation log
 
 CollectionsList could have an import function
 
+How to make the import easy, and the same as the fake data ?
+
 ## Fake data generation
 Run a batch script.
 Click a download button to cause the import to run.
