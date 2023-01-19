@@ -10,4 +10,5 @@ storybook quotes: Storybook provides a workshop to build UIs in isolation. It he
 
 but with this blockchain wrapper we're softening that considerably, by allowing you to isolate the app itself into different hard to reach states. Like componentizing the database as well as the UI.
 
-componentizing the database.
+By binding to the database early, heavy isolated testing occurs on the dappabase, early.  Also the bindings are subject to inspection constantly, so far less chance of errors occuring.  With the dappabase being inspected visually thru UI components, finely detailed errors are spotted, as typically a database and its application are developed blind, on CLI.
+
