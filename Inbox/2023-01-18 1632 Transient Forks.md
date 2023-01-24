@@ -22,6 +22,11 @@ When a transient acts like it is a child of a chain, but is not
 ## Merging back into App
 Eventually the transient may be transitioned into a permanent part of the main app.  When this happens we need to do a merge or a fork of the transient, then mount the fork in the main app.  The recipient of the fork would have logic that would allow it to ascertain the validity of the inserted fork.  Forks may be mounted without history if we do not want to check the history, or if we do not want to carry it around.
 
+`@@MERGE` should allow the transient fork to be spliced into the 
+
+## Avoiding transients
+In the case of the CRM runDates, we might avoid transients altogether by simply making a real chain if a runDate is not present.  Then modifications are simply datums that get updated.
+
 ## Create transient engines that share the repo
 Benefit is that the fork is free, as it read from the existing repo and the point of inception.
 The overlay repo would be entirely in ram, so when it was unmounted, the ram is recovered.
@@ -37,7 +42,9 @@ The overlay repo would be entirely in ram, so when it was unmounted, the ram is 
 `exclusive` means there is only ever one transient, and if there is an existing one, use this instead of making a new one.
 
 ## Handling updates to the fork
-If the data used to fork from updates, then the transient should gracefully update, but preserve what has been altered already.  Walk the fork, find the diff with the incoming data, refork over the top ?
+If the data used to fork from updates, then the transient should gracefully update, but preserve what has been altered already. If a conflict is detected, then an alert should be presented to the user.  The transient engine should watch the fork point, and when it detects a change, it should rebuild itself, which would cause the app to redraw.
+
+Walk the fork, find the diff with the incoming data, refork over the top ?
 
 ## Mounting in root
 If root had a `tmp/` directory where transient forks were mounted, then these transients would be browseable from root, and would also be kept around for some period of time.  Sharing the transients directory as part of debugging could be very helpful.  Transients cannot be part of the prod app root, since they would be forking or altering it in some way.  Path format could be `/transients/[app path]/[auto name]`
