@@ -1,0 +1,1 @@
+Being able to demonstrate complete independence from the cloud, whilst still providing all of the features of cloud delivered software should be seen as a dangerous warning shot, signalling the end of the cloud based era.
