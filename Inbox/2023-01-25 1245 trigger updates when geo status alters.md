@@ -21,3 +21,10 @@ If a customer sector membership is changed by sector geometry change, then a hum
 
 ## Unpublished manifests
 When the manifest is not yet locked to a specific instance of the customers and routing collections, then it needs to be calculated on the fly.  If this was a transient, then this is easy to remount it whne changes are detected.
+
+## Triggers
+### Sector changes
+Should cause a complete recalculation where a polygon map is built, then all the customers are walked, then order is updated.
+
+### Customer changes
+When a customer gps location is updated, 
