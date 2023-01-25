@@ -5,6 +5,8 @@
 
 >[!danger] Depends: 
 
+The danger is having the tree inconsistent if the datum records something that is ultimately out of date.
+
 ## Options
 1. Customers collection update sends
 2. routing/sector/order only includes those items that have been approved by a human
@@ -24,7 +26,11 @@ When the manifest is not yet locked to a specific instance of the customers and 
 
 ## Triggers
 ### Sector changes
-Should cause a complete recalculation where a polygon map is built, then all the customers are walked, then order is updated.
+Should cause a complete recalculation where a polygon map is built, then all the customers are walked, then order is updated.  Can be optimized by looking at what is already present.
 
 ### Customer changes
 When a customer gps location is updated, 
+
+### Simultaneous triggers
+If a sector and a customer change at the same time, trouble may occur.
+If the customers collection always told the sectors collection to recheck itself, and the sectors collection did its own rechecking on geometry change, then this should be sufficient ?
