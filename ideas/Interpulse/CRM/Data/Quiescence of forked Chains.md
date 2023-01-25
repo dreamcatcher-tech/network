@@ -22,3 +22,8 @@ If the requests, replies, and promises are being received from a foreign chain, 
 If this was not intended, then a replacement target should be spliced in before `@@QUIESCE`.
 
 We can allow for splices to be made where a foreign chain destination is forcibly replaced with some other foreign destination, in order to mock or redeploy the fork.
+
+## Active Quiescence
+The approot may be put into a mode where it will not accept any external stimulus, and will only process what is within the app complex.  This can be useful to produce a master copy type of backup, where no tension exists in the system.  This is a change to the way the engine operates, rather than any particular state change in the complex.  The engine starts to buffer external stimulus until quiescence is achieved.
+
+This may also be achieved by creating a fork, then quescing it, then taking another fork. 
