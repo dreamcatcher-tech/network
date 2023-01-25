@@ -15,6 +15,7 @@ The danger is having the tree inconsistent if the datum records something that i
 5. Sector membership is a derived property in each customer
 6. Customer reducer will not complete until it has updated the sector arrays with its membership
 7. Customer reducer sends a notification to the sectors collection to update with the customer changes
+8. hardlink that is kept updated in sectors, that triggers every time a new customer parent forms
 
 ## Customer Status
 The status of each customer needs to be stored in the customer itself ?
