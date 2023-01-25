@@ -4,6 +4,13 @@
 
 >[!danger] Depends: 
 
+The storybook story, the UI component, and the covenant should be operated on as a single unit.
+
+Whilst there are unit tests on the covenant logic, the UI tests are the ultimate - these are full integration tests, but isolated down to a specific component.
+
+This relationship exists because the object model that humans have in their head should be captured into the application object model almost directly, and so these components can be tested and met with user approval in isolation before being combined into a larger application.
+
+
 Encourages development of them as a tightly coupled bundle.
 Let people build up their storybooks from a library of things others have made.
 Submit your changes back.
