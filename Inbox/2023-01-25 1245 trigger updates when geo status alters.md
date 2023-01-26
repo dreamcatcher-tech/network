@@ -16,6 +16,7 @@ The danger is having the tree inconsistent if the datum records something that i
 6. Customer reducer will not complete until it has updated the sector arrays with its membership
 7. Customer reducer sends a notification to the sectors collection to update with the customer changes
 8. hardlink that is kept updated in sectors, that triggers every time a new customer parent forms
+9. Require the application user to trigger an update when it can see a recompute is needed
 
 ## Customer Status
 The status of each customer needs to be stored in the customer itself ?
@@ -35,3 +36,8 @@ When a customer gps location is updated,
 ### Simultaneous triggers
 If a sector and a customer change at the same time, trouble may occur.
 If the customers collection always told the sectors collection to recheck itself, and the sectors collection did its own rechecking on geometry change, then this should be sufficient ?
+
+## Manual Recompute
+If the gui has a button to recalculate sectors, rather than it be automatic, this might be a good interim fix.  The app could detect when it was out of date, and could offer the button to perform a recalc if required.
+
+Without this, 

@@ -58,3 +58,9 @@ Allowing the crisp to be modified to have the same effect as a transient fork wo
 
 ## Filtering the Crisp
 Filtration, or putting transforms in front of the crisp may be possible.  But again, this is departing from carrying the covenant state and logic into the component, and requires another layer in between the component and the databaseapp - the dappabase.
+
+## Treating all user interactions as transient
+Another way to approach the problem is to treat all operations as a fork, followed by a merge to prod.  The app keeps pulling in changes from remote, and merges them in.  In this way, transients would be the default, so needs no special treatment.
+
+## Including transients into the application itself
+Storing all the users drafts as part of the production application seems more beneficial in the crm use cases, as privacy is not a large concern.  Privacy between users could still be achieved using the [[ACL]].
