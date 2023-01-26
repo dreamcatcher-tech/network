@@ -50,6 +50,8 @@ Initial compute can be manual, using a manual trigger, which we can automate lat
 ## Recording human approval
 This should be done within each individual customer, and would store a static view of the sector membership.  If the parameters of the sector change, then we need to raise a flag to indicate inspection is required.  This requires presenting a virtual view.
 
+Walk the collection, possibly going from newest to oldest by going back thru pulse history.  Each time an item is displayed, get its approval data.  If not present, or if different to what is in the routing tree at this moment, display it as an error, allowing it to be sorted for.
+
 ### Change to sectors requiring approval
 If the sectors are redrawn, then a customer might end up changing sectors.  When approval was given to a customer as being set up correctly, we should bake in what sector they are part of.
 
@@ -63,3 +65,8 @@ The link may be rejected if we set up in isolated testing.
 If subscriptions was a state field in the schema, then we could actively send out the updates when they occured.  These would only be sent out on change.
 
 So would need a hook to know when children had updated.
+
+## Computing entirely in the browser
+As a shortcut, we could do the update checking entirely browserside, on demand from the user.
+The browser then writes the updated sectors into the routing chain.
+

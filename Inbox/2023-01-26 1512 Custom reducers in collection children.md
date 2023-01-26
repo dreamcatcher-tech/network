@@ -18,3 +18,5 @@ If template was used as the state, but the template was actually an installer, i
 Manifests need to be hardlinked to the customer array at the time they were created
 
 Shortcut can be to route this action thru the parent collection, then down to the child.
+
+May make a new type of collection so don't break things with this new version.
