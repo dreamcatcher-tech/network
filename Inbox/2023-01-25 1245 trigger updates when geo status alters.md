@@ -45,6 +45,7 @@ This api action in routing means
 If the gui has a button to recalculate sectors, rather than it be automatic, this might be a good interim fix.  The app could detect when it was out of date, and could offer the button to perform a recalc if required.
 
 Without this, need to hook when updates occur, so we can optionally process them in reducers.
+Initial compute can be manual, using a manual trigger, which we can automate later.
 
 ## Recording human approval
 This should be done within each individual customer, and would store a static view of the sector membership.  If the parameters of the sector change, then we need to raise a flag to indicate inspection is required.  This requires presenting a virtual view.
