@@ -37,7 +37,28 @@ When a customer gps location is updated,
 If a sector and a customer change at the same time, trouble may occur.
 If the customers collection always told the sectors collection to recheck itself, and the sectors collection did its own rechecking on geometry change, then this should be sufficient ?
 
+If routing received a signal from root that customers had changed, then
+
+This api action in routing means 
+
 ## Manual Recompute
 If the gui has a button to recalculate sectors, rather than it be automatic, this might be a good interim fix.  The app could detect when it was out of date, and could offer the button to perform a recalc if required.
 
-Without this, 
+Without this, need to hook when updates occur, so we can optionally process them in reducers.
+
+## Recording human approval
+This should be done within each individual customer, and would store a static view of the sector membership.  If the parameters of the sector change, then we need to raise a flag to indicate inspection is required.  This requires presenting a virtual view.
+
+### Change to sectors requiring approval
+If the sectors are redrawn, then a customer might end up changing sectors.  When approval was given to a customer as being set up correctly, we should bake in what sector they are part of.
+
+If this changes, then we can know this ahead of time when presenting.
+
+Telling the customers collection to write down the sector memberships of all might be feasible too.  But can avoid this heavy operation by computing on the fly.  So approvals are one at a time, manual, and we detect when they are different using a selector.
+
+## Hardlink between customers and routing
+On install, this action should be set up so we try to make the connection.  The connection must be mutual, so that changes to customers are propogated back.
+The link may be rejected if we set up in isolated testing.
+If subscriptions was a state field in the schema, then we could actively send out the updates when they occured.  These would only be sent out on change.
+
+So would need a hook to know when children had updated.
