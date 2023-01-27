@@ -32,3 +32,7 @@ Maybe only the redeemable part is a token, and so the tokens can be spent to pay
 They are always redeemable as long as there is enough paying customers of the main chain.  Their value is always stable because the resource they offer is stable, but slowly decaying.
 
 A good way to spend them is to use them to purchase compute resources, offer this to people to purchase, then keep the coins generated as a side effect.
+
+The issuer can tune the rate based on how much is outstanding, not bonded, current thruput, and current rates of change, or trends that are occuring.
+Bonds can be issued where people promise to lock up their funds, or start to bleed them down in a measured sense.
+The value being caputured is the utility of the interpulse algorithm as a programming model.
