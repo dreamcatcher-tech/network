@@ -6,6 +6,7 @@
 >[!danger] Depends: 
 
 The danger is having the tree inconsistent if the datum records something that is ultimately out of date.
+Initially it does not matter how long it takes to compute changes, so long as the system stays responsive and the user is told what it is doing, and they cannot interupt it.
 
 ## Options
 1. Customers collection update sends
