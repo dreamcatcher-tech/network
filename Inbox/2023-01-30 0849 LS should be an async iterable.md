@@ -33,3 +33,12 @@ Things like sort() need to be applied on the client side since won't make sense 
 ## Replacing SQL
 Go thru all SQL functions and see how we might manage them in our system.
 Compare with mongodb API and see if we can be exactly API compatible, permitting a straight swap for any mongo applications.  These apps might be able to run browserside in some cases.
+
+## Implicit Stream Processing
+A common pattern is to iterate over a large collection of chains and do some processing.
+If the iteration was streaming in, then the processing can be streamed too.
+If the iterations are able to continue on between block boundaries, then we can give a more responsive application.
+Eg: processing point in polygon tests for the [[CRM Goals]] could be done as a stream, rather than as a large thread blocking computation.  We might use state checking updates, so that if the state is not the same as when we read it, we do nothing - this would allow subsequent running reducers to update before some earlier but slower pass.
+
+We may add `useExclusively()` as a means of guaranteeing we are the only instance of the reducer running at this point, so whilst we may be spread over many pulses, we can be guaranteed that all other actions are buffering behind us.
+If `useExclusively()` is force broken, then it will throw, which the developer might wish to handle somehow.
