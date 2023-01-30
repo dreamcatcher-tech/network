@@ -42,3 +42,8 @@ Eg: processing point in polygon tests for the [[CRM Goals]] could be done as a s
 
 We may add `useExclusively()` as a means of guaranteeing we are the only instance of the reducer running at this point, so whilst we may be spread over many pulses, we can be guaranteed that all other actions are buffering behind us.
 If `useExclusively()` is force broken, then it will throw, which the developer might wish to handle somehow.
+
+## Streaming contents and calculations
+If the way that data was fetched and presented was in a progressive stream, and the way calculation is returned was no different, then the user can have a completely streaming experience, where there is no difference if the streaming results are because calculation is taking place or if data is being synchronized - they are effectively the same thing and so the UI will feel more responsive.
+
+If the UI is already made to handle streaming data, then streaming calculation is available by default.
