@@ -51,9 +51,9 @@ Refresh of sectors can be done to recheck the sectors against all the customers.
 ### Customer gps change
 When an individual customer is changed, then we update them in the sectors at the point of save. `UPDATE_GPS` is sent to Routing collection with the custNo.  This avoids the need to watch for updates in the customers collection itself.  This will recheck which sector this gps belongs to, see if it is already included, place itself in the unordered list since the gps has moved.  If not included, will remove itself from all other sectors, add itself to the top of the ordered list, and the bottom of the unordered list.  If no sector, added to the unassigned sector.
 
-At edit time, if moving the location would alter the service, must cancel the service first, then can move the customer.
+At edit time, if moving the location would alter the service, must cancel the service first, then can move the customer.  Customers with an assigned service MUST have a gps.
 
-Customers with an assigned service MUST have a gps.
+Two types of error exist in the system - routing error where the location must be routed correctly, and service error where the customer must have its service configuration reviewed.
 
 ### Sectors redrawn
 Changing a sector will cause the whole collection to recompute.  Existing locations are not moved to unordered.  Might detect changes if the sector order size changes, then we mark everything as unordered.  Might just always recalculate everything.  Defer this until after deployment.
@@ -63,7 +63,12 @@ When a sector run date changes, then affected customers are put in the unsorted 
 They stay in the sorted list, but are also added to the unsorted list.
 Unapproved and not in the ordered list immediately goes to the top.
 Each customer is verified for correctness by looking it up in the sector, checking if it is in the unordered list, displaying a virtual data point if so.  Pass down as virtual props into the datum.
+Each sector, when it has a service assigned to it, takes a snapshot of the sector that it is included in.  If this changes, then in the customer list, these customers show up as an error.  
 
+### Initial computation
+Trigger `REBUILD` to walk all the customers, and find their locations again.  This method will not detect customers with a changed gps location, unless we store reference to the customer collection pulseId that we are complete for.  Customers should not be able to alter their gps without the sector being updated about it.
+
+Walks the whole customer list, and runs the same action as `UPDATE_GPS` for each one.  If the sector is being moved, will be marked as unordered.  Else it will be left as ordered.  Full version will check against the last known pulseId of the customer to see if the gps altered.
 
 ## V4 storing gps in the sectors
-If the gps location was not in the customer, but was stored in the sector, then changes become obvious.
+If the gps location was not in the customer, but was stored in the sector, then changes become obvious.  This might be used by storing the location in both places, so that sectors can be redrawn rapidly without address info, and so that changes in gps can be detected.
