@@ -44,4 +44,26 @@ Tablets would acknowledge if they received a customer update in time.
 
 ## V3 storing unordered customers separately
 In each sector, store a list of customers that we know we have not had approved separately, and only move them when a human reorders them.
-When an individual customer is changed, then we update them in the sectors before allowing the save to occur `UPDATE_LOCATION` is sent to Routing collection.  This avoids the need to watch for updates in the customers collection itself.
+Avoids storing anything in the customer record other than the pickup frequency multiple and the gps location.
+Publish rejects if unordered customers that would be scheduled on a particular day.
+Refresh of sectors can be done to recheck the sectors against all the customers.  Would check against the last stored version of the customers chain that it did a rebuild against.
+
+### Customer gps change
+When an individual customer is changed, then we update them in the sectors at the point of save. `UPDATE_GPS` is sent to Routing collection with the custNo.  This avoids the need to watch for updates in the customers collection itself.  This will recheck which sector this gps belongs to, see if it is already included, place itself in the unordered list since the gps has moved.  If not included, will remove itself from all other sectors, add itself to the top of the ordered list, and the bottom of the unordered list.  If no sector, added to the unassigned sector.
+
+At edit time, if moving the location would alter the service, must cancel the service first, then can move the customer.
+
+Customers with an assigned service MUST have a gps.
+
+### Sectors redrawn
+Changing a sector will cause the whole collection to recompute.  Existing locations are not moved to unordered.  Might detect changes if the sector order size changes, then we mark everything as unordered.  Might just always recalculate everything.  Defer this until after deployment.
+
+### Rundate changes
+When a sector run date changes, then affected customers are put in the unsorted list.
+They stay in the sorted list, but are also added to the unsorted list.
+Unapproved and not in the ordered list immediately goes to the top.
+Each customer is verified for correctness by looking it up in the sector, checking if it is in the unordered list, displaying a virtual data point if so.  Pass down as virtual props into the datum.
+
+
+## V4 storing gps in the sectors
+If the gps location was not in the customer, but was stored in the sector, then changes become obvious.
