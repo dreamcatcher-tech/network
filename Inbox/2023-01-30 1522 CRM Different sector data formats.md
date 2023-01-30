@@ -15,6 +15,8 @@ Could sectors also be a derived property, so all that is stored is a hardlink to
 
 THEN display logic just receives two crisps - routing and customers, plus a runDate, then it works everything out from there.  For virtual manifests we just pass in the latest crisps.  For published manifests, we pass in the crisps from the hardlinks.
 
+Customer has said the sectors are not going to change during the test phase.
+
 ## Checking consistency
 We can make the consistency check be done browser side and have a progress bar for performing it.  This can be done before publishing a manifest, so we can avoid having to do it live. 
 
@@ -39,3 +41,7 @@ If we did not store the manifest at all, but simply recreated it from the custom
 Only on reconciliation is a manifest created, to store the hardlinks of the customers at that point in time.  
 There seems no point to snapshot the customers, if we had tablets.
 Tablets would acknowledge if they received a customer update in time.
+
+## V3 storing unordered customers separately
+In each sector, store a list of customers that we know we have not had approved separately, and only move them when a human reorders them.
+When an individual customer is changed, then we update them in the sectors before allowing the save to occur `UPDATE_LOCATION` is sent to Routing collection.  This avoids the need to watch for updates in the customers collection itself.
