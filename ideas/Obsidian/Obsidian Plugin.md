@@ -37,3 +37,6 @@ If backed by git, we can use git diffs as the means of expressing the chat histo
 Can connect slack or discord or any other chat service to every other chat service in this way.
 
 Opening a chat 'server' is opening a folder, then channels are files, groups of channels are folders of channel files.  Links in the chats to the obsidian graph and mapped specially so that other users have the same access.
+
+## Connection between vaults
+Obsidian is very much a personal experience - linking between vaults is difficult and does not fit the seamless workflow.  Browsing the world vault should be the same as your own, and agents should help you find connection to the world vault, allowing communication connections between people you would otherwise absolutely not have found.
