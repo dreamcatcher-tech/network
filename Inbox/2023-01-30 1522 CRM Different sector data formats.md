@@ -70,5 +70,8 @@ Trigger `REBUILD` to walk all the customers, and find their locations again.  Th
 
 Walks the whole customer list, and runs the same action as `UPDATE_GPS` for each one.  If the sector is being moved, will be marked as unordered.  Else it will be left as ordered.  Full version will check against the last known pulseId of the customer to see if the gps altered.
 
+### Historical views
+If the [[approot]] is stored in each chain, then we do not need to store snapshots of the customers or sectors tables.  We can look this up at the point of reconconciliation.  
+
 ## V4 storing gps in the sectors
 If the gps location was not in the customer, but was stored in the sector, then changes become obvious.  This might be used by storing the location in both places, so that sectors can be redrawn rapidly without address info, and so that changes in gps can be detected.
