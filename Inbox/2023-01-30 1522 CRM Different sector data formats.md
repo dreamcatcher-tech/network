@@ -73,5 +73,16 @@ Walks the whole customer list, and runs the same action as `UPDATE_GPS` for each
 ### Historical views
 If the [[approot]] is stored in each chain, then we do not need to store snapshots of the customers or sectors tables.  We can look this up at the point of reconconciliation.  
 
+### Schedules Generation
+Search thru all customers and see if they have a transaction on the given runDate.
+Publish should mark that customer as having a pending service.  Reconciliation will close that out.  This marks that the customer was due on that date, and causes it to show up in furture queries, regardless of how the sectors and gps locations may change.  This would also lock the pdf template to the service, so it can be recreated at whim.
+
+These queries might be slow if the number of active customers is large.  We could do these queries in multiple ways:
+1. Write them to disk in /schedules/runDate and be sure to modify them whenever the customer is updated
+2. yield the query in the UI, so the results dribble in without locking the UI
+3. run the query in a webworker
+4. Cache the query so it is only slow once, and then gets patched during the user session
+5. Run the query in the main UI thread and see how we go.
+
 ## V4 storing gps in the sectors
 If the gps location was not in the customer, but was stored in the sector, then changes become obvious.  This might be used by storing the location in both places, so that sectors can be redrawn rapidly without address info, and so that changes in gps can be detected.
