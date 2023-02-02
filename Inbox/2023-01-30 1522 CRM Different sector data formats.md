@@ -94,20 +94,11 @@ Within this, each sector has its own manifest with its own publication dates.
 Each manifest is used as a search string for customers that match its params.  The parameters are `/app/schedule/[runDate]/[sectorId]`  Searching gets the sector from the `[sectorId]`, which is frozen based on the approot, then it goes thru every customer in the order list.  If the customer is due a collection, it is included in the list.  If the customer is added in the manifest as a special case, it is included too.  All customers in the order are searched for the presence of a transaction for the runDate - if found, they are included in the list too.
 
 A customer can be in one of 3 states:
-1. pending - they are in the sector order list, or in the additions list for the runDate, but the customer has not been marked as being part of a schedule
-2. scheduled - they have been marked as being scheduled for collection and an invoice has been generated or can be generated
+1. pending - they are in the sector order list, or in the additions list for the runDate, but the customer has not been marked as being part of a schedule - they are included in a search, but have not yet been altered in any way
+2. scheduled - they have been marked as being scheduled for collection and an invoice has been generated or can be generated, as well as the sectors and customer record at that point in time can be retrieved.
 3. completed - collection has been reconciled, and either completed or did not complete for a given reason.
 
-Basically if no reconciliation has occured, then a customer is included 
-
-If a customer is reconciled, but is not in the sector, then it needs to be added as a special case to the manifest.
-
-
-But since we already have the sector memberships, pure search is less complicated, if it is performant enough.
-
-Edge case is to search all customers and look for any collections made on a specific day.
-
-Allow the addition of adhoc customers not on the particular day.
+The customer transaction is recorded as a single object, which has a two way reference to `/app/schedule/[runDate]/[sectorId]` which allows it to be looked up from either direction.
 
 ### Holidays
 We need to be able to pick up the whole manifest and move it to another day.
