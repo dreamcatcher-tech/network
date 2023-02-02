@@ -75,7 +75,10 @@ If the [[approot]] is stored in each chain, then we do not need to store snapsho
 
 ### Schedules Generation
 Search thru all customers and see if they have a transaction on the given runDate.
-Publish should mark that customer as having a pending service.  Reconciliation will close that out.  This marks that the customer was due on that date, and causes it to show up in furture queries, regardless of how the sectors and gps locations may change.  This would also lock the pdf template to the service, so it can be recreated at whim.
+A customer has a pending service if they have an active subscription for the runDate and they are in a sector for that runDate.
+Publish of any customer, including "publish all" creates a `/app/schedules/[runDate]/[sector]` child, and writes each published customer as having a pending service.  Reconciliation will close that out.  Unpublishing will delete it, and the last unpublish for a day will also delete the runDate child.
+
+Marking the customer causes it to show up in furture queries, regardless of how the sectors and gps locations may change.  This would also lock the pdf template to the service, so it can be recreated at whim.  This makes the portal show up with the status of each customer without leaking informaiton about other customers.
 
 These queries might be slow if the number of active customers is large.  We could do these queries in multiple ways:
 1. Write them to disk in /schedules/runDate and be sure to modify them whenever the customer is updated
@@ -85,11 +88,15 @@ These queries might be slow if the number of active customers is large.  We coul
 5. Run the query in the main UI thread and see how we go.
 
 ### Manifest display
-If a runDate child exists, then we have a published schedule for the day.
+If a runDate child exists, then we have a published schedule for at least one customer on that day.
 Within this, each sector has its own manifest with its own publication dates.
-The runDate child might be auto created if any manifest is published.
 
-Each manifest is used as a search string for customers that match its params.  Searching gets the sector, which is frozen based on the approot, then it goes thru every customer in the order list.  If the customer is due a collection, it is included in the list.  If the customer is added in the manifest as a special case, it is included too.  All customers in the order are searched for the presence of a transaction for the runDate - if found, they are included in the list too.
+Each manifest is used as a search string for customers that match its params.  The parameters are `/app/schedule/[runDate]/[sectorId]`  Searching gets the sector from the `[sectorId]`, which is frozen based on the approot, then it goes thru every customer in the order list.  If the customer is due a collection, it is included in the list.  If the customer is added in the manifest as a special case, it is included too.  All customers in the order are searched for the presence of a transaction for the runDate - if found, they are included in the list too.
+
+A customer can be in one of 3 states:
+1. pending - they are in the sector order list, or in the additions list for the runDate, but the customer has not been marked as being part of a schedule
+2. scheduled - they have been marked as being scheduled for collection and an invoice has been generated or can be generated
+3. completed - collection has been reconciled, and either completed or did not complete for a given reason.
 
 Basically if no reconciliation has occured, then a customer is included 
 
@@ -106,7 +113,7 @@ Allow the addition of adhoc customers not on the particular day.
 We need to be able to pick up the whole manifest and move it to another day.
 On the donor runDate, set a flag that moves it to another day - a child named `movedTo` that points to its destination perhaps.
 In the recipient runDate, the moved sector is displayed for that day.
-Merging is marked as special case modifications in both donor and recipient.
+Merging is marked as special case modifications in both donor and recipient.  May label this novation.
 
 ## V4 storing gps in the sectors
 If the gps location was not in the customer, but was stored in the sector, then changes become obvious.  This might be used by storing the location in both places, so that sectors can be redrawn rapidly without address info, and so that changes in gps can be detected.
