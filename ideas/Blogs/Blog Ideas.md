@@ -3,5 +3,17 @@ Taxation using object trade and ambient attribution - pay a certain fee to the g
 
 Govt should be a pot that you have a vote on each time you pay into the pot, with the pot that you voted in.
 
+### Business model for SaaS
+To quote from [Nomadlist](https://nomadlist.com/faq#free): 
 
+> I love free software and could not have built my site without it. But free web services are not like free software. If your free software project suddenly gets popular, you gain resources: testers, developers and people willing to pitch in. If your free website takes off, you lose resources. Your time is spent firefighting and your money all goes to the nice people at Linode.
 
+We need a revenue model because web apps cost resources to run.  We offer a platform where the deployment of SaaS can mimick free software better, and it costs money based on usage.  The revenue model baseline is set immediately, so if the site explodes in popularity, you will make some money by default rather than lose it to AWS.
+
+To further quote them:
+
+> **Like a service? Make them charge you** or show you ads. If they won't do it, clone them and do it yourself. Soon you'll be the only game in town!
+
+If we start to clone popular free sites, particularly those that are open source, and pay back to those sites, then anyone having problems with the cost of providing SaaS for free should soon switch over to us.
+
+In our environment, usage graphs and metrics would come built in to the platform.  We embed privacy for the users too.
