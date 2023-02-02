@@ -111,3 +111,21 @@ If the gps location was not in the customer, but was stored in the sector, then 
 
 ## V5 running active error check
 Instead of maintaining correctness, ask the users to run the check manually each time they want to know if the system is consistent.
+
+### Notes
+Schedule object could be entirely virtual, by pushing a hardlink to the routing object only.  Then sectors are always calculated on the fly.
+
+1. create a schedule for a runDate
+	1. filter the sectors by those that occur on this runDate
+	2. Make a wrapper manifest object for each one, as a child of the schedule
+	3. Filter the order by customers due on this day, pushing down the computation into the manifest object as its init action, or next action, to give progressive results, possibly with blockbreaking based on elapsed time
+	4. Delete the other useless data
+	5. Keep a hardlink to the original sector (or just use approot)
+2. Use the manifest obect to interact with customers directly
+	1. Mark the customers as scheduled, so they are definitely included in a collection schedule
+	2. Mark customers as completed, so they are billed and emailed
+3. Use the manifest object to store modifications
+	1. When holidays occur, 2 way link to the other runDate
+	2. Add casual collections
+	3. Remove collections for any reason
+	4. Move collections to other sectors
