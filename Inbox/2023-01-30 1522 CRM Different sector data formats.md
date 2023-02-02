@@ -84,5 +84,29 @@ These queries might be slow if the number of active customers is large.  We coul
 4. Cache the query so it is only slow once, and then gets patched during the user session
 5. Run the query in the main UI thread and see how we go.
 
+### Manifest display
+If a runDate child exists, then we have a published schedule for the day.
+Within this, each sector has its own manifest with its own publication dates.
+The runDate child might be auto created if any manifest is published.
+
+Each manifest is used as a search string for customers that match its params.  Searching gets the sector, which is frozen based on the approot, then it goes thru every customer in the order list.  If the customer is due a collection, it is included in the list.  If the customer is added in the manifest as a special case, it is included too.  All customers in the order are searched for the presence of a transaction for the runDate - if found, they are included in the list too.
+
+Basically if no reconciliation has occured, then a customer is included 
+
+If a customer is reconciled, but is not in the sector, then it needs to be added as a special case to the manifest.
+
+
+But since we already have the sector memberships, pure search is less complicated, if it is performant enough.
+
+Edge case is to search all customers and look for any collections made on a specific day.
+
+Allow the addition of adhoc customers not on the particular day.
+
+### Holidays
+We need to be able to pick up the whole manifest and move it to another day.
+On the donor runDate, set a flag that moves it to another day - a child named `movedTo` that points to its destination perhaps.
+In the recipient runDate, the moved sector is displayed for that day.
+Merging is marked as special case modifications in both donor and recipient.
+
 ## V4 storing gps in the sectors
 If the gps location was not in the customer, but was stored in the sector, then changes become obvious.  This might be used by storing the location in both places, so that sectors can be redrawn rapidly without address info, and so that changes in gps can be detected.
