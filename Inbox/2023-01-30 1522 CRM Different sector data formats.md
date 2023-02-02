@@ -108,3 +108,6 @@ Merging is marked as special case modifications in both donor and recipient.  Ma
 
 ## V4 storing gps in the sectors
 If the gps location was not in the customer, but was stored in the sector, then changes become obvious.  This might be used by storing the location in both places, so that sectors can be redrawn rapidly without address info, and so that changes in gps can be detected.
+
+## V5 running active error check
+Instead of maintaining correctness, ask the users to run the check manually each time they want to know if the system is consistent.
