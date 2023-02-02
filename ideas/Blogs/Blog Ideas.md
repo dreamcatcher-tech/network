@@ -19,3 +19,5 @@ If we start to clone popular free sites, particularly those that are open source
 In our environment, usage graphs and metrics would come built in to the platform.  We embed privacy for the users too.  Charging for usage is done thru a gateway service, so this is unbundled from the site itself - if you just run the `npx` installer, you will automatically have a payment gateway for your users built in.
 
 If not doing it for yourself, do it for the people who wrote all the code you depend on.  For the users, do it to incentivize continued improvment of the site.  We should be the preferred way to run a site as we can charge from day dot, or allow people to donate their resources in the browser to run the site.
+
+Price discovery by offering a bidding system so can learn what people actually want to pay, and can forecast based on the interest shown.  All analytics is public, so anyone can learn from it.
