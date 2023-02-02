@@ -24,3 +24,10 @@ Shell factory `shellFact( dispatcher )`
 
 ? What if shell itself was accessible directly inside all reducers ?
 So in the reducer, you can immediately talk to your root ?
+
+How to break execution loop with an action, but then intercept that action so that it does not get passed to the main reducer ?
+`await useLineBreaker()` so that
+or `await useLineBreaker( function anotherReducer(){} )`  so we can break out of the current async trail and use things like pulses without getting them stuck on the asynctrail.
+Or allow pulses on the asynctrail and then not care ?
+
+Sounds like a `useEffect` type of hook, where we supply a function and an action, and ask the context to execute it for us.
