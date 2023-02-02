@@ -22,3 +22,5 @@ Would wrap up the shell api using raw interchain, not the
 
 Shell factory `shellFact( dispatcher )`
 
+? What if shell itself was accessible directly inside all reducers ?
+So in the reducer, you can immediately talk to your root ?
