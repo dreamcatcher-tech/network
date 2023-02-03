@@ -31,3 +31,6 @@ or `await useLineBreaker( function anotherReducer(){} )`  so we can break out of
 Or allow pulses on the asynctrail and then not care ?
 
 Sounds like a `useEffect` type of hook, where we supply a function and an action, and ask the context to execute it for us.
+
+Then, using the engine externally, all these same methods should be exposed on the engine object, so that sugar like [[2023-02-03 1142 useDatum convenience methods |useDatum()]] can be called with `engine.useDatum()` - basically the full API of the engine should be available both inside reducers, and outside in the engine.  
+Needs to make writing code that consumes the engine feel the same as writing code inside a reducer - there should be no difference.
