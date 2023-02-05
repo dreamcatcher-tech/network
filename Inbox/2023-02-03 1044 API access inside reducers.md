@@ -34,3 +34,14 @@ Sounds like a `useEffect` type of hook, where we supply a function and an action
 
 Then, using the engine externally, all these same methods should be exposed on the engine object, so that sugar like [[2023-02-03 1142 useDatum convenience methods |useDatum()]] can be called with `engine.useDatum()` - basically the full API of the engine should be available both inside reducers, and outside in the engine.  
 Needs to make writing code that consumes the engine feel the same as writing code inside a reducer - there should be no difference.
+
+Be able to use shall commands from within the shell reducer itself.
+
+May be as simple as wrapping the dmzReducer api:
+```js
+const api = createDmzApi( '/path/to/remote' )
+const result = await api.spawn( 'someChildName' )
+```
+Where the schemaToFunctions object is wrapped with interchain dispatch to the provided path.
+So if the shell was made to be just a thin wrapper around the system api, we can provide this standard interface whether in or out of the chain.
+Outside the engine, api calls would be prefixed with the `wd` to give relative pathing.
