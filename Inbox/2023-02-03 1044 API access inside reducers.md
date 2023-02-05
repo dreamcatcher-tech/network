@@ -45,3 +45,9 @@ const result = await api.spawn( 'someChildName' )
 Where the schemaToFunctions object is wrapped with interchain dispatch to the provided path.
 So if the shell was made to be just a thin wrapper around the system api, we can provide this standard interface whether in or out of the chain.
 Outside the engine, api calls would be prefixed with the `wd` to give relative pathing.
+
+The dmz api is for directly with the chain it manages, but the shell is for doing the same thing remotely, where pathing is considered.  Further, the shell adds some sugar ?
+
+The shell should be a wrapper over dmz.api where all it adds is pathing info, to allow relative paths to be used, and to let the user refer to many different chains rapidly.  By requiring pathing info in shell calls we are implicitly interacting with a different dmz.api.
+
+Each shell call currently wraps a single dmz.api call anyway.  Some functions are read functions that try to read from chains without altering them.  These are technically part of the query interface, not the command interface.  These read functions can be grouped together too.
