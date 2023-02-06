@@ -54,3 +54,6 @@ Each shell call currently wraps a single dmz.api call anyway.  Some functions ar
 
 The api can be used so that reducers can know if an action was a system action or not, like `@@INIT` making it easy to know what are system actions and which are not.
 Also the system names can be reserved, so that you can make your own calls not be the same names as system calls.
+
+## Wrapping any covenant
+Could wrap any covenant interface in just the same way, and can include in the wrapping access to system resources.
