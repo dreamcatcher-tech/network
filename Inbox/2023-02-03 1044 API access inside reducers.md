@@ -51,3 +51,6 @@ The dmz api is for directly with the chain it manages, but the shell is for doin
 The shell should be a wrapper over dmz.api where all it adds is pathing info, to allow relative paths to be used, and to let the user refer to many different chains rapidly.  By requiring pathing info in shell calls we are implicitly interacting with a different dmz.api.
 
 Each shell call currently wraps a single dmz.api call anyway.  Some functions are read functions that try to read from chains without altering them.  These are technically part of the query interface, not the command interface.  These read functions can be grouped together too.
+
+The api can be used so that reducers can know if an action was a system action or not, like `@@INIT` making it easy to know what are system actions and which are not.
+Also the system names can be reserved, so that you can make your own calls not be the same names as system calls.
