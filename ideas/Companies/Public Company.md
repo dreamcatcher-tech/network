@@ -8,7 +8,9 @@ Public companies have transparency requirements, and an inherent amount of trust
 
 The operating model of the Dreamcatcher is well suited to a public company structure, so long as that public company is an actor within the network and is never permitted to gain any kind of control over the protocol.
 
-As a registered issuer this company could engage in the promotion of its stock where its stock acted as a proxy to [[Packets]] that were built to support the Dreamcatcher.
+As a registered issuer this company could engage in the promotion of its stock where its stock acted as a proxy to [[Packets]] that were built to support the Dreamcatcher. 
+
+We would like to get a valuation on our crypto assets, and also have a way of raising capital to produce more such assets.  We can periodically disperse those assets that have become legitimate securities or that are decentralized enough, amongst the shareholders, which would greatly decrease the stock price, periodically.
 
 ## 150 Shareholders
 
