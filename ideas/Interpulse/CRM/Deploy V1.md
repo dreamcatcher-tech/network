@@ -36,6 +36,10 @@ Geocoding happens client side in a react component.
 May publish straight out of webdos, if chromatic passes ?
 Why make a separate package ?
 After chromatic passes, then we should publish a new ghpages site which has a cname file.
+Need a separation on the published site, so a separate repo gives this.
+Then, chromatic and published npm can move forward with CI, but on site upgrade in manual.
+Manual to update the server code in `crm-cli` and manual to redeploy the crm page.
+
 
 ## Launch component
 First component that is presented is the one that gets the connection info required.
