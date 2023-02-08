@@ -33,6 +33,10 @@ Geocoding happens client side in a react component.
 3. Testing is simple vite server to ensure the page is loading, nothing more
 4. On load, asks for multiaddresses to connect to, and what chainId to load, then stores these in chain and defaults to using them.
 
+May publish straight out of webdos, if chromatic passes ?
+Why make a separate package ?
+After chromatic passes, then we should publish a new ghpages site which has a cname file.
+
 ## Launch component
 First component that is presented is the one that gets the connection info required.
 Shows the device stats, root chainId, peerId, multiAddrs, repo stats.
