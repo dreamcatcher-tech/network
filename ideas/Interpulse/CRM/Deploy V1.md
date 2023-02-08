@@ -1,25 +1,27 @@
-Make a js file in a separate repo that when run, will:
-1. Store its blocks at a default location on disk
+Make a js file in a separate repo that publishes as `crm-cli` that when run, will:
+1. Store its blocks on disk
 2. Begin listening on the given address
 3. Load up SSL certs
 4. publish its multiaddresses to console
 
 To deploy this onsite:
-1. checkout the git repo to disk
-2. install the published dreamcatcher libraries, ensuring testing is good
+`yarn install --global @dreamcatcher-tech/crm-cli`
+Then start it with `crm-cli path/to/repo`
 
-Could publish an npm package that contains the executable within it.  This is what runs to start the server and install the crm if it doesn't exist.  This forces the install to be formally released with all tests passing before it can be update.  Then to update is a yarn command.
+This forces the install to be formally released with all tests passing before it can be update.  Then to update is a yarn command.
 
 Components could be exported out of webdos as a package, and only if chromatic passes, then the published gh-pages app is outside the monorepo, and can supply some customer specific defaults like peerId and server url.
 
-Import should be done in the browser, using an http proxy to access moneyworks db.  Pull comes in to a react component side effect that processes and writes updates to the main db.
+Import should be done in the browser, using an http proxy to access moneyworks db.  Pull comes in to a react component side effect that processes and writes updates to the main db.  Try set headers on gh-pages that means no proxy required.  Proxy probably needed as ssl will be enforced.
 
-Geocoding 
+Geocoding happens client side in a react component.
 
 ## Server options
 `--faker 123` Generate fake data, using the given number of customers
-`--port 1234` Listen on the given port number, or use a default random on
-`--admin rootChainId` Supply a chainId to allow to connect without 
+`--port 1234` Listen on the given port number, or use a default random one
+`--admin rootChainId` Supply a chainId to allow to connect without being authd
+`repo` required as this is installed globally, so must say where the repo will be.  KV store is in `repo/interpulse/`.
+`.env` provided as a file which holds SSL keys.  If a .env file is found at the same place as the repo, it will be loaded ie: `repo/.env` will be loaded.
 
 ## Browser
 Loads from a static ghpages site.
