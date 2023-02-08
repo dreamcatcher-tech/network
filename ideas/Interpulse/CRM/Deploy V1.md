@@ -1,8 +1,12 @@
+# Server 
 Make a js file in a separate repo that publishes as `crm-cli` that when run, will:
 1. Store its blocks on disk
 2. Begin listening on the given address
 3. Load up SSL certs
 4. publish its multiaddresses to console
+5. install bar bones version of the CRM.
+6. populate the sector data
+7. optionally generate fake customer data and progressively insert it
 
 To deploy this onsite:
 `yarn install --global @dreamcatcher-tech/crm-cli`
@@ -23,10 +27,11 @@ Geocoding happens client side in a react component.
 `repo` required as this is installed globally, so must say where the repo will be.  KV store is in `repo/interpulse/`.
 `.env` provided as a file which holds SSL keys.  If a .env file is found at the same place as the repo, it will be loaded ie: `repo/.env` will be loaded.
 
-## Browser
-Loads from a static ghpages site.
-On load, asks for multiaddresses to connect to, and what chainId to load.
-Once given, stores these in chain, and defaults to using them from then on.
+# Browser
+1. Make a standalone site that does nothing more than load a react component for the app, which has been tested in storybook and exported
+2. Once the server keys are permanent, we can include those in code for easy instant connect
+3. Testing is simple vite server to ensure the page is loading, nothing more
+4. On load, asks for multiaddresses to connect to, and what chainId to load, then stores these in chain and defaults to using them.
 
 ## Launch component
 First component that is presented is the one that gets the connection info required.
