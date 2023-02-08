@@ -27,6 +27,14 @@ Geocoding happens client side in a react component.
 `repo` required as this is installed globally, so must say where the repo will be.  KV store is in `repo/interpulse/`.
 `.env` provided as a file which holds SSL keys.  If a .env file is found at the same place as the repo, it will be loaded ie: `repo/.env` will be loaded.
 
+## Upgrade process
+1. Halt pm2
+2. zip up a copy of the db files
+3. `yarn upgrade --global --latest @dreamcatcher-tech/crm-cli` to upgrade the global package
+4. pm2 start the service again
+5. Connect using dev version of the webapp for testing
+6. publish the webapp
+
 # Browser
 1. Make a standalone site that does nothing more than load a react component for the app, which has been tested in storybook and exported
 2. Once the server keys are permanent, we can include those in code for easy instant connect
