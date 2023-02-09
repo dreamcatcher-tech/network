@@ -2,7 +2,7 @@
 Make a js file in a separate repo that publishes as `crm-cli` that when run, will:
 1. Store its blocks on disk
 2. Begin listening on the given address
-3. Load up SSL certs
+3. Load up SSL certs from a `.env` file
 4. publish its multiaddresses to console
 5. install bar bones version of the CRM.
 6. populate the sector data
