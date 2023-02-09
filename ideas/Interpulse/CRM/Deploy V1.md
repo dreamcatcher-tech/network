@@ -4,7 +4,7 @@ Make a js file in a separate repo that publishes as `crm-cli` that when run, wil
 2. Begin listening on the given address
 3. Load up SSL certs from a `.env` file
 4. publish its multiaddresses to console
-5. install bar bones version of the CRM.
+5. install bare bones version of the CRM.
 6. populate the sector data
 7. optionally generate fake customer data and progressively insert it
 
@@ -12,7 +12,7 @@ To deploy this onsite:
 `yarn install --global @dreamcatcher-tech/crm-cli`
 Then start it with `crm-cli path/to/repo`
 
-This forces the install to be formally released with all tests passing before it can be update.  Then to update is a yarn command.
+This forces the install to be formally released with all tests passing before it can be update.  Then to update is a yarn command.  Testing before release is done using the consumer package in concert with the cli package.
 
 Components could be exported out of webdos as a package, and only if chromatic passes, then the published gh-pages app is outside the monorepo, and can supply some customer specific defaults like peerId and server url.
 
