@@ -16,7 +16,7 @@ Writing to a given path needs to know that it is a hardlink, that is held somewh
 Be careful to send comms only to the validators of the chain, and not to any relayers.  So look at the pulse, get the validators, then get the peers that are validators, then select those to send to.
 Write peers must be validators.
 
-
+OpenPath needs to be mtab aware.
 
 ## Security 
 Allow access by peerId only, all others get refused connection.
