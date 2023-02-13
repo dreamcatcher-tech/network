@@ -21,3 +21,6 @@ In our environment, usage graphs and metrics would come built in to the platform
 If not doing it for yourself, do it for the people who wrote all the code you depend on.  For the users, do it to incentivize continued improvment of the site.  We should be the preferred way to run a site as we can charge from day dot, or allow people to donate their resources in the browser to run the site.
 
 Price discovery by offering a bidding system so can learn what people actually want to pay, and can forecast based on the interest shown.  All analytics is public, so anyone can learn from it.
+
+## Offline first vs caching
+Offline is similar to how companies behave anyway - in privacy they work, then the intermittently come together to trade resources.  Offline first is different in that at any moment in time, the app is working offline then seeks to sync with others.  At no point is it ever waiting for instructions from some remote party.  This is different to being offline tolerant, but still needing to reach quorum somewhere.
