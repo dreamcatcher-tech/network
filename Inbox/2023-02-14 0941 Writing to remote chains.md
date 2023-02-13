@@ -18,9 +18,18 @@ Write peers must be validators.
 
 OpenPath needs to be mtab aware.
 
+Initial open is from out of band, or done thru a chain that accepts public actions.  From there, all announces of interpulses back to the server need to be into chains that have a connection for the sender waiting.
+
 ## Security 
 Allow access by peerId only, all others get refused connection.
 Or, no whitelist presents a default page where people can ask to be let in by those already inside.
 
 ## Crash recovery
 Tension should be detected send side and retransmitted after a connection is found.
+
+## Socket chains
+Going thru a single chain can make operations simpler overall.
+If the sender always communicated thru a single chain, everything is delayed by two pulses, but it makes announcement simpler.
+Otherwise, the sender could be communicating with arbitrary many nested chains, and so the announcer would need to fulfill all of these ?
+
+We could permit all transmissions, and the receiver could blacklist if we tried to transmit to something we did not have an open connection for.  This is compatible with ACL based access, as the engine can check for ACL permissions.
