@@ -26,3 +26,8 @@ When first a client connections, it should be given a list of options for paths 
 Once a centralized DNS style chain is available, publications can be made to this, and connections can begin from there.  So all we need is a path, which we may have found by browsing.
 
 Ideally we should hardcode the server into the client, and just try it to see if the chainId we want is available.
+
+## Relationship between chainId and peer
+Currently a mapping is held between chainIds and peer addresses.
+Each complex has an idea of what peerIds are allowed to interact with it.
+This could be leveraged to help with discovery between peers ?
