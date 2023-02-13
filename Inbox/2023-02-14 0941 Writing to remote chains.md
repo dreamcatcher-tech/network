@@ -21,3 +21,6 @@ Write peers must be validators.
 ## Security 
 Allow access by peerId only, all others get refused connection.
 Or, no whitelist presents a default page where people can ask to be let in by those already inside.
+
+## Crash recovery
+Tension should be detected send side and retransmitted after a connection is found.
