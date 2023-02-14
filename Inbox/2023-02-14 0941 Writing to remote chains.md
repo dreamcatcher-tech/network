@@ -8,6 +8,10 @@
 Reading remote chains is achieved by subscribing using the announcer protocol.
 Writing requires more.
 
+Seems cannot mount a fork on mtab, since auto forking is not what we want to happen ?  
+Perhaps forks should be more clearly labelled ?
+Forks on mtab defeat the auto watcher that tries to keep the mounts up to date.
+
 ## V1
 Require the target chain to be already opened to the incoming chain.  This can be preprogrammed in, or can use ip address whitelisting to allow a handshake to open up a new chain.
 
