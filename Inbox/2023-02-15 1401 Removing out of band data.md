@@ -7,3 +7,4 @@
 
 Typical databases have copying their data outside of the db app as part of regular operations.
 
+In our system, all data management is between engines, never with actual files on disk.
