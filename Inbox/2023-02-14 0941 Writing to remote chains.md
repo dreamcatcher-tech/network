@@ -44,3 +44,6 @@ If the sender always communicated thru a single chain, everything is delayed by 
 Otherwise, the sender could be communicating with arbitrary many nested chains, and so the announcer would need to fulfill all of these ?
 
 We could permit all transmissions, and the receiver could blacklist if we tried to transmit to something we did not have an open connection for.  This is compatible with ACL based access, as the engine can check for ACL permissions.
+
+## Keeping the same path opening as for local chains
+So if the chain was mounted at mtab, then we would ask mtab initially to open something up for us.  This makes mtab the permissioned identity in the foreign chain.
