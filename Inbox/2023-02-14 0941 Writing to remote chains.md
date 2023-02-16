@@ -47,3 +47,6 @@ We could permit all transmissions, and the receiver could blacklist if we tried 
 
 ## Keeping the same path opening as for local chains
 So if the chain was mounted at mtab, then we would ask mtab initially to open something up for us.  This makes mtab the permissioned identity in the foreign chain.
+
+## Finding the target peer
+In mtab, the list of peers would be present, so we would simply be announcing to the peer listed already.  If no connection, then we need at least a chain peer to connect to.  The root would always be the way we'd look up the chain peer.
