@@ -50,3 +50,8 @@ So if the chain was mounted at mtab, then we would ask mtab initially to open so
 
 ## Finding the target peer
 In mtab, the list of peers would be present, so we would simply be announcing to the peer listed already.  If no connection, then we need at least a chain peer to connect to.  The root would always be the way we'd look up the chain peer.
+
+## Returning the result
+The recipient of the announces needs to keep the assosciation for sending the replies back.  If the recipient crashes, it will lose the assosciation, and needs to wait for the sender to contact them again.  Later it might go out looking for them, to keep the network moving quicker.
+
+If each announce was awaited for it to be included in a pulse, then we could just return back the next interpulse that came of it.  Or the peers we are actively talking to could be stored in mtab for future references.
