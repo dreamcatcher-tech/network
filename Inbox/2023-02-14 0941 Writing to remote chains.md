@@ -59,4 +59,11 @@ If each announce was awaited for it to be included in a pulse, then we could jus
 ## Storing chain peers
 Outgoing has chain peers from mount or some other way of communicating.  Coming back in, we should take note of all interpulses that come in and are accepted by one of our chains.  The peers should probably stored in a parent, or with the chain somewhere.
 
-Storing everything in mtab creates a bottleneck.  The highest level chain should store the peer address in it, unless it is configured not to.
+Storing everything in mtab creates a bottleneck.  The highest level chain should store the peer address in it, unless it is configured not to.  Or the list can be pruned whenever chain
+Or store by path, and check when the path changes ?
+Store only the highest parent that has a connection, and store this in mtab.
+Mtab stores who is allowed to accept connections, so track the changes in these shared paths, and whenever a connection is closed to a remote chain, remove the mtab entry.  If we are desparate for peers, we can walk the mtab history and dig up whatever we have there.
+
+Sending back should use the same root:/path type of info, so that the recipient engine cluster can always locate the chains the interpulse is destined for.
+
+Should peer info go in the chains, or should it be separate ?  Seems separate.
