@@ -55,3 +55,8 @@ In mtab, the list of peers would be present, so we would simply be announcing to
 The recipient of the announces needs to keep the assosciation for sending the replies back.  If the recipient crashes, it will lose the assosciation, and needs to wait for the sender to contact them again.  Later it might go out looking for them, to keep the network moving quicker.
 
 If each announce was awaited for it to be included in a pulse, then we could just return back the next interpulse that came of it.  Or the peers we are actively talking to could be stored in mtab for future references.
+
+## Storing chain peers
+Outgoing has chain peers from mount or some other way of communicating.  Coming back in, we should take note of all interpulses that come in and are accepted by one of our chains.  The peers should probably stored in a parent, or with the chain somewhere.
+
+Storing everything in mtab creates a bottleneck.  The highest level chain should store the peer address in it, unless it is configured not to.
