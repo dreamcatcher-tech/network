@@ -67,3 +67,5 @@ Mtab stores who is allowed to accept connections, so track the changes in these 
 Sending back should use the same root:/path type of info, so that the recipient engine cluster can always locate the chains the interpulse is destined for.
 
 Should peer info go in the chains, or should it be separate ?  Seems separate.
+
+If tension indicates who we need to find peers for, then we can crash at any point, and restart the search ?
