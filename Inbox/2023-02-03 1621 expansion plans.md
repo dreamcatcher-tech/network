@@ -15,3 +15,7 @@ Sell that function to other unrelated business as a way to expand the software b
 Basically want a software company that takes a cut of the value it provides, rather than a price for the software alone.  By being aware of the value it creates, and being highly adaptive to customer needs, it is well positioned to charge by value, instead of by price.
 
 Its adaptivity will cause it to stay embedded for a very long time.  It being owned by all its participants will ensure it never really goes out of business.
+
+Treat the customer like a dignified person, and present them with easy switchability between suppliers.  Have affinity for a certain service person who can handle their matters access multiple service offerings.
+
+As services get increasingly small, the burden of management is too great for each individual.  Cross cutting services management then becomes a service of its own.  Handles the rough edges using manual interfacing.  Gives people some weight to push back against and demand certain interfaces from difficult to change incumbents.
