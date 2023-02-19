@@ -69,3 +69,7 @@ Sending back should use the same root:/path type of info, so that the recipient 
 Should peer info go in the chains, or should it be separate ?  Seems separate.
 
 If tension indicates who we need to find peers for, then we can crash at any point, and restart the search ?
+
+How to purge peerIds when the addresses change ?
+Periodic sweep
+Tap the interpulse streams and learn when close events happen.
