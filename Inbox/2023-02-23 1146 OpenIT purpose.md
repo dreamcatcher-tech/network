@@ -17,3 +17,7 @@ Expansion of autonomous automated markets, starting with IT services.
 Keep the marketplace open after you have selected your IT provider.
 
 Rules to stop the ills of IT services, whilst preserving personal relationships between participants.
+
+Increase the connectivioty of automated trade.
+
+Make a generic softwareizer of all things for a company to use, where it inducts any service and for a fee, interacts with them in a standard way, reducing the burden of manual handling.
