@@ -67,3 +67,8 @@ Mtab stores who is allowed to accept connections, so track the changes in these 
 Sending back should use the same root:/path type of info, so that the recipient engine cluster can always locate the chains the interpulse is destined for.
 
 Should peer info go in the chains, or should it be separate ?  Seems separate.
+
+## Local vs Remote
+Tip can be used to know if a channel is talking to local or remote, based on the validators.  Changing validators would have caused a turnover to be sent.
+
+If it is to an unopened path, it would have gone thru mtab, or the tip of the parent would tell us.  Because path opening walks down, we should have the parent tip to go on too.
