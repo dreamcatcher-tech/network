@@ -72,3 +72,8 @@ Should peer info go in the chains, or should it be separate ?  Seems separate.
 Tip can be used to know if a channel is talking to local or remote, based on the validators.  Changing validators would have caused a turnover to be sent.
 
 If it is to an unopened path, it would have gone thru mtab, or the tip of the parent would tell us.  Because path opening walks down, we should have the parent tip to go on too.
+If tension indicates who we need to find peers for, then we can crash at any point, and restart the search ?
+
+How to purge peerIds when the addresses change ?
+Periodic sweep
+Tap the interpulse streams and learn when close events happen.
