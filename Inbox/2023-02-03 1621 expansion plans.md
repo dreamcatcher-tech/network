@@ -31,3 +31,11 @@ Full offline
 Cheap fast changes
 Proof of acquisition payment model
 
+## Acquisition model
+Pure capital gains
+Register a pubco using catalist or similar in NZ
+Capital gains is taxless in NZ
+Acquire businesses into the main vehicle, gut them and softwareize them using Dreamcatcher.
+Blockchain them, so instant value hit.
+Use the pubco stock to acquire more.
+Use revenues from these businesses to fortify share price.
