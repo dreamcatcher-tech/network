@@ -39,3 +39,10 @@ Acquire businesses into the main vehicle, gut them and softwareize them using Dr
 Blockchain them, so instant value hit.
 Use the pubco stock to acquire more.
 Use revenues from these businesses to fortify share price.
+
+## OpenIT
+Make an IT company that offers open service models.
+
+
+## Enabling autoated markets
+Using tech to make bespoke software that can connect to other pieces of software to form a marketplace for automated trade, then take a portion of that marketplace.
