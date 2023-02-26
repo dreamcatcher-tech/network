@@ -44,5 +44,5 @@ Use revenues from these businesses to fortify share price.
 Make an IT company that offers open service models.
 
 
-## Enabling autoated markets
+## Enabling automated markets
 Using tech to make bespoke software that can connect to other pieces of software to form a marketplace for automated trade, then take a portion of that marketplace.
