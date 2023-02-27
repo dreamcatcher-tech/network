@@ -20,3 +20,17 @@ May store them as a CAR so they are fetched together ?
 But might this disadvantage the reuse later ?
 
 A pulse might concat all its diff blocks into a CAR and use this as its hash ?
+
+Could use protobufs to highly compact the data in the blocks.
+
+## Measure the message overhead of bitswap
+
+## Stacking of blocks
+There is a lot of wasted space in storing the CIDs within the tree of data that makes up a Pulse.
+If a pulse is stored initially in a single block, and then only when the data changes is it broken out into pieces, and only for those pieces that changed, then we can save a lot of space.
+
+Recombination could occur when the cost of the hashing is close to the cost of the data ?
+
+Long dormant data could be compressed into large chunks too ?
+
+A compression pass could run that rejoins everything.
