@@ -38,7 +38,7 @@ When browser loads and realizes it is missing something from the server, it can 
 ## RTT the killer
 Currently each pulse takes 500ms to resolve, which at one pulse at a time means 20k customers will take 5.5 hours to load.  Trouble is that maybe the hamt takes a while to load ?
 
-Getting each pulse load time down, as well as letting concurrent fetching occuring with no impact on resolve time is best.
+Getting each pulse network load time down, as well as letting concurrent fetching occuring with no impact on resolve time is best.
 
 Next best is providing some cache restoration methods, like mass loading from the server.
 
@@ -71,6 +71,8 @@ Pulse at a time should give significant speedup, particularly if it occurs in pa
 
 Pulse at a time gives a good chance to apply ACL permissioning.  It does sacrifice some reuse between chains and even between pulses.
 
+Split the requests between multiple connections if we have them, rather than asking each one for it.  Allow these requests to be cancelled so they stop sending to us.  Make the connection be back pressure aware.
+
 ## Increase HAMT bucket sizes
 May result in more churn, but more optimally sized blocks.
 
@@ -83,5 +85,19 @@ Specify that we want some block and all the blocks it links to, recursively, up 
 
 If content aware, like IPORM, then we can define link boundaries to not follow, like HistoricalPulseLinks
 
+Bitswap should respond using only an index to a request, not sending the full bytes of the request.  Or rely on the client to hash the data to determine what it just got sent and to check the integrity.
+
 ## The two modes - light touch for writing, heavy for reading
 When trying to write, we want to load as little as possible.  But when reading, we almost always want all of it.
+
+## Plan
+Make a connection method to fetch an entire pulse at a time.
+Feeling that Pulse / IPORM based operations cannot use the underlying bitswap implementation, as needs permissions, and also intelligent fetching.
+IPORM enures our own generality, and would allow ipfs to have a lower layer usecase that they could believe was generic enough to be useful.
+
+? Is the data size of each pulse too great anyway ?
+
+### Strategy
+go thru the list of connections we have, and ask for the pulse.
+if multiple connections, round robin between them all, and timeout each one.
+if one times out, ask another two, then another 4, so that we are quickly broadcasting for weakly held pulses, but efficient on strongly held ones.
