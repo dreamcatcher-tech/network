@@ -101,3 +101,28 @@ IPORM enures our own generality, and would allow ipfs to have a lower layer usec
 go thru the list of connections we have, and ask for the pulse.
 if multiple connections, round robin between them all, and timeout each one.
 if one times out, ask another two, then another 4, so that we are quickly broadcasting for weakly held pulses, but efficient on strongly held ones.
+
+## Wire protocol
+Moving binary data should be done directly.
+Multiple requests should be able to be on the wire.
+Requests should be able to be aborted at any stage.
+
+### V1
+CAR writer in order of request.
+No abort cabilities.
+CAR has an inbuilt identifier used to double check the pulse cid that was requested.
+Stream is single directional, as the requester opens it to only ever send requests in.
+Receiver expects to receive js actions.
+Requester expects to receive CAR files, that ultimately close.
+Send the control messages down the standard announce channel, then start a new protocol for raw car transports `/pulseswap/0.0.1` which the connection has the power to dial if it needs it.
+pulseswap only ever receives CAR files, and can be matched up to what was requested in any order, since they have CIDs.  
+Cancellations can go over the interpulse command protocol, and if they are honoured or not does not matter.
+CARs can be incomplete, and bitswap will be used as a fallback.
+CARs are sent down in streaming fashion, for speed.
+
+Be great if the pulse could be returned and start crisping and then the hamt wasgradually built up as the data streamed in, to allow gradual loading of HAMT maps.
+
+? Where is the size of the db ?
+Show a graph of the data size of all the different classes in IPLD, to see where the heavy pieces are.
+
+? can CAR be more efficient if hashes were replaced with ints ?  Provide diag tools to show the space taken up by CIDs vs data, and see what effect generating an index would have had on the CAR.
