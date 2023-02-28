@@ -32,3 +32,9 @@ Climate change affected regions lose connectivity, but have no excuse for losing
 [Upwards trend in unreliability, and also costs is well documented](https://www.datacenterfrontier.com/cloud/article/11427329/uptime-longer-data-center-outages-are-becoming-more-common)
 Goal is to takeoff in a plane, and while in the air an app specific to what you need has already been built, tested, and deployed.
 [Heat waves affecting cooling](https://gizmodo.com/heat-waves-climate-change-data-center-server-shut-down-1849916741)
+
+## Complexity as the uptime enemy
+The more complexity is added to a DC, as well as the redundancy systems, the more likely it is to fail catastrophically.  Also the recovery time is larger.  Simpler systems crash more predictably.
+The most invulnerable datacentre is no datacentre.
+
+Show studies that map DC outages, and show less frequent, but goes down for longer, with more puzzling outcomes.  The devil is in complexity.
