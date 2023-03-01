@@ -19,3 +19,6 @@ Compentized cars are easier to repair from damage, recycle, upgrade, and take ad
 Custom cars by default means people can attach emotionally to the product more, and it can easily be refreshed and revived.  Apps are far more forthcoming as they can first be tested in VR, then published live.
 
 Modular cells that plug into a bus allow things like compute / server modules, gasoline generators, etc.  Can be used to power back to a house, make the inverter be reversable.  The modules can also be used without the car being present.
+
+## Componentized Manufacturing
+Designs pieces to strict interfaces, and models most things in software.  Then as AI assistants enter, interface testing and auto tuning to intent becomes less costly for humans.
