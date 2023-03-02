@@ -19,3 +19,6 @@ List of Ideas that have not yet been implemented.  Implementation of [[Interpuls
 
 ## Implemented
 [[Virtual Working Directory Path]]
+
+## Far
+[[2023-03-02 2100 Sharding of initial fetches]]
