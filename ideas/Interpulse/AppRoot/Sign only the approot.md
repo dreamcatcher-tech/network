@@ -24,6 +24,8 @@ Results in the database being strongly consistent.  Writing the latest flag for 
 
 Kafka model of writing might be perfect for this approot style writing.  Lambdas executing reducers, then kafka writing approots.
 
+Means signature verification need not be done per child chain pulse, but just once, so no loading public keys and even tho verify is fast, it still requires an extra step.
+
 ## Reducer isolation
 Based on the publisher provenance, we can run covenants in the same isolation boundary to save time.  It should be possible to have different isolation boundaries between different chains in the same approot.
 

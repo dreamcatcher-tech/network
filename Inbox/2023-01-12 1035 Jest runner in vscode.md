@@ -59,3 +59,16 @@ Dropbox alternative would treat saves to the fs as a commit to one of these shar
 
 SaveAll would be atomic.
 Stepback / undo could be across multiple files, and would be part of the filesystem, not part of the editor.
+
+Basically could offer something like dropbox and git combined, with additional cloud compute apps able to be installed.  Provision these cloud computers so devs can set them up and then keep forking them as project isolation is required.
+
+## Implementation
+Agent runs on the local machine keeping the fs in sync with the cloud version.  Takes into account file modifications that have not been saved, and have not been commited - so 3 states for a file to be in.  All these states are continually synced.  Tools provided to view sync performance.
+
+The fs is an app that is attached to a cloud machine.  This machine can have other apps installed that can do different things with the content of the files.  Some of those apps can coordinate with apps on other cloud machines.  One such app is the jest runner, that scans for jest files to run, and begins execution.  This app would make one derived chain for each jest file it found.  This jest file would be executed in an isolated container, and then the results sent back down.
+
+## Propose wallabyjs cloud
+If we could sell compute services for running jest tests in the cloud from the command line, we could propose to wallabyjs that they sell a cloud version of wallaby that lets wallaby automatically use remote resources.  Can donate your own resources and earn funds.  Can set up remote runners on your own machines and get private cloud.  If they refuse, could look at implementing the same visual tools as wallaby, but being cloud first.  So the software would be free, but the compute costs money.
+
+Set different price points for responsiveness, latency, parallelism.
+Paying for compute allows you to get far more now than you could by owning the compute - the value proposition for renting a server vs owning is not clear compared to value proposition of burstable compute.  This same principle applies to staff.
