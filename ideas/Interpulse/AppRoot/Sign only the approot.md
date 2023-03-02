@@ -26,6 +26,8 @@ Kafka model of writing might be perfect for this approot style writing.  Lambdas
 
 Means signature verification need not be done per child chain pulse, but just once, so no loading public keys and even tho verify is fast, it still requires an extra step.
 
+We can use heavier signature schemes, like schnorr, since the signature to data ration is very much higher if only the approot needs signing.  Signature amplification factor - namely how many signatures are required for writing a single bit of data - is much lower if only approot is signed.
+
 ## Reducer isolation
 Based on the publisher provenance, we can run covenants in the same isolation boundary to save time.  It should be possible to have different isolation boundaries between different chains in the same approot.
 

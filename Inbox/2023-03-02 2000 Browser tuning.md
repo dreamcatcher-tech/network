@@ -24,12 +24,17 @@ Open a dedicated channel for the initial sync only, which will send down all the
 Send raw blocks with no CAR, where length encoding is the blocks themselves.
 Changing the block format to be thicker - favouring large blocks
 Resolver as syncer aware - know when asking for a child, so as to await the initial sync
+Use hamt .cids() as a way to walk them ?
+Skip bake skippable items in the pulse using a litepulse
 
 ## Done
 Throttle crisp creation to reduce react render load.
 
 ## Favourites
-If the car file was streamed, was breadth first, and was rapid to produce, this should solve the problem.
+Fatten the buckets so less little blocks to fetch in the large hamt.
+Stream blocks down using length encoding.
+Import into the blockcache, checking cache first.
+Stream down with children too, so we don't have to ask.
 
 ## Importing the CAR faster
 10k customers takes about 30s to create the CAR on the server side.  This seems to be the majority of the delay.
@@ -39,6 +44,11 @@ Should be faster than doing uncrush.
 
 ## Resolver as syncer aware
 When streaming the blocks, they should all form a pulse fully, in order.  If they don't, we can terminate the connection if we are receiving blocks that don't form a tree or are not what we asked for or don't pass the hash test.  Perform the hash afterwards, and always before doing any blockchain writing.  Flag to the user that hash checking has not completed yet.
+
+## Streaming blocks directly
+This means that multiple pull requests can be fulfilled simultaneously as the block streams can mux.
+Check that each received block fulfills a previously waiting pull request.
+Wait for all blocks in a request to write to repo before switching to bitswap.
 
 ## Mode switching
 When an engine realizes that it doesn't have anything for a remote chain that it wants, it will use pulselift with full children to get everything it needs.  This is not good for distribution.
