@@ -13,5 +13,5 @@ If there was a way to mark arrays as readonly and shared, then we could share th
 ## Liveness check
 The service worker should do checks on each tab to see if it should delete the session and clean up resources.  When storage pressure increases, session chains seem the first place to save space.
 
-## telemetry
+## Telemetry
 The session chains can be transmitted to other chains as a means of collecting telemetry

@@ -24,3 +24,17 @@ Price discovery by offering a bidding system so can learn what people actually w
 
 ## Offline first vs caching
 Offline is similar to how companies behave anyway - in privacy they work, then the intermittently come together to trade resources.  Offline first is different in that at any moment in time, the app is working offline then seeks to sync with others.  At no point is it ever waiting for instructions from some remote party.  This is different to being offline tolerant, but still needing to reach quorum somewhere.
+
+## Offline to combat climate change
+Datacentres as highly vulnerable to climate events - overheating, power outages, flooding - all these things can take a DC offline.
+The most climate friendly server is no server.  Reducing the server count increases environmental benefits, no e-waste, no power consumption, no incentive to build more DCs.  All while providing superior user experience.
+Climate change affected regions lose connectivity, but have no excuse for losing functionality.
+[Upwards trend in unreliability, and also costs is well documented](https://www.datacenterfrontier.com/cloud/article/11427329/uptime-longer-data-center-outages-are-becoming-more-common)
+Goal is to takeoff in a plane, and while in the air an app specific to what you need has already been built, tested, and deployed.
+[Heat waves affecting cooling](https://gizmodo.com/heat-waves-climate-change-data-center-server-shut-down-1849916741)
+
+## Complexity as the uptime enemy
+The more complexity is added to a DC, as well as the redundancy systems, the more likely it is to fail catastrophically.  Also the recovery time is larger.  Simpler systems crash more predictably.
+The most invulnerable datacentre is no datacentre.
+
+Show studies that map DC outages, and show less frequent, but goes down for longer, with more puzzling outcomes.  The devil is in complexity.

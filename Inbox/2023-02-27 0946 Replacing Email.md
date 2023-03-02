@@ -1,0 +1,11 @@
+
+>[!tip] Created: [2023-02-27 Mon 09:46]
+
+>[!question] Targets: 
+
+>[!danger] Depends: 
+
+Email should be directly inducted into job function workflows, rather than having people communicating in free form text.  All communications should be in service to a particular job.
+
+Each email outwards should provide a link to access the specific tool online, to save sending more emails around the place.
+

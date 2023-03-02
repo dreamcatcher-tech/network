@@ -31,3 +31,22 @@ Full offline
 Cheap fast changes
 Proof of acquisition payment model
 
+## Acquisition model
+Pure capital gains
+Register a pubco using catalist or similar in NZ
+Capital gains is taxless in NZ
+Acquire businesses into the main vehicle, gut them and softwareize them using Dreamcatcher.
+Blockchain them, so instant value hit.
+Use the pubco stock to acquire more.
+Use revenues from these businesses to fortify share price.
+
+## OpenIT
+Make an IT company that offers open service models.
+
+
+## Enabling automated markets
+Using tech to make bespoke software that can connect to other pieces of software to form a marketplace for automated trade, then take a portion of that marketplace.
+Automated markets th
+The software is free, the catch is that we will invite you to offer your goods and services in our marketplace, and encourage you to consume from our marketplace of suppliers.
+The marketplace optionally allows for ethics auditing, as provided by the software plus onsite audits, so you can purchase fully ethical goods.
+When you move to purchasing ethically, we know that we will eventually get paid for this.
