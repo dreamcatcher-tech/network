@@ -73,3 +73,10 @@ walked 14,642 blocks in 26126 ms car is 6,577,817b took 26,199 ms blocks took 26
 
 isBakeSkippable removed
 walked 13574 blocks in 19326 ms car is 5,894,738 took 19381 ms blocks took 19335 ms
+
+blockCache used so when loading from disk it is cached for later.
+first load:
+walked 13574 blocks in 4178 ms car is 5894738 took 4235 ms blocks took 4186 ms
+second load:
+walked 13574 blocks in 1538 ms car is 5894738 took 1584 ms blocks took 1538 ms
+

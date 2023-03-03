@@ -72,3 +72,11 @@ If we could sell compute services for running jest tests in the cloud from the c
 
 Set different price points for responsiveness, latency, parallelism.
 Paying for compute allows you to get far more now than you could by owning the compute - the value proposition for renting a server vs owning is not clear compared to value proposition of burstable compute.  This same principle applies to staff.
+
+## Production wallaby
+Show coverage lines from production runs of chains.
+Be able to repro any run that caused an exception, and see where exceptions occured.
+REPRO PROD RIGHT IN VSCODE.
+Rerun previous prod runs using modified covenants with life feedback.
+Rainbow heatmaps for number of times it ran.
+Do attribution tracing for each line, and show which lines would likely payout.
