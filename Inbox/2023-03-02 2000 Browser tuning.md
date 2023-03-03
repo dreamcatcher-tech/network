@@ -7,11 +7,9 @@
 
 
 ## Options
-Load the customers sooner - should be able to say how many customers we have before fetching each one
 Change the blockwidth and bucket size params to reduce the size and depth of the hamt
+Load the customers sooner - should be able to say how many customers we have before fetching each one
 Make a lite version of pulses that can be fetched for the children
-Cache the CAR so initial load without changed customers is quick
-Reuse the CAR so that only small amounts are changed for a new pulse
 Use the blockcache in case things are asked for again
 Skip block hashing until later, so we can load faster
 Send all children at the same time
@@ -24,23 +22,27 @@ Open a dedicated channel for the initial sync only, which will send down all the
 Send raw blocks with no CAR, where length encoding is the blocks themselves.
 Changing the block format to be thicker - favouring large blocks
 Resolver as syncer aware - know when asking for a child, so as to await the initial sync
-Use hamt .cids() as a way to walk them ?
+Use hamt .cids() as a way to walk hamts ?
 Skip bake skippable items in the pulse using a litepulse
+Defer the hashing to present data sooner, but block all writing until hash and sig are verified
 
 ## Done
 Throttle crisp creation to reduce react render load.
 
 ## Favourites
 Fatten the buckets so less little blocks to fetch in the large hamt.
-Stream blocks down using length encoding.
+Stream blocks down using length encoding continuously and interleaved.
 Import into the blockcache, checking cache first.
 Stream down with children too, so we don't have to ask.
+Delay resolver block fetches until the pulselift has completed AND written to repo.
 
 ## Importing the CAR faster
-10k customers takes about 30s to create the CAR on the server side.  This seems to be the majority of the delay.
+10k customers takes about 30s to create the CAR on the server side.  This seems to be the majority of the delay.  
+If the blocks were walked directly, then a cached up pulse would be very fast to produce - car creation is tiny.
+The customers should be able to populate with a partial hamt having landed
 
 ## Producing the CAR faster
-Should be faster than doing uncrush.
+Should be faster than doing uncrush.  Should be able to walk the objects and fetch the blocks directly.
 
 ## Resolver as syncer aware
 When streaming the blocks, they should all form a pulse fully, in order.  If they don't, we can terminate the connection if we are receiving blocks that don't form a tree or are not what we asked for or don't pass the hash test.  Perform the hash afterwards, and always before doing any blockchain writing.  Flag to the user that hash checking has not completed yet.
@@ -64,3 +66,10 @@ Make a large chain with simple children, then see what operations take all the t
 Sync requests can specify some template or pattern to exclude some items if we know ahead of time.
 
 ## Misc
+
+## Bench
+Testing of the customers pulse.  Baseline with 11,212 customers: 
+walked 14,642 blocks in 26126 ms car is 6,577,817b took 26,199 ms blocks took 26,142 ms
+
+isBakeSkippable removed
+walked 13574 blocks in 19326 ms car is 5,894,738 took 19381 ms blocks took 19335 ms
