@@ -11,6 +11,8 @@ We can provide a notion of this language on top of the blockchain system, but it
 
 Perhaps IPORM can give us a form of this, but using functions inside JS.
 
+Huge benefit is on multitenant systems, the hash table could be shared between all running isolated contexts.  This would act as memory protection and deduplication.  It should also be able to work even if the content took several years to locate and load, as execution would be paused until it could be retrieved.  So the memory can be much larger than the machine ram, as well as using the machines ram highly efficiently.
+
 ## Operations
 ### Equality
 
