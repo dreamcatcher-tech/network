@@ -20,3 +20,5 @@ May show that eink monitors are significantly better for the environment.
 Espeically if apps were designed to work with the poor refresh performance, then
 Browser app can work in this way with an overlay on top of a normal react app.
 Scrolling is done by fading the portal and scrolling a blob to give feedback, then redrawing the portal once finished - basically techniques at the UI level.
+
+Restransmission of data should be avoided, since having a server on at the other end, plus all the routers and switches required is heavy on the carbon.

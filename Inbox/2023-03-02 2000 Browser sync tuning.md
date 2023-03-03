@@ -8,10 +8,11 @@
 
 ## Options
 Send raw blocks with no CAR, where length encoding is the blocks themselves.
+Make a list version of a channel, avoiding all the small blocks assosciated with it.
+Make a lite version of pulses that can be fetched for the children
 Change the blockwidth and bucket size params to reduce the size and depth of the hamt
 Stream the car and all the children so absolutely as fast as it can be
 Load the customers sooner - should be able to say how many customers we have before fetching each one
-Make a lite version of pulses that can be fetched for the children
 Defer block hashing, so we can load faster
 Send all children at the same time
 Make the blocks smaller by using schema hashing with ipld schema.
