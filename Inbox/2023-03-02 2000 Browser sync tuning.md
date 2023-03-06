@@ -21,6 +21,7 @@ Use the browser storage so the next loads are much quicker
 Resolver as syncer aware - know when asking for a child, so as to await the initial sync
 Use hamt .cids() as a way to walk hamts ?
 Defer the hashing to present data sooner, but block all writing until hash and sig are verified
+Send a lite version of the pulse that omits some blocks for speed
 
 ## Done
 Throttle crisp creation to reduce react render load.
@@ -80,3 +81,10 @@ walked 13574 blocks in 4178 ms car is 5894738 took 4235 ms blocks took 4186 ms
 second load:
 walked 13574 blocks in 1538 ms car is 5894738 took 1584 ms blocks took 1538 ms
 
+bitWidth: 5 and bucketSize: 3 baseline based on ipld-hashmap defaults, 10k customers
+walked 12307 blocks in 4082 ms car is 5270706 took 4128 ms blocks took 4086 ms
+walked 12307 blocks in 1321 ms car is 5270706 took 1363 ms blocks took 1322 ms
+
+bitWidth: 4 and bucketSize: 8 based on tuning, 10k customers
+walked 10755 blocks in 3883 ms car is 5126013 took 3930 ms blocks took 3896 ms
+walked 10755 blocks in 1286 ms car is 5126013 took 1323 ms blocks took 1286 ms
