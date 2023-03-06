@@ -7,7 +7,9 @@
 
 If we got asked for a `crispDeepPulse` sync type, then we should start the process of walking it upon receipt, waiting for blocks as they stream in.  When a new pulse is received, we should fulfill anything that is waiting for this to be resolved.  The walker should be the first point aware of pulses that have come as children.
 
-Syncer would be 
+Syncer could pull out the resolver of the parent pulse, and continue to use this on the way down ?
+So the endurance resolver is never called directly again, except to be told it wants a deepCrisp.
+
 
 `.resolveDeep( target, parent )` to signal that we are a walker, and have previously asked for a deep walk.
 
