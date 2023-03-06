@@ -7,6 +7,7 @@
 
 
 ## Options
+Send down with children, since going to ask for those anyway.
 Send raw blocks with no CAR, where length encoding is the blocks themselves.
 Make a list version of a channel, avoiding all the small blocks assosciated with it.
 Make a lite version of pulses that can be fetched for the children
@@ -24,12 +25,12 @@ Defer the hashing to present data sooner, but block all writing until hash and s
 Send a lite version of the pulse that omits some blocks for speed
 
 ## Done
+Fatten the buckets so less little blocks to fetch in the large hamt.
 Throttle crisp creation to reduce react render load.
 Use the blockcache in case things are asked for again
 Skip bake skippable items in the pulse using a litepulse
 
 ## Favourites
-Fatten the buckets so less little blocks to fetch in the large hamt.
 Stream blocks down using length encoding continuously and interleaved.
 Import into the blockcache, checking cache first.
 Stream down with children too, so we don't have to ask.

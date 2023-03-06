@@ -10,3 +10,5 @@ Each time a new feature is required, it usually gets written up in some kind of 
 Future projects can be pointed at different features so we know we are waiting on some capabilities to be able to attempt certain kinds of projects.  This can be our roadmap.
 
 Changes can be separated out to infrastructure / blockchain changes, and application changes to a specific application.  That way, different types of application can be grouped by the features they need.
+
+There could be a summary document representing the end result of merging all the change proposals.
