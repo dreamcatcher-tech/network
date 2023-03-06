@@ -5,7 +5,11 @@
 
 >[!danger] Depends: 
 
-If we use our component libs to make a browser of IPFS data, then we can gain some publicity from being of service to the IPFS project.
+If we use our component libs to make a browser of IPFS data, then we can gain some publicity from being of service to the IPFS project.  This would be our own block explorer, and would favour using ipld schemas or [[I21|IPORM the IPFS ORM]] based models.
+
+It would have a module system where extra interpreter functions could be added as chains that run in isolation.  Can provide good stats on different types of structures.
+
+When connected with some cloud running chains, should be able to pull in large datasets and do analysis with the hypercomputer providing huge multithreading on the datasets.  Can create data processing pipelines with large parallelism.  Can share results with other collaborators.
 
 If the Engine is enhanced with some side effects that let it read IPFS raw, then it can load this content in the browser.
 

@@ -8,6 +8,8 @@
 
 ## Options
 Send down with children, since going to ask for those anyway.
+Send a pulse with a diff, so subsequent lifts are quick
+Use bitswap directly if we find we have part of the tree already
 Send raw blocks with no CAR, where length encoding is the blocks themselves.
 Make a lite version of a channel, avoiding all the small blocks assosciated with it.
 Load the customers sooner - should be able to say how many customers we have before fetching each one by using the alias size
