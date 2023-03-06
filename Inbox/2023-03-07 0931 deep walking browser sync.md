@@ -10,8 +10,11 @@ If we got asked for a `crispDeepPulse` sync type, then we should start the proce
 Syncer could pull out the resolver of the parent pulse, and continue to use this on the way down ?
 So the endurance resolver is never called directly again, except to be told it wants a deepCrisp.
 
+`.resolveLocal( pulseLink )` should be used 
 
 `.resolveDeep( target, parent )` to signal that we are a walker, and have previously asked for a deep walk.
+
+BUT if the lift was streaming in, then we couldn't possibly ask for something before it had arrived ?
 
 ## Diffing
 Requester should be able to say that it has a particular block already, and this should be subtracted from the stream that will be returned.  If this block has not completed lifting, then it should still be in progress, so can still treat it like it is diffed.
