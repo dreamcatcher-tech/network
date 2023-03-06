@@ -9,13 +9,9 @@
 ## Options
 Send down with children, since going to ask for those anyway.
 Send raw blocks with no CAR, where length encoding is the blocks themselves.
-Make a list version of a channel, avoiding all the small blocks assosciated with it.
-Make a lite version of pulses that can be fetched for the children
-Change the blockwidth and bucket size params to reduce the size and depth of the hamt
-Stream the car and all the children so absolutely as fast as it can be
-Load the customers sooner - should be able to say how many customers we have before fetching each one
+Make a lite version of a channel, avoiding all the small blocks assosciated with it.
+Load the customers sooner - should be able to say how many customers we have before fetching each one by using the alias size
 Defer block hashing, so we can load faster
-Send all children at the same time
 Make the blocks smaller by using schema hashing with ipld schema.
 Make in browser plain js models of the resulting data, and cache that, so rapid load next time
 Use the browser storage so the next loads are much quicker
@@ -23,9 +19,10 @@ Resolver as syncer aware - know when asking for a child, so as to await the init
 Use hamt .cids() as a way to walk hamts ?
 Defer the hashing to present data sooner, but block all writing until hash and sig are verified
 Send a lite version of the pulse that omits some blocks for speed
+Use a blockcache repo shared by all tabs, but each engine is different - maybe cache only remote mounts
 
 ## Done
-Fatten the buckets so less little blocks to fetch in the large hamt.
+Change the blockwidth and bucket size params to reduce the size and depth of the hamt
 Throttle crisp creation to reduce react render load.
 Use the blockcache in case things are asked for again
 Skip bake skippable items in the pulse using a litepulse
