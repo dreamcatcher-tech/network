@@ -20,6 +20,7 @@ Must be compatible with stopping the sync based on a schema, so that some parts 
 
 The repo could be hooked so that when a given block arrived, the resolver carries on.
 
+Want to resolve by waiting for the car stream, using a prior car stream if diffing was used.
 
 ## Diffing
 Requester should be able to say that it has a particular block already, and this should be subtracted from the stream that will be returned.  If this block has not completed lifting, then it should still be in progress, so can still treat it like it is diffed.
