@@ -7,3 +7,7 @@
 
 Perhaps the engine should load in a worker by default.
 Then the networking and hashing can be split out from the local operations, so that a large lift stream will not block local engine operations.
+
+Engine should try to load in a service worker if available too.
+
+Apps should just access the engine with no regard for how it is being run.
