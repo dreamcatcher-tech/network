@@ -28,6 +28,8 @@ Means signature verification need not be done per child chain pulse, but just on
 
 We can use heavier signature schemes, like schnorr, since the signature to data ration is very much higher if only the approot needs signing.  Signature amplification factor - namely how many signatures are required for writing a single bit of data - is much lower if only approot is signed.
 
+Problem might be that serving chains might give away the approot path, but this could possibly be masked.
+
 ## Reducer isolation
 Based on the publisher provenance, we can run covenants in the same isolation boundary to save time.  It should be possible to have different isolation boundaries between different chains in the same approot.
 
