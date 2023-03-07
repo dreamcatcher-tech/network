@@ -18,3 +18,5 @@ Redemption is done by lining it up against the current thruput, and receiving so
 Overall issuance projections can be computed from usage. Future value can be determined.
 
 We can reward early coins more than later ones, by paying out attribution whenever the currency is minted.
+
+Combat the deflation effects of cost of computing dropping by changing the ratio of currency that is accepted.  As the price goes down for compute, the power of the joules can be raised.

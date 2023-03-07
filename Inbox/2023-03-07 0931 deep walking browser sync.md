@@ -26,6 +26,8 @@ As we are diffing the hamts, start streaming down the logged blocks as we retrie
 We should only be logging the new pulse, not the prior.
 Seem to need to replace the resolver in the pulse.
 
+WHat about stopping bitswap altogether ? Particularly since there is no swarm, and it has no
+
 ## Diffing
 Requester should be able to say that it has a particular block already, and this should be subtracted from the stream that will be returned.  If this block has not completed lifting, then it should still be in progress, so can still treat it like it is diffed.
 
