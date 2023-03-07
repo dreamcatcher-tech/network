@@ -7,6 +7,9 @@
 
 
 ## Options
+Diffing for subsequent pulses in the chain 
+Do not hash or store lifted blocks until the blocks are actually requested from the cache
+Make lift use whatever is on the disk too
 Send down with children, since going to ask for those anyway.
 Send a pulse with a diff, so subsequent lifts are quick
 Use bitswap directly if we find we have part of the tree already
@@ -88,3 +91,7 @@ walked 12307 blocks in 1321 ms car is 5270706 took 1363 ms blocks took 1322 ms
 bitWidth: 4 and bucketSize: 8 based on tuning, 10k customers
 walked 10755 blocks in 3883 ms car is 5126013 took 3930 ms blocks took 3896 ms
 walked 10755 blocks in 1286 ms car is 5126013 took 1323 ms blocks took 1286 ms
+
+streaming blocks immediately, removed bitswap, 10k customers, cold then refresh
+lift completed in 27,338ms for 61,855 blocks with 14,945,628 bytes and 2,226,780 hashes size
+lift completed in 4,303ms for 61,855 blocks with 14,945,628 bytes and 2,226,780 hashes size
