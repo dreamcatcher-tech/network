@@ -10,6 +10,7 @@
 Diffing for subsequent pulses in the chain 
 Do not hash or store lifted blocks until the blocks are actually requested from the cache
 Make lift use whatever is on the disk too
+useWorker to run the engine in its own web worker
 Send down with children, since going to ask for those anyway.
 Send a pulse with a diff, so subsequent lifts are quick
 Use bitswap directly if we find we have part of the tree already
