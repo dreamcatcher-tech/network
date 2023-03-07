@@ -31,7 +31,11 @@ What about ditching bitswap altogether ? Particularly since there is no swarm, a
 Recovery then allows asking for a pulse that we expect to be part of a deep request.
 Resolvers are stored based on
 Chain the resolvers until the lift has completed, when it goes straight to blockstore.
-Blockstore only ever gets populated from lifts, so therefore whenever we ask, it just adds a marker for that CID, and 
+Blockstore only ever gets populated from lifts, so therefore whenever we ask, it just adds a marker for that CID, and when the blocks stream in,
+
+## Auto end detection
+If the connection is severed, the lift request needs to be resent, starting again.
+Since we are sending down pulses, we can know that the pulse has been fully walked.
 
 ## Diffing
 Requester should be able to say that it has a particular block already, and this should be subtracted from the stream that will be returned.  If this block has not completed lifting, then it should still be in progress, so can still treat it like it is diffed.
