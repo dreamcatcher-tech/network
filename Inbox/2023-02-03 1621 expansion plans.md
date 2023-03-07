@@ -50,3 +50,6 @@ Automated markets th
 The software is free, the catch is that we will invite you to offer your goods and services in our marketplace, and encourage you to consume from our marketplace of suppliers.
 The marketplace optionally allows for ethics auditing, as provided by the software plus onsite audits, so you can purchase fully ethical goods.
 When you move to purchasing ethically, we know that we will eventually get paid for this.
+
+## Selling compute
+The primary thing we want to sell is computational load.  Apps and other revenues on top of that are a bonus, but the baseline we want is compute.  This blockchain network is for large scale computation of both general and specialized kinds.  This should be the preferred way to both consume and supply compute resources.  A blockchain future necessitates computation over content addressed systems.
