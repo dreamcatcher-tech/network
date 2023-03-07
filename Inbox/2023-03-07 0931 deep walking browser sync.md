@@ -22,6 +22,10 @@ The repo could be hooked so that when a given block arrived, the resolver carrie
 
 Want to resolve by waiting for the car stream, using a prior car stream if diffing was used.
 
+As we are diffing the hamts, start streaming down the logged blocks as we retrieve the additions.
+We should only be logging the new pulse, not the prior.
+Seem to need to replace the resolver in the pulse.
+
 ## Diffing
 Requester should be able to say that it has a particular block already, and this should be subtracted from the stream that will be returned.  If this block has not completed lifting, then it should still be in progress, so can still treat it like it is diffed.
 
