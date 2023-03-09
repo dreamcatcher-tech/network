@@ -20,3 +20,11 @@ Overall issuance projections can be computed from usage. Future value can be det
 We can reward early coins more than later ones, by paying out attribution whenever the currency is minted.
 
 Combat the deflation effects of cost of computing dropping by changing the ratio of currency that is accepted.  As the price goes down for compute, the power of the joules can be raised.
+
+The issuance rate could be set based on a learning algorithm, so that it sees what behaviours are occuring, and pics the best issuance rate based on the goals of the system. Training and optimizing the model on the data is a form of mining that lets people check the model is better than previous, does solve the original data, and only then do they start applying it.
+
+System goals are stability, value capture, and governance out of human hands.  It starts with different confidence bounds until we are confident it has been trained sufficiently.
+
+It is an application of the general purpose data training functions of the Dreamcatcher, which can use computational energy of dataset training to prove work.  It optimizes its own currency governance, and can be used to optimize other things too.
+
+General attribution rewards could be tackled in this way too, with goals and params set so the algo can be upgraded when a better one occurs that fits all the data better.  This is a leap, and the training of the model is incremental mining.
