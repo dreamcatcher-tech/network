@@ -6,8 +6,9 @@
 >[!danger] Depends: 
 
 What if we loaded an index that was used to provide an omnibox search function which returned a list of aliases that could then be loaded and baked as required ?
-Search function is binary, so it takes advantage of diff patching to avoid garbage collection.
+Search object should be binary layer, so it takes advantage of diff patching to avoid garbage collection.
 
+? Pull down the state tree rapidly so have this object first, no bake.
 
 So the server would stream down all the blocks required for the complete app, but they would not be populated until they were actually called upon.
 
