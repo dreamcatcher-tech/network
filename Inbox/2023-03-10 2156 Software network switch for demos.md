@@ -10,4 +10,6 @@ We can then form little cut of networks and watch the behaviours of agents as th
 
 Then let them rejoin, with a known conflict, and watch them reconcile their differences.
 
-We can use the 777 protocol to
+We can use the 777 protocol to do in memory connections, then show multiple windows.
+Or use webrtc with local connections to go between iframes ?
+Or some kind of message forwarding thru iframe messages.
