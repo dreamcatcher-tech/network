@@ -30,6 +30,9 @@ We can use heavier signature schemes, like schnorr, since the signature to data 
 
 Problem might be that serving chains might give away the approot path, but this could possibly be masked.
 
+## Perf Benefits
+Browser reinstantiation of pulses can skip signature verification on every pulse, shaving 1ms or so off the load process.  For 20k pulses, this saves about 20 seconds on initial load.
+
 ## Reducer isolation
 Based on the publisher provenance, we can run covenants in the same isolation boundary to save time.  It should be possible to have different isolation boundaries between different chains in the same approot.
 
