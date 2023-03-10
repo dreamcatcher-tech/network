@@ -28,3 +28,5 @@ System goals are stability, value capture, and governance out of human hands.  I
 It is an application of the general purpose data training functions of the Dreamcatcher, which can use computational energy of dataset training to prove work.  It optimizes its own currency governance, and can be used to optimize other things too.
 
 General attribution rewards could be tackled in this way too, with goals and params set so the algo can be upgraded when a better one occurs that fits all the data better.  This is a leap, and the training of the model is incremental mining.
+
+The coin can purposefully have a strong decentralization metric, so it only issues when enough decentralization is detected, making it clearly not a security.
