@@ -30,6 +30,17 @@ We can use heavier signature schemes, like schnorr, since the signature to data 
 
 Problem might be that serving chains might give away the approot path, but this could possibly be masked.
 
+## Rapid complex verification
+In a large collection, the children would have all been signed by a different approot, which if verified would require the fetching and verification of each approot, costing much download ability.  But if the inclusion of the hash chain in the latest approot is sufficient, we can accept just that top level signature.  Finding the approot of the last change seems unnecessary.
+
+This is reverse lookup of the signature, instead of treating the signature as attached to the child pulse, we treat the child pulse as attached to the approot, and gets signed each time an approot is generated.
+
+This means a pulse can have potentially many signatures, but has only one signature for each change it makes.  To pinpoint the last change and its signature, use lineage to get the previous pulse for the child chain.  Walk the supervisor tree up to approot to get signature.  Verify the lineage from current approot to prior approot to ensure authenticity.
+
+Transmits should only accept the signature of the latest pulse, rather than any subsequent one.  This approot can have its changes walked to get the latest pulse.  Tranmission is only valid for this pulse and no others, since it is the one that should have been triggered to do the transmission work.
+
+Instead of pointer to previous pulse, store a pointer to previous approot.  If path had changed for a pulse, should record these moves somewhere ?
+
 ## Perf Benefits
 Browser reinstantiation of pulses can skip signature verification on every pulse, shaving 1ms or so off the load process.  For 20k pulses, this saves about 20 seconds on initial load.
 
