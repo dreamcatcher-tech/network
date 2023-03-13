@@ -9,6 +9,7 @@ List of Ideas that have not yet been implemented.  Implementation of [[Interpuls
 [[2023-02-03 1142 useDatum convenience methods]]
 [[2023-02-13 2113 progress updates during blockbuster]]
 [[2023-03-01 1117 subscribe hooks for state changes]]
+[[2023-03-13 1343 Engine error stream]]
 
 ## Request for Comment
 [[Sign only the approot]]
