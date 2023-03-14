@@ -32,6 +32,8 @@ Not a company, but a network - a network of computer networkers.  It is astoundi
 
 Spread the cost of making good decisions around, then all benefit from shared knowledge commons about what best practices and best units are.  Being able to compare all the different desktop options between all installers and their lessons learned is much better.  Provides an undebateable reference.
 
+We're always going to have to deal with IT companies, so if we can have a smooth way to integrate or replace them, great.  IT services are too expensive currently, so offering an alternative is a good way to get started on the model.
+
 ## Construction
 Use the Dreamcatcher to get construction done for the OpenIT software platform.
 Requests for modules like laptop templates, remote management systems.
