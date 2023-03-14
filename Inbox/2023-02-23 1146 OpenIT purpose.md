@@ -34,6 +34,8 @@ Spread the cost of making good decisions around, then all benefit from shared kn
 
 We're always going to have to deal with IT companies, so if we can have a smooth way to integrate or replace them, great.  IT services are too expensive currently, so offering an alternative is a good way to get started on the model.
 
+Use remote workers at cheaper rates to do the same skilled work.  With good procedures and security, damage from rogue workers will be minimal.
+
 ## Construction
 Use the Dreamcatcher to get construction done for the OpenIT software platform.
 Requests for modules like laptop templates, remote management systems.
