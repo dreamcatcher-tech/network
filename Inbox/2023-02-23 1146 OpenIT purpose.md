@@ -31,3 +31,20 @@ Move towards infrastructure as code, and therefore IT services work as independe
 Not a company, but a network - a network of computer networkers.  It is astounding the those who build and maintain computer networks do not themselves have a strong network operating model.
 
 Spread the cost of making good decisions around, then all benefit from shared knowledge commons about what best practices and best units are.  Being able to compare all the different desktop options between all installers and their lessons learned is much better.  Provides an undebateable reference.
+
+## Construction
+Use the Dreamcatcher to get construction done for the OpenIT software platform.
+Requests for modules like laptop templates, remote management systems.
+API'd people as IT service people are the best way to get app ideas into the system.
+All the money for the service contracts flows thru the gateway company.
+Purchases of new equipment go thru gateway - makes it easier to fund hardware for customers if we know they have already paid.
+Live monitoring tooling that feeds back to OpenIT so that any operatives can get in and work on the system.
+Limited privelege access to workers.
+Enterprise as code as the goal - then IT service work can be PR'd against prod branch.
+
+
+## Company templates
+Chromebooks have a better application isolation mechanism, which makes it easier to manage, less viruses, less corruption.  The devices are cheaper, more resource efficient.  Framework devices are more repairable, and the cpu can be used as part of backup compute at EOL.  Same OS as mobiles, so all get treated the same way.
+
+Make a live monitoring android app that gets installed.  Allows remote access and screen sharing.
+Can connect a pool of workers with those with problems, sometimes with affinity.
