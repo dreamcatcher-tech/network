@@ -36,6 +36,8 @@ We're always going to have to deal with IT companies, so if we can have a smooth
 
 Use remote workers at cheaper rates to do the same skilled work.  With good procedures and security, damage from rogue workers will be minimal.
 
+If android for mobile and chromebooks, then we can be developing for the same platform all the time.  Might need reactnative or similar to handle running JS libraries at first.
+
 ## Construction
 Use the Dreamcatcher to get construction done for the OpenIT software platform.
 Requests for modules like laptop templates, remote management systems.
