@@ -87,6 +87,13 @@ when the walk is complete, swap out the current children map for the new one
 Walk is complete, check the walkQueue for more work
 
 
+Maybe adding to children array as we go is not good ? Can present lists of children that do not exist.
+If there is nothing, then add to the array as we go.
+But if there is something, then we know it is a prior pulse, but it is
+So if wait until have completed the walk, can swap over instantly.
+But, could present changes to the GUI faster, so see how overflate goes.
+
+
 ## Caching based on hamt blocks
 Treat each block like a Map, then be able to do rapid diffing.
 So if have two hamts, with no cache, can get the diff by walking last and building up a map for each block.  If the block appears in prior, then we stop the walk, but whilst it is different, keep walking. Unsure what advantage this gives ?
