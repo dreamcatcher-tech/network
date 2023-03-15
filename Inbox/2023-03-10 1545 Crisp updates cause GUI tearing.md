@@ -17,3 +17,7 @@ If we have nothing, then release the crisp progressively, else release only comp
 Want a graceful update, where if we are uncertain, the crisp acts like the last crisp, but if we are certain, then it acts definitely.
 
 Once it is deep loaded, it deletes the link to prior crisps, freeing up the memory.
+
+Block tearing of the syncer, so it always moves forwards without 
+Partially baked blocks seem to be responsible for tearing.
+They become prior, and have no baked children, so we end up redoing the sync work.
