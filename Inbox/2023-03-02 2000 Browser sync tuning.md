@@ -100,4 +100,4 @@ lift completed in 4,303ms for 61,855 blocks with 14,945,628 bytes and 2,226,780 
 object cache, per pulse walk, cid tree walk vs uncrush, 20k customers, no devtools, cold + refresh
 lift completed in 51,681ms for 123,391 blocks with 29.8 MB bytes and 4.44 MB hashes size
 lift completed in 2,944ms for 123,390 blocks with 29.8 MB bytes and 4.44 MB hashes size
-Browser page load: 1:04.  So basically same time for cold, 4x speed for warm, browser half speed to load.  Browser appears to not lock the thread during load.
+Browser page load: 34seconds.  So basically same time for cold, 4x speed for warm, browser quarter speed to load.  Browser appears to not lock the thread during load.

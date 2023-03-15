@@ -18,6 +18,9 @@ Want a graceful update, where if we are uncertain, the crisp acts like the last 
 
 Once it is deep loaded, it deletes the link to prior crisps, freeing up the memory.
 
-Block tearing of the syncer, so it always moves forwards without 
+Block tearing of the syncer, so it always moves forwards without getting torn pulses.
+But would this be too slow to keep up ?
+Could we skip ahead ?
+Could prior be the current deepest synced thing ?
 Partially baked blocks seem to be responsible for tearing.
 They become prior, and have no baked children, so we end up redoing the sync work.
