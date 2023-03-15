@@ -95,6 +95,8 @@ But, could present changes to the GUI faster, so see how overflate goes.
 
 Concurrency should be core, then reserve some capacity for requested things, so that customers can load in the portal faster.
 
+Extras: add isChildrenLoading to know if we have a confirmed set of children or not.
+
 ## Caching based on hamt blocks
 Treat each block like a Map, then be able to do rapid diffing.
 So if have two hamts, with no cache, can get the diff by walking last and building up a map for each block.  If the block appears in prior, then we stop the walk, but whilst it is different, keep walking. Unsure what advantage this gives ?
