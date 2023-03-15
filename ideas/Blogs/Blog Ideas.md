@@ -40,6 +40,11 @@ Using second hand computers in the enterprise.
 
 Dollars as a carbon causer - the more IT costs, the more carbon is needed
 
+Find estimates of duplicate data transmission.
+
+Better quality software, cheaper, and faster.  Carbon emissions are being wasted during the time your software isn't deployed and solving the problem it needs to.  Costing more is wasting carbon too.
+"Carbon is money" - if you're emitting CO2, then you're wasting money now, and will be penalized even further later.
+
 ## Complexity as the uptime enemy
 The more complexity is added to a DC, as well as the redundancy systems, the more likely it is to fail catastrophically.  Also the recovery time is larger.  Simpler systems crash more predictably.
 The most invulnerable datacentre is no datacentre.

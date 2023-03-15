@@ -33,6 +33,9 @@ So if each crisp had the last crisp, then if it is unresolved, it goes back.
 Diffing for a new pulse should walk back to the last crisp that was resolved.
 This would allow multiple new pulses to arrive, be un walked before the next one arrives, and yet we would still have something meaningful to compare with as the last crisp would tell us what pulse to use for diffing.
 
+Use the crisp as the cache for the syncer, not the pulses.
+Ignore path renames for now, since stable pathing is easy to use the crisps for.
+
 ## Two layers of syncing
 Syncing the complex is one part, baking the complex is the other.
 These two should be independent.
