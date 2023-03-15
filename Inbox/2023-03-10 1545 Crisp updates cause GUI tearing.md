@@ -72,7 +72,7 @@ At the start of each pulsewalk, get the children from the cache for prior and st
 If no prior, leave undefined.  
 Resolve the current pulse, and update the cache to include this pulse.
 Walk only the alias hamt, in full, and resolve to the channels. 
-	Store a mapping of the aliases to pulseIds that we have for this pulse
+	Store a mapping of the aliases to pulse, where pulse may be undefined
 	For each channel
 		Store the alias mapping in the new childrens map.
 		check if the rx.latest pulse exists in cache, if not:
