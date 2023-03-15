@@ -26,6 +26,13 @@ Is the diff we are asking for using a version we have not fully synced down yet 
 Partially baked blocks seem to be responsible for tearing.
 They become prior, and have no baked children, so we end up redoing the sync work.
 
+## What is the latest Crisp ?
+The crisp with the most data could be considered the latest ?
+Or, every crisp is latest, by way of passthru of the prior crisp ?
+So if each crisp had the last crisp, then if it is unresolved, it goes back.
+Diffing for a new pulse should walk back to the last crisp that was resolved.
+This would allow multiple new pulses to arrive, be un walked before the next one arrives, and yet we would still have something meaningful to compare with as the last crisp would tell us what pulse to use for diffing.
+
 ## Two layers of syncing
 Syncing the complex is one part, baking the complex is the other.
 These two should be independent.

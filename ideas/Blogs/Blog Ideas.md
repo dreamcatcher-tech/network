@@ -33,8 +33,19 @@ Climate change affected regions lose connectivity, but have no excuse for losing
 Goal is to takeoff in a plane, and while in the air an app specific to what you need has already been built, tested, and deployed.
 [Heat waves affecting cooling](https://gizmodo.com/heat-waves-climate-change-data-center-server-shut-down-1849916741)
 
+The amount of electricity used for computing is about 10% of global.  Much of this goes to the network, so reducing the network traffic is combatting climate change.
+Carbon output for mfg of computers - show what this is for servers.  If we can remove servers, and network traffic, this is the biggest carbon emission reduction.
+
+Using second hand computers in the enterprise.
+
+Dollars as a carbon causer - the more IT costs, the more carbon is needed
+
 ## Complexity as the uptime enemy
 The more complexity is added to a DC, as well as the redundancy systems, the more likely it is to fail catastrophically.  Also the recovery time is larger.  Simpler systems crash more predictably.
 The most invulnerable datacentre is no datacentre.
 
 Show studies that map DC outages, and show less frequent, but goes down for longer, with more puzzling outcomes.  The devil is in complexity.
+
+
+## Cost as a proxy for Carbon output
+If you are costing businesses $x, then there can be loose mapping made between GDP, CO2 emissions, and how much emissions you are causing.
