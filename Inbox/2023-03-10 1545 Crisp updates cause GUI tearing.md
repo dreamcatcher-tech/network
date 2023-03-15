@@ -43,6 +43,56 @@ The cache gets updated
 ? how can we measure the RTT of an action in the browser on a large customer list ?
 Make a tester component, with a button and a timer writing stats.
 
+? Should the syncer be path aware ?
+Currently it is only pulse aware, which can lead to tears.
+The caches could be carried forward with prior, so even torn bakes use a string of caches.
+Prior is just a cache key used to look up the latest map.
+At first, the map is blindly set to the prior map, so the latest work is always carried forwards.
+Then, as the diffing proceeds, items are removed from the map and added to the map.
+Each pulse gets fully walked, then compared to the map.  A full walk shouldn't take more than 2 seconds to complete, and should be very yielding.
+
+So basically abandon using pulses as diffs, since the walks may be incomplete.
+Start walking the pulse completely, updating the prior map as we go, with additions and changed, whilst teeing off a copy of the complete set to do subtraction with.
+Once the walk is complete, swap out the teed map with the current one.
+If get restarted, then we always have the largest map with us, minus the subtractions.
+
+1. Covenant cache mapping paths to pulseIds
+2. Pulse cache mapping pulseIds to pulses, channels, and aliases
+`const pulse = cache.getCovenant()`
+`const { pulse, children } = cache.getPulse( pulseId )`
+
+For each pulse, walk the internal cid tree looking for key bakeable items, which are:
+1. pulselinks
+2. hamts
+3. covenant paths
+
+## V1
+Hook the cache so any updates to it result in yielding a new crisp
+At the start of each pulsewalk, get the children from the cache for prior and store them under current.
+If no prior, leave undefined.  
+Resolve the current pulse, and update the cache to include this pulse.
+Walk only the alias hamt, in full, and resolve to the channels. 
+	Store a mapping of the aliases to pulseIds that we have for this pulse
+	For each channel
+		Store the alias mapping in the new childrens map.
+		check if the rx.latest pulse exists in cache, if not:
+			Grab the latest pulse from the prior pulse, if it exists, by using channelId NOT alias
+			Check again that the cache is still empty, to avoid race
+			Push this pair on to the walk queue.
+			WalkQueue automatically pulls the cache forward from prior to latest, asserting not exist
+				Push an entry for the latest pulseId into the alias map with all fields blank.
+				Update the alias map for latest to that of prior, if present
+			Update the child map in cache for the current pulseId to expand or update it
+when the walk is complete, swap out the current children map for the new one
+Walk is complete, check the walkQueue for more work
+
+
+## Caching based on hamt blocks
+Treat each block like a Map, then be able to do rapid diffing.
+So if have two hamts, with no cache, can get the diff by walking last and building up a map for each block.  If the block appears in prior, then we stop the walk, but whilst it is different, keep walking. Unsure what advantage this gives ?
+
+Be nice to have a hamt viewer so can compare trees and show the similarity between them both.
+
 ## Prioritizing to the viewport
 Make a small class that is an async generator.  Push shoves into an array, and yields it immediately.  If the buffer is filling up, then check if the item is already in the queue, if so, push to the front.
 OR can make a LIFO queue, and just rely on dedupe on the output.
