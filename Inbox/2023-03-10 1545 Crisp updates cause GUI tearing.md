@@ -22,5 +22,10 @@ Block tearing of the syncer, so it always moves forwards without getting torn pu
 But would this be too slow to keep up ?
 Could we skip ahead ?
 Could prior be the current deepest synced thing ?
+Is the diff we are asking for using a version we have not fully synced down yet ?
 Partially baked blocks seem to be responsible for tearing.
 They become prior, and have no baked children, so we end up redoing the sync work.
+
+## Two layers of syncing
+Syncing the complex is one part, baking the complex is the other.
+These two should be independent.
