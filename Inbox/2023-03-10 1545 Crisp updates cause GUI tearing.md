@@ -26,6 +26,27 @@ Is the diff we are asking for using a version we have not fully synced down yet 
 Partially baked blocks seem to be responsible for tearing.
 They become prior, and have no baked children, so we end up redoing the sync work.
 
+
+## Are pulses with maps being lost ?
+Should the maps of hamts and the pulselink baking be separated out ?
+Object cache should keep the pulses the same.
+But with rapid pulses, we might end up with prior as
+So use the crisp itself as the cache ?
+Set the caches as a mutable map, which gets snapshotted when the crisp is viewed.
+We can update the cache
+The cache is only relevant to the current crisp ? No - it is central and stored by the syncer.
+
+So the syncer holds a cache that is used to look up pulses, and their maps of aliases and children.
+The cache gets updated
+? is there a chance to put priority in somehow using this cache ? or is that solely in the walker.
+
+? how can we measure the RTT of an action in the browser on a large customer list ?
+Make a tester component, with a button and a timer writing stats.
+
+## Prioritizing to the viewport
+Make a small class that is an async generator.  Push shoves into an array, and yields it immediately.  If the buffer is filling up, then check if the item is already in the queue, if so, push to the front.
+OR can make a LIFO queue, and just rely on dedupe on the output.
+
 ## What is the latest Crisp ?
 The crisp with the most data could be considered the latest ?
 Or, every crisp is latest, by way of passthru of the prior crisp ?
