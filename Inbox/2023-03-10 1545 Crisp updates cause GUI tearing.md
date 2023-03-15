@@ -93,6 +93,7 @@ But if there is something, then we know it is a prior pulse, but it is
 So if wait until have completed the walk, can swap over instantly.
 But, could present changes to the GUI faster, so see how overflate goes.
 
+Concurrency should be core, then reserve some capacity for requested things, so that customers can load in the portal faster.
 
 ## Caching based on hamt blocks
 Treat each block like a Map, then be able to do rapid diffing.
