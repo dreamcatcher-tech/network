@@ -8,3 +8,7 @@
 If consumer taste is shifting to ethics products, then we can drop the IP restrictions, since we can use fair trade to push fair attribution and allow rapidly reconfiguring supply chains to keep ethically clear and to provide the optimal outcome for the consumers.
 
 A range of products that are owned by the commons, can reconfigure rapidly and be produced locally with variants, which pays contributors based on ethics.
+
+This ethical payback also extends out to the investors - if you fund an ethical venture and it doesn't immediately make money, then it should make money on the reuse if it made things of value.
+
+Also as an ethical investor, you should pay out to those who came before you and contributed.
