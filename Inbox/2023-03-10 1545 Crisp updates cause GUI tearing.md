@@ -106,6 +106,8 @@ Appears to be slow to get initial bake, since server is streaming down in not br
 
 ## Speed ups
 Present a last fully walked pulse, or first walked pulse, so we can use hamt diffs on it ?
+Parallel pulse baking
+Read ahead buffers in the network
 
 ## Problems
 Server side takes too long
