@@ -104,6 +104,13 @@ Should use the last pulse, if haven't resolved the current one yet, to stop the 
 
 Appears to be slow to get initial bake, since server is streaming down in not breadth first ?
 
+## Speed ups
+Present a last fully walked pulse, or first walked pulse, so we can use hamt diffs on it ?
+
+## Problems
+Server side takes too long
+Server side order is different to client side
+
 ## Caching based on hamt blocks
 Treat each block like a Map, then be able to do rapid diffing.
 So if have two hamts, with no cache, can get the diff by walking last and building up a map for each block.  If the block appears in prior, then we stop the walk, but whilst it is different, keep walking. Unsure what advantage this gives ?
