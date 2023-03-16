@@ -38,6 +38,23 @@ Use remote workers at cheaper rates to do the same skilled work.  With good proc
 
 If android for mobile and chromebooks, then we can be developing for the same platform all the time.  Might need reactnative or similar to handle running JS libraries at first.
 
+Maintaining custom written apps has a high overhead, and so this company allows that to function.
+
+Start the pipeline of work back to Ukraine where remote admin work occurs.
+Design the operation so that the remote support can't do any real damage, since they can only access machines while staff are watching, and can only change whatever the staff can change, so should not be able to change anything, or ransom anything.
+Map these trust networks so we can be sure we have good people that are trustworthy.
+
+Start with accounting and publishing of the costs of the support.
+
+Operate an enterprise on hardware that can be purchased locally, and always know how much hardware we can lay our hands on, particularly in disaster scenarios.
+Set up datacentres at the company, and rent out space there to other users.
+
+Prep companies to rapidly go remote or offline during natural disasters.
+
+Provides a strong pipeline of custom app work, each of which can be resold, provides a base of customers that can share apps, displaces difficult IT companies that block new apps, provide support for custom apps.
+
+Automated trade between companies for services and products.  Starting with IT services.  We operate in our own marketplace.
+
 ## Construction
 Use the Dreamcatcher to get construction done for the OpenIT software platform.
 Requests for modules like laptop templates, remote management systems.

@@ -104,6 +104,9 @@ Should use the last pulse, if haven't resolved the current one yet, to stop the 
 
 Appears to be slow to get initial bake, since server is streaming down in not breadth first ?
 
+So it doesn't actually matter that we have the prior pulse at all - all that matters is if we walked it or not, and if we did, then we can use that for diffing purposes.
+So if we just store the lastFull pulse key, then we can 
+
 ## Speed ups
 Present a last fully walked pulse, or first walked pulse, so we can use hamt diffs on it ?
 Parallel pulse baking
@@ -113,6 +116,7 @@ Do not uncrush channels - specifically walk the CID block and navigate the links
 Increase concurrency until the thread lags
 Look up the rx.latest path directly from the block.value
 Make decode leave the blocks hashed only, without inflating to json
+Emit the results of diff gets so we can do these in parallel
 
 ## Problems
 Server side takes too long
