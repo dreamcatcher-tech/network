@@ -108,6 +108,11 @@ Appears to be slow to get initial bake, since server is streaming down in not br
 Present a last fully walked pulse, or first walked pulse, so we can use hamt diffs on it ?
 Parallel pulse baking
 Read ahead buffers in the network
+Emit chilren onto the walk queue as soon as they are realized
+Do not uncrush channels - specifically walk the CID block and navigate the links
+Increase concurrency until the thread lags
+Look up the rx.latest path directly from the block.value
+Make decode leave the blocks hashed only, without inflating to json
 
 ## Problems
 Server side takes too long
@@ -136,3 +141,19 @@ Ignore path renames for now, since stable pathing is easy to use the crisps for.
 ## Two layers of syncing
 Syncing the complex is one part, baking the complex is the other.
 These two should be independent.
+
+## Measurements
+### hamt diffing compared with full walking
+interblock:api:Syncer tearing bake for undefined in favour of PulseLink(ifoxurzcf) +0ms
+interblock:api:Syncer slow read ahead buffer 5780ms for 38 units +6s
+interblock:api:Syncer slow bake for PulseLink(ifoxurzcf) 5782ms +1ms
+interblock:api:Syncer diff compare with null 156ms +1s {added: Set(20043), deleted: Set(0), modified: Set(0)}
+interblock:api:Syncer slow read ahead buffer 55793ms for 20043 units +56s
+interblock:api:Syncer slow bake for PulseLink(ifcfsqa36) 55950ms +1ms
+
+Notice that sectors is very slow to read ahead, but everything else waited for that.
+Diffing 20,043 customers took only 156ms, but read ahead took 55 seconds !
+Making an edit:
+interblock:api:Syncer slow read ahead buffer 14339ms for 20045 units +14s
+where the sectors did not show at all, presumably cache was hit.
+diffing was so fast as to not go above the 100ms threshold
