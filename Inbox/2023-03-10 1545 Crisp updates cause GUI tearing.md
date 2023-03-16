@@ -102,6 +102,8 @@ If the current children are only additions, if anything, since the last full wal
 
 Should use the last pulse, if haven't resolved the current one yet, to stop the UI flickering.
 
+Appears to be slow to get initial bake, since server is streaming down in not breadth first ?
+
 ## Caching based on hamt blocks
 Treat each block like a Map, then be able to do rapid diffing.
 So if have two hamts, with no cache, can get the diff by walking last and building up a map for each block.  If the block appears in prior, then we stop the walk, but whilst it is different, keep walking. Unsure what advantage this gives ?
