@@ -117,6 +117,7 @@ Increase concurrency until the thread lags
 Look up the rx.latest path directly from the block.value
 Make decode leave the blocks hashed only, without inflating to json
 Emit the results of diff gets so we can do these in parallel
+parallelize server side streamWalk
 
 ## Problems
 Server side takes too long
