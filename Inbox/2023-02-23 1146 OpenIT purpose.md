@@ -55,6 +55,8 @@ Provides a strong pipeline of custom app work, each of which can be resold, prov
 
 Automated trade between companies for services and products.  Starting with IT services.  We operate in our own marketplace.
 
+As we build out apps, do not want to get drowned in support requests, or installation work.
+
 ## Construction
 Use the Dreamcatcher to get construction done for the OpenIT software platform.
 Requests for modules like laptop templates, remote management systems.
