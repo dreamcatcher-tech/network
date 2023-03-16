@@ -97,6 +97,11 @@ Concurrency should be core, then reserve some capacity for requested things, so 
 
 Extras: add isChildrenLoading to know if we have a confirmed set of children or not.
 
+Store the last pulse to reach full walk, so we can use diffing which should require less walking.
+If the current children are only additions, if anything, since the last full walk, then we can use the last walk to speed things up a lot.
+
+Should use the last pulse, if haven't resolved the current one yet, to stop the UI flickering.
+
 ## Caching based on hamt blocks
 Treat each block like a Map, then be able to do rapid diffing.
 So if have two hamts, with no cache, can get the diff by walking last and building up a map for each block.  If the block appears in prior, then we stop the walk, but whilst it is different, keep walking. Unsure what advantage this gives ?

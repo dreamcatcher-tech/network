@@ -13,6 +13,8 @@ Each reducer would be given the option to reject a PR, otherwise if the system c
 
 This architecture means each actor is doing the exact same operation - trying to get their changes merged in.  So a client with no validator permissions can still fork the validators chain and promote its changes between all the other clients, allowing them all to reach consensus even tho they are offline.  This enables [[Quorumless apps]]
 
+Means that sync speed is much less an issue, as a user can go as fast as they can drive the machine, and the syner will eventually push their changes up.  Slow or timed out connections make no difference.  Diffing is much easier, as the browser is in control, whereas doing syncing with lineage skips can leave the browser unsure what to use as diff base.  In PR based arch, diffing is engine quality, and has no tears, so diffing is assured.
+
 ## Validation
 Validators execute inbound actions from other Complexes and continually try to merge with each other.  Each time they merge another validators chain, they sign it, so consensus of varying levels is achieved rapidly.  Validators can sign something that is different to what they have since they can merge in one of their states that came before their unique changes, to get the agreed head into consensus as fast as possible.
 
