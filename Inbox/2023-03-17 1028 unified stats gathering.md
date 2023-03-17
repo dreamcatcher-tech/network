@@ -21,3 +21,7 @@ Show where caches were hit, and lookup what the original call was, so can know t
 Can attach the stats object to all functions, so it always gets passed along, and can be updated as it goes deep down.
 Ultimately the calling function is responsible for publishign the stats.
 Can be used to show cache loads, cache hits, and other vital data.
+
+Decorate all IPORM classes with performance collectors, so we can see how long the program spends in each piece, how long the uncrush and crush functions too, and show a gantt of how performance interacts, and how delays cause pipeline starvation, graphically.
+
+Also account for the cost of the collector.
