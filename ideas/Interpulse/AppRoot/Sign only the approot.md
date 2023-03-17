@@ -44,6 +44,8 @@ Instead of pointer to previous pulse, store a pointer to previous approot.  If p
 ## Perf Benefits
 Browser reinstantiation of pulses can skip signature verification on every pulse, shaving 1ms or so off the load process.  For 20k pulses, this saves about 20 seconds on initial load.
 
+Interpulses can signal that an update is due to a subscribed app complex, as they would have received the root, and can know that it is the same root as some subscribed complex.
+
 ## Reducer isolation
 Based on the publisher provenance, we can run covenants in the same isolation boundary to save time.  It should be possible to have different isolation boundaries between different chains in the same approot.
 
