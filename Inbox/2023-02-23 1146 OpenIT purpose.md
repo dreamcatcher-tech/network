@@ -57,6 +57,12 @@ Automated trade between companies for services and products.  Starting with IT s
 
 As we build out apps, do not want to get drowned in support requests, or installation work.
 
+Can let us test different models of delivery, so we can adapt faster.
+Can treat services like insurance, and weed out highly expensive companies, so all companies get very close to pure cost, with insurance level on top.  Basically we start at a baseline price, and then work on getting this down, and can show how this reduced for other clients, so likely yours will reduce too.
+We incent the reduction in baseline, so people actively attempt to reduce.
+
+The openness seems to meet oposition, since people want to know that somebody is taking care of things.  Need to pitch this delicately.  We are not a special player on the platform, we are a participant like anyone else.  This framework allows you to replace us, which is why we think you'll stay, since we have to perform.
+
 ## Construction
 Use the Dreamcatcher to get construction done for the OpenIT software platform.
 Requests for modules like laptop templates, remote management systems.
@@ -80,3 +86,5 @@ Basic sales tool should be to induct all the costs that are currently being spen
 The online version lets you search for similar sized companies and architectures and can automatically quote what you will probably save, how long the transition will take.
 Invite putting in pain points, seeing if you share those with anyone else.
 Use our platform as a quote comparison tool privately, or publicly.
+
+Allow us to exist with existing providers, as we can tackle just part of a site.  Our platform can run on the site without using our services, if just want to use as a quote comparison and solution checking platform.

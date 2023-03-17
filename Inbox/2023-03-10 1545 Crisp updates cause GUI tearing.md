@@ -121,10 +121,22 @@ Emit the results of diff gets so we can do these in parallel
 parallelize server side streamWalk
 pipeline the resolver requests, so we can tune concurrency, allowing everything else to run in parallel, but the resolver is throttled.
 batch the resolver, so that if it is throttled, it uses getMany to be faster than just single calls.
+skip the alias table - send only the channels list, if isBakeSkippable.
+make hamt diffs dig into the channel block and check the rx.latest key
 
 ## Problems
 Server side takes too long
 Server side order is different to client side
+
+## Caching based on chainId
+We always present the latest known pulse for a chainId.
+pulseBake presents the chainId, and the pulseId - the cache holds the prior.
+Cache ejection based on chainId.
+We only update the children and the pulse if 
+
+Is checking if the rx.latest key changed more expensive that just processing it anyway and using the cache ?
+Yes, since we would need to pull from disk, or await arrival, whereas if we just check if our cache is up to date, this is much faster.
+So 
 
 ## Caching based on hamt blocks
 Treat each block like a Map, then be able to do rapid diffing.

@@ -17,3 +17,7 @@ Get a gantt of pulse load and bake times - when they triggered off and when they
 Show links as to what other tasks they caused to happen.
 Somehow show when a task is idle, by highlighting how long they waited for db calls.
 Show where caches were hit, and lookup what the original call was, so can know the effect of our caching.
+
+Can attach the stats object to all functions, so it always gets passed along, and can be updated as it goes deep down.
+Ultimately the calling function is responsible for publishign the stats.
+Can be used to show cache loads, cache hits, and other vital data.
