@@ -129,6 +129,7 @@ make hamt diffs dig into the channel block and check the rx.latest key
 ## Problems
 Server side takes too long
 Server side order is different to client side
+If a channel has a stale hardlink, on purpose, then we need to cache that differently, probably as a pulse directly.
 
 ## Caching based on chainId
 We always present the latest known pulse for a chainId.
