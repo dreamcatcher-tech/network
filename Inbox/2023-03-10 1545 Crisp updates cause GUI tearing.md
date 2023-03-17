@@ -110,6 +110,9 @@ So if we just store the lastFull pulse key, then we can read that back out, and 
 Best performance is to wait until the walk is complete before updating the cache.
 If nothing, put in what we have an set the done flag.
 
+Add in crisp detection to know if its child is out of date or not.
+If the parents alias for the child points to a pulseId that is different from the resolved crisp, then we know we are currently lagging.  This is permitted otherwise the whole tree would update in large chunks, rather than gracefully.  The crisp detection allows signaling to the UI that what you are seeing is out of date.
+
 ## Speed ups
 Present a last fully walked pulse, or first walked pulse, so we can use hamt diffs on it ?
 Parallel pulse baking
