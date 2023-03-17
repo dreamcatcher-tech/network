@@ -73,3 +73,8 @@ Chromebooks have a better application isolation mechanism, which makes it easier
 
 Make a live monitoring android app that gets installed.  Allows remote access and screen sharing.
 Can connect a pool of workers with those with problems, sometimes with affinity.
+
+## Sales
+Basic sales tool should be to induct all the costs that are currently being spent, with privacy, and also the solution architecture as best it is understood.  Then bring up similar architectures using the search function, and analyse their operations.  Show the cost comparison dashboards for all of them.  Put this tool online so that anybody can use it.
+
+The online version lets you search for similar sized companies and architectures and can automatically quote what you will probably save, how long the transition will take.
