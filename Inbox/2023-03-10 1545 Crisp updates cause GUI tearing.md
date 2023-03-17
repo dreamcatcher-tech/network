@@ -107,6 +107,7 @@ Appears to be slow to get initial bake, since server is streaming down in not br
 So it doesn't actually matter that we have the prior pulse at all - all that matters is if we walked it or not, and if we did, then we can use that for diffing purposes.
 So if we just store the lastFull pulse key, then we can read that back out, and read the children, since we know it will be correct.  Ie: if we have deepWalk pulse, then the children will be the deepwalked children.
 
+
 ## Speed ups
 Present a last fully walked pulse, or first walked pulse, so we can use hamt diffs on it ?
 Parallel pulse baking
@@ -118,6 +119,8 @@ Look up the rx.latest path directly from the block.value
 Make decode leave the blocks hashed only, without inflating to json
 Emit the results of diff gets so we can do these in parallel
 parallelize server side streamWalk
+pipeline the resolver requests, so we can tune concurrency, allowing everything else to run in parallel, but the resolver is throttled.
+batch the resolver, so that if it is throttled, it uses getMany to be faster than just single calls.
 
 ## Problems
 Server side takes too long
