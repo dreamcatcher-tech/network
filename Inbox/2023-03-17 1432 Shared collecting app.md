@@ -16,3 +16,8 @@ Skim is based on incentive to help, and the platform takes a cut on this incenti
 Lets you schedule a cofee, so you start asking for one around 10am, and anyone can fulfill that for you.
 
 Provide insutrctions on how to deliver the item.
+
+Be very useful on cruise ships, or country towns where people do a lot of running around.
+Notifications should be at the stores you're at, so zero cognitive load.
+
+If you like, you can publish your whereabouts so predictive forecasting asks others if they'd like to get an order in.
