@@ -105,7 +105,7 @@ Should use the last pulse, if haven't resolved the current one yet, to stop the 
 Appears to be slow to get initial bake, since server is streaming down in not breadth first ?
 
 So it doesn't actually matter that we have the prior pulse at all - all that matters is if we walked it or not, and if we did, then we can use that for diffing purposes.
-So if we just store the lastFull pulse key, then we can 
+So if we just store the lastFull pulse key, then we can read that back out, and read the children, since we know it will be correct.  Ie: if we have deepWalk pulse, then the children will be the deepwalked children.
 
 ## Speed ups
 Present a last fully walked pulse, or first walked pulse, so we can use hamt diffs on it ?
