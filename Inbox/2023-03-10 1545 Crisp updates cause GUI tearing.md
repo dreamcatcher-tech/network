@@ -183,3 +183,7 @@ Making an edit:
 interblock:api:Syncer slow read ahead buffer 14339ms for 20045 units +14s
 where the sectors did not show at all, presumably cache was hit.
 diffing was so fast as to not go above the 100ms threshold
+
+### caching by address
+43 seconds for browser to load 20k customers.
+4 seconds to make an edit.
