@@ -27,3 +27,9 @@ Decorate all IPORM classes with performance collectors, so we can see how long t
 Also account for the cost of the collector.
 
 Interact with the [performance API](https://blog.logrocket.com/how-to-practically-use-performance-api-to-measure-performance/)
+
+May connect to a dashboard service like newrelic or the AWS Xray api, so can get their graphing automatically.  Later can make a chain service that gets the users to generate their own stats, then upload the chains to a central processing chain cluster for summarization and presentation.
+
+Could make an integration with newrelic or any other monitoring service that can deploy inside the engines and attach against different chains.  In future these monitoring services would be tied directly to punishments for failure to perform.  These integrations can be of a general form, and so we allow an API for metrics gathering, then have different places for this data to go.
+
+Give us a distributed trace thru a users click thru to the chain in their browser showing the updated data.

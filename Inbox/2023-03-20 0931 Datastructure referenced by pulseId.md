@@ -7,7 +7,7 @@
 
 Currently all the Blocks that make up a Pulse are referred to by hash alone.  Worse, as the Pulse is rehydrated, due to being a tree, multple round trips are required to retrieve a block then learn what that block references by hash, so it can be retrieved, and so on.  RTT has a gigantic impact on load times vs data size.
 
-Furthermore, finding the differences between two pulses in terms of blocks is a requirement for syncing, where the pulses might not follow in linear order.  This can cause heavy server load if we need to work out the full blockset of each pulse.   We want to provide this ability so that honest browsers have reduced load time.
+Furthermore, finding the differences between two pulses in terms of blocks is a requirement for syncing, where the pulses might not follow in strict linear order, as the browser might have missed some history.  This can cause heavy server load if we need to work out the full blockset of each pulse.   We want to provide this ability so that honest browsers have reduced load time. but do not want to have servers working significantly harder than clients.
 
 Idea is that each Pulse at its base holds a varint indexed table/array of all the hashes that are unique to this Pulse. Thruout the pulse, each hash reference points to `#:0` or whatever the index is, but crucially any prior pulses are referred to by `pulseId:0` so that for each block, we know immediately what is the hash of the pul
 
@@ -29,10 +29,39 @@ Periodically a 'fluffing' could be done to snip the tail on the longest pulse re
 
 Can be tuned to fit some chunk size, so we always aim to fill up a chunk, so we can take up a full 4K sector on disk, for example.
 
+## Malleable signatures
+If the signatures did not include the previous signatures, then the signatures can be added to without a kind of head-of-line blocking.  Multiple validators can add to a signature without holding everyone up.  Extra signatures can be added late, and skip signing things along the way, since signing at any later date is the same as signing everything at each step along the way.
+
+Referring to PulseIds is not polluted by the signature requirement.  Browsers should fetch the signatures first, then the content based on that.  Signature Pulses should flatten the content pulse so they can be fetched rapidly. 
+
+Might keep signatures totally separate so can walk signatures quickly without fetching whole pulses.
+
+Can allow highly compressed versions of history to be made without needed to rehash everything.  Rewriting due to a covenant being patched is easier without this entanglement.
+
+## Browser fetch with no server help
+Lift was introduced to help the browser load faster by pumping data down to it that we knew it would need next.  This difference between the browser and the server can weaken with this new flattened data structure.
+
+The brower problem is that it has a stale pulse, and knows there is a newer, and needs to download the least amount of data to bring it into latest, with the smallest number of RTTs.
+
+If it fetches latest, and also fetches the lineage, where lineage is structured to favour recent pulses in a  single large chunk, then it can request all the Pulses in between what it had already in a single request, favouring recent first.  Then while waiting for these Pulses to stream in, it starts to rebuild the latest Pulse.  It would cancel its want requests if the latest was resolved before all middle Pulses were received.  There may be some wasted data from these middle pulses, particularly if the prior was old.
+
+Or, we could have a request type that was for the full Pulse, walked, but with a walk limit.  The server would have the lineage in ram always, so this would be cheap, then it starts to walk the pulse and stream down all the prior pulses also.
+
+Or, get the latest Pulse alone, start to walk it, request missing Pulses as discovered.  Also request missing pulses based on lineage as a pre-emptive lower priority search.  The total number of RTTs would relate to the number of Pulses in between.  If the churn was small, then would fulfill faster than waiting for all the prior pulses to come in.
+
+Fastest possible is getting server assisted walk, but this incremental approach is best for distribution.  Would simply be boosting the bitswap blocks by pushing blocks out that were not asked for, then the receiver checks that the boost asked for them.
+
+## Pulse request sharding
+Server boosted requests can provide both a key range, or a lineage range.  This can be altered as other servers under perform or shed load.
+
 ## Coming complete circle
 If our model is shunted one level, and so IPLD Blocks become Pulses, then all of bitswap applies.
-This can significantly reduce the amount of hashing we do while keeping the same amount of deduplication.  All that is required is a different type of `.crush()` and a custom encoder.  Reference between Pulses include the Pulse hash, and the index in the data array.
+This can significantly reduce the amount of hashing we do while keeping the same amount of deduplication.  All that is required is a different type of `.crush()` to produce values in our own custom encoding.  Reference between Pulses include the Pulse hash, and the index in the data array.
 
-HAMTs can be translated to this same format, but might need to stay as Block level items.  Making a wrapper around IAMAP might be better at this new custom level, rather than persisting with js-ipld-hashmap.  Walking a HAMT would instantly give blocks of prior Pulses.  The walk can have a special lite mode were we avoid 
+Decoding would be two step process - dag-cbor decode, then decoding further the binary data we got back from that.
 
-Fundamentally, the time to transmit binary data tuned out to be nearly undetectable compared to the time of unhashing
+HAMTs can be translated to this same format, but might need to stay as Block level items.  Making a wrapper around IAMAP might be better at this new custom level, rather than persisting with js-ipld-hashmap.  Walking a HAMT would instantly give blocks of prior Pulses.  Walking Pulses can be done without decoding the whole Pulse, and only decode the chunks we need.  We would check the hash of the whole data array, on load, and then give back the binary hamt out of that.
+
+Fundamentally, the time to transmit binary data tuned out to be nearly undetectable compared to the time of hashing and unhashing, and the RTTs of discovering what hashes to fetch then going out and fetching them.
+
+This change can also include key removal from the hashed data, so the schema is required to re-inflate the data since it is purely values.

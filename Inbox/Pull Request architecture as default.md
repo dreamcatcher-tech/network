@@ -15,6 +15,8 @@ This architecture means each actor is doing the exact same operation - trying to
 
 Means that sync speed is much less an issue, as a user can go as fast as they can drive the machine, and the syner will eventually push their changes up.  Slow or timed out connections make no difference.  Diffing is much easier, as the browser is in control, whereas doing syncing with lineage skips can leave the browser unsure what to use as diff base.  In PR based arch, diffing is engine quality, and has no tears, so diffing is assured.
 
+Means the UI delay on when a button was pressed and when the data is visible becomes the same - currently the interpulse can settle but then the UI has a delay for receiving the latest data.
+
 ## Validation
 Validators execute inbound actions from other Complexes and continually try to merge with each other.  Each time they merge another validators chain, they sign it, so consensus of varying levels is achieved rapidly.  Validators can sign something that is different to what they have since they can merge in one of their states that came before their unique changes, to get the agreed head into consensus as fast as possible.
 
