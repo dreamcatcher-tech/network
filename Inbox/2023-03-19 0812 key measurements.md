@@ -7,6 +7,15 @@
 
 If  measurements are put in place at all crucial features of the system, then we have a complete platform, with performance stability, and can build out each area of the platform with these cleanly defined interfaces between each piece, and performance measurements on those interface contracts.
 
+
+
+The different types of Pulse production and synchronization
+1. speed to produce blocks as the proposer
+2. speed of receiving the proposals
+3. speed of syncing with the browser, with skips in lineage
+4. Writing new Pulses to disk
+5. Writing synced Pulses to disk
+
 ## Crisp
 1. Browser first load time
 2. Browser UI thread load

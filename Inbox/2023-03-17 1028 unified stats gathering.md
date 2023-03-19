@@ -25,3 +25,5 @@ Can be used to show cache loads, cache hits, and other vital data.
 Decorate all IPORM classes with performance collectors, so we can see how long the program spends in each piece, how long the uncrush and crush functions too, and show a gantt of how performance interacts, and how delays cause pipeline starvation, graphically.
 
 Also account for the cost of the collector.
+
+Interact with the [performance API](https://blog.logrocket.com/how-to-practically-use-performance-api-to-measure-performance/)
