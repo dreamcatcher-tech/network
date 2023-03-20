@@ -23,4 +23,5 @@ The different types of Pulse production and synchronization
 4. Editing while still loading - time for edit while still loading large dataset
 5. Time for edit on large dataset
 6. partial streaming, where the data is not fully pulled down to the client as a full peer
+7. two browsers receiving updates from either one doing an edit
 

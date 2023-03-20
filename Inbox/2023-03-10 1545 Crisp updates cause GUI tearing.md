@@ -187,3 +187,10 @@ diffing was so fast as to not go above the 100ms threshold
 ### caching by address
 43 seconds for browser to load 20k customers.
 4 seconds to make an edit.
+
+### Server side blockset caching with concurrent baking
+Also does children walk using diffing
+31 seconds for browser to load 20k customers.
+3 seconds to make an edit.
+No UI thread locking the whole time.
+Serverside takes about 1,170ms to do a diff walk during edit.
