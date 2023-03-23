@@ -17,6 +17,8 @@ Means that sync speed is much less an issue, as a user can go as fast as they ca
 
 Means the UI delay on when a button was pressed and when the data is visible becomes the same - currently the interpulse can settle but then the UI has a delay for receiving the latest data.
 
+[[2023-01-18 1632 Transient Forks]] could be removed, since the PR fork would serve the same purpose.  Before submitting the PR, the PR could be cleaned up to remove branches that are considered transient.
+
 ## Validation
 Validators execute inbound actions from other Complexes and continually try to merge with each other.  Each time they merge another validators chain, they sign it, so consensus of varying levels is achieved rapidly.  Validators can sign something that is different to what they have since they can merge in one of their states that came before their unique changes, to get the agreed head into consensus as fast as possible.
 

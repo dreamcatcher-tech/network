@@ -53,7 +53,7 @@ These transients would be forks of the given app, and then would seek to modify 
 
 Keeping around after reload means that a users unsaved work is available to them on reload.  The app would be responsible for detecting a recovery and presenting that back to the user.
 
-## Morphing the Crisp
+## Mutating the Crisp
 Allowing the crisp to be modified to have the same effect as a transient fork would work too, but seems much . Genuine chains are better since the componentized database and app logic are vital to come with the component.  Without the pulses carrying state and logic deep into each component, we have wandered off into the traditional programming world are are bound to get lost.
 
 ## Filtering the Crisp
@@ -64,3 +64,8 @@ Another way to approach the problem is to treat all operations as a fork, follow
 
 ## Including transients into the application itself
 Storing all the users drafts as part of the production application seems more beneficial in the crm use cases, as privacy is not a large concern.  Privacy between users could still be achieved using the [[ACL]].
+
+## Generating a Pulse in the UI
+If we generate a pulse, and do not sign it, then we can use the syncer to produce a crisp based on this item.  If we permit using these soft pulses to sync with, then we can maintain the logic of the pulse, but avoid making long lived chains.
+
+The engine could take a pulse that was being soft forked, and pierce it.  Can flag it as never having its results saved.
