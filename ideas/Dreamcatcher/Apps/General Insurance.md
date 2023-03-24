@@ -10,6 +10,8 @@ Could make a model of an API that can be used for any kind of insurance, and can
 
 We should be able to provide insurance for any event that happens independently to multiple parties.  
 
+Social Insurance.
+
 ## Vs Market
 It should always be cheaper, since we can start with the same pricing as the market, and include [[Comparator]]s that keep watch on the performance of competitors, then we would know all our costs and much of that would be automated.
 
