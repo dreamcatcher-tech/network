@@ -10,3 +10,5 @@ Lineage need not be a merkle tree, but can be crammed Pulse too.  This structure
 The current pulse just stores all the nodes in the tree (possibly a HAMT) within it, so that we can know what the rest of the tree is by looking at what the current tree references.
 
 If we knew how many pulses back we wanted to go, then we could calculate all the pulses that we would need to fetch instantly by walking the tree of the current pulse.  We know how the tree is laid out, so we know where to enter in the branches.  This may not be single lookup, but it would be much less than linear.
+
+Basically, we might not need 
