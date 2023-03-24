@@ -12,3 +12,4 @@ Let it run as a sharing node that can donate resources to genpop or to your comp
 App store, list of loaded apps, tabs for each app, debug / backstage mode for each app.
 
 The electron build can serve as  a single app build for those who want to publish, or can be a multiapp OS for those that want extension to be possible.
+
