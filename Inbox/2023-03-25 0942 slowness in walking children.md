@@ -9,3 +9,7 @@ To walk all the children seems to always be slow.
 Diffing can give us what changed rapidly, but to know about state changes requires the tree to be written, and querying the prior latest for a given channel.
 
 Is the new condensed block format able to give us a way to know rapidly if the hash of the latest PulseLink for a given channel changed in between the hash of some prior Pulse ?
+
+We can rapidly find what channels changed by using the Pulse contents to give the diff.  Then, of those channels that changed, we can rewrite Pulselinks to be a pointed to some hashed info.  Then we can know when this hashed info changed last.
+
+If PulseLinks were replaced with a pointer to some hash info, rather than being hash info themselves, then we can rapidly detect if they changed within the Pulse diff ranges.  So from a single pulse and the hash of a prior Pulse, we can instantly know if the `latest` key in a channel has changed since the prior was signed.
