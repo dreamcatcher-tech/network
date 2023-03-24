@@ -23,3 +23,5 @@ Make an inverted model of the earth - cut up the world into cells, with each one
 Build up search indexes which charge a fee and make searching quick, whilst boosting data from intermittent lifters.
 
 This geocoding load offers a way to supply your own compute resource to earn credits whilst getting uptime and resilience and software patching from the swarm of others like you - so you aren't paying in cash, but paying in resources, and providing your users with priority service, locally, when you are available.
+
+Good as load since it has a stateful component to it as well, has large datasets that are hard for normal machines to use, commonly charged for, high uptime requirements.
