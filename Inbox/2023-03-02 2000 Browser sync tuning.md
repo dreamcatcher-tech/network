@@ -101,3 +101,7 @@ object cache, per pulse walk, cid tree walk vs uncrush, 20k customers, no devtoo
 lift completed in 51,681ms for 123,391 blocks with 29.8 MB bytes and 4.44 MB hashes size
 lift completed in 2,944ms for 123,390 blocks with 29.8 MB bytes and 4.44 MB hashes size
 Browser page load: 34seconds.  So basically same time for cold, 4x speed for warm, browser quarter speed to load.  Browser appears to not lock the thread during load.
+
+tuned diff pulse walk to use diffing, rather than walk the whole hamt
+streamWalk count: 48 bytes: 17.6 kB hashes: 1.73 kB in 8ms children: 2
+Diffing streamwalk when adding a new customer used to take about 4seconds.
