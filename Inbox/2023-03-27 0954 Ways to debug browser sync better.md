@@ -12,6 +12,13 @@
 ? Is lifter transmitting completely and correctly ?
 ? How to see inside the lifter protocol, to trace down if it did a complete sync correctly ?
 ? did the syncer get asked to lift with a truly fully walked prior ?
+? how to check a manifest of what was due, and what we were missing ?
+? can we audit back in time for what was delivered by the lift protocol ?
+? can lift detect stalling and alert ?
+
+SetVirgin might be causing errors in completion ?
 
 ## Problem
 Cannot recreate the sync in a test run, so cannot tune performance effectively.
+
+## Checking delivery was complete
