@@ -64,3 +64,6 @@ Decoding would be two step process - dag-cbor decode, then decoding further the 
 HAMTs can be translated to this same format, but might need to stay as Block level items during the interim.  Making a wrapper around IAMAP might be better at this new custom level, rather than persisting with js-ipld-hashmap.  Walking a HAMT would instantly give blocks of prior Pulses.  Walking Pulses can be done without decoding the whole Pulse, and only decode the chunks we need.  We would check the hash of the whole data array, on load, and then give back the binary hamt out of that.
 
 This change can also include key removal from the hashed data, so the schema is required to re-inflate the data since it is purely tightly packed values.
+
+## Children walking
+Large numbers of children should still be triggerable by using `lift` protocol, rather than an individual request for each piece of data.
