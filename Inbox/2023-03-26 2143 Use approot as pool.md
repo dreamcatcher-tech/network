@@ -5,4 +5,7 @@
 
 >[!danger] Depends: 
 
-Roll tension up the tree, and use the 
+Roll tension up the tree, and use the top level approot as the pool queue.
+Gives rapid recovery.
+Suspect @rexmondo suggested this a few months back.
+
