@@ -24,7 +24,7 @@ SetVirgin or setting a pulse early might be causing it to be recorded when it is
 Definitely it is in the hamt compare for the customers collection, where a prior hamt is not fully available for some reason.
 Somehow the hamt blocks are not fully being sent down.
 Is it because prior did not complete, or is it because the current request did not complete ?
-
+Suspect diffing on server side did not check against prior correctly, and failed to send down a hamt cid somehow, since channel cannot be uncrushed after diffing, but only sometimes, as tho a race condition occurs and then because something got dropped once, it can never catch up.
 
 ## Problem
 Cannot recreate the sync in a test run, so cannot tune performance effectively.
