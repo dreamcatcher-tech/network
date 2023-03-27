@@ -22,3 +22,4 @@ SetVirgin might be causing errors in completion ?
 Cannot recreate the sync in a test run, so cannot tune performance effectively.
 
 ## Checking delivery was complete
+Can start a checker on each lift request to fully wait until the whole thing is completed ?
