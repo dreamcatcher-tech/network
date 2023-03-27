@@ -67,3 +67,11 @@ This change can also include key removal from the hashed data, so the schema is 
 
 ## Children walking
 Large numbers of children should still be triggerable by using `lift` protocol, rather than an individual request for each piece of data.
+
+## Permissions
+Permissions become easier to apply since each Pulse contains a permissions structure.  With just hashed blocks alone, it is difficult to know what Pulse the block is being asked for in relation to.
+
+## Lack of dedupe between chains
+The storage layer will lose all deduplication properties if the diff data is flattened.
+
+Some recovery of dedupe may be possible if some keys remain as blocks, such as State.  Recovering state directly would be banned, as all recovery must be done at the Pulse level, which would acquire the state block.  Future Pulses would point to the hash via the Pulse that contained it, so the lookup would be preserved.
