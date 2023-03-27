@@ -24,6 +24,16 @@ If debug window is closed, then fault occurs more often, presumable because tear
 **Might have been uncrushing, got torn, but held the cache callback open, so that it was never resolved.**
 ? did we not receive all the blocks we require from the server ?
 
+? how to know if the full channel got sent down in the lift ?
+it must all come down, since it works sometimes - only during a tear does it fail.
+is the current strategy for lift and sync the best one - one worth troubleshooting ?
+? can an uncrush begin, then get interupted before the cache can be fulfilled ?
+client attach what it is missing to the uncrush cache function.
+Then can see what we are missing, so can request this from the server.
+
+Did the message encoding cause a block to be missed ? this should show up as some other kind of error tho.
+
+Focus in on just the customers channel, since it is always this one at fault, then
 
 The channel is the thing that cannot be uncrushed, after a tear has occured.  How to get a list of all the CIDs that got transmitted down ?
 
@@ -64,3 +74,9 @@ Make the tree still remain visible while moving the syncer span (ie: which pulse
 Make the Crisp browseable using getters so can drill down in browser ?
 
 Provide a function on the pulse to do a complete walk of itself, and of its children, using a getter ?
+
+Fuzzing the bake with tears at random intervals, then prove it can always recover.
+
+Make a protocol for sending down the blockset along with each lift request, so we can audit if the blockset came down ?
+
+Signal the completion of the lift, and be able to audit it as complete ?
