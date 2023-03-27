@@ -22,7 +22,7 @@ Can cause this fault with a blank installation.
 Seems to happen during rapid updates, particularly during open sequence.
 If debug window is closed, then fault occurs more often, presumable because tears occur in the syncer.  Once fault has occured, customers path fails: `await interpulse.latest('/.mtab/remote/customers')` where it stalls forever waiting to uncrush the channel.
 **Might have been uncrushing, got torn, but held the cache callback open, so that it was never resolved.**
-
+? did we not receive all the blocks we require from the server ?
 
 
 The channel is the thing that cannot be uncrushed, after a tear has occured.  How to get a list of all the CIDs that got transmitted down ?
