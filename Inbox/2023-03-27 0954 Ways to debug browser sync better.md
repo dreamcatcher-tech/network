@@ -18,6 +18,9 @@
 ? when it stalled, what did it stall on and how can we replay what it was up to ?
 ? is abort causing the cache to be broken so that upon receive things are not being ingested correctly into the block cache ?
 
+Can cause this fault with a blank installation.
+Seems to happen during rapid updates, particularly during open sequence.
+
 SetVirgin might be causing errors in completion ?
 SetVirgin or setting a pulse early might be causing it to be recorded when it isn't fully synced ?
 
