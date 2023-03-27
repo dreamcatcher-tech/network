@@ -41,6 +41,8 @@ Be able to walk thru stalled crushes easily, and check if the server sent this d
 Store a log of all the received lifted CIDs that can be browsed.
 
 Whenever there's a bake tear, this error occurs.
+? Are we sure that it is stalled on an uncrush cache fetch ?
+Once there, can we run an uncrush on the raw block again ?
 
 SetVirgin might be causing errors in completion ?
 SetVirgin or setting a pulse early might be causing it to be recorded when it isn't fully synced ?
