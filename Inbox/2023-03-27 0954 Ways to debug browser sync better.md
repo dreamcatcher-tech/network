@@ -26,6 +26,10 @@ Somehow the hamt blocks are not fully being sent down.
 Is it because prior did not complete, or is it because the current request did not complete ?
 Suspect diffing on server side did not check against prior correctly, and failed to send down a hamt cid somehow, since channel cannot be uncrushed after diffing, but only sometimes, as tho a race condition occurs and then because something got dropped once, it can never catch up.
 
+The channel for the Customers collection cannot be uncrushed as it appears incomplete - how to know where the missing CID is ?
+
+Could a lifted interpulse fail to be written to disk, and so cannot be recovered to stream down ?
+
 ## Problem
 Cannot recreate the sync in a test run, so cannot tune performance effectively.
 
