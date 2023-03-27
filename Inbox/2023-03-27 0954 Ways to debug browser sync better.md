@@ -30,6 +30,13 @@ The channel for the Customers collection cannot be uncrushed as it appears incom
 
 Could a lifted interpulse fail to be written to disk, and so cannot be recovered to stream down ?
 
+Throw an error if a sync walk doesn't have something in the cache ?  So wait for all the lifts to complete, then check if the sync walk fails.
+? first, how can we know what CID we are missing ?
+
+something to do with timing, since local server doesn't have this problem.  Something to do with tearing, since doesn't occur without tearing ?
+? Is the pulse fully available on the server side ?
+So make a checker that attempts to run the syncer locally on the server side, then report results.
+
 ## Problem
 Cannot recreate the sync in a test run, so cannot tune performance effectively.
 
