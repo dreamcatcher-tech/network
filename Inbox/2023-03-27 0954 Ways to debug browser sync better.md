@@ -33,11 +33,14 @@ Then can see what we are missing, so can request this from the server.
 
 Did the message encoding cause a block to be missed ? this should show up as some other kind of error tho.
 
-Focus in on just the customers channel, since it is always this one at fault, then
-
 The channel is the thing that cannot be uncrushed, after a tear has occured.  How to get a list of all the CIDs that got transmitted down ?
 
+Rapid fire walks on server side 
 
+Be able to walk thru stalled crushes easily, and check if the server sent this down ?
+Store a log of all the received lifted CIDs that can be browsed.
+
+Whenever there's a bake tear, this error occurs.
 
 SetVirgin might be causing errors in completion ?
 SetVirgin or setting a pulse early might be causing it to be recorded when it isn't fully synced ?
