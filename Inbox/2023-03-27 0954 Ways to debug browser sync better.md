@@ -5,6 +5,16 @@
 
 >[!danger] Depends: 
 
+
+1. Make a jest test that opens up the app, and then keeps connecting clients to it until a timeout occurs that stops it from syncing.
+
+If rapidfire lift, its as if the server skips sending a block
+? can we make a browser based device that goes thru netlift ?
+
+
+? Can this happen directly in browser in storybook ?
+? can it be induced in a jest test with client and server doing the exact addition testing ?
+
 ? Do small runs in a test environment ?
 ? replay the test environment as a chain somehow ?
 ? how do we know if we have received a complete Pulse or not ?
