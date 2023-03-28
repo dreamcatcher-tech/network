@@ -95,3 +95,8 @@ Fuzzing the bake with tears at random intervals, then prove it can always recove
 Make a protocol for sending down the blockset along with each lift request, so we can audit if the blockset came down ?
 
 Signal the completion of the lift, and be able to audit it as complete ?
+
+## Notes
+
+? What does it mean if a child is genesised but hasn't been created yet ?
+? could this be messing up the syncer ?
