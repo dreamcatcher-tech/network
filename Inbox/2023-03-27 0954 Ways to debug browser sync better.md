@@ -100,3 +100,7 @@ Signal the completion of the lift, and be able to audit it as complete ?
 
 ? What does it mean if a child is genesised but hasn't been created yet ?
 ? could this be messing up the syncer ?
+run some static checks on the syncer working correctly, snapshot between different pulses, and ensure it transitions correctly
+why are there multiple finalize() calls for the same address and pulseId ?
+walks should never repeat, unless something is wrong
+              
