@@ -113,3 +113,5 @@ Store the pulses and try rapidfire them into the syncer in test environment to s
 
 Can we run a syncer when this error occurs, and see if we actually have all the blocks we should ?
 This would mean the error is in the syncer code, not the lifter or the endurance
+
+Do a reverse stream walk every time a pulse update is received.
