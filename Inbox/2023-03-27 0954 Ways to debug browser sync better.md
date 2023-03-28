@@ -115,3 +115,5 @@ Can we run a syncer when this error occurs, and see if we actually have all the 
 This would mean the error is in the syncer code, not the lifter or the endurance
 
 Do a reverse stream walk every time a pulse update is received.
+
+Lift should send a manifest, and we should be able to trace this down on server side.
