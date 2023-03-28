@@ -103,4 +103,11 @@ Signal the completion of the lift, and be able to audit it as complete ?
 run some static checks on the syncer working correctly, snapshot between different pulses, and ensure it transitions correctly
 why are there multiple finalize() calls for the same address and pulseId ?
 walks should never repeat, unless something is wrong
+
+
+Difficulty with making it happen when debug window is open says it is unlikely to be server side, and likely a race condition client side.
+
+Set timeouts on all syncer operations to detect when a stall has occured ?
+
+Store the pulses and try rapidfire them into the syncer in test environment to simulate speed ?
               
