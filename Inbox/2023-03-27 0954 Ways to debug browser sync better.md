@@ -110,4 +110,6 @@ Difficulty with making it happen when debug window is open says it is unlikely t
 Set timeouts on all syncer operations to detect when a stall has occured ?
 
 Store the pulses and try rapidfire them into the syncer in test environment to simulate speed ?
-              
+
+Can we run a syncer when this error occurs, and see if we actually have all the blocks we should ?
+This would mean the error is in the syncer code, not the lifter or the endurance
