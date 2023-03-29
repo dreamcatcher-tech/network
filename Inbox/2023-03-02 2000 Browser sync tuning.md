@@ -105,3 +105,10 @@ Browser page load: 34seconds.  So basically same time for cold, 4x speed for war
 tuned diff pulse walk to use diffing, rather than walk the whole hamt
 streamWalk count: 48 bytes: 17.6 kB hashes: 1.73 kB in 8ms children: 2
 Diffing streamwalk when adding a new customer used to take about 4seconds.
+
+tuned hamt walking further
+2023-03-29T06:03:25.668Z interblock:NetEndurance streamWalk count: 63138 bytes: 15.5 MB hashes: 2.27 MB in 3658ms children: 10151
+Time for browser to load: 21seconds
+Time for add customer: 3.6 seconds cold
+Time for add customer: 1.8 seconds warm
+2023-03-29T06:07:16.346Z interblock:NetEndurance streamWalk count: 48 bytes: 20.3 kB hashes: 1.73 kB in 13ms children: 2

@@ -16,7 +16,7 @@ Also want to complete the sync inside the engine, and do not start the next lift
 Merge interpulse and Pulse lifts, since we can learn of an interpulse without it being sent separately.
 
 ? how can we have some independent comms link between browser and server so we can audit our own protocol ?  Should the server publish blocks that show what it currently sent to the client, and what requests the client received ?
-Want the full state of the server available to the client so they can be compared side by side.
+Want the full state of the server available to the client so they can be compared side by side.**
 
 
 ? Can this happen directly in browser in storybook ?
