@@ -17,6 +17,8 @@ Might be easier to partner with an existing player to offer this bolt on tech ?
 
 We can wrap all api queries and cache those queries.
 
+High compute load can be delivered as all clients can cooperate for storage and computation.
+
 ? Can an api service, with enough query data, use an AI to estimate what the response is likely to be, and stop needing the original service or provide cached queries ?
 
 ? Can general events, like when a specific client will want a meeting, be fed into AI to guess at when the next event is likely to occur ?
