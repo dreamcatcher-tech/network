@@ -127,3 +127,11 @@ Do the full sync walk at the mtab level, buffer pulses until each walk is comple
 Provide a subscription to crisps out of interpulse.
 This is retreating from the problem, but can still be just as effective, possibly more so.
 Lifts occur then only as fast as the engine can pull them down, rather than flooding.
+
+isBakeSkippable makes no difference.
+ignoring priorCids in the hamt transmissions fixes the problem.
+awaiting each streamwalk so no simultaneous streamwalks does not fix the problem
+the missing pieces in the browser NEVER got transmitted.
+the missing piece is always a hamt bucket.
+
+? how can it be that sometimes the priors has a cid that we need, that DID NOT get transmitted, even tho it would have been lift requested ?
