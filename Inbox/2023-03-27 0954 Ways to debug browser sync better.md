@@ -122,3 +122,8 @@ Make a pm2 tool to retrieve a given block cid.
 Load up a second window, download the given block.
 turn off all the caching.
 Grind thru all combinations of hamt updates, of all combinations of blocks, and check that they provide a fully loadable Crisp.
+
+Do the full sync walk at the mtab level, buffer pulses until each walk is complete, then do 
+Provide a subscription to crisps out of interpulse.
+This is retreating from the problem, but can still be just as effective, possibly more so.
+Lifts occur then only as fast as the engine can pull them down, rather than flooding.
