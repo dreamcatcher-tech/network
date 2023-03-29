@@ -134,4 +134,5 @@ awaiting each streamwalk so no simultaneous streamwalks does not fix the problem
 the missing pieces in the browser NEVER got transmitted.
 the missing piece is always a hamt bucket.
 
+## Priors unfaithful
 ? how can it be that sometimes the priors has a cid that we need, that DID NOT get transmitted, even tho it would have been lift requested ?
