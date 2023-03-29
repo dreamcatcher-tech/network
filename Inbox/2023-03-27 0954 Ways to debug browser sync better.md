@@ -11,6 +11,13 @@
 If rapidfire lift, its as if the server skips sending a block
 ? can we make a browser based device that goes thru netlift ?
 
+Want to check that the pulse stream was complete coming down from the server
+Also want to complete the sync inside the engine, and do not start the next lift until this one is complete, since this has less wastage, gets to full sync faster.
+Merge interpulse and Pulse lifts, since we can learn of an interpulse without it being sent separately.
+
+? how can we have some independent comms link between browser and server so we can audit our own protocol ?  Should the server publish blocks that show what it currently sent to the client, and what requests the client received ?
+Want the full state of the server available to the client so they can be compared side by side.
+
 
 ? Can this happen directly in browser in storybook ?
 ? can it be induced in a jest test with client and server doing the exact addition testing ?
@@ -129,10 +136,20 @@ This is retreating from the problem, but can still be just as effective, possibl
 Lifts occur then only as fast as the engine can pull them down, rather than flooding.
 
 isBakeSkippable makes no difference.
-ignoring priorCids in the hamt transmissions fixes the problem.
+**ignoring priorCids in the hamt transmissions fixes the problem.**
 awaiting each streamwalk so no simultaneous streamwalks does not fix the problem
 the missing pieces in the browser NEVER got transmitted.
 the missing piece is always a hamt bucket.
 
 ## Priors unfaithful
 ? how can it be that sometimes the priors has a cid that we need, that DID NOT get transmitted, even tho it would have been lift requested ?
+
+Every pulse that is received, a lift request is made for it, rather than completing sync then getting the next one.
+The streamwalks have not finished before the next one starts.
+? could be the interpulse request caused a hamt walk that was incomplete or not transmitted ?
+Is liftTip received tripping when just an interpulse tip was received ?
+it doesn't actually do a full lift request if the interpulse just got received ?
+Can either fix interpulses properly, or find out what the walk didn't trigger correctly ?
+
+If pulses are requested too rapidly, priors holds some cids that never ever get transmitted.
+If this is slightly slower, such as having the browser debug window open, these missed cids do not occur.
