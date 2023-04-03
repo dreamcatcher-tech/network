@@ -41,6 +41,9 @@ Transmits should only accept the signature of the latest pulse, rather than any 
 
 Instead of pointer to previous pulse, store a pointer to previous approot.  If path had changed for a pulse, should record these moves somewhere ?
 
+## Cutoff
+The approot should specify the maximum number of joules that are premitted to be burnt before a signed approot must take place.  This makes the results predictable, but still keeps the system responsive.
+
 ## Perf Benefits
 Browser reinstantiation of pulses can skip signature verification on every pulse, shaving 1ms or so off the load process.  For 20k pulses, this saves about 20 seconds on initial load.
 
