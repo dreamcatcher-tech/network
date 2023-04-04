@@ -15,3 +15,6 @@ Advertise the Dreamcatcher thru a block of land being purchased.
 
 ## Hedging
 Being uncertain of the finished layout of the island, buying sections in all suburbs would be best, then picking or conglomerating them.
+
+## Agent bridging
+Bridge traditional services into blockchain space, use the unregulated nature of the laws of the land, and the private membership nature.  Health insurance via pooling, snail mail services, laundry services.

@@ -56,3 +56,5 @@ The primary thing we want to sell is computational load.  Apps and other revenue
 
 ## A Blockchain
 Making a public blockchain sounds like the best goal to keep working towards.  Then start hauling load onto it, as well as showing how private deployments are possible.  All private deployments need common services, like emails, Eth chain interactions.
+
+Somewhat makes sense to bind doing something to help SILD at the same time, since benefits residence, showcase site, and investments, to a great receptive audience.
