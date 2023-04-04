@@ -53,3 +53,6 @@ When you move to purchasing ethically, we know that we will eventually get paid 
 
 ## Selling compute
 The primary thing we want to sell is computational load.  Apps and other revenues on top of that are a bonus, but the baseline we want is compute.  This blockchain network is for large scale computation of both general and specialized kinds.  This should be the preferred way to both consume and supply compute resources.  A blockchain future necessitates computation over content addressed systems.
+
+## A Blockchain
+Making a public blockchain sounds like the best goal to keep working towards.  Then start hauling load onto it, as well as showing how private deployments are possible.  All private deployments need common services, like emails, Eth chain interactions.
