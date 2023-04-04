@@ -60,4 +60,4 @@ Making a public blockchain sounds like the best goal to keep working towards.  T
 Somewhat makes sense to bind doing something to help SILD at the same time, since benefits residence, showcase site, and investments, to a great receptive audience.
 
 ## Public listing
-How can capital be raised inside the model of the Dreamcatcher ?  What would the stock be worth ?
+How can capital be raised inside the model of the Dreamcatcher ?  What would the stock be worth ?  Is greater utility found tackling existing blockchain use cases vs traditional software problems ? or both at the same time ?
