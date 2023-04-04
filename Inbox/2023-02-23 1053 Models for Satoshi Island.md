@@ -18,3 +18,6 @@ Being uncertain of the finished layout of the island, buying sections in all sub
 
 ## Agent bridging
 Bridge traditional services into blockchain space, use the unregulated nature of the laws of the land, and the private membership nature.  Health insurance via pooling, snail mail services, laundry services.
+
+## Gambling on project timelines
+Estimating when different aspects will come online.
