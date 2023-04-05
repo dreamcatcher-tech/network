@@ -12,6 +12,8 @@ We have a blockchain based system that we want to develop into a service bus for
 
 An active bus which is capable of computation as well as data storage and transmission allows a surround and absorb pattern to unfold, where blackbox systems are gradually replaced by open bus native systems.
 
+If an org cares about impact, then they generally want to publicize their high moral stance, and they will want ethical treatment thruout their supply chains - this means that the software and marketplaces will eventually be paid by them, negating the need for closed source lockin model software.
+
 ## Subsystems
 1. Publication of digital topology and costings as an advertisement for services
 2. a system bus as an integration baseline.
@@ -36,6 +38,8 @@ Services marketplace
 ## Notes
 
 Wrap systems in our standardization, and then allow translations to standard models that are interchangeable.  If we wrapped Raytio, then we could test our use as a bus connector.
+Bus makes connection between internal systems easier, but intercompany, the same bus can make system connections easier again.
+We should be able to map out topological connections between multiple companies as well as internally.
 
 CRM as a bus native application.
 
