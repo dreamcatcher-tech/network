@@ -5,6 +5,8 @@
 
 >[!danger] Depends: 
 
+![[DALL·E 2023-04-05 15.58.30 - dreamcatcher in a bus 3d render.png]]
+
 ## Situation
 We have a blockchain based system that we want to develop into a service bus for connecting business systems together.  This bus would include processing capability, and would form and installation target for making bus native systems.  An appstore would supply these applications, and requests for applications would be gathered by a bus application that was part of the base installation.  A services marketplace would allow purchasing services for construction and maintenance of the bus.  The software would be open source avoiding any form of vendor lockin.
 
@@ -17,26 +19,42 @@ An active bus which is capable of computation as well as data storage and transm
 4. an appstore for products that plug into the bus
 5. a services marketplace for bus related things
 
-Ultimately, if a group of companies can implement this bus, then cross company applications can be deployed that will enable generalized goods and services trade in a purely digital manner.
+Ultimately, if a group of companies can implement this bus, then cross company applications can be deployed that will enable generalized goods and services trade in a purely digital manner.  Revenue thru is revenue earned, providing a source of funding to build out more of the bus ecosystem.
 
 ## Cloud connector
-Disaster recovery should be held to a single standard across the company - leaving it up to each individual SaaS vendor will eventually lead to irreparable loss.  
+Disaster recovery should be held to a single standard across the company - leaving it up to each individual SaaS vendor will eventually lead to irreparable loss.  Each time new data processing is required, a new connector is made, but if there was already a standard model, this new data can be done in a low code fashion.
 
+Org can be more offline tolerant and remote offices or workers can tolerate lower grade connections such as cellphone hotspots or hotel wifi.  Org can be taken on a plane ride and still operate and queue up writes.
 ## Bus MVP
 
 Root bus - a global bus that contains the top level appstore.
+App store with some applications including sample impact reports, topology tool.
+Mock integrated systems, or a genuine xero integration, like Xero to email or something.
+Request board / api marketplace mock up
+Services marketplace
 
 ## Notes
+
+Wrap systems in our standardization, and then allow translations to standard models that are interchangeable.  If we wrapped Raytio, then we could test our use as a bus connector.
+
+CRM as a bus native application.
 
 Bridge between multiple cloud based system.  View communication between those systems, take backups.
 Host the bus, support it, migrate it, take it offline.
 
+Tool to map out what the api of a system looks like, and do it so that it can be automatically tested against that system.  Sniff much of it from actual api calls.
+
+If IT services became more a marketplace than a closed competition, we can make progress.  From that progress, we can extract revenue.
+
+Carbon cost reporting can be instantly extracted from their spend.  Basic reports on environmental impact can be generated from the bus.
 
 
 After chatting with Rod, the follow next steps arise:
 Two major areas of pain are:
 1. ETL processes required for consolidated reporting
 2. System integration between software systems.
+
+These two problems can be solved at once using a enterprise service bus.  Further, sometimes the systems to be integrated are cloud services, so this bus must be cloud native.
 
 Make a base connector to PowerBI so the bus can be dropped in immediately.
 
@@ -66,7 +84,7 @@ Publish your own connectivity topology, billing per month, usage / calls, integr
 
 Syncing and backing up data in cloud based systems.  Configure the frequency of sync if it is polling based.  Triggers into other systems can be formed in this way.
 
-
+reconciliation between actions requested from the bus and the synchronized state.  Can know when some actions will trigger changes so we should immediately patch the model we have of the system.  We can do lock management to allow only one api call to be operating concurrently.
 
 ## Integrations work
 Map out what companies are currently paying for integrations between difference systems
@@ -83,6 +101,8 @@ The topology tool should be able to show systems, and people, and individual mac
 Use this tool without having the bus installed.  Show topology mesh ratings, and how they are missing some connections.
 
 Summarize multiple instances of company to view the overall systems connectivity graph.  Shows how many times a given system connects to another one, and how much is being paid for that integration.
+
+This tool would be made publicly available for anyone to use, and if they want more help they can jump off from there using their data as a baseline.
 
 ## OpenIT
 IT services provide a stable baseline to enable a marketplace of services.  Stop bundling the whole IT projects along
