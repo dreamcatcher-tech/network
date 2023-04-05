@@ -39,7 +39,7 @@ Services marketplace
 
 Wrap systems in our standardization, and then allow translations to standard models that are interchangeable.  If we wrapped Raytio, then we could test our use as a bus connector.
 Bus makes connection between internal systems easier, but intercompany, the same bus can make system connections easier again.
-We should be able to map out topological connections between multiple companies as well as internally.
+We should be able to map out topological connections between multiple companies as well as internally.  A intercompany bus.
 
 CRM as a bus native application.
 
