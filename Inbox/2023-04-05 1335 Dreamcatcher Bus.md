@@ -27,6 +27,7 @@ Ultimately, if a group of companies can implement this bus, then cross company a
 Disaster recovery should be held to a single standard across the company - leaving it up to each individual SaaS vendor will eventually lead to irreparable loss.  Each time new data processing is required, a new connector is made, but if there was already a standard model, this new data can be done in a low code fashion.
 
 Org can be more offline tolerant and remote offices or workers can tolerate lower grade connections such as cellphone hotspots or hotel wifi.  Org can be taken on a plane ride and still operate and queue up writes.
+
 ## Bus MVP
 
 Root bus - a global bus that contains the top level appstore.
@@ -36,6 +37,12 @@ Request board / api marketplace mock up
 Services marketplace
 
 ## Notes
+
+If the public chain acted as a bus between blockchains, then that same bus can be between any other conventional system on the net too.
+
+Bus goes in to a company first, like a database does, then things get installed on the top.  Some of the things installed can also manage nodes in the fabric.
+
+API sync calls can be made using a swarm of
 
 Wrap systems in our standardization, and then allow translations to standard models that are interchangeable.  If we wrapped Raytio, then we could test our use as a bus connector.
 Bus makes connection between internal systems easier, but intercompany, the same bus can make system connections easier again.
