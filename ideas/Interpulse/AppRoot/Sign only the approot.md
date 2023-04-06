@@ -41,6 +41,13 @@ Transmits should only accept the signature of the latest pulse, rather than any 
 
 Instead of pointer to previous pulse, store a pointer to previous approot.  If path had changed for a pulse, should record these moves somewhere ?
 
+## Child communication
+Each child may communicate with others in the complex multiple times before 
+Downside is that extracting the child chain out and moving it over to another
+
+## Not hashing children ?
+Why hash children at all ? Why make them be their own pulse, why not just treat as a substate of the parent ?  Then, all communication is done via a path in the supervisor tree, rather than a hash ?
+
 ## Cutoff
 The approot should specify the maximum number of joules that are premitted to be burnt before a signed approot must take place.  This makes the results predictable, but still keeps the system responsive.
 

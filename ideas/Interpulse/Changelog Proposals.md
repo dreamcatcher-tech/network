@@ -1,6 +1,7 @@
 List of Ideas that have not yet been implemented.  Implementation of [[Interpulse Spec as Changelog]]
 
 ## Draft
+
 [[2023-01-25 1245 trigger updates when geo status alters]]
 [[2023-01-30 0849 LS should be an async iterable]]
 [[Init actions in installers]]
@@ -10,6 +11,7 @@ List of Ideas that have not yet been implemented.  Implementation of [[Interpuls
 [[2023-03-01 1117 subscribe hooks for state changes]]
 [[2023-03-13 1343 Engine error stream]]
 [[2023-04-04 1251 Crisp DX improvements]]
+[[2023-04-06 1512 Grandfather backup strategies]]
 
 ## Request for Comment
 [[2023-03-20 0931 Pulsecramming Datastructure referenced by pulseId]] 

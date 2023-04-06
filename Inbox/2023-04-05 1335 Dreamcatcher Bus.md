@@ -3,7 +3,7 @@
 
 >[!question] Targets: 
 
->[!danger] Depends: 
+>[!danger] Depends: [[2022-11-16 Service Bus]]
 
 ![[DALL·E 2023-04-05 15.58.30 - dreamcatcher in a bus 3d render.png]]
 
@@ -96,6 +96,8 @@ Publish your own connectivity topology, billing per month, usage / calls, integr
 Syncing and backing up data in cloud based systems.  Configure the frequency of sync if it is polling based.  Triggers into other systems can be formed in this way.
 
 reconciliation between actions requested from the bus and the synchronized state.  Can know when some actions will trigger changes so we should immediately patch the model we have of the system.  We can do lock management to allow only one api call to be operating concurrently.
+
+Shatterable bus - the bus can be broken apart and recombined, as faults are highly tolerable - expected as part of normal operations.
 
 ## Integrations work
 Map out what companies are currently paying for integrations between difference systems
