@@ -63,7 +63,7 @@ Somewhat makes sense to bind doing something to help SILD at the same time, sinc
 How can capital be raised inside the model of the Dreamcatcher ?  What would the stock be worth ?  Is greater utility found tackling existing blockchain use cases vs traditional software problems ? or both at the same time ?  Can a crypto raise be done out of Vanuatu ?
 
 ## An app building company
-List online say we're looking for projects, provide a discounted rate using fixed pricing, no timelines but you can easily see progress, test cases for our blockchain systems.
+List online say we're looking for projects, provide a discounted rate using fixed pricing, no timelines but you can easily see progress, test cases for our blockchain systems.  Invite people to apply for paid work, where we generate packets, and attempt to complete them - no win, no fee.
 
 
 
