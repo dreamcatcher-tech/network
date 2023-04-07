@@ -14,6 +14,24 @@ Promises are implemented with 1 request type and 2 reply types.  This protocol c
 4. Reply: `REJECT` sent in response to `GENERATE` at any time during the execution, including immediately at the start.  No further `YIELD` requests may be sent after this.
 5. Reply: `RESOLVE` sent in response to `GENERATE` with the final value as the payload, closing the generator.  May be sent at any time during the execution.
 
+## API
+```js
+for await (const result of interchainGenerate( request )){
+	// do some stuff
+}
+const reducer = function* (request){
+	yield 'A'
+	yield 'B'
+	const asyncResult = await interchain( request )
+	yield asyncResult
+	const input = yield 'C'
+	return { some: 'result' }
+}
+```
+
+## Schema specification
+For the standard promise based API, the `title` field in the schema is used to represent the action `TYPE` key.  To specify a generator, the title is prefixed with a `*` as in `title: *SOME_GENERATOR` which is used to indicate to any function mapping sugar functions to use the generator dispatches here.
+
 ## Process
 Generator is triggered by the initial `GENERATE` request.  Each yield that occurs from that invocation will be translated into a `YIELD` action and sent back to the sender as a new Request.
 When the generator is complete, the final value is provided as a reply to the originating `GENERATE` request using the promise protocol.
@@ -33,13 +51,9 @@ const receivedValue = yield outputValue
 If such a function was invoked as a promise, the yield input will be undefined.  This method can be used by generator authors as a form of flow control to avoid flooding the requester.
 
 ## Flow Control
-Generators will not wait to be consumed normally, and interpulse flow control will be used to avoid flooding the 
+Generators will not wait to be consumed normally, and interpulse flow control will be used to avoid flooding the receiver.  Devs of the generator may opt to wait for the yield to return something, indicating the remote side has processed the yields, which stops runaway generators.
 
-Devs of the generator may opt to wait for the yield to return something, indicating the remote side has processed the yields, which stops runaway generators.
-
-In practice flow control might be too hard to implement intelligently at this layer, and is best handled at the network level, where interpulse flow control needs to be added, with the sender politely buffering.  In the case of streaming server logs, we would want to buffer in the chain and send as soon as we are able, else there is no other easy place to buffer.
-
-Some flow control actions might be sent over with the `GENERATE` action.
+In the case of streaming server logs, we would want to buffer in the chain and send as soon as we are able, else there is no other easy place to buffer.  Some flow control flags might be sent over with the `GENERATE` action.
 
 ## Coercion between promises and generators
 Calling a generator function as tho it was a promise will invoke the generator, drain the outputs, and return the final value, or reject.

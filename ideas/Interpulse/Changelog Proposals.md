@@ -1,5 +1,9 @@
 List of Ideas that have not yet been implemented.  Implementation of [[Interpulse Spec as Changelog]]
 
+## Requests
+[[2023-04-07 2147 Interpulse Flow Control]]
+[[2023-04-07 2218 How to trigger something on state change]]
+
 ## Draft
 
 [[2023-01-25 1245 trigger updates when geo status alters]]
