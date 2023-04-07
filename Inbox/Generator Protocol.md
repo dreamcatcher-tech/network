@@ -1,13 +1,13 @@
 
 >[!tip] Created: [2023-04-06 Thu 15:22]
 
->[!question] Targets: 
+>[!question] Targets: [[Interpulse API]]
 
 >[!danger] Depends: 
 
 We can support the async iterator protocol, and can allow callers to treat remote chains as generators.  Reducers then, can be an async function or a generator function, or both, where they switch based on the action sent in.
 
-Promises are made up of 1 request type and 2 reply types.  Generators can be built in to channels using 3 request types and 2 reply types:
+Promises are implemented with 1 request type and 2 reply types.  This protocol can be extended to Generators by adding 3 system request types and reusing the 2 promise reply types:
 1. Request: `GENERATE` sent from the sender to the receiver, triggering the reducer function.  A reducer that does not immediately end the generator will send back an `@@PROMISE` reply.
 2. Request: `YIELD` with payload `id` and `value` which is sent from the receiver to the sender, where `id` is the hash of the `GENERATE` action.  This is for yielding results from the generator function.
 3. Request: `RETURN` sent from the sender to the receiver, with payload `id` indicating the originating `GENERATE` request.  Used to terminate the generator early for any reason.  Has no other payload.
@@ -15,8 +15,12 @@ Promises are made up of 1 request type and 2 reply types.  Generators can be bui
 5. Reply: `RESOLVE` sent in response to `GENERATE` with the final value as the payload, closing the generator.  May be sent at any time during the execution.
 
 ## Process
-Generator is triggered by the initial `GENERATE` request.  Each yield that occurs from that invocation will be translated into a `YIELD` action and sent back to the sender.
-When the generator is complete, the final value is provided as a reply to the originating `GENERATE` request.  
+Generator is triggered by the initial `GENERATE` request.  Each yield that occurs from that invocation will be translated into a `YIELD` action and sent back to the sender as a new Request.
+When the generator is complete, the final value is provided as a reply to the originating `GENERATE` request using the promise protocol.
+
+If the generator is invoked by a promise call, then the system will, under the hood, drain the generator and send back its return value (or error) using the promise protocol.  This can be used by developers who want to conserve bandwidth in some scenarios and just get the end result.
+
+If a promise is invoked by a generator call, then it is treated under the hood as a generator that ended imediately, and the promise protocol is used to determine the return value, which may be async in nature, and may settle as an error.
 
 ## Assigning inputs
 We should support all aspects of generators, including assignment based on yield.
@@ -26,13 +30,12 @@ This mode will be the slowest possible, since each yield must create a new block
 const receivedValue = yield outputValue
 ```
 
-If such a function was invoked as a promise, the yield input will be undefined.
+If such a function was invoked as a promise, the yield input will be undefined.  This method can be used by generator authors as a form of flow control to avoid flooding the requester.
 
 ## Flow Control
-Once a reducer has ended its blockmaking, the generator will not be reinvoked until the caller has acknowledged the next calls.
-One cycle is permitted to be sent ahead, where if no replies have been received, we will halt execution maybe.  Specifically, if replies to any of the next() actions are replied, the reducer will only be invoked if there is not a second block's worth of next calls loaded on the channel awaiting replies.  This balances flooding the caller and not slowing them down.
+Generators will not wait to be consumed normally, and interpulse flow control will be used to avoid flooding the 
 
-Or, devs of the generator may opt to wait for the yield to return something, indicating the remote side has processed the yields, which stops runaway generators.
+Devs of the generator may opt to wait for the yield to return something, indicating the remote side has processed the yields, which stops runaway generators.
 
 In practice flow control might be too hard to implement intelligently at this layer, and is best handled at the network level, where interpulse flow control needs to be added, with the sender politely buffering.  In the case of streaming server logs, we would want to buffer in the chain and send as soon as we are able, else there is no other easy place to buffer.
 

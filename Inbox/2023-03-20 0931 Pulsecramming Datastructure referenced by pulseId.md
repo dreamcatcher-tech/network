@@ -75,3 +75,8 @@ Permissions become easier to apply since each Pulse contains a permissions struc
 The storage layer will lose all deduplication properties if the diff data is flattened.
 
 Some recovery of dedupe may be possible if some keys remain as blocks, such as State.  Recovering state directly would be banned, as all recovery must be done at the Pulse level, which would acquire the state block.  Future Pulses would point to the hash via the Pulse that contained it, so the lookup would be preserved.
+
+## Deduplication in the storage layer
+If an item becomes large, such as the State, then we might optionally store a hash of that data in the pulse that references the cram index to find this data block at.  Then in the storage layer, we will store the hash, and a pointer to the PulseId to look it up with.  So if a similar
+
+We might store this data as an independent block, referenced by hash, so that it can be deduplicated between others.

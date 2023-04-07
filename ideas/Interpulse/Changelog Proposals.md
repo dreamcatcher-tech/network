@@ -12,6 +12,7 @@ List of Ideas that have not yet been implemented.  Implementation of [[Interpuls
 [[2023-03-13 1343 Engine error stream]]
 [[2023-04-04 1251 Crisp DX improvements]]
 [[2023-04-06 1512 Grandfather backup strategies]]
+[[2023-04-07 2129 Removing TYPE from actions]]
 
 ## Request for Comment
 [[2023-03-20 0931 Pulsecramming Datastructure referenced by pulseId]] 
