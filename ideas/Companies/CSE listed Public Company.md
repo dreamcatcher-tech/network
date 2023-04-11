@@ -14,6 +14,8 @@ As a registered issuer this company could engage in the promotion of its stock w
 
 We would like to get a valuation on our crypto assets, and also have a way of raising capital to produce more such assets.  We can periodically disperse those assets that have become legitimate securities or that are decentralized enough, amongst the shareholders, which would greatly decrease the stock price, periodically.
 
+Possibly Australia might be a good listing jurisdiction, as they have much mining exploration like Canada, and the capital gains exemption does not require switching country.
+
 ## 150 Shareholders
 
 To get to the requisite 150 shareholders that the CSE requires, we could offer people who purchase work from us the option to become a shareholder with the fees that would otherwise be our profit.  So we would pay all our costs for a job, and the amount left over for the dreamcatcher would be available to be made as an investment.  Having automated cap table management, this would be presented as part of the normal payment flow.    
@@ -32,3 +34,17 @@ The general public would be invited to purchase some of the rolled up asset form
 ## Taxation
 
 If we earn funds, we would pay tax on it.  If customers instead became shareholders, we can invest the money from them before we get taxed before it, gaining us extra funds.
+
+## V1 NFT basis
+To raise public funds to build the Dreamcatcher without corrupting the protocol requires an interface to be designed.  That interface can be a public company that raises funds controlled by us to fund packets on behalf of people who want a 3rd party to do the effort and gain a profit from it.  This seems a quick and easy way to get funding to tackle more exotic routes, like starting our own exchange in UA.
+
+150 shareholders can be found by creating an app that lets people register interest, and store funds in commitment of, the formation of a public company.  Once we have this requisite amount, we can incorporate, register as an issuer in canada or australia, convert the NFT escrow commits into share certificates.
+This whole work can be described as a packet and can be funded by seeders.
+
+Then we open a gateway for the shares to be minted for NFTs so they can be blockchain traded.  This allows the smoothing pool to be set up also.
+
+NFTs can start by being OpenSea listed using the OpenSea API for packets of work, then applying QA to the funders.  Funders must prove they have a utility for the code which will bring in revenue for all participants, and / or they must prove participation.  Participation as in selecting which packets to fund, and selecting whether to release the funds or not is sufficient, but extra proof can be found in requiring a github account with some contribution metrics, to prove they know about the domain.  Reselling the NFT is only allowed if multiple independent parties are generating income from this packet.
+
+Mint the NFTs using an ERC1155 contract or similar, then mutate the properties of each token as the packet becomes available.  So we mint a new NFT once we know the base chain of the packet.  This means we can tap the crypto funding sources, and beautiful interfaces they have developed.
+
+The utility of having a publicly hosted chain is better than having some short term income.  Making a PoA hosted services provider so that demo based projects can be built upon is powerful.  Particularly if the first hosted app is the Dreamcatcher work management app, so that packets can be openly bidded upon.  This means we can see our hourly rate go up as demand for our services goes up due to surge pricing.
