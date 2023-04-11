@@ -1,6 +1,6 @@
 >[!tip] Created: [2022-09-26 Mon 16:10]
 
->[!question] Targets: [[Public Company]]
+>[!question] Targets: [[CSE listed Public Company]]
 
 >[!danger] Depends: 
 

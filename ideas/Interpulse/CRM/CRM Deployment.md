@@ -22,8 +22,6 @@ This remote info is added in at boot in the client.
 2. Page boots and has server peerId built into the page, along with the chainId of the crm approot
 3. Page automatically displays the latest CRM installation
 
-
-
 ## Update a deployed instance
 Be able to pull down new code, ensure the current data is still compatible, then publish the new version for use by the clients.
 
@@ -45,8 +43,7 @@ Each time a customer is updated, the products like is updated automatically.
 
 ## Update
 
-
 ## Recovery
 
 ## Use PM2 as a server monitor
-
+Monitor the status of the service using some external tools.
