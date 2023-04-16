@@ -65,5 +65,14 @@ How can capital be raised inside the model of the Dreamcatcher ?  What would the
 ## An app building company
 List online say we're looking for projects, provide a discounted rate using fixed pricing, no timelines but you can easily see progress, test cases for our blockchain systems.  Invite people to apply for paid work, where we generate packets, and attempt to complete them - no win, no fee.
 
+## Hosting
+Having a hosting provider seems 
+Model would be host a static page however you like - ghpages being an easy one.
+We will host your chains up to a certain free size and free usage limit.
+Outside those limits, or with extended support, you need to pay.  If you want privacy, you have to pay.  New users are a new limit, so their usage is charged separately.  Anyone can pay for anyone elses chain to run on our host.
 
+If you host the software yourself, you should pay, but we have no way to enforce it.
+You can run your own host, since our infrastructure software is open too.
 
+We need privacy perservation for this service.
+We can make a separate host for each privacy requiring installation, which has limited dial peers.
