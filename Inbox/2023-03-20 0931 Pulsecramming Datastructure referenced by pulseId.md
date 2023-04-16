@@ -77,4 +77,9 @@ The storage layer will lose all deduplication properties if the diff data is fla
 Some recovery of dedupe may be possible if some keys remain as blocks, such as State.  Recovering state directly would be banned, as all recovery must be done at the Pulse level, which would acquire the state block.  Future Pulses would point to the hash via the Pulse that contained it, so the lookup would be preserved.
 
 ## The Cram
-This is the portion of the pulse that is length encoded and represents a single binary stream
+This is the portion of the pulse that is length encoded and represents a single binary stream.  The Cram is an array of binary blocks.  To reference portions of the Cram, use `pulseId:cramIndex`.  It should be gzip compressed one level higher, so the Pulse encoding is turned into binary and then gzip compressed at max level.
+
+The keys of the json data are also removed via schema, so only the values are encoded.
+
+Pointers are only applicable to Pulses, and never to anything internal to Pulses.
+Only one category of pointer.

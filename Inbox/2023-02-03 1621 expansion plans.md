@@ -76,3 +76,8 @@ You can run your own host, since our infrastructure software is open too.
 
 We need privacy perservation for this service.
 We can make a separate host for each privacy requiring installation, which has limited dial peers.
+
+Use S3 backend and free startup credits to save on costs.
+Storage model is forever if paid.  Forever best effort if free.
+The longer data goes without being referenced, the deeper it gets persisted, so that decades on data may take up to a week to recover.
+
