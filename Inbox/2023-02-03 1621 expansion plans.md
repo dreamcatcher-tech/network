@@ -106,3 +106,6 @@ Just wrapping opensea for the purposes of bot trading, fee reduction, is all use
 ## [[2023-04-04 1226 SILD tooling| SILD assistance]]
 Make a facebook page for each person who wants to live on the island, and get to know your neighbours.
 
+## Business Bus
+Enterprise bus that can also link to the hosted global bus. [[2022-11-16 Service Bus]] [[2023-04-05 1335 Dreamcatcher Bus]]
+

@@ -24,3 +24,7 @@ How frequently should the effect be spread around the engines participating in t
 
 ### Quorum model
 When the results of the effect which was run concurrently come in, 
+
+## Problems
+How can future requests interact with the running request in some way ?
+In React, this is provided thru `useRef()` to get something mutable.  This is generally discouraged.

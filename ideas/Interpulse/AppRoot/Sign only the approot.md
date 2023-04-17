@@ -48,10 +48,6 @@ For this reason, the comms channels of children are not purged until after the s
 
 The tip of a channel to another child that has been filled multiple times in this approot span needs to have a special flag added to indicate it comes from the same approot.  It can be verified by using the same approot that signs this pulse to check the signature also includes the foreign channel.
 
-
-## Not hashing children ?
-Why hash children at all ? Why make them be their own pulse, why not just treat as a substate of the parent ?  Then, all communication is done via a path in the supervisor tree, rather than a hash ?
-
 ## Cutoff
 The approot should specify the maximum number of joules that are premitted to be burnt before a signed approot must take place.  This makes the results predictable, but still keeps the system responsive.
 
@@ -64,3 +60,5 @@ Interpulses can signal that an update is due to a subscribed app complex, as the
 Based on the publisher provenance, we can run covenants in the same isolation boundary to save time.  It should be possible to have different isolation boundaries between different chains in the same approot.
 
 ## Nested Approots
+Approot is a break in synchrony, so nested approots would be isolated from each other, even tho they may be mounted in a dependent tree.
+A nested approot would not actively update its parent, but the engine would update the parent.

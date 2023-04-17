@@ -33,3 +33,10 @@ Current model is just a mailing list, effectively.
 Allow wrapping and trading of the stock equity, since if they can be turned into these standard viewable entities, then we can also turn their stock into tradeable items, since we can take control of the cap table, and can issue securities that we control.
 
 Use automation to parse these standard listings so we can try to pick which ones will do well, or be aquired early.  Buy businesses and flip them, since we know they are a good deal for now, and if we wait we can sell them for more, with nearly no changes.
+
+Model the incentives of each business as a standard model.  The context diagram, and the reduction down to what type of business they are in.  Categorize based on the geometry of the business.
+
+Detect where listed businesses are related or co-dependent.  Help people raise pooled funds to purchase businesses.  Help path to public listing.
+
+Automated valuation.
+

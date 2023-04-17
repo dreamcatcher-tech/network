@@ -2,7 +2,6 @@ List of Ideas that have not yet been implemented.  Implementation of [[Interpuls
 
 ## Requests
 [[2023-04-07 2147 Interpulse Flow Control]]
-[[2023-04-07 2218 How to trigger something on state change]]
 
 ## Draft
 
@@ -12,28 +11,26 @@ List of Ideas that have not yet been implemented.  Implementation of [[Interpuls
 [[Exclusive Engine Lock]]
 [[2023-02-03 1142 useDatum convenience methods]]
 [[2023-02-13 2113 progress updates during blockbuster]]
-[[2023-03-01 1117 subscribe hooks for state changes]]
-[[2023-04-07 2218 How to trigger something on state change]] 
 [[2023-03-13 1343 Engine error stream]]
 [[2023-04-04 1251 Crisp DX improvements]]
 [[2023-04-06 1512 Grandfather backup strategies]]
 [[2023-04-07 2129 Removing TYPE from actions]]
 [[2023-04-17 1128 Proof of Dependence]]
-[[2023-04-17 1125 Detached Sign]]
+[[Detached Sign]]
 [[2023-04-17 1055 Execution based on pulse size limit]]
-[[2023-04-17 1013 React hooks side effect detection]] this will remove [[2023-03-01 1117 subscribe hooks for state changes | subscribe hooks]] and [[2023-04-07 2218 How to trigger something on state change | trigger something on state change]]
+[[2023-04-17 1013 React hooks side effect detection]]
 [[Generator Protocol]]
 [[2023-04-07 2147 Interpulse Flow Control]]
 [[2023-04-06 1552 Deletable Pulses]]
 [[2023-04-17 1251 IPFS Bridge]]
+[[Hooks for async iterables and hamts]]
+
 
 ## Request for Comment
-[[2023-03-20 0931 Pulsecramming Datastructure referenced by pulseId]] 
 [[Sign only the approot]]
 
-
 ## Approved
-
+[[Pulsecramming Datastructure referenced by pulseId]] 
 
 ## Implemented
 [[Virtual Working Directory Path]]

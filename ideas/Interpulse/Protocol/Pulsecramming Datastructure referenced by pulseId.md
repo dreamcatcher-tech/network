@@ -87,3 +87,5 @@ Only one category of pointer.
 Further, an index in a cram can be a pointer to pulseId:cramIndex value, so that the size of the pulseId is not repeated thruout the current DAG.
 
 Therefore the format in the cram should start with a 0 or a 1 indicating if it is a pointer or not.
+Or, references to other pulseIds can be stored separately, in a different array.  The Refs is an indexed list of references to different crams.
+We could avoid the length encoding step if the refs held offset and length params if it was part of this Pulse.  So all links would point to refs, and then refs would point to either a pulseId:refIndex or an offset:length in the Cram.
