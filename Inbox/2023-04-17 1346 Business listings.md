@@ -48,6 +48,8 @@ Map the data systems inside the companies, so someone integrating with their bus
 
 Provide a plugin that can take Xero and connect books directly to the sale marketplace.
 
+Listing a business for sale seems like a poorly serviced market, where brokers mostly operate, and many of them make their money up front before the sale goes thru.
+
 ## Revenue sources
 Services marketplace that refine entities to make them more saleable and presented in a standard fashion.  Connect this up to a broader services marketplace.
 

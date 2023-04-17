@@ -5,7 +5,7 @@
 
 >[!danger] Depends: 
 
-Using the [[2022-12-17 1420 Reducers as React like components for Side Effects|Hooked side effects]] pattern, we can run the heavy repo as a side effect in a chain.
+Using the [[React hooks for Side Effects|Hooked side effects]] pattern, we can run the heavy repo as a side effect in a chain.
 
 Its configuration and status is handled by the side effects and by reconciling state with actual, just as react mutates the dom.
 
