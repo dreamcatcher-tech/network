@@ -4,6 +4,8 @@
 
 >[!danger] Depends: 
 
+>[!info] Superseded by [[Synchronous React Prop from Pulses]]
+
 If all the subscriptions to pulses are async iterables, then this does not work well with React, which expects synchronous and pure functions.  Also HAMTs mean that looking up parts of a Pulse, such as the list of children, are asynchronous.  Wrapping these functions in hooks so they can be easily consumed by pure synchronous functions is helpful to developers.
 
 ## `children = useChildren( pulse, filters )`

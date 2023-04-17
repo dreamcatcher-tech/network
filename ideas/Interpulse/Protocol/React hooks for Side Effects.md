@@ -9,7 +9,7 @@ Treat running on a host computer like the DOM being mounted and mutated.  The ho
 
 `useEffect( () => {}, [state, state.something], {options} )`
 
-Options are things like concurrent execution, max running time, network access granted, filesystem path access granted, and other isolation options.  Effects cannot influence the block that triggers them.  The effect is run by rerunning the reducer with the same params that triggered the effect, 
+Options are things like concurrent execution, max running time, network access granted, filesystem path access granted, and other isolation options.  Effects cannot influence the block that triggers them.  The effect is run by rerunning the reducer with the same params that triggered the effect, but in a different isolation context.
 
 Each time any part of the state changes, the hooks rerun.  Any time the computer that we are running on changes, or the chain is stopped, the cleanup code runs and the hook is shutdown.
 
