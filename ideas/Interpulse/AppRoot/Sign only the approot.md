@@ -46,6 +46,8 @@ Each child may communicate with others in the complex multiple times before the 
 
 For this reason, the comms channels of children are not purged until after the signed approot has occured, to allow complete isolated replay of any given item.
 
+The tip of a channel to another child that has been filled multiple times in this approot span needs to have a special flag added to indicate it comes from the same approot.  It can be verified by using the same approot that signs this pulse to check the signature also includes the foreign channel.
+
 
 ## Not hashing children ?
 Why hash children at all ? Why make them be their own pulse, why not just treat as a substate of the parent ?  Then, all communication is done via a path in the supervisor tree, rather than a hash ?

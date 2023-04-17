@@ -25,7 +25,7 @@ List of Ideas that have not yet been implemented.  Implementation of [[Interpuls
 [[Generator Protocol]]
 [[2023-04-07 2147 Interpulse Flow Control]]
 [[2023-04-06 1552 Deletable Pulses]]
-[[]]
+[[2023-04-17 1251 IPFS Bridge]]
 
 ## Request for Comment
 [[2023-03-20 0931 Pulsecramming Datastructure referenced by pulseId]] 
