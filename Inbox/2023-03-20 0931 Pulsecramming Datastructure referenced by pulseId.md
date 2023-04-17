@@ -83,3 +83,5 @@ The keys of the json data are also removed via schema, so only the values are en
 
 Pointers are only applicable to Pulses, and never to anything internal to Pulses.
 Only one category of pointer.
+
+Further, an index in a cram can be a pulseId:cramIndex value, so that the size of the pulseId is not repeated thruout the current DAG.

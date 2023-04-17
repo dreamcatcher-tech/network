@@ -81,3 +81,15 @@ Use S3 backend and free startup credits to save on costs.
 Storage model is forever if paid.  Forever best effort if free.
 The longer data goes without being referenced, the deeper it gets persisted, so that decades on data may take up to a week to recover.
 
+Data transfer will incur fees, and up to some limit
+Free tier is paid by staking in pools, where money goes in, and
+This is how we get back some of the cost of storing free data.
+
+We can implement paid hosting and can ship certed units to remote locations which are public data, so only correctness matters - not privacy.  Users can have some free data, and user accounts are always free ?
+
+## Link to Opensea
+ERC1155 contract integration that mints new NFTs representing the amount of money that was paid in to an item.  This can only be done for security cleared items, to avoid being a security.
+Should have general interface to link 
+
+## [[2023-04-04 1226 SILD tooling| SILD assistance]]
+
