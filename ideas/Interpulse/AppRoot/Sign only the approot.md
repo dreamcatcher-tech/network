@@ -42,8 +42,10 @@ Transmits should only accept the signature of the latest pulse, rather than any 
 Instead of pointer to previous pulse, store a pointer to previous approot.  If path had changed for a pulse, should record these moves somewhere ?
 
 ## Child communication
-Each child may communicate with others in the complex multiple times before 
-Downside is that extracting the child chain out and moving it over to another
+Each child may communicate with others in the complex multiple times before the approot is signed.  Downside is that extracting the child chain out and moving it over to another cluster means it may miss some actions.  
+
+For this reason, the comms channels of children are not purged until after the signed approot has occured, to allow complete isolated replay of any given item.
+
 
 ## Not hashing children ?
 Why hash children at all ? Why make them be their own pulse, why not just treat as a substate of the parent ?  Then, all communication is done via a path in the supervisor tree, rather than a hash ?

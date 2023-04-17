@@ -11,4 +11,6 @@ All such actions should be usable to assert the correctness of some global state
 
 This correctness can provide a ledger that is used for lookup of things like "latest version of the linux kernel" to "account balance of this person".
 
-Micro payments for data
+Micro payments for data require the participants to update a higher ledger, which also affirms a top level ledger.
+
+If the top level ledger is able to receive PRs, then we can make it rapidly mergeable, so that it will eventually find consistency.  All the little payments make a tiny payment up to the top level nodes that hold the top together.  You can be one of these nodes, but it will be expensive to win at this game.

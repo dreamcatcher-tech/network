@@ -30,3 +30,5 @@ It is an application of the general purpose data training functions of the Dream
 General attribution rewards could be tackled in this way too, with goals and params set so the algo can be upgraded when a better one occurs that fits all the data better.  This is a leap, and the training of the model is incremental mining.
 
 The coin can purposefully have a strong decentralization metric, so it only issues when enough decentralization is detected, making it clearly not a security.
+
+These would look like loyalty points for the service, where the service will reward you by redistributing some new consumers payments out to you at time of the new purchase.  This might destroy the loyalty points ? or it might acrue in the miners balance ?

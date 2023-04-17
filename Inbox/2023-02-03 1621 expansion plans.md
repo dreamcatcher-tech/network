@@ -61,6 +61,7 @@ Somewhat makes sense to bind doing something to help SILD at the same time, sinc
 
 ## Public listing
 How can capital be raised inside the model of the Dreamcatcher ?  What would the stock be worth ?  Is greater utility found tackling existing blockchain use cases vs traditional software problems ? or both at the same time ?  Can a crypto raise be done out of Vanuatu ?
+Wrap stock in objects so we can facilitate an exchange using just the protocol.
 
 ## An app building company
 List online say we're looking for projects, provide a discounted rate using fixed pricing, no timelines but you can easily see progress, test cases for our blockchain systems.  Invite people to apply for paid work, where we generate packets, and attempt to complete them - no win, no fee.
@@ -87,9 +88,21 @@ This is how we get back some of the cost of storing free data.
 
 We can implement paid hosting and can ship certed units to remote locations which are public data, so only correctness matters - not privacy.  Users can have some free data, and user accounts are always free ?
 
+Have the high quality AWS grade one, but also the cheap homebuilt hardware running in a garage version. Plus a private custom supported one which guarantees confidentiality.
+
+Later make our own static page host making it ghpages compatible.
+Wrap the AWS api in objects so we can control the infrastructure we run on using our own chains.
+
 ## Link to Opensea
 ERC1155 contract integration that mints new NFTs representing the amount of money that was paid in to an item.  This can only be done for security cleared items, to avoid being a security.
 Should have general interface to link 
 
+We can sell software access tokens as NFTs so that income can be generated.
+
+We can hook the transfer rules so that if the DRE object has not approved the transfer, the sale cannot occur.
+
+Just wrapping opensea for the purposes of bot trading, fee reduction, is all useful.  Can become like our own version of opensea, particularly if we include tools to publish NFTs on the opensea.
+
 ## [[2023-04-04 1226 SILD tooling| SILD assistance]]
+Make a facebook page for each person who wants to live on the island, and get to know your neighbours.
 

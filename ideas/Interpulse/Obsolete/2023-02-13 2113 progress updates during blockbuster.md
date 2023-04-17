@@ -5,6 +5,8 @@
 
 >[!danger] Depends: 
 
+>[!info] Superseded by [[Generator Protocol]]
+
 Store a flag in config that says calculation is ongoing.
 Let other chains read the state, and if they see this flag, then they can send an action that resolves when the current calculation is completed.
 Progress can be set with blockbuster - total and progress.
@@ -19,3 +21,4 @@ Allows for a more graceful way to do long running operations, where a client UI 
 Multiple blockbuster events can be happening at once, each one has an ID with it.  The requester of the action might supply an ID with their request so that they know which one they triggered.
 
 If a reader sees multiple processes in progress, they can do a summation or wait for a specific one.
+
