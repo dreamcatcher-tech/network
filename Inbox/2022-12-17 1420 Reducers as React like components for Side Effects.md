@@ -25,6 +25,8 @@ Effects can be recorded by using the IO channel.  A wrapper action can be constr
 
 Each action is like props being passed down, which will cause a rerender, which might trigger effects to rerun.  The covenant model is very much like a react component that takes props in and expects props back, and has various lifecycle events that it transitions to.  It does allow asynchrony, unlike react.
 
+In the Engine model, the user is modelled as a side effect function that cannot receive any actions.
+
 ### Lifecycle of a reducer
 When it first mounts on a cluster, it is run with an empty action.  This allows the logic to do any setup work it may wish.  The effect is triggered AFTER the block has been sealed, using the same action that triggered it to be called.  Any calls to `useState` would have been fulfilled in the same way as the trail would have stored these calls.  On rerun to induce the effect, all subsequent async requests from that reducer are ignored.  
 
@@ -44,3 +46,13 @@ But for testing, the same code can run in any context we provide it with.
 
 ## `useRef()`
 Often we want some piece of mutable data to last longer than just the current side effect - we want it for the life of the effect context.  Here we can provide a hook into some part of the isolation boundary that is consistently available.  This could be used to store a `libp2p` instance in the case of the network.
+
+## Outbound effects
+These are controlled by the context level of the isolating container.
+
+## Inbound effects
+The Pierce channel is the only way to get data into chainland.
+The effect model described here has no reason to use the outbound channel of `@@.io`
+
+## Remounting
+in React 18, in dev mode, effects are remounted, just to check they clean up approriately.  We should do the same with our effects.

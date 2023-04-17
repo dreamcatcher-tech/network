@@ -40,3 +40,34 @@ Detect where listed businesses are related or co-dependent.  Help people raise p
 
 Automated valuation.
 
+Rough thruput since inception is 6billion GBP worth of deals gone thru.
+
+Could be especially useful for startups as we can list those on the platform.
+
+Map the data systems inside the companies, so someone integrating with their business knows what is involved here.
+
+Provide a plugin that can take Xero and connect books directly to the sale marketplace.
+
+## Revenue sources
+Services marketplace that refine entities to make them more saleable and presented in a standard fashion.  Connect this up to a broader services marketplace.
+
+Transaction cut when a sale occurs.
+
+Data room management.
+
+Esigning service - make this very cheap and integrated with the data room.
+
+KYC and AML on the purchasers.  They can pay to have this done on themselves, and be prearranged.
+
+Payment processing and escrow.  Funds management should be separate from other services, as this is a core service.
+
+Standardization services to family offices with many disparate businesses.  All the businesses in their portfolios should be presented in a specific way.  Valuations can be generated against the dataset of sales of similar businesses.
+
+## Pressure to pay
+Provided by legal enforcement that gives access to the confidential data rooms assosciated with each company.
+
+## Induction Force
+Buyers get a clean, standard, broad view of all potentials.  
+Sellers get a nice way to present their business for sale, and to refine how they present to increase their perceived value.
+Brokers on the sell side get access to more buyers with less effort, and can use the platform to refine their product to make it more saleable.
+Brokers on the buy side have very little pressure, but unsure how many buy side brokers there are.
