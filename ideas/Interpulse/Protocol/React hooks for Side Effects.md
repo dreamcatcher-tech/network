@@ -98,8 +98,22 @@ When run in blockmaking isolation, we could detect if side effects needed rerunn
 ## Skipping ahead
 If the pulsemaker produces pulses that require side effects to run faster than the effector can unmount and remount the side effects, the effector will always skip ahead.
 
+## Communicating out
+From within an effect, we might need to communicate to other chains, including our own loopback interface:
+
+```js
+const result = await interchain( action, '/some/other/chain' )
+```
+
+Within the effect runner, which is an engine controlled context, any interchain requests would be inserted on the `.@@io` queue, wrapped in a system action, which the DMZ marshals.  By the same rules as hooks, a promise cannot be returned from `useEffect()` so dangling requests during unmount need to be handled by the developer.
+
+
 ## Problems
 How to log the state of the network in chain, for auditing purposes ?
 How can future requests interact with the running request in some way ?
 In React, this is provided thru `useRef()` to get something mutable.  This is generally discouraged.
 Handle unmounting at any point ?
+How would another language, like Python, be able to pass a function as a parameter ?  It might need to be an object with a function on it with a default name.
+
+## Example: Engine Networking
+In the browser and nodejs single instance engines, a side effect starts up the
