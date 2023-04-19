@@ -33,10 +33,10 @@ const reducer = function* (request){
 For the standard promise based API, the `title` field in the schema is used to represent the action `TYPE` key.  To specify a generator, the title is prefixed with a `*` as in `title: *SOME_GENERATOR` which is used to indicate to any function mapping sugar functions to use the generator dispatches here.
 
 ## Process
-Generator is triggered by the initial `GENERATE` request.  Each yield that occurs from that invocation will be translated into a `YIELD` action and sent back to the sender as a new Request.
+A Generator is triggered by the initial `GENERATE` request.  Each yield that occurs from that invocation will be translated into a `YIELD` action and sent back to the sender as a new Request.
 When the generator is complete, the final value is provided as a reply to the originating `GENERATE` request using the promise protocol.
 
-If the generator is invoked by a promise call, then the system will, under the hood, drain the generator and send back its return value (or error) using the promise protocol.  This can be used by developers who want to conserve bandwidth in some scenarios and just get the end result.
+If the generator is invoked by a promise call, then the system will, under the hood, drain the generator and send back its return value (or error) using the promise protocol.  This can be used by developers who want to conserve resources in some scenarios and just get the end result.
 
 If a promise is invoked by a generator call, then it is treated under the hood as a generator that ended imediately, and the promise protocol is used to determine the return value, which may be async in nature, and may settle as an error.
 
