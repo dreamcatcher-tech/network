@@ -2,7 +2,10 @@ List of Ideas that have not yet been implemented.  Implements [[Interpulse Spec 
 
 ## Requests
 [[2023-04-07 2147 Interpulse Flow Control]]
-
+[[Multi Host Consensus]]
+[[Witnessing]]
+[[Late Fulfilled Promises]]
+[[Swarm side effects]]
 ## Draft
 [[2023-01-25 1245 trigger updates when geo status alters]]
 [[2023-01-30 0849 LS should be an async iterable]]
@@ -20,7 +23,7 @@ List of Ideas that have not yet been implemented.  Implements [[Interpulse Spec 
 [[2023-04-07 2147 Interpulse Flow Control]]
 [[2023-04-06 1552 Deletable Pulses]]
 [[2023-04-17 1251 IPFS Bridge]]
-[[Hooks for async iterables and hamts]]
+[[React hooks for Side Effects]]
 
 ## Request for Comment
 [[Sign only the approot]]

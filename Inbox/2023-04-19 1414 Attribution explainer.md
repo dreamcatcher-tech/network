@@ -17,3 +17,4 @@ Show how selfwashing, or purchasing from your self in order to gain votes is imm
 
 The [[Dreamcatcher Algorithm]] is an algorithm that can fairly attribute a payment amongst all its contributors.  Basically it measures the value of human contribution between different contribution flavours, and balanced against the value of resources, such as money.  We do expect it to be a large parameter model.  It's correctness is determined mostly by the general consensus of its users, rather than some strict parameters that can be satisfied.
 
+We should be able to model conventional companies in this explainer and extract metrics from these models, like average observed fairness, median, wealth distribution, force sensitivity.  Basically any force attribution system that requires a lot of force is fragile and can be rapidly toppled.
