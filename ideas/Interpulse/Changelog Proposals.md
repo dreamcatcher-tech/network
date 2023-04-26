@@ -2,11 +2,11 @@ List of Ideas that have not yet been implemented.  Implements [[Interpulse Spec 
 
 ## Requests
 [[2023-04-07 2147 Interpulse Flow Control]]
-[[Multi Host Consensus]]
+[[Request for Multi Host Consensus]]
 [[Witnessing]]
 [[Late Fulfilled Promises]]
 [[Swarm side effects]]
-[[Billing]]
+[[Billing for public chain use]]
 [[Ambient Attribution |Attribution Algorithm]] (Also [[I20]])
 [[R03|EVM connectivity]]
 [[ACL|Access Control Lists]] Needs built in cap table / weight / dao
@@ -14,8 +14,8 @@ List of Ideas that have not yet been implemented.  Implements [[Interpulse Spec 
 [[Examples for side effects]] connection to popular systems/sensors/apis
 [[payload layer]]
 [[Covenant Migration and Protocol Migration]] These should be the same
-[[Covenant installation and distribution]]
-[[BFT Punishment]]
+[[Covenant installation, isolation, and distribution]]
+[[Request for BFT Punishment]]
 
 ## Draft
 [[2023-01-25 1245 trigger updates when geo status alters]]

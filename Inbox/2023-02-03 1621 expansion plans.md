@@ -103,9 +103,15 @@ We can hook the transfer rules so that if the DRE object has not approved the tr
 
 Just wrapping opensea for the purposes of bot trading, fee reduction, is all useful.  Can become like our own version of opensea, particularly if we include tools to publish NFTs on the opensea.
 
-## [[2023-04-04 1226 SILD tooling| SILD assistance]]
+## [[2023-04-04 1226 SILD tooling |SILD assistance]]
 Make a facebook page for each person who wants to live on the island, and get to know your neighbours.
 
 ## Business Bus
 Enterprise bus that can also link to the hosted global bus. [[2022-11-16 Service Bus]] [[2023-04-05 1335 Dreamcatcher Bus]]
 
+## Raising against SILD
+If we gain some license or some commitment from SILD as to being the bus on the island, we can raise capital in a public company to build out some of our systems, as the use case is defined, revenue projections from the island alone can be stated and agreed upon based on validated demand, plus the export of the systems once a usecase / showcase is deployed.  
+
+We can raise capital where we deploy as we see fit, plus we can raise against specific packets directly.  Stake to Stay paying a royalty for auditing is one such example.  The raise is to build software and refine it in this test bed.  Securing rights to the test bed makes the raise simpler.
+
+Residents as participants may be able to fund without SEC rules, and if a clear revenue path is shown for each packet, then it may make economic sense to fund something that benefits their home, plus has a future income possibility attached to it.
