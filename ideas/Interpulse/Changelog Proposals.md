@@ -7,6 +7,15 @@ List of Ideas that have not yet been implemented.  Implements [[Interpulse Spec 
 [[Late Fulfilled Promises]]
 [[Swarm side effects]]
 [[Billing]]
+[[Ambient Attribution |Attribution Algorithm]] (Also [[I20]])
+[[R03|EVM connectivity]]
+[[ACL|Access Control Lists]] Needs built in cap table / weight / dao
+[[Chain encryption key]] preferrably ratcheting
+[[Examples for side effects]] connection to popular systems/sensors/apis
+[[payload layer]]
+[[Covenant Migration and Protocol Migration]] These should be the same
+[[Covenant installation and distribution]]
+[[BFT Punishment]]
 
 ## Draft
 [[2023-01-25 1245 trigger updates when geo status alters]]
