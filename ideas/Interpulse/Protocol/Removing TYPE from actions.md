@@ -5,9 +5,11 @@
 
 >[!danger] Depends: 
 
-If actions and replies were simply treated as json objects, and enveloped into system wrappers, then what type there should be totally independent of the system level interactions.
+If actions and replies were simply treated as json objects, and enveloped into system wrappers, then what type they are should be totally independent of the system level interactions.
 
-`TYPE` is used by the system functions like the dmz reducer, but this is more just a convention and should not be enforced at all.
+`TYPE` is used by the system functions like the dmz reducer, but this is more just a convention and should not be enforced at all.  The type from the view of the protocol is different to any typing that the DMZ or Covenant would interpret.
+
+The Reducer would always receive a pure json object, and could do anything it wanted with it.  The protocol would wrap and flag it to indicate if promise, or if generator.
 
 Then, all replies can follow closer to the iterator protocol, and always send back a `value` key in the payload, as well as some extra system typing information, like if it was an error or not.
 
@@ -20,4 +22,3 @@ So our model becomes then:
 With binary attachments:
 
 > Binary in, Binary back with optional error flag, and optional Binary next state.
-

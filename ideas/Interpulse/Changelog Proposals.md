@@ -10,12 +10,14 @@ List of Ideas that have not yet been implemented.  Implements [[Interpulse Spec 
 [[Ambient Attribution |Attribution Algorithm]] (Also [[I20]])
 [[R03|EVM connectivity]]
 [[ACL|Access Control Lists]] Needs built in cap table / weight / dao
+Attribution Table - this should be calculated from the covenant
 [[Chain encryption key]] preferrably ratcheting
 [[Examples for side effects]] connection to popular systems/sensors/apis
 [[payload layer]]
 [[Covenant Migration and Protocol Migration]] These should be the same
 [[Covenant installation, isolation, and distribution]]
 [[Request for BFT Punishment]]
+
 
 ## Draft
 [[2023-01-25 1245 trigger updates when geo status alters]]
@@ -26,7 +28,7 @@ List of Ideas that have not yet been implemented.  Implements [[Interpulse Spec 
 [[2023-03-13 1343 Engine error stream]]
 [[2023-04-04 1251 Crisp DX improvements]]
 [[2023-04-06 1512 Grandfather backup strategies]]
-[[2023-04-07 2129 Removing TYPE from actions]]
+[[Removing TYPE from actions]]
 [[2023-04-17 1128 Proof of Dependence]]
 [[Detached Sign]]
 [[Execution limit based on pulse size limit]]
