@@ -9,10 +9,13 @@ DAOs can be registered in the Marshall Islands.  This could be the perfect place
 
 Marshall Islands allows Wise.com business accounts to be held.
 
-This seems a cleaner, safer place with more modern laws to run the escrow company.  Shares of the company can be given automatically to represent the escrow amounts in the company, should it ever need liquidating.  These shares can represent the contributions being made, and can be branded and artistic.  Restrictions on their trade can be set to avoid securities laws.
+This seems a cleaner, safer place with more modern laws to run the escrow company.  Shares of the company can be given automatically to represent the escrow amounts in the company, should it ever need liquidating.  These shares can represent the contributions being made, and can be branded and artistic.  Restrictions on their trade can be set to avoid securities laws.  This DAO would act as a payment processing front end which then disperses the funds to the owners.  It takes a small skim to cover its expenses.
 
-Then we need to incorporate a working company whose goal is take funds, and expend it on NFT production, selling off the assets.  Participants get minted a token as a share, and can trade these between other members of the company, or with anyone who has passed the KYC test.  This then passes off the NFTs that it funds over to the shareholders who contributed at the time the packet was committed to.
+Then we need to incorporate a working company whose goal is take funds, and expend it on NFT production, selling off the assets.  Participants get minted a token as a share, and can trade these between other members of the company, or with anyone who has passed the KYC test.  This then passes off the NFTs that it funds over to the shareholders who contributed at the time the packet was committed to.  This DAO allows securities to be issued against it.
 
 The DAO structure could allow very large cap tables.
+
+## Listing the DAO publicly
+If we then register these DAO as public issuers in Canada, then we can sell the securities publicly.  Also a Shell company could take on a stake in this DAO and control it, using the funds it raises to make payments into the escrow DAO.
 
 
