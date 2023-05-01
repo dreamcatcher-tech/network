@@ -54,3 +54,13 @@ Show studies that map DC outages, and show less frequent, but goes down for long
 
 ## Cost as a proxy for Carbon output
 If you are costing businesses $x, then there can be loose mapping made between GDP, CO2 emissions, and how much emissions you are causing.
+
+## No formality needed
+Examples of running large cost code, even human life, on non formal languages.  Arguably more critical value passes thru non formal code.
+Just because blockchain is unalterable and public doesn't mean it needs to be formally verified.   Just because we cannot trace culprits does not necessitate formal languages.  Who is the culprit in a plane crash ? Despite this most code still runs using non formal languages.
+
+Using the JSON format of the engine, we can run formal languages in lightweight containers and thereby provide the formal guarantees for important contracts too.
+Can specify that we need a set diversity before finality, so some nodes run different versions of the software to ensure the swiss cheese model of security has many slices, covering all holes.
+
+## Forking of code accutely in DeFi
+The forking problem is more obvioius in the summer of DeFi
