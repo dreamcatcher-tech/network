@@ -133,3 +133,7 @@ Only once income has come in that passes the distribution test can packets be tr
 So its fundamentally a way to get exposure, use some tooling, 
 
 BASED ON ALL THIS, we should just make the dreamcatcher directly and give it a ETH wallet to manage how funds get moved around ?
+
+Sell on OpenSea so that fundage can be minted to people using NFTs ?
+
+Your investment will not earn anything unless you participate, so there is no 3rd party to rely upon.
