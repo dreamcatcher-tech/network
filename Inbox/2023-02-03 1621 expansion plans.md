@@ -137,3 +137,4 @@ BASED ON ALL THIS, we should just make the dreamcatcher directly and give it a E
 Sell on OpenSea so that fundage can be minted to people using NFTs ?
 
 Your investment will not earn anything unless you participate, so there is no 3rd party to rely upon.
+Make a gateway site dedicated to connecting a web3 wallet and connecting that to dreamcatcher plus making payments into your balance.  Otherwise you use our account management directly.  Wrap DAI in our token, or basically move any asset into our contract.  Trading on DeFi then pools the actions of all so minimal fees and swapping internally nets out before using gas.
