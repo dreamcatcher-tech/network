@@ -47,6 +47,9 @@ graph LR
 
 Fees are charged whenever the silver changes hands.  Rough calculations based on [DAI](https://www.coindesk.com/price/dai/), is around 5,000 transactions per day, with $830MM in value, of $6.57B cap.  So, for a 0.25% tx fee, with $10MM per day in transactions, yield is $25,000/day, or $9MM/year just in fees, let alone the appreciation of the collateral.
 
+## Using marshall islands DAOs
+DAO can be registered, which has corporate personhood, then this company receives payments from members in exchange for governance tokens.  Then the DAO person acquires vaulted reserves in Singapore and other vaults, and makes these units available for trade.  These tokens can be moved any way you like, but when they want to be cashed out, someone needs to front up with KYC.
+
 ### Points
 1.  Making money on the trading    
 2.  Free vaulting
