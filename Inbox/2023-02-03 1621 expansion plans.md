@@ -115,3 +115,21 @@ If we gain some license or some commitment from SILD as to being the bus on the 
 We can raise capital where we deploy as we see fit, plus we can raise against specific packets directly.  Stake to Stay paying a royalty for auditing is one such example.  The raise is to build software and refine it in this test bed.  Securing rights to the test bed makes the raise simpler.
 
 Residents as participants may be able to fund without SEC rules, and if a clear revenue path is shown for each packet, then it may make economic sense to fund something that benefits their home, plus has a future income possibility attached to it.
+
+## Funding on Eth
+Make a DAO in marshall islands, use juicebox to govern it, get payments in Eth, vote to spend those payments on packets using weak bonding with the packets being proposals to start with, then gradually transition over to the Dreamcatcher as different degrees of operational stability are achieved.
+
+Goal of the DAO is to leave ETH and ultimately work directly on the dreamcatcher.
+
+Mint NFTs to represent packets on Dreamcatcher.   The only thing you own is the money you put in, and this can be withdrawn at any time.  Then you can fund different packets using it.
+
+Can we build the dreamcatcher on ethereum using solidity first ?  DAO voting rights mean participation, probably if exercised or not.  If the DAO can only spend money from members who opted in, this is clear participation - then if the final payout is based only on the participant approving, this is definitely participation.  Participation is what gives people the feeling that they are safely spendin their money since they agree the goal is good, but they retain control of their funds at all times.
+
+Use juicebox or some other system to get exposure and front end, then make proposals be custom so they are linked to packets, and make it so only committed funds can be spent.
+
+Tokens can convey the rights to change the license terms of the software in some way - this is a form of value.
+Only once income has come in that passes the distribution test can packets be traded.  Buying into juice still requires participation.
+
+So its fundamentally a way to get exposure, use some tooling, 
+
+BASED ON ALL THIS, we should just make the dreamcatcher directly and give it a ETH wallet to manage how funds get moved around ?
