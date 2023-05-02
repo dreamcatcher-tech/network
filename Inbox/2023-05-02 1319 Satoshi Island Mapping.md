@@ -7,6 +7,13 @@
 
 If we can make a blockchain based map provider, then we can start forming the ground layer for the [[Social Simulator]] and other metaverse based operations.
 
+We want 3 data sources:
+1. A mapping layer that includes land registry information - acts as a metaverse viewer
+2. A cellphone app that gathers data from citizens who wish to submit - acts as an actor
+3. A sensor on the island - probably a camera or a temperature sensor - acts as infrastructure
+
+All data will be visible on the mapping layer, with a timeline that can be scrubbed along.  Multiple timelines can be presented to present alternative views of what the future might hold.  With no conflicts, future versions are automerged (eg: when a citizen says what dates they are going to be where on the island).
+
 Set up some dashboards that measure the health of the citizens, and agree on what those metrics should be.  Goal is to keep the citizens happy sustainably.
 
 Make an android app that gathers  data from my phone and uploads it on to the map.
@@ -23,6 +30,12 @@ Mapping and modelling things like favours, which are out of reach for the major 
 Issues about faults on the island, and wishes that citizens have.
 Job market for organizing tasks, relating to a when and where.
 Funding and payment for requests, like toilet rolls or coffee beans.
+Privacy based on the surveillance system excluding you from video feeds.
+
+## Purpose
+The purpose of this application is to provide a multiverse capable data layer for all physical objects relating to the island.  A mapping layer that can be forked, and can be used to put forwards proposals in a domain specific geometric language, with some simulator tests run on all proposals to ensure they meet some minimum sanity standards before being presented to those
+
+Allows for area effect to be included with voting, so that proposals can be localized to the zones where they matter.
 
 
 ## Interaction
