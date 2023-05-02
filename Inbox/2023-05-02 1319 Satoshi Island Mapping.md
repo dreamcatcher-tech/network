@@ -21,6 +21,8 @@ Mapping and modelling things like favours, which are out of reach for the major 
 
 ## Features
 Issues about faults on the island, and wishes that citizens have.
+Job market for organizing tasks, relating to a when and where.
+Funding and payment for requests, like toilet rolls or coffee beans.
 
 
 ## Interaction
