@@ -17,6 +17,12 @@ Citizen level and godview level - each citizen generates data which goes into th
 
 The simulator runs on everyones computers so it isn't a central server in any way.
 
+Mapping and modelling things like favours, which are out of reach for the major blockchains.
+
+## Features
+Issues about faults on the island, and wishes that citizens have.
+
+
 ## Interaction
 Players can talk to each other, and can use the platform to find other people, plan events, show intents, swap inventory.  Requets
 
