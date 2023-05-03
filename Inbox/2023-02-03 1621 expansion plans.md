@@ -139,7 +139,16 @@ Sell on OpenSea so that fundage can be minted to people using NFTs ?
 Your investment will not earn anything unless you participate, so there is no 3rd party to rely upon.
 Make a gateway site dedicated to connecting a web3 wallet and connecting that to dreamcatcher plus making payments into your balance.  Otherwise you use our account management directly.  Wrap DAI in our token, or basically move any asset into our contract.  Trading on DeFi then pools the actions of all so minimal fees and swapping internally nets out before using gas.
 
-## Robotarmy the tax entity
-If a DAO is set up to act as the gateway, so that everyone can trust it to provide money services, then a worker company should be set up to act on behalf of us.  We would hire freelancers out of this company, and pay them, then packet payments would be controlled by the company.  They would not be considered income until they got drawn down.
+## Funding each project on SI
+Each new venture should be a set of packets, and the funding might be handled by a specific securities vehicle which can take securitized funds and deploy them.
 
-Use this DAO to act on behalf of other entities, only for receiving income from others, then attributing them out.
+## Robotarmy the tax entity
+If a DAO is set up to act as the gateway, so that everyone can trust it to provide money services, then a worker company should be set up to act on behalf of us.  We would hire freelancers out of this company, and pay them, then packet payments would be controlled by the company.  They would not be considered income until they got drawn down.  This company need not be a DAO at all.  If securities were sold in it, then it should use traditional means, not anything new.
+
+Use this DAO to act on behalf of other entities, only for receiving income from others, then attributing them out.  So it could take in stripe payments, acting as itself, but they paying to specific projects.
+
+Participation in the packets is covered per packet, and tradeability is covered by decentalization, so they can never be securities, but they can be funded by outsiders.  So having no actual securities is not a hamper to finding investment.
+
+Robotarmy could be taken public, where its goal is to work within this protocol and build up this protocol.  But it is better as a DAO so that packets can be continually purged out to people.
+
+Any fund would just be amplifying the packet payments I myself make, perhaps weighted against others on the team, so it doesn't need to be something controlled by me, but rather something that algorithmically shadows.  A pure public company could perform this duty.
