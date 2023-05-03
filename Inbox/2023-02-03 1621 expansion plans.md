@@ -138,3 +138,8 @@ Sell on OpenSea so that fundage can be minted to people using NFTs ?
 
 Your investment will not earn anything unless you participate, so there is no 3rd party to rely upon.
 Make a gateway site dedicated to connecting a web3 wallet and connecting that to dreamcatcher plus making payments into your balance.  Otherwise you use our account management directly.  Wrap DAI in our token, or basically move any asset into our contract.  Trading on DeFi then pools the actions of all so minimal fees and swapping internally nets out before using gas.
+
+## Robotarmy the tax entity
+If a DAO is set up to act as the gateway, so that everyone can trust it to provide money services, then a worker company should be set up to act on behalf of us.  We would hire freelancers out of this company, and pay them, then packet payments would be controlled by the company.  They would not be considered income until they got drawn down.
+
+Use this DAO to act on behalf of other entities, only for receiving income from others, then attributing them out.
