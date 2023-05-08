@@ -11,9 +11,12 @@ Ensure that all interactions with conventional companies are reputable, and do n
 Share the knowledge of dealings with locals with all Island businesses.
 Be able to change in and out of STC or other currencies easily.
 
-Once a supplier has a PO from this gateway, they should be completely satisfied
+Once a supplier has a PO from this gateway, they should be completely satisfied that they will get paid.  Offer a dispute resolution service.  Ethics tracking in the supply chain too.
+
+View the island as an internally competitive network marketplace that expresses itself as a single entity.
 
 Basically setting up a business on the island should require nothing more than a click, and then you are a mini company of the major DAO.  The major DAO provides rules that makes sure you cannot break any local laws at any time.  It owns the bank accounts and can send and receive payments, plus can enter into contracts with local suppliers.
 
 Basically regulation of business should be in software only.
 
+This should be the Venture Island - the premier place to start a blockchain business, since we already have all the connectors and digital access already in place.  The whole island is a lab, and benefits from your successes.
