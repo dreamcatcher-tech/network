@@ -15,3 +15,10 @@ Nobody is likely to pay for the dreamcatcher pieces themselves as they are too e
 
 The [[Public Company]] can act as a bit of a catch all, where it has some dedicated apps it seeks to build, but it also contributes to the underlying infrastructure too.
 It is identified by the people that manage the funds distribution, capital raising, divident payouts.
+
+## Hosting Blogs
+When long form content gets published, have a link to the DRE chain that contains the content within it.
+Convert popular pages into git page commits periodically, so that there is no load on the hoster itself for popular links.
+Have a version of the attribution map present, so people can see where the attribution goes, if any funding is received.
+Having the public host up and running makes it very easy to start using and developing the apps required to use the chain, where we can decentralize the operation of the chain later.
+Run as one big lambda cluster for compute, with a bunch of docker containers acting as the front line for managing libp2p connections.  When you pass initial auth, then you can move to more performant docker containers.
