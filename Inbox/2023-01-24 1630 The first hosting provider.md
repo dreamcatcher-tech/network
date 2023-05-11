@@ -16,6 +16,8 @@ Nobody is likely to pay for the dreamcatcher pieces themselves as they are too e
 The [[Public Company]] can act as a bit of a catch all, where it has some dedicated apps it seeks to build, but it also contributes to the underlying infrastructure too.
 It is identified by the people that manage the funds distribution, capital raising, divident payouts.
 
+Use ETH and other chains as a banking rail, to avoid having to handle all that ourselves.  Also the ultimate identity provider and login mechanism.  We then build things like exchanges that simply bridge between chains rapidly and cheaply.
+
 ## Hosting Blogs
 When long form content gets published, have a link to the DRE chain that contains the content within it.
 Convert popular pages into git page commits periodically, so that there is no load on the hoster itself for popular links.
