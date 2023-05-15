@@ -41,3 +41,6 @@ This page is intended to be an ordered list of the headlines and tweets that bes
 > **Fungible Computing** With non fungible automatic attribution to all forms of contribution
 
 > **Distributed OS** With embedded labour and equity markets in every object
+
+> Discrete Decentralized Work
+
