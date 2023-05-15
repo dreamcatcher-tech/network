@@ -1,6 +1,6 @@
 ## Draft
 [[Monopolies of Freedom]]
-[[Contribution NFTs]] 
+[[Contribution NFTs]] - start as a game but allow people to fund these
 [[Exports from the Lab]]
 [[One click company]]
 [[DAO gateway]]

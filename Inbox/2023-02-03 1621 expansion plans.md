@@ -155,12 +155,19 @@ Robotarmy could be taken public, where its goal is to work within this protocol 
 
 Any fund would just be amplifying the packet payments I myself make, perhaps weighted against others on the team, so it doesn't need to be something controlled by me, but rather something that algorithmically shadows.  A pure public company could perform this duty.
 
+## Business Networks
+The hometown of the CRM is a thickly networked town.  If we can provide a small secure company that manages peoples private data
 
+## DAO gateway
+Register a DAO and use it as a gateway for oneclick companies to operate out of.  They must run our base level software so we know they are compliant, and then they can operate as us, as tho they were employees.  They can take in payments and make payments out.  They must be providing products of externally verified quality, and they must be operating ethically and paying their Attribution dues.
 
 ## Eth Dreamcatcher
 The DreamEther.
 Deploy this contract, start putting all work thru the Dreamcatcher in this way.
 Demonstrate a commercial company that allows interactions with traditional clients.
+Allow the CRM to receive funding in this way.
+Make the packets for Interpulse be funded here too.
 
+Deploy the contract, put all CRM work thru it, get all Scotts work in there, then try get all Satoshi Island software operations to go thru there.  Work on getting the Dreamcatcher app working, using this Ethereum contract as the banking rail.  Direct packet work towards making the hosting company.
 
 There is a similarity between the attribution system of ukraine, the charity metaverse, and satoshi island build out.
