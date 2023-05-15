@@ -8,6 +8,7 @@
 [[Transparenting Satoshi Island]]
 [[Dream Management]] Handle the influx of proposals and show progress
 [[Performance Dashboards]]
+[[Social Network Contracts]] Eg: entering a software based NDA with everyone you meet
 
 ## Review
 

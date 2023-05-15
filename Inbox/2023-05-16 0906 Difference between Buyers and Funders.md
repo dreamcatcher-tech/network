@@ -34,5 +34,5 @@ What can a Buyer buy ?
 
 How does this all relate to using views to request things ?
 
-How can participants benefit from iteration on all the Request 
+How can participants benefit from iteration on all the Request ?
 

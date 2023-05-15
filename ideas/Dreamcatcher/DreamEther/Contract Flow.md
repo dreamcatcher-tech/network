@@ -22,6 +22,7 @@ Dust proposals without enough fees are handled by
 Disputes can use the same logic repeatedly of a group, a proposalId, and some new thing to be considered.
 
 Currently Do-ers must receive the full amount from the funders.
+QAs may need to stake something to keep their badge.
 
 Contract operations are:
 1. list a Request
@@ -69,6 +70,9 @@ Provide a Dreamcatcher link with your view of how the split should go.  The do-e
 ### `disputeClose( proposalId, dataHash )`
 Any body anywhere can dispute the close.  They need to provide a QA fee
 
+### `vetoQA( proposalId )`
+Another QA can veto any other QAs.
+
 ### revokePropose( proposalId )
 Can be done by the proposer or by the contract moderator.  Will cause all fees to be refunded.
 
@@ -91,6 +95,15 @@ This NFT derives its metadata from the Packet that owns it.  1 Funder token is w
 
 ### QA
 One is minted to each QA that took part in the packet.  The QAs never receive any cut of the funding, so they are not incentivized to pass substandard work.
+
+### Sponsor
+These actors help get packets thru the process - they help with boosting the QA fees to help get something that was poorly funded.  There may be no need for this type of NFT, as the recognition can just be handled in Do-er NFTs.
+
+### Buyer
+Purchasing the usage of a product.  Can purchase a Forward App where the App does not yet exist.
+
+### App
+An app is a wrapper around an Idea that is meant for end consumption.
 
 
 
