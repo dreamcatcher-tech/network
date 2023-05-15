@@ -93,6 +93,8 @@ Have the high quality AWS grade one, but also the cheap homebuilt hardware runni
 Later make our own static page host making it ghpages compatible.
 Wrap the AWS api in objects so we can control the infrastructure we run on using our own chains.
 
+GPU tasks using docker images to hold all the logic, controlled by Dreamcatcher and metered by the Dreamcatcher.  Be able to provide a wrapper to any docker image that on Dreamcatcher you can run it up, install or configure it any way you want, launch it, then send interactive commands into it, with resources controlled by what you purchased on dreamcatcher.  Almost exactly like AWS except should be much cheaper as it is consistently spot rates, and you can operate in hybrid cloud mode.
+
 ## Link to Opensea
 ERC1155 contract integration that mints new NFTs representing the amount of money that was paid in to an item.  This can only be done for security cleared items, to avoid being a security.
 Should have general interface to link 
@@ -152,3 +154,13 @@ Participation in the packets is covered per packet, and tradeability is covered 
 Robotarmy could be taken public, where its goal is to work within this protocol and build up this protocol.  But it is better as a DAO so that packets can be continually purged out to people.
 
 Any fund would just be amplifying the packet payments I myself make, perhaps weighted against others on the team, so it doesn't need to be something controlled by me, but rather something that algorithmically shadows.  A pure public company could perform this duty.
+
+
+
+## Eth Dreamcatcher
+The DreamEther.
+Deploy this contract, start putting all work thru the Dreamcatcher in this way.
+Demonstrate a commercial company that allows interactions with traditional clients.
+
+
+There is a similarity between the attribution system of ukraine, the charity metaverse, and satoshi island build out.
