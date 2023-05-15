@@ -27,8 +27,11 @@ Propose with a specific pulseId.  Must include the QA fees, which forms a market
 ### `proposeUpdate( proposalId, dataHash )`
 Propose any changes to an existing packet, such as artwork changes.  Must include fees in ETH.  
 
+### `proposeMerge( fromProposalId, toProposalId )`
+If the merge is passed by QA, then 
+
 ### revokePropose( proposalId )
 Can be done by the proposer or by the contract moderator.  Will cause all fees to be refunded.
 
 ## Functions on Packet Contract
-### updateArtwork( ipfsHash )
+
