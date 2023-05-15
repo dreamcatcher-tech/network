@@ -18,3 +18,9 @@ The state tree is the Ethereum blocks.
 Derivatives can be built on this chain, so they parse the blocks into something that can be used by DRE ?
 
 Ultimately DRE should be able to wrap an ethereum node completely and do all its network activity for it.
+
+Charge for the purchase of old blocks, and if they are required, DC nodes would go out and fetch them from the Ethereum network.
+
+Could make the chain store each block as a child named by its hash ?
+
+Transactions on Dreamcatcher chain do not cost any native currency - they cost only something of value that the miners will accept.  This can be DAI, or anything else of value that is being transacted.  So if you're sending DAI, then some of that DAI can be used to pay the tx fee, avoiding having a pointless native currency complicating every transaction.

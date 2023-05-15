@@ -156,7 +156,9 @@ Robotarmy could be taken public, where its goal is to work within this protocol 
 Any fund would just be amplifying the packet payments I myself make, perhaps weighted against others on the team, so it doesn't need to be something controlled by me, but rather something that algorithmically shadows.  A pure public company could perform this duty.
 
 ## Business Networks
-The hometown of the CRM is a thickly networked town.  If we can provide a small secure company that manages peoples private data
+The hometown of the CRM is a thickly networked town.  If we can provide a small secure company that manages peoples private data, then we can go to companies that have poor web integrations, and do that integration for them as an investment, so that we can list their services in a marketplace.
+
+The CRM would retreat, and be the first listed company on this marketplace.  So its portal becomes a generalized application that customers control.  In that application, they can view other services they might like to add and control in the same way using the same app.  They can suggest apps they want in there.  We provide a wrapping service where we can operate any service on your behalf, for a fee.  
 
 ## DAO gateway
 Register a DAO and use it as a gateway for oneclick companies to operate out of.  They must run our base level software so we know they are compliant, and then they can operate as us, as tho they were employees.  They can take in payments and make payments out.  They must be providing products of externally verified quality, and they must be operating ethically and paying their Attribution dues.
@@ -171,3 +173,6 @@ Make the packets for Interpulse be funded here too.
 Deploy the contract, put all CRM work thru it, get all Scotts work in there, then try get all Satoshi Island software operations to go thru there.  Work on getting the Dreamcatcher app working, using this Ethereum contract as the banking rail.  Direct packet work towards making the hosting company.
 
 There is a similarity between the attribution system of ukraine, the charity metaverse, and satoshi island build out.
+
+## Acquisitions model
+Go round acquiring businesses that are different but similar to the CRM to bolt things on to them.
