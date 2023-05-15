@@ -6,6 +6,7 @@
 [[DAO gateway]]
 [[Software as Regulation]]
 [[Transparenting Satoshi Island]]
+[[Dream Management]] Handle the influx of proposals and show progress
 
 ## Review
 

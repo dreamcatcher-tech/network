@@ -5,6 +5,10 @@
 
 >[!danger] Depends: 
 
+Is it actually possible to make a version of the Dreamcatcher that uses Ethereum as the base blockchain ?
+
+Securities are a bad thing in web3 since they allow investors to be scammed because the detach investors from their money at worst, and at best make insider trading possible.  The SEC has made clear and well tested ruling as to what constitutes a security by way of the Howey Test.  All web3 projects should exceed the spirit of the Howey Test, and not merely pass it.
+
 Is it still a security if what is being bought is ownership of the code ?
 What is being purchased is the right to license the open source code as your own license ?
 If revenue comes in for this component, then it goes back to the funders ?  But this part could be a security ?
