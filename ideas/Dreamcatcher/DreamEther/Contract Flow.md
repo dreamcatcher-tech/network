@@ -23,6 +23,16 @@ Disputes can use the same logic repeatedly of a group, a proposalId, and some ne
 
 Currently Do-ers must receive the full amount from the funders.
 
+Contract operations are:
+1. list a Request
+2. list an Idea
+3. submit a solution
+4. purchase an app
+5. forwards purchase an app
+6. fund a Request
+7. fund an Idea
+8. 
+
 ## Functions DreamEther Contract
 ### addModerator( address )
 Adds the moderator at the bottom of the stack.

@@ -7,6 +7,7 @@
 [[Software as Regulation]]
 [[Transparenting Satoshi Island]]
 [[Dream Management]] Handle the influx of proposals and show progress
+[[Performance Dashboards]]
 
 ## Review
 

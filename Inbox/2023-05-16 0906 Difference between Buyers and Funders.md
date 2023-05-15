@@ -26,4 +26,9 @@ Who puts in Ideas ?
 
 Who puts in Buy orders ?
 	Buying can only be done for a specific finished thing.
-	
+
+What can a Buyer buy ?
+	Buyers can only purchase things that are in the app store.
+	Some listings in the App Store do not exist yet - these are Forward Apps - and so they
+	If you purchase thru the Dreamcatcher, your record is immutable, you will receive a Buyer NFT, which will be attributed to in some small way by the decentralized attribution algorithm, which attributes to all contributions.
+
