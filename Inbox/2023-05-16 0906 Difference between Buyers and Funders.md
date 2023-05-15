@@ -32,3 +32,7 @@ What can a Buyer buy ?
 	Some listings in the App Store do not exist yet - these are Forward Apps - and so they
 	If you purchase thru the Dreamcatcher, your record is immutable, you will receive a Buyer NFT, which will be attributed to in some small way by the decentralized attribution algorithm, which attributes to all contributions.
 
+How does this all relate to using views to request things ?
+
+How can participants benefit from iteration on all the Request 
+
