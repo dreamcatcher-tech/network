@@ -25,6 +25,8 @@ Should be enough that you COULD dispute the QA outcome, and that there is a time
 
 So as long as participation thru ability to reject work, to select from a range of work options, and to demonstrate competency by way of some test to know what code is being looked at, we can take on funding that feels like investment, but is not.
 
+
+
 ## Howey Test
 1.  An investment of money
 2.  In a common enterprise
