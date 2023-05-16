@@ -25,7 +25,7 @@ Currently Do-ers must receive the full amount from the funders.
 QAs may need to stake something to keep their badge.
 
 Contract operations are:
-1. list a Request
+1. Packetize a Problem
 2. list an Idea
 3. submit a solution
 4. purchase an app
@@ -35,6 +35,9 @@ Contract operations are:
 8. 
 
 ## Functions DreamEther Contract
+
+### `setAutonomous()`
+Revokes all controls from the contract.
 
 ### `setAttributor( address )`
 Sets the contract address that manages the withdrawl of funds accumulated from buying activity.
