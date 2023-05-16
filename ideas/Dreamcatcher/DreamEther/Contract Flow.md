@@ -35,6 +35,13 @@ Contract operations are:
 8. 
 
 ## Functions DreamEther Contract
+
+### `setAttributor( address )`
+Sets the contract address that manages the withdrawl of funds accumulated from buying activity.
+
+### `withdraw( proof )`
+Provide the hash of the latest ambient attribution system that includes a calculation of how much your specific address should receive.
+
 ### addModerator( address )
 Adds the moderator at the bottom of the stack.
 ### revokeModerator( address )
@@ -101,9 +108,11 @@ These actors help get packets thru the process - they help with boosting the QA 
 
 ### Buyer
 Purchasing the usage of a product.  Can purchase a Forward App where the App does not yet exist.
+Purchasing from the store will pool the money which will be dispersed using DRE.
 
 ### App
 An app is a wrapper around an Idea that is meant for end consumption.
 
-
+### Packeteer
+Whenever QA passes a packet that you submitted, you are minted this NFT.  You can trade these on OpenSea - they carry no power or funding.
 
