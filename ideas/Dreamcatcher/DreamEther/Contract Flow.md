@@ -24,6 +24,9 @@ Disputes can use the same logic repeatedly of a group, a proposalId, and some ne
 Currently Do-ers must receive the full amount from the funders.
 QAs may need to stake something to keep their badge.
 
+A Packet can be for a Problem, a Spec, or an App.
+Packets can only be closed by a Solution.
+
 Contract operations are:
 1. Packetize a Problem
 2. list an Idea
@@ -89,25 +92,25 @@ Can be done by the proposer or by the contract moderator.  Will cause all fees t
 ## Functions on Packet Contract
 
 
-## Token Types in ERC1155
-Idea is that in OpenSea we should up as a single verified contract, and then have one tokenId per packet, and one tokenId for each other NFT type, all of which are tradeable.  OpenSea listing is desirable due to the familiarity of use, the traffic available.  Token types are:
+## Objects
 
 ### Packet
 This is never tradeable as it stays owned by the DreamEther contract.  All the NFTs that are derived from it are tradeable.  In one of two states: open or closed.  Open means active work is able to take place in order to receive the rewards for the packet.  Closed means that work was accepted, so no more funding is required.  Can still purchase funding NFTs, but these might get rejected by the holders.  Packet can go open again if a proposal for improving it opens up.  If that happens, any unclaimed closed funds will be available to the open packet.
 
 This is not strictly a token, but rather a token factory.
 
+
+## Token Types in ERC1155
+Idea is that in OpenSea we should up as a single verified contract, and then have one tokenId per packet, and one tokenId for each other NFT type, all of which are tradeable.  OpenSea listing is desirable due to the familiarity of use, the traffic available.  Token types are:
+
 ### Funder
-This NFT derives its metadata from the Packet that owns it.  1 Funder token is worth 100 DAI in order to make the listing counts be sane on opensea.  DAI is used since the Packet needs to hold funds for a months at a time, so it needs to be stable.  When the Packet is created, it mints 2500 units of the funder token to itself, and these are listed at a fixed price on OpenSea.  Whenever someone buys any amount, the DAI goes into the Packet for management.  Buying on OpenSea adds the selling fees on, so if you purchase directly from the DreamEther contract, it will be at a discount.
+This NFT derives its metadata from the Packet that owns it.  Funder tokens are listed on OpenSea for sale in various denominations: 10 x 1,000, 10 x 10,000, 10 x 100.  This lets you fund with any amount you want.  Each time a purchase occurs, the listing is replenished.  DAI is used since the Packet needs to hold funds for a months at a time, so it needs to be stable.  Whenever someone buys any amount, the DAI goes into the Packet for management.  Buying on OpenSea adds the selling fees on, so if you purchase directly from the DreamEther contract, it will be at a discount.
 
 ### Do-er 
-100 of them are minted on packet close, each one representing a percentage contribution based on the QA view of how submitted proposals contributed to the final outcome.  The judgement is disputable, and requires another QA to close it.  Each dispute costs ETH, and you can dispute up to 10 times.  This can take into account plaigiarism, where QA thinks you took someone elses work online, and tried to claim funds for it.  They can refund some portion of the funds allocated to each one within the next 5 days.
+These are minted with a trait from 1 to 100, each one representing a percentage contribution based on the QA view of how submitted proposals contributed to the final outcome.  The judgement is disputable, and requires another QA to close it.  Each dispute costs ETH, and you can dispute up to 10 times.  This can take into account plaigiarism, where QA thinks you took someone elses work online, and tried to claim funds for it.  They can refund some portion of the funds allocated to each one within the next 5 days.
 
 ### QA
-One is minted to each QA that took part in the packet.  The QAs never receive any cut of the funding, so they are not incentivized to pass substandard work.
-
-### Sponsor
-These actors help get packets thru the process - they help with boosting the QA fees to help get something that was poorly funded.  There may be no need for this type of NFT, as the recognition can just be handled in Do-er NFTs.
+One is minted to each QA that took part in the packet.  The QAs never receive any cut of the funding, so they are not incentivized to pass substandard work.  Traits indicate the work each one did, with the traits being set by the highest QA that closed the packet.
 
 ### Buyer
 Purchasing the usage of a product.  Can purchase a Forward App where the App does not yet exist.
@@ -117,5 +120,7 @@ Purchasing from the store will pool the money which will be dispersed using DRE.
 An app is a wrapper around an Idea that is meant for end consumption.
 
 ### Packeteer
-Whenever QA passes a packet that you submitted, you are minted this NFT.  You can trade these on OpenSea - they carry no power or funding.
+Whenever QA passes a packet that you submitted, you are minted this NFT.  Each one has a trait from 1 to 100 indicating the percentage input the granting QA thinks you had to this packet.  You can trade these on OpenSea - they carry no power or funding.  A boolean trait says if you were funding or doing.
 
+### Disputer 
+If you dispute something with the QA and win, this is your prize.
