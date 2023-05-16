@@ -26,6 +26,7 @@ QAs may need to stake something to keep their badge.
 
 A Packet can be for a Problem, a Spec, or an App.
 Packets can only be closed by a Solution.
+Solutions are the destinations of the packets.
 
 Contract operations are:
 1. Packetize a Problem
@@ -120,7 +121,7 @@ Purchasing from the store will pool the money which will be dispersed using DRE.
 An app is a wrapper around an Idea that is meant for end consumption.
 
 ### Packeteer
-Whenever QA passes a packet that you submitted, you are minted this NFT.  Each one has a trait from 1 to 100 indicating the percentage input the granting QA thinks you had to this packet.  You can trade these on OpenSea - they carry no power or funding.  A boolean trait says if you were funding or doing.
+Whenever QA passes a packet that you submitted, you are minted this NFT.  Each one has a trait from 1 to 100 indicating the percentage input the granting QA thinks you had to this packet.  You can trade these on OpenSea - they carry no power or funding.  A role trait says if you were funding, doing, or QA.
 
-### Disputer 
+### Disputeer 
 If you dispute something with the QA and win, this is your prize.
