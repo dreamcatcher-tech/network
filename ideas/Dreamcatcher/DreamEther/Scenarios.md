@@ -18,16 +18,8 @@ I want an NFT that is offered as a prize for successfully getting the first star
 
 SI would create a Spec Packet, 
 
-```mermaid
-stateDiagram-v2
-
-    state Packet {
-		Problem
-        Spec
-        App
-    }
-
-```
+## Using metaverse for a graphical state change
+The NFT should include the graphics in it, and the
 
 ## SI granting license to run Resorts on the Island
 Want to be able to see what licenses have been granted and to who.

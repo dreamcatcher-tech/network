@@ -104,8 +104,31 @@ This is not strictly a token, but rather a token factory.
 ## Token Types in ERC1155
 Idea is that in OpenSea we should up as a single verified contract, and then have one tokenId per packet, and one tokenId for each other NFT type, all of which are tradeable.  OpenSea listing is desirable due to the familiarity of use, the traffic available.  Token types are:
 
+```mermaid
+stateDiagram-v2
+
+    state Packet {
+		Problem
+        Spec
+        App
+    }
+    
+    state Contributor {
+	    Packeteer
+	    Funder
+	    Corrector
+	    Buyer
+	    Qualiteer
+	    D
+    }
+    
+	D: Do-er
+```
+
 ### Funder
 This NFT derives its metadata from the Packet that owns it.  Funder tokens are listed on OpenSea for sale in various denominations: 10 x 1,000, 10 x 10,000, 10 x 100.  This lets you fund with any amount you want.  Each time a purchase occurs, the listing is replenished.  DAI is used since the Packet needs to hold funds for a months at a time, so it needs to be stable.  Whenever someone buys any amount, the DAI goes into the Packet for management.  Buying on OpenSea adds the selling fees on, so if you purchase directly from the DreamEther contract, it will be at a discount.
+
+If the funder removes their funding, they are triggering a token burn, which returns funds to them and destroys the token.
 
 ### Do-er 
 These are minted with a trait from 1 to 100, each one representing a percentage contribution based on the QA view of how submitted proposals contributed to the final outcome.  The judgement is disputable, and requires another QA to close it.  Each dispute costs ETH, and you can dispute up to 10 times.  This can take into account plaigiarism, where QA thinks you took someone elses work online, and tried to claim funds for it.  They can refund some portion of the funds allocated to each one within the next 5 days.
@@ -123,5 +146,5 @@ An app is a wrapper around an Idea that is meant for end consumption.
 ### Packeteer
 Whenever QA passes a packet that you submitted, you are minted this NFT.  Each one has a trait from 1 to 100 indicating the percentage input the granting QA thinks you had to this packet.  You can trade these on OpenSea - they carry no power or funding.  A role trait says if you were funding, doing, or QA.
 
-### Disputeer 
+### Corrector 
 If you dispute something with the QA and win, this is your prize.

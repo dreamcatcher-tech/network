@@ -157,6 +157,9 @@ flowchart
 Allow pools that act like an index fund in that they just amplify the funding that gets approved by various QAs and with some kind of specified intent.  It a packet gets accepted into a given project, these pools will blindly amplify the funding.  Lets people fund packets without participating, but because the outcome is spread across many QAs, it is not a centralized investment and not a security.
 Auto timeout where the pool revokes things that have been outstanding for too long.
 
+## Looking nice on OpenSea
+Each type of token might need to have its own contract so that on OpenSea, they all show as a difference class, like all QA tokens, all Packets, etc.  This can be just a contract call.  If the minters can have their controllers updated, and can be sealed off, then we can upgrade the management contract over time, but the collections stay stable.
+
 ## Extras
 Purchase money tokens, and then invest them as you please, rather than purchasing per task ?
 
