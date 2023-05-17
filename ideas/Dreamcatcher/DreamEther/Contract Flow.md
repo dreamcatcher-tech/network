@@ -160,6 +160,8 @@ This NFT derives its metadata from the Packet that owns it.  Funder tokens are l
 
 If the funder removes their funding, they are triggering a token burn, which returns funds to them and destroys the token.
 
+Move to single token on packet solve, 
+
 ### Do-er 
 These are minted with a trait from 1 to 100, each one representing a percentage contribution based on the QA view of how submitted proposals contributed to the final outcome.  The judgement is disputable, and requires another QA to close it.  Each dispute costs ETH, and you can dispute up to 10 times.  This can take into account plaigiarism, where QA thinks you took someone elses work online, and tried to claim funds for it.  They can refund some portion of the funds allocated to each one within the next 5 days.
 
