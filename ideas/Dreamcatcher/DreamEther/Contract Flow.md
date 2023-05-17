@@ -100,6 +100,25 @@ This is never tradeable as it stays owned by the DreamEther contract.  All the N
 
 This is not strictly a token, but rather a token factory.
 
+```mermaid
+---
+title: Packet States
+---
+stateDiagram-v2
+	[*] --> Opening
+	Opening --> Open
+	state Open {
+		O: Open
+		[*] --> O
+		O --> Updating
+		Updating --> O
+		O --> Solving
+		Solving --> O
+	}
+	Solving --> Solved
+	Solved --> [*]
+```
+
 
 ## Token Types in ERC1155
 Idea is that in OpenSea we should up as a single verified contract, and then have one tokenId per packet, and one tokenId for each other NFT type, all of which are tradeable.  OpenSea listing is desirable due to the familiarity of use, the traffic available.  Token types are:
@@ -109,8 +128,8 @@ stateDiagram-v2
 
     state Packet {
 		Problem
-        Spec
-        App
+        Specification
+        F
     }
     
     state Contributor {
@@ -121,7 +140,7 @@ stateDiagram-v2
 	    Qualiteer
 	    D
     }
-    
+	F: Forward App
 	D: Do-er
 ```
 
@@ -133,8 +152,10 @@ If the funder removes their funding, they are triggering a token burn, which ret
 ### Do-er 
 These are minted with a trait from 1 to 100, each one representing a percentage contribution based on the QA view of how submitted proposals contributed to the final outcome.  The judgement is disputable, and requires another QA to close it.  Each dispute costs ETH, and you can dispute up to 10 times.  This can take into account plaigiarism, where QA thinks you took someone elses work online, and tried to claim funds for it.  They can refund some portion of the funds allocated to each one within the next 5 days.
 
-### QA
-One is minted to each QA that took part in the packet.  The QAs never receive any cut of the funding, so they are not incentivized to pass substandard work.  Traits indicate the work each one did, with the traits being set by the highest QA that closed the packet.
+### Qualiteer
+One is minted to each QA that took part in the packet.  The QAs never receive any cut of the funding, so they are not incentivized to pass substandard work.  Traits indicate the work each one did, with the traits being set by the highest QA that closed the packet.  A specific QA can only be applied on solve.
+
+Traits spec what type of QA you did - if you were specifically required by the packeteers, then your trait says as much.  Trait is for opening or solving.
 
 ### Buyer
 Purchasing the usage of a product.  Can purchase a Forward App where the App does not yet exist.

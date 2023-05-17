@@ -16,10 +16,10 @@ SI would create a Spec Packet, requesting the audit of the contracts.  This woul
 ## NFT for bringing Starlink equipment onto the island
 I want an NFT that is offered as a prize for successfully getting the first starlink connection on the island.
 
-SI would create a Spec Packet, 
+SI would create a Spec Packet, with an additional QA listed as the SI address, so that before the packet can solve, 
 
 ## Using metaverse for a graphical state change
-The NFT should include the graphics in it, and the
+The NFT should include the graphics in it
 
 ## SI granting license to run Resorts on the Island
 Want to be able to see what licenses have been granted and to who.

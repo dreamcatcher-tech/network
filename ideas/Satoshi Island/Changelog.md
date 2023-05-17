@@ -1,5 +1,9 @@
+If a decentralized islandwide attribution system was put in place, and lab based revenue can be reasonably expected, then we can raise funds for building the island out in anticipation of some of that future revenue.  This means no more bespoke deals need to be made that risk the fairness integrity of the island.
+
 ## Draft
 [[Monopolies of Freedom]] DAO acts as a mini govt, with accompanying problems
+[[Conflict on the Twitter spaces]]
+[[Raising for Ventures]] demonstrate how we can raise additional funds
 [[Venture Village]] Treat the island like a Village of Ventures
 [[Ethics and enforcement]] Software as Regulation to require ethics
 [[Revenue Streams of the Island]] The biggest should be an export of knowledge
