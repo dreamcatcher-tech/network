@@ -2,11 +2,14 @@ If a decentralized islandwide attribution system was put in place, and lab based
 
 The Venture DAO acts like a single company to the world, but is made up of individual Ventures within it.  Scarce resources are managed here, and behaviour IO with the world is software regulated.  A tax is levied to keep the DAO and the island running, but that tax is algorithmic and is based on the decentralized attribution system.
 
+
+
 ## Draft
 [[Monopolies of Freedom]] DAO acts as a mini govt, with accompanying problems
 [[Conflict on the Twitter spaces]]
 [[Raising for Ventures]] demonstrate how we can raise additional funds
 [[Venture Village]] Treat the island like a Village of Ventures
+[[Remixable Companies]]
 [[Ethics and enforcement]] Software as Regulation to require ethics
 [[Revenue Streams of the Island]] The biggest should be an export of knowledge
 [[The purpose and future of STC]]
