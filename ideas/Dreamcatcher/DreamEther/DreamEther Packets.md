@@ -163,3 +163,5 @@ Purchase money tokens, and then invest them as you please, rather than purchasin
 Default time period is 3 months, and unlock needs to be active.  After unlock, you can use our app to set a new lock time.
 
 Such a system should be able to be used to defend its own legal standing, should an attack be made.
+
+Escrow in NFTs which get transferred to the solvers of the packet.  
