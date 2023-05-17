@@ -1,5 +1,6 @@
 ## Draft
 [[Monopolies of Freedom]] DAO acts as a mini govt, with accompanying problems
+[[Venture Village]] Treat the island like a Village of Ventures
 [[Ethics and enforcement]] Software as Regulation to require ethics
 [[Revenue Streams of the Island]] The biggest should be an export of knowledge
 [[The purpose and future of STC]]

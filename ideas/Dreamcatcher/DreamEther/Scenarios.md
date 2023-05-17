@@ -32,7 +32,7 @@ stateDiagram-v2
 ## SI granting license to run Resorts on the Island
 Want to be able to see what licenses have been granted and to who.
 
-## Venture Village 
+## Venture Village restricting payouts to identities
 Their funders want to fund packets with the condition that the funds only go to a preselected group of closers.
 
 In this case they would specify their own additional QA, who would ensure that the contributors were predominately from Nigeria.  These conditions would be made clear in the packet.

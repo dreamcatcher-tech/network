@@ -44,3 +44,5 @@ This page is intended to be an ordered list of the headlines and tweets that bes
 
 > Discrete Decentralized Work
 
+> Decent Attribution
+
