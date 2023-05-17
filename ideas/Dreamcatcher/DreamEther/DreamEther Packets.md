@@ -103,6 +103,8 @@ In this process, the NFT is in two phases - potential and kinetic.  The potentia
 
 We may allow zero value tokens to be purchased, as an indication of value with no funds transferred.
 
+TokenId is a hash of the name, so there can be no collisions possible.
+
 ## Funding after completion
 Each NFT can still have late funding opensea units purchased, which the owners of the packet may accept or not.  This rewards the do-ers further, if they want it, and shares in the attribution.
 
