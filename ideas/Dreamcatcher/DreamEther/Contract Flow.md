@@ -110,13 +110,25 @@ stateDiagram-v2
 	state Open {
 		O: Open
 		[*] --> O
+		note left of O
+			Mint: Packeteer, QA(open) NFTs
+			List: Funder(open) or Buyer(open) NFTs
+		end note
 		O --> Updating
 		Updating --> O
 		O --> Solving
 		Solving --> O
 	}
-	Solving --> Solved
+	Solving --> Closing
+	Closing --> Solved
+	note right of Closing
+		Mint: Corrector
+	end note
+	Closing --> Solving
 	Solved --> [*]
+	note left of Solved
+		Mint: QA(solver), Solver, Buyer(solved) or Funder(solved)
+	end note
 ```
 
 
