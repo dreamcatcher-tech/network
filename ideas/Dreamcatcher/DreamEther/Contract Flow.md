@@ -137,11 +137,10 @@ stateDiagram-v2
 	    Funder
 	    Corrector
 	    Buyer
-	    Qualiteer
-	    D
+	    QA
+	    Solver
     }
 	F: Forward App
-	D: Do-er
 ```
 
 ### Funder
