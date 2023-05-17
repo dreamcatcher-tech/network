@@ -121,6 +121,8 @@ The language of how reward may come to you is crucial to being a security or not
 
 Each contribution token is a commemoration of the contribution you made.  The universe owes you for this, if it is a good contribution.  There are no systems attempting to do universal decentralized ambient attribution, but here is a prototype of how such a system might work.
 
+By talking not about a specific system, but about what genuine universal fairness owes you, then at the end talking about us making a system that attempts to model that, we are not pointing at a single system, but rather are pointing at what is "fair and right", stating that nobody can take that away from you, and then pointing at a system that attempts to capture that.
+
 ## Decentralized Attribution
 By putting it in the name, nobody could reasonably claim that any given enti
 
