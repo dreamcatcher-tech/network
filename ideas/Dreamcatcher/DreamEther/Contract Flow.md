@@ -153,7 +153,19 @@ stateDiagram-v2
 	    Solver
     }
 	F: Forward App
+
 ```
+
+### Categories
+QA-Packet
+QA-Solver
+Packeteer
+Funder-Open
+Funder-Solved
+Buyer-Open
+Buyer-Solved
+Solver
+Corrector
 
 ### Funder
 This NFT derives its metadata from the Packet that owns it.  Funder tokens are listed on OpenSea for sale in various denominations: 10 x 1,000, 10 x 10,000, 10 x 100.  This lets you fund with any amount you want.  Each time a purchase occurs, the listing is replenished.  DAI is used since the Packet needs to hold funds for a months at a time, so it needs to be stable.  Whenever someone buys any amount, the DAI goes into the Packet for management.  Buying on OpenSea adds the selling fees on, so if you purchase directly from the DreamEther contract, it will be at a discount.
