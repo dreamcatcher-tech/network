@@ -20,4 +20,6 @@ Buyers are like a funder for apps.  Funders participate in risk, Buyers do not. 
 
 Realization - name for what funding becomes once solved
 
-Buying pays funders, whereas Funding only pays Solvers.  Forwards Buying pays only direct contributors, but retail buying pays everyone.
+Buying pays funders, whereas Funding only pays Solvers.  Forwards Buying pays only direct contributors, but retail buying pays everyone.  Forwards Buying should not do ambient attribution, since it is still in Venture mode, so is an encouragement for the direct participants only.
+
+? should the tokens be opensea collections by packet, or by token type ?

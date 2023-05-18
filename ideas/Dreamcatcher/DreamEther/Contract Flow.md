@@ -163,7 +163,9 @@ If the funder removes their funding, they are triggering a token burn, which ret
 Move to single token on packet solve, with percentage of funds provided shown in each Token as a boost trait.  Images may be minted with this trait overlaid on the image.  But this might be hard to sell ?  Could allow a split function so these items can be listed in parts.  The trait is calculated from the frozen balance of the Funder token.
 
 Funders transition to Funded type.  All the Funder tokens are burned, and Funded tokens remain.
-They should be a different token type, since they mean something different.
+They should be a different token type, since they mean something different.  
+
+They can be split once they become Funded tokens and they can be merged.
 
 ### Do-er 
 These are minted with a trait from 1 to 100, each one representing a percentage contribution based on the QA view of how submitted proposals contributed to the final outcome.  The judgement is disputable, and requires another QA to close it.  Each dispute costs ETH, and you can dispute up to 10 times.  This can take into account plaigiarism, where QA thinks you took someone elses work online, and tried to claim funds for it.  They can refund some portion of the funds allocated to each one within the next 5 days.
