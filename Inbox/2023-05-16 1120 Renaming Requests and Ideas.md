@@ -28,3 +28,5 @@ Collection by type.  Looks cleaner in peoples wallets, different people will oft
 Buyers can have a crude attribution table where they provide a single value: the ratio between funders and solvers that they want.  We suggest a default which is set by us automatically, and is some formula based on total funding vs buy amount vs total buy amount ever.  Because if you are buying much more than the funding, then it says the solvers were brilliant, but otherwise it says the funders carried the innovation.
 
 Could allow funders to also fund App packets.  Apps are a subclass of specs which are intended for end user consumption, the purchase of which will attribute back to 
+
+Packeteer could be the packet itself, where each packeteer is given a weigtht.  They can perform splits or transfers as they wish.  Each account can only hold one.
