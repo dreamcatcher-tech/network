@@ -159,7 +159,7 @@ stateDiagram-v2
 ### Categories
 QA-Packet
 QA-Solver
-Packeteer
+Packet
 Funder-Open
 Funder-Solved
 Buyer-Open

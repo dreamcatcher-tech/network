@@ -29,4 +29,6 @@ Buyers can have a crude attribution table where they provide a single value: the
 
 Could allow funders to also fund App packets.  Apps are a subclass of specs which are intended for end user consumption, the purchase of which will attribute back to 
 
-Packeteer could be the packet itself, where each packeteer is given a weigtht.  They can perform splits or transfers as they wish.  Each account can only hold one.
+Packeteer could be the packet itself, where each packeteer is given a weigtht.  They can perform splits or transfers as they wish.  Each account can only hold one.  This means the packet itself can be listed on OpenSea directly.  Can be purchased too.
+
+Each packet type should be a different collection ?
