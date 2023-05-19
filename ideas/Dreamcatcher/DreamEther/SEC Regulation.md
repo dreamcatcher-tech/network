@@ -7,4 +7,10 @@
 
 We can walk thru each state of the packet and the components of the packet and detail why it might be a security, and the mitigations in place.  Only states where money changes hands need to be considered.  The NFTs commemorate a state change of the Packet.
 
-## Funder Open
+## Funding
+Investment of money occurs in first purchase from the Packet, and also in trading on secondary markets.  Not a security because of the participation clause.  
+
+## Funded
+Are issued by burning all Funding tokens, and assigning Funded tokens.  Not a security as expectation of profit is solely from decentralized attribution, meaning no single party responsible for profit.  Can be made a security if a secondary market seller promises to take on responsibility for generating profit.  Our explicit wording on the NFT would have been ignored by the transacting parties here.  Liability would rest with them.
+
+
