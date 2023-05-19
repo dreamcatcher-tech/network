@@ -33,6 +33,6 @@ Packeteer could be the packet itself, where each packeteer is given a weigtht.  
 
 Each packet type should be a different collection ?
 
-Assosciate a color with each state.  
+Assosciate a color with each state.  Funding is a vault, Buying is an open hand.  Funded is a small tree.  Bought
 
 Each NFT should be instantly recognizable as what class it is.

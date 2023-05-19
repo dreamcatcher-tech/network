@@ -5,6 +5,6 @@
 
 >[!danger] Depends: 
 
-We can walk thru each state of the packet and the components of the packet and detail why it might be a security, and the mitigations in place.  Only states where money changes hands need to be considered.
+We can walk thru each state of the packet and the components of the packet and detail why it might be a security, and the mitigations in place.  Only states where money changes hands need to be considered.  The NFTs commemorate a state change of the Packet.
 
 ## Funder Open
