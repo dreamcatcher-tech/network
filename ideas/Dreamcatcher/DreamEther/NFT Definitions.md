@@ -3,10 +3,16 @@ NFTs represen the state of Packet constituent components.  Funder NFTs are eithe
 Actors:
 1. QAs - receive QA NFTs + ETH fees
 2. Proposers - suggest Packet definitions and pay ETH fees
-3. 
+3. Funders
+4. Patrons - they offer to buyt
 
 Collections:
 1. Packets (includes Problem, Spec, App by trait.  Assigned to Proposers. inlcudes State as Open or Solved)
 2. QA (includes QA open and QA solved NFTs, and QA corrector.  Shows if the packet solved by trait)
 3. Funder (includes Funding and Funded indicated by trait)
 4. Solver ()
+
+NFTs per packet
+1. Packet
+2. Funding
+3. Funded

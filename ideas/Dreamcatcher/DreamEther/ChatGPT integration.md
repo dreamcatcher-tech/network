@@ -40,3 +40,6 @@ AI can redact the text of data so that differential privacy can be offered for d
 ## AI QA
 Packets can have their keywords automatically extracted, so the classification is not up to humans.
 The meaning can be compared across all other packets and a distance calculated, with a number of routes.  Hopefully smaller packets can be suggested for extraction. https://app.edenai.run/bricks/text/keyword-extraction
+
+## Examples
+Given this piece of code with this git history, and these function inputs, how would you attribute what the caller paid to each developer ?  Why did you think that ?

@@ -36,7 +36,8 @@ Contract operations are:
 5. forwards purchase an app
 6. fund a Request
 7. fund an Idea
-8. 
+
+While there is risk, there is no full stack attribution, so the Patrons do not 
 
 ## Functions DreamEther Contract
 
