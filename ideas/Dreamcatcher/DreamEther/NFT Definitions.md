@@ -7,6 +7,6 @@ Actors:
 
 Collections:
 1. Packets (includes Problem, Spec, App by trait.  Assigned to Proposers. inlcudes State as Open or Solved)
-2. QA (includes QA open and QA solved NFTs, and QA corrector)
+2. QA (includes QA open and QA solved NFTs, and QA corrector.  Shows if the packet solved by trait)
 3. Funder (includes Funding and Funded indicated by trait)
-4. 
+4. Solver ()
