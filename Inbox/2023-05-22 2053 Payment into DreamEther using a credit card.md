@@ -18,3 +18,7 @@ Purchasing NFTs seems possibly using credit cards - you cannot purchase cryptocu
 Purchasing platform credits which can be transitioned into funding for NFTs seems legitimate.
 
 Should be doable by a standard co-owned token model, rather than anything special - it basically says the token is owned by two people at once, or that it is locked for transfer, or that it requires a flag to be lowered by the lender (who can also delete the token).
+
+Make a pool where the credit card payments go in, with the other side of the pair being DAI, so we can provide a price for purchasing the DAI.  Gives us better liquidity, and a market can set the price for CC txns.  Different rates for different levels of KYC.  You can purchase risky CC purchases, but often when chargebacks occur there will be losses in gas fees.  Maybe do two purchases - gas purchase first.  The fact that the scammer gets nothing for their effort except wasting our gas fees should stop people.  We can however sell the funding cheap tho, if we want to get the cash back, or sell at market rate so we can recover our costs. 
+
+QA payments can go thru a pool that charges more to cover the risk, so that on average, we also pay the QAs.
