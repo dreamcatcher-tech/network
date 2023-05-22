@@ -64,3 +64,6 @@ Can specify that we need a set diversity before finality, so some nodes run diff
 
 ## Forking of code accutely in DeFi
 The forking problem is more obvioius in the summer of DeFi
+
+## Ancient need for attribution
+There is an ancient animalistic force within all of us, that demands fair reward for our effort.  The management of this desire thruout the centuries has been problematic.  In capitalism this link is supposedly tied to our income, but we sense there is growing disbelief that this connection is strong enough any more - it appears to have drifted and reward appears to have been corrupted in its flow from the source of wealth to the consumers.

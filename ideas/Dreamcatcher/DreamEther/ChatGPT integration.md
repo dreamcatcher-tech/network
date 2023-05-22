@@ -43,3 +43,5 @@ The meaning can be compared across all other packets and a distance calculated, 
 
 ## Examples
 Given this piece of code with this git history, and these function inputs, how would you attribute what the caller paid to each developer ?  Why did you think that ?
+
+Given this list of packets, write a blog post about what we are trying to achieve and what the benefits would be.
