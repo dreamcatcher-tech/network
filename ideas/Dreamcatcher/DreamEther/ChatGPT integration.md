@@ -23,6 +23,9 @@ The chat prompt has drop down filters that it uses to target what you are saying
 
 Your chats should be long lived, and you should get notified when an answer pops up at some later point in time.
 
+Change the length params of the answers you want - can alter the size of the box below the search using hotkeys or mouse to indicate how much output you want.
+
+
 from Mr. Maxwell 2022-07-21:
 > Imagine a world where you give some free text description of your recycling bin lorry business and the problem, it generates the Request, which generates proposed ideas, matches with existing packets and writes the code for the missing parts using AlphaCode or similar, then passes it off to a human QA to make sure the original Intent was met...  App in One Day.
 > 
