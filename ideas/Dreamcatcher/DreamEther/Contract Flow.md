@@ -39,6 +39,8 @@ Contract operations are:
 
 While there is risk, there is no full stack attribution, so the Patrons do not 
 
+Resolved packet solution submission - can be used to improve a packet and intercept some of its attribution.  If you want funding for it, you have to start a new packet.
+
 ## Functions DreamEther Contract
 
 ### `setAutonomous()`

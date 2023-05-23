@@ -19,6 +19,10 @@ Packet value estimation.
 
 Extracting pure problem statements, or at least scoring the purity.
 
+The chat prompt has drop down filters that it uses to target what you are saying.  As you navigate round the site, the prompt target changes to let you interact with the information you are reading.  Turn on different modes, like prior art search, or other forms of discussion.  The chat prompt lets you navigate to different parts of the site.  It stays at the top of the page, and what is below continually changes, allowing you to click on the info to navigate / focus in on it, and have a conversation with each section.  The navigation lets you scope your queries.
+
+Your chats should be long lived, and you should get notified when an answer pops up at some later point in time.
+
 from Mr. Maxwell 2022-07-21:
 > Imagine a world where you give some free text description of your recycling bin lorry business and the problem, it generates the Request, which generates proposed ideas, matches with existing packets and writes the code for the missing parts using AlphaCode or similar, then passes it off to a human QA to make sure the original Intent was met...  App in One Day.
 > 

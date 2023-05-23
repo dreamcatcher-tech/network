@@ -9,7 +9,9 @@ Focus primarily on the building of a packet based innovation protocol, which gen
 
 "the radiant AI at its heart ensures fair attribution of rewards."
 
-Need to be able to chat with the Dreamcatcher and have it answer questions and provide suggestions.
+Need to be able to chat with the Dreamcatcher and have it answer questions and provide suggestions.  Goal is to be able to have a conversation with the dreamcatcher about packets, and then the dreamcatcher tell you how much each contribution is worth and might be worth.
+
+If the attribution is an AI that runs in a decentralized way and is running on many different peoples computers, with software contributed independently all round the world, this cannot possibly be a security.
 
 Replace the QA with a machine.
 Assign attribution by machine, in realtime, at the micropayment level.
