@@ -67,3 +67,6 @@ The forking problem is more obvioius in the summer of DeFi
 
 ## Ancient need for attribution
 There is an ancient animalistic force within all of us, that demands fair reward for our effort.  The management of this desire thruout the centuries has been problematic.  In capitalism this link is supposedly tied to our income, but we sense there is growing disbelief that this connection is strong enough any more - it appears to have drifted and reward appears to have been corrupted in its flow from the source of wealth to the consumers.
+
+## Self interest in a closed box
+Self interest economics in an unbounded system clearly work well based on the past half millenia, however when what we thought was unbounded turns out to be closed, self interest of one becomes shackles on another, as the common goal to survive is pursued with differing perspectives.
