@@ -43,7 +43,7 @@ Resolved packet solution submission - can be used to improve a packet and interc
 
 Any packet type should be breakable into portions so people can sell arbitrary pieces, marking their own subdivisions, so the original earners can sell of portions of them to fund their other activities.
 
-Salary can be modelled with one packet per month, task being availability, QA being external.  These things should not be tradeable ?  Need something to make a packet type that is not listed or tradeable, based on its type.  Did you deliver or not.
+Salary can be modelled with one packet per month, task being availability, QA being external.  These things should not be tradeable ?  Need something to make a packet type that is not listed or tradeable, based on its type.  Did you deliver or not.  For the time period, what packets did you improve ?  this is what should determine the attribution split of the end result.  Lets people work on whatever, and then the attribution split goes out based on what they did, the QA says if they did their job or not, which might be no QA.  Without one of our QAs, it wouldn't be listed on OpenSea under our collection banner.  So the QAs gatekeep the listings on OpenSea or any other place.
 
 ## Functions DreamEther Contract
 
@@ -225,3 +225,4 @@ Whenever QA passes a packet that you submitted, you are minted this NFT.  Each o
 
 ### Corrector 
 If you dispute something with the QA and win, this is your prize.
+
