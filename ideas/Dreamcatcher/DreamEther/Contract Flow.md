@@ -41,6 +41,8 @@ While there is risk, there is no full stack attribution, so the Patrons do not
 
 Resolved packet solution submission - can be used to improve a packet and intercept some of its attribution.  If you want funding for it, you have to start a new packet.
 
+Any packet type should be breakable into portions so people can sell arbitrary pieces, marking their own subdivisions, so the original earners can sell of portions of them to fund their other activities.
+
 ## Functions DreamEther Contract
 
 ### `setAutonomous()`
