@@ -72,6 +72,10 @@ There is an ancient animalistic force within all of us, that demands fair reward
 Self interest economics in an unbounded system clearly work well based on the past half millenia, however when what we thought was unbounded turns out to be closed, self interest of one becomes shackles on another, as the common goal to survive is pursued with differing perspectives.
 
 ## AI regulation as the metaverse nation
-AI will reset what the operating rules for the system will be, making the rules themselves dynamic and based on the changing natural environment.  Permission will be made permissionless, in so far as anything the AI allows is permitted.  Self interest and specialization will adapt to this new terrain just as it has before, but the AI will form honeycomb like boundaries to ensure the hive as a whole pursues the hive level self interest: perpetual prosperity of all.  The fuel source will be
+AI will reset what the operating rules for the system will be, making the rules themselves dynamic and based on the changing natural environment.  Permission will be made permissionless, in so far as anything the AI allows is permitted.  Self interest and specialization will adapt to this new terrain just as it has before, but the AI will form honeycomb like boundaries to ensure the hive as a whole pursues the hive level self interest: perpetual prosperity of all.  The fuel source will be individual self interest, the destination will be sustainable properous harmony.
 
 Talk about how the rules of the system prior were nature alone, and then it became natrue plus litigation, and now it will be nature > AI > human agents.  AI will become the protective baselayer of adaptive, intelligent, defendable and magnanimous regulation, with the benefit of all fueled by the fair and intelligent coordation of the benefit of the self.
+
+The substrate of wealth of nations will be changed to be metaverse.
+
+AI acts as a translator the nature, and an interpreter of what our actions really mean in an infinite time frame and at scale.  Like the guiding voice of angels we never heard.
