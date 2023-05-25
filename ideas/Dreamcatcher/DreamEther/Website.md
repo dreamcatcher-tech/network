@@ -16,3 +16,7 @@ Present packets as a bundle of components.  Make a graphical artefact that shows
 Could use snapshot as the way to process Dreamcatcher packets ?
 
 Image generation tool that does a series of overlays on each image, and shows how the packet artwork will look under all different circumstances.
+
+Connect with a wallet to provide login.
+Optionally sign in without a crypto wallet.
+

@@ -45,6 +45,13 @@ Any packet type should be breakable into portions so people can sell arbitrary p
 
 Salary can be modelled with one packet per month, task being availability, QA being external.  These things should not be tradeable ?  Need something to make a packet type that is not listed or tradeable, based on its type.  Did you deliver or not.  For the time period, what packets did you improve ?  this is what should determine the attribution split of the end result.  Lets people work on whatever, and then the attribution split goes out based on what they did, the QA says if they did their job or not, which might be no QA.  Without one of our QAs, it wouldn't be listed on OpenSea under our collection banner.  So the QAs gatekeep the listings on OpenSea or any other place.
 
+Multicurrency funding options with badging
+
+Allow anybody to be the intermediary for payment processing - we actually are fully funding agnostic, but care only about the quality of the packet.  So peers can grant a packet with a lien on it, where it shows up as funded with the condition that some payment needs to clear.  Someone who does this a lot then does not act honourable will quickly lose reputation, but the contract allows anyone who purchases funding to use any currency they want, or even use NFTs to fund, where you get badged based on your NFT artwork.  Purchasing Funding NFTs is only allowed if the asset can be transfered to the packet contract for ownership.  It does permit a conditional which can have one of two options - burn or release.  Burn happens in case of a timeout without the follow up event ?  Or, it sits for as long as needed until the intermediary releases it.
+
+
+
+
 ## Functions DreamEther Contract
 
 ### `setAutonomous()`
