@@ -5,6 +5,19 @@
 
 >[!danger] Depends: 
 
+Should allow for:
+1. Payment of AI platform credits
+2. Payment of QA fees
+3. Funding of packets
+4. Sponsoring of packets
+5. Instant trading of any NFTs despite uncleared funds.
+
+
+Uncleared funds should not stop trading, as the lien then sits with the funds paid, not with the NFT.  So someone with a credit card can purchase an NFT, then immediately sell it on, then when their cc payment clears, the DAI shows up in their account.
+
+A credit card payment would go into a gateway fund, with a fee on top, then it would purchase crypto, but keep a lien on the funds.  If the QA had not been used, it would cancel the packet immediately.
+
+
 If we control the transfer of the packets, then we can allow direct purchase using credit cards.
 
 If the funding or buying is flagged as credit card, then it doesn't get dispersed until after the chargeback period, then things should be good.

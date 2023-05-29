@@ -39,7 +39,8 @@ from Mr. Maxwell 2022-07-21:
 
 We should set this vision up as a packet and chuck some funding against it.
 
-
+## Embeddings
+We want to be able to constantly update the embeddings to include the most recent ideas entered into the Dreamcatcher.  Whenever you query, it should be preloaded with the latest ideas in the whole realm.
 
 ## Privacy
 AI can redact the text of data so that differential privacy can be offered for different classes of packets.  [The Redaction](https://app.edenai.run/bricks/text/anonymization) can link to chain objects that are used to replace the tokens with a chainId, or masked completely.
