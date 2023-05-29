@@ -1,3 +1,5 @@
+As a general rule, we should have the core objectives of the Dreamcatcher be able to include any type of AI both now and in the future.  The data layer of the system should remain ever the same, as well as the payment principles.  The question is which AI and how much of it, never if an AI should be used or not.  Ultimately we want to run our own blockchain, which runs our own AI on top of it.
+
 If we made a plugin for chatGPT, then we could let people write packets consersationally.
 Images could be generated alongside the prompt.
 
@@ -38,6 +40,31 @@ from Mr. Maxwell 2022-07-21:
 > There's something here that rings of iso/osi layers.  There's either a new stack by which  we can show the above concept or possibly an extension above the current stack.
 
 We should set this vision up as a packet and chuck some funding against it.
+
+Suggested links to other packets based on what your notion was.
+The receiving packet can be paid to run its AI to determine whether it should accept the incoming request or not.  If the packet has a dedicated AI assigned to it, it is as tho the idea can think for itself and can, somewhat on its own, navigate all the information being thrown at it to work closer to a solution without human intervention, where different participants pay to run that AI to achieve their own goals, with the side effect of advancing the packets goals.
+
+Submit your responses to peoples requests, and be able to see how their AI summarizes what you said.
+
+
+
+## Worker assistance
+Workers should be able to search for packets rapidly, and should also be alerted when something they might be good at comes in.  They can indicate when they are working on something as an optimization signal to others.  They can start committing any way they like.  The packet shows activity update rates.
+
+## Price guestimation
+Using AI tooling to make educated guesses on pricing and timing, and indicate when a packet needs more funding to complete it.
+
+## Document Tooling
+Expressing ideas cleanly, rapidly, for people with ADHD and busy lives is crucial to success.  Providing too
+
+Each paragraph of text is treated like a block of code.  Tools popup around it, letting it be rearranged, upvoted (which is a social activity), exploded out into consituents, manually rewritten, rewored / smoothed, merged with other blocks and concepts.
+
+This web of connectivity between blocks, where each block has a history as well, is the source used to construct an ai generated document that strikes the right tone.
+
+These webs can be bundled up and used as blocks within other webs, so you can reproduce content for different audiences, auto merge multiple wrapping blocks together, auto summarize.
+
+Once the drop is complete, can auto regen the document to settle everything in so the doc flows completely.
+
 
 ## Embeddings
 We want to be able to constantly update the embeddings to include the most recent ideas entered into the Dreamcatcher.  Whenever you query, it should be preloaded with the latest ideas in the whole realm.

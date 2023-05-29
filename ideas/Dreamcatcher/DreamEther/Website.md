@@ -16,3 +16,8 @@ Present packets as a bundle of components.  Make a graphical artefact that shows
 Could use snapshot as the way to process Dreamcatcher packets ?
 
 Image generation tool that does a series of overlays on each image, and shows how the packet artwork will look under all different circumstances.
+
+Use [langchain](https://langchain.com/integrations.html) to be pluggable with many different APIs.  Use the API store to maintain their interfaces in Dreamcatcher format.  Write covenants that make these queries and can cause chains to be ingested in the embedding models to provide relevant data.
+
+Have a workbench that leads up towards packet generation.  Maket this a component tho, so you can use the system like an inventors notebook.
+
