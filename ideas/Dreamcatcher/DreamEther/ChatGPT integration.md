@@ -1,4 +1,10 @@
-As a general rule, we should have the core objectives of the Dreamcatcher be able to include any type of AI both now and in the future.  The data layer of the system should remain ever the same, as well as the payment principles.  The question is which AI and how much of it, never if an AI should be used or not.  Ultimately we want to run our own blockchain, which runs our own AI on top of it.
+As a general rule, we should have the core objectives of the Dreamcatcher be able to include any type of AI both now and in the future.  The data layer of the system should remain ever the same, as well as the payment principles.  The question is which AI and how much of it, never if an AI should be used or not.  Ultimately we want to run our own blockchain, which runs our own AI on top of it.  
+
+We start with Ethereum as the payments, and openAi as the AI, and we broker usage between them, focusing energy on building out our blockchain so it can absorb ethereum and later absorb the AI layer into a distributed LLM.  If we can demonstrate how these things can be combined together, then surely other models will find us, and be designed for us, particularly if we show how revenue can flow back to the models and the people making the data using micropayments from ambient attribution.
+
+How did you generate the prompt is more important than what the content is.
+
+Not you talking to the Dreamcatcher, but the LLM talking for you - boosting what you said.
 
 If we made a plugin for chatGPT, then we could let people write packets consersationally.
 Images could be generated alongside the prompt.

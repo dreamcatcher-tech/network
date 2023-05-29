@@ -85,3 +85,6 @@ The business is the platform.
 So many people want little bits of AI help here and there, but where can they go to get tuning help ?  They should come to Dreamcatcher, and use AI to specify their task, then set a price on it and have a taskforce set about making and testing the thing they want.  Whoever wants something and is prepared to fund it, for sure other people will want that thing too.
 
 This is why their businesses should be considered platforms, rather than disconnected stacks of uncooperative software.  Each vendor is in the business of software, but the company is in the business of something else, so the incentives do not align.
+
+## Blockchain based multiverse AI
+Show how training the model is like mining coins in big chunks.  We should be able to train incrementally, and prove where it is up to in its training, and verify the training quicker than repeating the process again.  Paying for the data set is important, and treating queries as something you pay for too.  The model needs to be improvable based on hot spots.
