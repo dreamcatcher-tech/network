@@ -71,6 +71,7 @@ These webs can be bundled up and used as blocks within other webs, so you can re
 
 Once the drop is complete, can auto regen the document to settle everything in so the doc flows completely.
 
+Start typing the gist of your idea, and the ai is already searching the internet, summarizing what it found about the curent state of the art in the area you are talking about, rating the novelty of what you said vs what it has read in the past.
 
 ## Embeddings
 We want to be able to constantly update the embeddings to include the most recent ideas entered into the Dreamcatcher.  Whenever you query, it should be preloaded with the latest ideas in the whole realm.
