@@ -26,4 +26,4 @@ Your relationship with the gateway company is prepayment for work to be done, wh
 The work done by the solver is detailed in the solution they submit.  Any work they did that is covered by this packet then has an attribution split between them and the funders.
 
 ## Wrap these with employment contracts
-This mode of payment can be backed by employment contracts issued by some corporate entity that provides this liability shield in exchange for some fee.
+This mode of payment can be backed by employment contracts issued by some corporate entity that provides this liability shield in exchange for some fee.  Integrate with [Opolis](https://opolis.co/) 
