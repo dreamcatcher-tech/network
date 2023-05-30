@@ -10,3 +10,5 @@ Can let people describe their conflict in natural language, and the AI tries to 
 Steer them towards standardized models of conflict, to provide new ways to think about it.
 
 Use the AI to generate a standardized, anonymized way, and then multiple parties can find each other, or resolution.
+
+With an AI agent to preserve dignity, can find analogies with other conflicts.
