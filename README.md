@@ -12,4 +12,7 @@ Using https://opensig.net/about.html this file (README.md) is hashed and submitt
 Basically the README.md file hash is stored on chain, and in that file is the git commit hash of a prior commit.  This can be used to proof existence at least before the blocktime that the transaction gets included in.
 
 ### 2023-06-01
-git commit hash: a62cef3169886c095848161b731c152e6a363fa5
+git commit hash: [a62cef3169886c095848161b731c152e6a363fa5](https://github.com/dreamcatcher-tech/network/tree/a62cef3169886c095848161b731c152e6a363fa5)
+verify: https://opensig.net/?verify=https://raw.githubusercontent.com/dreamcatcher-tech/network/711818ebd3c3ce0c5a1e67e7e7f292a2ff906451/README.md 
+tx: https://etherscan.io/tx/0x5d2ee58dde288eee792ebec08dbf26f391e55d213278a2676ea6999a88f24042
+
