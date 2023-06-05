@@ -20,3 +20,7 @@ Image generation tool that does a series of overlays on each image, and shows ho
 Connect with a wallet to provide login.
 Optionally sign in without a crypto wallet.
 
+Use [langchain](https://langchain.com/integrations.html) to be pluggable with many different APIs.  Use the API store to maintain their interfaces in Dreamcatcher format.  Write covenants that make these queries and can cause chains to be ingested in the embedding models to provide relevant data.
+
+Have a workbench that leads up towards packet generation.  Maket this a component tho, so you can use the system like an inventors notebook.
+
