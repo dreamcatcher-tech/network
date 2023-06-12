@@ -13,3 +13,4 @@ The formula by which the stock is traded can also be published and be done on ch
 
 To trade the stock you have to pass KYC - your account has to be soulbound.
 
+Means that we could be selling and buying founders stock without the suspicions assosciated, since we're stabilizing the price.  Everyone else trading would know the stability of this system.
