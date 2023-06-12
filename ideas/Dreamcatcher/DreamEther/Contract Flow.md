@@ -52,6 +52,7 @@ Allow anybody to be the intermediary for payment processing - we actually are fu
 When withdrawing, there are escrows on funding that are proportional to the work done somehow.  When you want to withdraw, there is a time delay, but if you want to move funds to other packets, the funds show up in those packets immediately, but with a lien on them, which is the same as if they were purchased by a credit card.
 
 
+
 ## Functions DreamEther Contract
 
 ### `setAutonomous()`
