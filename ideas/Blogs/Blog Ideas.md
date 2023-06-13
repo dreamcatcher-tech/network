@@ -121,3 +121,19 @@ Each node uses a blockchain to validate users, and also monitors the spectrum fo
 Storage being held at the node, and sold when required.  Show resilience under duress, show rewards for hardware suppliers and maintainers, show speed of rollout.  Show max burst download if you want to purchase.  Starlink integration and monitoring.  Backup data links that hit payday.
 
 Insurance so you pay a small amount to the backup capacity to be there, so you get it cheaper when you really need it.
+
+## The Journey to the Dreamcatcher
+First we made a blockchain that had high compute ability, and allowed people to have private chains.  Charging for this was an unresolved issue.
+Then we were torn apart by both discovering innovation networks, and by internal pressures based on who was getting paid what for a valuable but uncertain thing - the blockchain.
+Then we came up with the first rendition of the Dreamcatcher, which worked as a board game, and as a paper version.
+AI comes along, and we realize we can be a blockchain that can run AI natively.
+Then we discover, thanks to Satoshi Island, that we can turn tasks into NFTs.
+Finally, to achieve our goal of fairness of reward for all, we can use the NFT task protocol as a dataset, to train a blockchain native AI, to provide instant and unbiased attribution based the contribution patterns left by the protocol usage.
+
+So basically we think we have something very valuable in the blockchain, we were unsure how to charge for it or how to compensate our staff and external contributors, and we were unsure how to make a global innovation network on top of this blockchain.
+
+Thanks to AI, we glimpsed a path where we can solve all these problems with a single solution.  The Dreamcatcher AI charges and rewards anyone participating in the Dreamcatcher blockchain using the Dreamcatcher Protocol to immutably request and record contributions for anything at all.
+
+So while it may be possible to attempt fairness for tasks outside the dreamcatcher, our scope is initially limited to activity that uses the dreamcatcher protocol, and we finally are able to use this protocol to built the Dreamcatcher and all the apps needed for it, using this system itself as the innovation network and business model.
+
+We should show this as a timeline where NFTs burst on the scene, Satoshi Island NFTs land, and then ultimately chatGPT shows up, and we realize this is the tool that we've been waiting for.
