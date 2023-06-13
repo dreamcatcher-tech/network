@@ -96,19 +96,24 @@ If a DAO could gather everyones communications and then could summarize this whe
 Instead of an ICO, or a DAO that will devolve in
 
 ## Packet Compatibility with DAO
-Might be better suited as integration with the packets vs daos blog.
+Might be better suited as integration with the packets vs daos blog.  Promote packets as a way to remove the bottleneck on DAO to consider proposals and then fund them and re-fund them.  If someone has a proposal for the DAO, first they must pass the QA process to make it a packet, and then the only question remaining for the DAO is: which packets will the fund and by how much.
+
+Makes it easy for DAO to collaborate on shared tasks without any special infrastructure, other than packet compatibility.
 
 ## Benefits of an AI Mother
 Almost certainly it will be better than what we have now, instantly - it is unbiased, which no human can be, it is 100x cheaper to run than a human, and it gives results instantly.
 
-## NFTing tasks
-
 ## Getting what you pay for: negative attribution
 You get the behaviour you pay for, and so the AI should be aware of negative contribution - not paying the ruling for gas fees, and then rewards back to them are first docked what they owe plus some fair fines.
 
+## Micro Rewards for an AI training set
+Include the prompt as the training set.  Reward everyone who provided the data, even if they provided it without knowing it, as is the case on code in public repos or blogs online.  Everyone who contributed should be rewarded.  Moreover, due to the ability to score novelty, an AI should be able to reward without the corruption of plagiarism.  Authors should be able to publish without fear of being copied without attribution, and everyone should feel safe contributing to the AI that will continue to reward you in perpetuity.
+
+It could be that some individuals are so useful at producing novelty that their primary revenue stream is conversation with the AI where they introduce novel concepts, as yet unspoken by humans.
 
 ## Blockchaining AI
-
+Why should we run AI on a blockchain ?  Blockchain is an execution environment that can look like a cloud, but unlike cloud can be audited by re-execution of prior results.  It can also 
+AI in a useful setting requires an immense burst of computing power to respond to a user before the user needs to go to sleep.
 
 ## 5G Blockchain mesh networks
 Each node uses a blockchain to validate users, and also monitors the spectrum for compliance from all devices.  The license holders are rented from as required by the chain.  Infrastructure is rewarded for providing coverage, and for interactions with nodes.  All nodes communicate with multiple stations simultaneously for backup.
