@@ -49,6 +49,7 @@ Multicurrency funding options with badging
 
 Allow anybody to be the intermediary for payment processing - we actually are fully funding agnostic, but care only about the quality of the packet.  So peers can grant a packet with a lien on it, where it shows up as funded with the condition that some payment needs to clear.  Someone who does this a lot then does not act honourable will quickly lose reputation, but the contract allows anyone who purchases funding to use any currency they want, or even use NFTs to fund, where you get badged based on your NFT artwork.  Purchasing Funding NFTs is only allowed if the asset can be transfered to the packet contract for ownership.  It does permit a conditional which can have one of two options - burn or release.  Burn happens in case of a timeout without the follow up event ?  Or, it sits for as long as needed until the intermediary releases it.
 
+When withdrawing, there are escrows on funding that are proportional to the work done somehow.  When you want to withdraw, there is a time delay, but if you want to move funds to other packets, the funds show up in those packets immediately, but with a lien on them, which is the same as if they were purchased by a credit card.
 
 
 

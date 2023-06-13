@@ -6,3 +6,11 @@ Can allow for p2p style payments using stripe integrations where people can act 
 Nominate a backup wallet address that can take over in case you lose the primary.
 
 Private ChatGPT costs money, but some initial usage is free up to some limit.  May require a credit card to eliminate spam.
+
+Suspect there is a general lien based format that can be used to trade NFTs based on some lien where the higher authority can yank them back.  They can be traded as wrapped NFTs, or liened NFTs, and there could be a dispute process if the authority will not release them.
+
+The lien could be set to expire after 30 days, unless the lien is executed.
+
+The NFTs would need to be lien aware, and display as such, so that workers were aware before commiting time.
+
+Provide a swap service that can purchase the lien, add a percentage on top or take from the funding, then supply the funding to the packet unencumbered.

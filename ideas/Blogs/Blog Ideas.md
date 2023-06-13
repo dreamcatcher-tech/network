@@ -91,3 +91,19 @@ Show how training the model is like mining coins in big chunks.  We should be ab
 
 ## Making DAOs speak - when the many voices became one
 If a DAO could gather everyones communications and then could summarize this when it speaks to any individual, then it can 
+
+## NFTing tasks
+
+## Getting what you pay for: negative attribution
+You get the behaviour you pay for, and so 
+
+
+## Blockchaining AI
+
+
+## 5G Blockchain mesh networks
+Each node uses a blockchain to validate users, and also monitors the spectrum for compliance from all devices.  The license holders are rented from as required by the chain.  Infrastructure is rewarded for providing coverage, and for interactions with nodes.  All nodes communicate with multiple stations simultaneously for backup.
+
+Storage being held at the node, and sold when required.  Show resilience under duress, show rewards for hardware suppliers and maintainers, show speed of rollout.  Show max burst download if you want to purchase.  Starlink integration and monitoring.  Backup data links that hit payday.
+
+Insurance so you pay a small amount to the backup capacity to be there, so you get it cheaper when you really need it.
