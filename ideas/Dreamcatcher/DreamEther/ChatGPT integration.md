@@ -52,7 +52,12 @@ The receiving packet can be paid to run its AI to determine whether it should ac
 
 Submit your responses to peoples requests, and be able to see how their AI summarizes what you said.
 
+## Comms management
+If you want to talk to anyone on the network you can, but the message may not always get thru.  You have to have run your message thru the AI of the receivers or platform choice.  So basically you can start chatting to anyone you like, and the interface presents what you are saying as your robot rewriting what you are saying before you send it, then the receiving robot acting out what the person they protect would say.  The robot also scores what you are saying with the likelihood they will message their owner.  
 
+So once you have worked with your agent to get a message that is suitably crafted to present to the target, the target AI simulates a response and you go back and forth until it is something that the owner is likely to find useful, and so you work with the robot to make a summary message of the chat.  The owner can alway see the whole chat, but if there are many requests coming in, this AI filter makes it manageable.
+
+Also you can be made aware of your peers that are also trying to contact for similar reasons, and so you can find teammates based on this similarity and you can pitch together.
 
 ## Worker assistance
 Workers should be able to search for packets rapidly, and should also be alerted when something they might be good at comes in.  They can indicate when they are working on something as an optimization signal to others.  They can start committing any way they like.  The packet shows activity update rates.

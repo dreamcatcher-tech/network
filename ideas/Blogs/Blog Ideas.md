@@ -92,6 +92,15 @@ Show how training the model is like mining coins in big chunks.  We should be ab
 ## Making DAOs speak - when the many voices became one
 If a DAO could gather everyones communications and then could summarize this when it speaks to any individual, then it can 
 
+## Packets as a project fundraising mechanism
+Instead of an ICO, or a DAO that will devolve in
+
+## Packet Compatibility with DAO
+Might be better suited as integration with the packets vs daos blog.
+
+## Benefits of an AI Mother
+Almost certainly it will be better than what we have now, instantly - it is unbiased, which no human can be, it is 100x cheaper to run than a human, and it gives results instantly.
+
 ## NFTing tasks
 
 ## Getting what you pay for: negative attribution
