@@ -137,3 +137,6 @@ Thanks to AI, we glimpsed a path where we can solve all these problems with a si
 So while it may be possible to attempt fairness for tasks outside the dreamcatcher, our scope is initially limited to activity that uses the dreamcatcher protocol, and we finally are able to use this protocol to built the Dreamcatcher and all the apps needed for it, using this system itself as the innovation network and business model.
 
 We should show this as a timeline where NFTs burst on the scene, Satoshi Island NFTs land, and then ultimately chatGPT shows up, and we realize this is the tool that we've been waiting for.
+
+## Recursive AI
+how much should we pay the people that told us how much we should pay ?
