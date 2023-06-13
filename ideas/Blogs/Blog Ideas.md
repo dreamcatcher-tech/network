@@ -95,7 +95,7 @@ If a DAO could gather everyones communications and then could summarize this whe
 ## NFTing tasks
 
 ## Getting what you pay for: negative attribution
-You get the behaviour you pay for, and so 
+You get the behaviour you pay for, and so the AI should be aware of negative contribution - not paying the ruling for gas fees, and then rewards back to them are first docked what they owe plus some fair fines.
 
 
 ## Blockchaining AI
