@@ -91,3 +91,7 @@ Show how training the model is like mining coins in big chunks.  We should be ab
 
 ## Making DAOs speak - when the many voices became one
 If a DAO could gather everyones communications and then could summarize this when it speaks to any individual, then it can 
+
+NFTing tasks
+
+Blockchaining AI
