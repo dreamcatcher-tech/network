@@ -19,4 +19,6 @@ So we have a service company that acts as custodian of the stock.  Can allow man
 Means that we could be selling and buying founders stock without the suspicions assosciated, since we're stabilizing the price.  Everyone else trading would know the stability of this system.
 
 ## Contract goals
-putting funds in the contract needs to also have some target trade goals included.  
+putting funds in the contract needs to also have some target trade goals included.  Set a target stock price that you can update every day or so, which will buy or sell based on over or under this amount.  There has to be buyers on the chain to make this happen tho.
+
+Calculate this target based on revenue projections and AI calculations of what the revenue will be.
