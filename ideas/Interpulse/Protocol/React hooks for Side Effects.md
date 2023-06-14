@@ -18,14 +18,16 @@ The signature is:
 ```js
 const dependencies = [state, state.something, anyVariable]
 const options = { concurrency: 5, spread: 3, quorum: 'MAJORITY', timeout: 50000, host: 'peerId' }
-useEffect( async () => {
+useEffect( () => {
 	debug('effect mounting')
 	const asyncFunction = async ()=>{
-		const loopbackResult = await interchain( 'SELF' )
+		const result = await fetch('https://some.thing')
+		const loopbackResult = await interchain( 'SELF', result )
 		const [state, setState] = await useState()
 		// note this is only the state at time of invocation
-		await setState( {})
+		await setState( {} )
 	}
+	asyncFunction()
 	return () => {
 		// must return a function so we know how to cleanup
 		debug('effect unmounting')
@@ -38,6 +40,8 @@ Dependencies are stored as json on the Pulse, and when a change is detected, the
 Options are things like concurrent execution, max running time, network access granted, filesystem path access granted, and other isolation options.  Effects cannot influence the block that triggers them.  The effect is run by rerunning the reducer with the same params that triggered the effect, but in a different isolation context.
 
 The order of invocation for multiple `useEffect` calls in a reducer are recorded, so that they order is always the same.  Actions coming out of the effect function are wrapped and pierced back into the chain.  If something like `setState()` is called from within an effect, this would generate an action, and so would be subject to consensus, after unwrapping.
+
+In essence, the side effects are reacting to state changes, and sometimes they pierce actions into the chain based on what happened in the side effect.
 
 ### Lifecycle of a reducer
 When a reducer first mounts on a cluster, it is run with an empty action.  This allows the logic to do any setup work it may wish.  The effect is triggered AFTER the Pulse has been sealed, using the same action that triggered it to be called.  Any calls to `useState` would have been fulfilled in the same way as the trail would have stored these calls.  On rerun to induce the effect, all subsequent async requests from that reducer are ignored - only requests from the running effect functions are used.
@@ -119,3 +123,6 @@ useEffect(()=>{
 ```
 
 So the entire host should be a single covenant that includes some side effects that expect to boot up with network level access.  The network covenant could detect if it is inside a chain or a computer, and act accordingly, which would be useful for testing and replay purposes.
+
+## `useRef()` during replay
+Sometimes we need to keep some piece of context around that was generated inside a side effect, such as a handle on a network card.  This is difficult to replay as the context is entirely a side effect. To solve this and allow replay we could cause all `useRef()` access in a proxy, so that any interactions with this ref would be logged and so a validator could replay the chain without having the side effect context.  This proxy behaviour could be turned off in the options for the effect, if performance matters more than replay.
