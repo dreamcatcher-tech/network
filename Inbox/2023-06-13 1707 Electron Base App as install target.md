@@ -14,3 +14,5 @@ Multiple devices can be managed in this way, along with android installation tar
 Devices from friends can be connected to in order to provide tech support.
 
 If you are completely offline, other instances of this application are still available and can coordinate with you, and even trade with you if you do not trust them but you each agree what the last known balance of each of you were.
+
+This could be unreal engine capable, so that we could install apps in an isolated environment that run unreal engine.  Ideally the apps would come down as docker images, and then would have access to unreal engine in an isolated fashion, so security is assured.  If the graphics card is virtual capable, then 
