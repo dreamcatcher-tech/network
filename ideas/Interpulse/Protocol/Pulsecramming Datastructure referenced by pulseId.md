@@ -11,7 +11,7 @@ Currently all the Blocks that make up a Pulse are referred to by hash alone.  Wo
 
 Furthermore, finding the differences between two pulses in terms of blocks is a requirement for syncing, where the pulses might not follow in strict linear order, as the browser might have missed some history.  This can cause heavy server load if we need to work out the full blockset of each pulse.   We want to provide this ability so that honest browsers have reduced load time, whilst not having servers work significantly harder than clients.
 
-Idea is that each Pulse at its base holds a varint indexed table/array of all the binary atoms that are unique to this Pulse. Thruout the pulse, each reference points to `#:0` or whatever the index is, but crucially any prior pulses are referred to by `pulseId:0` so that for each referenced atom, we know immediately what is the hash of the pulse containing it.  This means we know during a syncing operation if it is something the requester already has if the pulse is earlier than prior.  This is the crucial speedup for syncing.
+The Idea is that each Pulse at its base holds a varint indexed table/array of all the binary atoms that are unique to this Pulse. Thruout the pulse, each reference points to `#:0` or whatever the index is, but crucially any prior pulses are referred to by `pulseId:0` so that for each referenced atom, we know immediately what is the hash of the pulse containing it.  This means we know during a syncing operation if it is something the requester already has if the pulse is earlier than prior.  This is the crucial speedup for syncing.
 
 This allows content of hashes to be pulled down by pulse directly, with two round trips (1 pulse, 1 content), regardless of the datastructure underneath.  We may be able to optimize the KV store layer if we are storing and accessing by Pulse, as this would allow us to store a larger chunk size, which can lead to some speed increases.  Further, we can remove the hashes from the pulse, store the data as a single large  byte array, and check it upon recovery from storage or transmission.  
 
@@ -51,6 +51,12 @@ Or, get the latest Pulse alone, start to walk it, request missing Pulses as disc
 Fastest possible is getting server assisted walk, but this incremental approach is best for distribution.  Would simply be boosting the bitswap blocks by pushing blocks out that were not asked for, then the receiver checks that the boost asked for them.
 
 Basically start a raw bitswap walk of the latest Pulse, while also sending out a Lift request for that Pulse.  Servers know how far along the bitswap walk got, and boost extra blocks on top of that.
+
+Because the Pulse contains only the diff, then we could sync by fetching all the Pulses from latest back until the last one we had.  This would avoid any superseded Pulses.  
+
+In fact, this could be managed entirely clientside at the cost of a single extra RTT: fetch the lastest Pulse, then walk it fully, fetching the Pulses we do not already have from the network.  All we are doing is checking if we have a Pulse on disk already, if not, fetch from network.  Any intermediate Pulse since our last sync that is not needed will not be fetched.  If we fully walk it, then we don't mind if we didn't fully walk the previous Pulse before we crashed, as this will be recovered from disk first, then from network.
+
+Might still be faster to provide a boost from the server where we know what you will ask for next, and so we start sending pulses down faster - hopefully this is not as important with Crams, since a Cram already sends down more info than you strictly needed.
 
 ## Pulse request sharding
 Server boosted requests can provide both a key range, or a lineage range.  This can be altered as other servers under perform or shed load.
