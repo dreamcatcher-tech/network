@@ -99,6 +99,8 @@ reconciliation between actions requested from the bus and the synchronized state
 
 Shatterable bus - the bus can be broken apart and recombined, as faults are highly tolerable - expected as part of normal operations.
 
+ML that can detect what the workflows are given the data.
+
 ## Integrations work
 Map out what companies are currently paying for integrations between difference systems
 
