@@ -5,7 +5,15 @@
 
 >[!danger] Depends: 
 
-If we can make AI services available as chains, then you can run arbitrary models in parallel and combine results.
+If we can make AI services available as chains, then you can run arbitrary models in parallel and combine results.  This is better because the price is lower, the interface is reliable as it accounts for API failure for you.  Payments is built in.  You can take the operation private if you need.  You can run locally on network if disconnected, or use the full power.  Queries can be queued up for when connectivity is restored or when pricing is favourable.  Payments are distributed ethically to the data providers.  Can easily make your users pay for credits, rather than routing thru you.  API version is locked, so you get deterministic results.  Your apps keep going even when you stop, since no need for hosting on your part or paying any bills.  Burstable demand doesn't charge you anything, in fact it makes you money.
+
+You apps can be composed into other apps and the API calls are paid for by the executor of the bundle, and you get a cut of it, rather than then needing to replace your API keys and giving you nothing.  Makes your apps be more modular, and encapsulating the API within them, rather than never being able to capture the API internally.  Consuming these modules is very easy as the compute comes bundled within them, rather than having to rip it out and make your own API connections then having to debug it if the API sends back data the module didn't expect.
+
+Keeping your code refering to a module means the module can be upgraded and your app instantly receives the benefit.
+
+Charging any apps customers directly gives the network the relationship rather than just them.  In exchange
+
+Attribution is done by proving who owns what content, and then using the micropayments to allow them to withdraw. 
 
 Chains let you query mutliple different models and then summarize the results, or feed into other models.  Lets you have very complex flows.  Auditable in that they can be replayed.  Can be open so that the outputs can be parsed as training data.
 

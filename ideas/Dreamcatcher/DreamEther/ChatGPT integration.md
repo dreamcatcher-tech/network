@@ -80,6 +80,9 @@ Start typing the gist of your idea, and the ai is already searching the internet
 
 Be able to select phrases or paragraphs you like, to give them extra weight.  Some can be fixed so their inclusion is guaranteed.  Give feedback on a very specific section, just like comments in google docs.  Stepping back thru history shows what was commented on and how things were added by the AI.  Can also fork the doc and let collaborators add their own suggestions with AI filling in what they said, and then AI attempting to merge all the suggestions into one, if master approves them all.  Plus each person could attempt to merge with every other person by way of AI, so the number of forks can be reduced.
 
+Want a packet writing AI that helps with format and purpose and tone, then can do translation and scoring on success / estimation of what QA will say.
+
+
 ## Embeddings
 We want to be able to constantly update the embeddings to include the most recent ideas entered into the Dreamcatcher.  Whenever you query, it should be preloaded with the latest ideas in the whole realm.
 
