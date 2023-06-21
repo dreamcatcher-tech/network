@@ -58,6 +58,16 @@ Under the hood this simply takes the `globalThis` for the isolation context, ups
 
 A similar way to achieve the same result is to use a variable that is outside of the reducer function, so that it is effectively part of the `globalThis` of the isolation context, but useRef is more explicit and cleaner way to do this.
 
+useRef is a hole out into the isolation context.
+
+## `useRef()` during replay
+Sometimes we need to keep some piece of context around that was generated inside a side effect, such as a handle on a network card.  This is difficult to replay as the context is entirely a side effect. To solve this and allow replay we could cause all `useRef()` access in a proxy, so that any interactions with this ref would be logged and so a validator could replay the chain without having the side effect context.  This proxy behaviour could be turned off in the options for the effect, if performance matters more than replay.
+
+Reply could just avoid all side effect running altogether, as all side effect interation would have come back thru
+
+## Pierce as a side effect
+The base of the engine could be rewritten to make piercing be merely a side effect inside the covenant, and nothing more.  Models the user as a side effect that is injecting actions into the chain, then getting responses.  In this way, it seems that the `.@@io` channel never ever needs to send any request out, and only sends out replies.  If it wanted to send something out, it would be by directly using some functions running in a side effect.  So when the chain wants to talk out to side effect land, it would do so directly.  If the IO output needed to be part of consensus this would have been handled already before the effect ran.
+
 ## Remounting
 in React 18, in dev mode, effects are remounted, just to check they clean up approriately.  We should do the same with our effects in dev mode.
 
@@ -106,23 +116,37 @@ Not all languages can pass functions as parameters.  These might need to pass an
 ## Example: Engine Networking
 In the browser and nodejs single instance engines, a side effect starts up the libp2p instance.  This would be kept around for the lifetime of the execution context:
 ```js
-const [state] = await useState()
-const { stopped } = state
+const [state, setState] = await useState()
 const ref = useRef()
-useEffect( async ()=>{
-	if (!ref.current){
-		ref.current = libp2p.create()
-		ref.current = await ref.current
+useEffect( ()=>{
+	let stopped = false
+	const start = async ()=> {
+		assert(!ref.current)
+		ref.current = await PulseNet.create()
+		if (!stopped){
+			await setState( state => ({...state, started: true}))
+		}
+	}
+	start()
+	return () => { // called when the isolation context is being torn down
+		stopped = true
+		ref.current?.stop().then(() => debug('libp2p stopped'))
 	}
 }, [] )
 useEffect(()=>{
-	if ( state.stopped && ref.current?.stop ){
-		ref.current.stop().then(() => debug('libp2p stopped'))
+	if (!ref.current){
+		return
 	}
-}, [state.stopped] )
+	for await (const announcement of ref.current.subscribeInterpulses()) {
+		// process announces possibly as actions into this chain
+	}
+}, [state.started] )
 ```
 
-So the entire host should be a single covenant that includes some side effects that expect to boot up with network level access.  The network covenant could detect if it is inside a chain or a computer, and act accordingly, which would be useful for testing and replay purposes.
+So the entire host should be a single covenant that includes some side effects that expect to boot up with network level access.  The network covenant could detect if it is inside a chain or a computer, and act accordingly, which would be useful for testing and replay purposes.  Provide some introspection utils, where you can know what isolation privileges you have, then use the chain version of libp2p or the bare metal version.
 
-## `useRef()` during replay
-Sometimes we need to keep some piece of context around that was generated inside a side effect, such as a handle on a network card.  This is difficult to replay as the context is entirely a side effect. To solve this and allow replay we could cause all `useRef()` access in a proxy, so that any interactions with this ref would be logged and so a validator could replay the chain without having the side effect context.  This proxy behaviour could be turned off in the options for the effect, if performance matters more than replay.
+The isolation context would be the thing that ran this core covenant.  It would be told to load up the covenant which it would have had to source and reify somehow on its own, probably from disk the same as a dev mode covenant, possibly with some integrity checking for each file, then it would execute the init action, which should be enough for the covenant to start up all its side effects, and detect its previous saved data on disk at the path given to it.
+
+Init action includes a path to the repo to draw on.  
+
+After it had booted, it would check with the network that the hashes it had loaded from were in fact correct ?  If was loaded in deno, then the hash that came with the files would be enough to ensure the integrity of the loaded files.  
