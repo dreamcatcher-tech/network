@@ -19,4 +19,4 @@ Show multiple stories in the dropdown, so can select different ones.
 
 If we interact with the UI directly using interactions, then we cannot also make the cli automated test version using the same code, since this also tests the blockchain.
 
-Best use is for 
+Best use is for interactions that cut across the whole of the application.
