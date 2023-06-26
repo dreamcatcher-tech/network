@@ -24,4 +24,6 @@ Use [langchain](https://langchain.com/integrations.html) to be pluggable with ma
 
 Have a workbench that leads up towards packet generation.  Maket this a component tho, so you can use the system like an inventors notebook.
 
-Charge to generate chains, and then the chains get stored in S3 or github pages so we get free hosting of the data.  Or we can just run our own IPFS nodes and let IPFS handle some of that for us.
+Charge to generate chains, and then the chains get stored in S3 or github pages so we get free hosting of the data.  Or we can just run our own IPFS nodes and let IPFS handle some of that for us.  We need an IPFS compatible url anyway if want to use this on opensea.
+
+Should provide some [[Obsidian Plugin]]s so that it is a single click to turn an idea into an NFT.
