@@ -18,6 +18,8 @@ It is identified by the people that manage the funds distribution, capital raisi
 
 Use ETH and other chains as a banking rail, to avoid having to handle all that ourselves.  Also the ultimate identity provider and login mechanism.  We then build things like exchanges that simply bridge between chains rapidly and cheaply.
 
+Hosting can be spread across multiple cloud providers, like google and AWS and can instantly switch based on latency of the host, other loads on the providers, DoS attacks - any number of available metrics, which makes it resilient and always low latency.  Can always be serving some compute from all hosts in order to get a feel for the performance of each one.  Can choose spot pricing for cheaper bigger batch style jobs.
+
 ## Hosting Blogs
 When long form content gets published, have a link to the DRE chain that contains the content within it.
 Convert popular pages into git page commits periodically, so that there is no load on the hoster itself for popular links.
