@@ -16,3 +16,9 @@ Use chatbots adversarially to merge changes between systems ?
 Listen in to phone conversations and start to pull up records based on what the customer is saying.  Then suggest things that the operator should say.  Ultimately, might be able to do away with the operator, or have the operator be purely text based ?
 
 Have people watching conversations occur, watching what the machine is planning to say next, then getting involved when they see it going wrong.
+
+Allow for reconfigurable UIs to be made rapidly, and then the customer can train the interface to pick the data they want.  So they can describe a UI layout they want, and name things how they want, and then they can select the examples of the data they want to show up in certain boxes, and optionally some transforms they want on the data.  Then their interface is always generated live for them based on the latest data.
+
+Can also throw up warnings about things that look weird in the app ?
+
+Complex free text queries that are iterated upon: "show me all the customers with a pricing override, but only those that were changed in the last year.  Now remove everyone in hamilton."
