@@ -30,7 +30,7 @@ Solutions are the destinations of the packets.
 
 Contract operations are:
 1. Packetize a Problem
-2. list an Idea
+2. list an Idea (offchain)
 3. submit a solution
 4. purchase an app
 5. forwards purchase an app
