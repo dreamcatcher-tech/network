@@ -20,6 +20,7 @@ Attribution Table - this should be calculated from the covenant
 
 
 ## Draft
+[[2023-06-29 1154 mango queries on children]]
 [[2023-01-23 1202 repo as covenant]]
 [[2023-01-25 1245 trigger updates when geo status alters]]
 [[2023-01-30 0849 LS should be an async iterable]]
