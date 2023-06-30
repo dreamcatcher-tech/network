@@ -4,6 +4,7 @@ superseding an accepted solution to a packet
 use any currency as payment
 use any NFT as payment
 moving payments inside the system should show up early
+shares between solvers and packet authors
 
 data hashes are really the thing we're tying to get merged in.
 
