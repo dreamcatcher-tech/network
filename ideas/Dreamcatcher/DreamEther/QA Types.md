@@ -10,6 +10,8 @@ struct QA {
 
 ? how would fees be split in a multi stage QA ?
 
+Where would the veto system get stored, and who should use it ?  QA fees should get stored in escrow until the veto period passes.  So veto might be a separate contract ?
+
 We can make some inbuild special QA types.  They are:
 1. Clock QA - passes after some time, but not before some other time
 2. Solver specific - only passes if the solver is on the allowlist
