@@ -1,10 +1,11 @@
 
-
+updated packets preserve the shares portions
 superseding an accepted solution to a packet
 use any currency as payment
 use any NFT as payment
 moving payments inside the system should show up early
 shares between solvers and packet authors
+merging packets
 
 data hashes are really the thing we're tying to get merged in.
 
@@ -30,3 +31,5 @@ Anything requiring QA goes onto opensea for purchase.  Start with just DAI, move
 
 We could make a rule that a solutionHash cannot be used anywhere else ?  Cannot have two parts of the system using the same state, so can nonce the state to get a new one, such as a timestamp change.
 Map everything by the statechange hash, then can use the same mechanics for everything.
+
+Solvers do state transitions, but funders only incentivize the state transtions.  QAs gatekeep the quality of the state transitions.
