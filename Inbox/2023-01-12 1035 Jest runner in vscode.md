@@ -80,3 +80,5 @@ REPRO PROD RIGHT IN VSCODE.
 Rerun previous prod runs using modified covenants with life feedback.
 Rainbow heatmaps for number of times it ran.
 Do attribution tracing for each line, and show which lines would likely payout.
+Running the prod suite of tests should be identical to running on any modified versions of the code, just differs who is paying and what changes were made to the code.
+Basically any time a deployment occurs, all the tests should run onchain too.
