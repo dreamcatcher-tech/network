@@ -33,3 +33,7 @@ We could make a rule that a solutionHash cannot be used anywhere else ?  Cannot 
 Map everything by the statechange hash, then can use the same mechanics for everything.
 
 Solvers do state transitions, but funders only incentivize the state transtions.  QAs gatekeep the quality of the state transitions.
+
+Transitions get numbered from 1, and then hashed to appear random so theres no value attached to special numbers.  This number is then used to generate NFT ids so each transition can have multiple ids ?  or, use ripemd and then suffix it with ints ?  So an incrementing number, then '-funding' and then ripemd or sha256 to get the nft id.  or bitshifting to get the id in there at the start.
+
+? someone trying to replace the QA of a packet with another one ?  If there was only one QA pool then this wouldn't matter.  But they might be tryign to change the config the QA uses.
