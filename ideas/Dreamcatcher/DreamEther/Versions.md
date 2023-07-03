@@ -39,3 +39,4 @@ Transitions get numbered from 1, and then hashed to appear random so theres no v
 ? someone trying to replace the QA of a packet with another one ?  If there was only one QA pool then this wouldn't matter.  But they might be tryign to change the config the QA uses.
 
 Trying to make transitions and packets be the same, so that the funding coding and veto process is all the same.
+Funding a packet is no different to funding a transition.
