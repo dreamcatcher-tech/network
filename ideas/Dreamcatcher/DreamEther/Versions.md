@@ -40,3 +40,7 @@ Transitions get numbered from 1, and then hashed to appear random so theres no v
 
 Trying to make transitions and packets be the same, so that the funding coding and veto process is all the same.
 Funding a packet is no different to funding a transition.
+
+Why is a solution not trying to merge / overwrite a packet transition directly ?
+The first transition has no solution, then many solutions pop up, all trying to replace the placeholder solution.  When they replace it, the funds get held in veto, then dispersed ?
+Seems better to leave the packet as an immutable wrapper, that never alters.
