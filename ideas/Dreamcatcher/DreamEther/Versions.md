@@ -9,6 +9,11 @@ merging packets
 
 data hashes are really the thing we're tying to get merged in.
 
+## Oddities
+Packets can never be rejected as they only get created when the packet header passes QA, and the contract is made so that once QA'd it can never be un QA'd.  That which is done stays done.
+
+## Notes
+
 ? could we split the distinction between packet writers and solution writers ?  Why not bundle them as the same ?
 fees for QA should also count as funding types ?  If the qa fees were treated the exact same as funding, then there are less NFT types to consider.  NFTs commemorate being either part of the solution, or incentivizing the solution.
 

@@ -13,7 +13,7 @@ Make a simple device on a post that acts as:
 5. boundary peg
 6. seismic sensor
 7. intruder detection with other nodes
-8. night light - ptz the light
+8. night light - ptz the light, RGB colors too
 9. emergency alerts - just shout loudly near it and someone will come
 10. weather sensor for wind and rain monitoring
 11. loudspeaker system
@@ -31,3 +31,4 @@ Fold down small to transport or protect during storms.
 Should be cheap, modular, open design.
 
 Be able to say "ok island" and a chat to get some info.
+Can project the metaverse out, so that metaverse members can almost be there, or you can at least get a sense when they are around, since the lamps light up a different color.
