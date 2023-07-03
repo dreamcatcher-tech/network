@@ -58,3 +58,5 @@ Rename a Transition to be:
 3. innovator - someone who effects change
 4. catalyst
 5. progressor
+
+Defund timing should be the same as veto timing, where all the funds go into locked state ?
