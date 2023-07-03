@@ -48,7 +48,8 @@ The first transition has no solution, then many solutions pop up, all trying to 
 Seems better to leave the packet as an immutable wrapper, that never alters.
 
 Rename a Transition to be:
-1. Sumblimation - funny bx turns gas to solid
-2. innovator - someone who effects change
-3. catalyst
-4. progressor
+1. Sublimation - funny bx turns gas to solid
+2. deposition - the actual name for gas to solid transition
+3. innovator - someone who effects change
+4. catalyst
+5. progressor
