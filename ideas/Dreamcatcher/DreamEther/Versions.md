@@ -60,3 +60,5 @@ Rename a Transition to be:
 5. progressor
 
 Defund timing should be the same as veto timing, where all the funds go into locked state ?
+
+? How can we assign solution shares to a packet ?  Eg: if the packet descriptor should be due some funds ?  Seems the only one who cannot have any funds is the QA.
