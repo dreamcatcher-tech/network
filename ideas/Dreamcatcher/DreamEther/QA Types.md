@@ -24,3 +24,5 @@ If a subcontracting company respresented itself as a smart contract, then it wou
 
 ? can a packet be a solution ?
 
+bonds should be required to be on the QA list.  anyone can enter, but misbehaviour will cause loss of bond to the appeal court.
+Then allow people to pool their funds to back certain groups of QA, and earn some passive income on that, by trusting the QA pool.  Then the users of the QA service have more trust, and the QAs need not stump up all the funds they need.
