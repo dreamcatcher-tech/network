@@ -66,3 +66,5 @@ Defund timing should be the same as veto timing, where all the funds go into loc
 A cut of the shares should go to the platform packets itself.  This is done on packet close and accumulates.  Withdraw should blank the wallet in the packet, so give a gas refund, to make withdraw large amounts cheaper.
 
 Broker contract has a special balanceOf relationship, as it can transact with opensea to sell tokens for funding.
+
+Cleanup in Seaport - orders automatically timeout after 3 months unless someone puts in some funding, then it will remain present for another 3 months.  Historical items can be relisted by funding them directly in the contract, which will re-up the seaport offering.  Inactivity withdraws from seaport.
