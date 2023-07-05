@@ -62,3 +62,7 @@ Rename a Transition to be:
 Defund timing should be the same as veto timing, where all the funds go into locked state ?
 
 ? How can we assign solution shares to a packet ?  Eg: if the packet descriptor should be due some funds ?  Seems the only one who cannot have any funds is the QA.
+
+A cut of the shares should go to the platform packets itself.  This is done on packet close and accumulates.  Withdraw should blank the wallet in the packet, so give a gas refund, to make withdraw large amounts cheaper.
+
+Broker contract has a special balanceOf relationship, as it can transact with opensea to sell tokens for funding.
