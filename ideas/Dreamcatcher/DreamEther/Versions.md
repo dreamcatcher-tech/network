@@ -68,3 +68,4 @@ A cut of the shares should go to the platform packets itself.  This is done on p
 Broker contract has a special balanceOf relationship, as it can transact with opensea to sell tokens for funding.
 
 Cleanup in Seaport - orders automatically timeout after 3 months unless someone puts in some funding, then it will remain present for another 3 months.  Historical items can be relisted by funding them directly in the contract, which will re-up the seaport offering.  Inactivity withdraws from seaport.
+
