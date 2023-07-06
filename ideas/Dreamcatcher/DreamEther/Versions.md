@@ -71,3 +71,6 @@ Cleanup in Seaport - orders automatically timeout after 3 months unless someone 
 
 Must block anyone submitting a hash that collides with a packetId. Or store packetIds somewhere different.  Else could block contracts from passing by colliding with packets.
 
+Each time a packet is resolved, then funds are imediately transferred to the solutionShare holder accounts.  Avoids confusion over an undrained and a drained packet.  Packets are instantly drained.
+
+Cannot change QA for a packet, since this is tied to funding - people bought in to the packet based on their trust of the QA.
