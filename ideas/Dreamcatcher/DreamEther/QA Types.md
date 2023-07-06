@@ -52,3 +52,5 @@ The share splits of an appeal might be subject to appeal - at some point this ha
 
 
 
+## Updating QA
+Could use a transition as a means of changing a QA configuration ?
