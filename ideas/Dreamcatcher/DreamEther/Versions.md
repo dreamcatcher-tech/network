@@ -76,3 +76,5 @@ Each time a packet is resolved, then funds are imediately transferred to the sol
 Cannot change QA for a packet, since this is tied to funding - people bought in to the packet based on their trust of the QA.
 
 Make a contract to list packets that have not received QA appraisal.
+
+If you did not withdraw defunded value before appealWindow opens, then your funds are trapped and may be consumed.  So you need to pull them out quickly.
