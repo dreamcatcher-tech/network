@@ -78,3 +78,9 @@ Cannot change QA for a packet, since this is tied to funding - people bought in 
 Make a contract to list packets that have not received QA appraisal.
 
 If you did not withdraw defunded value before appealWindow opens, then your funds are trapped and may be consumed.  So you need to pull them out quickly.
+
+Might make a separate mapping to hold each type of transition and then store them in a transition mapping using the type of transition to ensure no collisions, or avoid a central transition map altogether
+
+QA contract must supply its own appeal process, since it is the expert in the field it offers.
+The DreamEther contract can be walked to determine an appeal rating and quality, and people should switch QAs if they don't like a particular one.
+
