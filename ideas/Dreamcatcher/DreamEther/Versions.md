@@ -71,6 +71,8 @@ Cleanup in Seaport - orders automatically timeout after 3 months unless someone 
 
 Must block anyone submitting a hash that collides with a packetId. Or store packetIds somewhere different.  Else could block contracts from passing by colliding with packets.
 
-Each time a packet is resolved, then funds are imediately transferred to the solutionShare holder accounts.  Avoids confusion over an undrained and a drained packet.  Packets are instantly drained.
+Each time a packet is resolved, then funds are imediately transferred to the solutionShare holder accounts.  Avoids confusion over an undrained and a drained packet.  Packets are instantly drained.  BUT this causes a variable gas fee to the QA, incentivizing less accurate share splits.  Also we cannot transfer out NFTs.  So, we might merely update a list of the packets that someone holds funds in, then require them to come drain it.  Store the original holders so their withdrawl ability is independent of share transfers that occured after resolution.
 
 Cannot change QA for a packet, since this is tied to funding - people bought in to the packet based on their trust of the QA.
+
+Make a contract to list packets that have not received QA appraisal.
