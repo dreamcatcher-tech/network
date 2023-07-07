@@ -84,3 +84,4 @@ Might make a separate mapping to hold each type of transition and then store the
 QA contract must supply its own appeal process, since it is the expert in the field it offers.
 The DreamEther contract can be walked to determine an appeal rating and quality, and people should switch QAs if they don't like a particular one.
 
+Multiple concurrent solutions have equal weighting in the packet solutionShares.
