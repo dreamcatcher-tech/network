@@ -15,4 +15,10 @@ Seems unlikely any fundamental issues will be uncovered, rather just bugs.
 
 The xstate diagram could be very helpful to document how the system works.
 
-What about some load testing, were the model is run multiple times with different randomized params and the model assertions all hold ?
+What about some load testing, were the model is run multiple times with different randomized params and the model assertions all hold ?  Each different type of event could be called upon in different sets of states, so the events stay the same, but the states do loops and different events that call themselves.  So all kinds of usage can be modeled in states.
+
+Fuzzing would have to run the model multiple times, with events that took a randomized param and generated something from it, like a different DAI amount.
+
+Can use event cases to make the same event have many different outputs.
+
+User count can be tested by events that use two users ?  Want things like 3 users, one malicious, one appeals - something like that.
