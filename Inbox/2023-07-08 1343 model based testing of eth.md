@@ -22,3 +22,7 @@ Fuzzing would have to run the model multiple times, with events that took a rand
 Can use event cases to make the same event have many different outputs.
 
 User count can be tested by events that use two users ?  Want things like 3 users, one malicious, one appeals - something like that.
+
+Grind out multiple paths, by randomizing when QA will pass a transition or not, then making sure all the invariants of the system held at all times.
+
+
