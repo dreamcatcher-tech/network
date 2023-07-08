@@ -25,4 +25,15 @@ User count can be tested by events that use two users ?  Want things like 3 user
 
 Grind out multiple paths, by randomizing when QA will pass a transition or not, then making sure all the invariants of the system held at all times.
 
-
+Diagram showing state of packet in the UI.
+Show what funds it has available, what solutions are targetting it and are partially in motion.
+Be able to idea about what solutions could be happening.
+Header shows with the packet virtual and ghostlike, as the packet isn't formed yet.
+Packet with solutions loosely targetting it.
+Stack of different value based things attached to the packet building up a prize.
+Generate random interactions of packets and see how things go.
+Make a board game where some parameters are randomized in the game, so people can see how to play.  Have an AI alongside advising on best moves.  Show how reputation matters, as some actors have good reputation, and then sometimes do bad things.
+Some packets solve things about the packet system itself.
+Have gambling pools where you put your funds in and purchase NFTs that get royalties.
+Some can play as devs, with a dice to roll on how well they do, as a different school.
+Or as someone running a dev shop with different people coming in and out, you offering different incentives and pay rates.
