@@ -94,4 +94,11 @@ buyers.
 Funds of product packets go to all component funds, + target margin, then residue goes to the builders.
 Preset the dispersal from the funder.  Set an attributor by formula.
 3 phase: 1) precontractor 2) formula + buyer 3) full AI
+types of labour compared is the same as capital compared to labour, therefore should have an attributor.
+appeal on the attributor ?
+attributor doesn't attribute history.
+premoney attributor history = 0.
 
+should labour only get royalty after funders have their money back ?
+per packet defund delays.
+fund that starts at some condition or time.
