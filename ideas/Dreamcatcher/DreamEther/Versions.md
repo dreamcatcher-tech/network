@@ -102,3 +102,7 @@ premoney attributor history = 0.
 should labour only get royalty after funders have their money back ?
 per packet defund delays.
 fund that starts at some condition or time.
+
+How much should be due the smart contract author of the Dreamcatcher ?
+
+Where should a project managers fee be inserted ?  Top level packet, component packets, independent ?
