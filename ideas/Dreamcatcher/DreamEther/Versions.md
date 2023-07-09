@@ -85,3 +85,13 @@ QA contract must supply its own appeal process, since it is the expert in the fi
 The DreamEther contract can be walked to determine an appeal rating and quality, and people should switch QAs if they don't like a particular one.
 
 Multiple concurrent solutions have equal weighting in the packet solutionShares.
+
+solutions wrap packets.
+product funds go to component funders and labourers.
+labour and fund distribution based on a balance target.
+attribution actor.
+buyers.
+Funds of product packets go to all component funds, + target margin, then residue goes to the builders.
+Preset the dispersal from the funder.  Set an attributor by formula.
+3 phase: 1) precontractor 2) formula + buyer 3) full AI
+
