@@ -27,6 +27,8 @@ Grind out multiple paths, by randomizing when QA will pass a transition or not, 
 
 It might be possible to set goals for the system - such as a final state with some context described that says how many packets, how many rejections, etc.  Then the system might grind thru and find all the paths that could arrive in that end state.  This can make specifying a starting condition for a very specific test very easy ANY test all ways of arriving at that state THEN proceed with the test itself.
 
+So we would specify some starting conditions for a scenario, list what the conditions are once reached, and list how many simple paths and shortest paths were available to get there.  Then execute the next stage which is a set of scenarios that build on the preconditions.
+
 Diagram showing state of packet in the UI.
 Show what funds it has available, what solutions are targetting it and are partially in motion.
 Be able to idea about what solutions could be happening.
