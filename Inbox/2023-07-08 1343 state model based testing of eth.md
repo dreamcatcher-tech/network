@@ -76,6 +76,10 @@ Buffer up tx into a block, then await all to be processed, and check all the log
 Make the failures be a dedicated state where we take a different failure path.
 Can require all paths have at least N failure calls in them before concluding.
 
+By making proposeSolution be its own state that holds 3 transitions we can ensure that every case of everything else is covered by these three cases, namely: propose, proposeTwo
+
+The order that things get called in matters, so can we do every possible order ?
+
 Scenarios:
 1. give me a fully funded packet that was solved
 2. give me 17 full funded packets where 5 of the solutions were appealed, and 10 of the packet headers were appealed, with 2 packets having simultaneous solutions.
