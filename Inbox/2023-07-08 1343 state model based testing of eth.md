@@ -58,6 +58,8 @@ We could loop around based on some pseudo random conditions to decide when the p
 Is randomizing better than exhaustive path walking ?
 number of funding events could be multi path too, so a state that says funding by dai that offers multiple transitions that fund different amounts, where each one would be taken once.  Could cause a loop if we wanted some funding condition set in context ?
 
+What does every possible combination of packet paths even look like ?
+
 Scenarios:
 1. give me a fully funded packet that was solved
 2. give me 17 full funded packets where 5 of the solutions were appealed, and 10 of the packet headers were appealed, with 2 packets having simultaneous solutions.
