@@ -48,11 +48,21 @@ three options:
 2. One large statechart broken into modules, such as the funding statechart having a range of transitions for funding with eth, dai, nfts, and other random tokens
 3. Actors that represent each packet.  This appears hard to get going in xstate tho
 
-Parallel states for funders that keep trying as long as there are new packets to fund ?
+Parallel states for actors that keep trying as long as there are new packets to fund ?
 Send a self event whenever something new happens, which causes the parallel state charts to process again.
+Funders are given several funding options:
+1. no fund
+2. eth
+3. dai
+We could loop around based on some pseudo random conditions to decide when the packet is funded completely enough to move on.
+Is randomizing better than exhaustive path walking ?
+number of funding events could be multi path too, so a state that says funding by dai that offers multiple transitions that fund different amounts, where each one would be taken once.  Could cause a loop if we wanted some funding condition set in context ?
 
 Scenarios:
 1. give me a fully funded packet that was solved
 2. give me 17 full funded packets where 5 of the solutions were appealed, and 10 of the packet headers were appealed, with 2 packets having simultaneous solutions.
+
+Can reach end goals by specifying conditions in the test paths generator.
+
 
 ## Extras
