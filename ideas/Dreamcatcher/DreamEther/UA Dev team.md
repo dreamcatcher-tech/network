@@ -11,3 +11,10 @@ So in effect, people can be investing in our future value by putting work thru u
 
 The devs are able to get equity, and the customers get royalty on the extra payments they receive.
 
+Rent out an office, pay devs in local currency, export their services ?  Core team would do the daily management, but the packets would be for remote work operations.  Core team would be to show to customers there is a base team, and to get residence in UA, and get funds moving in to the UA system.  Also may need to pay some devs in UA$, and can get them to work on dreamcatcher stuff in their idle time.  
+
+Use the funds to purchase gold, digitize it, then pay devs in it ?  Vault it in singapore, then trade it locally.
+
+Launch on the stockmarket in UA ?
+
+We can manage other teams of devs locally for remote clients ?
