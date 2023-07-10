@@ -80,9 +80,20 @@ By making proposeSolution be its own state that holds 3 transitions we can ensur
 
 The order that things get called in matters, so can we do every possible order ?
 
+Stop conditions should be provided to the path generator.  Keeps it out of the machine, and just finds all paths that meet the conditions at some point.
+
+? can we know that we defunded everything in some tests ?  Say record a peak fundage, then record a zero fundage, after N calls of the fund mechanism ?
+
+Do we bother with trying different addresses ?
+Use the ipfs hash as the deterministic seed.
+
+target transition twizzle can be a transition, rather than making each transition select something for themselves.  So we would either make a new header, do an operation on an existing id, with some limit on the number of types of transitions we would enact on any given id ?
+
 Scenarios:
 1. give me a fully funded packet that was solved
 2. give me 17 full funded packets where 5 of the solutions were appealed, and 10 of the packet headers were appealed, with 2 packets having simultaneous solutions.
+3. stop after 3 appeals, with 4 succesful packets that were double solved
+4. solve a packet after it has been resolved.
 
 Can reach end goals by specifying conditions in the test paths generator.
 
