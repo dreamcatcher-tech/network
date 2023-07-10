@@ -18,3 +18,5 @@ Use the funds to purchase gold, digitize it, then pay devs in it ?  Vault it in 
 Launch on the stockmarket in UA ?
 
 We can manage other teams of devs locally for remote clients ?
+
+Set up batteries and starlinks, and be on the outskirts of the city ?  Hire food and services to make living good.
