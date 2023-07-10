@@ -70,7 +70,11 @@ Add an action that cycles up the target transitionId that the next transition wi
 
 If we cap the number of times any given action can be called by parameters (eg: header cannot do more than 100 headers, funds cannot fund more than y packets and must always avoid 50% of the packets)
 
-Seed the selector based on the context content, so for a given content, it will always select the same way.
+Seed the selector based on the context content, so for a given content, it will always select the same way.  Or use a tick counter to determine what to do.
+
+Buffer up tx into a block, then await all to be processed, and check all the logic of each one.
+Make the failures be a dedicated state where we take a different failure path.
+Can require all paths have at least N failure calls in them before concluding.
 
 Scenarios:
 1. give me a fully funded packet that was solved
