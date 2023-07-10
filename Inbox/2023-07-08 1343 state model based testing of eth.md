@@ -89,6 +89,8 @@ Use the ipfs hash as the deterministic seed.
 
 target transition twizzle can be a transition, rather than making each transition select something for themselves.  So we would either make a new header, do an operation on an existing id, with some limit on the number of types of transitions we would enact on any given id ?
 
+Could make the end condition checks be the absolute limits that the model will allow to run until.
+
 Scenarios:
 1. give me a fully funded packet that was solved
 2. give me 17 full funded packets where 5 of the solutions were appealed, and 10 of the packet headers were appealed, with 2 packets having simultaneous solutions.
