@@ -91,6 +91,9 @@ target transition twizzle can be a transition, rather than making each transitio
 
 Could make the end condition checks be the absolute limits that the model will allow to run until.
 
+Use action loops that increment context to ensure that every possible value in the range will be used, as the next transition that makes use of whatever value is present will be taken at every incremental step.
+
+
 Scenarios:
 1. give me a fully funded packet that was solved
 2. give me 17 full funded packets where 5 of the solutions were appealed, and 10 of the packet headers were appealed, with 2 packets having simultaneous solutions.
