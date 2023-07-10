@@ -42,3 +42,17 @@ Have gambling pools where you put your funds in and purchase NFTs that get royal
 Some can play as devs, with a dice to roll on how well they do, as a different school.
 Or as someone running a dev shop with different people coming in and out, you offering different incentives and pay rates.
 
+## Implementation
+three options:
+1. One large statechart that has a single state with many transitions that are governed by conditions
+2. One large statechart broken into modules, such as the funding statechart having a range of transitions for funding with eth, dai, nfts, and other random tokens
+3. Actors that represent each packet.  This appears hard to get going in xstate tho
+
+Parallel states for funders that keep trying as long as there are new packets to fund ?
+Send a self event whenever something new happens, which causes the parallel state charts to process again.
+
+Scenarios:
+1. give me a fully funded packet that was solved
+2. give me 17 full funded packets where 5 of the solutions were appealed, and 10 of the packet headers were appealed, with 2 packets having simultaneous solutions.
+
+## Extras
