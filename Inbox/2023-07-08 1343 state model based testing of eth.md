@@ -97,10 +97,14 @@ Filter out the types of transitions that iterate, or summarize them.
 If the iteration transitions were all handled in a state, then we can just show what states we went thru ?
 State cascade from packet header to: fund, defund, resolve, reject, appeal,
 
+Can define a cycle as some amount of packet creation or packet activity, possibly none.
+Do some packet proposal counts, then do some funding rounds up to N.
+Repeat up to N cycles to see different results.
+
 Scenarios:
 1. give me a fully funded packet that was solved
 2. give me 17 full funded packets where 5 of the solutions were appealed, and 10 of the packet headers were appealed, with 2 packets having simultaneous solutions.
-3. stop after 3 appeals, with 4 succesful packets that were double solved
+3. stop after 3 appeals, with 4 successful packets that were double solved
 4. solve a packet after it has been resolved.
 
 Can reach end goals by specifying conditions in the test paths generator.
