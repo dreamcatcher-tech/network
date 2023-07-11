@@ -105,6 +105,14 @@ Set cycles per block, and blocks per appealWindow.
 So basically the machine simulates an open block, and it does a fixed number of initiating operations each cycle, and possibly does an modifying operation on each transition.
 End conditions are specified by some state that we want to achieve, and the solver then generates paths to get there.
 We then execute the paths which runs the actual smart contract.
+If do two cycles per block, then we can simulate the rare case of mempool interception.
+Think of the operations like CRUD.  Each round do some creates, and some updates.
+Might be better to do all operations in a single cycle, with interleave being tested by multiple cycles in a block.
+MUCH fewer combinations if we roll thru every possible transition, then do some of the operations that were possible on it, choosing one or none of the 
+BUT this doesn't check for operations that shouldn't be occuring being blocked by the contract, as we should be trying one of every operation, in every possible order, including trying illegal ones and asserting as much.
+The N^2 effect of doing each option in its own state is the largest contributor to possible paths.
+
+So break into cycles, where each cycle makes some headers, then does on of 
 
 Scenarios:
 1. give me a fully funded packet that was solved
