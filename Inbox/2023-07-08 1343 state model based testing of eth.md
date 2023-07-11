@@ -100,6 +100,11 @@ State cascade from packet header to: fund, defund, resolve, reject, appeal,
 Can define a cycle as some amount of packet creation or packet activity, possibly none.
 Do some packet proposal counts, then do some funding rounds up to N.
 Repeat up to N cycles to see different results.
+Then tick the block forwards, then tick the appealWindow forwards.
+Set cycles per block, and blocks per appealWindow.
+So basically the machine simulates an open block, and it does a fixed number of initiating operations each cycle, and possibly does an modifying operation on each transition.
+End conditions are specified by some state that we want to achieve, and the solver then generates paths to get there.
+We then execute the paths which runs the actual smart contract.
 
 Scenarios:
 1. give me a fully funded packet that was solved
