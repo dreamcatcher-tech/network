@@ -112,7 +112,11 @@ MUCH fewer combinations if we roll thru every possible transition, then do some 
 BUT this doesn't check for operations that shouldn't be occuring being blocked by the contract, as we should be trying one of every operation, in every possible order, including trying illegal ones and asserting as much.
 The N^2 effect of doing each option in its own state is the largest contributor to possible paths.
 
-So break into cycles, where each cycle makes some headers, then does on of 
+So break into cycles, where each cycle makes some headers, then does one of any possible operations.
+Propose as the initial swarm, then start calling any op (including propose) ?
+If limit the propose calls before exit, then 
+Loop until propose count is hit, where each loop starts from 0, and goes up to < transitionId, selecting one of the allowed operations each time, where propose might be one of those operations
+
 
 Scenarios:
 1. give me a fully funded packet that was solved
