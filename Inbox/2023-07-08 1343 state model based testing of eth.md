@@ -93,6 +93,9 @@ Could make the end condition checks be the absolute limits that the model will a
 
 Use action loops that increment context to ensure that every possible value in the range will be used, as the next transition that makes use of whatever value is present will be taken at every incremental step.
 
+Filter out the types of transitions that iterate, or summarize them.
+If the iteration transitions were all handled in a state, then we can just show what states we went thru ?
+State cascade from packet header to: fund, defund, resolve, reject, appeal,
 
 Scenarios:
 1. give me a fully funded packet that was solved
