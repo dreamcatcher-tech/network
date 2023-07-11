@@ -19,4 +19,4 @@ Launch on the stockmarket in UA ?
 
 We can manage other teams of devs locally for remote clients ?
 
-Set up batteries and starlinks, and be on the outskirts of the city ?  Hire food and services to make living good.
+Set up solar, batteries, and starlinks, and be on the outskirts of the city ?  Hire food and services to make living good.  Offer sanctuary to those who would work.  Hire other skills and build modular housing.
