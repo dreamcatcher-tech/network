@@ -117,6 +117,26 @@ Propose as the initial swarm, then start calling any op (including propose) ?
 If limit the propose calls before exit, then 
 Loop until propose count is hit, where each loop starts from 0, and goes up to < transitionId, selecting one of the allowed operations each time, where propose might be one of those operations
 
+Principle is that we are simulating blocks in the blockchain being made, and so the statechart needs to be a model of that.  Then we can test doing multiple concurrect actions within a block, or doing just a single action.
+Propose tests 3 scenarios:
+1. Do nothing
+2. make one
+3. make a batch, say 13
+Tests on the proposals
+1. skip, fund, fund many
+2. skip, defund, defund many
+3. resolve, reject
+Then, a test on packets themselves
+1. 
+
+Finally, a range of tests against only solutions:
+
+
+Test a single packet, taken thru to conclusion.  Then build up having some appeals.  Want a machine that we can configure to test any scenario we can come up with easily.  Possibly doing ranges is confounding fuzz testing with exact path testing.  Key could be to terminate paths that have an error, rather than carrying on with them.
+
+There maybe a set of properties that can describe any possible test scenario.  We would supply this object to each test, rather than trying to make a machine that does it all.
+
+Use skips to avoid some transitions, and focus only on testing the valid ones, eg: skip all defund transitions, then increase the number of packets used, or number of funding cycles, for example.
 
 Scenarios:
 1. give me a fully funded packet that was solved
