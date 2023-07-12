@@ -136,6 +136,10 @@ Test a single packet, taken thru to conclusion.  Then build up having some appea
 
 There maybe a set of properties that can describe any possible test scenario.  We would supply this object to each test, rather than trying to make a machine that does it all.
 
+For any op, there are then only a subset of allowed operations that can happen to it.  Should we be testing these paths, and doing error testing on the functions directly, or by doing an error test pass on simple state machines, else the burden is too high to error test on every possible path ?
+
+Could do time as a parallel state, where it ticks forwards, and so all the operations get spread between all possible orderings of the clock ticking forwards.  But what about those transitions that need a delay ?
+
 Use skips to avoid some transitions, and focus only on testing the valid ones, eg: skip all defund transitions, then increase the number of packets used, or number of funding cycles, for example.
 
 Scenarios:
