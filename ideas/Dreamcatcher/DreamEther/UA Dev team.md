@@ -22,3 +22,6 @@ We can manage other teams of devs locally for remote clients ?
 Set up solar, batteries, and starlinks, and be on the outskirts of the city ?  Hire food and services to make living good.  Offer sanctuary to those who would work.  Hire other skills and build modular housing.
 
 Build precast concrete structures that can be used to rapidly erect bunkers, so workers are unaffected by air raids.  Could design a small city, with blast simulations, so we know optimal placement to avoid damage.  Precast concrete with earth laid over the top for blast proofing.
+Mfg mini desk sized bomb proof frames so we can shelter in place.
+
+The extreme fluidity of the Ukrainian situation makes it the perfect place to utilized the dreamcatcher, as no other management technique is as structurally dynamic.
