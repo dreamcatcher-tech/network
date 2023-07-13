@@ -140,6 +140,8 @@ For any op, there are then only a subset of allowed operations that can happen t
 
 Could do time as a parallel state, where it ticks forwards, and so all the operations get spread between all possible orderings of the clock ticking forwards.  But what about those transitions that need a delay ?
 
+Craft the starting conditions carefully - testing every path that gets to some end conditions seems too large to allow a machine to interleave every possible way of getting there, and the testing of all these subtle changes does not add much to the testing model.
+
 Use skips to avoid some transitions, and focus only on testing the valid ones, eg: skip all defund transitions, then increase the number of packets used, or number of funding cycles, for example.
 
 Scenarios:
