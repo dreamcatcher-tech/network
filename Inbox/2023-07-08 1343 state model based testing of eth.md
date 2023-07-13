@@ -146,6 +146,8 @@ Could maybe configure things like multiple appeals as a starting object, and cra
 
 Maybe making a header can be a totally separate state chart, and can be called upon to generate a header based on some params ?
 
+Do a complete pass thru to completion for a packet, then on done, do it again.  Seems testing all permutations of the path is too daunting a calculation, so we need all possible paths for one packet at a time, then two packets to test our concurrency.
+
 Use skips to avoid some transitions, and focus only on testing the valid ones, eg: skip all defund transitions, then increase the number of packets used, or number of funding cycles, for example.
 
 Scenarios:
