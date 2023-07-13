@@ -70,3 +70,39 @@ Broker contract has a special balanceOf relationship, as it can transact with op
 Cleanup in Seaport - orders automatically timeout after 3 months unless someone puts in some funding, then it will remain present for another 3 months.  Historical items can be relisted by funding them directly in the contract, which will re-up the seaport offering.  Inactivity withdraws from seaport.
 
 Must block anyone submitting a hash that collides with a packetId. Or store packetIds somewhere different.  Else could block contracts from passing by colliding with packets.
+
+Each time a packet is resolved, then funds are imediately transferred to the solutionShare holder accounts.  Avoids confusion over an undrained and a drained packet.  Packets are instantly drained.  BUT this causes a variable gas fee to the QA, incentivizing less accurate share splits.  Also we cannot transfer out NFTs.  So, we might merely update a list of the packets that someone holds funds in, then require them to come drain it.  Store the original holders so their withdrawl ability is independent of share transfers that occured after resolution.
+
+Cannot change QA for a packet, since this is tied to funding - people bought in to the packet based on their trust of the QA.
+
+Make a contract to list packets that have not received QA appraisal.
+
+If you did not withdraw defunded value before appealWindow opens, then your funds are trapped and may be consumed.  So you need to pull them out quickly.
+
+Might make a separate mapping to hold each type of transition and then store them in a transition mapping using the type of transition to ensure no collisions, or avoid a central transition map altogether
+
+QA contract must supply its own appeal process, since it is the expert in the field it offers.
+The DreamEther contract can be walked to determine an appeal rating and quality, and people should switch QAs if they don't like a particular one.
+
+Multiple concurrent solutions have equal weighting in the packet solutionShares.
+
+solutions wrap packets.
+product funds go to component funders and labourers.
+labour and fund distribution based on a balance target.
+attribution actor.
+buyers.
+Funds of product packets go to all component funds, + target margin, then residue goes to the builders.
+Preset the dispersal from the funder.  Set an attributor by formula.
+3 phase: 1) precontractor 2) formula + buyer 3) full AI
+types of labour compared is the same as capital compared to labour, therefore should have an attributor.
+appeal on the attributor ?
+attributor doesn't attribute history.
+premoney attributor history = 0.
+
+should labour only get royalty after funders have their money back ?
+per packet defund delays.
+fund that starts at some condition or time.
+
+How much should be due the smart contract author of the Dreamcatcher ?
+
+Where should a project managers fee be inserted ?  Top level packet, component packets, independent ?
