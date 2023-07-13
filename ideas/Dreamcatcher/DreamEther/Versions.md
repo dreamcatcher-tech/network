@@ -111,4 +111,4 @@ Have a top level statechart action that toggles the cursorid at any point, and d
 
 Concerns from Ben:
 Hanging of funds - getting stuck in the contract with no way out.
-Appeal window from a solution coming in during appeal window.
+Appeal window from a solution coming in during appeal window - gaming of the solutions if an investor wanted to take funds out.
