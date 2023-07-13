@@ -106,3 +106,5 @@ fund that starts at some condition or time.
 How much should be due the smart contract author of the Dreamcatcher ?
 
 Where should a project managers fee be inserted ?  Top level packet, component packets, independent ?
+
+Have a top level statechart action that toggles the cursorid at any point, and drops into the last state that cursor was up to.  Cursors when being switched have their position stored.  Then we go thru switching the cursor at all possible positions.  Actually seems excessive.  
