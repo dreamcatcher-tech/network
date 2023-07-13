@@ -142,6 +142,10 @@ Could do time as a parallel state, where it ticks forwards, and so all the opera
 
 Craft the starting conditions carefully - testing every path that gets to some end conditions seems too large to allow a machine to interleave every possible way of getting there, and the testing of all these subtle changes does not add much to the testing model.
 
+Could maybe configure things like multiple appeals as a starting object, and craft a scenario that can do  any number of appeals that is specified, but not all numbers.  So the path thru the machine is very specific, reducing the combinations, and the reuse of logic is high since the starting params is all that really gets changed.
+
+Maybe making a header can be a totally separate state chart, and can be called upon to generate a header based on some params ?
+
 Use skips to avoid some transitions, and focus only on testing the valid ones, eg: skip all defund transitions, then increase the number of packets used, or number of funding cycles, for example.
 
 Scenarios:
