@@ -13,3 +13,5 @@ In exchange for placing their stock and their funds in this pool, stakers would 
 The transparent and algorithmic operation of this pool would mean that trust could be established as to the pricing of the stock.  Stakers could lock in their stock for long periods to further stabilize the marketplace.
 
 A connector service exists that makes trades using an automated platform such as IBKR, and an escrow service can be set up so the service providers can only be trusted with as much as they have escrowed, to ensure low trust requirements of operation.
+
+Could let people trade in their NFTs that they earned by participating for stock in our company, which would help us get to the 100 shareholders required for listing.  The value of the NFTs could be ascertained based on what was paid for them, so the stock would have some value.
