@@ -14,3 +14,5 @@ The lien could be set to expire after 30 days, unless the lien is executed.
 The NFTs would need to be lien aware, and display as such, so that workers were aware before commiting time.
 
 Provide a swap service that can purchase the lien, add a percentage on top or take from the funding, then supply the funding to the packet unencumbered.
+
+Mint an 1155 token for each CC transaction that we process.  This means the funds can be spent as tho they were money, but are all revoked if the transaction rolls back.
