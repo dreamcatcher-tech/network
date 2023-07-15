@@ -86,3 +86,8 @@ Grab the canon chain and subscribe to it.  Mark all tokens as unverified.  Roll 
 Pull snapshots of the canon chain from github pages, then start building up from the chain yourself using metamask, plus seek peers for canon and sync up with them rapidly.  Have some backup ipfs nodes that ensure everything referenced on chain is available on ipfs.  Provide some peers that are only for reading from for pulses.  If under ddos, at least the github snapshot will be be available, and the chain itself.
 
 If signatures were separate from content in canon, then each client should rebuild the same copy of canon themselves, and so the sync could be very fast.  Canon could be signatureless, and be a calculation only.  
+
+## Create process
+1. Generate an IPFS block that has the neccesary format in it, including the image as b64 encoded json.
+2. Push the pulse to a pinning service, and just general ipfs - distribute enough to be sure the data is available.  Use api ipfs to start, then write a lambda function that takes the data in, holds it for x days, but only returns it if an ethereum block is sent.  Long holds anything that sits in eth chain
+3. 
