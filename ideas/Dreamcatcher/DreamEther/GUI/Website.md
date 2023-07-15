@@ -40,3 +40,5 @@ Create a repo around each packet, or at least a new issue / discussion.
 
 ## Using Infura NFT api
 Seems we might be able to make the whole site run with only their apis as the live access.  Use metamask mobile for signing transactions.  They would give us browse, and the ipfs data would just get pushed into the ipfs api.
+
+By using a predictable packet numbering system, we could allow many NFTs to be queried at once, based on status, or some other common dissection.
