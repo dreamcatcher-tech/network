@@ -87,7 +87,23 @@ Pull snapshots of the canon chain from github pages, then start building up from
 
 If signatures were separate from content in canon, then each client should rebuild the same copy of canon themselves, and so the sync could be very fast.  Canon could be signatureless, and be a calculation only.  
 
+## Lambda backend
+Can be a generic backend for any of our chains that gets set up to return state based on a path to a chain and a pulseId of the relative root.  This is the same service that clients can upload into for preflight, and the same they can use for client persistence between machines.
+Lambda post your pulses each time a new one occurs, then the lambda reaches down the connection to you and gets all the children it needs, verifies you are the signer, then stores it.
+This is the same for any chain at all wishing to use some persistence helpers, and this can be configured to be private, if you sign in with metamask.
+
+Use metamask as a pulse signer ?
+
+## Client persistence
+Push all client pulses to an IPFS pinning service, or to some services that we own ?
+Let people talk to one another using inboxes ?
+Require eth wallet for persistence, so if we see someone who is storing a lot but not creating packets, we can dump their data.
+If everything they do is public, or can be turned on to be public, can get their wallet to send a small tx or sign something that lets us know how to recover their data on another computer.
+Can encrypt everything to their metamask wallet.
+
 ## Create process
 1. Generate an IPFS block that has the neccesary format in it, including the image as b64 encoded json.
-2. Push the pulse to a pinning service, and just general ipfs - distribute enough to be sure the data is available.  Use api ipfs to start, then write a lambda function that takes the data in, holds it for x days, but only returns it if an ethereum block is sent.  Long holds anything that sits in eth chain
-3. 
+2. Preflight - Push the pulse to a pinning service, and just general ipfs - distribute enough to be sure the data is available.  Use api ipfs to start, then write a lambda function that takes the data in, holds it for x days, but only returns it if an ethereum block is sent.  Long holds anything that sits in eth chain
+3. Metamask to create the transaction
+
+## Browsing
