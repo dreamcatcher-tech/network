@@ -65,3 +65,22 @@ May need a central server to relay requests to private apis.
 Can provide chain snapshots down to clients to give rapid synchronization ?
 Seems best to have a powerful always on server that does the syncing of chains, and lets them pull down the big list of every NFT into the browser.
 Post into the chain to upload IPFS content.
+
+## Relay only
+Central server that relays ipfs calls and eth provider calls, using api keys ?
+
+## Full decentralized
+Have some best effort ipfs nodes that people can upload to, provided they have a metamask account that has some credit in it.
+Then run some servers that pin based on the chain material, 
+
+## IPFS data format
+Supposed to be chain format data, but might be also simplified formats so that opensea can receive the data directly ?
+Opensea api would cause server to look up the pulse based on its ipfs hash, then extract out the data inside its state, which it would use as the response to opensea.
+
+## Metamask plus chain gateways
+Metamask gets used as it needs no api keys to run.  Reads the blocks to get the current list of NFTs.
+Each token that the user looks at is checked to get the most up to date version of the data on funding, disputes, qa, and updated headers for packets.  Syncing all transitions will get all possible data, since nothing actually mutates.  This could be a backup method, and is what the serverside method uses to build up the canonical chain that it shares as readonly.
+
+Grab the canon chain and subscribe to it.  Mark all tokens as unverified.  Roll thru all the ETH tokens, and check the ipfs data for all matches what canon says, so can mark as verified.  Means we can display data rapidly to the users, but then
+
+Pull snapshots of the canon chain from github pages, then start building up from the chain yourself using metamask, plus seek peers for canon and sync up with them rapidly.  Have some backup ipfs nodes that ensure everything referenced on chain is available on ipfs.
