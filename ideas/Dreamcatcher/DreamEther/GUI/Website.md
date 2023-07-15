@@ -28,6 +28,10 @@ Charge to generate chains, and then the chains get stored in S3 or github pages 
 
 Should provide some [[Obsidian Plugin]]s so that it is a single click to turn an idea into an NFT.
 
+Cache metadata in the localstorage, and then seek to keep it in sync using one at a time calls to infura.  This would be small at the start, gets us going very quickly
+
+Build up a local browser set of chains that store all the data we pulled down.  List to update events from eth, then present the whole lot as a dreamcatcher chain, so we can continue to use the methods and UI that we already use, rather than independent things.
+
 ## Chains layout
 The browse page should be created server side and updated with results from the eth blockchain and bnb etc, upon which it builds a chain that can be used by a client.
 Could generate entirely from the ethereum blockchain, by getting the user to browse the blocks directly, then use URL calls.  Our url calls should be actual chains as the source of the data, with url lambdas providing a calling interface.  Given that it is ipfs, we should be able to simply use the pinning
@@ -42,3 +46,22 @@ Create a repo around each packet, or at least a new issue / discussion.
 Seems we might be able to make the whole site run with only their apis as the live access.  Use metamask mobile for signing transactions.  They would give us browse, and the ipfs data would just get pushed into the ipfs api.
 
 By using a predictable packet numbering system, we could allow many NFTs to be queried at once, based on status, or some other common dissection.
+
+## Using eth api calls directly
+Would not be able to search the NFTs based on metadata.
+Could download an index file from ipfs that contained indexes of common words to rapidly look up.
+
+## Central Server
+Serve a chain with all NFTs as children on it, that all the clients stay in sync with.
+On eth changes, the central chain is updated, and so all the clients update too.
+But central down, means packets down, so we should use our chain for in browser only.
+So pull in data from eth api and ipfs gateways is the best way.
+Cache in local chains, and keep them up to date locally.
+Store modified token ids in each block, so that we can rapidly catch up given any future block and any past block as the sync boundary.
+Delete this data every day or so, or just every block.  Get a small gas refund back each time.
+May need a central server to relay requests to private apis.
+
+## Lambda servers
+Can provide chain snapshots down to clients to give rapid synchronization ?
+Seems best to have a powerful always on server that does the syncing of chains, and lets them pull down the big list of every NFT into the browser.
+Post into the chain to upload IPFS content.
