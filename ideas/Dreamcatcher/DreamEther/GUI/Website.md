@@ -83,4 +83,6 @@ Each token that the user looks at is checked to get the most up to date version 
 
 Grab the canon chain and subscribe to it.  Mark all tokens as unverified.  Roll thru all the ETH tokens, and check the ipfs data for all matches what canon says, so can mark as verified.  Means we can display data rapidly to the users, but then
 
-Pull snapshots of the canon chain from github pages, then start building up from the chain yourself using metamask, plus seek peers for canon and sync up with them rapidly.  Have some backup ipfs nodes that ensure everything referenced on chain is available on ipfs.
+Pull snapshots of the canon chain from github pages, then start building up from the chain yourself using metamask, plus seek peers for canon and sync up with them rapidly.  Have some backup ipfs nodes that ensure everything referenced on chain is available on ipfs.  Provide some peers that are only for reading from for pulses.  If under ddos, at least the github snapshot will be be available, and the chain itself.
+
+If signatures were separate from content in canon, then each client should rebuild the same copy of canon themselves, and so the sync could be very fast.  Canon could be signatureless, and be a calculation only.  
