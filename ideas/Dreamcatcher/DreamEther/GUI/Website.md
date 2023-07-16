@@ -107,3 +107,7 @@ Can encrypt everything to their metamask wallet.
 3. Metamask to create the transaction
 
 ## Browsing
+1. Use metamask or infura to read the NFTs counting down from the top
+2. Keep updated on each change
+3. download the latest canonical chain from github
+4. browse by opensea api
