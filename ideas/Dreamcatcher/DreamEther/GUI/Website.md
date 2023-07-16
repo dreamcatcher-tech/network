@@ -92,7 +92,8 @@ Can be a generic backend for any of our chains that gets set up to return state 
 Lambda post your pulses each time a new one occurs, then the lambda reaches down the connection to you and gets all the children it needs, verifies you are the signer, then stores it.
 This is the same for any chain at all wishing to use some persistence helpers, and this can be configured to be private, if you sign in with metamask.
 
-Use metamask as a pulse signer ?
+## Use metamask as a pulse signer
+Can encrypt the signing keys of the node against the metamask account.  Then can encrypt all pulses and store publicly.  Metamask on any machine can unlock those keys.
 
 ## Client persistence
 Push all client pulses to an IPFS pinning service, or to some services that we own ?
@@ -111,3 +112,12 @@ Can encrypt everything to their metamask wallet.
 2. Keep updated on each change
 3. download the latest canonical chain from github
 4. browse by opensea api
+
+Store the last block that you synced up to in case a rebuild is required.
+Have a canon chain which holds all the data in our format, but be able to rebuild this from external sources, as our chain might die.  But if it didn't die, then we could rely upon this to be there, and have some strong nodes up that were always available.  Otherwise we might do a lot of calls using the metamask api as we build up each and every NFT.
+
+Filter metamask on events from contract, so we can instantly update ourselves without waiting for the canon chain.  If we started loading from chain first, and race against canon, this is probably the best experience ?  Get NFTs this account owns first.  Storing a version of canon in the ghpages data is also most reliable, since it is guaranteed to work.
+
+We can use infura without a secret, so can read data from it at liberty.  So we might just build up the library locally and not worry about hosting our chains anywhere at first.  Even the NFT urls work with infura using a shared api key, so we should build up using this, so that our calls are very direct.
+
+Using infura NFT api, we can rapidly build up the list of all nfts, for the user and globally, then can build up a local view of the canon chain, which is synced to disk or rebuilt each pageload, then use the chain to make api calls and handle page navigation.
