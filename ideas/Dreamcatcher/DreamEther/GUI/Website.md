@@ -122,4 +122,15 @@ We can use infura without a secret, so can read data from it at liberty.  So we 
 
 Using infura NFT api, we can rapidly build up the list of all nfts, for the user and globally, then can build up a local view of the canon chain, which is synced to disk or rebuilt each pageload, then use the chain to make api calls and handle page navigation.
 
-Do local search by building up the canon chain completely, rather than using the search function in infura.  By the time the
+Do local search by building up the canon chain completely, rather than using the search function in infura.  By the time the number of NFTs is too large for these services, we should have our own infrastructure running reliably.
+
+Use different api keys for users with paid accounts, or with at least one paid NFT, since we want them to be more reliably supported.
+
+## Infura version
+1. Page loads
+2. Get all the NFTs for the main contract using [getNFTsForCollection](https://docs.infura.io/infura-expansion-apis/nft-api/nft-sdk/javascript-api/api-methods#getnftsforcollection)
+	1. paginate rapidly, and store all the results locally, in chain
+	2. If child chain already exists, do not update it
+3. Fetch all image data for those children that we do not have yet
+	1. Makes a fetch queue where the users actions can insert requests at the top of the queue
+2. 
