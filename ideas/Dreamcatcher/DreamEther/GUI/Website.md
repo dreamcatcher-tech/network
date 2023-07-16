@@ -121,3 +121,5 @@ Filter metamask on events from contract, so we can instantly update ourselves wi
 We can use infura without a secret, so can read data from it at liberty.  So we might just build up the library locally and not worry about hosting our chains anywhere at first.  Even the NFT urls work with infura using a shared api key, so we should build up using this, so that our calls are very direct.
 
 Using infura NFT api, we can rapidly build up the list of all nfts, for the user and globally, then can build up a local view of the canon chain, which is synced to disk or rebuilt each pageload, then use the chain to make api calls and handle page navigation.
+
+Do local search by building up the canon chain completely, rather than using the search function in infura.  By the time the
