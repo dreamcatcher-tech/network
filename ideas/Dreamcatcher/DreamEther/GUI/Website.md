@@ -136,4 +136,10 @@ Start with a button to upload your own image.  These are stored locally in draft
 	2. If child chain already exists, do not update it
 3. Fetch all image data for those children that we do not have yet
 	1. Makes a fetch queue where the users actions can insert requests at the top of the queue
-2. 
+
+## Minting
+1. Use the web interface to assemble a metadata payload and an image.
+	1. includes all the overlays of the different token types.
+2. Show a stepper that walks people thru setting up their metamask account
+	1. Later allow them to pay to mint using a credit card
+3. 
