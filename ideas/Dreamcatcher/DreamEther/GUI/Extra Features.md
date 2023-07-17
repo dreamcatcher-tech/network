@@ -1,0 +1,2 @@
+## Propose edits without funding
+The could be comments or edits that are helpful, but you do not want to propose a change to the actual NFT, but rather want to notify anyone who might be working on this packet that they might want to include this info in the next update.

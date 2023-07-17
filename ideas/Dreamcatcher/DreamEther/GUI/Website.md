@@ -134,10 +134,12 @@ Start with a button to upload your own image.  These are stored locally in draft
 2. Get all the NFTs for the main contract using [getNFTsForCollection](https://docs.infura.io/infura-expansion-apis/nft-api/nft-sdk/javascript-api/api-methods#getnftsforcollection) which includes metadata
 	1. paginate rapidly, and store all the results locally, in chain
 	2. If child chain already exists, do not update it
+	3. Go thru all the different chains, pulling in a page at a time from each
+	5. Default sort is funding level
 3. Fetch all image data for those children that we do not have yet
 	1. Makes a fetch queue where the users actions can insert requests at the top of the queue
 	2. uses ipfs via a gateway and infura - a handful of options to ultimately resolve the data
-3. Present the canon chain for browsing and searching and navigating the app
+4. Present the canon chain for browsing and searching and navigating the app
 
 So the trick is to convert the query responses from infura into a pulsechain that we can later use our own infrastructure to host.  Phases
 1. local cache
@@ -148,7 +150,26 @@ So the trick is to convert the query responses from infura into a pulsechain tha
 Goal is to provide a page with zero backend to manage.
 1. Use the web interface to assemble a metadata payload and an image.
 	1. includes all the overlays of the different token types and their metadata.
+	2. Use [infura API](https://docs.infura.io/infura-expansion-apis/nft-api/nft-sdk/javascript-api/metadata-methods) to create conformant metadata
+3. Preflight the payloads into ipfs using infura or some of the public ipfs servers - use several services so have some redundancy.  
 2. Show a stepper that walks people thru setting up their metamask account
 	1. Later allow them to pay to mint using a credit card
-3. Preflight the payloads into ipfs using infura or some of the public ipfs servers - use several services so have some redundancy
-4. 
+
+## Liveliness
+Subscribe to events using metamask, so we can be updated on all different chains making new events.  Update the canon chain whenever new events are received.  If the page has reloaded in some window since the last full NFT pull, then use events to walk ?
+
+## Page sections
+Like gmail, search should be available always, and the side menu is just used to narrow the scope.
+Drafts section of NFTs you have yet to publish.
+Favourites.
+You NFTs, so a Sent section.
+Owned for those that you purchased some of.
+
+Edit would be part of the focused view, like reply, replyAll.  
+Fund would be in the per NFT focused section, so nobody funds things by accident.
+
+View solutions as accordion drop downs which is a separate section under the main packet, so the solution funding is clearly separate.
+Qa queue is a view that removes all the fund buttons, and shows what the QA would see, and shows the position of different items in the queue, based on creation time and fund threshold.
+Quick search as only your published items in the queue.
+
+Mint: Show the IPFS status and links in the browser so they can externally verify
