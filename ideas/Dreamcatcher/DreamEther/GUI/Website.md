@@ -158,6 +158,15 @@ Goal is to provide a page with zero backend to manage.
 ## Liveliness
 Subscribe to events using metamask, so we can be updated on all different chains making new events.  Update the canon chain whenever new events are received.  If the page has reloaded in some window since the last full NFT pull, then use events to walk ?
 
+BUT detecting change can be hard, especially if the nft url was used to query in bulk.
+
+## Ethers page load
+Ethers can use metamask and infura to give redundancy of backends.
+We can query all the events in order to build up an image of what the canon looks like.
+If we do this, then query the metadata using direct calls, or by using the nft api on infura, then this might be fast enough, but highly robust, and has liveliness built in.  The infura pull is large, and could be set up as a side effect that can boost the loading time of a system that would otherwise just walk thru the events.
+
+So start the subscription to events, to build up canon using all new changes.  Then do a bulk query using infura NFT to rapidly load everything.
+
 ## Page sections
 Like gmail, search should be available always, and the side menu is just used to narrow the scope.
 Drafts section of NFTs you have yet to publish.
