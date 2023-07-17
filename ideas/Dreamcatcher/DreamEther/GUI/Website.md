@@ -167,6 +167,9 @@ If we do this, then query the metadata using direct calls, or by using the nft a
 
 So start the subscription to events, to build up canon using all new changes.  Then do a bulk query using infura NFT to rapidly load everything.
 
+## IPFS
+infura endpoints need a secret, so might need a backend after all.  Certainly for demo opening up the secret seems fine.  Also could just use the public IPFS network.  Locally pin in local storage.
+
 ## Page sections
 Like gmail, search should be available always, and the side menu is just used to narrow the scope.
 Drafts section of NFTs you have yet to publish.
