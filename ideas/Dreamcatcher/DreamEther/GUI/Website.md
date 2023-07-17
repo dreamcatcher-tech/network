@@ -179,6 +179,6 @@ Fund would be in the per NFT focused section, so nobody funds things by accident
 
 View solutions as accordion drop downs which is a separate section under the main packet, so the solution funding is clearly separate.
 Qa queue is a view that removes all the fund buttons, and shows what the QA would see, and shows the position of different items in the queue, based on creation time and fund threshold.
-Quick search as only your published items in the queue.
+Quick search has only your published items in the queue.
 
 Mint: Show the IPFS status and links in the browser so they can externally verify
