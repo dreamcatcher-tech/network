@@ -126,6 +126,9 @@ Do local search by building up the canon chain completely, rather than using the
 
 Use different api keys for users with paid accounts, or with at least one paid NFT, since we want them to be more reliably supported.
 
+## Image generation
+Start with a button to upload your own image.  These are stored locally in drafts until committed to ipfs.  Later add an [ai generator](https://clipdrop.co/apis/docs/text-to-image) and store these images locally.
+
 ## Infura version
 1. Page loads
 2. Get all the NFTs for the main contract using [getNFTsForCollection](https://docs.infura.io/infura-expansion-apis/nft-api/nft-sdk/javascript-api/api-methods#getnftsforcollection)
