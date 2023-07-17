@@ -129,17 +129,26 @@ Use different api keys for users with paid accounts, or with at least one paid N
 ## Image generation
 Start with a button to upload your own image.  These are stored locally in drafts until committed to ipfs.  Later add an [ai generator](https://clipdrop.co/apis/docs/text-to-image) and store these images locally.
 
-## Infura version
+## Infura version (no backend)
 1. Page loads
-2. Get all the NFTs for the main contract using [getNFTsForCollection](https://docs.infura.io/infura-expansion-apis/nft-api/nft-sdk/javascript-api/api-methods#getnftsforcollection)
+2. Get all the NFTs for the main contract using [getNFTsForCollection](https://docs.infura.io/infura-expansion-apis/nft-api/nft-sdk/javascript-api/api-methods#getnftsforcollection) which includes metadata
 	1. paginate rapidly, and store all the results locally, in chain
 	2. If child chain already exists, do not update it
 3. Fetch all image data for those children that we do not have yet
 	1. Makes a fetch queue where the users actions can insert requests at the top of the queue
+	2. uses ipfs via a gateway and infura - a handful of options to ultimately resolve the data
+3. Present the canon chain for browsing and searching and navigating the app
+
+So the trick is to convert the query responses from infura into a pulsechain that we can later use our own infrastructure to host.  Phases
+1. local cache
+2. github pages
+3. live infrastructure
 
 ## Minting
+Goal is to provide a page with zero backend to manage.
 1. Use the web interface to assemble a metadata payload and an image.
-	1. includes all the overlays of the different token types.
+	1. includes all the overlays of the different token types and their metadata.
 2. Show a stepper that walks people thru setting up their metamask account
 	1. Later allow them to pay to mint using a credit card
-3. 
+3. Preflight the payloads into ipfs using infura or some of the public ipfs servers - use several services so have some redundancy
+4. 
