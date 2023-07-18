@@ -170,6 +170,8 @@ So start the subscription to events, to build up canon using all new changes.  T
 ## IPFS
 infura endpoints need a secret, so might need a backend after all.  Certainly for demo opening up the secret seems fine.  Also could just use the public IPFS network.  Locally pin in local storage.  Run a service that watches the chains and periodically checks that it has pinned the required data.
 
+Use pinnata since more fine grained ipfs control than infura.  Pinnata to retrieve and pin images and data.  Use the fetch api on the infura nft api, since less config headache.  Use metamask for account management and subscribing to events.
+
 ## Page sections
 Like gmail, search should be available always, and the side menu is just used to narrow the scope.
 Drafts section of NFTs you have yet to publish.
