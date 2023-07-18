@@ -3,3 +3,6 @@ The could be comments or edits that are helpful, but you do not want to propose 
 
 ## View NFTs and token graphics for funds
 If someone funds using a random NFT, we should use the supplied token methods to present that token graphically, and link to the opensea website so they can be appraised.
+
+## Leaderboards
+Show activity for funding and solving and see who is earning the most.
