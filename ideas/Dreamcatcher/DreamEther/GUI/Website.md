@@ -111,3 +111,9 @@ Can encrypt everything to their metamask wallet.
 2. Keep updated on each change
 3. download the latest canonical chain from github
 4. browse by opensea api
+
+## Browsing simple
+
+
+## Requiring metamask
+We need some kind of wallet or something so we can query the blockchains in use.  Otherwise we can only really run off the data that we present and share with the world.
