@@ -172,6 +172,9 @@ infura endpoints need a secret, so might need a backend after all.  Certainly fo
 
 Use pinnata since more fine grained ipfs control than infura.  Pinnata to retrieve and pin images and data.  Use the fetch api on the infura nft api, since less config headache.  Use metamask for account management and subscribing to events.
 
+Could get contract events in batches of blocks, so as to give incremental loading appearance.
+Or, just subscribe to new events, pull down the infura api bulk list, then start incremental loading using some polite rate limits to dribble down.
+
 ## Page sections
 Like gmail, search should be available always, and the side menu is just used to narrow the scope.
 Drafts section of NFTs you have yet to publish.
