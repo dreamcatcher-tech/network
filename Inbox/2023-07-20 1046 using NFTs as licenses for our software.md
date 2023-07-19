@@ -5,3 +5,4 @@
 
 >[!danger] Depends: 
 
+Consumers need to purchase these NFTs to gain access, or to be eligible for support.
