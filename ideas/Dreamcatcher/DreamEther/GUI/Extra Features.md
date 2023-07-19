@@ -6,3 +6,6 @@ If someone funds using a random NFT, we should use the supplied token methods to
 
 ## Leaderboards
 Show activity for funding and solving and see who is earning the most.
+
+## Dev estimations
+Funding is the summation of many commitments, but estimations should be the merge of many estimations.  These should be linked to an account.  In the contract we may update the packet metadata each time a new estimation comes in, so bidders on opensea can see.  Could be restricted to only those whom QA have passed any actions for.
