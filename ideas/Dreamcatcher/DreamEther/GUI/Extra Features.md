@@ -12,3 +12,7 @@ Funding is the summation of many commitments, but estimations should be the merg
 
 ## Treemap of tasks
 Treemaps give a good size estimation view of things.  Can show the graphics of the task in the graph.
+
+## Versions of packets and events
+Let drafts select versions since we can walk our own internal chain to find these changes.
+When packets and headers get changed, can see the history of them, altho possibly in a different way, like a timeline.
