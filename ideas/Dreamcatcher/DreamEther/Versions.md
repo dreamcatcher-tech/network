@@ -115,6 +115,8 @@ Appeal window from a solution coming in during appeal window - gaming of the sol
 
 Run multiple instances of the test machine on the same chain concurrently by mapping the ids between them.  Ensure that each one only ticks forwards one iteration each per block, so we have predictable outcomes.  
 
+Packet solving another packet must be in the solved state.  We need to ensure that no loops can occur - that problem solution tree is DAG
+
 ### Solution to a solved Packet:
 Should be allowed, otherwise packets never improve.  But if they want funding for it, they will need to make a new packet.  An improvement on a solved packet should divert solution shares.
 
