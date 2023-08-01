@@ -114,3 +114,14 @@ Hanging of funds - getting stuck in the contract with no way out.
 Appeal window from a solution coming in during appeal window - gaming of the solutions if an investor wanted to take funds out.
 
 Run multiple instances of the test machine on the same chain concurrently by mapping the ids between them.  Ensure that each one only ticks forwards one iteration each per block, so we have predictable outcomes.  
+
+### Solution to a solved Packet:
+Should be allowed, otherwise packets never improve.  But if they want funding for it, they will need to make a new packet.  An improvement on a solved packet should divert solution shares.
+
+Simpler to just say that later solutions have no solution shares change, since that is only used for funding allocations.  Avoid QA choosing best between all solutions, and let the consumer make that choice, as it could be subjective.  So late solutions, once past QA, are just as important
+
+Finalizing the packet with the final solution makes a summary of the solution shares of everything, and treats them all as equal.  This sets the solutionShares of the packet itself, and this is used for claiming funds.  Withdrawls then look at what you have withdrawn, and then what you are entitled to, and let you pull that out.  There is no central wallet, it just comes back to the callers address.
+
+On your final withdrawl, you get a gas refund as we mark you as fully withdrawn.
+
+But how to point the packet at the chosen solution, particularly if multiple solutions ?  Is it with the downlinks order, as accepted solutions that are higher are considered better, after starting as better ?
