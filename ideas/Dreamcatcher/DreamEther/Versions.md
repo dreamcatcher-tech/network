@@ -129,6 +129,13 @@ Submit results to google for indexing.
 
 The GUI must check if a particular token has approved the contract for transfers.
 
+### Tracking funding tokens
+For every funding asset, we have to generate a unique token id that represents:
+1. the changeId that is being funded, ultimately linked to the packet
+2. the contract address of the asset
+3. the tokenId of the asset
+Further, within the change, we need to track the amount of this token that each address holds during the funding period, and how much has been withdrawn after the solution is found.
+
 ### Separating the erc1155 contract
 Contract size limits being able to have these functions together.  If the balances of everyone was kept separate, then the bank contract could be kept separate from the packet logic, reducing size and allowing a hardier implementation as we would be standards compliant by using openzepplin contracts.  So the front logic just manipulates the erc1155 logic in place.
 
