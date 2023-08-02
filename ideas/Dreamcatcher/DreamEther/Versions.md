@@ -129,6 +129,9 @@ Submit results to google for indexing.
 
 The GUI must check if a particular token has approved the contract for transfers.
 
+### Separating the erc1155 contract
+Contract size limits being able to have these functions together.  If the balances of everyone was kept separate, then the bank contract could be kept separate from the packet logic, reducing size and allowing a hardier implementation as we would be standards compliant by using openzepplin contracts.
+
 ### Solution to a solved Packet:
 Should be allowed, otherwise packets never improve.  But if they want funding for it, they will need to make a new packet.  An improvement on a solved packet should divert solution shares.
 
