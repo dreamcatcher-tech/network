@@ -127,6 +127,8 @@ Include trading activity in the events feed
 
 Submit results to google for indexing.
 
+The GUI must check if a particular token has approved the contract for transfers.
+
 ### Solution to a solved Packet:
 Should be allowed, otherwise packets never improve.  But if they want funding for it, they will need to make a new packet.  An improvement on a solved packet should divert solution shares.
 
