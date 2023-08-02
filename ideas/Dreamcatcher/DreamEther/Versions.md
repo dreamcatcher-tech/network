@@ -138,6 +138,12 @@ Further, within the change, we need to track the amount of this token that each 
 
 We could avoid storing the funding shares inside the packet, and rather just track all the assetIds that it contains, with the balances being held in a global map.
 
+Could make the tokenId be the packetId, but the traits are different in the metadata.
+
+Solution share trading can be done before or during or after the funds are withdrawn, so how to track what each share took out ?
+Move the funding share and the withdrawn balance as a stabled token, where they move together.
+
+
 ### Separating the erc1155 contract
 Contract size limits being able to have these functions together.  If the balances of everyone was kept separate, then the bank contract could be kept separate from the packet logic, reducing size and allowing a hardier implementation as we would be standards compliant by using openzepplin contracts.  So the front logic just manipulates the erc1155 logic in place.
 
