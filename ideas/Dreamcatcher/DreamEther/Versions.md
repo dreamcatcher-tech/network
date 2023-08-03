@@ -140,6 +140,12 @@ If the wallet was just the mirror of withdrawls, then can move both the wallet a
 Does some transfer amounts of contentShares become blocked since cannot move the corresponding portion of withdrawls along with it ?
 Could always transfer the withdrawn contentShares first, so only if you transfer more than you have withdrawn does the  withdrawl not get altered.
 _Simpler to block trades if your contentShares can claim some funds_
+
+BUT the fungibility is always guaranteed as withdrawls matches 1:1.  So we could allow partial claims, but really just a complication rather than a feature.
+Trouble is the value is different depending on whether the contentShare is loaded or not.
+Blocking trades until fully claimed is easiest.
+
+Claim amount will be the biggest whole amount that can be withdrawn.  So basically signed integer math which truncates down. So you can only claim solution shares that have not been maximally claimed.
 ### Tracking funding tokens
 For every funding asset, we have to generate a unique token id that represents:
 1. the changeId that is being funded, ultimately linked to the packet

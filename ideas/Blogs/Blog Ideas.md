@@ -145,7 +145,9 @@ how much should we pay the people that told us how much we should pay ?
 draw on the parallels to CQRS in programming, and promises, and other areas where events as things become very much easier to control and model.  Talk about the advantages of project management if tasks are treated as objects, and each one is independent.  Some kind of calculation about degrees of freedom in a project and bottleneck removal if each task is independent.  Value in overlap with other projects.  The benefits of broadcasting, since you can be discovered by your task advertisement possibly, versus definitely not being discovered if you're closed.
 
 ## Corporate governance using Packets
-Unidirectional control flow.  Separate devs from corporate governance.  Zero employee management.  Ultimate in outsourcing.  Run rate control as time no longer matters.  Pivot instantly with zero team reconfiguring.  Self organizing where teams can self optimize.  Pay for hours and attendance, then you'll get exactly that.  Emphasis on task definition, killing chaos at its root, where the lack of clear top down direction invites all kind of speculation.
+Unidirectional control flow.  Separate devs from corporate governance.  Zero employee management.  Ultimate in outsourcing.  Run rate control as time no longer matters.  Pivot instantly with zero team reconfiguring.  Self organizing where teams can self optimize.  Pay for hours and attendance, then you'll get exactly that.  Emphasis on task definition, killing chaos at its root, where the lack of clear top down direction invites all kind of speculation.  Makes accounting for assets easier, as it is not one large fuzzy unfinished thing, but discrete things with known costs to completion that sum.
+
+Section on private tasks.
 
 Natural companion for decentralized royalties, since you can share the same goals as others, disagree on the path, and simply travel that way and see who wins.
 
