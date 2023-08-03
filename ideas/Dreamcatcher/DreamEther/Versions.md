@@ -139,6 +139,7 @@ But needs to be an amount, as can combine wallets in different states.
 If the wallet was just the mirror of withdrawls, then can move both the wallet and the withdrawls around freely.
 Does some transfer amounts of contentShares become blocked since cannot move the corresponding portion of withdrawls along with it ?
 Could always transfer the withdrawn contentShares first, so only if you transfer more than you have withdrawn does the  withdrawl not get altered.
+_Simpler to block trades if your contentShares can claim some funds_
 ### Tracking funding tokens
 For every funding asset, we have to generate a unique token id that represents:
 1. the changeId that is being funded, ultimately linked to the packet

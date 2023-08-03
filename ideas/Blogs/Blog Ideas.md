@@ -143,3 +143,6 @@ how much should we pay the people that told us how much we should pay ?
 
 ## Turning events into things
 draw on the parallels to CQRS in programming, and promises, and other areas where events as things become very much easier to control and model.  Talk about the advantages of project management if tasks are treated as objects, and each one is independent.  Some kind of calculation about degrees of freedom in a project and bottleneck removal if each task is independent.  Value in overlap with other projects.  The benefits of broadcasting, since you can be discovered by your task advertisement possibly, versus definitely not being discovered if you're closed.
+
+## Corporate governance using Packets
+Unidirectional control flow.  Separate devs from corporate governance.  Zero employee management.  Ultimate in outsourcing.
