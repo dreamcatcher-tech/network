@@ -129,6 +129,8 @@ Submit results to google for indexing.
 
 The GUI must check if a particular token has approved the contract for transfers.
 
+Present a view of the funding summarized in USD or whatever other currency you wish, which also appraises the value of 
+Then show what future values of the token could be, based on projected decentralized revenues.
 ### Tracking funding tokens
 For every funding asset, we have to generate a unique token id that represents:
 1. the changeId that is being funded, ultimately linked to the packet
@@ -141,7 +143,7 @@ We could avoid storing the funding shares inside the packet, and rather just tra
 Could make the tokenId be the packetId, but the traits are different in the metadata.
 
 Solution share trading can be done before or during or after the funds are withdrawn, so how to track what each share took out ?
-Move the funding share and the withdrawn balance as a stabled token, where they move together.
+Move the funding share and the withdrawn balance as a stapled token, where they move together.
 
 
 ### Separating the erc1155 contract
