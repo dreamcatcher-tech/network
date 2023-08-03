@@ -131,6 +131,14 @@ The GUI must check if a particular token has approved the contract for transfers
 
 Present a view of the funding summarized in USD or whatever other currency you wish, which also appraises the value of 
 Then show what future values of the token could be, based on projected decentralized revenues.
+
+withdraw of only some funding assets then a transfer of only some contentShares is a problem ?
+If can only transfer after max claim, then seems safer ?  No confusion or rug pulls, no delay mechanism required.  isTradeable() function can determine if any claim is possible.
+So withdrawls would be a bool, whether or not they had withdrawn their share ?
+But needs to be an amount, as can combine wallets in different states.
+If the wallet was just the mirror of withdrawls, then can move both the wallet and the withdrawls around freely.
+Does some transfer amounts of contentShares become blocked since cannot move the corresponding portion of withdrawls along with it ?
+Could always transfer the withdrawn contentShares first, so only if you transfer more than you have withdrawn does the  withdrawl not get altered.
 ### Tracking funding tokens
 For every funding asset, we have to generate a unique token id that represents:
 1. the changeId that is being funded, ultimately linked to the packet
