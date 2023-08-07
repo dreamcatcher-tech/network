@@ -160,6 +160,8 @@ These assets could be treated like any other NFT in the contract ?
 
 But how can we fund things from this withdrawal staging area ?
 
+What about funding one packet with shares in another packet ?
+
 ### Tracking funding tokens
 For every funding asset, we have to generate a unique token id that represents:
 1. the changeId that is being funded, ultimately linked to the packet
