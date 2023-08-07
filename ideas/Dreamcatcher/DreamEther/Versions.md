@@ -146,6 +146,20 @@ Trouble is the value is different depending on whether the contentShare is loade
 Blocking trades until fully claimed is easiest.
 
 Claim amount will be the biggest whole amount that can be withdrawn.  So basically signed integer math which truncates down. So you can only claim solution shares that have not been maximally claimed.
+
+## Misbehaving contracts
+defund and claim are susceptible to a misbehaving token contract taking all the gas, or reverting the transaction and blocking all the other assets from being withdrawn.
+They are also susceptible to high withdrawal costs.
+Lastly, a transfer of many small amounts can expend excess gas if each move inside our contract also updates the external contract too.
+
+One solution is to make claim and defund simply move funds to a top level wallet where all the assets accumulate based on a single address.  Then withdrawal can be done by a specific ID, rather than complicating the packet interaction logic.
+
+Making these functions difficult to use is less of a concern than getting funds in. 
+
+These assets could be treated like any other NFT in the contract ?
+
+But how can we fund things from this withdrawal staging area ?
+
 ### Tracking funding tokens
 For every funding asset, we have to generate a unique token id that represents:
 1. the changeId that is being funded, ultimately linked to the packet
