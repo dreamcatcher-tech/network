@@ -8,3 +8,4 @@ Images and descriptions can be done using pop up modals or a cli based editor, s
 
 Might be a fast way of getting things working, plus get the covenants design worked out ?
 
+Should be able to control the whole contract with just a CLI version of the app.  Can display images using a terminal image generator.
