@@ -182,6 +182,10 @@ Claims would be a struct
 Using the exits pool there is no need to worry about misbehaving contracts - any claims are fully done.  Claims are always maximum possible, and always the full amount.
 If you did not have enough shares to get any piece of the funding, then those who remain get your share.
 Claims then, is a count of how many shares you hold have been moved to the exit pool.
+
+### Managing funding shares and content shares as one
+If upon change creation, there was an NFT created representing the content shares, then this is managed in the same structure as the funding shares, as it simply represents an nftId.
+
 ### Separating the erc1155 contract
 Contract size limits being able to have these functions together.  If the balances of everyone was kept separate, then the bank contract could be kept separate from the packet logic, reducing size and allowing a hardier implementation as we would be standards compliant by using openzepplin contracts.  So the front logic just manipulates the erc1155 logic in place.
 
