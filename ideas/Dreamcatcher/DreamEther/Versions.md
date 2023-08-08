@@ -12,6 +12,7 @@ data hashes are really the thing we're tying to get merged in.
 ## Oddities
 Packets can never be rejected as they only get created when the packet header passes QA, and the contract is made so that once QA'd it can never be un QA'd.  That which is done stays done.
 
+All traded NFT shares need to be fully withdrawn from, else they are something different and enable rug pulls, plus may have some weird securities implications, or other oddities since you would be trading the assets as well as the NFTs.
 ## Notes
 
 ? could we split the distinction between packet writers and solution writers ?  Why not bundle them as the same ?
@@ -188,7 +189,7 @@ If upon change creation, there was an NFT created representing the content share
 
 ### Avoid normalizing shares by waiting till all are settled
 As long as isPossible() returns true, avoid allocating any contentShares for the packet.  Once the final solution is settled, only then does the summation of all get done.
-Until that point, we can know that the
+Until that point, we can know that the contentShares are not assigned as there will be no holders.
 
 ### Nesting of ipfs data for different token types
 If by default the app generates a small filesystem, which composits the base NFT image with some decorative data like header, dispute, qa, solution.  Then it also contains different metadata for each type, which includes some traits that get displayed with the token.  Makes the token flavourings a bit better.  May include some basic token types, like DAI and ETH and USDT, NFT, ERC1155.
