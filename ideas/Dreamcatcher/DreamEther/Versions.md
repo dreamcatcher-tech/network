@@ -176,7 +176,12 @@ Could make the tokenId be the packetId, but the traits are different in the meta
 Solution share trading can be done before or during or after the funds are withdrawn, so how to track what each share took out ?
 Move the funding share and the withdrawn balance as a stapled token, where they move together.
 
-
+What if claims were measured in contentShare units ?
+Could then, transfers of unclaimed funds be permitted easily ?
+Claims would be a struct
+Using the exits pool there is no need to worry about misbehaving contracts - any claims are fully done.  Claims are always maximum possible, and always the full amount.
+If you did not have enough shares to get any piece of the funding, then those who remain get your share.
+Claims then, is a count of how many shares you hold have been moved to the exit pool.
 ### Separating the erc1155 contract
 Contract size limits being able to have these functions together.  If the balances of everyone was kept separate, then the bank contract could be kept separate from the packet logic, reducing size and allowing a hardier implementation as we would be standards compliant by using openzepplin contracts.  So the front logic just manipulates the erc1155 logic in place.
 
