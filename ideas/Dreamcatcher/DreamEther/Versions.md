@@ -186,6 +186,13 @@ Claims then, is a count of how many shares you hold have been moved to the exit 
 ### Managing funding shares and content shares as one
 If upon change creation, there was an NFT created representing the content shares, then this is managed in the same structure as the funding shares, as it simply represents an nftId.
 
+### Avoid normalizing shares by waiting till all are settled
+As long as isPossible() returns true, avoid allocating any contentShares for the packet.  Once the final solution is settled, only then does the summation of all get done.
+Until that point, we can know that the
+
+### Nesting of ipfs data for different token types
+If by default the app generates a small filesystem, which composits the base NFT image with some decorative data like header, dispute, qa, solution.  Then it also contains different metadata for each type, which includes some traits that get displayed with the token.  Makes the token flavourings a bit better.  May include some basic token types, like DAI and ETH and USDT, NFT, ERC1155.
+
 ### Separating the erc1155 contract
 Contract size limits being able to have these functions together.  If the balances of everyone was kept separate, then the bank contract could be kept separate from the packet logic, reducing size and allowing a hardier implementation as we would be standards compliant by using openzepplin contracts.  So the front logic just manipulates the erc1155 logic in place.
 
