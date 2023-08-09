@@ -12,3 +12,5 @@ Means you could make an "app" by loading up the LLM with a bunch of prior knowle
 So you could present a document that was like "business plan v1" and it be very short, but its backed by a lot of knowledge, and so based on the summary, people could type in questions about the document.  These questions could be publicized, and they could also be seen by the authors.  The machine should know when it doesn't fully know how to respond, and should escalate to human in realtime.  In this way, the humans do not carry the burden of every query, but rather build up a body of knowledge that is constantly being parsed for contradictions.
 
 The same could be done for design specs of a very complex system, like interbit.  We could ensure that the chatbot is always on the lookout for contradictions, and takes all the informal answers and keeps a list of features and summary about those features up to date.
+
+Could be used to put jobs out to have humans work on them to get good quality output, like resolving a business model to be simple.
