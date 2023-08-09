@@ -14,3 +14,5 @@ So you could present a document that was like "business plan v1" and it be very 
 The same could be done for design specs of a very complex system, like interbit.  We could ensure that the chatbot is always on the lookout for contradictions, and takes all the informal answers and keeps a list of features and summary about those features up to date.
 
 Could be used to put jobs out to have humans work on them to get good quality output, like resolving a business model to be simple.
+
+Can represent these things as our chains, and then have a standard API way to regenerate them.
