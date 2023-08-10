@@ -9,10 +9,18 @@ merging packets
 
 data hashes are really the thing we're tying to get merged in.
 
+
 ## Oddities
 Packets can never be rejected as they only get created when the packet header passes QA, and the contract is made so that once QA'd it can never be un QA'd.  That which is done stays done.
 
 All traded NFT shares need to be fully withdrawn from, else they are something different and enable rug pulls, plus may have some weird securities implications, or other oddities since you would be trading the assets as well as the NFTs.
+
+## TODO
+disputes
+withdrawls of all token types
+funds using exit balance first
+revoke approval for preapproved contracts
+
 ## Notes
 
 ? could we split the distinction between packet writers and solution writers ?  Why not bundle them as the same ?
