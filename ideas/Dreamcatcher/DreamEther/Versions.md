@@ -20,6 +20,8 @@ disputes
 withdrawls of all token types
 funds using exit balance first
 revoke approval for preapproved contracts
+transferring erc1155 to and from this contract
+listing on opensea
 
 ## Notes
 
