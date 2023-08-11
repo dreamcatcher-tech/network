@@ -228,3 +228,6 @@ But how to point the packet at the chosen solution, particularly if multiple sol
 If we abandon the notion of lazy listing on opensea, then we keep the token supply sane and genuine, and people can still buy on opensea by offering for funding shares.  If the offer covers the costs of funding outside of opensea, then a bot should be able to take profit by fulfilling the order.  We could allow instant defund within an hour, so that nobody gets sniped.  Basically, don't waste money, use our contract directly for funding.
 
 DAI nfts should be minted with every change, so they show on opensea without any funding required to be put in, and a supply of zero.
+
+### trade fees should go to the shareholders
+Any trades would send some fees to the content shareholders.  We don't know how to split this between funding, but we should definitely split between content holders, as a further incentive to own these shares ?
