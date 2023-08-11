@@ -17,6 +17,8 @@ All traded NFT shares need to be fully withdrawn from, else they are something d
 
 ## TODO
 disputes
+merge and edit
+defund during dispute windows
 withdrawls of all token types
 funds using exit balance first
 revoke approval for preapproved contracts
