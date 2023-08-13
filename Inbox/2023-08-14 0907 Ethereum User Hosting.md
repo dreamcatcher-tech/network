@@ -16,4 +16,3 @@ Company can be launched with just purely a smart contract and a static web page.
 The hosting company would charge a fee, since it needs to take on the audit burden, but because it takes it on for infrastructure that can be scaled easily, it can afford to sell this service.
 
 The burden of KYC can also be passed to this company, to handle account recovery permissions.
-
