@@ -152,3 +152,7 @@ Section on private tasks.
 Natural companion for decentralized royalties, since you can share the same goals as others, disagree on the path, and simply travel that way and see who wins.
 
 Extensions - extending the packet model to both lawyers and other services the company consumes.
+
+## Comparison with external tasks to jira boards
+talk about the ills of poorly defined tasks, tasks where the hours expended have no hard cap as opposed to a fixed payment upon completion.  QA on the task definition is important.  Sharing the tasks, particularly where the tasks are open public anyway, is important.
+Benefits in commemorating the task with an NFT.
