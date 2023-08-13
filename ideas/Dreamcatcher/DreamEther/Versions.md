@@ -24,6 +24,8 @@ funds using exit balance first
 revoke approval for preapproved contracts
 transferring erc1155 to and from this contract
 listing on opensea
+## Viewer:
+Diff view between versions, and even between packets.
 
 ## Notes
 
@@ -231,3 +233,8 @@ DAI nfts should be minted with every change, so they show on opensea without any
 
 ### trade fees should go to the shareholders
 Any trades would send some fees to the content shareholders.  We don't know how to split this between funding, but we should definitely split between content holders, as a further incentive to own these shares ?
+
+## Making an internal wallet mechanism
+We could make the withdrawl mechanism also take deposits.  Then these can be used to fund different packets, particularly as doing a fundBatch type of operation.
+Be able to fund packets where it is known that the funds are split between multiple packets, going to the first to complete, instantly defunding the others. Could be done as a form of erc20 token
+
