@@ -233,8 +233,19 @@ DAI nfts should be minted with every change, so they show on opensea without any
 
 ### trade fees should go to the shareholders
 Any trades would send some fees to the content shareholders.  We don't know how to split this between funding, but we should definitely split between content holders, as a further incentive to own these shares ?
-
-## Making an internal wallet mechanism
+NO there should be no rake on the contract - focus on the AI to attribute to everyone.
+### Making an internal wallet mechanism
 We could make the withdrawl mechanism also take deposits.  Then these can be used to fund different packets, particularly as doing a fundBatch type of operation.
 Be able to fund packets where it is known that the funds are split between multiple packets, going to the first to complete, instantly defunding the others. Could be done as a form of erc20 token
 
+
+### Shadowing the main contract using QA, so that opensea listings use the QA address
+The QA should be used as the listing agency, otherwise the main contract can be spammed.
+So the QA should be the one that emits the events.
+
+### Using polygon
+tx is so cheap that we can fund the accounts directly.
+If people sign up, and deposit some credit card funds in our system, we will keep their wallet topped up with matic, and replenish so long as they are using our contracts.
+We might be able to make relays like using gasstation to let users have no gas.
+
+To overcome hurdles in UX, we could let users sign in using auth0, then we would manage their transaction operations, and so we would keep wallets we control topped up and operational.
