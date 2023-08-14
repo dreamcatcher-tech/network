@@ -245,6 +245,8 @@ If a burn function was provided for assets inside a change, and if single withdr
 Withdrawal of everything is still possible.
 Defund becomes the same as claim.
 ? multi packet withdrawl mechnism to reduce gas ?
+
+Or if we abandon using exits as a funding mechanism, we still have grief protection, an lose no features.
 ### Shadowing the main contract using QA, so that opensea listings use the QA address
 The QA should be used as the listing agency, otherwise the main contract can be spammed.
 So the QA should be the one that emits the events.
