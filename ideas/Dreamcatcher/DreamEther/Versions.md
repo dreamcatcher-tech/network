@@ -164,6 +164,8 @@ Claim amount will be the biggest whole amount that can be withdrawn.  So basical
 
 Making a single state struct and passing that around seems to add only another 4k gas to transactions that use this method.
 
+? Can we break down the contract into different levels of functionality, so things can be tested in isolation, like the trading and defunding functions ?
+
 ## Misbehaving contracts
 defund and claim are susceptible to a misbehaving token contract taking all the gas, or reverting the transaction and blocking all the other assets from being withdrawn.
 They are also susceptible to high withdrawal costs.
