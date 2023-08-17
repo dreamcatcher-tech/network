@@ -168,6 +168,8 @@ Making a single state struct and passing that around seems to add only another 4
 
 What if we could configure the end state we want in context, and the machine runs every way it can possible get to finished and have the desired end state ?
 Then the tests are just defining some end conditions ?
+
+onERC1155Received should be called when QA submits.  Then the tokens should be minted, but their transfer is restricted until enactment.  Disputes burn those tokens.  Means that receivers can do something about their recievings, and stops human errors from QA.
 ## Misbehaving contracts
 defund and claim are susceptible to a misbehaving token contract taking all the gas, or reverting the transaction and blocking all the other assets from being withdrawn.
 They are also susceptible to high withdrawal costs.
