@@ -166,6 +166,8 @@ Making a single state struct and passing that around seems to add only another 4
 
 ? Can we break down the contract into different levels of functionality, so things can be tested in isolation, like the trading and defunding functions ?
 
+What if we could configure the end state we want in context, and the machine runs every way it can possible get to finished and have the desired end state ?
+Then the tests are just defining some end conditions ?
 ## Misbehaving contracts
 defund and claim are susceptible to a misbehaving token contract taking all the gas, or reverting the transaction and blocking all the other assets from being withdrawn.
 They are also susceptible to high withdrawal costs.
