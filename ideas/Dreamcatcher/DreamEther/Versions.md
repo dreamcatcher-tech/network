@@ -31,7 +31,9 @@ Diff view between versions, and even between packets.
 testing each state in detail, and then using state suppression functions to filter out all the paths intrastate.  This reduces the vast explosion of paths down.  Inner state testing becomes akin to unit tests.  The full model might be years to compute, but innerstate and then a few simple paths thru it for the sake of everything else might be sufficient.
 Therefore in running all the innerstate tests, the majority of interactions with outside states should be covered.  Minute fluctuations about how each external state arrived as its final condition will have diminishing returns, and will drown the model.  Also many of the combinations are designed to occur or not occur and have no affect.
 
+If break down actions that test the same function or have some invariants to test, then should use the `state` functions of the model.  This means that if we enter the `trade` state, then we want to do some checks about not trading with zero balance.  If we enter the `qaClaim` state, then we can check the claim empty test, which really doesn't change much of interest such as multiple actors balances, and we can also check the qa claiming from a packet when we are in the solved state
 
+So the actions are reserved for things that keep the system moving forwards, and states can be used to make assertions about the states of things in the system.  If we don' t do this, then the number of possible paths in the system explodes.
 
 ## Notes
 
