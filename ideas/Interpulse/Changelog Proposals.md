@@ -17,7 +17,7 @@ Attribution Table - this should be calculated from the covenant
 [[Covenant Migration and Protocol Migration]] These should be the same
 [[Covenant installation, isolation, and distribution]]
 [[Request for BFT Punishment]]
-
+Binary storage for storing images without using json
 
 ## Draft
 [[2023-06-29 1154 mango queries on children]]

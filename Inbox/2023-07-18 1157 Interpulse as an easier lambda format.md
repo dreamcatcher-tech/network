@@ -11,5 +11,13 @@ We can put guards that throw an error if a secret makes it into state or action 
 
 Using our framework, could make your whole backend and user auth with very little effort, and stay totally mobile to move the infrastructure wherever you like.  Plus we can provide http gateways to translate external requests into chain requests for compatibility.  Again you don't need to do much except use the web interface to make changes to the chain that you share with the hosting provider.  So the provider is controlled by the same api as the app itself uses.
 
-## Use Case: proxying requests with credentials
+
+
+## Use Cases: 
+### proxying requests with credentials
 Making an app that needs to make some queries to some external APIs but needs to use secrets to authenticate.  Don't want those secrets on the net, so need to proxy thru something.  This would normally require setting up a bunch of annoying things and keeping them running.  In Interpulse we would just specify some conditions in the config of the chain, and then a hosting provider would handle the rest, including scale.
+
+### Triggering function on Ethereum event
+Trigger by event or by some state change that was being watched.
+Provides a way to set up oracles and other services that need the same resiliency and decentralization as Ethereum, but with more features.
+Anyone that needs Ethereum services should surely value our feature set a lot more and be prepared to pay for it.
