@@ -92,7 +92,8 @@ Can be a generic backend for any of our chains that gets set up to return state 
 Lambda post your pulses each time a new one occurs, then the lambda reaches down the connection to you and gets all the children it needs, verifies you are the signer, then stores it.
 This is the same for any chain at all wishing to use some persistence helpers, and this can be configured to be private, if you sign in with metamask.
 
-Use metamask as a pulse signer ?
+## Use metamask as a pulse signer
+Can encrypt the signing keys of the node against the metamask account.  Then can encrypt all pulses and store publicly.  Metamask on any machine can unlock those keys.
 
 ## Client persistence
 Push all client pulses to an IPFS pinning service, or to some services that we own ?
@@ -112,8 +113,84 @@ Can encrypt everything to their metamask wallet.
 3. download the latest canonical chain from github
 4. browse by opensea api
 
-## Browsing simple
 
 
 ## Requiring metamask
 We need some kind of wallet or something so we can query the blockchains in use.  Otherwise we can only really run off the data that we present and share with the world.
+Store the last block that you synced up to in case a rebuild is required.
+Have a canon chain which holds all the data in our format, but be able to rebuild this from external sources, as our chain might die.  But if it didn't die, then we could rely upon this to be there, and have some strong nodes up that were always available.  Otherwise we might do a lot of calls using the metamask api as we build up each and every NFT.
+
+Filter metamask on events from contract, so we can instantly update ourselves without waiting for the canon chain.  If we started loading from chain first, and race against canon, this is probably the best experience ?  Get NFTs this account owns first.  Storing a version of canon in the ghpages data is also most reliable, since it is guaranteed to work.
+
+We can use infura without a secret, so can read data from it at liberty.  So we might just build up the library locally and not worry about hosting our chains anywhere at first.  Even the NFT urls work with infura using a shared api key, so we should build up using this, so that our calls are very direct.
+
+Using infura NFT api, we can rapidly build up the list of all nfts, for the user and globally, then can build up a local view of the canon chain, which is synced to disk or rebuilt each pageload, then use the chain to make api calls and handle page navigation.
+
+Do local search by building up the canon chain completely, rather than using the search function in infura.  By the time the number of NFTs is too large for these services, we should have our own infrastructure running reliably.
+
+Use different api keys for users with paid accounts, or with at least one paid NFT, since we want them to be more reliably supported.
+
+## Image generation
+Start with a button to upload your own image.  These are stored locally in drafts until committed to ipfs.  Later add an [ai generator](https://clipdrop.co/apis/docs/text-to-image) and store these images locally.
+
+## Infura version (no backend)
+1. Page loads
+2. Get all the NFTs for the main contract using [getNFTsForCollection](https://docs.infura.io/infura-expansion-apis/nft-api/nft-sdk/javascript-api/api-methods#getnftsforcollection) which includes metadata
+	1. paginate rapidly, and store all the results locally, in chain
+	2. If child chain already exists, do not update it
+	3. Go thru all the different chains, pulling in a page at a time from each
+	5. Default sort is funding level
+3. Fetch all image data for those children that we do not have yet
+	1. Makes a fetch queue where the users actions can insert requests at the top of the queue
+	2. uses ipfs via a gateway and infura - a handful of options to ultimately resolve the data
+4. Present the canon chain for browsing and searching and navigating the app
+
+So the trick is to convert the query responses from infura into a pulsechain that we can later use our own infrastructure to host.  Phases
+1. local cache
+2. github pages
+3. live infrastructure
+
+## Minting
+Goal is to provide a page with zero backend to manage.
+1. Use the web interface to assemble a metadata payload and an image.
+	1. includes all the overlays of the different token types and their metadata.
+	2. Use [infura API](https://docs.infura.io/infura-expansion-apis/nft-api/nft-sdk/javascript-api/metadata-methods) to create conformant metadata
+3. Preflight the payloads into ipfs using infura or some of the public ipfs servers - use several services so have some redundancy.  
+2. Show a stepper that walks people thru setting up their metamask account
+	1. Later allow them to pay to mint using a credit card
+
+## Liveliness
+Subscribe to events using metamask, so we can be updated on all different chains making new events.  Update the canon chain whenever new events are received.  If the page has reloaded in some window since the last full NFT pull, then use events to walk ?
+
+BUT detecting change can be hard, especially if the nft url was used to query in bulk.
+
+## Ethers page load
+Ethers can use metamask and infura to give redundancy of backends.
+We can query all the events in order to build up an image of what the canon looks like.
+If we do this, then query the metadata using direct calls, or by using the nft api on infura, then this might be fast enough, but highly robust, and has liveliness built in.  The infura pull is large, and could be set up as a side effect that can boost the loading time of a system that would otherwise just walk thru the events.
+
+So start the subscription to events, to build up canon using all new changes.  Then do a bulk query using infura NFT to rapidly load everything.
+
+## IPFS
+infura endpoints need a secret, so might need a backend after all.  Certainly for demo opening up the secret seems fine.  Also could just use the public IPFS network.  Locally pin in local storage.  Run a service that watches the chains and periodically checks that it has pinned the required data.
+
+Use pinnata since more fine grained ipfs control than infura.  Pinnata to retrieve and pin images and data.  Use the fetch api on the infura nft api, since less config headache.  Use metamask for account management and subscribing to events.
+
+Could get contract events in batches of blocks, so as to give incremental loading appearance.
+Or, just subscribe to new events, pull down the infura api bulk list, then start incremental loading using some polite rate limits to dribble down.
+
+## Page sections
+Like gmail, search should be available always, and the side menu is just used to narrow the scope.
+Drafts section of NFTs you have yet to publish.
+Favourites.
+You NFTs, so a Sent section.
+Owned for those that you purchased some of.
+
+Edit would be part of the focused view, like reply, replyAll.  
+Fund would be in the per NFT focused section, so nobody funds things by accident.
+
+View solutions as accordion drop downs which is a separate section under the main packet, so the solution funding is clearly separate.
+Qa queue is a view that removes all the fund buttons, and shows what the QA would see, and shows the position of different items in the queue, based on creation time and fund threshold.
+Quick search has only your published items in the queue.
+
+Mint: Show the IPFS status and links in the browser so they can externally verify
