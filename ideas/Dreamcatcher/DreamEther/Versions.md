@@ -35,6 +35,10 @@ If break down actions that test the same function or have some invariants to tes
 
 So the actions are reserved for things that keep the system moving forwards, and states can be used to make assertions about the states of things in the system.  If we don' t do this, then the number of possible paths in the system explodes.
 
+Be ok letting a state die - if it was to trade, and then conditions were not met, stalling in the state is the same as putting a conditional on the transition - it doesn't have to leave the state.
+
+If there are some invariants to test, then use a state.  If there isn't and theres only one action to take, use an aciton.  `trade` state can be used to check everyones balances hold true as the model predicts.
+
 ## Notes
 
 
