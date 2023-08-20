@@ -156,3 +156,6 @@ Extensions - extending the packet model to both lawyers and other services the c
 ## Comparison with external tasks to jira boards
 talk about the ills of poorly defined tasks, tasks where the hours expended have no hard cap as opposed to a fixed payment upon completion.  QA on the task definition is important.  Sharing the tasks, particularly where the tasks are open public anyway, is important.
 Benefits in commemorating the task with an NFT.
+
+## Unix way
+do a one to one mapping of the unix way and unix components and point to how we do things in our design.
