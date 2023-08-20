@@ -41,6 +41,11 @@ If there are some invariants to test, then use a state.  If there isn't and ther
 
 ## Notes
 
+Make a flag that is set in the header
+
+Make PC be a QA so he can pass or fail work ?
+Or make him be an assembler, that is higher up the stack, so he doesn't get bogged down ?
+Or have tech QA and artistic QA, and he can dispute anyone, but has some QAs that work for him ?
 
 ? could we split the distinction between packet writers and solution writers ?  Why not bundle them as the same ?
 fees for QA should also count as funding types ?  If the qa fees were treated the exact same as funding, then there are less NFT types to consider.  NFTs commemorate being either part of the solution, or incentivizing the solution.
