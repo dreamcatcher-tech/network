@@ -39,9 +39,12 @@ Be ok letting a state die - if it was to trade, and then conditions were not met
 
 If there are some invariants to test, then use a state.  If there isn't and theres only one action to take, use an aciton.  `trade` state can be used to check everyones balances hold true as the model predicts.
 
+Perhaps if we could prove that each state was independent of how the others were, we could test them in isolation ?
+
 ## Notes
 
-Make a flag that is set in the header
+Make a flag that is set in the header to block trading if the packet is a security or not.
+Can be updated by editing.
 
 Make PC be a QA so he can pass or fail work ?
 Or make him be an assembler, that is higher up the stack, so he doesn't get bogged down ?
