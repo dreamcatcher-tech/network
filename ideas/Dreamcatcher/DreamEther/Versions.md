@@ -39,6 +39,7 @@ Be ok letting a state die - if it was to trade, and then conditions were not met
 
 If there are some invariants to test, then use a state.  If there isn't and theres only one action to take, use an aciton.  `trade` state can be used to check everyones balances hold true as the model predicts.
 
+We can also dispatch actions directly into the SUT which may have payloads that we can react to if we want to test different things.
 ## Notes
 
 Make a flag that is set in the header
