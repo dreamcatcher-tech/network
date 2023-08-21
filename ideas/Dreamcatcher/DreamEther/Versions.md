@@ -48,7 +48,7 @@ Make PC be a QA so he can pass or fail work ?
 Or make him be an assembler, that is higher up the stack, so he doesn't get bogged down ?
 Or have tech QA and artistic QA, and he can dispute anyone, but has some QAs that work for him ?
 
-Allow devs to give progress update which will cause defund periods to increase ?  Must pass QA to show they are serious about it, so this would be change of type `progress`.  These progressions can stop the defund, or delay the defund, or their absence can allow instant defund.
+Allow devs to give progress update which will cause defund periods to increase ?  Must pass QA to show they are serious about it, so this would be change of type `progress`.  These progressions can stop the defund, or delay the defund, or their absence can allow instant defund.  Have an emergency switch that signals death of contract, where everyone can withdraw instantly ?
 
 ? could we split the distinction between packet writers and solution writers ?  Why not bundle them as the same ?
 fees for QA should also count as funding types ?  If the qa fees were treated the exact same as funding, then there are less NFT types to consider.  NFTs commemorate being either part of the solution, or incentivizing the solution.
