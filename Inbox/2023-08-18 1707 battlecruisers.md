@@ -13,3 +13,4 @@ downgrade path.
 
 its not working.
 
+My inputs can be gamified using share contribution, so just record all interactions, and then complain to QA if the shares are wrong.
