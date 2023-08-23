@@ -53,6 +53,8 @@ Allow devs to give progress update which will cause defund periods to increase ?
 ? could we split the distinction between packet writers and solution writers ?  Why not bundle them as the same ?
 fees for QA should also count as funding types ?  If the qa fees were treated the exact same as funding, then there are less NFT types to consider.  NFTs commemorate being either part of the solution, or incentivizing the solution.
 
+Treat users as a separate part of context, and track their balances and other things, then check this is matched in contract ?
+
 Types:
 1. Funding - provided capital into the project in any form
 2. Solution - any type of solution contribution, including QA, packet writing, solution, and update.
