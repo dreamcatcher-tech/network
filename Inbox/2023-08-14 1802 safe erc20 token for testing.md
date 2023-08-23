@@ -16,3 +16,7 @@ Can restrict its usage to inside the dreamether contract.
 Require soulbound holding to be able to transfer it.
 
 Would give us a safety net around the initial funding.
+
+Can use this like story points, where individuals can be granted story funds, and they can assign them to tasks as they see fit.
+
+Can make it a child of some other task, so scoped dollars, where the top level tasks are known.  This can be used to present a roadmap, where the structure is encapsulated in the coins for each task.
