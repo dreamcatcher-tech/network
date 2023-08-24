@@ -28,3 +28,5 @@ Should make each transaction be an NFT with either private or public status, and
 Phantom should publicise its own audit of itself.
 
 We could partner Phantom with Vanuatu regulators, and run some pilots.
+
+Make an NFT org chart system, which includes pay packets, tasks assosciations.
