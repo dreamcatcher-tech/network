@@ -12,3 +12,5 @@ If we stick to only crypto based projects, then we are starved, and people have 
 Like a whitelist of all human activities.
 
 How could we model an actor spreading discord amongst the crew ?
+
+Acts like a witness to all behaviour.  Can generate opinions on everything, based on the data it recieves, and what networks of people it trusts.
