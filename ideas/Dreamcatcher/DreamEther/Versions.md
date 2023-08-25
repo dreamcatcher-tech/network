@@ -15,6 +15,7 @@ Packets can never be rejected as they only get created when the packet header pa
 
 All traded NFT shares need to be fully withdrawn from, else they are something different and enable rug pulls, plus may have some weird securities implications, or other oddities since you would be trading the assets as well as the NFTs.
 
+defunding can be completed while a valid solution is present, if QA took too long to mark it as pending.  This needs to be like that, else QA might die, and funds would be stuck forever.  If defunding can occur, then participants can set up a new packet to continue onwards.
 ## TODO
 disputes
 merge and edit
