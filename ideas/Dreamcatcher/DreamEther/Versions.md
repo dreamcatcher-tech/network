@@ -25,6 +25,7 @@ funds using exit balance first
 revoke approval for preapproved contracts
 transferring erc1155 to and from this contract
 listing on opensea
+Replay where we feed a sut that has been run thru a bunch of tests into another test sequence, testing whether operations are true after an existing model has made changes
 ## Viewer:
 Diff view between versions, and even between packets.
 
