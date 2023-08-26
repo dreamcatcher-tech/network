@@ -42,6 +42,14 @@ Be ok letting a path die in a state - if it was to trade, and then conditions we
 If there are some invariants to test, then use a state.  If there isn't and theres only one action to take, use an aciton.  `trade` state can be used to check everyones balances hold true as the model predicts.
 
 We can also dispatch actions directly into the SUT which may have payloads that we can react to if we want to test different things.
+
+## Ledger tracking
+If we store the balances of each change along with it, then at the end we can use balance checking to see what the balance in the contract was vs what the balance in the model was.  Advantage is easy to debug in js, and can be a simplified model, with no logic in it.
+
+Means we can grind thru states to get specific end conditions of balances.
+
+Can use the model to find solution to getting an indivisible asset out ?
+
 ## Notes
 
 Make a flag that is set in the header
