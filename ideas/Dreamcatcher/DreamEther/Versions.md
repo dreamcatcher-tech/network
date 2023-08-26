@@ -50,6 +50,8 @@ Means we can grind thru states to get specific end conditions of balances.
 
 Can use the model to find solution to getting an indivisible asset out ?
 
+We could make a class to represent each change and then only change using instance methods so there can be this extra check about the state of each change ?
+
 ## Notes
 
 Make a flag that is set in the header
