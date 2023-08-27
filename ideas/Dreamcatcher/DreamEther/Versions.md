@@ -46,6 +46,8 @@ We can also dispatch actions directly into the SUT which may have payloads that 
 The machine that respresents a single packet moving thru the system can be run in parallel with multiple packets going thru all their stages.  So long as all transitions are limited so they do not endlessly repeat, like a transition count then we can have several running at once, with a shared ledger tracker.
 
 End the machine with a balance check and approval check function that checks everything.  This function can be run at any action.
+
+We could make the record representing the current change be stored in context directly, rather than pulled out of the map using cursorId ?
 ## Ledger tracking
 If we store the balances of each change along with it, then at the end we can use balance checking to see what the balance in the contract was vs what the balance in the model was.  Advantage is easy to debug in js, and can be a simplified model, with no logic in it.
 
