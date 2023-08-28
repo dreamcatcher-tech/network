@@ -50,6 +50,13 @@ End the machine with a balance check and approval check function that checks eve
 We could make the record representing the current change be stored in context directly, rather than pulled out of the map using cursorId ?
 
 Trade could be done independently of what just became available, and could trade old and new items.  Could be done a little bit on every transition, as an exit action.
+
+## Machine splitting
+Could the machine be split into areas, where how you got there is of little consequence to the rest of the model, such as a defund that stopped doesn't matter much to where QA claimed or not.  Basically do not need to do every state combination, it would be sufficient to start with the same end state parameters - the order is irrelevant, so long as the machine state checks out.
+
+Then we can check every path that could have led there, independently of all the paths taken from there onwards, vastly decreasing the number of combinations.  Chain the machines together, using the same SUT, and verify it all long all paths.  Means we can snapshot the SUT in between machines, to further speed things up.  Basically takes equivalent states and reduces their paths down to just one.
+
+Should we transition to fuzzing where fuzzing is choosing different paths to go thru the model ?
 ## Ledger tracking
 If we store the balances of each change along with it, then at the end we can use balance checking to see what the balance in the contract was vs what the balance in the model was.  Advantage is easy to debug in js, and can be a simplified model, with no logic in it.
 
@@ -60,6 +67,10 @@ Can use the model to find solution to getting an indivisible asset out ?
 We could make a class to represent each change and then only change using instance methods so there can be this extra check about the state of each change ?
 
 Track the balance of each actor as a separate piece of context.
+
+## Merging and Editing
+Maybe there is only merging, where an edit is a new item, followed by a merge.  Merging two headers that have passed QA would be merging packets.  Trouble is that edits need a reason as well as some content.  This can be included in the content format tho.
+
 ## Notes
 
 Make a flag that is set in the header
