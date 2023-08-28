@@ -48,6 +48,8 @@ The machine that respresents a single packet moving thru the system can be run i
 End the machine with a balance check and approval check function that checks everything.  This function can be run at any action.
 
 We could make the record representing the current change be stored in context directly, rather than pulled out of the map using cursorId ?
+
+Trade could be done independently of what just became available, and could trade old and new items.  Could be done a little bit on every transition, as an exit action.
 ## Ledger tracking
 If we store the balances of each change along with it, then at the end we can use balance checking to see what the balance in the contract was vs what the balance in the model was.  Advantage is easy to debug in js, and can be a simplified model, with no logic in it.
 
