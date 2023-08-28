@@ -29,7 +29,7 @@ listing on opensea
 Replay where we feed a sut that has been run thru a bunch of tests into another test sequence, testing whether operations are true after an existing model has made changes
 ## Viewer:
 Diff view between versions, and even between packets.
-
+Images in the markdown that automatically parses into ipfs urls and in included in the backups.
 ## State testing
 testing each state in detail, and then using state suppression functions to filter out all the paths intrastate.  This reduces the vast explosion of paths down.  Inner state testing becomes akin to unit tests.  The full model might be years to compute, but innerstate and then a few simple paths thru it for the sake of everything else might be sufficient.
 Therefore in running all the innerstate tests, the majority of interactions with outside states should be covered.  Minute fluctuations about how each external state arrived as its final condition will have diminishing returns, and will drown the model.  Also many of the combinations are designed to occur or not occur and have no affect.
@@ -55,6 +55,7 @@ Trade could be done independently of what just became available, and could trade
 ## Dispute rounds
 Each time QA acts, a dispute round is opened.  It has a start time and a definitive end time.  This forms a round, which has a natural number counter attached, where that counter is used to form an NFT.  SuperQA picks a single winning 
 
+Each time a new round is settled by superQa, the winning disputeId is pushed onto the disputes array, then a new assetId is formed 
 ## Machine splitting
 Could the machine be split into areas, where how you got there is of little consequence to the rest of the model, such as a defund that stopped doesn't matter much to where QA claimed or not.  Basically do not need to do every state combination, it would be sufficient to start with the same end state parameters - the order is irrelevant, so long as the machine state checks out.
 
