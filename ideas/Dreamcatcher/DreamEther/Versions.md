@@ -306,3 +306,13 @@ If people sign up, and deposit some credit card funds in our system, we will kee
 We might be able to make relays like using gasstation to let users have no gas.
 
 To overcome hurdles in UX, we could let users sign in using auth0, then we would manage their transaction operations, and so we would keep wallets we control topped up and operational.
+
+## Dispute rounds
+dispute rounds are tracked, to enforce a single outcome.
+then the nfts for disputing are assigned to each winner of each round.
+these nfts are not merged, and each round has a different nft id.
+this is because the relative value is not for us to say,
+the content is always different
+
+check a dispute against resolve and shares concurrently
+count the dispute rounds, so that only one can be active at a time.
