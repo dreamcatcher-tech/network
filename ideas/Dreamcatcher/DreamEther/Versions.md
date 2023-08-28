@@ -1,3 +1,4 @@
+multiple solutions
 
 updated packets preserve the shares portions
 superseding an accepted solution to a packet
@@ -50,6 +51,9 @@ End the machine with a balance check and approval check function that checks eve
 We could make the record representing the current change be stored in context directly, rather than pulled out of the map using cursorId ?
 
 Trade could be done independently of what just became available, and could trade old and new items.  Could be done a little bit on every transition, as an exit action.
+
+## Dispute rounds
+Each time QA acts, a dispute round is opened.  It has a start time and a definitive end time.  This forms a round, which has a natural number counter attached, where that counter is used to form an NFT.  SuperQA picks a single winning 
 
 ## Machine splitting
 Could the machine be split into areas, where how you got there is of little consequence to the rest of the model, such as a defund that stopped doesn't matter much to where QA claimed or not.  Basically do not need to do every state combination, it would be sufficient to start with the same end state parameters - the order is irrelevant, so long as the machine state checks out.
