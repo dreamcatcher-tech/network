@@ -7,7 +7,7 @@ use any NFT as payment
 moving payments inside the system should show up early
 shares between solvers and packet authors
 merging packets
-
+? how would staked lido work, if it was used for packet funding
 data hashes are really the thing we're tying to get merged in.
 
 
@@ -334,3 +334,7 @@ the content is always different
 
 check a dispute against resolve and shares concurrently
 count the dispute rounds, so that only one can be active at a time.
+
+### Distributing rewards
+Each time you withdraw, we would withdraw at the ratio of total held to what you put in. 
+This means that if you put in lido, and then you earn lido, that you would be able to withdraw a fraction of the rewards that were acrued since you put in.  Might have to take snapshots whenever you put funds in, which suggests we want to take a snapshot of the totals whenever someone puts something in.  We should account for this in our fund calculations, so that we call external asset `balanceOf()` functions when determining the balance of what is held in each change.
