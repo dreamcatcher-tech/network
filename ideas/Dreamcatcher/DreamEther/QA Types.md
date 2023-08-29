@@ -54,3 +54,9 @@ The share splits of an appeal might be subject to appeal - at some point this ha
 
 ## Updating QA
 Could use a transition as a means of changing a QA configuration ?
+QA should never change, since funding is put against a change based on trust in the QA.
+## What does the QA get to trade ?
+? A single medalion for each QA outcome that they can never trade as it goes towards their reputation ?
+A special QA nft that is a single indivisible unit, assigned to the QA.
+A QA nft that goes to them on packet completion.
+So could enact a rejection and this would mind a QA medallion.

@@ -9,7 +9,7 @@ shares between solvers and packet authors
 merging packets
 ? how would staked lido work, if it was used for packet funding
 data hashes are really the thing we're tying to get merged in.
-
+? What does QA get to trade with ?
 
 ## Oddities
 Packets can never be rejected as they only get created when the packet header passes QA, and the contract is made so that once QA'd it can never be un QA'd.  That which is done stays done.
@@ -55,7 +55,16 @@ Trade could be done independently of what just became available, and could trade
 ## Dispute rounds
 Each time QA acts, a dispute round is opened.  It has a start time and a definitive end time.  This forms a round, which has a natural number counter attached, where that counter is used to form an NFT.  SuperQA picks a single winning 
 
-Each time a new round is settled by superQa, the winning disputeId is pushed onto the disputes array, then a new assetId is formed 
+Each time a new round is settled by superQa, the winning disputeId is pushed onto the disputes array, then a new assetId is formed.
+
+dispute rounds are tracked, to enforce a single outcome.
+then the nfts for disputing are assigned to each winner of each round.
+these nfts are not merged, and each round has a different nft id.
+this is because the relative value is not for us to say,
+the content is always different
+
+check a dispute against resolve and shares concurrently
+count the dispute rounds, so that only one can be active at a time.
 ## Machine splitting
 Could the machine be split into areas, where how you got there is of little consequence to the rest of the model, such as a defund that stopped doesn't matter much to where QA claimed or not.  Basically do not need to do every state combination, it would be sufficient to start with the same end state parameters - the order is irrelevant, so long as the machine state checks out.
 
@@ -325,15 +334,6 @@ We might be able to make relays like using gasstation to let users have no gas.
 
 To overcome hurdles in UX, we could let users sign in using auth0, then we would manage their transaction operations, and so we would keep wallets we control topped up and operational.
 
-## Dispute rounds
-dispute rounds are tracked, to enforce a single outcome.
-then the nfts for disputing are assigned to each winner of each round.
-these nfts are not merged, and each round has a different nft id.
-this is because the relative value is not for us to say,
-the content is always different
-
-check a dispute against resolve and shares concurrently
-count the dispute rounds, so that only one can be active at a time.
 
 ### Distributing rewards
 Each time you withdraw, we would withdraw at the ratio of total held to what you put in. 
