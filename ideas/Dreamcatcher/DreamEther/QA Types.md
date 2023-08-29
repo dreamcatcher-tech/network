@@ -61,7 +61,9 @@ Upon a packet being resolved,  QA is minted a packet medallion which is green, o
 
 Super QA gets minted, instantly, and is transferrable, a superQA token, which is the QA slot on a dispute.
 
-Dispute rounds could mint a 
+Rounds can mark where the dispute list index was up to.
+
+
 
 ## QA Failure modes
 1. Took too long to pass a solution
