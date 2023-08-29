@@ -9,7 +9,8 @@ shares between solvers and packet authors
 merging packets
 ? how would staked lido work, if it was used for packet funding
 data hashes are really the thing we're tying to get merged in.
-? What does QA get to trade with ?
+QA token minting and trading
+
 
 ## Oddities
 Packets can never be rejected as they only get created when the packet header passes QA, and the contract is made so that once QA'd it can never be un QA'd.  That which is done stays done.

@@ -60,3 +60,10 @@ QA should never change, since funding is put against a change based on trust in 
 A special QA nft that is a single indivisible unit, assigned to the QA.
 A QA nft that goes to them on packet completion.
 So could enact a rejection and this would mind a QA medallion.
+
+Upon rejection, QA is minted a rejection medallion, but they cannot trade it until the dispute window has expired.  Revoked upon dispute upheld.  
+
+Upon resolve, QA is minted a resolve medallion, but they cannot trade it until the dispute window has expired.  Revoked upon dispute upheld.  Can be used as a way to know the packet status.
+
+Upon a packet being resolved,  QA is minted a packet medallion which is green, or something different, which is their reward for performing all the QA tasks required to get the packet to fruition.  Or is this too much and they should only get the solution medalions ?
+
