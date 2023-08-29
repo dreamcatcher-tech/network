@@ -30,6 +30,7 @@ Then allow people to pool their funds to back certain groups of QA, and earn som
 ## Appeals
 These should be transitions, and if the appealQA resolves them, they would cause a prior transition to revert.  If you are appealing solutionShares, then the prior transition would apply with the solution shares modified.
 
+
 `appealResolveShares( id, shares )` used if the resolve is fine, but the shares are off.
 `appealResolve( id, appealHash )` if you don't think the resolve should have occured.
 `appealReject( id, appealHash )` if you don't think the rejection should have happened.
@@ -47,15 +48,8 @@ Defunding of an appeal must be able to occur before the window closes.  So at wi
 All appeals must be either rejected or resolved before the packet can close.
 There is a timeout period where if not settled by time x, appeal will auto close.
 
-### Appealing an appeal
-The share splits of an appeal might be subject to appeal - at some point this has to end, so it can contibue as long as there is a higher authority above each one.  The pricing of each on
-
-
-
-## Updating QA
-Could use a transition as a means of changing a QA configuration ?
 QA should never change, since funding is put against a change based on trust in the QA.
-## What does the QA get to trade ?
+## QA NFTs
 
 There is a QA medalion slot available to every change, and this should be assigned when the change has enacted.  So to avoid requiring a transaction to activate it, it should be minted as soon as qa has acted, but is not tradeable until the timeout.  Can be used as a way to know the packet status.
 
@@ -68,3 +62,7 @@ Upon a packet being resolved,  QA is minted a packet medallion which is green, o
 Super QA gets minted, instantly, and is transferrable, a superQA token, which is the QA slot on a dispute.
 
 Dispute rounds could mint a 
+
+## QA Failure modes
+1. Took too long to pass a solution
+2. Took too long to respond to a dispute
