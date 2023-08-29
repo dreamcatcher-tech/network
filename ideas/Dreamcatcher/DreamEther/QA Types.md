@@ -67,3 +67,5 @@ Upon resolve, QA is minted a resolve medallion, but they cannot trade it until t
 
 Upon a packet being resolved,  QA is minted a packet medallion which is green, or something different, which is their reward for performing all the QA tasks required to get the packet to fruition.  Or is this too much and they should only get the solution medalions ?
 
+
+
