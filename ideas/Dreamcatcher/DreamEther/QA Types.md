@@ -72,6 +72,15 @@ QA medallions may exist between multiple QA addresses in a packet, if the packet
 Super enacting a dispute should instantly claim, since there is no pending period.  So every dispute that passed the threshold should be enacted, and only then can the packet proceed ?  Or can super enact them all by a single function call ?  If super dismisses all, then the dispute can never be altered.  A dispute can never be acted on directly, and super can claim from them any time.
 
 Really need the dispute status to be related to the change they are about.
+
+Share disputes need to be exact.
+
+A dispute round is deemed open if there is at least one dispute in the current round, regardless of the funding applied.  QA can dismiss all disputes in a single tx, so no chance of gas dos.
+
+What if the solution window was the same as the dispute window ?
+Then we would not need to use the `isJudgeable` call to determine other valid solutions
+packet close could be a separate enactment, so you have to get a solution passed, then you have to pass a packet, where other solutions are considered like disputes and block the packet being enacted ?
+
 ## QA Steps
 ### Header approved
 1. dispute approval arrives
@@ -81,6 +90,10 @@ Really need the dispute status to be related to the change they are about.
 
 1. super accepts a share dispute
 2. round is closed with the dispute index selected
+3. change can now be enacted as the round is closed
+
+4. super accepts an approval dispute
+5. round is closed and header moves back to open
 
 ### Header rejected
 1. dispute rejection arrives
@@ -89,7 +102,6 @@ Really need the dispute status to be related to the change they are about.
 
 1. super dismisses, closing the round, header can now be enacted
 
-1. 
 
 
 
