@@ -86,6 +86,7 @@ So only once the packet is solved, then the QA is minted a special NFT with a si
 
 Preallocate some base assetIds before anything starts, and use those assets.
 
+So if the solution window was equal to the dispute window of the solution, then you have until that window closes to get your solution submitted.  If it is not funded enough to be considered by QA, then it is not considered as being submitted.
 ## QA Steps
 ### Header approved
 1. dispute approval arrives
