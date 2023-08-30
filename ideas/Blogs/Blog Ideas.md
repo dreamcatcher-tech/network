@@ -159,3 +159,9 @@ Benefits in commemorating the task with an NFT.
 
 ## Unix way
 do a one to one mapping of the unix way and unix components and point to how we do things in our design.
+
+## Energy expenditure of blockchains
+Show how there is currently no marketplace where I can sell my computers CPU and GPU resources to do specific computations on as as needed case - I cannot serve other peoples applications in exchange for serving mine.  Single blockchains don't achieve this, as the energy is not used for useful computation.  Our market cap could be expressed as the foundational NFTs that are accredited to upon each computation.  We should be able to provide transactions cheaper than mastercard in terms of CO2 emissions.
+
+https://ccaf.io/cbnsi/ethereum
+https://indices.carbon-ratings.com/
