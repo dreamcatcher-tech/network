@@ -14,3 +14,6 @@ QA is just us - the first QA - dreamcatcher command.
 
 Make it administered by AI.
 
+solidity contract review and issues report.
+legal boundaries broken down by jurisdiction as to securities and other legalities.
+packet to define what Antons work is.

@@ -1,3 +1,4 @@
+block enactment while disputes are open
 qa medallion on packet completion
 disputes
 multiple disputes
