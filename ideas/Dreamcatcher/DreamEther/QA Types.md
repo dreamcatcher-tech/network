@@ -69,6 +69,32 @@ We should also store the winning index of the round, to avoid having to loop thr
 
 QA medallions may exist between multiple QA addresses in a packet, if the packet was merged.
 
+Super enacting a dispute should instantly claim, since there is no pending period.  So every dispute that passed the threshold should be enacted, and only then can the packet proceed ?  Or can super enact them all by a single function call ?  If super dismisses all, then the dispute can never be altered.  A dispute can never be acted on directly, and super can claim from them any time.
+
+Really need the dispute status to be related to the change they are about.
+## QA Steps
+### Header approved
+1. dispute approval arrives
+2. dispute shares arrives
+3. super rejects both disputes, closing the round, and allowing enacting
+4. change can be enacted
+
+1. super accepts a share dispute
+2. round is closed with the dispute index selected
+
+### Header rejected
+1. dispute rejection arrives
+2. super accepts a dispute
+3. header moves back to being open
+
+1. super dismisses, closing the round, header can now be enacted
+
+1. 
+
+
+
+
+
 ## QA Failure modes
 1. Took too long to pass a solution
 2. Took too long to respond to a dispute
