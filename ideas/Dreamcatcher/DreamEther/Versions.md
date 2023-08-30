@@ -1,4 +1,9 @@
+disputes
+multiple disputes
 multiple solutions
+erc1155 funding
+approvals
+draining of accounts from transfers
 
 updated packets preserve the shares portions
 superseding an accepted solution to a packet
