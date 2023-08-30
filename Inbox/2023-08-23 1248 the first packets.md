@@ -6,6 +6,11 @@
 >[!danger] Depends: 
 
 The first packet should be to make the dreamcatcher itself.
+Then to make it profitable.
+Then to be free.
+
 Also check the smart contract.
 QA is just us - the first QA - dreamcatcher command.
+
+Make it administered by AI.
 
