@@ -63,7 +63,11 @@ Super QA gets minted, instantly, and is transferrable, a superQA token, which is
 
 Rounds can mark where the dispute list index was up to.
 
-Rounds slot stores the length of the downlinks array at the resolution of the last dispute round.  This means that any subsequent dispute rounds only need to consider from this index onwards as valid disputes in the round.  Each round can only have one winning dispute, and all others must be dismissed.
+Rounds slot stores the length of the downlinks array at the resolution of the last dispute round.  This means that any subsequent dispute rounds only need to consider from this index onwards as valid disputes in the round.  Each round can only have one winning dispute, and all others must be dismissed.  SuperQA is only minted a token for the winning one they choose.
+
+We should also store the winning index of the round, to avoid having to loop thru everything to ensure that only one has been chosen.  This means that all disputes will be immutably recorded, but they will never clog the processing of any outcomes.
+
+QA medallions may exist between multiple QA addresses in a packet, if the packet was merged.
 
 ## QA Failure modes
 1. Took too long to pass a solution
