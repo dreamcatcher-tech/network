@@ -81,12 +81,10 @@ What if the solution window was the same as the dispute window ?
 Then we would not need to use the `isJudgeable` call to determine other valid solutions
 packet close could be a separate enactment, so you have to get a solution passed, then you have to pass a packet, where other solutions are considered like disputes and block the packet being enacted ?
 
-No QA medallions for disputes, since QA gets something for the packet
-No qa medallion except for a packet ?
-So the only valuable thing to a QA is a packet qa medallion ?
+
 So only once the packet is solved, then the QA is minted a special NFT with a single unit
 
-Or, just preallocate some base assetIds before anything starts, and use those assets.
+Preallocate some base assetIds before anything starts, and use those assets.
 
 ## QA Steps
 ### Header approved
@@ -108,11 +106,6 @@ Or, just preallocate some base assetIds before anything starts, and use those as
 3. header moves back to being open
 
 1. super dismisses, closing the round, header can now be enacted
-
-
-
-
-
 
 ## QA Failure modes
 1. Took too long to pass a solution
