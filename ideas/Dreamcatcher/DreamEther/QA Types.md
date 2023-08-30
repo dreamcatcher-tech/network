@@ -86,6 +86,7 @@ No qa medallion except for a packet ?
 So the only valuable thing to a QA is a packet qa medallion ?
 So only once the packet is solved, then the QA is minted a special NFT with a single unit
 
+
 ## QA Steps
 ### Header approved
 1. dispute approval arrives
