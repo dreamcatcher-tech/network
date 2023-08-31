@@ -18,6 +18,6 @@ What if rewards goes down from withdrawls, then new rewards come in, how would w
 
 Purest but most expensive is to generate an address unique to each depositor and change.
 
-This should allow an erroneously transferred token to be reclaimed by going thru any of the exit paths.  A 721 token cannot be claimed in this way tho.  We should therefore reject all 721 deposits outside of a `fund()` call.
+This should allow an erroneously transferred token to be reclaimed by going thru any of the exit paths.  A 721 token cannot be claimed in this way tho.  We should therefore reject all 721 deposits outside of a `fund()` call.  We could however, let the last withdraw of a 721 contract receive the residue.
 
 This should be applied for erc1155 tokens.
