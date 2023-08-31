@@ -1,3 +1,14 @@
+## TODO
+disputes
+merge and edit
+defund during dispute windows
+withdrawls of all token types
+funds using exit balance first
+revoke approval for preapproved contracts
+transferring erc1155 to and from this contract
+listing on opensea
+Replay where we feed a sut that has been run thru a bunch of tests into another test sequence, testing whether operations are true after an existing model has made changes
+
 block enactment while disputes are open
 qa medallion on packet completion
 disputes
@@ -6,6 +17,7 @@ multiple solutions
 erc1155 funding
 approvals
 draining of accounts from transfers
+test with erc721 funding
 
 updated packets preserve the shares portions
 superseding an accepted solution to a packet
@@ -25,16 +37,7 @@ Packets can never be rejected as they only get created when the packet header pa
 All traded NFT shares need to be fully withdrawn from, else they are something different and enable rug pulls, plus may have some weird securities implications, or other oddities since you would be trading the assets as well as the NFTs.
 
 defunding can be completed while a valid solution is present, if QA took too long to mark it as pending.  This needs to be like that, else QA might die, and funds would be stuck forever.  If defunding can occur, then participants can set up a new packet to continue onwards.
-## TODO
-disputes
-merge and edit
-defund during dispute windows
-withdrawls of all token types
-funds using exit balance first
-revoke approval for preapproved contracts
-transferring erc1155 to and from this contract
-listing on opensea
-Replay where we feed a sut that has been run thru a bunch of tests into another test sequence, testing whether operations are true after an existing model has made changes
+
 ## Viewer:
 Diff view between versions, and even between packets.
 Images in the markdown that automatically parses into ipfs urls and in included in the backups.
@@ -92,6 +95,13 @@ Track the balance of each actor as a separate piece of context.
 
 ## Merging and Editing
 Maybe there is only merging, where an edit is a new item, followed by a merge.  Merging two headers that have passed QA would be merging packets.  Trouble is that edits need a reason as well as some content.  This can be included in the content format tho.
+
+Editing content shares merge in with the target of the edit.  QA shares represent the new total.
+
+## Share types
+If all solutions that pass are part of a packet, then is there any point having solution shares ?
+So there should only be packet content shares.  There is only a packet QA medallion.
+Header content
 
 ## Notes
 
@@ -246,6 +256,8 @@ What if we could configure the end state we want in context, and the machine run
 Then the tests are just defining some end conditions ?
 
 onERC1155Received should be called when QA submits.  Then the tokens should be minted, but their transfer is restricted until enactment.  Disputes burn those tokens.  Means that receivers can do something about their recievings, and stops human errors from QA.
+
+reject erc1155 transfers not part of a funding call.  this would be rejecting rewards from 1155 tokens.  
 ## Misbehaving contracts
 defund and claim are susceptible to a misbehaving token contract taking all the gas, or reverting the transaction and blocking all the other assets from being withdrawn.
 They are also susceptible to high withdrawal costs.
