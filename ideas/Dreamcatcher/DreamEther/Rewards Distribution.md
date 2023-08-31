@@ -20,4 +20,7 @@ Purest but most expensive is to generate an address unique to each depositor and
 
 This should allow an erroneously transferred token to be reclaimed by going thru any of the exit paths.  A 721 token cannot be claimed in this way tho.  We should therefore reject all 721 deposits outside of a `fund()` call.  We could however, let the last withdraw of a 721 contract receive the residue.
 
-This should be applied for erc1155 tokens.
+This should be applied for erc1155 tokens, erc20, eth, and maybe 721s.
+
+Track the holders of each token type so we know when you're the last ? 
+Or just count the number of holders ?
