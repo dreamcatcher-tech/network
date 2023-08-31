@@ -6,6 +6,7 @@ withdrawls of all token types
 funds using exit balance first
 revoke approval for preapproved contracts
 transferring erc1155 to and from this contract
+transferring erc721 to and from this contract
 listing on opensea
 Replay where we feed a sut that has been run thru a bunch of tests into another test sequence, testing whether operations are true after an existing model has made changes
 
@@ -354,16 +355,3 @@ We might be able to make relays like using gasstation to let users have no gas.
 
 To overcome hurdles in UX, we could let users sign in using auth0, then we would manage their transaction operations, and so we would keep wallets we control topped up and operational.
 
-### Distributing rewards
-Each time you withdraw, we would withdraw at the ratio of total held to what you put in. 
-This means that if you put in lido, and then you earn lido, that you would be able to withdraw a fraction of the rewards that were acrued since you put in.  Might have to take snapshots whenever you put funds in, which suggests we want to take a snapshot of the totals whenever someone puts something in.  We should account for this in our fund calculations, so that we call external asset `balanceOf()` functions when determining the balance of what is held in each change.
-
-So we would need to track the total number of units we were tracking internally, to prevent later funding being treated like rewards.  Rewards are the difference between our tracked amount and
-
-Could track rewards as a separate value, which can be manually updated, and causes later callers to get a larger withdraw value, rather than last to withdraw getting the residue.
-
-When you fund, we record how much you supplied, and what the total we have plus the rewards are, which can be done in a single final call to balanceOf.  rewards since you put in are tracked, and withdrawl gives you a share of those rewards.  BUT smaller additions get an unfair portion of rewards that get paid for earlier larger contributions ?
-
-What if rewards goes down from withdrawls, then new rewards come in, how would we know that the later contributor is due those rewards ?
-
-Purest but most expensive is to generate an address unique to each depositor and change.
