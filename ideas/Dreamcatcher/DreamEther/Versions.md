@@ -64,6 +64,7 @@ We could make the record representing the current change be stored in context di
 
 Trade could be done independently of what just became available, and could trade old and new items.  Could be done a little bit on every transition, as an exit action.
 
+If each group of actions, like disputes and funding takes place in a dedicated state, then we can rapidly block them by disallowing those states.
 ## Dispute rounds
 Each time QA acts, a dispute round is opened.  It has a start time and a definitive end time.  This forms a round, which has a natural number counter attached, where that counter is used to form an NFT.  SuperQA picks a single winning 
 
