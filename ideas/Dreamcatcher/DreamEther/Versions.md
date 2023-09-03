@@ -1,20 +1,3 @@
-
-updated packets preserve the shares portions
-superseding an accepted solution to a packet
-use any currency as payment
-use any NFT as payment
-moving payments inside the system should show up early
-shares between solvers and packet authors
-merging packets
-
-data hashes are really the thing we're tying to get merged in.
-
-
-## Oddities
-Packets can never be rejected as they only get created when the packet header passes QA, and the contract is made so that once QA'd it can never be un QA'd.  That which is done stays done.
-
-All traded NFT shares need to be fully withdrawn from, else they are something different and enable rug pulls, plus may have some weird securities implications, or other oddities since you would be trading the assets as well as the NFTs.
-
 ## TODO
 disputes
 merge and edit
@@ -23,10 +6,42 @@ withdrawls of all token types
 funds using exit balance first
 revoke approval for preapproved contracts
 transferring erc1155 to and from this contract
+transferring erc721 to and from this contract
 listing on opensea
+Replay where we feed a sut that has been run thru a bunch of tests into another test sequence, testing whether operations are true after an existing model has made changes
+
+block enactment while disputes are open
+qa medallion on packet completion
+disputes
+multiple disputes
+multiple solutions
+erc1155 funding
+approvals
+draining of accounts from transfers
+test with erc721 funding
+
+updated packets preserve the shares portions
+superseding an accepted solution to a packet
+use any currency as payment
+use any NFT as payment
+moving payments inside the system should show up early
+shares between solvers and packet authors
+merging packets
+? how would staked lido work, if it was used for packet funding
+data hashes are really the thing we're tying to get merged in.
+QA token minting and trading
+
+
+## Oddities
+Packets can never be rejected as they only get created when the packet header passes QA, and the contract is made so that once QA'd it can never be un QA'd.  That which is done stays done.
+
+All traded NFT shares need to be fully withdrawn from, else they are something different and enable rug pulls, plus may have some weird securities implications, or other oddities since you would be trading the assets as well as the NFTs.
+
+defunding can be completed while a valid solution is present, if QA took too long to mark it as pending.  This needs to be like that, else QA might die, and funds would be stuck forever.  If defunding can occur, then participants can set up a new packet to continue onwards.
+
 ## Viewer:
 Diff view between versions, and even between packets.
-
+Images in the markdown that automatically parses into ipfs urls and in included in the backups.
 ## State testing
 testing each state in detail, and then using state suppression functions to filter out all the paths intrastate.  This reduces the vast explosion of paths down.  Inner state testing becomes akin to unit tests.  The full model might be years to compute, but innerstate and then a few simple paths thru it for the sake of everything else might be sufficient.
 Therefore in running all the innerstate tests, the majority of interactions with outside states should be covered.  Minute fluctuations about how each external state arrived as its final condition will have diminishing returns, and will drown the model.  Also many of the combinations are designed to occur or not occur and have no affect.
@@ -35,13 +50,63 @@ If break down actions that test the same function or have some invariants to tes
 
 So the actions are reserved for things that keep the system moving forwards, and states can be used to make assertions about the states of things in the system.  If we don' t do this, then the number of possible paths in the system explodes.
 
-Be ok letting a state die - if it was to trade, and then conditions were not met, stalling in the state is the same as putting a conditional on the transition - it doesn't have to leave the state.
+Be ok letting a path die in a state - if it was to trade, and then conditions were not met, stalling in the state is the same as putting a conditional on the transition - it doesn't have to leave the state.
 
 If there are some invariants to test, then use a state.  If there isn't and theres only one action to take, use an aciton.  `trade` state can be used to check everyones balances hold true as the model predicts.
 
 Perhaps if we could prove that each state was independent of how the others were, we could test them in isolation ?
 
 We can also dispatch actions directly into the SUT which may have payloads that we can react to if we want to test different things.
+
+The machine that respresents a single packet moving thru the system can be run in parallel with multiple packets going thru all their stages.  So long as all transitions are limited so they do not endlessly repeat, like a transition count then we can have several running at once, with a shared ledger tracker.
+
+End the machine with a balance check and approval check function that checks everything.  This function can be run at any action.
+
+We could make the record representing the current change be stored in context directly, rather than pulled out of the map using cursorId ?
+
+Trade could be done independently of what just became available, and could trade old and new items.  Could be done a little bit on every transition, as an exit action.
+
+If each group of actions, like disputes and funding takes place in a dedicated state, then we can rapidly block them by disallowing those states.
+## Dispute rounds
+Each time QA acts, a dispute round is opened.  It has a start time and a definitive end time.  This forms a round, which has a natural number counter attached, where that counter is used to form an NFT.  SuperQA picks a single winning 
+
+Each time a new round is settled by superQa, the winning disputeId is pushed onto the disputes array, then a new assetId is formed.
+
+dispute rounds are tracked, to enforce a single outcome.
+then the nfts for disputing are assigned to each winner of each round.
+these nfts are not merged, and each round has a different nft id.
+this is because the relative value is not for us to say,
+the content is always different
+
+check a dispute against resolve and shares concurrently
+count the dispute rounds, so that only one can be active at a time.
+## Machine splitting
+Could the machine be split into areas, where how you got there is of little consequence to the rest of the model, such as a defund that stopped doesn't matter much to where QA claimed or not.  Basically do not need to do every state combination, it would be sufficient to start with the same end state parameters - the order is irrelevant, so long as the machine state checks out.
+
+Then we can check every path that could have led there, independently of all the paths taken from there onwards, vastly decreasing the number of combinations.  Chain the machines together, using the same SUT, and verify it all long all paths.  Means we can snapshot the SUT in between machines, to further speed things up.  Basically takes equivalent states and reduces their paths down to just one.
+
+Should we transition to fuzzing where fuzzing is choosing different paths to go thru the model ?
+## Ledger tracking
+If we store the balances of each change along with it, then at the end we can use balance checking to see what the balance in the contract was vs what the balance in the model was.  Advantage is easy to debug in js, and can be a simplified model, with no logic in it.
+
+Means we can grind thru states to get specific end conditions of balances.
+
+Can use the model to find solution to getting an indivisible asset out ?
+
+We could make a class to represent each change and then only change using instance methods so there can be this extra check about the state of each change ?
+
+Track the balance of each actor as a separate piece of context.
+
+## Merging and Editing
+Maybe there is only merging, where an edit is a new item, followed by a merge.  Merging two headers that have passed QA would be merging packets.  Trouble is that edits need a reason as well as some content.  This can be included in the content format tho.
+
+Editing content shares merge in with the target of the edit.  QA shares represent the new total.
+
+## Share types
+If all solutions that pass are part of a packet, then is there any point having solution shares ?
+So there should only be packet content shares.  There is only a packet QA medallion.
+Header content
+
 ## Notes
 
 Make a flag that is set in the header to block trading if the packet is a security or not.
@@ -51,10 +116,12 @@ Make PC be a QA so he can pass or fail work ?
 Or make him be an assembler, that is higher up the stack, so he doesn't get bogged down ?
 Or have tech QA and artistic QA, and he can dispute anyone, but has some QAs that work for him ?
 
-Allow devs to give progress update which will cause defund periods to increase ?  Must pass QA to show they are serious about it, so this would be change of type `progress`.  These progressions can stop the defund, or delay the defund, or their absence can allow instant defund.
+Allow devs to give progress update which will cause defund periods to increase ?  Must pass QA to show they are serious about it, so this would be change of type `progress`.  These progressions can stop the defund, or delay the defund, or their absence can allow instant defund.  Have an emergency switch that signals death of contract, where everyone can withdraw instantly ?
 
 ? could we split the distinction between packet writers and solution writers ?  Why not bundle them as the same ?
 fees for QA should also count as funding types ?  If the qa fees were treated the exact same as funding, then there are less NFT types to consider.  NFTs commemorate being either part of the solution, or incentivizing the solution.
+
+Treat users as a separate part of context, and track their balances and other things, then check this is matched in contract ?
 
 Types:
 1. Funding - provided capital into the project in any form
@@ -194,6 +261,8 @@ What if we could configure the end state we want in context, and the machine run
 Then the tests are just defining some end conditions ?
 
 onERC1155Received should be called when QA submits.  Then the tokens should be minted, but their transfer is restricted until enactment.  Disputes burn those tokens.  Means that receivers can do something about their recievings, and stops human errors from QA.
+
+reject erc1155 transfers not part of a funding call.  this would be rejecting rewards from 1155 tokens.  
 ## Misbehaving contracts
 defund and claim are susceptible to a misbehaving token contract taking all the gas, or reverting the transaction and blocking all the other assets from being withdrawn.
 They are also susceptible to high withdrawal costs.
@@ -289,3 +358,4 @@ If people sign up, and deposit some credit card funds in our system, we will kee
 We might be able to make relays like using gasstation to let users have no gas.
 
 To overcome hurdles in UX, we could let users sign in using auth0, then we would manage their transaction operations, and so we would keep wallets we control topped up and operational.
+
