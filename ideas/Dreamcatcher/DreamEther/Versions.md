@@ -41,6 +41,7 @@ If there are some invariants to test, then use a state.  If there isn't and ther
 
 Perhaps if we could prove that each state was independent of how the others were, we could test them in isolation ?
 
+We can also dispatch actions directly into the SUT which may have payloads that we can react to if we want to test different things.
 ## Notes
 
 Make a flag that is set in the header to block trading if the packet is a security or not.
@@ -49,6 +50,8 @@ Can be updated by editing.
 Make PC be a QA so he can pass or fail work ?
 Or make him be an assembler, that is higher up the stack, so he doesn't get bogged down ?
 Or have tech QA and artistic QA, and he can dispute anyone, but has some QAs that work for him ?
+
+Allow devs to give progress update which will cause defund periods to increase ?  Must pass QA to show they are serious about it, so this would be change of type `progress`.  These progressions can stop the defund, or delay the defund, or their absence can allow instant defund.
 
 ? could we split the distinction between packet writers and solution writers ?  Why not bundle them as the same ?
 fees for QA should also count as funding types ?  If the qa fees were treated the exact same as funding, then there are less NFT types to consider.  NFTs commemorate being either part of the solution, or incentivizing the solution.
