@@ -8,6 +8,7 @@ reward dispersal
 block enactment while disputes are open
 qa medallion on packet completion
 draining of accounts from transfers
+block the trading of solution content shares, since these are packet shares ultimately
 
 listing on opensea
 supportsInterface
