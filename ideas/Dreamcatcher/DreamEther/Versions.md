@@ -31,9 +31,6 @@ data hashes are really the thing we're tying to get merged in.
 QA token minting and trading
 
 
-Select all changes from the stack as an action, then define rules for how the selector works.
-This means that a cycle function can be set up for humans to use, and in the machine tests we are strict about how we allow this function to be used, to avoid path count explosion.
-
 ## Oddities
 Packets can never be rejected as they only get created when the packet header passes QA, and the contract is made so that once QA'd it can never be un QA'd.  That which is done stays done.
 
@@ -44,6 +41,14 @@ defunding can be completed while a valid solution is present, if QA took too lon
 ## Viewer:
 Diff view between versions, and even between packets.
 Images in the markdown that automatically parses into ipfs urls and in included in the backups.
+
+## A better machine
+Select all changes from the stack as an action, then define rules for how the selector works.
+This means that a cycle function can be set up for humans to use, and in the machine tests we are strict about how we allow this function to be used, to avoid path count explosion.
+
+Model different accounts as a machine with a selector.  In metamask allow connection to different accounts to let you simulate being different actors in the system.  Use this machine to drive the system into different niche states then run a range of tests on those hard to reach states.  Have actions that jump straight to a specific actor type
+
+Provide different config packages that restrict the account switching behaviours.  Provide limits on the number of transitions a machine can take, so that we auto cull large endless paths.
 ## State testing
 testing each state in detail, and then using state suppression functions to filter out all the paths intrastate.  This reduces the vast explosion of paths down.  Inner state testing becomes akin to unit tests.  The full model might be years to compute, but innerstate and then a few simple paths thru it for the sake of everything else might be sufficient.
 Therefore in running all the innerstate tests, the majority of interactions with outside states should be covered.  Minute fluctuations about how each external state arrived as its final condition will have diminishing returns, and will drown the model.  Also many of the combinations are designed to occur or not occur and have no affect.
