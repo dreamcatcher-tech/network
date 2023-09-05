@@ -24,3 +24,11 @@ This should be applied for erc1155 tokens, erc20, eth, and maybe 721s.
 
 Track the holders of each token type so we know when you're the last ? 
 Or just count the number of holders ?
+
+Negative rewards need to be accounted for.
+
+Whenever you deposit, we store the total and how much you put in.
+Whenever you withdraw, we take what you put in, 
+We store what the reward pool is (plus or minus) what the total balance of the contract is, and what you put in.  When you withdraw, we take what you have, what the total balance is, and what the reward pool is at.
+
+Principle is that you should gain or lose your portion of what you had in the contract before withdrawing.  

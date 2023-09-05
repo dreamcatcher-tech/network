@@ -1,4 +1,5 @@
 ## TODO
+solution shares removed and merged into packet shares
 edit
 multiple solutions
 erc1155 funding
