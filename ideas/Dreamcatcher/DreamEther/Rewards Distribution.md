@@ -31,7 +31,9 @@ Whenever you deposit, we store the total and how much you put in.
 Whenever you withdraw, we take what you put in, 
 We store what the reward pool is (plus or minus) what the total balance of the contract is, and what you put in.  When you withdraw, we take what you have, what the total balance is, and what the reward pool is at.
 
-Principle is that you should gain or lose your portion of what you had in the contract before withdrawing.  
+Principle is that you should gain or lose your portion of what you had in the contract before withdrawing.  You should have no access to balance changes that occured before you joined the pool.
+
+Tracking the sum of units we took in, and the reported balance in the remote contract, as well as the units you put in.
 
 Each time there is an add or remove, then we recalculate the balance, and therefore the reward pot.  Could snapshot the balances in an array, and we simply store the new balance each time, and mark what index you joined the rewards array on.  Then we know what the rewards pool was since you joined ?
 

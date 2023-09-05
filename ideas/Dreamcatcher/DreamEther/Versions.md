@@ -1,6 +1,7 @@
 ## TODO
 solution shares removed and merged into packet shares
 block trading of solution shares that are not merged into packet
+late merge of a solution shares into a packet
 edit
 multiple solutions
 erc1155 funding
