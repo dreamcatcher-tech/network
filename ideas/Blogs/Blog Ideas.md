@@ -165,3 +165,18 @@ Show how there is currently no marketplace where I can sell my computers CPU and
 
 https://ccaf.io/cbnsi/ethereum
 https://indices.carbon-ratings.com/
+
+## Fairness
+Transparency is absolute - it is measurable with the same answer from all
+Fairness is subjective in many ways, but we can talk about some properties of a proposed fairness solution, which make two solutions comparable.
+Any solution that considers all available information in some way is fairer than one that does not - this is the awareness principle of fairness - that which is superior in awareness / acknowledgement is superior in fairness potential
+Granularity - a solution with a finer resolution than another system will be superior - so if it is possible to reward a nanocent, all else being equal, this system will be superior.
+Speed - all else being equal, fairness delayed is fairness denied - the faster system will be superior.
+Sensitive - a system that can incorporate participant feedback, and do so quickly, will be superior.
+Transparent - an auditable system will be superior to a closed system
+Calculation based on disinterested training data will be superior - if a set of rules can be deduced from a vast dataset that is clearly disinterested in the problems that it solves, this will be superior since there is no obvious bias, and no corruptibility.
+Adaptable: one that can change over time will be better than a set and forget system.
+Multishot - calculations redone each time new info enters the system will be better than stale system.
+
+And so we can request a system that has the potential to be configured in a superior way.
+Whilst we are not sure how to configure the end system, we can make a start, and can lay down these principles that make one system clearly better than the other, while we experiment towards the ideal system.
