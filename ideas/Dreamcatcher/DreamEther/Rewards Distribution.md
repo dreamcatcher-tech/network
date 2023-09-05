@@ -32,3 +32,11 @@ Whenever you withdraw, we take what you put in,
 We store what the reward pool is (plus or minus) what the total balance of the contract is, and what you put in.  When you withdraw, we take what you have, what the total balance is, and what the reward pool is at.
 
 Principle is that you should gain or lose your portion of what you had in the contract before withdrawing.  
+
+Each time there is an add or remove, then we recalculate the balance, and therefore the reward pot.  Could snapshot the balances in an array, and we simply store the new balance each time, and mark what index you joined the rewards array on.  Then we know what the rewards pool was since you joined ?
+
+Simple version is to give us all the rewards of the stakes ?
+
+Final withdrawl moves all remaining balance to the holder.
+
+Any rewards pool changes since you joined are yours, proportionately.
