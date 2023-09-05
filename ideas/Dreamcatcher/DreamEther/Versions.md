@@ -49,6 +49,10 @@ This means that a cycle function can be set up for humans to use, and in the mac
 Model different accounts as a machine with a selector.  In metamask allow connection to different accounts to let you simulate being different actors in the system.  Use this machine to drive the system into different niche states then run a range of tests on those hard to reach states.  Have actions that jump straight to a specific actor type
 
 Provide different config packages that restrict the account switching behaviours.  Provide limits on the number of transitions a machine can take, so that we auto cull large endless paths.
+
+Could allow for scripts to be generated to get the machine into very specific states and test from there.  Can be used to get to a starting state, then do multipath testing from there onwards.
+
+The main benefit is that the machine is understandable by a human.
 ## State testing
 testing each state in detail, and then using state suppression functions to filter out all the paths intrastate.  This reduces the vast explosion of paths down.  Inner state testing becomes akin to unit tests.  The full model might be years to compute, but innerstate and then a few simple paths thru it for the sake of everything else might be sufficient.
 Therefore in running all the innerstate tests, the majority of interactions with outside states should be covered.  Minute fluctuations about how each external state arrived as its final condition will have diminishing returns, and will drown the model.  Also many of the combinations are designed to occur or not occur and have no affect.
