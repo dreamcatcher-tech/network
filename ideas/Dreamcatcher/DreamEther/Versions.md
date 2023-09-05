@@ -31,6 +31,9 @@ data hashes are really the thing we're tying to get merged in.
 QA token minting and trading
 
 
+Select all changes from the stack as an action, then define rules for how the selector works.
+This means that a cycle function can be set up for humans to use, and in the machine tests we are strict about how we allow this function to be used, to avoid path count explosion.
+
 ## Oddities
 Packets can never be rejected as they only get created when the packet header passes QA, and the contract is made so that once QA'd it can never be un QA'd.  That which is done stays done.
 
