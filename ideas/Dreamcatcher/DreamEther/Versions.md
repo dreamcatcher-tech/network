@@ -18,7 +18,9 @@ supportsInterface
 onERC1155 event hooks
 Replay where we feed a sut that has been run thru a bunch of tests into another test sequence, testing whether operations are true after an existing model has made changes
 
-
+descriptions in the state machine
+with the compromises of ethereum, what have we lost from the dreamcatcher ?
+propose a solved packet as a solution to an open packet
 updated packets preserve the shares portions
 superseding an accepted solution to a packet
 use any currency as payment
@@ -57,6 +59,8 @@ The main benefit is that the machine is understandable by a human.
 Make a clickable version that can be used to play with the live contract.
 
 Can make this statechart be another view into the frontend app, and another way to interact with the system, including gathering info from the user.
+
+The problem is 
 ## State testing
 testing each state in detail, and then using state suppression functions to filter out all the paths intrastate.  This reduces the vast explosion of paths down.  Inner state testing becomes akin to unit tests.  The full model might be years to compute, but innerstate and then a few simple paths thru it for the sake of everything else might be sufficient.
 Therefore in running all the innerstate tests, the majority of interactions with outside states should be covered.  Minute fluctuations about how each external state arrived as its final condition will have diminishing returns, and will drown the model.  Also many of the combinations are designed to occur or not occur and have no affect.
