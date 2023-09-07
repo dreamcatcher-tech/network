@@ -12,3 +12,5 @@ Also searching by state machine nearness.  If you make a simple state machine, t
 All state machines should be part of a global space, so we should amalgamate everything from the tests cases and other things, which makes a searchable database.
 
 Then we can show what functions of the core get used the most, since those are state machines too, so we can see which runs run white hot, vs those that hardly get used at all.
+
+Then if an AI could generate state machines from plain text, you could highlight any section of the documentation and ask for a state machine to be constructed that demonstrated what the text was about.

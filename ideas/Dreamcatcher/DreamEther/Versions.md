@@ -60,7 +60,9 @@ Make a clickable version that can be used to play with the live contract.
 
 Can make this statechart be another view into the frontend app, and another way to interact with the system, including gathering info from the user.
 
-The problem is 
+The only way to have specific substates that depend on context is to attach an always transition to some kind of sort state that is triggered each time a different change is loaded.  Then any transition that might change this (eg: funded or not funded states) can just point to the sort state too.  In fact a single sort could go to multiple transitions, so the sort is the only thing required to point to everything ?
+
+
 ## State testing
 testing each state in detail, and then using state suppression functions to filter out all the paths intrastate.  This reduces the vast explosion of paths down.  Inner state testing becomes akin to unit tests.  The full model might be years to compute, but innerstate and then a few simple paths thru it for the sake of everything else might be sufficient.
 Therefore in running all the innerstate tests, the majority of interactions with outside states should be covered.  Minute fluctuations about how each external state arrived as its final condition will have diminishing returns, and will drown the model.  Also many of the combinations are designed to occur or not occur and have no affect.
