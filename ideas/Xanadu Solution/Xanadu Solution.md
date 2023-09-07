@@ -1,5 +1,4 @@
 
-# Xanadu Solution
 
 > [2022-09-12 Mon 19:44] _[[Ideas]]_ 
 > Targets: [[requests/Xanadu]] 
@@ -25,3 +24,8 @@ At some point, folders were made different from files, but they should be the sa
 ## Files cannot be in more than one place
 
 Files were not made as by default in multiple locations simultaneously, with strong guarantees about consistency.
+
+Servers and Users are the same object in the system, the difference being who controls the keys.  The users are controlled by a person or group of people, but the server may be uncontrolled or controlled.
+
+## Making a [[Comparator]] for Xanadu
+Then do a list of assessments for tooling and groups of tooling, and show how they score.  Eg: google docs, github, wikipedia, wordpress

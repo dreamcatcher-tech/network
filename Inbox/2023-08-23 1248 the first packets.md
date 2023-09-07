@@ -17,3 +17,12 @@ Make it administered by AI.
 solidity contract review and issues report.
 legal boundaries broken down by jurisdiction as to securities and other legalities.
 packet to define what Antons work is.
+
+Project Xanadu request [[Xanadu Solution]]
+Project Xanadu comparator, so that different feasible collections that attempt to solve the Xanadu
+
+Find other famour requests that are well defined but not yet hit, or even those that are hit, such as the initial packets of the internet.  
+
+List the initial RFCs and the people that made them.  Let edits be proposed that change the solver shares.
+
+Make a comparator for our blockchain.
