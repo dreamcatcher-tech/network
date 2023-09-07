@@ -32,7 +32,7 @@ merging packets
 data hashes are really the thing we're tying to get merged in.
 QA token minting and trading
 
-Claim should be done automatically upon enact.
+Claim should be done automatically upon enact. Saves the claim checks, and avoids claim checks.  Enact on a rejection will claim all the funds to QA.
 
 ## Oddities
 Packets can never be rejected as they only get created when the packet header passes QA, and the contract is made so that once QA'd it can never be un QA'd.  That which is done stays done.
