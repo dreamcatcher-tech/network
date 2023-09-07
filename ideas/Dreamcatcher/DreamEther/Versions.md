@@ -32,6 +32,7 @@ merging packets
 data hashes are really the thing we're tying to get merged in.
 QA token minting and trading
 
+Claim should be done automatically upon enact.
 
 ## Oddities
 Packets can never be rejected as they only get created when the packet header passes QA, and the contract is made so that once QA'd it can never be un QA'd.  That which is done stays done.
@@ -71,6 +72,10 @@ The accounts are a stack too, and when selected, their status is loaded from con
 If we separated data display as a machine out from acting upon the machine itself, this can simplify things.  The display section handles reloading and refreshing, and the action area only deals with invoking actions on the SUT.
 
 We can limit what can be done in a single time tick, like only 1 of each action can occur, else all actions are exhausted, which puts a clean and automatic limit on the machine
+
+Make a higher order guard function that adds a check if this particular action has been done already, and makes all actions auto update a flag about their action having been done.  So each time round each transition can only be taken once.
+
+For actions, perhaps we actually go thru the state that is transient before going to idle - this can be used to make assertions at the state of the system.
 ## State testing
 testing each state in detail, and then using state suppression functions to filter out all the paths intrastate.  This reduces the vast explosion of paths down.  Inner state testing becomes akin to unit tests.  The full model might be years to compute, but innerstate and then a few simple paths thru it for the sake of everything else might be sufficient.
 Therefore in running all the innerstate tests, the majority of interactions with outside states should be covered.  Minute fluctuations about how each external state arrived as its final condition will have diminishing returns, and will drown the model.  Also many of the combinations are designed to occur or not occur and have no affect.
