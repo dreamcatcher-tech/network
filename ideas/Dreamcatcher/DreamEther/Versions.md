@@ -67,6 +67,8 @@ Could do one CHANGE action that is external which all states listen to ?  Can be
 If we can make the state selected represent the context, then we can use the `in state` guard as a descriptive way to define conditions without having to write and action descriptor.  Docs recommend against this.
 
 The accounts are a stack too, and when selected, their status is loaded from context.
+
+If we separated data display as a machine out from acting upon the machine itself, this can simplify things.
 ## State testing
 testing each state in detail, and then using state suppression functions to filter out all the paths intrastate.  This reduces the vast explosion of paths down.  Inner state testing becomes akin to unit tests.  The full model might be years to compute, but innerstate and then a few simple paths thru it for the sake of everything else might be sufficient.
 Therefore in running all the innerstate tests, the majority of interactions with outside states should be covered.  Minute fluctuations about how each external state arrived as its final condition will have diminishing returns, and will drown the model.  Also many of the combinations are designed to occur or not occur and have no affect.
