@@ -400,4 +400,3 @@ If people sign up, and deposit some credit card funds in our system, we will kee
 We might be able to make relays like using gasstation to let users have no gas.
 
 To overcome hurdles in UX, we could let users sign in using auth0, then we would manage their transaction operations, and so we would keep wallets we control topped up and operational.
-
