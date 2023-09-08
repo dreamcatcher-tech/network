@@ -32,6 +32,7 @@ merging packets
 data hashes are really the thing we're tying to get merged in.
 QA token minting and trading
 
+Claim should be done automatically upon enact. Saves the claim checks, and avoids claim checks.  Enact on a rejection will claim all the funds to QA.  Could wipe the whole claims field.  `claims` `withdrawn` and `totalClaims can be wiped`  It is more gas to enact, but we could make it callable multiple times, and it just looks at how much gas remains.
 
 ## Oddities
 Packets can never be rejected as they only get created when the packet header passes QA, and the contract is made so that once QA'd it can never be un QA'd.  That which is done stays done.
@@ -67,6 +68,20 @@ Could do one CHANGE action that is external which all states listen to ?  Can be
 If we can make the state selected represent the context, then we can use the `in state` guard as a descriptive way to define conditions without having to write and action descriptor.  Docs recommend against this.
 
 The accounts are a stack too, and when selected, their status is loaded from context.
+
+If we separated data display as a machine out from acting upon the machine itself, this can simplify things.  The display section handles reloading and refreshing, and the action area only deals with invoking actions on the SUT.
+
+We can limit what can be done in a single time tick, like only 1 of each action can occur, else all actions are exhausted, which puts a clean and automatic limit on the machine
+
+Make a higher order guard function that adds a check if this particular action has been done already, and makes all actions auto update a flag about their action having been done.  So each time round each transition can only be taken once.
+
+For actions, perhaps we actually go thru the state that is transient before going to idle - this can be used to make assertions at the state of the system.
+
+We could make all the actions directly match all the interface methods
+
+Need some tests for the machine logic itself, to ensure it is moving around correctly.  These can be just scripted actions that get input, with expected output results
+
+Could group actions (like defund, and fund) into states so that if an actor enters these states, you cannot do anything else until you select the next action to take from there, which drops back to 
 ## State testing
 testing each state in detail, and then using state suppression functions to filter out all the paths intrastate.  This reduces the vast explosion of paths down.  Inner state testing becomes akin to unit tests.  The full model might be years to compute, but innerstate and then a few simple paths thru it for the sake of everything else might be sufficient.
 Therefore in running all the innerstate tests, the majority of interactions with outside states should be covered.  Minute fluctuations about how each external state arrived as its final condition will have diminishing returns, and will drown the model.  Also many of the combinations are designed to occur or not occur and have no affect.
@@ -391,4 +406,3 @@ If people sign up, and deposit some credit card funds in our system, we will kee
 We might be able to make relays like using gasstation to let users have no gas.
 
 To overcome hurdles in UX, we could let users sign in using auth0, then we would manage their transaction operations, and so we would keep wallets we control topped up and operational.
-
