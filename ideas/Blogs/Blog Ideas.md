@@ -180,3 +180,6 @@ Multishot - calculations redone each time new info enters the system will be bet
 
 And so we can request a system that has the potential to be configured in a superior way.
 Whilst we are not sure how to configure the end system, we can make a start, and can lay down these principles that make one system clearly better than the other, while we experiment towards the ideal system.
+
+## Plot rate of new LLMs appearing on the scene
+Point to all of them needed resources to run within orgs, and for containment, and for fine tuning.
