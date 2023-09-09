@@ -82,6 +82,9 @@ We could make all the actions directly match all the interface methods
 Need some tests for the machine logic itself, to ensure it is moving around correctly.  These can be just scripted actions that get input, with expected output results
 
 Could group actions (like defund, and fund) into states so that if an actor enters these states, you cannot do anything else until you select the next action to take from there, which drops back to 
+
+Extend it so that clicking thru the machine will tell you what test number you have chosen, to affirm that all paths are covered.  Basically try to come up with a path that is not covered, and have the machine tell you what is covered, and tell you what is near in path space.
+Watch real world usage and say which tests paths the people are following at each point.  Include a constant score for dissatisfaction, and possible some comparison to a traditional system.
 ## State testing
 testing each state in detail, and then using state suppression functions to filter out all the paths intrastate.  This reduces the vast explosion of paths down.  Inner state testing becomes akin to unit tests.  The full model might be years to compute, but innerstate and then a few simple paths thru it for the sake of everything else might be sufficient.
 Therefore in running all the innerstate tests, the majority of interactions with outside states should be covered.  Minute fluctuations about how each external state arrived as its final condition will have diminishing returns, and will drown the model.  Also many of the combinations are designed to occur or not occur and have no affect.
