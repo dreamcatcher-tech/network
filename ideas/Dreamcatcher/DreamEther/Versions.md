@@ -93,6 +93,10 @@ In the case of funding, we are choosing to forgo the display of the funding stat
 We could have a parallel state that handled the view status of the thing only, and another that used states as a means of the controls for what you can do to that change.  Access to a particular state has to go thru the accounts.  In this way we could actually make the whole machine single state, in that you select your account, then select if you want to manage the account, or act on a change.  It does hide a bit that you can exit at any time, but this is always available by selecting a different account.  Each activity ends, and so your only option is to select an account and start over.
 
 Each state could have a view and and actions substate, where the view is the default, and handles transitioning to other states based on the context, and the actions can only be reached from the accounts section ?  Eg: disputed would have a view of what type of disputes were active, possibly many, and then actions are that superQa can uphold
+
+Tick time should be an option inside of the changes, but guarded so only if time needed it.
+
+The auto flow advancing should also act as the guard to stop actors taking transitions that they cannot do.  So an actor can only get to their control state in a change by taking the transition from their account, and once there, auto
 ## State testing
 testing each state in detail, and then using state suppression functions to filter out all the paths intrastate.  This reduces the vast explosion of paths down.  Inner state testing becomes akin to unit tests.  The full model might be years to compute, but innerstate and then a few simple paths thru it for the sake of everything else might be sufficient.
 Therefore in running all the innerstate tests, the majority of interactions with outside states should be covered.  Minute fluctuations about how each external state arrived as its final condition will have diminishing returns, and will drown the model.  Also many of the combinations are designed to occur or not occur and have no affect.
