@@ -97,6 +97,12 @@ Each state could have a view and and actions substate, where the view is the def
 Tick time should be an option inside of the changes, but guarded so only if time needed it.
 
 The auto flow advancing should also act as the guard to stop actors taking transitions that they cannot do.  So an actor can only get to their control state in a change by taking the transition from their account, and once there, `always` actions move the state on based on the data in the change.  Being in a different state stops any of the transitions being taken.
+
+The `always` flows restore the chart to where it was based on prior activity, then the allowed transitions are presented to the user.  Displaying the full state of the packet is optional - if they want to see, they should become that user, eg: become the funder, take the funding transition to see what transitions are available.
+
+Always transition to the state where you can act.  This implies that each actor can only act on one state of the statechart.
+
+The higher level `always` functions will move the top level state along as soon as the funder enters, rendering their actions useless, once the state has transitioned to pending.
 ## State testing
 testing each state in detail, and then using state suppression functions to filter out all the paths intrastate.  This reduces the vast explosion of paths down.  Inner state testing becomes akin to unit tests.  The full model might be years to compute, but innerstate and then a few simple paths thru it for the sake of everything else might be sufficient.
 Therefore in running all the innerstate tests, the majority of interactions with outside states should be covered.  Minute fluctuations about how each external state arrived as its final condition will have diminishing returns, and will drown the model.  Also many of the combinations are designed to occur or not occur and have no affect.
