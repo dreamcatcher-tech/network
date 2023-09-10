@@ -88,7 +88,11 @@ Watch real world usage and say which tests paths the people are following at eac
 
 Core is that we can either transition to the change we know we will cause, or to the start of the cascade and let the logic walk thru it all again.  Trouble with letting the logic work is that it is not very descriptive to the human and we end up with a huge number of transitions all pointing at the same starting state.
 
-In the case of funding, we are choosing to forgo the
+In the case of funding, we are choosing to forgo the display of the funding status of the packet, and instead use access to the funding state to block anyone by the funder from accessing all the functions related to funding, rather than putting guards on every transition.
+
+We could have a parallel state that handled the view status of the thing only, and another that used states as a means of the controls for what you can do to that change.  Access to a particular state has to go thru the accounts.  In this way we could actually make the whole machine single state, in that you select your account, then select if you want to manage the account, or act on a change.  It does hide a bit that you can exit at any time, but this is always available by selecting a different account.  Each activity ends, and so your only option is to select an account and start over.
+
+Each state could have a view and and actions substate, where the view is the default, and handles transitioning to other states based on the context, and the actions can only be reached from the accounts section ?  Eg: disputed would have a view of what type of disputes were active, possibly many, and then actions are that superQa can uphold
 ## State testing
 testing each state in detail, and then using state suppression functions to filter out all the paths intrastate.  This reduces the vast explosion of paths down.  Inner state testing becomes akin to unit tests.  The full model might be years to compute, but innerstate and then a few simple paths thru it for the sake of everything else might be sufficient.
 Therefore in running all the innerstate tests, the majority of interactions with outside states should be covered.  Minute fluctuations about how each external state arrived as its final condition will have diminishing returns, and will drown the model.  Also many of the combinations are designed to occur or not occur and have no affect.
