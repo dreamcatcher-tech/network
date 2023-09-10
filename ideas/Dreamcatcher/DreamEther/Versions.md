@@ -129,6 +129,7 @@ Trade could be done independently of what just became available, and could trade
 
 If each group of actions, like disputes and funding takes place in a dedicated state, then we can rapidly block them by disallowing those states.
 
+States should represent actions that we do not want repeated, rather than context changes with guards.  
 ### Alternate machine designs
 Currently we focus on any given change, and do different things based on the state of the change.  But we ignore transitions that can occur at any time, like trading, which is independent of any given change.
 
