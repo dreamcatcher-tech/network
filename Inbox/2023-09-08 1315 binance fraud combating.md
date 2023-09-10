@@ -22,3 +22,6 @@ Some actions can be mirrored, such as lido staking.  If the wrapped token is ent
 Could put a guarantee in a stablecoin against these wrapped coins to get the asset out.
 
 This seems like the only solution to give people on chain access, but to keep the fiat regulators happy, since crypto can just disappear, and we do not want to freeze the funds.
+
+## Satoshi
+On satoshi island we have the exact same problem - we need to prove regulation but we want to remain connected to the utility of crypto.
