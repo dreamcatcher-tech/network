@@ -105,6 +105,10 @@ Always transition to the state where you can act.  This implies that each actor 
 The higher level `always` functions will move the top level state along as soon as the funder enters, rendering their actions useless, once the state has transitioned to pending.
 
 Use the `fromState` filter to start the path generation from a fixed state, and then ensure that each substate can be run fully without loops forming.
+
+Pending state for a packet is when a solution has been proposed.
+
+BUT we should stop the defunding whenever a solution has been proposed that passes threshold.
 ## State testing
 testing each state in detail, and then using state suppression functions to filter out all the paths intrastate.  This reduces the vast explosion of paths down.  Inner state testing becomes akin to unit tests.  The full model might be years to compute, but innerstate and then a few simple paths thru it for the sake of everything else might be sufficient.
 Therefore in running all the innerstate tests, the majority of interactions with outside states should be covered.  Minute fluctuations about how each external state arrived as its final condition will have diminishing returns, and will drown the model.  Also many of the combinations are designed to occur or not occur and have no affect.
