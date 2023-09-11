@@ -109,6 +109,8 @@ Use the `fromState` filter to start the path generation from a fixed state, and 
 Pending state for a packet is when a solution has been proposed.
 
 BUT we should stop the defunding whenever a solution has been proposed that passes threshold.
+
+Can put limits in the context for testing, then remove these for manual operation, permitting the machine to model any activity.
 ## State testing
 testing each state in detail, and then using state suppression functions to filter out all the paths intrastate.  This reduces the vast explosion of paths down.  Inner state testing becomes akin to unit tests.  The full model might be years to compute, but innerstate and then a few simple paths thru it for the sake of everything else might be sufficient.
 Therefore in running all the innerstate tests, the majority of interactions with outside states should be covered.  Minute fluctuations about how each external state arrived as its final condition will have diminishing returns, and will drown the model.  Also many of the combinations are designed to occur or not occur and have no affect.
