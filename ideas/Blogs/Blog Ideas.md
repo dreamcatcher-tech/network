@@ -183,3 +183,10 @@ Whilst we are not sure how to configure the end system, we can make a start, and
 
 ## Plot rate of new LLMs appearing on the scene
 Point to all of them needed resources to run within orgs, and for containment, and for fine tuning.
+Use with [[2023-09-13 1126 make benchmarks of LLM performance on our system]]
+Point to the expected growth rate and capability jumps.
+## Dreamcatcher system as replacement of company policies
+What a product is has less importance than how the product got made.  Implicit in most proposed products is a shareholder company.  Make a venture whose purpose is to define venture structures is tricky.
+
+The time we spend writing the Dreamcatcher smart contract code is the same as the time it would take to set up legal share structures, and employee contracts, and other forms of company policy.  Once done, it allows a venture to be set up with a single utterance, provided other people find that utterance useful, and they then build upon it.
+
