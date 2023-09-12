@@ -12,3 +12,5 @@ As soon as a solution that passes the `isJudgeable()` test for the given QA, def
 
 ### Peekabo defunding
 A solution is submitted, is rejected on a technicality, the packet goes back to open and a defunding occurs, then an edit corrects the solution, and it passes, but the funds were removed.
+
+May consider defunding a round, and each round the defunding gets reset somehow ?
