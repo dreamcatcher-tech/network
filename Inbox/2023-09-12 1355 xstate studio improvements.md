@@ -12,3 +12,5 @@ Connect up to production usage of the statechart, where the transitions are phon
 Use test filters in a visual way, to pincer of certain states, and watch the path generation behaviour differently when different visual test restriction elements are given. 
 List out the generated paths.
 Visually pincer different states, and annotate the statechart with visual connections that show it under test.
+
+Scope into submachines, so can edit machines in isolation when the statecharts are getting big.  Allow attachments of "join points" where an external transition that needs to be connected up somehow is shown.  So can provide an external interface for the machine, and an adapter that marshalls between them.
