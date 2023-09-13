@@ -14,3 +14,7 @@ List out the generated paths.
 Visually pincer different states, and annotate the statechart with visual connections that show it under test.
 
 Scope into submachines, so can edit machines in isolation when the statecharts are getting big.  Allow attachments of "join points" where an external transition that needs to be connected up somehow is shown.  So can provide an external interface for the machine, and an adapter that marshalls between them.
+
+Share the adjacency map between different test invocations.
+
+Be able to zoom state levels, so that only a certain level is presented, and only when you go to it does it dynamically expand to show inside that state.  Showing all the information at once limits the maximum size of a statechart that can be reliably navigated around, particularly without the viewport automatically navigating to the active state if it is out of view.
