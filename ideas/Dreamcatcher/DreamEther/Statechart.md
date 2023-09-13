@@ -1,3 +1,5 @@
+## Tests on the machine itself
+First a set of checks on the statechart need to be created, and then the SUT attached to it.
 
 ## Problems
 
