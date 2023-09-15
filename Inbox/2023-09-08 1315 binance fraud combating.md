@@ -23,5 +23,7 @@ Could put a guarantee in a stablecoin against these wrapped coins to get the ass
 
 This seems like the only solution to give people on chain access, but to keep the fiat regulators happy, since crypto can just disappear, and we do not want to freeze the funds.
 
+It is almost as tho the financial system cannot actually provide fungibility and also provenance together.  It cannot provide both anti money laundering features and fungibility / privacy.
+
 ## Satoshi
 On satoshi island we have the exact same problem - we need to prove regulation but we want to remain connected to the utility of crypto.
