@@ -2,7 +2,7 @@
 First a set of checks on the statechart need to be created, and then the SUT attached to it.
 Test that time ticks forwards as expected.
 
-## Problems
+## Problems with the statechart logic
 
 ### Double solve
 How to show the dispute window being extended by a solution being submitted at the end of the dispute window ?
@@ -23,3 +23,9 @@ Only allow a first extension, to cover the initial solution that started the sol
 A solution is submitted, is rejected on a technicality, the packet goes back to open and a defunding occurs, then an edit corrects the solution, and it passes, but the funds were removed.
 
 May consider defunding a round, and each round the defunding gets reset somehow ?
+
+## Problems due to XState and its tooling
+Statechart too large to load in studio effectively.
+
+### Making a dedicated UI for the statechart
+By forking their stackblitz view, we could make our own little version
