@@ -25,7 +25,15 @@ A solution is submitted, is rejected on a technicality, the packet goes back to 
 May consider defunding a round, and each round the defunding gets reset somehow ?
 
 ## Problems due to XState and its tooling
-Statechart too large to load in studio effectively.
+Statechart too large to load in studio effectively - in this case, what is the point of even having the studio ?
 
 ### Making a dedicated UI for the statechart
-By forking their stackblitz view, we could make our own little version
+By forking their stackblitz view, we could make our own little version that showed latest actions.
+The machine could be broken up into submachines, each that pop up their own inspection window.
+Design could be done a section at a time ?
+Submachines can be made out of each independent state, and they can all be opened as inspections of the root machine.  Or, built as smaller machines and assembled into the big one.
+BUT if we had our own webpage, we could dispense with many of the display related machines and focus strictly on functionality.
+
+Using the inspector, we could walk thru each machine using a centralized UI to control the actions, with the viewer providing live updates.
+
+Could visualize just the core machine, with no view helpers, using with a custom dashboard to help walk thru it.
