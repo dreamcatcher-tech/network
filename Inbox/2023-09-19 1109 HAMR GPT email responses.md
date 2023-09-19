@@ -30,3 +30,5 @@ Generalize the sale of the system and keep access to company data by paying the 
 We could attach a customers account status to the bottom of every email we send back to them - next collection, balance, next payment due.
 
 Could we then connect together these basic services to present compound services.
+
+If we could become the email server for the org, then we can provide email for free, and charge each time intelligence was done atop the data.  We would gain access to the data and pay royalties on it.
