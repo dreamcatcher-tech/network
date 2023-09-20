@@ -25,6 +25,8 @@ A solution is submitted, is rejected on a technicality, the packet goes back to 
 
 May consider defunding a round, and each round the defunding gets reset somehow ?
 
+It may be safe enough to rely on the dispute window being half the defunding window, so peekaboo could be avoided.  The defunding would be known before the solution was presented, at any rate.
+
 ## Problems due to XState and its tooling
 Statechart too large to load in studio effectively - in this case, what is the point of even having the studio ?
 
