@@ -27,8 +27,11 @@ May consider defunding a round, and each round the defunding gets reset somehow 
 
 It may be safe enough to rely on the dispute window being half the defunding window, so peekaboo could be avoided.  The defunding would be known before the solution was presented, at any rate.
 
-### Should be able to fund a packet that is in pending state
+A packet is pending if it has a solution enacted but there are competing solutions.  If a packet went pending whenever a solution was submitted, the packet could flicker, and solvers could play games with keeping funds locked.  
 
+However if we went pending if QA accepted a solution then this is probably better.  If QA was slow to act then could be blamed for defund leakage, but this is probably just an ill of the system, because the alternative is gamable if a solution is late, could keep putting in solutions for the price of QA review until completed the real solution and then held funds against funders wishes.
+### Should be able to fund a packet that is in pending state
+This seems to break the model that pending is done with a dispute delay.  It allows people to sneak in funding at the last minute for a sure bet, compared to those who put their funding in when the risk of completion was highest.
 
 ## Problems due to XState and its tooling
 Statechart too large to load in studio effectively - in this case, what is the point of even having the studio ?
