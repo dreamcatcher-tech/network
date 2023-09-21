@@ -12,3 +12,14 @@ Can people converse with the system, then be guided thru the construction of pac
 Is it better, to have a chat about all the ideas that have been posted before, and ask questions about the performance of the system,
 
 Then make the queries public, so that inferior answers can be extended by solvers who come up with a better LLM to give a better answer.  This would be like providing a solution to a closed packet that was considered better.
+
+Instead of an FAQ, we would have a chat interface where questions could be asked of the system.
+
+Should be able to narrow the chatbot down to only help assist things that people are asking about.
+Show in realtime what other people are asking of the bot, and show most popular things to ask about, provided they passed content moderation.
+
+The future is faceless, and so we should make our apps have this property.
+
+Any interface should be highly customizable on the fly by the AI, and should be to present data more rapidly to the human, so they can chat more.  
+
+Also standard toolboxes should pop up, like snippets of things you often want to do.  Users should be able to make these and share them with others for a royalty.
