@@ -23,3 +23,13 @@ The future is faceless, and so we should make our apps have this property.
 Any interface should be highly customizable on the fly by the AI, and should be to present data more rapidly to the human, so they can chat more.  
 
 Also standard toolboxes should pop up, like snippets of things you often want to do.  Users should be able to make these and share them with others for a royalty.
+
+Composability is maximal with no interface - 20 systems can present as one.  One LLM would be a router of queries, and the others would respond as best the.
+
+Requires that the backend data structures be composable too.
+
+Prototyping is the AI first, then build the box around it later.  Use untrusted AI to get the features dialed in, then go about containment.
+
+Start the dreamcatcher as the faceless app, start building that first as the example of all our technologies.
+
+Decision support outsourced to a machine.
