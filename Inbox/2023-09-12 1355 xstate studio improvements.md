@@ -20,3 +20,5 @@ Share the adjacency map between different test invocations.
 Be able to zoom state levels, so that only a certain level is presented, and only when you go to it does it dynamically expand to show inside that state.  Showing all the information at once limits the maximum size of a statechart that can be reliably navigated around, particularly without the viewport automatically navigating to the active state if it is out of view.
 
 Video calls where the chatter around a given state can be amalgamated, and interpreted into text, then summarized.
+
+Forwards and back buttons restore the state of the machine when in a browser page designed for navigating machines.
