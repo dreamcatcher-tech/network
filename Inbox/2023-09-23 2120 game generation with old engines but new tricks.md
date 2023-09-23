@@ -6,3 +6,5 @@
 >[!danger] Depends: 
 
 Take a known popular highly playable game like Q2, and give people the ability to use ai prompting to generate arbitrary overlays.  Possibly change physics.
+
+Prompting followed by physics being calculated in means that the gameplay is still the same, but then AI ups the graphics to something insane.
