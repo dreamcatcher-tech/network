@@ -191,3 +191,7 @@ What a product is has less importance than how the product got made.  Implicit i
 The time we spend writing the Dreamcatcher smart contract code is the same as the time it would take to set up legal share structures, and employee contracts, and other forms of company policy.  Once done, it allows a venture to be set up with a single utterance, provided other people find that utterance useful, and they then build upon it.
 
 ## Statecharts and the big design upfront
+
+## self sovereign advantages
+cyberattack means only the accounts that used a particular custodian would be compromised.
+those who chose to manage their own keys would be immune.
