@@ -22,3 +22,5 @@ Be able to zoom state levels, so that only a certain level is presented, and onl
 Video calls where the chatter around a given state can be amalgamated, and interpreted into text, then summarized.
 
 Forwards and back buttons restore the state of the machine when in a browser page designed for navigating machines.
+
+Show discovered paths as they are found, so we know we have a runaway at finding all paths, or struggling to get into a certain state.
