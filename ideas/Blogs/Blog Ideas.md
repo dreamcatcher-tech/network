@@ -205,3 +205,7 @@ Can be automated so the LLM can test if the request and the response are accurat
 
 ## The fall of Turing
 The turing test has fallen, and we all seem relatively unaffected.  Terminator movies were about the conclusion of the fall of the Turing test.  The next level of test is trust - given a selection of operators, and knowing they are a mixture of humans and machines of various architectures, which one do I trust ?
+
+## the investment of ideas
+Once a decentralized attribution system is established, this is when all contributors get rewarded, so tasks can be put up with no funding, that simply contribute to this decision automation system.
+So we would ask people to contribute with no immediate reward, and no responsible 3rd party, but rather to trust that if the thing we want gets built, it will attribute to them every time it is run.
