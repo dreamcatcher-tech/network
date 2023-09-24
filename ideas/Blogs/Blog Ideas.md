@@ -195,3 +195,10 @@ The time we spend writing the Dreamcatcher smart contract code is the same as th
 ## self sovereign advantages
 cyberattack means only the accounts that used a particular custodian would be compromised.
 those who chose to manage their own keys would be immune.
+
+## AI faceless apps with easy spec and continual tweak
+No difference between data and code now.
+Spec an app you want by a set of responses that you want the AI to respond with.
+Use this as the means to specify a packet.
+Provides very little information for a huge amount back that is accurately what you wanted.
+Can be automated so the LLM can test if the request and the response are accurate, and can see some offscript examples that it can generate and see if those act as expected too.
