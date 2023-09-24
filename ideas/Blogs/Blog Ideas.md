@@ -202,3 +202,6 @@ Spec an app you want by a set of responses that you want the AI to respond with.
 Use this as the means to specify a packet.
 Provides very little information for a huge amount back that is accurately what you wanted.
 Can be automated so the LLM can test if the request and the response are accurate, and can see some offscript examples that it can generate and see if those act as expected too.
+
+## The fall of Turing
+The turing test has fallen, and we all seem relatively unaffected.  Terminator movies were about the conclusion of the fall of the Turing test.  The next level of test is trust - given a selection of operators, and knowing they are a mixture of humans and machines of various architectures, which one do I trust ?
