@@ -71,7 +71,11 @@ DAO can be registered, which has corporate personhood, then this company receive
 15. Implementation - can set up a publicly audited company to provide the currency until we can get some dedicated vaulters onboard
 
 ## Extensions
-Do deals with the vault companies to let people transfer their assets to a special account that is owned by code alone.  It can have restrictions like what KYC 
+Do deals with the vault companies to let people transfer their assets to a special account that is owned by code alone.  It can have restrictions like what KYC is required - basically anything they might like.  Our offering is blending them all together vs on their own, they would need to run the network we do, and keep the smart contract code running.  They might refuse to run the service, but so long as they earn more than a regular account for less overhead, then they should be ok with it.  If a small number join, then the rest can't really argue since customers will go to the exchanges that are online.
+
+Can use soulbinding techniques to allow each exchange to have KYC pass for their assets.  If you want to hold backstage assets, then you need to have an exchange account, which is required for withdrawal or deposit.  Once in the ETF account tho, it is on chain and can trade freely.  The gold remains held by the despositor (who holds the liability and the exchange account) but it cannot be withdrawn unless the chain agrees.
+
+The depositor earns interest for holding it in there, but anyone else can remove it to their own exchange account ? Or, for them to withdraw again, they need to pay the tokens back.
 
 Vault corps get tx fees people moving in and out, possibly transaction fees of the network.
 
