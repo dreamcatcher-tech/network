@@ -70,5 +70,15 @@ DAO can be registered, which has corporate personhood, then this company receive
 	3.  Crypto exits, to rapidly get out of the silver pool
 15. Implementation - can set up a publicly audited company to provide the currency until we can get some dedicated vaulters onboard
 
+## Extensions
+Do deals with the vault companies to let people transfer their assets to a special account that is owned by code alone.  It can have restrictions like what KYC 
 
+Vault corps get tx fees people moving in and out, possibly transaction fees of the network.
 
+We can still earn in this model, since the vault co's have to compete with each other based on jurisdictions, fees, trust, and what we offer is a market where consumers can switch between them all, so they are kept honest by being in competition with each other.
+
+If the vaulters do not cooperate to provide an exchange traded fund equivalent, then we can let individual vaulters back the assets, provided they have passed some level of audit.  The vault companies should be able to supply proof of account balance that is shareable if people want to.
+
+Model is to be like DAI, where individuals acquire the assets then pool them to support the currency.
+
+Worst case we would make independent companies that hold the vault reserves as a corporate entity.  Users must decide if they trust them or not.
