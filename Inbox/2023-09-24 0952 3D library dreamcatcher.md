@@ -16,3 +16,9 @@ Generative LLMs that can design models that match your prompts, but do so by mod
 Any time someone earns a fee for doing some work, all the dependencies of that model get a cut too.
 
 Ideally want a toyshop where can buy lots of models for kids, particularly ones that can be assembled into other things.
+
+Machines that are designed starting with some crude constraints set up by hand, then from the first iteration sensors feed back info about how each model was used.  This is used to refine the constraints further, with more resolution than a human has time for, and based on real live usage.  This is then made into a new machine and the cycle of evolution continues.
+
+Kits would be supplied as some base parts, plus the parametric model and the current state of the study.  You could feed your data in, or not.  You can change how you want things to be and see the changes take place.  Use prompting to get changes to the design rather than any particular tool.  Prompts can then generate some dials that give you more or less of a thing you asked for.  These can be tweaked in parallel, and relationships between them can be described so you can twiddle around.
+
+Make some parts generally useable, like a computer that controls servos - the servos and power supplies could be all pluggable so that you can grab and reuse any, and make new things out of them, since the support material and software is all that needs to change.  Makes repair easy since the parts are so common and interchangeable.
