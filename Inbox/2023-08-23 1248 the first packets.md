@@ -26,3 +26,7 @@ Find other famour requests that are well defined but not yet hit, or even those 
 List the initial RFCs and the people that made them.  Let edits be proposed that change the solver shares.
 
 Make a comparator for our blockchain.
+
+A simple xprize type measurement for knowing when the dreamcatcher is working - eg: reach low earth orbit then do it again with in a week using the same vehicle
+
+Dashboards for measurements of the dreamcatcher utility, with reasonable targets, and simulations to show how we might get there.
