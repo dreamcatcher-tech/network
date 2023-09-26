@@ -10,3 +10,5 @@ We should be able to model a statechart within a blockchain, so that no matter w
 So if there were always two base views: a statechart governing the app, and a commandline interface, then anything that gets made on top can be assured to be operating correctly.
 
 Plus integrators can understand how our system works better.
+
+Can be used to get the blockchain into difficult to reach states, as the prep is much simpler to do.  
