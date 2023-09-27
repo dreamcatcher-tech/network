@@ -46,3 +46,8 @@ BUT if we had our own webpage, we could dispense with many of the display relate
 Using the inspector, we could walk thru each machine using a centralized UI to control the actions, with the viewer providing live updates.
 
 Could visualize just the core machine, with no view helpers, using with a custom dashboard to help walk thru it.
+
+## testing more thoroughly
+Be able to set an env var that turns off some of the filters, such as limiting the number of different funding types that get tested out, funding multiple times with the same item, doing things in multiple orders.
+
+Then once have a fully unleashed unrestricted model, we can start to do monte carlo path testing.
