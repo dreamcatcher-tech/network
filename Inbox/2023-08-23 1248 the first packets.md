@@ -5,6 +5,8 @@
 
 >[!danger] Depends: 
 
+Deploy the contract with NFT 1 prepopulated with a description of the contract itself.
+
 The first packet should be to make the dreamcatcher itself.
 Then to make it profitable.
 Then to be free.
@@ -30,3 +32,8 @@ Make a comparator for our blockchain.
 A simple xprize type measurement for knowing when the dreamcatcher is working - eg: reach low earth orbit then do it again with in a week using the same vehicle
 
 Dashboards for measurements of the dreamcatcher utility, with reasonable targets, and simulations to show how we might get there.
+
+We have this blockchain, and we have this packet based work management system - we have a list of first applications we want to use it for, which we think are commercially viable.  Of that list, some key ones combine together to give the Dreamcatcher in fully automated form.  The dreamcatcher is the  decentralized and fully autonomous evolution of the packetizer.
+
+Further a secondary ring of apps combine together to form a decentralized social network.
+
