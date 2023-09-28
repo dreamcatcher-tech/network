@@ -226,10 +226,17 @@ Current inefficiencies in the software marketplace are:
 9. software frameworks are still not cloud native and causes complication in software delivery
 10. software products are corrupted with revenue extraction mechanisms
 11. sensitivity and connection to customers is muted or lacking
+12. maintenance is not incentivized
 
 Dreamcatcher is useable as a project management framework that bonds together customer demand, equity management, and tasks
 
 In phase 1, with just packetized work, we address items 1, 2, 3, 4.  We partially tackle 5, 6, 7.
 Additionally we give funders a way to have a project plan that has a fixed budget but varying timeline.
 
-In phase 2 we tackle the framework problem, and open up the app store to engage directly with customers in a kickstarter like fashion.
+In phase 2 we tackle the framework problem, and open up the app store to engage directly with customers in a kickstarter like fashion.  We start on the AI for attribution automation.
+
+? can this be shown in a gantt chart to show the time taken and the probability of failure for each activity that is required for a piece of software to be delivered and consumed by a customer.
+
+Then how are ethics assured in this system ?  The economics of force - software force can be used to bring the threat of violence to force payment for software.  Removing this and trading it for ethics compliance seems better, and the future path of the software industry.  All industry must be ethical eventually, and software tools will enable this, so having ethics built in to software manufacture is a good first step, but also ensures our revenue in a system where we voluntarily lay down the force to pay.  Any ethical product must have a transparent supply chain that is automatically verifiable using software.  At that point, the question arises did we pay our software vendors ethically ?
+
+The rise of innovation networks.  Networks need a protocol.  Packets is that protocol.  Tooling is required to maximize the benefit of the protocol.

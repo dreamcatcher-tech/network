@@ -54,3 +54,5 @@ Then once have a fully unleashed unrestricted model, we can start to do monte ca
 
 Make the SUT be the same thruout all the tests.  If the tests were made to snapshot the balances in the context, then the SUT can be the same, testing long ranging usage.
 We can also feed the same SUT in between paths, so it is getting reused even more heavily.
+
+Have some filters like navigation be opened up during big tests, so we can get more paths.  For hand tuning, want the filters to suppress, but want a way to open this up to big tests when the env var is set high.  Could be just a flag in the config that only runs the big tests during the CI cycle.
