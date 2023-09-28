@@ -212,3 +212,24 @@ So we would ask people to contribute with no immediate reward, and no responsibl
 
 ## The case for blockchains as backends
 If you consider the cost of engineering and maintaining highly secure highly available backends, the transparent disinterested blockchain makes a strong argument for cost reductions.  Having a system with strong guarantees of uptime, no ongoing maintenance required, is alluring.
+
+## Software Construction Market inefficiencies
+Current inefficiencies in the software marketplace are:
+1. Misaligned Incentives: Often, stakeholders have differing goals, leading to misaligned incentives.
+2. Quality Assurance: Inconsistent or lacking quality assurance can result in subpar products.
+3. Communication: Miscommunications can lead to incorrect implementations and wasted resources.
+4. Access to Talent: Traditional hiring processes can overlook or fail to attract the right talent.
+5. Speed to Market: Delays in development can result in missed market opportunities.
+6. Reusability: Inefficient reuse of existing code or knowledge can cause redundant work.
+7. Reward Structure: Inadequate reward structures can deter high-quality contributions, or greatly delay work starting, and can sometimes curse the future of the product due to share negotiation faults.
+8. software frameworks do not encapsulate economic forces within them, relying purely on code
+9. software frameworks are still not cloud native and causes complication in software delivery
+10. software products are corrupted with revenue extraction mechanisms
+11. sensitivity and connection to customers is muted or lacking
+
+Dreamcatcher is useable as a project management framework that bonds together customer demand, equity management, and tasks
+
+In phase 1, with just packetized work, we address items 1, 2, 3, 4.  We partially tackle 5, 6, 7.
+Additionally we give funders a way to have a project plan that has a fixed budget but varying timeline.
+
+In phase 2 we tackle the framework problem, and open up the app store to engage directly with customers in a kickstarter like fashion.
