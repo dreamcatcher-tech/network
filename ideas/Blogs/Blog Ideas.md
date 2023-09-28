@@ -209,3 +209,6 @@ The turing test has fallen, and we all seem relatively unaffected.  Terminator m
 ## the investment of ideas
 Once a decentralized attribution system is established, this is when all contributors get rewarded, so tasks can be put up with no funding, that simply contribute to this decision automation system.
 So we would ask people to contribute with no immediate reward, and no responsible 3rd party, but rather to trust that if the thing we want gets built, it will attribute to them every time it is run.
+
+## The case for blockchains as backends
+If you consider the cost of engineering and maintaining highly secure highly available backends, the transparent disinterested blockchain makes a strong argument for cost reductions.  Having a system with strong guarantees of uptime, no ongoing maintenance required, is alluring.
