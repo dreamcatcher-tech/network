@@ -21,3 +21,11 @@ Makes data security be the highest possible, as well as auditability and provena
 Makes pricing history be transparent and provable.
 Avoids being a money transmitter directly.
 Cost of data integrity and security goes way down, since the blockchain is the backups and resiliency of the system - basically impervious to infrastructure failures.
+
+We can make ERC20 contracts that use the soulbound id as the owner of the token, not the address.  So to have authority, we look at what soulbound id the address holds, run all the kyc logic, then do the transfer. 
+
+We can put a contract in front of the soulbound account, so you can send any action at all thru us, but the contract address only responds to whoever holds the soulbound token.  One contract per token.  Makes it look like a regular address to all the rest of the ecosystem, but only the soulbound token holder can control it.  
+
+Can set your own avatar and other image information.  Bridge out to all chains.
+
+Make a snap for metamask so you can use the contract like a regular contract.

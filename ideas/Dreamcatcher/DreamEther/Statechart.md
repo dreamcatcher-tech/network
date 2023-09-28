@@ -51,3 +51,6 @@ Could visualize just the core machine, with no view helpers, using with a custom
 Be able to set an env var that turns off some of the filters, such as limiting the number of different funding types that get tested out, funding multiple times with the same item, doing things in multiple orders.
 
 Then once have a fully unleashed unrestricted model, we can start to do monte carlo path testing.
+
+Make the SUT be the same thruout all the tests.  If the tests were made to snapshot the balances in the context, then the SUT can be the same, testing long ranging usage.
+We can also feed the same SUT in between paths, so it is getting reused even more heavily.
