@@ -214,6 +214,8 @@ So we would ask people to contribute with no immediate reward, and no responsibl
 If you consider the cost of engineering and maintaining highly secure highly available backends, the transparent disinterested blockchain makes a strong argument for cost reductions.  Having a system with strong guarantees of uptime, no ongoing maintenance required, is alluring.
 
 ## Software Construction Market inefficiencies
+Current software is construction management is detached from the software itself.  Developer salaries and pay packets are not directly connected to sales - they can monopolize work and restrict consumers options to have their software built by better suited parties.
+
 Current inefficiencies in the software marketplace are:
 1. Misaligned Incentives: Often, stakeholders have differing goals, leading to misaligned incentives.
 2. Quality Assurance: Inconsistent or lacking quality assurance can result in subpar products.
@@ -227,6 +229,8 @@ Current inefficiencies in the software marketplace are:
 10. software products are corrupted with revenue extraction mechanisms
 11. sensitivity and connection to customers is muted or lacking
 12. maintenance is not incentivized
+13. hosting software is costly and error prone - aws charges too much and is hard to use
+14. Data is not self sovereign
 
 Dreamcatcher is useable as a project management framework that bonds together customer demand, equity management, and tasks
 
@@ -238,5 +242,7 @@ In phase 2 we tackle the framework problem, and open up the app store to engage 
 ? can this be shown in a gantt chart to show the time taken and the probability of failure for each activity that is required for a piece of software to be delivered and consumed by a customer.
 
 Then how are ethics assured in this system ?  The economics of force - software force can be used to bring the threat of violence to force payment for software.  Removing this and trading it for ethics compliance seems better, and the future path of the software industry.  All industry must be ethical eventually, and software tools will enable this, so having ethics built in to software manufacture is a good first step, but also ensures our revenue in a system where we voluntarily lay down the force to pay.  Any ethical product must have a transparent supply chain that is automatically verifiable using software.  At that point, the question arises did we pay our software vendors ethically ?
+
+The public chain solves the hosting problem, where peoeple can trade GPU resources to get highly responsive applications that are cheap to run.
 
 The rise of innovation networks.  Networks need a protocol.  Packets is that protocol.  Tooling is required to maximize the benefit of the protocol.
