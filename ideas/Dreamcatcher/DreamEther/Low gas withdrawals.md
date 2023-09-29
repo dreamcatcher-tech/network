@@ -27,3 +27,39 @@ Or it could target specific packets ?
 Or just go until it ran out of gas, and rely on the fact that it should be deleting info and so getting gas back ?
 
 Or we could do the transfers directly out of the packet, with no merging into debts ?
+
+V3
+`claims` stores reference to the packet funds, and a snapshot of what the funds are.
+withdraw walks thru each packet on our list that is unclaimed, and for each one gathers a list of what is withdrawable.  It checks the gas cost and just squeezes as much as it can.
+
+Add a deposit for adding a new asset type
+If you fund a new asset, then you get charged extra gas since we open two new sstore slots to cover your creation of this asset class.
+Or charge each funder a gas penalty when they fund a change, which is refunded upon squeeze.
+Hurts griefers, doesn't harm genuine users much.
+This gas may never be recovered tho - last to claim could get the gas refund ? 
+Or burn a gas refund each time a claim is made ?
+Each holder gets one gas refund per squeeze they do, to help out.
+QA fees are used to cover this.
+
+Funding an NFT incurs a gas penalty to stop griefing, and each person claiming gets refunded the first one they hit.
+squeeze is iterative, and goes from oldest to newest.
+squeeze completes each change before moving on.
+when it moves on, it checks what gas it has left, so it can be called multiple times.
+qa stores the the content holders when they resolve.
+when squeezing, each content holder is updated with a boolean saying if they claimed or not.
+last to squeeze gets all the gas penalties.
+store the largest content holder, since they get the residues of squeezing.  Or make the last to squeeze get all the funds.
+Last to squeeze gets all the gas refunds.
+QA should set the flags of all content holders high, so they get gas back for removing themselves from the claimed set.
+
+
+upon qa resolving, the map of solvers is saved, and a bool flag set high to indicate unclaimed.
+
+mapping of holders and their amounts.  Each one sets if they claimed or not.
+claiming costs gas, and if the gas is higher than the reward, then nobody would bother.
+
+store an int of how many holders remain unclaimed.  Decrement down each time a squeeze completes.  Last to squeeze gets all
+Know what gas slot to reclaim since have the counter of where you are.  This ensures everyone gets at least one gas booster, with no costs to check if the gas booster is there.  If you are the last one, then you get every gas booster from
+Can use modulo to give back every n gas boost, where only the residue is returned to the last squeezer.
+
+Funding takes an extra gas slot.
