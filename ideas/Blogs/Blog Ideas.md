@@ -216,6 +216,8 @@ If you consider the cost of engineering and maintaining highly secure highly ava
 ## Software Construction Market inefficiencies
 Current software is construction management is detached from the software itself.  Developer salaries and pay packets are not directly connected to sales - they can monopolize work and restrict consumers options to have their software built by better suited parties.
 
+Market innefficiencys in knowledge work have plagued us too long - this is dangerous and possibly fatal as the world is changing now more rapidly than ever before - we simply must get the innovation rate up.
+
 Current inefficiencies in the software marketplace are:
 1. Misaligned Incentives: Often, stakeholders have differing goals, leading to misaligned incentives.
 2. Quality Assurance: Inconsistent or lacking quality assurance can result in subpar products.
