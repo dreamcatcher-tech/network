@@ -59,3 +59,13 @@ Prompt gives you search ability too, like all the packets that mention "rain".
 AI can generate little loop tools - when you begin a loop, it starts to detect what you are doing to each and every item in the list.  First you scope the list, then you start to operate on each one.  You might refine the scope more as you go along.  For the next items in the list, the AI is always guessing what it thinks you are doing, and so eventually you get to the stage of rapidly just okaying things.  This is in teach mode.
 
 It should be able to detect a bunch of preferences, and distill them in a single place, like a set of rules.  "from now on, always address me as sir" - this should make an entry in the preferences file and be persistent across all prompts.  We can start with  just superloading the prompt, and move to embeddings.
+
+Start with the chat bot interface presented on the website.  As you chat, it can navigate you to the most relevant section of the site.  It can clarify that some answers are about plans, since it knows how to read the roadmap nfts.  This window can be full screened, but it always looks like a modal, sitting on top of everything else.  Can be totally hidden if you want.  So we start with an educational piece, in the main website, but can rapidly jump off 
+
+The UI is used to show information in a dense structured way, such as a list or some graphs of funding.  
+
+Any time you ask the AI to do something, if it cannot do that it should immediately walk you into constructing a packet mode.
+
+Let people mess with the programming of the prompts too, by using the prompts, to experiment rapidly.
+
+Offer payments and explain how attribution works, so that if you pay for these API credits now, then people who use the free credits share with you some of their attribution.
