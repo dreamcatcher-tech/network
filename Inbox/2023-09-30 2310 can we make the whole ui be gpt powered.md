@@ -55,3 +55,5 @@ Traditional UI could be navigated with a prompt and response window down the bot
 An API should be an LLM into the system ?  Remote system describes what it wants, target simulates the output, and the remote system iterates until ready to commit.
 
 Prompt gives you search ability too, like all the packets that mention "rain".
+
+AI can generate little loop tools - when you begin a loop, it starts to detect what you are doing to each and every item in the list.  First you scope the list, then you start to operate on each one.  You might refine the scope more as you go along.  For the next items in the list, the AI is always guessing what it thinks you are doing, and so eventually you get to the stage of rapidly just okaying things.  This is in teach mode.
