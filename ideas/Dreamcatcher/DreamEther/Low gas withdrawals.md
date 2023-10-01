@@ -63,3 +63,9 @@ Know what gas slot to reclaim since have the counter of where you are.  This ens
 Can use modulo to give back every n gas boost, where only the residue is returned to the last squeezer.
 
 Funding takes an extra gas slot.
+
+Punishing all funders for the sake of spam seems annoying.
+
+V4
+The cost of withdrawal is the number of nfts 
+Could store the nft index we are up to, to permit restarting when gas is low.

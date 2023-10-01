@@ -49,3 +49,9 @@ Can switch out the UI that you are using.  Each selected LLM would need to pass 
 Changing preferences can be done like writing a packet - the target is the preferences file, which has a strict format, where new formats can be added in as people invent new things and names for things they want.  Then a translation to a standardized form for all.  When you ask for what you want, it will put up a diff of the preferences that it is about to change for your approval.
 
 Key is that everything must be undoable, and also outcomes simulatable before commiting to anything.  Give people a strong sense of being in control, and that the AI won't do anything they were not ok with.
+
+Traditional UI could be navigated with a prompt and response window down the bottom, that can move around the UI, but the whole UI is the target of the chat, and is made compatible with the prompt interactions.  eg: all text box edits are diff capable, all actions from the ai are undoable.  Navigation can be performed easily.  Some actions, like nav, the ai just takes since they are not change inducing to the permanent state.  Back button in browser undoes that.
+
+An API should be an LLM into the system ?  Remote system describes what it wants, target simulates the output, and the remote system iterates until ready to commit.
+
+Prompt gives you search ability too, like all the packets that mention "rain".
