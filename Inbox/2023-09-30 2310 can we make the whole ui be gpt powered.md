@@ -39,3 +39,13 @@ This means that user stories can be specied as natural language, and perhaps an 
 Should be able to auto generate a state chart for any GUI that was described in this markdown / yml style format.
 
 "take a whitelist of what tokens to show from site xyz"
+
+Blockchain aspect is important so we can do all the AI tricks offline, but also so we can share resources to allow anyone to contribute them, and so we can provide cheaper and faster response times, plus trust.  Also gives us a faster to build system, with AI built in by default, and global scalability built in.  But primarily it provides data self sovereignty to the users, and provenance of all changes.  Blockchain gives the rollback, simulate forwards aspect that is critical for an AI powered system - always be able to back out of your changes, no matter how large, and always be able to simulate what they changes will be, then apply them directly - this part is key for AI to be able to learn what it should have done, but also for humans to consider the complex changes an AI proposes to make.  Atomically being able to merge these in is critical.
+
+Goal is that if this is the first framework you learned how to use, then you would think it insane to do any other way.  So ignoring the cost of learning, this would be a quicker framework, plus has a labour market built in.
+
+Can switch out the UI that you are using.  Each selected LLM would need to pass a basic fitness test before being allowed to drive.
+
+Changing preferences can be done like writing a packet - the target is the preferences file, which has a strict format, where new formats can be added in as people invent new things and names for things they want.  Then a translation to a standardized form for all.  When you ask for what you want, it will put up a diff of the preferences that it is about to change for your approval.
+
+Key is that everything must be undoable, and also outcomes simulatable before commiting to anything.  Give people a strong sense of being in control, and that the AI won't do anything they were not ok with.
