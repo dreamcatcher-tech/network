@@ -135,6 +135,11 @@ exit( filter ){
 	// errors push the id to the back of the array
 }
 ```
-Inherits means it will call those filters 
+Inherits means it will call those filters from left to right ? 
+if any filter sets an allowOnly, then all must be allowOnly ?
+
 
 Filters can used for presentation on the website, and hiding some tokens.
+
+So when doing `squeeze()`, you are burning anything you don't want.
+when doing `exit()`
