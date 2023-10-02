@@ -69,3 +69,5 @@ Any time you ask the AI to do something, if it cannot do that it should immediat
 Let people mess with the programming of the prompts too, by using the prompts, to experiment rapidly.
 
 Offer payments and explain how attribution works, so that if you pay for these API credits now, then people who use the free credits share with you some of their attribution.
+
+If it doesn't know the answer to something, it should include in the prompt that it didn't know, which is a hidden flag that we can scan for when viewing everyones prompt interactions.

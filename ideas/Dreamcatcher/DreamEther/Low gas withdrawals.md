@@ -79,4 +79,28 @@ If we could make a single nft withdraw and
 So supply the count we want to go up to, so that we can do withdrawals in batches.
 `squeezeBatch( nftIds, counts )`
 Or, use a whitelist so we essentially burn the funding that isn't on the whitelist like `squeeze( nftId, whitelist[] )` which whitelists a bunch of assetIds.  Can be used in conjunction with `getAssetIds( nftId )` to see which assetIds back each nftId.  Can actually build up this list using nft queries too, perhaps.
-Could store the nft index we are up to, to permit restarting when gas is low.
+Or, for a given solver, walk all nfts looking for a specific asset, and just get that out ?
+Could store the nft index we are up to, to permit restarting when gas is low.  Can also control the count that we want to process, so people can batch their withdraws saving tx costs.
+Must there be  a debts section ?  yes because pooling of external gas costs is cheaper
+
+Require setting a whitelist on the contract, and then using this whitelist for assetIds, or combinations of whitelists, to save on transactions costs.  Can also use blacklists ?  list format can start with combinations of other lists too, and they result in a mapping that chains lookups together.  Saving them and making public means they don't waste gas for multiple people.
+
+We could skip the debts section, and use only the whitelist option to do claim direct from the nfts themselves.  Would be less overall gas.  
+
+`squeezeBatch( changeIds[], filter )`
+`squeeze( changeId, filter )`
+`claim( filter )` to withdraw all assets that have been squeezed out of the funded changes
+
+
+filters
+```solidity
+struct {
+	createdAt: timestamp,
+	creator: address,
+	allow: mapping( assetId => bool ), // may make this enumerable
+	deny: mapping( assetId => bool ),
+	inherits: [id1, id2, id3]
+}
+```
+
+QA 
