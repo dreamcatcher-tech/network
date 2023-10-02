@@ -71,3 +71,12 @@ Let people mess with the programming of the prompts too, by using the prompts, t
 Offer payments and explain how attribution works, so that if you pay for these API credits now, then people who use the free credits share with you some of their attribution.
 
 If it doesn't know the answer to something, it should include in the prompt that it didn't know, which is a hidden flag that we can scan for when viewing everyones prompt interactions.
+
+Components that present multiple areas, like a multipart form, should allow themselves to be focused, where we restrict the AI to processing just that section.
+When zoomed back out, if the AI thinks it wants to change other sections, ask for permission.
+
+Be able to list what packet formats it is applying, why did it apply this one, and what are some examples of this packet form.  Then narrow down those examples based on some search criteria.
+
+So we're first and foremost building an AI tool that helps create packets, helps QA process the packets and provide helpful annotated feedback, and automates the discernment of a solution meeting a request (a solution solving a problem).  We show the feedback the AI would give to the QA to allow people to polish their submissions before sending to the QA at all.  This reduces the inefficiency of "bounded agents" as the processing time / cost, intimacy of feedback, and intelligence / standardization of feedback is boosted by an AI.  Also language barriers are overcome.  Using AI to overcome market inefficiencies in the knowledge work market.  With NFTs and blockchain.
+
+Annotations on a body of text are given by the AI, then we pull those out, link to the text, and then show some hover over buttons on the main body, like google doc comments.

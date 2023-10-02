@@ -81,14 +81,14 @@ So supply the count we want to go up to, so that we can do withdrawals in batche
 Or, use a whitelist so we essentially burn the funding that isn't on the whitelist like `squeeze( nftId, whitelist[] )` which whitelists a bunch of assetIds.  Can be used in conjunction with `getAssetIds( nftId )` to see which assetIds back each nftId.  Can actually build up this list using nft queries too, perhaps.
 Or, for a given solver, walk all nfts looking for a specific asset, and just get that out ?
 Could store the nft index we are up to, to permit restarting when gas is low.  Can also control the count that we want to process, so people can batch their withdraws saving tx costs.
-Must there be  a debts section ?  yes because pooling of external gas costs is cheaper
+Must there be  a debts section ?  yes because pooling of external gas costs is cheaper BUT costs storage and update costs.
 
 Require setting a whitelist on the contract, and then using this whitelist for assetIds, or combinations of whitelists, to save on transactions costs.  Can also use blacklists ?  list format can start with combinations of other lists too, and they result in a mapping that chains lookups together.  Saving them and making public means they don't waste gas for multiple people.
 
 We could skip the debts section, and use only the whitelist option to do claim direct from the nfts themselves.  Would be less overall gas.  
-
-`squeezeBatch( changeIds[], filter )`
-`squeeze( changeId, filter )`
+`squeeze( filter? )` runs until gas runs out, from oldest to newest - seems best
+`squeezeBatch( changeIds[], filter? )`
+`squeeze( changeId, filter? )`
 `claim( filter )` to withdraw all assets that have been squeezed out of the funded changes
 
 
@@ -101,6 +101,38 @@ struct {
 	deny: mapping( assetId => bool ),
 	inherits: [id1, id2, id3]
 }
+filter( assetId ) {
+	check the assetId exists
+	for (const id of inherits){
+		bool ok = filter( id, assetId )
+		if (!ok){
+			return false
+		}
+	}
+	if (deny[assetId]){
+		return false
+	}
+	// if there is an allow list, it is allow only
+	// if there is a deny list, it is deny but let everything else thru
+}
+createFilter( allow[], deny[], inherits[] ){
+	// given the allow assetIds and deny assetIds, build a filter
+}
+listFilter( id ){
+	return allow[], deny[], inherit
+}
+listFilterMerged( id ){
+	// goes thru all 
+}
+exit( filter ){
+	// so remove exitSingle and burn, and just use filters
+	// this returns when gas is low, and burns any token not
+	// passed by the filter
+	// mitigates having a huge number of assets to exit, or problematic contracts
+	// problematic withdrawals can be stored in an array and skipped next time
+	// errors push the id to the back of the array
+}
 ```
+Inherits means it will call those filters 
 
-QA 
+Filters can used for presentation on the website, and hiding some tokens.
