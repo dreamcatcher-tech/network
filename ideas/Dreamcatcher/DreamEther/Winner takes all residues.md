@@ -31,3 +31,7 @@ V1 should be very cheap once the array is loaded into memory.
 Sorting saves a lot of checking, but might not be needed ?
 
 If the solvers were removed to indicate a claim, and residue was calculated on all of the remainder, then gas is lower, but kills some verbosity.
+
+Best option is to delete from the solvers map when the claim, and move to the traders map, with a residue check being done over the whole array all the time anyway.  If we sort, then we can't delete as this changes the order of the set.  We could keep a separate structure, but this is complication for the sake of merely a view convenience.
+
+Be careful to delete from solvers if trade everything and then claim.
