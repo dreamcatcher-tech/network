@@ -226,13 +226,16 @@ Current inefficiencies in the software marketplace are:
 5. Speed to Market: Delays in development can result in missed market opportunities.
 6. Reusability: Inefficient reuse of existing code or knowledge can cause redundant work.
 7. Reward Structure: Inadequate reward structures can deter high-quality contributions, or greatly delay work starting, and can sometimes curse the future of the product due to share negotiation faults.
-8. software frameworks do not encapsulate economic forces within them, relying purely on code
-9. software frameworks are still not cloud native and causes complication in software delivery
-10. software products are corrupted with revenue extraction mechanisms
-11. sensitivity and connection to customers is muted or lacking
-12. maintenance is not incentivized
-13. hosting software is costly and error prone - aws charges too much and is hard to use
-14. Data is not self sovereign
+8. Provenance: software frameworks do not encapsulate economic forces within them, relying purely on code
+9. security - provenance
+10. software frameworks are still not cloud native and causes complication in software delivery
+11. software products are corrupted with revenue extraction mechanisms
+12. sensitivity and connection to customers is muted or lacking
+13. maintenance is not incentivized
+14. hosting software is costly and error prone - aws charges too much and is hard to use
+15. Data is not self sovereign
+16. micropayments in the software industry
+17. language barrier for international contributions
 
 Dreamcatcher is useable as a project management framework that bonds together customer demand, equity management, and tasks
 
@@ -249,5 +252,10 @@ The public chain solves the hosting problem, where peoeple can trade GPU resourc
 
 The rise of innovation networks.  Networks need a protocol.  Packets is that protocol.  Tooling is required to maximize the benefit of the protocol.
 
+Train the machine to favour standard reused solutions.
+
+Measure the cost added or revenue lost due to summation of inefficiencies.
+Dials that you can tweak to get an output.
+Tweak the expected impact of our solutions.
 ## Labour unions for the internet age
 AI assisted global access.

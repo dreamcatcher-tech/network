@@ -84,3 +84,7 @@ Inefficiencies due to duplication of effort are rapidly removed using the AI tha
 Annotations on a body of text are given by the AI, then we pull those out, link to the text, and then show some hover over buttons on the main body, like google doc comments.
 
 "show me the status of all my packets - any activity on any of them ?"
+
+"how much should this cost ?" flag that as red as it is economic advice.  Generate proof based on some queries.  Bail if need more info - use the human asking questions to build out the packet more.
+
+"compare two frameworks - react and vue"
