@@ -67,5 +67,16 @@ Funding takes an extra gas slot.
 Punishing all funders for the sake of spam seems annoying.
 
 V4
-The cost of withdrawal is the number of nfts 
+the cost of QA is the number of shares, so has a capped max.
+The cost of withdrawal for each holder is the number of nfts funding the packet X 2 storage slots (one for the assetId, other for the amount)
+Gas refunds are always about a quarter of the gas spent, so can cost a solver a lot to withdraw.
+There is always an amplification of cost, since the number of solvers multiplies the gas cost to withdraw.
+What we need is a way to withdraw without this cost to the solvers.
+The only problem is if there is a large number of assets to be withdrawn, and all are valuable / desired by the solver, and they are happy to pay the gas to withdraw them.
+In this case we should allow a marker to be placed on which nft index we were up to in the withdraws, so upon gas running out,
+Be nice if we could do the withdraws in the same tx and thereby avoid the gas fees of storing the assetId balance.  This could be done by making a contract that doubles up the calls.
+If we could make a single nft withdraw and
+So supply the count we want to go up to, so that we can do withdrawals in batches.
+`squeezeBatch( nftIds, counts )`
+Or, use a whitelist so we essentially burn the funding that isn't on the whitelist like `squeeze( nftId, whitelist[] )` which whitelists a bunch of assetIds.  Can be used in conjunction with `getAssetIds( nftId )` to see which assetIds back each nftId.  Can actually build up this list using nft queries too, perhaps.
 Could store the nft index we are up to, to permit restarting when gas is low.
