@@ -82,3 +82,5 @@ So we're first and foremost building an AI tool that helps create packets, helps
 Inefficiencies due to duplication of effort are rapidly removed using the AI that we launch with, in its most basic form.  It is a deep focused type of search that pushes towards making a new floating task that anyone can do.
 
 Annotations on a body of text are given by the AI, then we pull those out, link to the text, and then show some hover over buttons on the main body, like google doc comments.
+
+"show me the status of all my packets - any activity on any of them ?"
