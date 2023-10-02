@@ -88,3 +88,10 @@ Annotations on a body of text are given by the AI, then we pull those out, link 
 "how much should this cost ?" flag that as red as it is economic advice.  Generate proof based on some queries.  Bail if need more info - use the human asking questions to build out the packet more.
 
 "compare two frameworks - react and vue"
+
+We should be able to write documents that serve as the base for gpt using gpt for assistance, and then instantly see the feedback from the results of calling gpt with this new information added in.  Can write CI tests that run the query, and save the result back, then possible check the results using another GPT call.  
+
+Moreover, we can use packets themselves as a way to set the base axioms that the bot uses as truth.  Updates are edits.
+
+Jest for GPT - Can run a set of natural language tests on all the inputs and outputs.
+Can check the assertions are true for all the inputs and outputs, or just for some, so the test can be scoped.
