@@ -248,3 +248,6 @@ Then how are ethics assured in this system ?  The economics of force - software 
 The public chain solves the hosting problem, where peoeple can trade GPU resources to get highly responsive applications that are cheap to run.
 
 The rise of innovation networks.  Networks need a protocol.  Packets is that protocol.  Tooling is required to maximize the benefit of the protocol.
+
+## Labour unions for the internet age
+AI assisted global access.

@@ -86,14 +86,16 @@ Must there be  a debts section ?  yes because pooling of external gas costs is c
 Require setting a whitelist on the contract, and then using this whitelist for assetIds, or combinations of whitelists, to save on transactions costs.  Can also use blacklists ?  list format can start with combinations of other lists too, and they result in a mapping that chains lookups together.  Saving them and making public means they don't waste gas for multiple people.
 
 We could skip the debts section, and use only the whitelist option to do claim direct from the nfts themselves.  Would be less overall gas.  
-`squeeze( filter? )` runs until gas runs out, from oldest to newest - seems best
+`squeeze( filter? )` runs until gas runs out, from oldest to newest - seems best since 
+`createFilter( allowOnly[], deny[], inherit[] )` returns `filterId` 
 `squeezeBatch( changeIds[], filter? )`
 `squeeze( changeId, filter? )`
 `claim( filter )` to withdraw all assets that have been squeezed out of the funded changes
-
+make claim use a counter that cycles thru the Set, and so restarting it doesn't go thru the failed ones first.  
 
 filters
 ```solidity
+
 struct {
 	createdAt: timestamp,
 	creator: address,

@@ -79,4 +79,6 @@ Be able to list what packet formats it is applying, why did it apply this one, a
 
 So we're first and foremost building an AI tool that helps create packets, helps QA process the packets and provide helpful annotated feedback, and automates the discernment of a solution meeting a request (a solution solving a problem).  We show the feedback the AI would give to the QA to allow people to polish their submissions before sending to the QA at all.  This reduces the inefficiency of "bounded agents" as the processing time / cost, intimacy of feedback, and intelligence / standardization of feedback is boosted by an AI.  Also language barriers are overcome.  Using AI to overcome market inefficiencies in the knowledge work market.  With NFTs and blockchain.
 
+Inefficiencies due to duplication of effort are rapidly removed using the AI that we launch with, in its most basic form.  It is a deep focused type of search that pushes towards making a new floating task that anyone can do.
+
 Annotations on a body of text are given by the AI, then we pull those out, link to the text, and then show some hover over buttons on the main body, like google doc comments.
