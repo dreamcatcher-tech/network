@@ -236,6 +236,9 @@ Current inefficiencies in the software marketplace are:
 15. Data is not self sovereign
 16. micropayments in the software industry
 17. language barrier for international contributions
+18. human relationships break down easily - AIs 
+19. feedback loop improvements.
+20. signal to noise in communications
 
 Dreamcatcher is useable as a project management framework that bonds together customer demand, equity management, and tasks
 
