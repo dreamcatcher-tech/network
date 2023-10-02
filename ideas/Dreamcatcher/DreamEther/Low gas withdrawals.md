@@ -66,9 +66,12 @@ Funding takes an extra gas slot.
 
 Punishing all funders for the sake of spam seems annoying.
 
+**The cost of withdrawal for each holder is the number of nfts funding the packet X 2 storage slots (one for the assetId, other for the amount)**
+
+Since there appears no way to avoid this cost, to fight spam we should allow filters.
+
 V4
 the cost of QA is the number of shares, so has a capped max.
-The cost of withdrawal for each holder is the number of nfts funding the packet X 2 storage slots (one for the assetId, other for the amount)
 Gas refunds are always about a quarter of the gas spent, so can cost a solver a lot to withdraw.
 There is always an amplification of cost, since the number of solvers multiplies the gas cost to withdraw.
 What we need is a way to withdraw without this cost to the solvers.
@@ -92,6 +95,7 @@ We could skip the debts section, and use only the whitelist option to do claim d
 `squeeze( changeId, filter? )`
 `claim( filter )` to withdraw all assets that have been squeezed out of the funded changes
 make claim use a counter that cycles thru the Set, and so restarting it doesn't go thru the failed ones first.  
+`burn( filter? )` only those things matched by the filter will be burned.  No filter is burn them all.  Safe bx only you can change the exits balance by calling squeeze, so cannot accidentally burn value.
 
 filters
 ```solidity
@@ -119,6 +123,7 @@ filter( assetId ) {
 }
 createFilter( allow[], deny[], inherits[] ){
 	// given the allow assetIds and deny assetIds, build a filter
+	// inherits checks that its either all allow[] or all deny[]
 }
 listFilter( id ){
 	return allow[], deny[], inherit
@@ -142,4 +147,5 @@ if any filter sets an allowOnly, then all must be allowOnly ?
 Filters can used for presentation on the website, and hiding some tokens.
 
 So when doing `squeeze()`, you are burning anything you don't want.
-when doing `exit()`
+when doing `exit()` you burn what you don't want, and errors accumulate.
+? could exits be stored as a filter, so that if you put the exit into itself, you are doing burn all ?
