@@ -16,6 +16,16 @@ V1
 For each asset,
 Walk thru all unclaimed holders, 
 calculate their share,
+accumulate residue for the bigdog to claim
 
 Worst case, this loads up 998 holders, and does a residue calc for each one.
-This would multiple the gas costs by 
+This would multiple the gas costs by 998 for the first run, then only a small amount after that.
+So probably safe to run this as part of the atomic claim function.
+Just means bigdog pays more gas.
+And means that shares have to be ordered when QA submits them.
+
+V2
+Make the residue extraction be a separate function call
+Could cost a lot more gas since would be writing the asset balance twice.
+V1 should be very cheap once the array is loaded into memory.
+Sorting saves a lot of checking, but might not be needed ?
