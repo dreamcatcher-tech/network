@@ -29,3 +29,5 @@ Make the residue extraction be a separate function call
 Could cost a lot more gas since would be writing the asset balance twice.
 V1 should be very cheap once the array is loaded into memory.
 Sorting saves a lot of checking, but might not be needed ?
+
+If the solvers were removed to indicate a claim, and residue was calculated on all of the remainder, then gas is lower, but kills some verbosity.
