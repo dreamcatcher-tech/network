@@ -95,3 +95,5 @@ Moreover, we can use packets themselves as a way to set the base axioms that the
 
 Jest for GPT - Can run a set of natural language tests on all the inputs and outputs.
 Can check the assertions are true for all the inputs and outputs, or just for some, so the test can be scoped.
+
+Context window can be renamed by GPT to be helpful.  May remove the nav bars completely.
