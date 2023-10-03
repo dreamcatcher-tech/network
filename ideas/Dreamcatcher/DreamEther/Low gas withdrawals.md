@@ -149,3 +149,6 @@ Filters can used for presentation on the website, and hiding some tokens.
 So when doing `squeeze()`, you are burning anything you don't want.
 when doing `exit()` you burn what you don't want, and errors accumulate.
 ? could exits be stored as a filter, so that if you put the exit into itself, you are doing burn all ?
+
+Exit should not be complicated, and should require filters if things get stuck, rather than a counter ? UI would help people block badly behaving tokens ?
+atIndex can be used to know which tokens failed to exit, and so a filter can be built to exclude them.
