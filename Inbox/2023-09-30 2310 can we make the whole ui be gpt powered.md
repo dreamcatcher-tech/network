@@ -97,3 +97,5 @@ Jest for GPT - Can run a set of natural language tests on all the inputs and out
 Can check the assertions are true for all the inputs and outputs, or just for some, so the test can be scoped.
 
 Context window can be renamed by GPT to be helpful.  May remove the nav bars completely.
+
+Why have help docs at all - just use AI live all the time ?  Could use it for explaining features of the smart contract, or of the blockchain design system.

@@ -20,3 +20,9 @@ V2
 Edits to headers are subject to the same solution delay, since they change the packet.
 
 Simplest is two api calls
+
+V3
+push it all out to the QA and let them set it for each change whenever it gets created ?
+No, must honour the header and packet timings, so QA cannot be surprising.  Comes at the price of fluidity.
+
+So basically the value is read from QA when a header is created and when a packet is created, and all other times it is set when the change is created by walking up to the packet.
