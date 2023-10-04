@@ -158,5 +158,18 @@ We could make filters be a mapping, to allow rapid lookup.
 If they are not enumerable, then the sanity checks of contradiction need to occur at creation time.
 
 V1 
-see if the asset is in the allow list
+build the allow list first
+build the deny list, checking if it isn't already in the allow list
+if the isOnly flag is high, require deny to be empty, and require all inherits to also be isOnly ?
+or, isOnly triggers all inherits to be treated as exclusive ?
+isOnly triggers everything below it to be isOnly
+
+For each filter, check if it is in the allow mapping
+if included, return true
+if not, if isOnly is set, start walking all the inheritance only[]
+if not, but no isOnly, 
+
+For each inherits, walk it depth first.  
+If the asset is allowed, pass it.
+If the asset is denied, block it.
 
