@@ -4,3 +4,5 @@ latest data, or something like that.
 
 "split that out into a separate packet for later"
 Lets you split apart or combine ideas.  Can used in chat mode while driving.
+
+Response: "that sounds similar to some packets that already exist - can I ask some more questions to see how different what you want is ?"
