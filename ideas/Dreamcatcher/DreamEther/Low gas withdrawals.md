@@ -152,3 +152,11 @@ when doing `exit()` you burn what you don't want, and errors accumulate.
 
 Exit should not be complicated, and should require filters if things get stuck, rather than a counter ? UI would help people block badly behaving tokens ?
 atIndex can be used to know which tokens failed to exit, and so a filter can be built to exclude them.
+
+## Filters
+We could make filters be a mapping, to allow rapid lookup.
+If they are not enumerable, then the sanity checks of contradiction need to occur at creation time.
+
+V1 
+see if the asset is in the allow list
+
