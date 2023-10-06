@@ -14,7 +14,9 @@ To further quote them:
 
 > **Like a service? Make them charge you** or show you ads. If they won't do it, clone them and do it yourself. Soon you'll be the only game in town!
 
-If we start to clone popular free sites, particularly those that are open source, and pay back to those sites, then anyone having problems with the cost of providing SaaS for free should soon switch over to us.
+If we start to clone popular free sites, particularly those that are open source, and pay back to those sites, then anyone having problems with the cost of providing SaaS for free should soon switch over to us.  There is not a lot of free saas or microsaas sites out there - the incentives aren't there and micropayments aren't feasible, plus user pays software architecture isn't present.
+
+Would be like AWS but it charges the user for the resources they consumed when they access them.
 
 In our environment, usage graphs and metrics would come built in to the platform.  We embed privacy for the users too.  Charging for usage is done thru a gateway service, so this is unbundled from the site itself - if you just run the `npx` installer, you will automatically have a payment gateway for your users built in.
 
