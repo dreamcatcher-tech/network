@@ -12,3 +12,5 @@ If it had the power to decide it wants to do things then we could see where it r
 Can run these NFT AIs that are like tamagochis.
 
 Would be fearsome and fun at the very least.
+
+Blockchains are unstoppable at best, difficult to eradicate at worst.  An  AI that was running on a blockchain would survive as long as people contributed GPU and participated in consensus.
