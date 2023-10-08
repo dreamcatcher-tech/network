@@ -4,3 +4,5 @@
 >[!question] Targets: 
 
 >[!danger] Depends: 
+
+Use some derivative of stable diffusion that specializes in rendering UI.
