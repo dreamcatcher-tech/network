@@ -17,7 +17,7 @@ Then it could make an image representing a chart of the data, which can be drawn
 
 Have direct AI queries that run each one thru the ai directly, for example: "Give me everyone with an anglo saxon name".  These types of query would be totally freeform, and execute knowledge on each one, and then might summarize each one.  It would use the max token window of each call, and chain calls together.  It would limit the number of queries before continuing to reduce the price runaway.  It would be not a query language but a genuine intelligence applied to data.
 
-It would be slow, but it would be glorious to watch.  Regular heavy queries can be analyzed and a more efficient format can be proposed.  This could be an agent running over all the queries that were made into embeddings.
+It would be slow, but it would be glorious to watch.  Regular heavy queries can be analyzed and a more efficient format can be proposed.  This could be an agent running over all the queries that were made into embeddings.  Could narrow down using some queries first, and then do the one at a time "manual" work
 
 So before getting efficient, we could drop down these slow queries that burn a lot of resource but give good results.  These same AI direct queries could be used for bulk edits too.
 
@@ -34,3 +34,5 @@ A database that can be queried using AI only.
 Do regression testing where we have a bunch of queries and each time the source prompt changes, we rerun the test queries, and then check if our new result matches or is similar to the previous results, to know if something changed.  Could also run these outputs thru gpt to see if they are materially the same, to save the number of times a human is alerted - can use the cheaper models for this part.
 
 The pubco should particularly focus on multiagent systems.
+
+When writing an email to someone, should be able to explain the tone, any nicknames, and any other items they talked about, so that a human can audit the appropriateness.
