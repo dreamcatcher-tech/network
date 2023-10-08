@@ -26,3 +26,5 @@ The construction of an AI capable of deciding when upgrades should be allowed ca
 Fallacy is thinking about an agent as one thing, when it can act as many adversarial systems.
 
 People could pay for a gpt4 run to assess code outcome, which is submitted as part of a consensus run, since we need say 4 to accept the output.  Then the outcome becomes an embedding, and so debates can be held from that point on.  Each run needs to store its results in some gpt4 compatible way.
+
+If we started to absorb franchise operations where gpt was used to set the pay rates of everyone and measure contribution / performance reviews, under the banner of impartial and fair, we should be a very efficient operation.  Input market data, and competitor data, and then output what we can afford and what is fair.
