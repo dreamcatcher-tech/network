@@ -12,3 +12,5 @@ Get it sent to a rapid printing house to have copies delivered to you straight a
 Allow some feedback to tweak each page and each image.
 
 Supply the base templates as a product where the story can be customized to your child or situation rapidly for a small fee, or you can do it yourself.
+
+Write a story about a blockchain that came under attack and then one copy finally made it out and it was alive again.  The people without the blockchain were left without central control and a dictator came and filled the void.
