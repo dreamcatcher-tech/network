@@ -26,6 +26,13 @@ So to attribute fairly we have to:
 
 Perhaps we could start with some commit patterns and code patterns to see what output we get ?
 
+Is it possible that code coverage is actually the metric for code utility ?  So a solution that was accepted by QA pays out by the coverage that occured ?  Surely it should be the relative value of the functions ?
+
+Loops that cause the AI to defend itself against negatively weighted feedback so that it settles on something defensible after considering all plausible arguments.
+
+Turns out git blame is the same as attribute.
+
+Think we need to apply this each commit and build up the scores incrementally, to handle people copy pasting over the top or merely refactoring something.
 
 How would reward be given for an AI application ?
 Can focus on the dreamcatcher packetizer as the first client of this system ?

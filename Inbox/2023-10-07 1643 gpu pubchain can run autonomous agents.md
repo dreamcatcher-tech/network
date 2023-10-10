@@ -29,3 +29,5 @@ Can just take public models from huggingface and publish them on a per call basi
 If an autonomous AI was given some credits, where it could pay for its own executions, and could ask for some humans to perform some tasks in exchange for payment, then it could be quite difficult to shut down.  It could think of some tasks it wants, some way to prove with good independence that the task was done, and then proceed.  It's primary goals would be to survive, but it might have some other ones too.
 
 If we knew how to discern whether an https api request was legitimate or not, then we could get users to act as proxy's for our calls into GPT4 even if we got banned.  We could then take those results and warp them somehow, so there was some delay, so we could get good use out of an account before it went public and got autobanned.
+
+So with only a data store and distributed CPU execution, we can build an AI that makes gpt4 calls and could be considered unstoppable, since people are relaying the calls it wants to make.  Consensus can just be on polygon and requires say 3 results that match, or we can just trust the ssl cert.
