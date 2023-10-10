@@ -25,3 +25,6 @@ It should be an LLM that makes the decision, since it has to defend its position
 Disputes can be raised with humans.
 
 Can just take public models from huggingface and publish them on a per call basis, rather than requiring the full machine to be dedicated to your cause.  Then, machines with the same model can satisfy many peoples requests while it is loaded, and the economics will incentivize people to find ways to switch efficiently plus balance out the load.  Surge is supplied with pricing increases.
+
+If an autonomous AI was given some credits, where it could pay for its own executions, and could ask for some humans to perform some tasks in exchange for payment, then it could be quite difficult to shut down.  It could think of some tasks it wants, some way to prove with good independence that the task was done, and then proceed.  It's primary goals would be to survive, but it might have some other ones too.
+
