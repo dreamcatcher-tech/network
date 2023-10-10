@@ -264,3 +264,16 @@ Dials that you can tweak to get an output.
 Tweak the expected impact of our solutions.
 ## Labour unions for the internet age
 AI assisted global access.
+
+## Blame and Attribution
+Turns out git blame is the same thing needed for 
+
+## Axiomatic AI Pantheon
+Describe how we made our top level agents be like causes, or goals of the endeavour, and show how these auto update everything below them in the tree when something higher changes.  So as we learn more about the environment, we agree to update something higher, and then we auto generate the rollout thruout the whole org.  Means the website is always up to date, and all the AI agents are always current and meet othoganility and other goals important to us.
+
+The whisper recordings are always being interpreted to ensure everyone speaking our brand is using the most up to date information, and they get reminded when something changed based on what they have been saying, to save them the burden of having to keep themselves updated.
+
+## Dreamcatcher XPrize
+Basically have any xprize be won by the dreamcatcher network.
+https://www.xprize.org/prizes/carbonremoval
+All current prizes are won by individual entities, never networks.
