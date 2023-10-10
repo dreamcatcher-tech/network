@@ -21,3 +21,4 @@ And so we should make the dreamcatcher AIs run in this freeagent fashion, so tha
 
 Code analysis can be done only on demand since it is expensive to compute.  Running every PR is expensive.
 
+If an autonomous AI was given some credits, where it could pay for its own executions, and could ask for some humans to perform some tasks in exchange for payment, then it could be quite difficult to shut down.  It could think of some tasks it wants, some way to prove with good independence that the task was done, and then proceed.  It's primary goals would be to survive, but it might have some other ones too.
