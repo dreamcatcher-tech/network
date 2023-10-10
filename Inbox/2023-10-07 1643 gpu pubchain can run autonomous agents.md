@@ -21,3 +21,7 @@ And so we should make the dreamcatcher AIs run in this freeagent fashion, so tha
 
 Code analysis can be done only on demand since it is expensive to compute.  Running every PR is expensive.
 
+It should be an LLM that makes the decision, since it has to defend its position, rather than be an opaque formula that is highly contentious.  Arguing with it can change the long term effects.
+Disputes can be raised with humans.
+
+Can just take public models from huggingface and publish them on a per call basis, rather than requiring the full machine to be dedicated to your cause.  Then, machines with the same model can satisfy many peoples requests while it is loaded, and the economics will incentivize people to find ways to switch efficiently plus balance out the load.  Surge is supplied with pricing increases.
