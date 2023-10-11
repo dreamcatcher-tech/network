@@ -49,3 +49,11 @@ Be able to make the LLMs call functions to write to disk, or log a bug.
 Make a gui so that any time someone asks to see what the tests were, this ui component pops up that can be used to fluidly show them the status of the tests going on.
 
 Recognize customer complaints about the bot, and show it has been filed, and in some cases if this passes the testing, show how this is now included in the AI and so won't happen again, and you will receive some attribution for your efforts, thanks.
+
+LLMs as actors in the dreamcatcher, with adversarial goals.  Lets them choose what they want to do next, with some goals.
+
+So the rollup would be like a merkle tree, and whenever code runs, we use the merkle tree to find the chunk that has the value in it that we were after.  It then sums up all the value measurements for each chunk, to roll up for a final value ?
+
+Hit counts from coverage are interpretted too.  Its a better than nothing demo, so meant to be iterated upon, with people using the chat interface to submit issues, questions, and new ideas.
+
+Make a format that is author, hit count, branch missed, code, then do chunking to make it fit in ram, and make it be loaded as context when any questions occur, along with rollup summaries of reasoning and shares.
