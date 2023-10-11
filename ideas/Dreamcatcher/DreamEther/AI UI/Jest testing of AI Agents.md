@@ -57,3 +57,8 @@ So the rollup would be like a merkle tree, and whenever code runs, we use the me
 Hit counts from coverage are interpretted too.  Its a better than nothing demo, so meant to be iterated upon, with people using the chat interface to submit issues, questions, and new ideas.
 
 Make a format that is author, hit count, branch missed, code, then do chunking to make it fit in ram, and make it be loaded as context when any questions occur, along with rollup summaries of reasoning and shares.
+
+The value to extract is the interaction between humans and AI that needs to be captured.
+
+Elide a fault by the user talking about things that it doesn't understand.
+Can maybe score each response, and file bugs based on it.
