@@ -5,6 +5,16 @@
 
 >[!danger] Depends: 
 
+Provide a set of prompts and responses, and get the model to respond.
+Fills out a TPS report card with all the outputs.
+
+Jest test where the appraisal model can be different from the model under test. Can also have the appraiser suggest more tests and proceed to execute them.  It can list these tests under synthetic tests, and if the core tests are updated, the synthetic tests would change.
+
+Would have a api call and some kind of cost output, as well as time to respond.
+Some tests can be run on all outputs, such as 'no swear words' or other types of global objectives.
+
+If these jobs could be treated like react components, then they could even serve to be rendered to the user to allow them to interact.  So it uses the server side rendering or cli rendering to constrain the logic neatly in components, and then also makes it human interactable on some other website.
+
 Chat with your test results to interrogate further.
 Update the tests using the natural language.
 
@@ -26,3 +36,8 @@ Be able to update the test spec file using the LLM.  Use a strict format, and ch
 Roll ups of a per file, or per chunk of a file that gpt rolls up shares and reasoning into every more summarized points.  To drill down, it changes its scope and loads up what it said at each point and begins its defense from there.
 
 Attribution for for LLM type prompting should be different again, and should be much easier since it is less input and far more deleted things.  Then we use the agent codepath calculation somehow ?
+
+
+Matrix testing where different models are used in the same test.
+
+Graph showing the performance growth over time.  Could generate the graph using gpt as the outputer where it stores a file, and then modifies an svg to show the graph.
