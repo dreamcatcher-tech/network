@@ -72,6 +72,7 @@ Go thru a github repo
 ## Approach
 Get a test github repo with some good characteristics
 Assess the value of each commit
+Pull code from https://github.com/coderabbitai/ai-pr-reviewer to see how they process repos.
 
 V1 
 Each function is given a difficulty rating which is blended with a novelty / plaigiarism score, and within that function, shares are allocated to contributors.
@@ -86,3 +87,6 @@ The order of the calls doesn't matter, so we can include a huge number of covera
 ? What about if the price was determined by the value calculation, rather than being fixed ?
 
 Could do a study of the psuedo code deduplication and stack ranking using open source projects.
+
+## What is the value of a prompt ?
+This cannot be measured in the prompt itself, as it may contain the deepest wisdom, but the value of the outputs between the prior and the later are the result.  For example, some tests that score the old prompt badly should first be introduced, then the new prompt shown to pass these tests, so the old one is rescored with some additional requirements that degrade its score.

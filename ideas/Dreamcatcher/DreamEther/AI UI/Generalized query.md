@@ -13,3 +13,5 @@ Multistage queries
 Sometimes we will know that we have a lookup style or comparison task to do, but all the data doesn't fit in memory.  Eg: we have a lookup table of codes, its split in two files.  Someone asks for something to be decoded, we need to be able to generate a task to loop thru all the given code files, and check each one - if we don't see what we want, go on to the next one.
 
 This would be represented in simple state machines that would be shown to the user in the under the hood view.
+
+Want to be able to give a whole git repo, and be able to chat with it.  Use the embeddings first, and the file by file later.
