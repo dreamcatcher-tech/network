@@ -26,3 +26,11 @@ Be able to update the test spec file using the LLM.  Use a strict format, and ch
 Roll ups of a per file, or per chunk of a file that gpt rolls up shares and reasoning into every more summarized points.  To drill down, it changes its scope and loads up what it said at each point and begins its defense from there.
 
 Attribution for for LLM type prompting should be different again, and should be much easier since it is less input and far more deleted things.  Then we use the agent codepath calculation somehow ?
+
+LLMs as actors in the dreamcatcher, with adversarial goals.  Lets them choose what they want to do next, with some goals.
+
+So the rollup would be like a merkle tree, and whenever code runs, we use the merkle tree to find the chunk that has the value in it that we were after.  It then sums up all the value measurements for each chunk, to roll up for a final value ?
+
+Hit counts from coverage are interpretted too.  Its a better than nothing demo, so meant to be iterated upon, with people using the chat interface to submit issues, questions, and new ideas.
+
+Make a format that is author, hit count, branch missed, code, then do chunking to make it fit in ram, and make it be loaded as context when any questions occur, along with rollup summaries of reasoning and shares.
