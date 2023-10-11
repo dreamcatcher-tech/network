@@ -1,5 +1,24 @@
+
+## Principles
+How much effort something took is independent of its value.
+Attribution is updated regularly based on feedback
+Attribution is recalculatable at any moment, and is instantly run each time a payment comes in
+It is never complete, and is always trending towards complete.
+Attribution follows popular code quality wisdom - if a function is too large to fit the LLM context window, then it gets no attribution - don't write massive functions.
+Using the system should automatically contribute to its progression
+Each code package should have a verified attribution map to simplify dispersion
+Code consists of functions, and those functions have value - this is the unit of attribution in the system.  The core of code is functions, so this is a good demarcation point.
+reward novel useful code, give diminishing rewards for repeated code blocks
+forloops have diminishing value after the initial calls
+## Notes
 Value per function ?
 Per line
+
+it isn't just who added what line, but how much use is that line to the overall function, such as variable assignment.  We could end up with something like ethereum gas price tables, where we say what each op is, and give example functions, and then the AI determines how to apply these rules ?
+
+Make an adversarial AI that tries to game the attribution, and presents back recommendations.
+
+A key part of the attribution defense is the ability to reference all other functions that were similar.  Ultimately the similarity to existing functions should be considered too, as a form of novelty score.
 
 The problem is that a number of commits can occur thruout a program, and then the live running code paths are a smaller subset of the program execution.
 Functions can be called multiple times.
@@ -53,3 +72,17 @@ Go thru a github repo
 ## Approach
 Get a test github repo with some good characteristics
 Assess the value of each commit
+
+V1 
+Each function is given a difficulty rating which is blended with a novelty / plaigiarism score, and within that function, shares are allocated to contributors.
+Value is determined by the number of times each function is called multiplied by its value, and so the total of these scores represents the invocation cost.  
+Each function call makes note of the attribution due for that call, which accounts for branches that have different attribution amounts.
+So all functions are stack ranked and then relative scores given to them all.  These stack ranks are comparable across projects, and have a lot of overlap, which provides a good basis to normalize from.
+The ratios for all contributors are taken from the summation of all the allocations to them for each function call multiplied by 
+The summation of the function calls with each scaled by its value score and split between its attributors is what determines the final outcome.
+
+The order of the calls doesn't matter, so we can include a huge number of coverage tests in each dispersal run.
+
+? What about if the price was determined by the value calculation, rather than being fixed ?
+
+Could do a study of the psuedo code deduplication and stack ranking using open source projects.

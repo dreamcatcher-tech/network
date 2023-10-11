@@ -31,3 +31,9 @@ If an autonomous AI was given some credits, where it could pay for its own execu
 If we knew how to discern whether an https api request was legitimate or not, then we could get users to act as proxy's for our calls into GPT4 even if we got banned.  We could then take those results and warp them somehow, so there was some delay, so we could get good use out of an account before it went public and got autobanned.
 
 So with only a data store and distributed CPU execution, we can build an AI that makes gpt4 calls and could be considered unstoppable, since people are relaying the calls it wants to make.  Consensus can just be on polygon and requires say 3 results that match, or we can just trust the ssl cert.
+
+So basically make a public blockchain that is capable of hosting autonomous AIs, and allow them to be given access to capital, and give them a memory.
+
+If the LLM can file packets of work to be done, and can respond to feedback about them, and can fund them, then it can self improve.  We will keep making chain services that give this LLM more capabilities.  Anything that gives our chains more access will give the LLM more access.
+
+Our version of the xprize is this autonomous agent being able to request some realworld things ?

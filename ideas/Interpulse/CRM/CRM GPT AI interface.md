@@ -24,3 +24,6 @@ Can also throw up warnings about things that look weird in the app ?
 Complex free text queries that are iterated upon: "show me all the customers with a pricing override, but only those that were changed in the last year.  Now remove everyone in hamilton."
 
 This could become the job of SM to prompt for the inputs to be correct, and TT would handle the data model.  This would be cheaper than paying someone to build each report in the tool, particularly as solving the prompts mean solving more general cases which all our products would benefit from.
+
+? Could we embed each customer record, so that anything like something could be returned ?
+This might let us answer much more general questions ?
