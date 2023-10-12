@@ -15,3 +15,10 @@ Sometimes we will know that we have a lookup style or comparison task to do, but
 This would be represented in simple state machines that would be shown to the user in the under the hood view.
 
 Want to be able to give a whole git repo, and be able to chat with it.  Use the embeddings first, and the file by file later.
+
+## Walking the Database
+when doing layers on the database, where we store output of running a gpt walk thru the db, we should also store the snap of the reference record we were working on, and also what fields in that record we relied upon, so that when we use that query next time, we can know if we need to reparse based on changes. We can give the client a result using stale data, and signal subtly that we are updating the indexes, then correct the response once the reparsed data is available for running the query again. We would make the response reflect the already given response, since it might not be worth materially changing the response after update was completed, to avoid jarring the client
+  
+if I have a list of customers, but the format in the database does not have a field for if they have an anglo-saxon name, the query should be expanded to something like "nationality of names" using an expander prompt.
+
+If the walks are not hit or used in a while, delete them to free up space, based on storage costs.
