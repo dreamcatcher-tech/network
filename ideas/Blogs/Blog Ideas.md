@@ -277,3 +277,12 @@ The whisper recordings are always being interpreted to ensure everyone speaking 
 Basically have any xprize be won by the dreamcatcher network.
 https://www.xprize.org/prizes/carbonremoval
 All current prizes are won by individual entities, never networks.
+
+## Decimation of the software industry
+If the app the user uses never leaves the natural language domain, there is no need to translate requirements by a product team, no need for devs to further translate that into code, marketing to translate back to what the user wants, and ultimately, the poor user to point out the failings of this whole system and start the loop again, at great expense, to finally get closer to what they want, only in time to have their needs change.....
+
+All apps become one, with this singular intellect, shared by all.
+
+Software stops become fixed on delivery, which whilst soft form the point of view of the vendor, is unforgiving and hard from the point of view of the poor customer.  Then we savagely intertwine their data inside the labyrinth we made, and charge them fees just to access it, as the lifeblood of their org is stretched across a torture rack of mediaval torture devices connected together as one great abomination as the suffering of mankind falls on the deaf ears of the developer overlords., drawing admiration from the the other industries like lawyers that could only dream about such enslavement despite milenia of dark effort to do as much.
+
+The end of the software industry is upon us, and every person will become a code, since they can write their own apps in coversation with an AI.  The good ones are shared, and the attribution is paid back to those whom it is due.
