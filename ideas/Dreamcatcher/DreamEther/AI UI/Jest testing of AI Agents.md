@@ -68,3 +68,5 @@ We can rerun the appraiser on all production usage of the model, when it determi
 Prompt can receive inbox notifications and make a decisions to tell the user about it directly if it is deemed important, such as a fixed bug, some score of the users attention span, or if it relates enough to the current context. Inbox is a separate artefact, and each line can be included in the embeddings for relevance. 
 
 A key milestone will be to be able to change a core file by any user, if it passed the appraisers testing and the test suite ran successfully.  These files considered core require full checking to implement, but the users own files can be changed with minimal oversight.
+
+Good test is a way to make a price finding bot that goes thru trademe and follows whatever pattern you usually do to arrive at an idea of what the price should be.
