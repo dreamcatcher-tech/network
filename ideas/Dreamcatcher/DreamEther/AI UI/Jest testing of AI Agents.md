@@ -70,3 +70,8 @@ Prompt can receive inbox notifications and make a decisions to tell the user abo
 A key milestone will be to be able to change a core file by any user, if it passed the appraisers testing and the test suite ran successfully.  These files considered core require full checking to implement, but the users own files can be changed with minimal oversight.
 
 Good test is a way to make a price finding bot that goes thru trademe and follows whatever pattern you usually do to arrive at an idea of what the price should be.
+
+"What new ideas did I come up with in the last few weeks ?"
+"what new ideas did my friends come up with in the last week ?"
+
+? How can we make a social network where its all just AI based interactions ?  Its like putting some clothes on and being respectable in public.
