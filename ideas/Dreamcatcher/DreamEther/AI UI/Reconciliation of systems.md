@@ -1,0 +1,3 @@
+We can allow multiple systems to exist out of drift with each other, and we do not need to write scripts dedicated to processing, parsing, and keeping these things in sync.
+
+The blockchain schema can be the most fluid, as it is the one that is capable of being defined by AI, that gets rewritten and tested based on the evolving company needs.  Even when the AI is being queried differently, as soon as users start storing data differently, the base schema is expanded.  Once it gets stale, it is pruned.

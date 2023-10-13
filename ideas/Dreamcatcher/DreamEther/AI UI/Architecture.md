@@ -1,3 +1,5 @@
+We need a unit of permanence in the AI world.
+
 There are some key files that need to be stored and updated by the LLM, as a way for it to take notes on what it is up to.  This is what a human would use an app for anyway, so it should be human readable and in plain text.
 
 You would use the create file tool, and allow the file to be updated only when the appraiser thought it appropriate to do so.  The format of the file should be jsonschema, and it has a schema checker tool, to ensure the AI only made the correct updates, and was looped around if it did something strange.
