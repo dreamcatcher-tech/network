@@ -78,3 +78,16 @@ We can rerun the appraiser on all production usage of the model, when it determi
 Prompt can receive inbox notifications and make a decisions to tell the user about it directly if it is deemed important, such as a fixed bug, some score of the users attention span, or if it relates enough to the current context. Inbox is a separate artefact, and each line can be included in the embeddings for relevance. 
 
 ? How can we make a social network where its all just AI based interactions ?  Its like putting some clothes on and being respectable in public.
+
+There should be a matrix tester where the prompts are twiddled, and combinations are tested.
+So if a chain of prompts is given, we should be able to mix or derive those prompts, plus also score if the prompt makes sense given the previous output.
+
+? Should the tool allow setting thresholds for each describe block or for each test, separately ?
+
+It could give a total pass or fail output, but the score could be used to decide whether to upgrade the system or not ?
+
+Might make a nice way to browse the deep information in areas like `aim` where the test writer would summarize what the aim was, but then provide a deeper description, which when the summary is put in web mode, has a nice dropdown.
+
+Need some way to specify "any prompt that is long" to indicate that we don't care.
+expect matches should include the jest framework and use the appraiser to give back a score.
+Can set a score globally, per describe, per it(), or per expect.
