@@ -22,3 +22,13 @@ when doing layers on the database, where we store output of running a gpt walk t
 if I have a list of customers, but the format in the database does not have a field for if they have an anglo-saxon name, the query should be expanded to something like "nationality of names" using an expander prompt.
 
 If the walks are not hit or used in a while, delete them to free up space, based on storage costs.
+
+During a specific generative walk, we could check what fields changed in the core data, and see if it is worthwhile updating the other derived data sets while we're here.
+Or when the core data changes, we could walk all the derived data to do the updates immediately.
+
+## The For loop
+Start with a prompt that identifies that it needs a for loop, then starts triggering sequential or parallel iterations, where the contents might change during the iterations.
+The structure could reflect in the chain architecture used.
+Map reduce is just making new blocks on the tip of the chain.
+Parallel is just normal children.
+Sequential is walking children then updating a central item, then using the item to process the next item.
