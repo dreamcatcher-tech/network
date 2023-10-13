@@ -6,6 +6,7 @@
 >[!danger] Depends: 
 
 
+Basically want a system that can be spoken to, or that can eavesdrop, and will convert what it hears into packets and droplets of atomic ideas and compound ideas, compatible with [[2023-10-13 1441 voip transcriptions on chain]]
 
 ## The assistant AI
 I should be able to ask a question with simply, here's the prompt I want, and here's sort of the answer I want, and maybe here's the intermediary steps that I need to see it go through, and then I should be able to get a response from the LLM that indicates what type of prompt I would need to ensure those steps, and possibly if I would need some sort of a loop mechanism in there as well.
