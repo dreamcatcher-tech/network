@@ -17,7 +17,7 @@ Blockchains are unstoppable at best, difficult to eradicate at worst.  An  AI th
 
 And so making an unstoppable agent would be like setting one free, which can be coded, and forked, and used as a library component off the shelf.  Because it costs gpu to run, and you get some credit for making queries public, you might as well.  Then it pays royalty to all who made it happen.  A highly useful agent that is ready to go that gets dropped straight in to a workflow and receives updates and tweaks and is publicly scrutinizable is valuable.  These will get popular, and so our efforts will get popular and earn royalties
 
-And so we should make the dreamcatcher AIs run in this freeagent fashion, so that all may see how they interact and how they are consumed.  This would be quite simple at first, as it would just be a superagi configuration file that showed how we were doing our prompting, and then it would have api calls made to openai using the SSL signature as authenticity of the function call as being made with openai.
+And so we should make the dreamcatcher AIs run in this freeagent fashion, so that all may see how they interact and how they are consumed.  This would be quite simple at first, as it would just be a superagi configuration file that showed how we were doing our prompting, and then it would have api calls made to openai using the SSL signature as authenticity of the function call as being made with openai. [[SSL Signature Proof]]
 
 Code analysis can be done only on demand since it is expensive to compute.  Running every PR is expensive.
 
