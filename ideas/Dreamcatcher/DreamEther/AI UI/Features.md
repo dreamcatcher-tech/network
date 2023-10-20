@@ -16,3 +16,12 @@ Summarization tools that allow a single line to be entered in a file to say some
 This is how to draw attention to the user discreetly, and to let it insert notifications in responses to things, subtly.  Also some icon showing the inbox having some items in it. 
 
 The user might ask to be notified when someone comes online, so this would get written in the file, and some kind of task associated to it, which might be a poll or a trigger.
+
+## Ingesting data
+Want to back check it - so if we ask for a base schema to be made, we would then back check it against all the data again to make sure it all fits, using a mechanical actual query, rather than a gpt parsed result.
+
+GPT would be told to walk thru the database and to raise a flag if anything looked suspicious, caused gpt4 to come have a look.
+
+It should be able to draw a graph of its progress using mermaid or something simple, and show the basic machine component it is trying to represent as a cursor, or multiple cursors.
+
+Modifying the schema, to add child chains and other things, would be trivial, and it would store your chat (summarized) as documentation knowledge for whey the structure was changed.
