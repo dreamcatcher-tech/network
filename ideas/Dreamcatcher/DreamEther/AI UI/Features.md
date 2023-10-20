@@ -16,3 +16,6 @@ Summarization tools that allow a single line to be entered in a file to say some
 This is how to draw attention to the user discreetly, and to let it insert notifications in responses to things, subtly.  Also some icon showing the inbox having some items in it. 
 
 The user might ask to be notified when someone comes online, so this would get written in the file, and some kind of task associated to it, which might be a poll or a trigger.
+
+## Common Schema detection
+Shortcut using duplicate detection - send them in each record, and find which ones would match a common schema between themselves, so the list is reduced.  Then find those that can never match, or are wildly different.
