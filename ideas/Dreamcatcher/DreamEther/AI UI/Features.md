@@ -25,3 +25,5 @@ GPT would be told to walk thru the database and to raise a flag if anything look
 It should be able to draw a graph of its progress using mermaid or something simple, and show the basic machine component it is trying to represent as a cursor, or multiple cursors.
 
 Modifying the schema, to add child chains and other things, would be trivial, and it would store your chat (summarized) as documentation knowledge for whey the structure was changed.
+## Common Schema detection
+Shortcut using duplicate detection - send them in each record, and find which ones would match a common schema between themselves, so the list is reduced.  Then find those that can never match, or are wildly different.
