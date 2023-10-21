@@ -51,9 +51,9 @@ Being able to provide strategies and test cases for that strategy (which can be 
 
 Once the list is complete, it can go thru the categories and see if any should be merged or replaced based on similarity, then goes thru and sorts each item inside that again.  If the documents are long, it can do the merkle summarizing technique on each, or do a fine tuning task on each one and use the resulting model.
 
-This sorting could be done in conjunction with a human, and once done, it would automatically handle the categorizing using those rules from there on.  When things don't fit, it would change the rules within some boundary, and the original rulesetter would get notified.
+This sorting could be done in conjunction with a human, and once done, it would automatically handle the categorizing using those rules from there on.  When things don't fit, it would change the rules within some boundary, and the original rulesetter would get notified.  It might have some goals like ratio of categorized things vs not, ease of location, and user feedback about where they think things should be.  Any disgruntled user can easily say what they want to happen, and we can give them the view specific to them, and incorporate that back into new views for people too.
 
-Can give a graph of 
+Can give a graph of how well each item fits in each box.  Graph the size of each box easily.
 
 Such a system could be hooked up to onedrive or dropbox to allow enterprise data organization to be a lot better.
 
@@ -61,6 +61,8 @@ Such a system could be hooked up to onedrive or dropbox to allow enterprise data
 If a large file operation needs to occur, then the ai can present back a list of files and then show the proposed filesystem.  The proposed filesystem can be on the real filesystem in a temp folder, and so the user can inspect it the way they would a normal filesystem.
 
 Can include some processing steps in between, where transformers or other types of jobs are run, possibly using AI bots, like the blurb writer.  So the game inside orgs becomes building these little apps themselves, which they can connect up to different workflows to do things for them, like blurb writing, and they get continually updated by feedback from different users.  The user feedback is merged in some weighted way, and whole workflows can be automatically rerun with minor tweaks
+
+Could do an offline version that used the files management in the browser, or that gained access to the filesystem directly, and then proceeded to modify things in a protected way.
 
 ## Do a presentation using the anything app
 The slides any everything for this presentation would be edited and modified based on feedback live, in the meeting.  So you start as looking like a slide deck, but you expand out to showing how the chat interface works.
