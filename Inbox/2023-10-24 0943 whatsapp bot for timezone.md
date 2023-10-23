@@ -45,6 +45,8 @@ If the Dreamcatcher.ai website pointed you to a whatsapp bot, then we could hand
 
 Great as the first intro for people, as we immediately have their number, their authentication, their indentified comms with us, a way to talk back to them, even if just by updating our status messages in the bot, all from an interface they are familiar with and feel safe to use.
 
+## Calendar 
+Sit down with someone and get them to chat thru a calendar that works for them.  Eg: JM.  Don't ask them to book their time, you book your time, and ask if that suits them, so they get booking by having all other time, which feels better than them being boxed in.
 ## Denoising group chats
 Take part in a group chat, but theres only you and the bot.  The bot manages all comms and only contacts you when needed.  Attribution is given to everyone involved.  Can mean that multiple groups can collab in this way.  Means you could be just chatting to your agent, but really you are interfacing with the whole world.
 
