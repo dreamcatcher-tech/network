@@ -71,3 +71,9 @@ The slides any everything for this presentation would be edited and modified bas
 Set of standard packages that let you define a format and then constrain the response from the AI to follow that.  Eg: pumping in a bunch of paragraphs and getting back which ones are relevant to the prompt being asked.  We can use gpt3.5 for this with a large context window, and then use gpt4 to formulate the actual response.
 
 So you would set a goal of getting back some structure, and it would select the best strategy from the ones it knows about.  The strategies have test cases where they work for different things, and the AI chooses which ones it thinks suit you best.
+
+## Selection via continuous text input parsing
+Run each new chunk of words thru gpt3.5 and see if anything refers to line numbers in the stateboard, and highlight them if so.  Gives user good feedback as they type.  Works in terminal as difficult to get selection tools.  Web can let the user select directly.
+
+## Loading a bot within a bot
+This doesn't make much sense without having a wrapper around it that tells all the bots to switch based on which bot they think is best suited to answer.
