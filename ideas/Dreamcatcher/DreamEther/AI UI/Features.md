@@ -66,3 +66,8 @@ Could do an offline version that used the files management in the browser, or th
 
 ## Do a presentation using the anything app
 The slides any everything for this presentation would be edited and modified based on feedback live, in the meeting.  So you start as looking like a slide deck, but you expand out to showing how the chat interface works.
+
+## standard format retrieving tooling
+Set of standard packages that let you define a format and then constrain the response from the AI to follow that.  Eg: pumping in a bunch of paragraphs and getting back which ones are relevant to the prompt being asked.  We can use gpt3.5 for this with a large context window, and then use gpt4 to formulate the actual response.
+
+So you would set a goal of getting back some structure, and it would select the best strategy from the ones it knows about.  The strategies have test cases where they work for different things, and the AI chooses which ones it thinks suit you best.
