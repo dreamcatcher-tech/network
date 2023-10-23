@@ -291,3 +291,9 @@ The end of the software industry is upon us, and every person will become a code
 Beware those with murderous intent, who expend enourmous effort and find themselves no better off eventually.
 
 If we ran this anythingapp internally, we would never need to purchase software again from outside.
+
+## Memory palace ai images
+As NFT images.
+Compacting information.
+The transmission of memory palaces
+Form of note taking
