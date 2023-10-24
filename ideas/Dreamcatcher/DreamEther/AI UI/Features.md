@@ -84,3 +84,13 @@ Whenever someone asks for something, if a discussion already happened around it,
 ## Editing a bot file should show what books will load
 Interestingly the syntax is so open that it was confusing at first.  The editor should help you by telling you what files will get loaded after you do each edit of the window.  Edits should show in diff view until you press enter.  Any extra window may show the loaded files.  You can then jump to edit them.  This is part of the realtime feedback type of UI interactions.
 
+## Sloppy CLI
+Be able to run a cli where the commands are approximate, have some help built in.
+Anything you do is sent back to you for a second approval step before doing the command, so you know you have some safety.  It says what command it is going to do, what files will be affected (since it ran the simulation and knows) and a summary of the impact, along with what it thinks you are trying to do.  You can chat back to refine this by telling it more about your goals.
+
+This can be good for bash scripts, since you can write a script that starts as a series of plain language tasks, and then give it a set of systems to run on, and it works thru each one testing the steps with you.  Presents as a workflow graphical file.
+
+## Inducting the blockchain model
+Blockchain model of the chains and the bots, so we can test them independently.  The AI should be given tooling to process and parse blockchains so it can do accelerated iterative generative testing and enhancement, providing a form of self improvement.
+
+We should be able to use this generative feature to build out its own model rapidly, so it can add features to itself, like token count, balance management.

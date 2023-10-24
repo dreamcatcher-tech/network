@@ -62,3 +62,8 @@ These messages streams can be threaded for when there are multiple users engaged
 On the dreamcatcher agent, you can show stateboards, so if you have a second phone or something, you can have chats, and then watch the stateboard update live.
 
 Editing directly just shows as a "direct edit" message, with some starting line info, and the edit.  Use the git diff hunk format to describe this.  These edits trigger some processing and chats that come back commenting on the change.
+
+## Auth loop
+In the webpage, we can get them to send a photo of a QR code we generate, which connects the sessions.  Connect to our bot using a whatsapp qr to get our contact, possibly embed some ID info in that, so we can instantly send them their convos.
+## Deployment
+Use the git repo for honing the bots, and having automated tests to assert the veracity of the bots.  Then each push will run the bot in a lambda deployment hooked up to a set of whatsapp bots.  This also provides the chat interface on the main website.
