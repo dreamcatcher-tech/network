@@ -91,3 +91,7 @@ Might make a nice way to browse the deep information in areas like `aim` where t
 Need some way to specify "any prompt that is long" to indicate that we don't care.
 expect matches should include the jest framework and use the appraiser to give back a score.
 Can set a score globally, per describe, per it(), or per expect.
+
+## testing using meaning in the response
+Instead of a response we want something be like, we should be able to specify a side channel, where we talk about the properties of the response, such as it should not do any mansplaining.
+Perhaps the tests themselves can be subject to refinement processes, where the human attempts can be condensed, or at least iterated forwards by comparing a change to all prior changes, and saying if it is better at some top level goal or not, then let the AI try its hand at it, given how the human showed progression ?
