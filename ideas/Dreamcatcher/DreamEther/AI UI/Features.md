@@ -71,3 +71,16 @@ The slides any everything for this presentation would be edited and modified bas
 Set of standard packages that let you define a format and then constrain the response from the AI to follow that.  Eg: pumping in a bunch of paragraphs and getting back which ones are relevant to the prompt being asked.  We can use gpt3.5 for this with a large context window, and then use gpt4 to formulate the actual response.
 
 So you would set a goal of getting back some structure, and it would select the best strategy from the ones it knows about.  The strategies have test cases where they work for different things, and the AI chooses which ones it thinks suit you best.
+
+## Selection via continuous text input parsing
+Run each new chunk of words thru gpt3.5 and see if anything refers to line numbers in the stateboard, and highlight them if so.  Gives user good feedback as they type.  Works in terminal as difficult to get selection tools.  Web can let the user select directly.
+
+## Loading a bot within a bot
+This doesn't make much sense without having a wrapper around it that tells all the bots to switch based on which bot they think is best suited to answer.  So we should ban bots within bots, and only allow a router bot to load multiple bots.  Loading the bots needs to generate a summary of the bot.  Bots themselves may also be a router. The loading of multiple bots should only be allowed by a special bot loader that generates summaries of bots for switching. But should the switcher always be the same ? Switcher would have a default bot which handles all else.  We can test multiple versions of the switcher to see which performs the best.
+
+## Automatic bug recall
+Whenever someone asks for something, if a discussion already happened around it, we should be able to use that as part of the knowledge base to inform the answer.  Basically every interaction should be part of the knowledge base automatically.  Whilst it dreams, we compact and search for meaning.
+
+## Editing a bot file should show what books will load
+Interestingly the syntax is so open that it was confusing at first.  The editor should help you by telling you what files will get loaded after you do each edit of the window.  Edits should show in diff view until you press enter.  Any extra window may show the loaded files.  You can then jump to edit them.  This is part of the realtime feedback type of UI interactions.
+
