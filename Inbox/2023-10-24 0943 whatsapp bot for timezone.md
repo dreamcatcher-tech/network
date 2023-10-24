@@ -67,3 +67,6 @@ Editing directly just shows as a "direct edit" message, with some starting line 
 In the webpage, we can get them to send a photo of a QR code we generate, which connects the sessions.  Connect to our bot using a whatsapp qr to get our contact, possibly embed some ID info in that, so we can instantly send them their convos.
 ## Deployment
 Use the git repo for honing the bots, and having automated tests to assert the veracity of the bots.  Then each push will run the bot in a lambda deployment hooked up to a set of whatsapp bots.  This also provides the chat interface on the main website.
+
+## Interface to file renamer
+If the bot let everyone see what a given function in an org was doing, then instant guidance could be given.  So an admin could see the prompts that staff we doing in their interactions.  Lets you see errors quicker, and interject easily from afar, fixing the problem directly rather than going thru the loop with the staff member.  Makes sharing the state of the system easier, so you can see whats going on, since it is just a chat.
