@@ -53,4 +53,12 @@ The user chain inputs prompts to the system at the top level, and the system dec
 
 So each covenant is AI boosted, in that it can do some things with AI to change its state or give some interpreted views ?  Covenants are like system prompts to chains, where the covenants themselves are chains.
 
-Embeddings retrieval component that
+Embeddings retrieval component that can be connected to others, so embeddings can be used.  This is like a collection object, each child holds the binary of the embedded data.
+
+`CD` is a way to get to a different set of functions.  The model determines if it needs to do this to scope down where it will go next to execute some parts of the model.
+
+If all the bot actions with the system were blockchain actions, then they become easier for us to build and test, plus the functions have the testability that we need to do a standardized correction loop with the AI.  AI layer can modify the actions available to encapsulate more logic, and more customization.  Presents as self improvement, assisted by humans in the background.
+
+Our interface just so happens to be exactly the same as the functions calling of GPT4.   Like its basically a drop in replacement.
+
+Makes AI reliable by baking it down into blockchain executable and testable systems.  Vast thorough testing is possible since it is AI orchestrated.
