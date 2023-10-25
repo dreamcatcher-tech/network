@@ -10,6 +10,8 @@ The programming was a checklist that got run, where most steps can be done in pa
 
 > **The baked program is the thing that gets published for further improvement by others**
 
+It is a way of compression of the AI's work, so it only needs to be a little bit better next time.
+
 It is first tested by using full AI to stand over the process until it is accepted as ok by the human.
 Then the human plus the AI work to back it into code.
 This iteration in code is then run thru the test suites and then released by an AI deciding when it is ok to publish.
