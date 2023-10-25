@@ -70,3 +70,6 @@ Use the git repo for honing the bots, and having automated tests to assert the v
 
 ## Interface to file renamer
 If the bot let everyone see what a given function in an org was doing, then instant guidance could be given.  So an admin could see the prompts that staff we doing in their interactions.  Lets you see errors quicker, and interject easily from afar, fixing the problem directly rather than going thru the loop with the staff member.  Makes sharing the state of the system easier, so you can see whats going on, since it is just a chat.
+
+## Files
+Submit files in whatsapp and it stores them in good places in the virtual filesystem, plus makes them available for reference when you ask it questions, or when it answers on your behalf to people.  Can start to treat the bot like a little personal assistant that you make available to the whole company, and you start training it with the rules of your company, so it can adopt your ethocs, like the Schick way.
