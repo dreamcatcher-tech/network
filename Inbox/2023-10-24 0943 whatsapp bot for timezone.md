@@ -73,3 +73,9 @@ If the bot let everyone see what a given function in an org was doing, then inst
 
 ## Files
 Submit files in whatsapp and it stores them in good places in the virtual filesystem, plus makes them available for reference when you ask it questions, or when it answers on your behalf to people.  Can start to treat the bot like a little personal assistant that you make available to the whole company, and you start training it with the rules of your company, so it can adopt your ethocs, like the Schick way.
+
+Need to attack at the filesystem level, so from a browser, we can connect directly to their filesystem.  Then connect to our app and have our agent on machine or on browser.
+
+Share the contact and share some credits.
+
+Pro version is that the bot is you.
