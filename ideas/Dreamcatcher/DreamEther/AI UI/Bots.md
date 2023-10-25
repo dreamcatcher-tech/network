@@ -62,3 +62,7 @@ If all the bot actions with the system were blockchain actions, then they become
 Our interface just so happens to be exactly the same as the functions calling of GPT4.   Like its basically a drop in replacement.
 
 Makes AI reliable by baking it down into blockchain executable and testable systems.  Vast thorough testing is possible since it is AI orchestrated.
+
+So there would be gpt calls from inside a chain, and gpt calls outside the chain ?  Or are those actually gpt calls from inside the user chain ?
+Using chains allows a huge amount of structure to be reused, and the navigation and history to be easily presented.  It also allows for us to simulate the AI by making the chains not do side effects.  The UI is easily rendered using chain logic to show what changed, what chains are in partial states, and to let the user drill down to see structure deeper using the navigator to show it in the stateboard.
+Interrogation of exactly what was said to the AI is easy, since each chain can be interrogated and browsed thru.  This part should be parsed by AI too, to make it easier.  AI can select different visual elements to present to the user with the current CD item, which is actually a 3D CD where it can go in the past too.
