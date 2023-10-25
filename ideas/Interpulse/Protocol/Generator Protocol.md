@@ -66,3 +66,6 @@ Progress bars are the easiest example, where a long running operation would like
 
 Streaming back logs from a console session is best done by a generator where we yield as many lines as are available at any given time, then sleep until more lines are available.  There would be some timing detection and buffer size triggers to decide on when to send and when to wait for more input.
 Detect when the console is being 'spun' where multiple actions are resulting in very little net console change.
+
+## Problems
+Problem with generators is that each yield may have triggered something, so it is difficult to snip the blocks that contain these actions, causing a bloat in pulses.  It might be possible since any path can be pruned for any reason, so it would be possibly to shortcut these pulses out.  A better way is to create a new pulse for each yield, so that there are no actions made, but to get all the yields, you need all the little pulses. Or you can wait till the end.
