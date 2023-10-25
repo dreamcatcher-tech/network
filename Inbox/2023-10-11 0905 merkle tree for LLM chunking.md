@@ -50,3 +50,5 @@ If a service is fronted by an AI, then we can make an app that searches for rele
 Can scrape an existing set of records out by walking one at a time and converting to a standard format, then updating the standard format each time a new one is processed and doesn't fit, where the output is either the standard format populated so we can query it, and / or a modification to the standard template.  So the format defines the full schema for the entries, and each entry is a conversion to the existing schema.  Make a simple tool that continually tests the schema and feeds back the error until the schema is compliant.
 
 Run the embeddings thru gpt first to ensure that all keywords and concepts are accurately expressed in each section.
+
+Use a mapreduce approach where the section to be summarized is included in the summary, with a weight parameter, so the summary includes info that might be needed to make the summary in the current section (approach suggested by openai).  We could then run it backwards and see if we missed anything or if things are meaningfully the same.

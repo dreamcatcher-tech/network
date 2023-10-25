@@ -136,3 +136,8 @@ The current state of the chain tree can be read using components, so as results 
 The key to the whole thing seems to be making an app that you can automatically file bugs and feature requests, and can experiment with making the app change to be how you want it to be.
 
 ? how to make it build up a blockchain app with covenant logic that triggers things to be done ? consequences ?
+
+
+
+## live feedback on your prompt
+say when it is going to be interpeted as multiple instructions, say what parts are missing some context, etc - help the user get it right first time.

@@ -27,6 +27,7 @@ Break the query up into different intents, each summarized, ready to be sent to 
 Carry over of the list of concepts that have been explained is the same as making a list of tasks that need to be followed - basically just a list stack, or some similar structure.  Has a criteria for the format of the items in the list, and can do stack operations on each one.
 Have a standard list computer, to display to the user, let them reference and select, and modify the list.
 This base element gets inherited with different AI functions for putting items into the list, and doing operations on the list.  The instructions can be very widely varying, but 3.5 takes care of turning them into atomic list modification actions.  The list then, should be a blockchain ?
+The list should be nestable, so each node can have children.
 
 ? what would the todolist be, written as a bot ?
 ? What would it be, written inside the dreamcatcher, without any external input ?
@@ -34,3 +35,22 @@ This base element gets inherited with different AI functions for putting items i
 Every instruction should allow a refinement loop, for when the machine doesn't get it right.
 
 Should be able to edit the yml files that program the machine, using the ai, and then it compute the consequences of the changes and ensure all the other rules about the system still hold true.  So a simple change from you might trigger a lot of error looping as it fixes its mistakes and updates other parts of the system.
+
+Turn the system into a state machine, where the state determines what instructions and background knowledge gets injected.
+If the base component was a state, and it could be nested infinitely, in a statechart, this might better model the systems we want ?  We would help the user make little state charts to achieve little repetitive tasks, or even single use tasks.
+
+Bot boot should be a  blockchain app, and it should do some filesystem sync processes first, to ensure it has pulled in all the changes on the filesystem first.  React components show what it is doing by showing which parts of the tree are active.
+
+Comparator component, where outputs of different processes are compared under some constraints.
+
+Different workflows can be put in the store to solve the same problems.  Because good models drive usage, revenue is shared with model builders.  However, any user can tweak any model, so the models are actually AI managed, where anyone can improve them just be saying whats wrong in the simplest case, or fixing whats wrong in the most complex case.
+
+SUT component, which allows any system to be modelled and played with under test.  The AI itself can be modelled as a SUT and so it can simulate itself ?  User gets guided thru some scenarios that verify the system, and some paths they want to walk it down.
+
+The react components in history should always render whichever components in the tree are "rendering" or that are currently being manipulated by GPT.  They may be deeply nested, and can also include the feedback bot at the end that runs in the background, regardless of the response to the user.
+
+The user chain inputs prompts to the system at the top level, and the system decides where to put them.  ? Can the user inject to a specific thing ?  Show breadcrumbs showing where they are in the model if they have navigated somewhere currently.  Or not, since they can technically talk to multiple parts of the model in a single prompt.
+
+So each covenant is AI boosted, in that it can do some things with AI to change its state or give some interpreted views ?  Covenants are like system prompts to chains, where the covenants themselves are chains.
+
+Embeddings retrieval component that
