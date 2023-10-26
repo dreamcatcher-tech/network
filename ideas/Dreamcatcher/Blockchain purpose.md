@@ -20,3 +20,7 @@ The app store is a dojo / factory, as well as a marketplace.  "I found an app" b
 Take 30% of gpu costs
 
 If AI is a context gobbler, then blockchain becomes a high precision context preserver.  It represents the ideal form of context, and so the AI in and AI app acts as a context transformer, where it compresses it down into a blockchain context.
+
+It is a system where if you put more energy in, it will improve quality / destroy entropy.  The hash based nature of the blockchain makes it indestructible, so it can never degrade backwards.
+
+The AI as context absorber takes away from everyone the distinction of their outputs, whilst the blockchain records the uniqueness of their efforts.  As the context transformer, it does what it likes with the generated novelty.  The Attribution AI fairly pays out to those contributions, so you lose the right to be different for anything other than novelty.
