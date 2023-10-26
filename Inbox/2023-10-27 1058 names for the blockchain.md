@@ -8,6 +8,7 @@
 Multiverse
 Convergence
 Interpulse
+Artefact - reference the fact that it is what remains from the AI.
 
 The blockchain of the Dreamcatcher is Interpulse.
 
