@@ -151,6 +151,11 @@ May be able to do the vector search on chain, since it is simply cosine similari
 
 UI needs to have a presentation layer, a blockchain app layer, and an AI layer.
 
+### Embeddings queries
+The embeddings can be queried as a command from the terminal.
+Every json object should automatically make an embedding of its contents, and store this.
+Json schemas and schema matching json data should be embedded different
+
 ## CRM
 geocoding of places - shows up locations that were near to what the person said.
 If on whatsapp, they can send in their location.
