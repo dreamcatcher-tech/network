@@ -79,3 +79,10 @@ Need to attack at the filesystem level, so from a browser, we can connect direct
 Share the contact and share some credits.
 
 Pro version is that the bot is you.
+
+## Audio
+Audio could be done via a call, and then realtime audio processing occurs in the chat.
+Might be able to take in voip calls and route them to a whatsapp number, with chat transcription updates happening in realtime.
+
+## UI
+Show a band where the bots memory is up to, where it is summarizing, and other info about the chat.  The stateboard view should be purely readonly.  We could allow editing of text in this view, but that would just make a new message with selections and changes.  Select something then push "use this selection" to have it sent to the chat.  Edit is just sent to the chat when you're finished.

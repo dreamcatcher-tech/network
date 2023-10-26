@@ -141,3 +141,16 @@ The key to the whole thing seems to be making an app that you can automatically 
 
 ## live feedback on your prompt
 say when it is going to be interpeted as multiple instructions, say what parts are missing some context, etc - help the user get it right first time.
+
+## DOS interface
+If you hit an action directly, we can just execute that, else it goes off to gpt for some processing.  Close commands get corrected and explained, possibly across multiple chats.
+Otherwise, considered part of the natural language interface.
+Actions taken within DOS by the AI are shown in the history log.
+Embeddings inside a collection, with the children holding the full data.
+May be able to do the vector search on chain, since it is simply cosine similarity that matters.
+
+UI needs to have a presentation layer, a blockchain app layer, and an AI layer.
+
+## CRM
+geocoding of places - shows up locations that were near to what the person said.
+If on whatsapp, they can send in their location.

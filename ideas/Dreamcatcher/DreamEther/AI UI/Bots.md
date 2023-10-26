@@ -66,3 +66,5 @@ Makes AI reliable by baking it down into blockchain executable and testable syst
 So there would be gpt calls from inside a chain, and gpt calls outside the chain ?  Or are those actually gpt calls from inside the user chain ?
 Using chains allows a huge amount of structure to be reused, and the navigation and history to be easily presented.  It also allows for us to simulate the AI by making the chains not do side effects.  The UI is easily rendered using chain logic to show what changed, what chains are in partial states, and to let the user drill down to see structure deeper using the navigator to show it in the stateboard.
 Interrogation of exactly what was said to the AI is easy, since each chain can be interrogated and browsed thru.  This part should be parsed by AI too, to make it easier.  AI can select different visual elements to present to the user with the current CD item, which is actually a 3D CD where it can go in the past too.
+
+The collection of emdeddings would hold the vector DB for doing searching with.  Each child would hold the actual data, and the embedding from openAI.
