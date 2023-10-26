@@ -27,3 +27,7 @@ This could become the job of SM to prompt for the inputs to be correct, and TT w
 
 ? Could we embed each customer record, so that anything like something could be returned ?
 This might let us answer much more general questions ?
+
+So there would be a local AI chain, and a server side AI chain ?
+Server side would be connected to the dreamcatcher, local was simply for their user chain ?
+If they sync the local chain with server then we can use it for testing.
