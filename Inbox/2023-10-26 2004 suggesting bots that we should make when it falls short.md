@@ -8,3 +8,7 @@
 Should keep recategorizing these systems to ensure a good bot creation.
 
 Like self prompting.
+
+Programming the AI with the AI.
+
+It was 
