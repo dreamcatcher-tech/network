@@ -173,4 +173,11 @@ Basically pass a system to the llm, and it will walk around it a bit and generat
 Meaning based statecharts - much fuzzier - uses an AI eval to define the edges of each state.
 
 ## Ai in every chain
-Each chain object should be able to call the AI to perform functions.  Eg: the docker-names component can all the AI as tho it is a specific bot, to get a specific response.  So invoking this object causes it to provide a very specific AI related function and pass the result back.
+Each chain object should be able to call the AI to perform functions.  Eg: the docker-names component can all the AI as tho it is a specific bot, to get a specific response.  So invoking this object causes it to provide a very specific AI related function and pass the result back.  It would call this via the AI accelerator chain in the system, and may include some fallbacks if the service is unavailable (or just queue up messages).  
+
+The AI service looks like a piece of hardware.  Different models are just subhardware, like how hard drives and partitions are arranged in linux.
+
+This can let us make AI bots that can do specific things, like formatting, random number generation.
+
+## Signals about being somewhere strange in the tree
+The chain should be able to rapidly provide a query as to how many other users used this function or this place in the path last.  This rarity should signal as a warning to give the AI time to rethink, but also the human should be informed to help them make a decision.
