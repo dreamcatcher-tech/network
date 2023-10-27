@@ -36,3 +36,5 @@ If they sync the local chain with server then we can use it for testing.
 If someone tries to create a manifest and there are still unrouted customers, then they would get a nice message guiding them thru the functions of what to do next.
 Entry box can give feedback instantly on if you have hit a match on a system command, and the description of the output can be shown live, since this requires no AI calls to interpret.  We could send the partial matches to 3.5 so that it can comment on what you're trying to do, and give hints.
 Can have cautions assosciated with actions, so the AI can advise against some things.  Its preferences can be used to override anything an app might want to set, like never show warnings.
+
+

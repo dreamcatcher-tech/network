@@ -155,7 +155,7 @@ UI needs to have a presentation layer, a blockchain app layer, and an AI layer.
 The embeddings can be queried as a command from the terminal.
 Every json object should automatically make an embedding of its contents, and store this.
 Json schemas and schema matching json data should be embedded different
-
+If all actions are embedded, then other relevant functions can be selected - these might need some clarification.  We would also look at the last time they asked to do this, and see what we learned from that.  Learnings should be condensed down to a nugget that decides what we do next time they ask something similar.  We would detect they asked something similar, and so we would elect to do the same thing they did last time.
 ## CRM
 geocoding of places - shows up locations that were near to what the person said.
 If on whatsapp, they can send in their location.
