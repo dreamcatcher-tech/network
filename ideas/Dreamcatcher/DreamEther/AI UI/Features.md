@@ -159,3 +159,15 @@ If all actions are embedded, then other relevant functions can be selected - the
 ## CRM
 geocoding of places - shows up locations that were near to what the person said.
 If on whatsapp, they can send in their location.
+
+## Centralized hosting
+Being decentralized seems to matter less with AI.  So we could have our chain based system hosted in a secure environment for each person, running our chains, without the security auditing piece.  We can be building that out for later.  Public chain not needed either, we can set that as a goal, and list the reasons why its important, so we can win the data sovereignty race.
+
+We can use traditional security methods to grant access to chains.  Use lambda as the calculator, and docker containers as the gateway that holds the libp2p connections.  Or, make a rest based api so can use aws api gateway.  The docker containers can use message or kafka to stream the data in.
+
+## Exercising using a statechart
+Also can use a pseudo statechart, where the LLM figures out a handful of paths for how to get to a particular start just be walking and marking.  So it isn't a hard calculation, just builds up its own map by walking the system, knowing what it can do or can't.  It uses judgement about what are reasonable times to call a path done, using code coverage tests.  Can also use meaning was the way to define the statechart.
+
+Basically pass a system to the llm, and it will walk around it a bit and generate some load paths, without requiring a concrete statechart.  It can generate its own statechart based on what it has found so far, which can be exhaustively run.  Use intelligence to know when an infinite loop has been hit, where it is a new state, but it isn't meaningfully different since it has seen a handful of these happen before.
+
+Meaning based statecharts - much fuzzier - uses an AI eval to define the edges of each state.

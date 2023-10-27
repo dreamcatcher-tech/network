@@ -86,3 +86,6 @@ Might be able to take in voip calls and route them to a whatsapp number, with ch
 
 ## UI
 Show a band where the bots memory is up to, where it is summarizing, and other info about the chat.  The stateboard view should be purely readonly.  We could allow editing of text in this view, but that would just make a new message with selections and changes.  Select something then push "use this selection" to have it sent to the chat.  Edit is just sent to the chat when you're finished.
+
+## Colab
+If you add someones bot as a contact, then you are saying that your bot can chat to them.  You can see what they're chatting about by joining the group that has them both in it.  Your bot will ask if they can talk to their bot, and will add a group with all of you together for your reference if they are amenable.

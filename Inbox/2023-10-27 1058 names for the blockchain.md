@@ -17,3 +17,5 @@ The blockchain of the Dreamcatcher is Interpulse.
 
 The Dreamcatcher is the anything app, and can quickly become any application.
 It can act on your local filesystem by giving its webpage same origin fileystem access.  You can chat with it, and it can use a background service in the browser to make changes to your filesystem just based on your chatting with a whatsapp bot.
+
+The self improving software company.
