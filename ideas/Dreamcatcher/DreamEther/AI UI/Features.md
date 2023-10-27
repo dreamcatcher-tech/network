@@ -171,3 +171,6 @@ Also can use a pseudo statechart, where the LLM figures out a handful of paths f
 Basically pass a system to the llm, and it will walk around it a bit and generate some load paths, without requiring a concrete statechart.  It can generate its own statechart based on what it has found so far, which can be exhaustively run.  Use intelligence to know when an infinite loop has been hit, where it is a new state, but it isn't meaningfully different since it has seen a handful of these happen before.
 
 Meaning based statecharts - much fuzzier - uses an AI eval to define the edges of each state.
+
+## Ai in every chain
+Each chain object should be able to call the AI to perform functions.  Eg: the docker-names component can all the AI as tho it is a specific bot, to get a specific response.  So invoking this object causes it to provide a very specific AI related function and pass the result back.
