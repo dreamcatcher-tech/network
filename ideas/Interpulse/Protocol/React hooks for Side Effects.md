@@ -126,6 +126,8 @@ useEffect( ()=>{
 		assert(!ref.current)
 		ref.current = await PulseNet.create()
 		if (!stopped){
+			// but cannot have this as function cannot be transmitted with closure
+			// unless this is all running in the proposer function 
 			await setState( state => ({...state, started: true}))
 		}
 	}
