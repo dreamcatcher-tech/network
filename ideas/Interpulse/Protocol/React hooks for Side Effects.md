@@ -76,6 +76,8 @@ When a new action comes in, we compare the deps provided to the hooks call with 
 
 Deep equality is used with the stored dependencies.  Be careful with these deps as they need to be stored in the state and will contribute to Pulse size.  You can hash them if they are large and just store a hash.  Or use just the slice of a large object which you depend on, to minimize the state change of the chain.
 
+We should store just the hash of the dependencies, since it has guaranteed storage size, and serves the exact same purpose.
+
 If the hook depends on the state in some way, then it would have passed that portion of the state into the hook as a dep, so state change detection is inferred.
 
 ### Concurrency
