@@ -173,7 +173,9 @@ setState could be synchronous, since it doesn't have any return function, and al
 
 setState with a function is sugar for lockState then setState, where setState releases the lock.  Because it is fire and forget, it would need to be rerun if action processing stopped before it got to the reducer ?  Also, if we want to throw, then for this error to make it back in, we need it to be async.  So useState could be sync, but setState is asynchronous if you use a function ?  If a reducer has its config to no concurrency then there can be no conflicts, but if it allows parallels then we could throw if setState was called synchronously ?  
 ## Rerunning
-The dependencies changing cause a new action to be sent out on the io channel, with the produced function attached.  Pass the function along using a global weakmap to whisper it out of the isolator and to the isolate runner.
+The dependencies changing cause a new action to be sent out on the io channel, with the produced function attached.  Pass the function along using a global weakmap to whisper it out of the isolator and to the isolate runner.  This also makes a way of sending back inappropriate data to other consumers, eg: progress updates, streaming data, heavy files that have no need to be chained but are used for presentation purposes.
+
+It is better to leave some immutable record of when it got called and when it is expected to be run.  The isolator swarm then works its way thru these requests, running each one in turn.  Then when the results come in, replay can have determinism ?
 
 Provide a `useAsync` hook which is equivalent to running the side effect every single request.  It can be within conditionals, so long as its always the same.
 
@@ -186,4 +188,13 @@ Another option is to let the isolation context pierce in a system announcement w
 If we used the sequence of the `useState` call to be used to demarcate slices, then authors can set state to be anything they like, and can have isolated pieces within the same reducer.  These functions, due to their self scoping merely by being declared, could be synchronous since there is no chance of collision.  If order mattered, then you should supply a function.  But since everything is in a single thread, it should be guaranteed at that point in time.  In the background we may need to lock the state slice if we are running in parallel, so that things are deterministic.  
 
 Supplying a function is just run automatically in the background.
-## Implementation
+## Making an API request out
+One option is to do `useEffect` and send back in an interchain request to self that you know how to handle in the reducer.  This is an unnatural way to make such calls, and is a limitation only in React.  Our ideal interface is:
+```js
+const result = await useAsync( async meta => { return await fetch('something') } )
+```
+This is an effect that gives a return.  It runs every request.  We could make the interface use dependencies too, so it only triggers when something changes, but default run every time seems the core component.
+
+This is treated like an interchain request out to `.@@io` with the reply being given back to the reducer.  During replay, the function is ignored.  
+
+Multithreading in the reducer can be done by processing multiple requests in parallel.  Think this is how the DMZ acts, so we could enable that for a reducer.
