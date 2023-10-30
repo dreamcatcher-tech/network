@@ -154,3 +154,18 @@ The isolation context would be the thing that ran this core covenant.  It would 
 Init action includes a path to the repo to draw on.  
 
 After it had booted, it would check with the network that the hashes it had loaded from were in fact correct ?  If was loaded in deno, then the hash that came with the files would be enough to ensure the integrity of the loaded files.  
+
+## setState being called as a side effect
+
+If useEffect worked like in react, then the effect function needs to send actions back in that affect the rest of the reducer.  Interchain and setState plus all derivatives should work inside the effect function.
+
+Should be able to get lockedState and do updates there as well.  Calling setState should either clobber, or if a function was supplied, use the locked form.  Sending in a function is sugar for getting the locked state and then setting it again.  SetState is technically short for locking the state, changing it, and unlocking.
+
+Supplying a function could be done by first getting lock of the state via the io channel, then sending setState on this locked state after calling the effect supplied function inside the external isolation.  This means that the effect can guarantee it is dealing with the latest state.
+
+This works by changing what the top level hook is.  It gets translated into an IO action that is pierced into the chain.  The promise is resolved when the io response is returns.  So instead of rerunning the effect, it only runs once, and awaits the io return.
+
+## Rerunning
+The dependencies changing cause a new action to be sent out on the io channel, with the produced function attached.  Pass the function along using a global weakmap to whisper it out of the isolator and to the isolate runner.
+
+Provide a `useAsync` hook which is equivalent to running the side effect every single request.  It can be within conditionals, so long as its always the same.
