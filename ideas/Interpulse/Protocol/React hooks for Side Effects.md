@@ -9,9 +9,9 @@ Interpulse Effects are always tied to a computer or group of computers that they
 
 Each action is like props being passed down, which will cause a rerender, which might trigger effects to rerun.  The covenant model is very much like a react component that takes props in and expects props back, and has various lifecycle events that it transitions to.  It does allow asynchrony, unlike react.
 
-Unmount can occur at any time for any reason.  The only thing that is guaranteed is that the effect will always eventually run based on the latest known block.  Some executions that would occur during replay may be skipped, so the effect is not guaranteed to execute at every Pulse that it could execute, but it will always eventually execute.  
+Unmount can occur at any time for any reason.  The only thing that is guaranteed is that the effect will always eventually run based on the latest known block.  The isolation context may need to teardown before execution completes, in which case the exact same function will be invoked on another isolator somewhere.  The isolator swarm indicates what pulse they have run up to, so for redundancy a new swarm can step in and take over.  This will probably be an `.@@io` system action that the DMZ updates a counter for.
 
-The isolation context may need to teardown before execution completes, in which case the exact same function will be invoked on another isolator somewhere.
+Teardown will happen before the next run, unless there is a catastrophe.  Catastrophe will rerun the last block, so the effect will get run a second time.
 
 The signature is:
 
@@ -99,7 +99,8 @@ const result = await interchain( action, '/some/other/chain' )
 
 Within the effect runner, which is an engine controlled context, any interchain requests would be inserted on the `.@@io` queue, wrapped in a system action, which the DMZ marshals.  By the same rules as hooks, a promise cannot be returned from `useEffect()` so dangling requests during unmount need to be handled by the developer.  
 
-The Pierce channel is the only way to get data into chainland.  
+> **The Pierce channel is the only way to get data into chainland**
+
 The effect model described here has no reason to use the outbound channel of `@@.io` and so it is likely to be removed upon implementation of this new side effect model.  The hooks model allows effect functions to be supplied inside the reducer function, so can simplify covenant structure.
 
 Any actions the effect needs to dispatch are wrapped, pierced into the chain, then unwrapped by the dmz reducer.
@@ -168,6 +169,9 @@ Supplying a function could be done by first getting lock of the state via the io
 
 This works by changing what the top level hook is.  It gets translated into an IO action that is pierced into the chain.  The promise is resolved when the io response is returns.  So instead of rerunning the effect, it only runs once, and awaits the io return.
 
+setState could be synchronous, since it doesn't have any return function, and all events that come after it will be processed later, since no way to jump the priority queue on loopback, except for critical system functions.  Ie: all setState actions are equal.
+
+setState with a function is sugar for lockState then setState, where setState releases the lock.  Because it is fire and forget, it would need to be rerun if action processing stopped before it got to the reducer ?  Also, if we want to throw, then for this error to make it back in, we need it to be async.  So useState could be sync, but setState is asynchronous if you use a function ?  If a reducer has its config to no concurrency then there can be no conflicts, but if it allows parallels then we could throw if setState was called synchronously ?  
 ## Rerunning
 The dependencies changing cause a new action to be sent out on the io channel, with the produced function attached.  Pass the function along using a global weakmap to whisper it out of the isolator and to the isolate runner.
 
