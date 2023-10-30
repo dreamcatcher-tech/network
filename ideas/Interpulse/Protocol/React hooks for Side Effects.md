@@ -18,16 +18,14 @@ The signature is:
 ```js
 const dependencies = [state, state.something, anyVariable]
 const options = { concurrency: 5, spread: 3, quorum: 'MAJORITY', timeout: 50000, host: 'peerId' }
-useEffect( () => {
+useEffect( async () => {
 	debug('effect mounting')
-	const asyncFunction = async ()=>{
-		const result = await fetch('https://some.thing')
-		const loopbackResult = await interchain( 'SELF', result )
-		const [state, setState] = await useState()
-		// note this is only the state at time of invocation
-		await setState( {} )
-	}
-	asyncFunction()
+	const result = await fetch('https://some.thing')
+	const loopbackResult = await interchain( 'SELF', result )
+	const [state, setState] = await useState()
+	// note this is only the state at time of invocation
+	await setState( {} )
+	
 	return () => {
 		// must return a function so we know how to cleanup
 		debug('effect unmounting')
@@ -155,6 +153,11 @@ Init action includes a path to the repo to draw on.
 
 After it had booted, it would check with the network that the hashes it had loaded from were in fact correct ?  If was loaded in deno, then the hash that came with the files would be enough to ensure the integrity of the loaded files.  
 
+ref might not be possible, since it blends side effect land with chainland, so it needs to be only referred to inside effects.  The same result might be achieved by passing some metadata to each effect, like:
+
+```js
+useEffect( async meta => { console.log( meta.context )} )
+```
 ## setState being called as a side effect
 
 If useEffect worked like in react, then the effect function needs to send actions back in that affect the rest of the reducer.  Interchain and setState plus all derivatives should work inside the effect function.
@@ -169,3 +172,14 @@ This works by changing what the top level hook is.  It gets translated into an 
 The dependencies changing cause a new action to be sent out on the io channel, with the produced function attached.  Pass the function along using a global weakmap to whisper it out of the isolator and to the isolate runner.
 
 Provide a `useAsync` hook which is equivalent to running the side effect every single request.  It can be within conditionals, so long as its always the same.
+
+## Isolator ID
+Part of the metadata available to the reducer needs to be the id or ids of the isolator context its side effects are running on.  On mount needs to be triggered in a way that doesn't mess with when the isolator got called.  If an empty dependencies list is given, then the effect should only be run the first time the chain runs.  But this might not be what the goal was, so the author should use some kind of meta data to trigger when the isolation context changed.
+
+Another option is to let the isolation context pierce in a system announcement when it loads, which can trigger all the effects to rerun as they just mounted, as it would wipe all the dependencies fingerprints.
+
+## multiple states in reducer like react
+If we used the sequence of the `useState` call to be used to demarcate slices, then authors can set state to be anything they like, and can have isolated pieces within the same reducer.  These functions, due to their self scoping merely by being declared, could be synchronous since there is no chance of collision.  If order mattered, then you should supply a function.  But since everything is in a single thread, it should be guaranteed at that point in time.  In the background we may need to lock the state slice if we are running in parallel, so that things are deterministic.  
+
+Supplying a function is just run automatically in the background.
+## Implementation
