@@ -13,3 +13,5 @@ Each time you post a problem, and optionally put some funding against it, a huma
 In this way, the staff are global, and are continually teaching HAL so they never have to save the same problem twice.
 
 Any time anyone gets stuck the same way twice, its inefficient.  The measure of your innovation rate is how many times people are getting stuck in the same place.
+
+Funding for the stuck gets you royalty if it gets reused.
