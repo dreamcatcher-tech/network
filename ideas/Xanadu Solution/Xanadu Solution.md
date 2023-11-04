@@ -29,3 +29,19 @@ Servers and Users are the same object in the system, the difference being who co
 
 ## Making a [[Comparator]] for Xanadu
 Then do a list of assessments for tooling and groups of tooling, and show how they score.  Eg: google docs, github, wikipedia, wordpress
+
+## Making Dreamcatcher-AI as a candidate
+Send Ted an email listing all the principles of Xanadu and how we solve each one.
+Invite him to make a Stuck within the Dreamcatcher, to define what Xanadu is, and why the Dreamcatcher currently is not it, so we can put funding against it.
+
+If we can get him to at least make a Stuck defining Xanadu, and how we are different, then get this published on the ethereum chain.
+
+Get him to make Xanadu bot, which can arbitrarily answer questions about the system.
+
+We would make him a dead mans switch on the Xanadu.  A Stuck that he was in charge of QA on, but if his keys did not sign in for a year, then the ability of his annointed followers would be engaged so they could pass the QA on the item.  QA would be the AI pass, plus the human pass.
+
+Show transclusions for modified text, where the closeness can be used to show partial transclusion.
+Show taking traditional text, and generating transclusion data from it, so that the royalties can be paid in arrears and offsystem.
+Healing the web by backfilling transclusions when they are not there.
+
+We can use their EDL format to store references inside the state of chains.
