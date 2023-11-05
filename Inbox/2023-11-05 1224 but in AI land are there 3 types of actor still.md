@@ -8,3 +8,5 @@
 We had do-ers, funders, and buyers.  Now we have actors or Daves, and do-ers are blended with buyers.  Funders still seem the same distinction, but for big jobs.
 
 Funders, Consumers, Solvers
+
+Everything gets binned 
