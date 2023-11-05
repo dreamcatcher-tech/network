@@ -9,4 +9,4 @@ We had do-ers, funders, and buyers.  Now we have actors or Daves, and do-ers are
 
 Funders, Consumers, Solvers
 
-Everything gets binned 
+Everything gets binned and we present only the dreamcatcher in webapp form.
