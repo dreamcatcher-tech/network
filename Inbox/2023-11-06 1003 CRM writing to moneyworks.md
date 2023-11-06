@@ -14,3 +14,5 @@ Store the csv on file and compare each time, so we know we aren't doing duplicat
 If we could write to the database, then we can deliver features faster than cutting over to our system entirely.
 
 Also a full pull seems very easy to do now, taking under a minute, so we could resync at the start of each day, and mark ourselves against the incoming data, then merge it in once we had scored ourselves.
+
+Image processing of photographs of manifests coming back from drivers can be used to do reconciliation automatically.

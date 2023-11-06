@@ -18,6 +18,7 @@ Attribution Table - this should be calculated from the covenant
 [[Covenant installation, isolation, and distribution]]
 [[Request for BFT Punishment]]
 Binary storage for storing images without using json
+Remove promises in the channel protocol - everything is by default a promise
 
 ## Draft
 [[2023-06-29 1154 mango queries on children]]
