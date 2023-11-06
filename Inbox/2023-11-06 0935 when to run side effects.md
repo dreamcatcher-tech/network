@@ -16,3 +16,7 @@ The cleanest long term way is to use the top level Interpulse object, which has 
 This would listen to every new pulse created, and check it to see if we should side effect it.
 
 If we should, then rerun the pulse in the isolation context.  Error if the end result doesn't match the supplied pulse, otherwise use the whispered functions to run and supply results back to the chain.
+
+But if we were the pulse proposer, we should be able to change the permissions of the isolation box to allow it to run these side effects ?  But, if we want to switch back later to continue on making a new pulse, we would have to switch the side effects back, but we may have residues.  Overall then, it is cheaper, and safer, to run a dedicated and separate IsolateContainer that replays the pulses.
+
+This implies that high compute items should have been handled by an action, so that side effect replay is excused from doing any heavy lifting.
