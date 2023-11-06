@@ -15,4 +15,4 @@ The cleanest long term way is to use the top level Interpulse object, which has 
 
 This would listen to every new pulse created, and check it to see if we should side effect it.
 
-If we should, then rerun the pulse in the isolation context.  Error if the end result doesn't match the supplied pulse, 
+If we should, then rerun the pulse in the isolation context.  Error if the end result doesn't match the supplied pulse, otherwise use the whispered functions to run and supply results back to the chain.
