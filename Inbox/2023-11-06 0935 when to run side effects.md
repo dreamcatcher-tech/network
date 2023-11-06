@@ -20,3 +20,5 @@ If we should, then rerun the pulse in the isolation context.  Error if the end r
 But if we were the pulse proposer, we should be able to change the permissions of the isolation box to allow it to run these side effects ?  But, if we want to switch back later to continue on making a new pulse, we would have to switch the side effects back, but we may have residues.  Overall then, it is cheaper, and safer, to run a dedicated and separate IsolateContainer that replays the pulses.
 
 This implies that high compute items should have been handled by an action, so that side effect replay is excused from doing any heavy lifting.
+
+As a super dirty version, could run the side effect immediately inside the reducer, and pierce back in afterwards, relying on the correctness of the program to manage side effects or not, rather than rerunning the pulse.
