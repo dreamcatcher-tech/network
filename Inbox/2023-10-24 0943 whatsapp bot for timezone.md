@@ -91,4 +91,9 @@ Show a band where the bots memory is up to, where it is summarizing, and other i
 If you add someones bot as a contact, then you are saying that your bot can chat to them.  You can see what they're chatting about by joining the group that has them both in it.  Your bot will ask if they can talk to their bot, and will add a group with all of you together for your reference if they are amenable.
 
 ## Scheduling
+Be able to chat away about scheduling changes, and ask questions like "whats the best time to have a meeting ?"
+Be able to update schedules naturally thru chatting, or by sending in a photo of someones schedule.
+Intercept general chatter and update the information in the scheduler.
+
+
 
