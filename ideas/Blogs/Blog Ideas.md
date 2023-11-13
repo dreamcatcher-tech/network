@@ -297,3 +297,6 @@ As NFT images.
 Compacting information.
 The transmission of memory palaces
 Form of note taking
+
+## Comms channels inside companies
+Every so often, someone wants to solve the comms problem within a whole company, but further than that, there are comms links between companies.
