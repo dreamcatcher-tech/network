@@ -94,6 +94,6 @@ If you add someones bot as a contact, then you are saying that your bot can chat
 Be able to chat away about scheduling changes, and ask questions like "whats the best time to have a meeting ?"
 Be able to update schedules naturally thru chatting, or by sending in a photo of someones schedule.
 Intercept general chatter and update the information in the scheduler.
-
+Be able to insert and update calendars on different devices on the fly.
 
 
