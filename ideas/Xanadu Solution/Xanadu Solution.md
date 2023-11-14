@@ -45,3 +45,6 @@ Show taking traditional text, and generating transclusion data from it, so that 
 Healing the web by backfilling transclusions when they are not there.
 
 We can use their EDL format to store references inside the state of chains.
+
+## Transclusion as attribution trees
+If the transclusion format was used as a way to attribute back to owners, then we can start paying for code, but also for any kind of information.  It can be applied to physical items too.
