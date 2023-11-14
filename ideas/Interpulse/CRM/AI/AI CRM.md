@@ -45,3 +45,18 @@ Making a stuck is a huge milestone for us - this is the packet producer, and it 
 Winning is being able to use ThreeBox to edit a bot and have it behave differently right in front of you.  Use some tooling in the system to help edit bots rapidly.  Then we can see the prompts and know what people were trying to do.  Goal is that there exists a system that is minimally intelligent and can be used to orchestrate its own improvements.
 
 There may be some standard interfaces that our components require, such as being able to describe the visual elements that are being presented on the stateboard.  If you supply this function, then we will take a screenshot of the canvas and use vision to interpret this.
+
+## How to handle AI threads in interpulse root ?
+root should have an immediate child `.ai` which is a special system file that handles AI calls.
+Children here are threads.
+User starts a new session periodically, upon request, or when a new device connects.
+User can recover previous sessions, and can start new ones.
+
+Bot to bot calls are a session where the thread is owned by the path
+session have children for bot to bot chats.
+So each bot chat is listed by path, and then each of its chats are listed by path as a child
+The path is the absolute path or the relative path
+Creating a child thread would have required a function call being made
+Each object in this tree is a thread representing a conversation happening in the context of the users HAL, in service to the user.
+They can be submitted as bug reports, but they remain internal to HAL.
+They are HALs internal thought processes.
