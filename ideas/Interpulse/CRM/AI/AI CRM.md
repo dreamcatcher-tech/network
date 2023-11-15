@@ -60,3 +60,26 @@ Creating a child thread would have required a function call being made
 Each object in this tree is a thread representing a conversation happening in the context of the users HAL, in service to the user.
 They can be submitted as bug reports, but they remain internal to HAL.
 They are HALs internal thought processes.
+
+Each pulse is a part of the conversation that is occuring, so recovery walks the pulses to see where the conversation is at.  The threads are mirrored in openAI, but this is a way for us to visualize them and manage the interactions between all the parts.
+
+No need to do multiple sessions, as we can also put a special marker in that says to start anew.
+This would start a new thread with openai, but would
+Means there is no point is resuming an old session ?  This could be done by using forking to continue a previous session.
+Goal is to avoid having an extra dimension in the filesystem for session number.
+
+These chats can have derivations which contain derived redacted and anonymized data that is shared with everyone to help with stucks.
+
+Artifact holds just the programming to be consumed by the LLM - the life comes from the LLM.  Different LLMs can have different config being stored in the covenants.  Threading seems common to all LLMs, as does conversation in the form of input and output.
+
+The LLM programming should be inate to the chain, and should be like state, where it can be altered as a result of interactions.  The reducer logic need not be bound to the AI behaviour.  Means HAL can reprogram the AI behaviour without altering the covenants.
+
+Description of the object should be at the DMZ level.  
+Title would its name as given by its parent.
+Making schema be at the chain level means tight control over what it can be, and allows splat merges rather than needing an action.  If there is a logic check and a schema, then you can do anything that meets those requirements.
+
+So should the root also store the prompts that have been entered ?
+No seems better to piece the `/.ai/` chain directly, where `.ai` represents HAL, and it can operate on any other chain, including itself.
+## Managing AI threading when processing a database
+Need a way to manage looping the whole DB.
+? Make a chain per row, and use this as the conversation with the AI ?

@@ -22,6 +22,9 @@ Binary storage for storing images without using json
 Streaming by forking around the channel - drops a channel section after the stream completes
 [[Merge large trees without intermediate pulses]]
 [[Unify channels into a tightly tested module]]
+[[2023-11-15 1244 if a reducer rejects all the actions then it should not make a new pulse |pulseless error responses]]
+
+
 ## Draft
 [[2023-06-29 1154 mango queries on children]]
 [[2023-01-23 1202 repo as covenant]]
