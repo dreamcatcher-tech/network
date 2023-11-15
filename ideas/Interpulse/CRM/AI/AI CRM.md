@@ -85,6 +85,9 @@ If it matches an API action on root, then we might send it straight thru, since 
 
 Provide some id in the incoming request, so that all streaming can be intercepted by the UI.
 
+HAL calls should include a path to an arbitrary path, and we will create that item ?  
+Should be a child named after the relative path to the artifact we want to converse with.
+
 ## presenting the results
 When a request goes in, an id is given with the prompt, that is used to hook the streaming results
 The crisp should show us which chains have outstanding ai requests, and we can display those ones as the thing to show, all under the starting ID from the user.
