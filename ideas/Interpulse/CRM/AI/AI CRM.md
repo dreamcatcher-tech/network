@@ -84,6 +84,13 @@ UI sends all prompts straight into the .ai object, which represents HAL
 If it matches an API action on root, then we might send it straight thru, since it is clear what you want ?
 
 Provide some id in the incoming request, so that all streaming can be intercepted by the UI.
+
+## presenting the results
+When a request goes in, an id is given with the prompt, that is used to hook the streaming results
+The crisp should show us which chains have outstanding ai requests, and we can display those ones as the thing to show, all under the starting ID from the user.
+
+
 ## Managing AI threading when processing a database
 Need a way to manage looping the whole DB.
 ? Make a chain per row, and use this as the conversation with the AI ?
+

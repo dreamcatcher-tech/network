@@ -23,7 +23,7 @@ Streaming by forking around the channel - drops a channel section after the stre
 [[Merge large trees without intermediate pulses]]
 [[Unify channels into a tightly tested module]]
 [[2023-11-15 1244 if a reducer rejects all the actions then it should not make a new pulse |pulseless error responses]]
-
+[[2023-11-15 1432 softblocking|softblocking]] 
 
 ## Draft
 [[2023-06-29 1154 mango queries on children]]
