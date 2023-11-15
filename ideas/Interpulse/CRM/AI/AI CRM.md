@@ -79,7 +79,11 @@ Title would its name as given by its parent.
 Making schema be at the chain level means tight control over what it can be, and allows splat merges rather than needing an action.  If there is a logic check and a schema, then you can do anything that meets those requirements.
 
 So should the root also store the prompts that have been entered ?
-No seems better to piece the `/.ai/` chain directly, where `.ai` represents HAL, and it can operate on any other chain, including itself.
+No seems better to piece the `/.ai/` chain directly, where `.ai` represents HAL, and it can operate on any other chain, including itself.  Is HAL the AI behaviour of `/` ?
+UI sends all prompts straight into the .ai object, which represents HAL
+If it matches an API action on root, then we might send it straight thru, since it is clear what you want ?
+
+Provide some id in the incoming request, so that all streaming can be intercepted by the UI.
 ## Managing AI threading when processing a database
 Need a way to manage looping the whole DB.
 ? Make a chain per row, and use this as the conversation with the AI ?
