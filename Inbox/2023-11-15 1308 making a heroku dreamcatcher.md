@@ -20,3 +20,9 @@ Everyone should be able to see everyone else for now.
 BUT this makes it hard for the AI to do anonymity checks on what the person is entering.
 
 Or, make the browser do API calls out to somet
+
+Think we can add a playground link to any assistant that we build up, and allow people to program assistants in the assistants api, that we can then call with our users: 
+
+`https://platform.openai.com/playground?assistant=${run.assistant_id}&mode=assistant&thread=${run.thread_id}`
+
+Use meta on threads to add chainIds and paths.
