@@ -42,3 +42,9 @@ Build a set of nuggets of text, pictures, and layout, so the LLM can decide to l
 As the llm results come in, it might rearrange what gets shown as a nuggest, and it might alter the text of the nuggests to suit.  These rewrites could be dynamic and in parallel.  Will be based on your conversation history.
 
 Could use the streaming version to do some decorative text first, and then the larger text shows up later ? 
+
+Then as the chat progresses, the widget text continually changes as the discussion continues.
+
+## Mint pipeline
+Being able to share the process of the nft minting tooling directly in the browser.
+Users can submit something to be minted, and can see the checks it goes thru, and can navigate them all in readonly, plus can fork and run their own versions to experiment, and submit a PR back to main.
