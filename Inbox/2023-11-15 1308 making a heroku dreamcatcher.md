@@ -25,4 +25,6 @@ Think we can add a playground link to any assistant that we build up, and allow 
 
 `https://platform.openai.com/playground?assistant=${run.assistant_id}&mode=assistant&thread=${run.thread_id}`
 
-Use meta on threads to add chainIds and paths.
+Use meta on threads to add chainIds and paths, so we can look them up in reverse.
+Maybe could store the whole block there.
+
