@@ -23,3 +23,11 @@ Take the API version as canon, and warn if the code version differs, to allow SM
 Boot up and see if we have a thread already, if so load it up, if not create a new one and seed it.
 
 Allow edit on chain, with upload to the playground
+
+## v1
+name the assistants by the path in the tree.
+Can sync with a fixed command, otherwise accept the playground as definitive.
+Sync the functions with the playground always ?
+
+Store the whole thread in state, so we can clobber sync
+Make threads browsable as members in the filesystem.
