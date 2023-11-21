@@ -13,4 +13,8 @@ The state would have a link back to parts of the prior state, so things like thr
 
 Particularly if there is some transform that was applied to the past text, so we can preserve the lineage.
 
-Binacry files should be able to handle this too.
+Binary files should be able to handle this too.
+
+We can generate transclusion using git blame.  Use AI to determine the chunk size, then be able to navigate back to the different revisions that contributed to the current one, plus show external links to other projects that use code that is similar.
+
+Indicate strength of connection using color temperature.
