@@ -23,6 +23,7 @@ Take the API version as canon, and warn if the code version differs, to allow SM
 Boot up and see if we have a thread already, if so load it up, if not create a new one and seed it.
 
 Allow edit on chain, with upload to the playground
+Edit the bot on chain and push it up to the assistants in platform.openai.com
 
 ## v1
 name the assistants by the path in the tree.
