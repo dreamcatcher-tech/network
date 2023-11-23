@@ -11,3 +11,4 @@ Transclusion links should be either local, or offsite.  Gui elements help choose
 
 Transclusion should be a way of generating notes with many atoms sprinkled around the place.
 
+A huge problem with AI LLMs is that they are not easily able to show what the sources of their knowledge is.  Using a transclusion based system to simply look up what they nearness of the things they reported is, and scoring and attributing to that is much more practical and simple.
