@@ -19,3 +19,6 @@ Additionally, I would like to know when the droplets from other people in my pee
 We must be able to ingest prior data, and other peoples formats into our own.  Plus we should all be working towards a shared version.  This version is enabled by blockchains, which can be copied on multiple computers.
 ### walk this obsidian notebook show plans of changes
 At each idea in the Inbox, parse it into the standard format, highlight what information is lost in the transformation, and show the changes to the app that it wants to make - list of patches it wants to apply to other items, or new items it wants to create.
+
+## Nuggets
+This is an example of a nugget of information that shouldn't be of the same height as everything else, that should be connected automatically with the rest of my body of knowledge, and to the knowledge trees of my friends, and it should show up to my friends as suggestions for things to build their documents upon.
