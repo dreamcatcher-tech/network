@@ -278,6 +278,9 @@ Basically have any xprize be won by the dreamcatcher network.
 https://www.xprize.org/prizes/carbonremoval
 All current prizes are won by individual entities, never networks.
 
+## Xanadu XPrize
+Set this up in a way that Ted can appropriate it, kudos tokens can be minted, but also a community version where people other than Ted can say collectively that the prize has been hit - this is just a different QA.
+
 ## Decimation of the software industry
 If the app the user uses never leaves the natural language domain, there is no need to translate requirements by a product team, no need for devs to further translate that into code, marketing to translate back to what the user wants, and ultimately, the poor user to point out the failings of this whole system and start the loop again, at great expense, to finally get closer to what they want, only in time to have their needs change.....
 
@@ -300,3 +303,8 @@ Form of note taking
 
 ## Comms channels inside companies
 Every so often, someone wants to solve the comms problem within a whole company, but further than that, there are comms links between companies.
+
+## LLMs are all you need
+Describe how we never need anything more than an LLM provided the problem space is constrained well.  Then, AI should emerge if the problem space is big enough to describe changes to the problem space, coupled with some human pruning.
+
+Our bet is that AGI is interactive, and programming it should be a social activity engaged in by all and rewarded for proportionately.
