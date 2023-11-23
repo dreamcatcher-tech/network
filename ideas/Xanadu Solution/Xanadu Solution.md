@@ -48,3 +48,6 @@ We can use their EDL format to store references inside the state of chains.
 
 ## Transclusion as attribution trees
 If the transclusion format was used as a way to attribute back to owners, then we can start paying for code, but also for any kind of information.  It can be applied to physical items too.
+
+## Notes
+Teds persistent insistence on correctness and provenance.
