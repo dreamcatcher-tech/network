@@ -16,6 +16,13 @@ But at least collections could use just the state directly.
 
 Should be able to set the chain schema based on being a datum, then update the chain schema based on the datum schema user supplied specifics.
 
+So the state would be the object of the schema, the schema would be a dedicated key in the DMZ.
+The state would be schema checked each time the state was set.
+Default is an unrestricted object.
+Templates would be fine here, since the state shape holds the template key.
+Schema could reference a path, such as in a collection, to avoid copying everything everywhere, and to update as one.
+Transforms / upgrades could be performed by AI ?
+
 ## Benefits:
 ### Vastly faster hashing
 Schema lets toJson() be done rapidly, speeding up hashing.  Decoding is faster as well when reinflating from binary.

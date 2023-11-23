@@ -25,6 +25,8 @@ Streaming by forking around the channel - drops a channel section after the stre
 [[2023-11-15 1244 if a reducer rejects all the actions then it should not make a new pulse |pulseless error responses]]
 [[2023-11-15 1432 softblocking|softblocking]] 
 [[2023-11-21 1133 transclusionary state]] -  build transclusions deep into the system
+[[2023-11-24 1109 migrations of covenant versions done by AI]]
+
 ## Draft
 [[2023-06-29 1154 mango queries on children]]
 [[2023-01-23 1202 repo as covenant]]
