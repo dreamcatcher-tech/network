@@ -26,6 +26,8 @@ Streaming by forking around the channel - drops a channel section after the stre
 [[2023-11-15 1432 softblocking|softblocking]] 
 [[2023-11-21 1133 transclusionary state]] -  build transclusions deep into the system
 [[2023-11-24 1109 migrations of covenant versions done by AI]]
+[[2023-11-27 0928 action that lets us fork or indicate transient pulses]]
+[[2023-11-27 0923 if largestate is feasible what is the point of child chains]]
 
 ## Draft
 [[2023-06-29 1154 mango queries on children]]
