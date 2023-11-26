@@ -22,7 +22,7 @@ Reads need to pause while we go fetch the info, unless we use await, which is aw
 
 Child chains then, represent a permission boundary and a parallel access boundary, since a child can be modified independent of its parent.
 
-Child chains seem inately heavier
+Child chains seem inately heavier than pure state HAMTs.
 
 Wish we could dump all the channel stuff and just deal in these pure objects, since the channels shouldn't be used for reading data, only for writing.
 
