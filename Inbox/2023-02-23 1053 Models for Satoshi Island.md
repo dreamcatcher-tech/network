@@ -21,3 +21,13 @@ Bridge traditional services into blockchain space, use the unregulated nature of
 
 ## Gambling on project timelines
 Estimating when different aspects will come online.
+
+## Rebranding for AI
+Make it a nexus for AI + blockchain.  
+So the land governance is controlled by an AI arbitrator, like approvals for building, incentives to change how the island should be.  Humans seem to easily agree on the principles of what they all want, but they can't agree on the implementation or the execution, or who should pay for both.  So we can set up some models that work well in theory, and then present these as the way in which approvals for activity is granted, to remove the humans from the loop.
+
+Smart cities are programmable cities, and so 
+
+Generate scenarios that people can describe then show what the outcome would be.
+Break apart each scenario into atoms and then test all combinations of those scenarios.
+Check them against invariant appraisals that we set up like a dashboard.
