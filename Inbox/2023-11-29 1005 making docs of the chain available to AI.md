@@ -24,3 +24,11 @@ Tell it that the output from LS determines what functions can be called at that 
 If you think you should call one of these actions, then pass the request off to that location using `ai( '/some/path', prompt )` then continue the conversation until you get what you want.
 
 Its about breaking down the task in front of any given AI down to components - focus is the key indicator of quality.  Also parallelism and components being improved independently.
+
+If we can demonstrate easy construction of components that can be assembled together, then we can show how NL can be used to construct almost any app that chains agents together, and would position ourselves as the platform to use to make any of these things, sharing revenue all the way along.
+
+path:
+1. fix scrolling behavior
+2. show some status cues on the icons
+3. multibot
+4. stateboard
