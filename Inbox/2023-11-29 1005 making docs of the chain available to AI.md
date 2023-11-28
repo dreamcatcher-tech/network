@@ -30,5 +30,6 @@ If we can demonstrate easy construction of components that can be assembled toge
 path:
 1. fix scrolling behavior
 2. show some status cues on the icons
-3. multibot
-4. stateboard
+3. give access to all APIs at all paths
+4. multibot
+5. stateboard
