@@ -27,6 +27,10 @@ Its about breaking down the task in front of any given AI down to components - f
 
 If we can demonstrate easy construction of components that can be assembled together, then we can show how NL can be used to construct almost any app that chains agents together, and would position ourselves as the platform to use to make any of these things, sharing revenue all the way along.
 
+We could replace all the functions at a given location with everything available to the chain, and then HAL can know to cd into that location, which would cause its functions to be replaced for the next call, so it would be changing its capabilities based on the path.
+
+This HAL should only drive the path of the assistant that it is bonded to.
+
 path:
 1. fix scrolling behavior
 2. show some status cues on the icons
