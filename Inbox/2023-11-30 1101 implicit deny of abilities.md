@@ -28,6 +28,7 @@ When HAL browses around, whatever node it finds has its functions loaded up as o
 Retrieval for the goals, where all the goals are submitted in a document, which gets chunked.
 This part is used to determine 
 
+Stateboard should display whatever is at the path.  If we supply multiple paths, then multiple objects will be displayed.  If the user interacted with the stateboard, this is sent in with the next prompt, and will have some link back to recall how the stateboard was when it was sent in.
 ### Running a goal check
 Pass in the current prompt
 Pass in all prior prompts 
