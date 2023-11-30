@@ -15,9 +15,13 @@ So write a set of stories, break these into tasks, then make AI powered function
 
 This test sheet can be used to set the guardian guard rails, so HAL will never try to do anything beyond its capabilities.  We can synthetically generate extra tests to ensure a broad range of similar inputs has the same result.  We can atomize the list and test all combinations of the tests, so this can become the fuzzing tool of the system.
 
+Nested goals where top level goals can be set.
+
+Arrangement is 
+
 Sequence is:
 Dave
-Goalie
+Goalie - sets up which thread this message belongs in, based on the goal
 Guardian
 HAL
 Ruler
