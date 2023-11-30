@@ -19,9 +19,10 @@ Nested goals where top level goals can be set.
 
 Arrangement is 
 
+Add a goal, add a rule
 ### Running a goal check
 Pass in the current prompt
-Pass in 
+Pass in all prior prompts 
 Generate a summary of the goal so far, possibly updating the goal
 
 Sequence is:
