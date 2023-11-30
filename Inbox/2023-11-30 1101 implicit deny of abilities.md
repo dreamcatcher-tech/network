@@ -17,9 +17,17 @@ This test sheet can be used to set the guardian guard rails, so HAL will never t
 
 Nested goals where top level goals can be set.
 
-Arrangement is 
+Arrangement is that HAL has a child named 'goalie' and 'ruler' which represent collections of goals and rules, and also include the AINode coding to interact with AI resources.
 
 Add a goal, add a rule
+
+? Should a goal be related to a path, or is the path merely where HAL is, in pursuit of this goal ?
+
+When HAL browses around, whatever node it finds has its functions loaded up as one of the run messages
+
+Retrieval for the goals, where all the goals are submitted in a document, which gets chunked.
+This part is used to determine 
+
 ### Running a goal check
 Pass in the current prompt
 Pass in all prior prompts 
