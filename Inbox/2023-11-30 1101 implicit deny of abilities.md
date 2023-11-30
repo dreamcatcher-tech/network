@@ -19,6 +19,11 @@ Nested goals where top level goals can be set.
 
 Arrangement is 
 
+### Running a goal check
+Pass in the current prompt
+Pass in 
+Generate a summary of the goal so far, possibly updating the goal
+
 Sequence is:
 Dave
 Goalie - sets up which thread this message belongs in, based on the goal
