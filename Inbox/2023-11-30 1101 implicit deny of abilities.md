@@ -13,7 +13,7 @@ Record new requests for functions if someone asked for something out of scope - 
 
 So write a set of stories, break these into tasks, then make AI powered function calls to loop thru them as tests.  These can be broken apart into jest tests, or can be run as a test suite so the results are presented as pass or fail for the sake of quality and integration with existing tools.
 
-This test sheet can be used to set the guardian guard rails, so HAL will never try to do anything beyond its capabilities.
+This test sheet can be used to set the guardian guard rails, so HAL will never try to do anything beyond its capabilities.  We can synthetically generate extra tests to ensure a broad range of similar inputs has the same result.  We can atomize the list and test all combinations of the tests, so this can become the fuzzing tool of the system.
 
 Sequence is:
 Dave

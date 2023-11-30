@@ -23,7 +23,21 @@ Templates would be fine here, since the state shape holds the template key.
 Schema could reference a path, such as in a collection, to avoid copying everything everywhere, and to update as one.
 Transforms / upgrades could be performed by AI ?
 
+The schema could be remote, to save replication, but also allow bulk updating from afar.
+
 ## Benefits:
+
+### Descriptions of objects, not just APIs
+Easier to use AI to determine what this particular chain does, since it can read the schema and know the format inherently.  It also allows a description field in the schema to be intepreted as the documentation of what this particular object represents.
+
+### Collections becomes easy
+Currently the schema for a child needs to be fossicked around for, and it is bound up in the state.  Making schema first class means that we know implicitly what the schema will be, and do not need to teach the AI how to interpret the schema, since all objects follow this same format.
+Makes every object a datum, essentially.
+Schema can extend to lord over its children, so it can enforce their format too.
+
+### clobbering without actions is allowed
+We could allow the state to be instantly updated so long as it met the schema and passed the logic checks, which means that merges are possible.
+
 ### Vastly faster hashing
 Schema lets toJson() be done rapidly, speeding up hashing.  Decoding is faster as well when reinflating from binary.
 ### Compression
