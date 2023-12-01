@@ -33,6 +33,8 @@ Stateboard should display whatever is at the path.  If we supply multiple paths,
 So there is only one thread per goal, the thread is run by HAL, and may call functions across the complex.  HAL specializes in navigating around the complex, and learning what capabilities it has.  Each run, the API tools available at each location are loaded onto the chain, as well as a list of rules are input to remind HAL how to respond.
 
 Some rules might be segmented by goal type perhaps.
+
+At each point HAL is called, it is given the extra tools at that point, and is re-prompted with the current WD, and the set of rules it needs to follow.
 ### Running a goal check
 Pass in the current prompt
 Pass in all prior prompts 
