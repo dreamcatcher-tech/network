@@ -30,6 +30,7 @@ Streaming by forking around the channel - drops a channel section after the stre
 [[2023-11-27 0923 if largestate is feasible what is the point of child chains]]
 [[2023-11-29 1304 artifact bug logging]]
 [[2023-11-29 1418 useContext for effects]]
+[[2023-12-01 1258 tracing consequences of actions]]
 ## Draft
 [[2023-06-29 1154 mango queries on children]]
 [[2023-01-23 1202 repo as covenant]]
