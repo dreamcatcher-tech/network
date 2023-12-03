@@ -31,6 +31,32 @@ We could replace all the functions at a given location with everything available
 
 This HAL should only drive the path of the assistant that it is bonded to.
 
+## How to make the chain api available to HAL
+1. generate a live doc that contains descriptions of all commands so HAL can directly execute the commands within the system.
+2. let HAL navigate around and read about different chains as it goes, following descriptions that sound like what it wants to do
+3. give HAL a RAG that is only as deep as the
+4. let it browse, list the api at each place, and know that it can use the api as a function call.
+5. give it a RAG for all system commands, and then have descriptions of each of the child chains.  When a child sounds capable, it will pass the request off to it, knowing that this item will have a RAG that knows what to do.
+6. use a RAG doc, but hand off the execution to the path that sounds like it can do what it wants.  Send out to several in parallel.
+7. insert functions into the assistant each call based on doing a CD to scope down.
+8. Break apart the system into bots that are known to HAL, and get HAL to send a request to each one if they sound like they can handle the request
+
+? what about passing the thread ?  Does each one only see the thread between them and HAL, but does HAL see the whole thing, including Daves thread ?
+? how should HAL know to pass control to a particular part of the tree ?
+Is HAL therefore simply aware of multiple apps that it can call upon and assemble a response for ?  And we just add more and more apps at this layer ?  if we get too many, then we put an app in the top to marshall the requests ?
+Each bot them needs its own advertisement for what it can do, and what things it is like.  It has its own doc for RAG, which might be a rollup of all the children it has.
+If it is a root, then it should generate a rollup description.  This summary might be the same as the doc it has, but could be a summary, which would give us nearly limitless sizes for total RAG.
+
+Whole customer database could be put in the retrieval system, with the records converted to some simple compact format, and just maintained as tho they were plain text documents, that were newline keyed - like the format is one key per line, so no repeated keys, and the system looks like plain paper.  In fact it could be printed out and stored in paper cards as the system backup, where each card has a QR code on it to help retrieval even further.
+
+
+
+Example:
+"add a customer"
+It should know that it has several options if there are several instances of the CRM installed.  It should ask a clarifying question.
+
+
+
 path:
 1. fix scrolling behavior
 2. show some status cues on the icons

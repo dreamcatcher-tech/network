@@ -10,3 +10,5 @@ These might have groups or specifics.
 This is useful so we cna know the context that a user is talking about something.
 
 We would be making these models so that HAL can be made aware of what the user is talking about.  HAL can dig into each object deeper to get more info out.
+
+Object tracking is good for transcription accuracy too, since we can include those words and phrases in the transcribe prompt.
