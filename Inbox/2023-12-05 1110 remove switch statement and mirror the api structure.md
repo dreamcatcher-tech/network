@@ -20,3 +20,5 @@ Could be offered as a parallel way to write reducer functions.
 Means we can use types on the function args.
 
 Might be better for the AI to interact with, as they can update just one dedicated function, rather than a whole switch statement, which has more chance of mis-modification.
+
+Allows mocking of responses since we can mock out the state we want to see.  However, these advanced techniques are for humans, and the AI should be given simple tasks without need for tooling
