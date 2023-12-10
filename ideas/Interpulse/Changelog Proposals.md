@@ -32,6 +32,7 @@ Streaming by forking around the channel - drops a channel section after the stre
 [[2023-11-29 1418 useContext for effects]]
 [[2023-12-01 1258 tracing consequences of actions]]
 [[2023-12-05 1110 remove switch statement and mirror the api structure]]
+[[2023-12-11 1027 maps and array schemas for children]]
 ## Draft
 [[2023-06-29 1154 mango queries on children]]
 [[2023-01-23 1202 repo as covenant]]
