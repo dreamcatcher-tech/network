@@ -5,7 +5,14 @@
 
 >[!danger] Depends: 
 
+BUT further, it should be streaming based on reading pulses, so it is only an action in the chain that called it, and then it streams things back from the dmzReducer, rather than using a channel that goes anywhere else.  There is absolutely no need to send an action just to read something.  So the action only goes into the loopback channel, and gets responded to incrementally as new info is available.  It can be frozen at any point and keeps track of where its up to.  This snapshot will check the relevance of the hash of the target, so if its changed, there will be some change, so the caller needs to call ls then fetch the pulse so we know its still the current pulse.
+
+Optionally the streaming version could be opt in only.
+
+All actions should have metadata attached to them that say things like what the hash of the pulse they refer to is, data size, time delay, path of the target, etc
+
 It should use streaming to send back results as they arrive, rather than accumulating everything then sending it back in one big chunk.  This reduces peak ram requirements and lowers response times for the requester.  In some cases the requester might be able to exit early, excusing further work.
+
 
 The reason is that hamt's are loaded in chunks, and each time a new chunk is available, we might want to update the results we are presenting.  LS should also allow the search parameters to be sent remotely, to reduce the load on the sender.
 
