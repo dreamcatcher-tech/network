@@ -30,3 +30,5 @@ Things to measure:
 Stateboard should show whatever is at the current path, plus some preferences, plus function calls made by HAL.
 So prefs are overlaid and are local to the user.
 Prefs browser lets them prune their list of preferences.
+
+May make multiple prompts be entered using automation - so at each stage we assess if we're close to the given response, and then we enter the next prompt, possibly processed to register the received information.  Means it can run thru a story with an assessment at each step with ease.
