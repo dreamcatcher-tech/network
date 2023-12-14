@@ -15,3 +15,4 @@ Ideally be a complete end to end solution for continually user improved no code 
 
 As the data from usage becomes part of the app
 Used to be a clean separation between the app and the data generated with the app.  This is now the same thing and will be subject to harmonic motion the same as everything else in the world.
+
