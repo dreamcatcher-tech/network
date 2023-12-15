@@ -19,4 +19,4 @@ Make it run docker containers so we have an easy to distribute format which can 
 
 The container can have some storage on it too, which can be modelled as a shared storage on ipfs, so that running containers can have some context.  This is presented in the container as mounted storage.  Commits to the storage take a little longer because needs consensus.  Should be able to treat it like an NFS mount as the mechanics are still the same.
 
-
+Hyperconvergeance is being able to interface with vast.ai directly from the chain, where the next decision is subject to consensus and was chosen by an LLM that was run in a distributed fashion.
