@@ -58,3 +58,19 @@ Committers get a ready to go environment just by using the dreamcatcher, where t
 If we run all this on a distributed GPU blockchain, then we can really gather some interest.
 
 AI powered means we can wield a huge amount of parallel computation without it being cumbersome to interface with, such that simple commands are given to the AI that spin up a thousand cores running in parallel to test something.  Setup of these tools is nothing, too, since they come built in, and can work thru issues with the user naturally.
+
+In this world, running tests all mimick the NL model, in any language, and also include some language specific tests.  This model can also update the main website, and make comparisons to other offerings.  Auto generate a roadmap.
+
+no docs are required in this land, since you can chat about any area, and HAL has all the git history, plus understands what this piece means in a wider context.  It gets purpose and documentation from the top level architectural NL design, and applies it to the users question at the specific code point it was asked.  The questions can feed back into the NL design and actually improve it, so that the question can be answered better next time.  Any question can be asked and this can improve the model.  Good questions get hoisted and scored highly.
+
+Could use this scoring mechanism for SILD, so each time a good question gets asked in the chat, if it causes an update in the overall NL model of the island, it gets honour points.
+
+So its docs first, in a way.  With code generated based on this description.
+
+Semantic coding, semantic modelling, semantic design.
+
+Timing between function calls can be benchmarked, since they can look like a gantt chart.
+
+Debugging when a certain condition occurred in repeating code is easier since the ai can set breakpoints and check them against the requested state, and can also rerun to get to different points.
+
+Let it snapshot the code at each junction point in the NL model, so you can focus on a particular piece, with some guaranteed inputs that can be isolated and beaten into shape.
