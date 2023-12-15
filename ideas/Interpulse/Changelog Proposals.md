@@ -34,6 +34,8 @@ Streaming by forking around the channel - drops a channel section after the stre
 [[2023-12-05 1110 remove switch statement and mirror the api structure]]
 [[2023-12-11 1027 maps and array schemas for children]]
 [[2023-12-11 1421 to store remote pulses or not to store]]
+[[2023-12-15 1334 graphql implementation]]
+
 ## Draft
 [[2023-06-29 1154 mango queries on children]]
 [[2023-01-23 1202 repo as covenant]]
