@@ -9,7 +9,7 @@ The stuck loop should be the first thing that gets used, rather than bespoke way
 
 The problem so far has been that when HAL is not performing well, we try to make a new way of engaging HAL, whereas the stuck loop should allow continual steering, where the only major overhauls are how the stuckloop is engaged, not how HAL solves any particular problem.  This extends to custom bots we make as those bots need constant steering too, and we cannot do it using a single up front prompt - the only up front prompt should be how to engage the stuckloop.
 
-A custom RAG should give lights on when certain stucks are retrieved, so a backtrace can be generated where we can predictably show how the model responded and what rules or stucks were called upon, so we can see inside the system, and our users can also see how a certain request was fulfilled, which may cause them to change at a stuck solution is.  So they could tweak what help was chosen for a given stuck, so the stuck solution is based on the stuck plus the context, where reputation and also direct user preference is balanced to provide a result.
+A custom RAG should give lights on when certain stucks are retrieved, so a backtrace (stucktrace) can be generated where we can predictably show how the model responded and what rules or stucks were called upon, so we can see inside the system, and our users can also see how a certain request was fulfilled, which may cause them to change at a stuck solution is.  So they could tweak what help was chosen for a given stuck, so the stuck solution is based on the stuck plus the context, where reputation and also direct user preference is balanced to provide a result.
 
 If the used stucks are shown to the user, then can edit them and reply to them, so we know what was being drawn upon.  We can use user preferences to change what these were, and then average out what a bunch of users said, to affect everyone.  The ranking algo is surfaced to, so you can see why the ranking
 
@@ -61,7 +61,7 @@ HAL: breaks down into goals that are used to search, and calls the search functi
 Tool: getHelps( goal1 ) => a series of helps that are returned
 HAL: (gets called with the help, and the )
 
-loop around until all the tasks are met
+loop around until all the tasks are met, altho tasking is a separate thing ?
 
 gets the stucks, gets the helps, then executes the calls.  These could be truncated threads, since we can scope the request down greatly.
 Ultimately this would result in 
