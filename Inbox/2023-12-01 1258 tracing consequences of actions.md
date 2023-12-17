@@ -19,3 +19,5 @@ a mapping so the caller can get access to the array index if needed.
 a tree structure should emerge where a single trigger can make more than one action that results.
 This status tracking can be used for both chainland and async actions
 can help the UI show richer information about where the process is up to
+
+Be able to look at any given action deep in the complex, and then walk back to find the origin action.  So when calling the function, would get back the requestId of your action.  Then can hook the effector so that you a promise back whenever something is triggered from your action.  Would be in an array and could be keyed by the path to the chain that was executing the side effect, since multiple in parallel are possible.

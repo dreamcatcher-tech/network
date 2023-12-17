@@ -22,3 +22,10 @@ Phases:
 1. HAL demo for the CRM showing the flexibility of the stuck loop and AI driving blockchain
 2. Show a decentralized app being driven by a centralized AI, and generating stucks as NFTs
 3. Show a decentralized AI driving a decentralized app
+4. show an autonomous agent given funds to spend and no way to stop it
+
+All along the way, show revenue back to the NFTs representing the tasks.
+Produce a booklet that describes the process, and show the NFT representing the book itself.
+Show the gantt chart of the NFTs we want to build out.
+
+Means we need an NFT creator as the first thing we make.

@@ -58,7 +58,10 @@ Whilst slower to start, this could be more long term fulfilling since we need to
 ## V1
 User: (asks whatever the user does)
 HAL: breaks down into goals that are used to search, and calls the search function
-Tool: getGoals( goal1, goal2, goal3 )
+Tool: getHelps( goal1 ) => a series of helps that are returned
+HAL: (gets called with the help, and the )
+
+loop around until all the tasks are met
 
 gets the stucks, gets the helps, then executes the calls.  These could be truncated threads, since we can scope the request down greatly.
 Ultimately this would result in 
