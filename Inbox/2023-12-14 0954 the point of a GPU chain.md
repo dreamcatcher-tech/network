@@ -16,3 +16,9 @@ Ideally be a complete end to end solution for continually user improved no code 
 As the data from usage becomes part of the app
 Used to be a clean separation between the app and the data generated with the app.  This is now the same thing and will be subject to harmonic motion the same as everything else in the world.
 
+Allows for public fine tuning jobs to be done on the stuck loop, since a publisher of helps would be able to generate fine tunings for all the stuck:help pairs it curates, giving an instant response.
+
+Phases:
+1. HAL demo for the CRM showing the flexibility of the stuck loop and AI driving blockchain
+2. Show a decentralized app being driven by a centralized AI, and generating stucks as NFTs
+3. Show a decentralized AI driving a decentralized app
