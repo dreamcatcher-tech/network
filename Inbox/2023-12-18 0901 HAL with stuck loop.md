@@ -35,16 +35,29 @@ So a bot then is really some base prompts for tone and style, then a search rest
 
 The ranking of the strength between the stucks and the helps is continually assessed in the background, and each consumption feeds back a relevance.
 
+So the tooling to be able to cherry pick the retrievals that were pulled up should be available to the users as a form of submitting helps.
+Help may be actually a redirection to existing solutions, or a clarification process for the AI to run to transform the question such as be able to fit a template, or call some code that then transforms the problem.
+Multiple people with conflicting solutions should be averaged out some how, and this averaging behavior expressed to the consumer.
+
+We might run the user query directly thru the stuckloop to see if we get a strong enough hit.  Only if it fails to hit, do we use AI to modify it so it gets stronger hits.
+
+## Talking to AINodes
+The distinction is not as strong any more, with a relaxed binding to the artifact layer.  
+
+## Goal breakdown
+This is only needed to improve the performance of the query.
+We might store goals in order to come back to them when stucks are solved, or to show a list of completed ones as a way to measure goalrate.
+
+## Fundamental Feedback
 The fundamental process is to take the user input and retrieve a list of instructions that can be used to complete the task.  
 
-Each time we ultimately solve a stuck, we should include a genericized version
-So the goal of the goalie is simply to genericize / clean the data, then submit the stuck, then update the response once it thinks it was solved.
+Each time we ultimately solve a stuck, we should include a genericized version to be published so we can solve that again.  
+So the goal of the goalie is simply to genericize / clean the data, then submit the stuck, then update the response once it thinks it was solved.  Detecting when solved is important, as this is the assessor function.
 
+This takes the huge load off us to get the system right, and it is really an ever growing training set. We leverage that the user actually wants to get their task completed - they are not malicious.
 
-
-So the tooling to be able to cherry pick the retrievals that were pulled up should be
-Help may be actually a redirection to existing solutions.
-Multiple people with conflicting solutions should be averaged out some how, and this averaging behavior expressed to the consumer.
+## Engaging the stuckloop
+When we get back low confidence retrievals, then we should flick over to the stuckbot, which is an expert at getting out a good quality stuck.  If during clarification a suitable solution is found, it will flick back to the applicator, which is an expert at following the directions from the helps.
 
 ## Phasing
 1. stuck loop with manually generated helps to start
