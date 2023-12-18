@@ -37,6 +37,15 @@ The ranking of the strength between the stucks and the helps is continually asse
 
 The fundamental process is to take the user input and retrieve a list of instructions that can be used to complete the task.  
 
+Each time we ultimately solve a stuck, we should include a genericized version
+So the goal of the goalie is simply to genericize / clean the data, then submit the stuck, then update the response once it thinks it was solved.
+
+
+
+So the tooling to be able to cherry pick the retrievals that were pulled up should be
+Help may be actually a redirection to existing solutions.
+Multiple people with conflicting solutions should be averaged out some how, and this averaging behavior expressed to the consumer.
+
 ## Phasing
 1. stuck loop with manually generated helps to start
 2. helps filled in from app descriptions
