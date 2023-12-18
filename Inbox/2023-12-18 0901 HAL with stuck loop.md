@@ -41,6 +41,8 @@ Multiple people with conflicting solutions should be averaged out some how, and 
 
 We might run the user query directly thru the stuckloop to see if we get a strong enough hit.  Only if it fails to hit, do we use AI to modify it so it gets stronger hits.
 
+## Admin tools
+So admins using our tools to solve their own stucks from their bot can also get stuck when they try do things that would filter up to us.  They are hitting the edges of the box and we are adapting, just like their users are hitting the edges.  Goalspace is flat, so even their users can still trigger our actions if they get stuck in the right places.
 ## Talking to AINodes
 The distinction is not as strong any more, with a relaxed binding to the artifact layer.  
 
