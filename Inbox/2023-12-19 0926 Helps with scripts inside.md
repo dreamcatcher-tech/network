@@ -26,3 +26,19 @@ There appears some format that helps have that the AI can generate, humans can r
 List of requirements, so we can provide the set of commands and environment conditions that are required.  The checklist is there so that the bot can go off and solve these problems first if needed.
 eg: I want to create a schedule.  Get the day required, check all customers for this day are routed.
 So the routing requirement would trigger if not everything was in order before we started, so we'd walk thru how to solve that problem with the user.
+
+Give the helps a scope in the form a chroot jail, so it is given the deepest path it needs to operate in, then list out the commands it needs access to, which get loaded up.
+These commands could be loaded up 
+
+Reports back on the Help could provide an error from executing the help.
+The help could be executed by a bot, and that is the function call: `execHelp( helpfile )` 
+This is run by a bot which interprets and gives feedback and returns back success of fail.
+Then the top level bot looks at the net change in artifact, and determines if the goal was met.
+
+Each time a change in code occurs, we rerun the testing of all the goals in the system, and regen the helps to be able to provide instant solution of the problems, so the docs are all updated automatically, in parallel.
+
+> The goals are brilliant in that they define the testing boundaries of the system.  
+
+If we are trying a goal that doesn't match well, we can flag to the user that the match is bad and they are in danger zone.
+
+Helps should say the expected outcome too, so they contain some integrity inside ? or the goal is given a definition of done.  So just firing the commands might not be enough.  Every time the help went awry, we would have to update done.  The scenarios under which are help failed need to included in the test suite that accompanies the help.  This set of tests is built up over time as more depth of experience in accrued, and includes regression tests.
