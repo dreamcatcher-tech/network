@@ -35,7 +35,7 @@ So a bot then is really some base prompts for tone and style, then a search rest
 
 The ranking of the strength between the stucks and the helps is continually assessed in the background, and each consumption feeds back a relevance.
 
-
+The fundamental process is to take the user input and retrieve a list of instructions that can be used to complete the task.  
 
 ## Phasing
 1. stuck loop with manually generated helps to start
