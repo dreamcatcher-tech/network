@@ -43,4 +43,6 @@ If we are trying a goal that doesn't match well, we can flag to the user that th
 
 Also when users try to do new things, we can automatically catch that and put it on the list of features we need to add.  Start by replying that this feature is being worked on and giving some progress update and asking for money.  Then when it is released, we update the help to reflect the new features.  So the feature request and feedback system is all directly inband with the user input.  The testing methods are aligned with this exact same system.
 
+Basically, so long as we can do all the goals, and have a process for expanding, then how we got to the goal is unimportant, and users will approach in all possible ways early, so quickly the system will stabilize and be fruitful.
+
 Helps should say the expected outcome too, so they contain some integrity inside ? or the goal is given a definition of done.  So just firing the commands might not be enough.  Every time the help went awry, we would have to update done.  The scenarios under which are help failed need to included in the test suite that accompanies the help.  This set of tests is built up over time as more depth of experience in accrued, and includes regression tests.

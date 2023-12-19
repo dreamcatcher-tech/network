@@ -42,3 +42,9 @@ Vendor lockin is always abhorrent.
 We should be able to, if we create the NFT system and the logic modelling system, be able to raise capital and convince talent to assist us.  Once we can do this, we can raise a pubco to boost our efforts.  Participants putting their mon
 
 It is important to separate the effort from the pubco, since the pubco would be taking on liability if it was in control of the project - it is simply a powerful peer of the network.
+
+Should be able to set up a particular model, and sell responses to requests.  People pay more for timeliness of responses.  We would handle prioritizing the queue, running requests in parallel.  Means that if you have set up a full blown instance of something, like Mixtral, then you would put our software in front of it to sell off your excess capacity, and also add resilience to your application since you can use the network if you go offline.  Leverages the deterministic settings on many models so you can be slashed if you provide erroneous answers.  Allows us to run models that are not separated out into layers to run on consumer GPUs, as this processing takes some work to do.
+
+Is there another kind of AI, not LLM, and how will we respond to it ?
+
+Its really about getting the NFT tasks system up and working, with Dreamcatcher LLM as the primary goal of all our efforts.  After that, we can kick back and simply architect, without having to do all the code ourselves - we become amplifiable.  Amplifiable by the LLM tooling we have captured, and by the social networks that begin to support us with innovation and cash.
