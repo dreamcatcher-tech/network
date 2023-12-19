@@ -31,3 +31,5 @@ The goals would be:
 3. Be free
 
 The ambition, the dream - this should rally people.  Positioning the Dreamcatcher as a decentralized LLM makes the whole complex bundle be packaged as one single graspable unit of understanding.  A single cohesive and comprehensible unit.
+
+Could be like wikipedia, but fully free floating, and able to easily be segmented, with disputes and filters being configurable per user.  A free floating LLM is lure enough to many, but since it is a collection of LLMs presented as a single interface, this is practical and useful, plus expandable.
