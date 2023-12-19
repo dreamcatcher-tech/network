@@ -15,4 +15,12 @@ Each of these atoms of reasoning would be an NFT, and missing pieces could be en
 
 So how would we specify the dreamcatcher in this way ?
 How would we specify the system that designed systems in this way, in this way ?
+What about the protocol for channels between chains, with promises, and then with a later rendition for generators ?
+Define some metrics around these solutions like chatter, size of payload, and other types of measurement that are design goals, which any given design should optimize for.
+
+
+Could make some artifact datums that represent flowchart elements.
+In order represents a sequence.
+Branch or switch is a control flow object that has children, which can ln to something in the flat top level flow.
+Parallel is another flow element.
 

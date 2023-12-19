@@ -41,3 +41,11 @@ So being able to chat with it, to use it to log ideas and get things built, use 
 Download the desktop app or the service to be able to mine and contribute to running.
 Or the browser can use your CPU and WebGPU to contribute.
 Storage is a resource too, so browsers can share some resources of use by way of relaying, caching, doing CPU calculations.
+Or just a browser extension that can also access hardware at a higher level.
+Immediately you could start mining from the webpage, and control your shared resources and caps intelligently using HAL.  Can control your setup delicately.  Start earning credits immediately, and show how you consume those credits when you make requests.  Let you put in a credit card and immediately pay to get better service.  Plus encourage you to supply your own resources.
+If people pay for some intro credits they get royalties back for that.
+
+Should be obvious from this setup how you can have local resources that favour you, but have a wider network in case of fault or surge capacity.
+
+The graphical view of your resources can be used to explain hypothetical situations about how much can you earn and different ways to explain things.
+

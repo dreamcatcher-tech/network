@@ -16,7 +16,7 @@ We would like to get a valuation on our crypto assets, and also have a way of ra
 
 Possibly Australia might be a good listing jurisdiction, as they have much mining exploration like Canada, and the capital gains exemption does not require switching country.
 
-It is important to separate the effort from the pubco, since the pubco would be taking on liability if it was in control of the project - it is simply a powerful peer of the network.  Pubcos are terrified of liability, and decentralized projects are terrified of control.
+It is important to separate the top level management effort from the pubco, since the pubco would be taking on liability if it was in control of the project - it is simply a powerful peer of the network.  Pubcos are terrified of liability, and decentralized projects are terrified of control.
 
 ## 150 Shareholders
 
