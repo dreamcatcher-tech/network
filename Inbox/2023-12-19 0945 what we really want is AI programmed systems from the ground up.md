@@ -5,6 +5,8 @@
 
 >[!danger] Depends: 
 
+If we're not programming in pure AI, we're wasting our time.  We need an AI native system.
+
 So we need to build a system that can let us architect in natural language, with AI helping to refine the thinking and designs, and then implementing those systems in various concrete forms, like javascript, python, or TLA+
 
 If we can design our systems in this way, we need not toil nearly as much to keep a system alive and renewable.  Regeneration of the system is much easier and open to the maximum number of people.
@@ -36,3 +38,5 @@ What if we made ambient attribution work inside a game first ? Where all player 
 Might be striving for making a TLA+ NL interface, where getting to a working model is the goal of the system, and guarantees correctness, then the implementations in whatever language for execution are independent.  TLA+ is hard to learn, but with NL tools it could be much easier to get a good quality model.  Changes in the TLA model directly could be reconciled with the NL model.
 
 Then, we would check an implementation with the TLA model, rather than the NL model, since the NL model still allows ambiguity.
+
+Want to spec tests in NL, and then refine as the results come back in, so we can prompt the tests until we are satisfied that all edge cases are covered.
