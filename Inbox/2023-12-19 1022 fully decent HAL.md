@@ -29,3 +29,5 @@ The goals would be:
 1. Be of use
 2. Build yourself
 3. Be free
+
+The ambition, the dream - this should rally people.  Positioning the Dreamcatcher as a decentralized LLM makes the whole complex bundle be packaged as one single graspable unit of understanding.  A single cohesive and comprehensible unit.
