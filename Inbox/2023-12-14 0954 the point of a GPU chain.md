@@ -48,3 +48,5 @@ Should be able to set up a particular model, and sell responses to requests.  Pe
 Is there another kind of AI, not LLM, and how will we respond to it ?
 
 Its really about getting the NFT tasks system up and working, with Dreamcatcher LLM as the primary goal of all our efforts.  After that, we can kick back and simply architect, without having to do all the code ourselves - we become amplifiable.  Amplifiable by the LLM tooling we have captured, and by the social networks that begin to support us with innovation and cash.
+
+Using layered models, we can pack out idle space in GPUs to run multiple models.
