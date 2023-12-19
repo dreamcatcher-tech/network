@@ -33,3 +33,11 @@ The goals would be:
 The ambition, the dream - this should rally people.  Positioning the Dreamcatcher as a decentralized LLM makes the whole complex bundle be packaged as one single graspable unit of understanding.  A single cohesive and comprehensible unit.
 
 Could be like wikipedia, but fully free floating, and able to easily be segmented, with disputes and filters being configurable per user.  A free floating LLM is lure enough to many, but since it is a collection of LLMs presented as a single interface, this is practical and useful, plus expandable.
+
+Hyperconvergence would you to chat with it about its network state, such as network health, thruput, and other calculations that relate to its own health and capabilities.  The LLM could therefore manage its own swarm of nodes.
+
+So being able to chat with it, to use it to log ideas and get things built, use it to manage its own resources, find friends, negotiate for tasks, use as the arbiter for deals that you want to get done - should be a great tool to use.
+
+Download the desktop app or the service to be able to mine and contribute to running.
+Or the browser can use your CPU and WebGPU to contribute.
+Storage is a resource too, so browsers can share some resources of use by way of relaying, caching, doing CPU calculations.
