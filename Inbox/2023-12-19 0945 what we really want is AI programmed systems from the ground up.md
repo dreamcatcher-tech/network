@@ -25,3 +25,5 @@ Branch or switch is a control flow object that has children, which can ln to som
 Parallel is another flow element.
 
 So to design the stuckloop, we could lay out a block diagram, and then run some scenarios thru it.  We would then adjust the blocks until the output of executing in AI mind was satisfactory, and then we would generate more scenarios.  Teach each box how to generate some sample outputs, so that when "executing" it has some parameters that it uses as a guide to limit responses.
+
+This would define the API of each function that is required, and we could start with the schema of the function IO and build up from there.
