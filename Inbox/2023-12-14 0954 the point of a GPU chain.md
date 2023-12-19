@@ -50,3 +50,15 @@ Is there another kind of AI, not LLM, and how will we respond to it ?
 Its really about getting the NFT tasks system up and working, with Dreamcatcher LLM as the primary goal of all our efforts.  After that, we can kick back and simply architect, without having to do all the code ourselves - we become amplifiable.  Amplifiable by the LLM tooling we have captured, and by the social networks that begin to support us with innovation and cash.
 
 Using layered models, we can pack out idle space in GPUs to run multiple models.
+
+We can see multiple projects aiming to pack modern LLMs into crypto mining rigs, and this trend will deepen.  Also aiming to split apart LLMs to run on multiple machines effectively.  So this trend to break apart and to compact is good for us.  The way the LLMs run, on tensor and torch seems long term, as making new training frameworks seems exceptionally costly.  Further, we see an explosion in the number of models being trained, and the cost per model is going up, asking for a system where excess GPU capacity can be traded to train big models.  The rewards for this effort might benefit from being more than direct payment, and allow projects to attract investment in GPU effort as a currenct, which can become tradable.  Tradable NFTs for GPU units contributed to a project, where those NFTs receive a royalty once the model becomes usable.  Dreamcatcher as the Meta LLM will allow it to be run and charged for once trained.
+
+At the same time, concerns over fair recompense for training data is causing consumers to shield their data from training sets, and we think ambient attribution can open that up some.
+
+Making a large distributed game with AI involvement would be expensive, and so using player hardware, and rewarding them for mining, letting them pay each other for resources is better than trying to get them to pay a central resource.  So to make themselves function better, they might invest in their own hardware, or they would pay a bit more to get lively queries with redundancy.
+
+People can set up smart contracts to pay cash for GPU hours to be scavenged, if they think a project is worthwhile.  They can buy the NFT once created to incent its production, or they can purchase its production at current market rate.
+
+The NFTs couldn't possibly be a security, since they represent decentralized effort, for a decentralized reward.
+
+With this protocol, we can take flight and float above the computing layer in a decentralized manner, which is not something the central LLMs can do, much less they can't take their databases and application delivery with them.  If we can deliver apps that are running purely decentralized, we have a capability they cannot reach.  Moreover if our features leant on this distributed nature to be more dynamic with wider reach, we then are providing superior features, plus decentralized trust.
