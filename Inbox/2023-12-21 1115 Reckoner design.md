@@ -24,3 +24,9 @@ The failure can be left in the test suite, since it represents something someone
 Auto classify things as happy path, or edge case.
 
 NL constraints on the input, so get the LLM to try generate bad cases and reduce them down to the minimum possible.
+
+A project plan is just a workflow that you plan to execute once.  It should be able to include previous project plans so that it can reason about what are good decisions to make, and use helps to solve similar problems.
+
+Should be able to to simple things like track budget remaining, explore some options for what could come next, and reconcile everything based on what people want to do.
+
+Getting the AI to use the helps system is fun - if it comes up with its own problem, and then uses goaling to try move forwards.
