@@ -48,3 +48,7 @@ Basically, so long as we can do all the goals, and have a process for expanding,
 Helps should say the expected outcome too, so they contain some integrity inside ? or the goal is given a definition of done.  So just firing the commands might not be enough.  Every time the help went awry, we would have to update done.  The scenarios under which are help failed need to included in the test suite that accompanies the help.  This set of tests is built up over time as more depth of experience in accrued, and includes regression tests.
 
 If we want to show a datum with restricted fields, or a collection with only a few columns, then the AI needs to make a function call that is targeted at the view config function, to change how the data is shown.  This might get stored as the users preferences, in which case the help context includes the users unique preferences, so their derivative of help is used here.  Need a way to bundle user preferences in with the GAG.
+
+And then the GAG gets updated with thanks and tweaks based on usage, so it can be edited and improved each time it runs, goalspace is continually expanded, and reinforced based on success.
+
+All the AI programming should be within the helps, run inside a jitter, as no point running in conventional tools.  The code construction and the usage should be blurred together, because we want to soften the bounds between users and devs.
