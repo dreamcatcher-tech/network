@@ -21,3 +21,6 @@ Rerunning can occur once the scenario has been made plausible again.
 
 The failure can be left in the test suite, since it represents something someone might reasonably think would happen, and the failure is the answer, so in this case it should reject with some reason, this is the correct operation of the model.
 
+Auto classify things as happy path, or edge case.
+
+NL constraints on the input, so get the LLM to try generate bad cases and reduce them down to the minimum possible.
