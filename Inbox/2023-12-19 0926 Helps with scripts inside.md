@@ -52,3 +52,5 @@ If we want to show a datum with restricted fields, or a collection with only a f
 And then the GAG gets updated with thanks and tweaks based on usage, so it can be edited and improved each time it runs, goalspace is continually expanded, and reinforced based on success.
 
 All the AI programming should be within the helps, run inside a jitter, as no point running in conventional tools.  The code construction and the usage should be blurred together, because we want to soften the bounds between users and devs.
+
+Helps could load up an assistant which could make arbitrary AI calls.
