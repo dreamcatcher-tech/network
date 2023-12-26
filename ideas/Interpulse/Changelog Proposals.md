@@ -37,6 +37,9 @@ Streaming by forking around the channel - drops a channel section after the stre
 [[2023-12-11 1421 to store remote pulses or not to store]]
 [[2023-12-15 1334 graphql implementation]]
 [[2023-12-15 1720 NL specs for interpulse]]
+[[2023-12-26 1314 transient chains for rapid updates]]
+[[2023-12-26 1430 making state be the lowest layer]]
+
 ## Draft
 [[2023-06-29 1154 mango queries on children]]
 [[2023-01-23 1202 repo as covenant]]
