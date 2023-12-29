@@ -19,6 +19,12 @@ Rules that apply down the tree.
 Filesystem relationships in a DAG.
 
 Text can then be stored as git diffs, rather than full copies each change, or any other complicated structure.
+
+Make a simpler model that is called by a single function - the record id, followed by the operation, and then a single gpt3.5 model does the operation, rather than having a big bunch of context that could possibly confuse it.  So it makes a special function that has a standard signature that runs via AI.  This means we don't have to code it, can test it thoroughly on all invocations.
+
+The output of the function shouldn't change over time, like a brittle piece of code, since the natural language results would always be the same.  And so we will have an npm library of these kinds of functions that are certified and tested and run on these certified models, removing the need for software checks since you cannot exploit like you can when running code.  Supply chain not a problem, licensing not a problem.
+
+Using hashes as record IDs means the model should find it harder to make a mistake.
 # Example
 
 In the CRM, we have a minimum information requirement. We can set some rules at the top of the system that say what the minimum is required, then we can walk the collection and check each one.
