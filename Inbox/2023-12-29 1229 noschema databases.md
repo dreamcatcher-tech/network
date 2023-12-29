@@ -17,6 +17,8 @@ Indexes can be built where queries are run using AI like a lens.
 Template.
 Rules that apply down the tree.
 Filesystem relationships in a DAG.
+
+Text can then be stored as git diffs, rather than full copies each change, or any other complicated structure.
 # Example
 
 In the CRM, we have a minimum information requirement. We can set some rules at the top of the system that say what the minimum is required, then we can walk the collection and check each one.
