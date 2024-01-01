@@ -308,3 +308,15 @@ Every so often, someone wants to solve the comms problem within a whole company,
 Describe how we never need anything more than an LLM provided the problem space is constrained well.  Then, AI should emerge if the problem space is big enough to describe changes to the problem space, coupled with some human pruning.
 
 Our bet is that AGI is interactive, and programming it should be a social activity engaged in by all and rewarded for proportionately.
+
+## removing software dependencies
+LLMs are a context gobbler, which can be trained in a way that exploits are not possible, since the LLM can only be altered in certain ways, and is run in a sandbox.
+Just to do a calculation does not need any privileged access, whereas in software these limits are complicated to enforce for the dependency tree.
+Show picture of the node modules folder being the heaviest thing in the universe.
+LLMs used to do much of the computation that a programmer would do.
+Benefit is faster to first productive run - it can be months using humans, but seconds using an LLM.
+Software supply chain is contained, since LLM is the only thing you have to worry about auditing.
+So to make a new software feature, you need to upgrade the LLM, which upgrades it for all.
+Also using helps in the stuckloop, patches can be applied rapidly, but because they are in natural language, they can be checked by an LLM.
+NL keeps the whole system understandable by maximum number of humans, the fastest, and lets any of them contribute.  vs the narrow band of programmers who speak a specific dialect and understand a specific domain.  The true domain experts can govern their computation now.
+May give users more specifically what they want, rather than relying on them consuming what was suitable for thousands of others.
