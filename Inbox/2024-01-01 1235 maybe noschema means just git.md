@@ -7,7 +7,7 @@
 
 If [[2023-12-29 1229 noschema databases|noschema]] is how the record structure needs to be, then what do we need a blockchain for, if we could just use git ?
 
-Could use IPFS raw to handle replicaiton of records.  We would supply an ACL layer to block who can access which files.
+Could use IPFS raw to handle replication of records.  We would supply an ACL layer to block who can access which files.
 
 If all the operations no longer need complex js code, and they ultimately get run by an LLM, perhaps LLM can be more native to the system ?  Perhaps it could be designed so simply that it is useless to drive without an LLM since it is just text files ?
 
@@ -27,3 +27,5 @@ LLM serverless.  Decentralized LLM.
 
 If the LLM does all the functions, then we don't need much operating system.
 The LLM should be able to be stored as a binary large object attached to git too.
+
+If we are to make an AI ruler, such as the attribution system, then it should be programmed in natural language so that anybody who can understand natural language can understand and audit how it works, rather than a special subset who can read computer code, and then even fewer who understand the domain specific constructs that are in use, and even fewer still who generate some simulated environments so the outputs can be discussed or disputed.  NL with LLM simulators is the way forward.
