@@ -24,3 +24,6 @@ We can also drop the payload layer, since it is just git binary.
 There might at least some good design principles we can take from git.
 
 LLM serverless.  Decentralized LLM.
+
+If the LLM does all the functions, then we don't need much operating system.
+The LLM should be able to be stored as a binary large object attached to git too.
