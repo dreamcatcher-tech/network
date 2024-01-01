@@ -48,6 +48,8 @@ If the programming language is natural language, then anyone can do it, surely ?
 Optimization should be possible with a background thread that is always trying to make versions of peoples queries faster and more efficient, sometimes by changing the format their data is stored in.
 
 Loop around the format checker so we can ask the same question in different ways to be assured of correctness of the data or the transform that was asked for.
+
+In this type of model, a CRM isn't a think you install, since it can make you a generic record system any time you like.  The records are by default open to all applications, and apps are needed to do different types of logic.  So all the apps are provided in pieces, and the AI assembles them, rather than a finished thing that has a package around the outside.  So add a customer just needs you to say where, and if it is in shared space or private.  CRM functions can be unbundled, like the truck routing can be separate, and works on any records that have gps coords.  The geocoder component works on any addresses.
 # Example
 
 In the CRM, we have a minimum information requirement. We can set some rules at the top of the system that say what the minimum is required, then we can walk the collection and check each one.  We can tolerate dirty data.
