@@ -61,3 +61,5 @@ So each thing you looked at is presented as a panel and you can scroll back to s
 GUI is just another text file that gets update on the fly that we interpret into visuals, like comparing something side by side.
 
 Store the text as markdown so we can display it nicely would also help.
+
+Use prismjs to provide syntax highlight.
