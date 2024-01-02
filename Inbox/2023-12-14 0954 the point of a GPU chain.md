@@ -69,3 +69,5 @@ The NFTs couldn't possibly be a security, since they represent decentralized eff
 With this protocol, we can take flight and float above the computing layer in a decentralized manner, which is not something the central LLMs can do, much less they can't take their databases and application delivery with them.  If we can deliver apps that are running purely decentralized, we have a capability they cannot reach.  Moreover if our features leant on this distributed nature to be more dynamic with wider reach, we then are providing superior features, plus decentralized trust.
 
 All the solutions we are seeing right now are isolated point solutions - to make a global solution with wikipedia scale collaboration, we need a public chain to run all this on.
+
+Want to supply advanced applications including AI with the same decentralized finality that Ethereum provides, but with limitless resources and near zero latency.  Currently the app infrastructure has to be hosted using web 2.0 and weakly hooked to the blockchain stuff - the whole app should be on chain.
