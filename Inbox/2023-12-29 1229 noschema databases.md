@@ -60,6 +60,9 @@ Defining a function would be done in natural language.
 
 Need to limit the size of each record down.
 
+Simple function pattern where some reference artifacts are passed in and some prompting plus some instructions, then some output.  These would never interact with the user, and would produce outputs that would get interpreted by the bot and then passed on to the user or fixed by the higher intelligences machine.
+
+Lensing with rollup of errors would be handled this way.
 ## Benefits
 Validation logic becomes much simpler to implement, since the ai handles it.
 May need a form equivalent of an AI - so long as you can access the AI service, it will always be more helpful - forms were only because of machine limitations anyway, so we can probably do away with them, finally.

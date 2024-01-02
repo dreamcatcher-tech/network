@@ -19,7 +19,7 @@ So are we trying to simply provide git + ACL ?
 Something still needs to decide what quorum means, but this could be an eth smart contract.
 
 Git seems to be better performance, and we can join a maintained codebase.  In particular, if the contents of the system is text diffs, git will be faster.
-We can also drop the payload layer, since it is just git binary.
+We can also drop the payload layer, since it is just git binary - this might be git LFS tho.
 
 There might at least some good design principles we can take from git.
 
@@ -32,7 +32,9 @@ If we are to make an AI ruler, such as the attribution system, then it should be
 
 If it was git compatible, we could take backups to a private repo and restore from this too ?
 
-There might be a git area and a chain area, where the chains are a superset of git.  For plain data we can use use git but for integrating complex logic where it is needed we would use artifact with objects.  These would be like wrapping logic up into the git records by adding some additional json state to them.  When viewed by git they would only show their 
+There might be a git area and a chain area, where the chains are a superset of git.  For plain data we can use use git but for integrating complex logic where it is needed we would use artifact with objects.  These would be like wrapping logic up into the git records by adding some additional json state to them.  When viewed by git they would only show their current state, which would be some format data like what the chains are now, just some pure json.
+
+So the gpu chain would have the dreamcatcher principles of fairness and the stuckloop inside it, which would be used to improve the system and its deployments.
 
 The execution of the LLM itself is required to be in artifact for repeatability.
 
@@ -42,14 +44,18 @@ Could the plain language processes be used on chain to describe the operations a
 
 such a [[2023-12-14 0954 the point of a GPU chain|gpu chain]] could end the struggle to get turing complete and formally verified public blockchain software running, where all we need to achieve is the public consensused execution of any given LLM on commodity hardware using staking to validate the results like a form of insurance.  It could also make blockchain accessible to many people, and end all the fuzz that is used to scam people.  Promising your own personal LLM running on blockchain, who wouldn't want to take part in such a system ?
 
-These insurance pools can be used to guarantee speed of execution and reproducibility of the answer.
+These insurance pools can be used to guarantee speed of execution and reproducibility of the answer, like what Smax was saying last week.
 
 Such a chain would mean that all humans could readily understand smart contracts, and they would run a heck of a lot safer.  This seems a very raisable thing, too, and if we pair this with NFTs to produce individual components of the task, and keep them vibrant once we start running, this could be the path towards the end chain.
 
-Rolling up from approots would be like submodules, and the commits could be used to
+Rolling up from approots would be like submodules, and the commits could be used to indicate an intelligbile summary of the changes.
 
-Because git is ipld compatible, then we would use ipld under the hood
+Because git is ipld compatible, then we would use ipld under the hood, and so we could run executable things if we built up our sandboxing ability.
 
 All code is a file first, which then executes potentially other static files.
 
-We'd make sort of an operating system that was entirely based on git with unlimited size and runnable in parallel with tens of thousands of processors available to each user.
+We'd make sort of an operating system that was entirely based on git with unlimited size and runnable in parallel with tens of thousands of processors available to each user.  So this is an AI operating system that is cloud native with a blockchain substrate.  Its not just writing the apps, its doing the actual execution of them.
+
+So you could have all your company files as just plain `.md` files on the filesystem, which makes them about as future proof as you could get.
+
+They already tuned this datastructure heavily, for many of the goals that we have.  They will keep tuning it as well.  LLMs understand the concept of git very well, so should be able to drive it well by analogy.
