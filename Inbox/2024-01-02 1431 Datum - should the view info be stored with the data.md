@@ -13,3 +13,5 @@ This UI guide could be contained within the collection, or it could be stored as
 We could store info like this in the description of the field in the schema that describes it.
 
 In natural language, we might want to move to something different.
+
+But do we even need these tight schema definitions so bound up in the chain if we are moving to natural language ?  Schemas are a form of typing in the system.
