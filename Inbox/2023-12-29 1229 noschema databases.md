@@ -54,7 +54,7 @@ In this type of model, a CRM isn't a think you install, since it can make you a 
 ## Benefits
 Validation logic becomes much simpler to implement, since the ai handles it.
 May need a form equivalent of an AI - so long as you can access the AI service, it will always be more helpful - forms were only because of machine limitations anyway, so we can probably do away with them, finally.
-
+Huge savings in UI complexity since we are view only - no more forms for editing, complex partially saved states, painful concurrent updates in multiuser environments.
 
 # Example
 

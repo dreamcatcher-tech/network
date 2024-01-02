@@ -15,3 +15,17 @@ We could store info like this in the description of the field in the schema that
 In natural language, we might want to move to something different.
 
 But do we even need these tight schema definitions so bound up in the chain if we are moving to natural language ?  Schemas are a form of typing in the system.
+
+Should we just dump the whole Datum concept altogether, and just use markdown ?
+So the customer records are always stored in markdown format and we can just display them like that ?
+Rather than burn the time with the schema display stuff ?
+
+Could a collection just be a markdown table in text format too ?
+Add a diff highlighter for when things change in the rows.
+Markdown table gets generated, filter and sort by rows seems easy enough.
+Doing text search on these tables is trivial to implement.
+
+All the schemaing was really only for the ability of displaying guis and making safe api calls, but this requirement is removed by AI, since it can maintain all the format requirements of the system.
+
+Ok so we're ditching schema completely for UI related elements.
+We still need schema for machine things, like external calls, but everything else should be in markdown.
