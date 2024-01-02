@@ -52,12 +52,22 @@ Loop around the format checker so we can ask the same question in different ways
 In this type of model, a CRM isn't a think you install, since it can make you a generic record system any time you like.  The records are by default open to all applications, and apps are needed to do different types of logic.  So all the apps are provided in pieces, and the AI assembles them, rather than a finished thing that has a package around the outside.  So add a customer just needs you to say where, and if it is in shared space or private.  CRM functions can be unbundled, like the truck routing can be separate, and works on any records that have gps coords.  The geocoder component works on any addresses.
 
 How to make natural language executable - some of the NL is data, and some is instructions, and the only tooling we have to supply is a way to read some things and follow their instructions, and how to 
+
+## Architecture
+GPT4 would do the rule interpretation, and then 3.5 would do the function applications, where it would receive one instruction at a time and make the changes to the artifacts.
+Means that gpt4 would be generating functions, those functions would get tested and refined over time based on feedback, and 3.5 would do the executing.
+Defining a function would be done in natural language.
+
+Need to limit the size of each record down.
+
 ## Benefits
 Validation logic becomes much simpler to implement, since the ai handles it.
 May need a form equivalent of an AI - so long as you can access the AI service, it will always be more helpful - forms were only because of machine limitations anyway, so we can probably do away with them, finally.
 Huge savings in UI complexity since we are view only - no more forms for editing, complex partially saved states, painful concurrent updates in multiuser environments.
 
 Things like sql injection are over, since there is no complicated hand built machinery involved in parsing a users input - there is only the LLM processing text, and then calling functions on it, acting like a semantic firewall.
+
+Making complex demo systems on the fly becomes trivial, since we have huge parallel processing of AI powered inputs.
 # Example
 
 In the CRM, we have a minimum information requirement. We can set some rules at the top of the system that say what the minimum is required, then we can walk the collection and check each one.  We can tolerate dirty data.
