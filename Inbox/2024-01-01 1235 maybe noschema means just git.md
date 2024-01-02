@@ -40,8 +40,16 @@ Artifact would make git be free floating - subject to consensus.
 
 Could the plain language processes be used on chain to describe the operations and governance of the top level chain ?
 
-such a [[2023-12-14 0954 the point of a GPU chain|gpu chain]] could end the struggle to get turing complete and formally verified public blockchain software running, where all we need to achieve is the public consensused execution of any given LLM on commodity hardware using staking to validate the results like a form of insurance.
+such a [[2023-12-14 0954 the point of a GPU chain|gpu chain]] could end the struggle to get turing complete and formally verified public blockchain software running, where all we need to achieve is the public consensused execution of any given LLM on commodity hardware using staking to validate the results like a form of insurance.  It could also make blockchain accessible to many people, and end all the fuzz that is used to scam people.  Promising your own personal LLM running on blockchain, who wouldn't want to take part in such a system ?
 
 These insurance pools can be used to guarantee speed of execution and reproducibility of the answer.
 
 Such a chain would mean that all humans could readily understand smart contracts, and they would run a heck of a lot safer.  This seems a very raisable thing, too, and if we pair this with NFTs to produce individual components of the task, and keep them vibrant once we start running, this could be the path towards the end chain.
+
+Rolling up from approots would be like submodules, and the commits could be used to
+
+Because git is ipld compatible, then we would use ipld under the hood
+
+All code is a file first, which then executes potentially other static files.
+
+We'd make sort of an operating system that was entirely based on git with unlimited size and runnable in parallel with tens of thousands of processors available to each user.
