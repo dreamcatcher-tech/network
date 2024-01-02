@@ -29,3 +29,4 @@ All the schemaing was really only for the ability of displaying guis and making 
 
 Ok so we're ditching schema completely for UI related elements.
 We still need schema for machine things, like external calls, but everything else should be in markdown.
+
