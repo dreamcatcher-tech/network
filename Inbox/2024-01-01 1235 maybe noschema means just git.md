@@ -59,3 +59,5 @@ We'd make sort of an operating system that was entirely based on git with unlimi
 So you could have all your company files as just plain `.md` files on the filesystem, which makes them about as future proof as you could get.
 
 They already tuned this datastructure heavily, for many of the goals that we have.  They will keep tuning it as well.  LLMs understand the concept of git very well, so should be able to drive it well by analogy.
+
+If a company's records we a git filesystem, with some AI assisted merging, then it is instantly offline, all the time.  It would do all we want to do with our blockchain system, anyway.

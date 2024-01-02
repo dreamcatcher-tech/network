@@ -12,3 +12,9 @@ Filtering the list should be done graphically, but could be done using AI calls 
 
 We could build up the complete list and use some traditional query tools on it as a csv ?
 Code interpreter will only get better for data analysis, so just expose this directly ?
+
+Reports need to parse the lists.
+
+Use a markdown table component, and then edit the table by deleting rows and columns ?
+
+Run a report as doing something in parallel.
