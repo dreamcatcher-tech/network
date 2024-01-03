@@ -23,3 +23,14 @@ What you pull down and what you boot defines the whole behaviour of the system f
 They might be able to be compiled in the browser somehow, but ideally we would have their compiled form.
 
 AI could choose the react component or an arrangement of react components based on the context, so it could select different components to display at a particular path, and it could sniff the data at the path to choose what is the best way to display that information.
+
+## Actions and piercings
+To pierce is to make a git commit of external origin.
+This would be handled by the permissions of the path where the piercing was made.
+
+## Side effect design
+Should it be an array that grows, or should it be a single file for each action ?
+
+## Using the tool to write the tool
+How can we use this git repo as a means of tracking all the info we are making about the tool itself ?
+Should be able to write the markdown docs in the tool directly, and build up extra tooling within this suite.
