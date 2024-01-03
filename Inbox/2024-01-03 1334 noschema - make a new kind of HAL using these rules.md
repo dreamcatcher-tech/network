@@ -24,6 +24,8 @@ They might be able to be compiled in the browser somehow, but ideally we would h
 
 AI could choose the react component or an arrangement of react components based on the context, so it could select different components to display at a particular path, and it could sniff the data at the path to choose what is the best way to display that information.
 
+Arrange it so the shell is a separate repo, and then we can use git submodules in a hacky way by putting them in folders next to the root, with a reference by link inside the shell.
+
 ## Actions and piercings
 To pierce is to make a git commit of external origin.
 This would be handled by the permissions of the path where the piercing was made.
