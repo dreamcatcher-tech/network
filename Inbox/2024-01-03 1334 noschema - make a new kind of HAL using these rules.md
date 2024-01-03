@@ -11,4 +11,15 @@ We should be able to make the most basic of versions, and use this to construct 
 
 If it could boot just enough to pull down a github repo, then it can pull down the actual js modules it is designed to execute too.  Could pull them down live, and run in an iFrame.
 
-If react 
+If react components could be pulled in staight from github paths, in their compiled form, then we could make the initial framework light and stable, and separate out the react components, which can be loaded on the fly, in isolation.
+
+Show the git hash + timestamp of the loaded OS.
+So if we just provide enough code to load up git, then all the other parts are independent modules that get pulled in and worked on separately.  A fault in one module means you still have the rest of the system to work with, and you can use older versions of the components you used successfully too.  So the core can be thoroughly tested and stabilized, with modules being built out.
+
+Use github as the authentication for each user, and use for privacy guarantees.  Run a little proxy on site to access MoneyWorks and to access github.  Use webrtc for browsers to connect with each other.
+
+What you pull down and what you boot defines the whole behaviour of the system from there on.  So a kiosk would just load a different boot instruction set.
+
+They might be able to be compiled in the browser somehow, but ideally we would have their compiled form.
+
+AI could choose the react component or an arrangement of react components based on the context, so it could select different components to display at a particular path, and it could sniff the data at the path to choose what is the best way to display that information.
