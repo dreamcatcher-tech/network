@@ -21,6 +21,8 @@ So the api would be in json, and the environment it needs to run in, plus source
 
 pgp sing can be used to handle server identity ?
 
+walk in git could be how lensing is implemented.
+
 lol we get all the commit analyzing tools of git that we can use to replay situations.
 We should use the commits as a form of json message or some kind of useful info.
 
@@ -49,3 +51,32 @@ With some bare minimum work, we should be able to run any type of HAL runner usi
 
 ## Libp2p
 The networking should be driven by the LLM, and the status would be updated by writing to a document in the filesystem.
+? how to pull down git repos in a distributed fashion like torrents ?
+? how to track payment for network resources ? GPU resources ? API call resources ?
+
+## The stuck loop
+Be able to use vector search to access helps which define how things are to be done.
+We should use this to make a huge blockchain that is all NL, but can have fancy logic injected.
+Running the LLM is actually a side effect too.
+Calling the API for the LLM is a side effect, just like any other side effect.
+
+## Governing lambda functions
+Can use a quorum of LLMs to control interactions with the AWS interface.
+Can do load balancing and throttling where they look at the system stats dashboard and tune it appropriately.  A human can come in and add rules as the system behaviour emerges.
+Allows us to fire up vast numbers of lambda functions to run the side effects we need, or to make LLM calls for us.
+Each lambda function can run multiple side effects concurrently in isolation, so this is how we can control huge multi threading without having to make a vastly complicated chain system, since it can use NL and LLMs to govern its behaviour.
+
+Good test is multi threaded encoding of a large video file.
+
+Even GPU load can be balanced across machines since we can see their queue lengths and can move jobs around between them.
+
+? is a react stateboard component actually a side effect ?
+this would be committed, have a path to a thing, and get loaded on the fly in the stateboard with an ephemeral path or other kind of trigger to indicate that it should load.
+Removing what to show on the canvas .md file is just a new commit with a blank canvas.
+Can use links to pull in things from other locations.
+The stateboard is a git repo too.
+
+## Pegging to Eth
+We should be able to take the HEAD commit and peg it to eth very simply.
+
+## Creating an NFT
