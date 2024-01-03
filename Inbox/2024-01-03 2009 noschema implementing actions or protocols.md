@@ -20,3 +20,24 @@ So the api would be in json, and the environment it needs to run in, plus source
 ? how can encryption be done using git ?  We could encrypt each object perhaps ?
 
 pgp sing can be used to handle server identity ?
+
+lol we get all the commit analyzing tools of git that we can use to replay situations.
+We should use the commits as a form of json message or some kind of useful info.
+
+## Importing from db
+make a module that is import( start, filter, count ) that we want to run to check in with the moneyworks db.
+This would be running as a separate repo to the main data, so that all the polling calls isn't polluting the main thread, except when something actually happens.
+
+The LLM would decide that it was time to make the call, and then it would
+
+A tactic:
+Get the total number of records.
+Get the first one and the last one, then get a random sample in between.
+Use these to generate a standard template.
+Start from the begining and load up each one.
+Track the last modified time of each one, keeping tally of what is the highest.
+Sanity check against what we know the time is.
+Then, start polling after the latest last to get anything new, but ensure that we get the highest last few ones, just to check that our theory is correct.
+
+## Time delays / cron
+Cron could be a file, and we set of timers that check it every second, and then trigger if something is time to run, to allow the LLM to get a callback.
