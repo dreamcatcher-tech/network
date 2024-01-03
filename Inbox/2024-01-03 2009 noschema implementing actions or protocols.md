@@ -24,11 +24,13 @@ pgp sing can be used to handle server identity ?
 lol we get all the commit analyzing tools of git that we can use to replay situations.
 We should use the commits as a form of json message or some kind of useful info.
 
+This whole crazy idea is that LLMs can perform any kind of logic you want, and so the whole protocol of the blockchain should be implemented this way.  That is to say, all programming should be done using the LLM.
 ## Importing from db
 make a module that is import( start, filter, count ) that we want to run to check in with the moneyworks db.
 This would be running as a separate repo to the main data, so that all the polling calls isn't polluting the main thread, except when something actually happens.
 
-The LLM would decide that it was time to make the call, and then it would
+The LLM would decide that it was time to make the call, and then it would commit the instruction to git.
+The executor of the LLMs will would see this change, and would fire up the module with the args, and then would pierce back in with the result, which would trigger the LLM to make more changes to the FS.
 
 A tactic:
 Get the total number of records.
@@ -41,3 +43,9 @@ Then, start polling after the latest last to get anything new, but ensure that w
 
 ## Time delays / cron
 Cron could be a file, and we set of timers that check it every second, and then trigger if something is time to run, to allow the LLM to get a callback.
+
+## Implementing HAL
+With some bare minimum work, we should be able to run any type of HAL runner using NL.  This should be encapsulated on the filesystem.
+
+## Libp2p
+The networking should be driven by the LLM, and the status would be updated by writing to a document in the filesystem.
