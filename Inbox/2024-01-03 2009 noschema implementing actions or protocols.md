@@ -80,3 +80,13 @@ The stateboard is a git repo too.
 We should be able to take the HEAD commit and peg it to eth very simply.
 
 ## Creating an NFT
+
+## Updating the defaults inside the app
+Being git native, we can do a PR against the core repo if the user decides to edit some of the helps.
+We would boot, then pull the latest version from the repo, then start to operate.
+Periodically we would check for updates.
+## Looping test over different goals being met
+
+## make the base primitives, like collection with rules in it
+By creating files and booting them, then testing them, we should be able to define what some default things are, and also be able to add to them.
+
