@@ -14,3 +14,7 @@ We might have to store these commits in a file, and it might need to be a separa
 We could keep the signatures completely separate, and simply sign on the the previous agreed signature field, so the content still remains completely separate, which can be useful for rewriting history, where the signature history remains, but the content can remain maximally compact.
 
 Also allows starting and including signatures at different points in the content stream of commits.
+
+Use BLS signatures so we can have huge numbers of validators.  Basically just copy ethereums design, but using natural language.
+
+Allow fragmenting where we can break off into smaller groups, or darker groups where needed.  Plus can roll up commits too, since not everyone can afford a merge into supermaster.
