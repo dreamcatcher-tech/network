@@ -21,4 +21,3 @@ Should it be that one process can write to a file per commit, so that there is n
 If each one is a user, then the merges would be conflict management, so there can be parallel writes going on, but there will have to be a merge.
 Or we could use a lock on the file / git repo, and make sure you have to wait until the next commit before you can access the system ?
 
-Git is the perfect model for all threading, be it humans of machines.
