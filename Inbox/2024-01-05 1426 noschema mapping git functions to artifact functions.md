@@ -27,3 +27,4 @@ Triggers - these are ways of declaring in the filesystem that when some changes 
 Format hooks - whenever the LLM tries to write to a file that needs to be in a specific format because it will be interpreted by machine, these hooks will trigger and will throw an error that the LLM must correct to proceed.  These are a form of trigger, but they don't cause any AI execution.
 
 Tension - maybe the commit message should list things in tension when it runs ? or register with the procman to ensure it will eventually get served, where procman is a folder tree system that mirrors the fs, but is used to supervise execution that is owed.
+? Staging area - represents things about to be committed.
