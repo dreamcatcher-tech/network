@@ -22,6 +22,8 @@ Basically we are designing a computer again, with AI at its core, running all it
 
 Merge conflict - this means a consensus fault, since if everyone is following rules, these should not happen.  There are times when the file tree might be manually pruned and updated, and a merge conflict here would indicate a bug being fixed.  Wide acceptance of the merge indicates consensus.  You can do anything so long as everyone agrees what it is.
 
-Triggers - these are ways of declaring in the filesystem that when some changes are detected, this side effect will run, which can be used to enforce formats of files.
+Triggers - these are ways of declaring in the filesystem that when some changes are detected, this side effect will run, which can be used to enforce formats of files.  This might be commit hooks, since you should be able to do anything you like in between commits.  Commit hooks can run down the tree, based on what files changed.  If we wanted to avoid intermediary commits, then we would do a squash merge to remove that state - what is the point of changing a lot of files in an intermediary state ?
 
 Format hooks - whenever the LLM tries to write to a file that needs to be in a specific format because it will be interpreted by machine, these hooks will trigger and will throw an error that the LLM must correct to proceed.  These are a form of trigger, but they don't cause any AI execution.
+
+Tension - maybe the commit message should list things in tension when it runs ? or register with the procman to ensure it will eventually get served, where procman is a folder tree system that mirrors the fs, but is used to supervise execution that is owed.
