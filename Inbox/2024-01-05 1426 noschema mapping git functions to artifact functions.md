@@ -25,3 +25,5 @@ Merge conflict - this means a consensus fault, since if everyone is following ru
 Triggers - these are ways of declaring in the filesystem that when some changes are detected, this side effect will run, which can be used to enforce formats of files.
 
 Format hooks - whenever the LLM tries to write to a file that needs to be in a specific format because it will be interpreted by machine, these hooks will trigger and will throw an error that the LLM must correct to proceed.  These are a form of trigger, but they don't cause any AI execution.
+
+? Staging area - represents things about to be committed.
