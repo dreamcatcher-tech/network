@@ -14,3 +14,5 @@ Provided the tests are all working, then the logic is perfectly fine.  This can 
 Then how to make a test bench to try get the outputs to be correct.  If we actually need format correctness we can use a jsonschema checker in a very simple way.
 
 So long as we could debug and rerun the LLM running at any point, then we should be able to build stable systems.
+
+Any time any kind of computation occurs, other than invocation, an LLM should be doing it by being forced to call the function.  If it does it wrong, we just need to prompt it differently.
