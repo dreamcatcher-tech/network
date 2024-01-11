@@ -18,3 +18,4 @@ So then people could use this exchange as their place to store info safely, and 
 Have power of attorney so we can chase down bad payments and other issues on peoples behalf.
 
 If we hold money and people use us to pay for things, we can guarantee rapid settlement.
+

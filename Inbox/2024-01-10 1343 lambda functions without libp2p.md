@@ -24,3 +24,5 @@ We could copy the deno kv api, but make that run decentralized.  The use cases a
 We could provide higher availability guarantees than deno's infrastructure, plus netsplit offline operation.  
 
 So we would provide first a deno cloud hosted solution so the programming model could be refined without the cost of updating the decentralized model.  Once the applications are shown to be useful, we can use the Dreamcatcher (now running on Deno) to build out the decentralized modules that we need.  At the start, the dev versions are technically decentralized, since they can verify the function calls that were made.
+
+We should copy all the edge function frameworks, as their issues are exactly the same as ours.
