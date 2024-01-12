@@ -28,3 +28,5 @@ Format hooks - whenever the LLM tries to write to a file that needs to be in a s
 
 Tension - maybe the commit message should list things in tension when it runs ? or register with the procman to ensure it will eventually get served, where procman is a folder tree system that mirrors the fs, but is used to supervise execution that is owed.
 ? Staging area - represents things about to be committed.
+
+Branch - this is a process - any area that has a running execution occurs in a branch.  Executions can span many commits, but they are recoverable from the point of the last commit.  The fact that the branch exists says it is still running.
