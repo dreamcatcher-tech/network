@@ -32,3 +32,5 @@ All messages being passed are submitted to a public git repo which is instantly 
 Could be used to do things like agree when to do a squash merge on some old history so we can keep the working set of the chain down low.  Submodules can be nested infinitely, so we could have very large structures running here.
 
 Arguments with the LLMs would be public, and we could all see what each other were trying to do to the system, and we would be required to jump in when we thought the LLM was going some way we didn't like.  It would depend on us using logic to fight each other with the LLM as arbiter and assumes there is some base logic in the LLM that we all share trust in.
+
+So we can also take a sampling of prior calls for a particular function or side effect, and load these into AI, asking the question: "is this new response a reasonable output given how the previous ones have behaved ?" - this can be used to flag down problematic external systems, where we are not handling the behaviour properly, as something may have gone erratic.
