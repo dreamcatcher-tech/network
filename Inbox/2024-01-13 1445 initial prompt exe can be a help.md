@@ -20,3 +20,5 @@ The initial prompt would be a hardcoded call to a given help, using the help run
 So we would load up the goalie help manually, without doing any retrieval, based on what the io channel was set to.  Then as it received user prompts, it would execute the runner, which would call on the stuck function and call in other helps.
 
 These would run inside their own runner instance, but the help runner, being nested, is still the same piece of code running over and over.
+
+Calling a help with no prompt simply makes it execute, else it would be given text that acts as the user input to the function.
