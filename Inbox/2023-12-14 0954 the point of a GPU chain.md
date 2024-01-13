@@ -71,3 +71,5 @@ With this protocol, we can take flight and float above the computing layer in a 
 All the solutions we are seeing right now are isolated point solutions - to make a global solution with wikipedia scale collaboration, we need a public chain to run all this on.
 
 Want to supply advanced applications including AI with the same decentralized finality that Ethereum provides, but with limitless resources and near zero latency.  Currently the app infrastructure has to be hosted using web 2.0 and weakly hooked to the blockchain stuff - the whole app should be on chain.
+
+If we make a small super fast LLM that is optimized for function calling, then we can ship it small enough to run on a users local machine in isolation.  We can start charging for its usage instantly, for every time the program runs, rather than currently where charging for running resources is considered trivial, since the user has their own computer that is mostly idle.
