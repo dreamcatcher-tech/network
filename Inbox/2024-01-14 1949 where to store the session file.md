@@ -63,3 +63,9 @@ We could add the state of the refs folder to the consensus tag ?
 io is processed concurrently, with each one being executed in its own private view of the repo.
 
 We make a special field in the io file that tracks the branch ids and HEAD of each branch that we created.  This should allow recovery if all we have is the master branch, since we know what objects to look for.  This commit with the branch info in it is the start of the new branch.
+
+This file is kept inside each action branch, and can be used to build up the process tree, meaning that no branches are left dangling.
+This file could be replaced with entries in the io file, that list out the branchids, so we can recover or rebuild, knowing we may have lost some things if we cannot recover the objects.
+This file can be used to track consequences, singe we just walk the branches to get a tree of what we're waiting on.
+
+? how would a daemon process be modelled ?  possibly needs a special flag ?

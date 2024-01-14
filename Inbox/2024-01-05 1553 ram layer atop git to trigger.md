@@ -17,3 +17,7 @@ If we coordinated with git, we could do status much faster too, since we would a
 If git was engineered to be more suitable for this purpose, it could certainly run a lot faster.  It could also use ipfs under the hood, using cid's to allow a broad range of hashings.  If we could alter how dirs are stored we could get things that are larger, and if we altered how data was packed, we could make content aware packing that could be more surgical about diffing of some structures, like json.  Getting triggers when files change on the system is integral, so is memory caching for fast churning files.
 
 isomorphic git with abortcontoller seems useful.
+
+All filesystem writes can be in ram, with only the commits and branches to git being required to be saved.  This saving can be lazy, since network calls are more useful than disk writes.  So the fs ops are always pure ram, and the git writes complete in the background.
+
+Only needed for git repos that will be livened with execution ability.
