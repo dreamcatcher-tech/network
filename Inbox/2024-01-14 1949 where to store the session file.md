@@ -40,3 +40,26 @@ The chat is a long running process that never exits, but the runner is.  Actions
 The merge commit can do the file blanking when the io reply is being handled.  At the same time, the merge driver can trigger the promise resolution for any processes that were awaiting a response.
 
 We can simulate this behaviour by having a global write lock so that only one promise at a time can write, until we can have isolation between processes.  Git is the concurrency protocol, and the only time IPC occurs is during git merge.  Into repo is a special kind of merge where a certain file is livened up to have special meaning.
+
+The session file and the io file seem identical, just different formats.  The IO could switch between calling different isolates based on what the action was.  So instead of specifying an io file, you specify the isolate you want to call.  So IO can call any isolate, since the actual io file is insignificant, other than it is livened up by some processes.
+
+## muxed IO channels
+If the action says what the isolate is to be, then the IO channel can be used as the session file by way of filtering.
+There only needs to be be a single one on any branch, since this represents where the current process isolation is running.
+Merges need to consider this and reconcile the IO.
+The act of merging is to reconcile the IO back up to the parent, and optionally delete the branch if the process has ended.
+Result is that master has no IO on it, only branches have IO.
+Starting a new session is to start a new branch.  A mounted repo would be used to allow multiple threads to write on it.
+So the refs folder in git is the procman
+This seems unlimited and simple as a set of rules - maybe the smallest set of rules for managing execution based on git files.  It injects a single git file `.io.json` 
+
+Making a new branch would give access to the IO file at the point of invocation, or it should zero it out / reset with the command that was given to it ?
+
+Priming the `.io.json` file - if we set it with something to start with, then at boot, it will execute the action, which could be long running.
+
+BUT for recovery, the branches aren't stored anywhere ?
+We could add the state of the refs folder to the consensus tag ?
+
+io is processed concurrently, with each one being executed in its own private view of the repo.
+
+We make a special field in the io file that tracks the branch ids and HEAD of each branch that we created.  This should allow recovery if all we have is the master branch, since we know what objects to look for.  This commit with the branch info in it is the start of the new branch.
