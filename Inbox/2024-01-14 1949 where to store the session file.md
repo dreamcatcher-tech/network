@@ -11,3 +11,6 @@ Some of those messages are strictly formated, as in function calls, others are n
 ## Options
 1. Make a new file for each session referenced by the commit and request id that started this session running
 2. Make a new branch
+3. single session file with names to filter the flows out
+
+Run each running instance inside the same IO channel, where it uses loopback to invoke different helps ?
