@@ -57,3 +57,41 @@ If dispatch doesn't name an existing process, a new one will be created.
 ? when is help turned into pure code ?
 runner, where if we reference a pure code runner, it will be started up with the given args ?
 helps represent a way to call a specific function, to enact a state change or read some query or do some long running conversation.
+
+When does a new action get processed by the current branch, and when does a new branch get made ?
+Special actions that indicate it was spawned, and awaits result ?
+Special actions that indicate calling an already running process ?
+if each one has a PID where it can be self, null, or something valid, then we can route the action to the correct place.
+
+The act of spawning a branch is the act of dispatching an action from us, out.
+But without an action of our own as a marker, we can't know what to continue with when it returns.
+? how would I get the id of the running action, to be able to call it again ?  I could really only use an action that I had already dispatched ?  Or, be able to read the process state of the system.
+main branch doesn't in itself run anything - it actually runs everything and so never has a .io file
+but, io is used to track branches, so kinda needs an io in main to track all the running processes.
+
+
+So to spawn, send an action to yourself with no pid.
+this causes a spawn, and then updates the pid with the branch id.
+the presences on the IO queue says the branch is active.
+commit the action down to generate the branch ?
+
+? what about if an action wants to be processed by a different isolate ?  So each process is capable of running multiple code functions arbitrarily ?  yes that makes sense.  What starts the process is what matters.
+
+Can trace back parent process by looking at parent of this branch.
+
+Branch is PID. But almost like a core, since multiple functions can take place on it.  It needs to be on a single machine tho, since concurrent processes might make changes to it.
+Should each IO be finished before the next can start ?  If not, then we should make branches ?
+So messages are one at a time unless spawn is used.
+
+Its really only the first action in the branch that matters.
+Parents can forcibly end a branch.
+
+Could start a main thread all the time, where all io takes place, to keep master clean ?
+
+Be explicit - pid is never passed,
+processType is either: spawn, self, local, remote
+pid: blank while unprocessed, then becomes the pid of the branch that is executing it.  can be pathed using posix paths.  special case is self.
+processes should be able to change their names.  Same name used again just puts an integer on the end.  integer might be the IO sequence counter.
+
+So remote git comms would be to a branch that was specificlly made to communicate to the remote repo.  if both swarms share this branch, this is how comms are handled.
+interpulses are orphan branches, where their shared state is managed by process comms

@@ -30,3 +30,5 @@ Tension - maybe the commit message should list things in tension when it runs ? 
 ? Staging area - represents things about to be committed.
 
 Branch - this is a process - any area that has a running execution occurs in a branch.  Executions can span many commits, but they are recoverable from the point of the last commit.  The fact that the branch exists says it is still running.
+
+orphaned branches - network sockets
