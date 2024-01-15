@@ -55,3 +55,8 @@ NFTs can start by being OpenSea listed using the OpenSea API for packets of work
 Mint the NFTs using an ERC1155 contract or similar, then mutate the properties of each token as the packet becomes available.  So we mint a new NFT once we know the base chain of the packet.  This means we can tap the crypto funding sources, and beautiful interfaces they have developed.
 
 The utility of having a publicly hosted chain is better than having some short term income.  Making a PoA hosted services provider so that demo based projects can be built upon is powerful.  Particularly if the first hosted app is the Dreamcatcher work management app, so that packets can be openly bidded upon.  This means we can see our hourly rate go up as demand for our services goes up due to surge pricing.
+
+## Offerings
+We would have a working piece of software and so when we are introduced to companies around london, like we used to be, then we can start projects where we can demonstrate our utility, and we can sign contracts with them as a company to deliver and maintain services to them.  These pilots can be taking place rapidly, using our development model, and the sales meetings themselves can leave working software behind.  These news articles, particularly with new sales being announced regularly, should be surprisingly novel inside the blockchain and AI industry.
+
+The pubco would handle the contractual obligations, process payments and turn them into NFT escrows.  We would be a peer on the network, not a controller of the network.  We would maintain the realworld relationships and process the funds.  We would perform dilligence on the contractors we pay and the customers we sell to.

@@ -34,7 +34,7 @@ Branches can have new actions pierced inside of them.  A branch is like a proces
 
 
 - boot
-- start a new session which triggers an action branch
+- start a new session which triggers an action branch, creates io
 - Dave types some random bs
 - action is pierced into the action branch by way of commit
 - commit triggers the isolate to begin running
@@ -51,3 +51,9 @@ Branches can have new actions pierced inside of them.  A branch is like a proces
 set some blanking commands, and later do some template copies.
 so part of the config for the action would blank the session file - io is blanked by default
 The isolate knows how to interpret this - the action is the initialization, so the isolate would know what to do for its setup.
+
+If dispatch doesn't name an existing process, a new one will be created.
+
+? when is help turned into pure code ?
+runner, where if we reference a pure code runner, it will be started up with the given args ?
+helps represent a way to call a specific function, to enact a state change or read some query or do some long running conversation.
