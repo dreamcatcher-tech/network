@@ -97,3 +97,5 @@ So remote git comms would be to a branch that was specificlly made to communicat
 interpulses are orphan branches, where their shared state is managed by process comms
 
 Set up a type of queue by the first action, where it can do things sequentially, or force parallelism, or any behaviour at all.
+
+PID can be tracked in the io channel it exists in.
