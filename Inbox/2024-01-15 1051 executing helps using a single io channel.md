@@ -95,3 +95,5 @@ processes should be able to change their names.  Same name used again just puts 
 
 So remote git comms would be to a branch that was specificlly made to communicate to the remote repo.  if both swarms share this branch, this is how comms are handled.
 interpulses are orphan branches, where their shared state is managed by process comms
+
+Set up a type of queue by the first action, where it can do things sequentially, or force parallelism, or any behaviour at all.
