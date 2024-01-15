@@ -99,3 +99,7 @@ interpulses are orphan branches, where their shared state is managed by process 
 Set up a type of queue by the first action, where it can do things sequentially, or force parallelism, or any behaviour at all.
 
 PID can be tracked in the io channel it exists in.
+
+IO should never leak between branches, so we'd need to check this somehow.
+
+If some code changes its api while running, for security purposes, then this would need a live api check ?

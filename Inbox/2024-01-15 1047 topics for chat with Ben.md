@@ -10,3 +10,5 @@ branch storing for recovery purposes
 branches are kind of local
 io switching between many processes
 git as the language of blockchains
+when is a help a piece of code ?
+when code is running and it changes its api signature ?
