@@ -34,3 +34,5 @@ Branch - this is a process - any area that has a running execution occurs in a b
 orphaned branches - network sockets
 
 Notes - consensus messages.  We would reserve tags for things like a known good snapshot, or some other more ceremonial purpose, rather than the rapid fire chatter of machine consensus.
+
+Moving to daemon mode - branch has its parent changed but the incoming files are clobbered to preserve its state - this splice in history marks it with a new parent, with whom it will merge upon completion.  An action is put into the parent to initiate the merge and leave an entry on its process list.
