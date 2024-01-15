@@ -32,3 +32,5 @@ Tension - maybe the commit message should list things in tension when it runs ? 
 Branch - this is a process - any area that has a running execution occurs in a branch.  Executions can span many commits, but they are recoverable from the point of the last commit.  The fact that the branch exists says it is still running.
 
 orphaned branches - network sockets
+
+Notes - consensus messages.  We would reserve tags for things like a known good snapshot, or some other more ceremonial purpose, rather than the rapid fire chatter of machine consensus.
