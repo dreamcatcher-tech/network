@@ -27,3 +27,5 @@ use unionfs to provide isolated layers that each process runs in.  Once the IO q
 then later, intercept the calls to use the git repo directly, then do background hashing in a thread in case it gets asked for, using a queue that uses idle capacity to hash ahead of time.
 
 Checkout of a branch should toggle the unionfs layer to switch, so there is no need to modify the working directory at all.  Then when someone tries to read, we pull it from the git branch we are on.
+
+If the system was backed by a kv store, and then used git to store everything by default, where writing to a file automatically puts it in a temp branch so that if it is actually commited, then it will be near instant, then it should be maximally efficient.
