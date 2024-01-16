@@ -14,3 +14,4 @@ when is a help a piece of code ?
 when code is running and it changes its api signature ?
 the land of nouns / things vs the land of verbs / actions
 When is too much for LLM actions ?
+If we travelled this far just to get back to git, what other systems are we reinventing unnecessarily ? module loading ?

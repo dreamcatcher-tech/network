@@ -29,3 +29,5 @@ Can switch branches in git very rapidly - if the FS was designed to do this op n
 
 Use the print function in memfs to dump directory to file in text format.
 use snapshot utility in memfs to be able to store snapshots for development testing.  This is a highly efficient utility that can use cbor and can be dumped to ipfs.
+
+The hydration boundary is what actions go thru when they get committed.  This means they lose all functions added to them, and become pure json.  This is crucial for replayability.
