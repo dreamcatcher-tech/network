@@ -29,3 +29,5 @@ then later, intercept the calls to use the git repo directly, then do background
 Checkout of a branch should toggle the unionfs layer to switch, so there is no need to modify the working directory at all.  Then when someone tries to read, we pull it from the git branch we are on.
 
 If the system was backed by a kv store, and then used git to store everything by default, where writing to a file automatically puts it in a temp branch so that if it is actually commited, then it will be near instant, then it should be maximally efficient.
+
+If this layer was raw hardware, then storage could be aligned with the sectors on a hard disk.  Some IO could be done straight from the disk thru to the network card with minimal processing, using the machinery at max speed, if this system is all it runs.

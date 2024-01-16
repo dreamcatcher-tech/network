@@ -31,3 +31,11 @@ Use the print function in memfs to dump directory to file in text format.
 use snapshot utility in memfs to be able to store snapshots for development testing.  This is a highly efficient utility that can use cbor and can be dumped to ipfs.
 
 The hydration boundary is what actions go thru when they get committed.  This means they lose all functions added to them, and become pure json.  This is crucial for replayability.
+
+Rehearse a function that modifies the filesystem and then returns that so the receiver can do something with the filesystem changes.
+
+A long running process that detached.
+
+Process handover where the parent ends, but the child continues on.
+
+Once these verbs are defined, then we can string them together using an AI orchestrator ?
