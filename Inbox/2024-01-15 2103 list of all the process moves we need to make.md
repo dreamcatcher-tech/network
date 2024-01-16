@@ -24,3 +24,5 @@ This should be part of the toolbox when the user asks for a particular type of p
 The response back to the parent branch should include the diff to the fs.  Then the parent can choose how to respond, since they are potentially large operations that are passed by reference.
 
 The child can merge and detach by raising a flag any time during their execution.  Then they would reply to the parent and carry on.  The parent could deny them the permission to keep running.
+
+Can switch branches in git very rapidly - if the FS was designed to do this op natively, then we could have near instant performance.

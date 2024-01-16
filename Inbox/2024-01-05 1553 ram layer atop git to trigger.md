@@ -25,3 +25,5 @@ Only needed for git repos that will be livened with execution ability.
 Spy on fs operations using https://github.com/streamich/spyfs
 use unionfs to provide isolated layers that each process runs in.  Once the IO queue has ended, the branch should be automatically closed.  Should be able to reply to the origin action and then keep running in some cases.
 then later, intercept the calls to use the git repo directly, then do background hashing in a thread in case it gets asked for, using a queue that uses idle capacity to hash ahead of time.
+
+Checkout of a branch should toggle the unionfs layer to switch, so there is no need to modify the working directory at all.  Then when someone tries to read, we pull it from the git branch we are on.
