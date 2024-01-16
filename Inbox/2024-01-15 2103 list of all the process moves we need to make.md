@@ -26,3 +26,6 @@ The response back to the parent branch should include the diff to the fs.  Then 
 The child can merge and detach by raising a flag any time during their execution.  Then they would reply to the parent and carry on.  The parent could deny them the permission to keep running.
 
 Can switch branches in git very rapidly - if the FS was designed to do this op natively, then we could have near instant performance.
+
+Use the print function in memfs to dump directory to file in text format.
+use snapshot utility in memfs to be able to store snapshots for development testing.  This is a highly efficient utility that can use cbor and can be dumped to ipfs.
