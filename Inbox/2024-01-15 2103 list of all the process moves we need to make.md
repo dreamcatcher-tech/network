@@ -18,3 +18,5 @@ So we should be able to make a truth table to generate all combinations, and aut
 Then, images can be made representing the shape of each, which can be displayed in the test suite so we know we have always tested all possible moves.
 
 If we could make an AI that could exhaustively generate all moves, then we work thru operating on each one, that seems best.
+
+This should be part of the toolbox when the user asks for a particular type of plumbing operation, then it knows that it can only pull from these certain things.  So if they want a long running job, and external API call, or some other thing.
