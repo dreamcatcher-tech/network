@@ -20,3 +20,7 @@ Then, images can be made representing the shape of each, which can be displayed 
 If we could make an AI that could exhaustively generate all moves, then we work thru operating on each one, that seems best.
 
 This should be part of the toolbox when the user asks for a particular type of plumbing operation, then it knows that it can only pull from these certain things.  So if they want a long running job, and external API call, or some other thing.
+
+The response back to the parent branch should include the diff to the fs.  Then the parent can choose how to respond, since they are potentially large operations that are passed by reference.
+
+The child can merge and detach by raising a flag any time during their execution.  Then they would reply to the parent and carry on.  The parent could deny them the permission to keep running.

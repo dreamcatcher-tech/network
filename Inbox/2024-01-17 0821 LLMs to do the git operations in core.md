@@ -13,3 +13,4 @@ LLMs are good when there are a selection of well defined options, and in particu
 GIT can be considered a state machine, and so the ability to move around could be left up to an LLM to operate.
 
 We should make a git explorer, or pull one in, since being able to see inside these operations is crucial to our understanding, makes debugging easier, and will be used for the lifetime of the project.
+
