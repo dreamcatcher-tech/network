@@ -21,3 +21,7 @@ isomorphic git with abortcontoller seems useful.
 All filesystem writes can be in ram, with only the commits and branches to git being required to be saved.  This saving can be lazy, since network calls are more useful than disk writes.  So the fs ops are always pure ram, and the git writes complete in the background.
 
 Only needed for git repos that will be livened with execution ability.
+
+Spy on fs operations using https://github.com/streamich/spyfs
+use unionfs to provide isolated layers that each process runs in.  Once the IO queue has ended, the branch should be automatically closed.  Should be able to reply to the origin action and then keep running in some cases.
+then later, intercept the calls to use the git repo directly, then do background hashing in a thread in case it gets asked for, using a queue that uses idle capacity to hash ahead of time.
