@@ -320,3 +320,6 @@ So to make a new software feature, you need to upgrade the LLM, which upgrades i
 Also using helps in the stuckloop, patches can be applied rapidly, but because they are in natural language, they can be checked by an LLM.
 NL keeps the whole system understandable by maximum number of humans, the fastest, and lets any of them contribute.  vs the narrow band of programmers who speak a specific dialect and understand a specific domain.  The true domain experts can govern their computation now.
 May give users more specifically what they want, rather than relying on them consuming what was suitable for thousands of others.
+
+## NL programs
+These should be easily portable to any other system of running, since they rely very little on the system that created them.  They might be coupled to the functions that are made available to them, but if these are small and simple (write file, read file, etc) then running on different LLMs or different platforms should have the same output, or one that is easily tuned.
