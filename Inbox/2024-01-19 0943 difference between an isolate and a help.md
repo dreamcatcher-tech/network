@@ -14,8 +14,21 @@ Should the help be like a function call where it has some parameters it needs, s
 The only two options for the stuckfinder seem to be either it is a help, or it is an isolate.
 It could be a help plus a runner ?
 If it is a help, it definitely needs to call an isolate to get all the helps it needs.
-As a runner, it would load up the helps folder, dump them as json, 
+As a runner, it would load up the helps folder, dump them as json, then run the help file, possibly re-using the chat runner.
 
 If it was help, it would return in NL.
 
 > Helps are interacted with using NL, isolates are tool calls that happen during the execution of helps.
+
+Runners interpret helps, helps call on isolates that the runner executes.
+
+If an isolate can call a help, what is the point of the distinction ?
+
+Isolates have function io, helps have NL IO.
+
+Helps could have a list of helps that it can call, which get loaded different ?
+Or commands could be just the same but they are loaded with a help wrapper, not an isolate one ?
+
+So, is the stuckloop a help file, or an isolate ?
+Things should be help as much as possible, since NL is easier to code.  So it could be either.
+So we choose help, since the NL interface is more forgiving, and we have to make an NL call anyway.
