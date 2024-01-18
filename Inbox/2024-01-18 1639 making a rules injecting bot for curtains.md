@@ -12,3 +12,9 @@ Then have some tests that are set up and run on the bot whenever the rules chang
 We could make rules on what the prompts needed to be, such as making sure they are atomic.
 
 We can add derivations, so we can get the catalogue to be consistent with all the rules.
+
+Can deduce the dictionary.
+
+The catalog can be made with a template for all the properties of a given item, and we can ask questions of an authority to fill in things that are missing.
+
+Managing multiple human authorities and settling their disputes seems like our problem.
