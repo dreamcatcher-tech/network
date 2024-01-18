@@ -31,3 +31,5 @@ So the spec is given in an LLM executing, with possibly a TLA+ model alongside, 
 Any changes to the code would happen in the LLM first, and then GP4 could use existing code as a basis.
 
 So in this way, ALL the code should be LLM first, since it is easy to reason about and to test.  Once code is made, then the LLM can execute tests against it using the tests that were used for the pure LLM piece.
+
+One of the keys is that the LLM should write things to disk that can be used by other later calls efficiently.
