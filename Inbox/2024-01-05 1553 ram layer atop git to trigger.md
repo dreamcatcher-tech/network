@@ -31,3 +31,6 @@ Checkout of a branch should toggle the unionfs layer to switch, so there is no n
 If the system was backed by a kv store, and then used git to store everything by default, where writing to a file automatically puts it in a temp branch so that if it is actually commited, then it will be near instant, then it should be maximally efficient.
 
 If this layer was raw hardware, then storage could be aligned with the sectors on a hard disk.  Some IO could be done straight from the disk thru to the network card with minimal processing, using the machinery at max speed, if this system is all it runs.
+
+Multithreaded access, like in webworkers, will be much faster in this system since there is no need for exclusive lock, as each layer in the filesystem is independent and locked to a commit.
+So the serverworker manages the fs completely, and then each worker gets its own layer in its own scope, and only on commit or merge does it talk to the service worker.  If it does so, it can just use gits own protocol to ensure efficient comms.
