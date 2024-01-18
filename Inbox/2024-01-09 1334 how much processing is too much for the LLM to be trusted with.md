@@ -32,4 +32,4 @@ Any changes to the code would happen in the LLM first, and then GP4 could use ex
 
 So in this way, ALL the code should be LLM first, since it is easy to reason about and to test.  Once code is made, then the LLM can execute tests against it using the tests that were used for the pure LLM piece.
 
-One of the keys is that the LLM should write things to disk that can be used by other later calls efficiently.
+One of the keys is that the LLM should write things to disk that can be used by other later calls efficiently.  So you can have intelligence enhanced calls, and functionality that avoided writing code, but still have high performance since things are baked down - baked NL.
