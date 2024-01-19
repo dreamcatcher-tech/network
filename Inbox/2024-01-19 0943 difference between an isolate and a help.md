@@ -32,3 +32,7 @@ Or commands could be just the same but they are loaded with a help wrapper, not 
 So, is the stuckloop a help file, or an isolate ?
 Things should be help as much as possible, since NL is easier to code.  So it could be either.
 So we choose help, since the NL interface is more forgiving, and we have to make an NL call anyway.
+
+But now running a help needs to know about the help system ?  Or is this just given in the description ?
+
+A runner would include AI capabilities, like the AI model, etc - in our system this is an API call, but as this role expands, it would include running GPU inference.  The runner is the heart of repeatability.
