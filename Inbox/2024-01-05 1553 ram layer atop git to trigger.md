@@ -34,3 +34,7 @@ If this layer was raw hardware, then storage could be aligned with the sectors o
 
 Multithreaded access, like in webworkers, will be much faster in this system since there is no need for exclusive lock, as each layer in the filesystem is independent and locked to a commit.
 So the serverworker manages the fs completely, and then each worker gets its own layer in its own scope, and only on commit or merge does it talk to the service worker.  If it does so, it can just use gits own protocol to ensure efficient comms.
+
+pure memory fs works since the fs is transient.  Git wasn't designed to be run in multiverse mode, as it was supposed to be the manager of the worlds.  So what it writes to its log and its head will likely be corrupted ?  Unless using unionfs we always portal straight thru to the single git fs.
+
+Would be awesome of this single git thing was in the origin private fs.
