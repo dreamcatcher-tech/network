@@ -12,4 +12,7 @@ If you make changes and they score better overall, then that will immediately be
 
 Can have additional rules like you can't have changed the tests without permission.
 
-Because we are making the tests runnable on chain, we should be able to make little vi
+Because we are making the tests runnable on chain, we should be able to make little visualizations that are sepcialized to our system, plus we should be able to run these tests in our own host runner.  There is no need to try fit existing frameworks like jest.
+
+We could make a little tiny form of wallaby for isolates that does coverage reporting.
+
