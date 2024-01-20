@@ -38,3 +38,12 @@ So the serverworker manages the fs completely, and then each worker gets its own
 pure memory fs works since the fs is transient.  Git wasn't designed to be run in multiverse mode, as it was supposed to be the manager of the worlds.  So what it writes to its log and its head will likely be corrupted ?  Unless using unionfs we always portal straight thru to the single git fs.
 
 Would be awesome of this single git thing was in the origin private fs.
+So all the isolated fs is memfs, since we're just going to start from the last commit if the system crashes anyway.  Then we use opfs for the .git folder.
+BUT we need to track head in only a single place, so probably the branch tracking is a function - whatever branch we're on has the right to update the head of that branch.  
+To create an isolate, you have to tell git that you are on the actual branch.
+
+Actually there should be no conflict except for the HEAD file, since everything else should only be updated by the forked branch.
+
+We can learn what changes by comparing snapshots between the two operations.
+
+Then we'd make an integration so that memfs tracked its changes, and could supply that directly to git so there was no lookup time.  Finally we would do the hashing info lazily, ahead of time, so that commits were as fast as they could possibly be.
