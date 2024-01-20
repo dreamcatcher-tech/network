@@ -8,9 +8,10 @@
 The API should look like:
 ```js
 const { result, commit } = await artifact.engageInBand(help, text)
-const { result, commit } = await artifact.engageBranch(help, text)
-const { result, commit } = await artifact.engageBranch(help, text, continuation)
+const { result, commit } = await artifact.engage(help, text)
+const { result, commit } = await artifact.engage(help, text, continuation)
 const file = await artifact.read('/hello.txt', commit)
+const file = await artifact.read('/hello.txt', 'HEAD^1')
 ```
 if continuation is supplied, it will be used to continue the previous conversation and files.
 If reading includes a commit, then it will not be the HEAD view.
