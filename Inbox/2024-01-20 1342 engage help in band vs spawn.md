@@ -19,4 +19,4 @@ So any process can read from any branch that it is permitted to.
 
 OR a help file could return a path to an isolate that can be called by the goalie itself, which would be more direct ?  Can allow large data to be moved faster since the AI doesn't have to blurt it out ?
 
-Trick of the system seems to be 
+Trick of the system seems to be making the AI pass the minimum data around, and use references to data on the filesystem, rather than them having to speak things out.  Also using data that came before instead of new data each time, so expressing change, not total.
