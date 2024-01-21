@@ -21,3 +21,5 @@ So any process can read from any branch that it is permitted to.
 OR a help file could return a path to an isolate that can be called by the goalie itself, which would be more direct ?  Can allow large data to be moved faster since the AI doesn't have to blurt it out ?
 
 Trick of the system seems to be passing lightly - passing filesystem data by reference, rather than getting the AI to write out the response manually.
+
+The AI could provide a side commentary, streaming live, that says what each command was doing, so that for complex git commands, the commentator says whats happening at each step, inviting people to ask questions about it.
