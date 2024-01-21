@@ -15,3 +15,5 @@ They will defend their servers from corruption, and we will run in a guaranteed 
 So when someone PRs, then we can guarantee we have run our code correctly, and made our AI calls correctly.
 
 They will also handle spam mitigation, since the PRs would come from their registered users.
+
+So the ghaction would run, then it would sign the build, then push this signed commit up to the new master.  Then it would run again if there were new commits in.
