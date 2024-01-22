@@ -34,6 +34,12 @@ But then IO should get treated the same, where it gets trimmed after each commit
 
 So the UI should be showing commits, and these should be easy to filter, walk, and otherwise interrogate, as this is crucial to how apps get made on artifact.  BUT maybe we don't care, if we are supplying NL apps only ?
 
-To do it with our current model, we would do some paginated walking 1 commit at a time and build up our own model in browser.  
+To do it with our current model, we would do some paginated walking 1 commit at a time and build up our own model in browser.  Then use some render components that could interpret this branching graph.  We could nest the timeline components inside the timeline to avoid using a new library for doing git graphs.
+
+So if we had the commits as objects, then we could apply a temporary filter to get the latest session file ?  We might need to do isolation tho ?
+
+But because we are only doing one branch at a time, watching the latest file for a branch should be easy ?  We would update the view of the session file, which later will be assembled, but for now is copied directly and triggers state updates when it changes.  It would be related to a branch so the subscription would only change if we switched back to that branch and started modifying it again.
+
+OR out here in the ghetto, we could just draw the branch in the timeline with some decorative icon ?
 
 The good thing about commits is that they are guaranteed not to change, so we can read them in slowly and store them for the life of artifact.
