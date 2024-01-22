@@ -21,3 +21,7 @@ This repo shall be called HAL.
 Then each other repo is a submodule in the users particular HAL branch ?
 So the CRM guys would have a private repo spliced into their HALs.
 They would need github auth to access this repo.
+
+So when we first start, we would fork the HAL repo, and start saving everything there.  
+Then we would PR it over to the main HAL repo ?
+Run some integrity checks on the repo first.
