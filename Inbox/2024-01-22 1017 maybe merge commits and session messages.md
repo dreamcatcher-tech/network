@@ -43,3 +43,10 @@ But because we are only doing one branch at a time, watching the latest file for
 OR out here in the ghetto, we could just draw the branch in the timeline with some decorative icon ?
 
 The good thing about commits is that they are guaranteed not to change, so we can read them in slowly and store them for the life of artifact.
+
+Could the UI be rendered in mermaid, then it really is just a plain text file somewhere, and can be formatted and modified like any other file in the system ?
+
+Input is really just setting what the checked out branch is, which says where the IO goes, and we might also change what the isolate invocation is, depending on some other text file.
+
+The visualizer of the git graph is not the same as the chat UI component, since the git one needs to show techncal info.  It could be used as the runner if you want to run a bot inside the stateboard.  Just use the gitgraph svg viewer maybe.  Make a large cytoscape gitgraph viewer.
+
