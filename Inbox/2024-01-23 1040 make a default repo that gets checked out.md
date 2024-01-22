@@ -17,3 +17,7 @@ Each user starts up their own branch of the HAL repo, and then a worker pushes t
 We would push only the main branch, which would include all the merges that came with it, so we don't get loads of branches that were used for processes and are still running.  Long running processes would have done a merge with the main branch, and so we can navigate them once they have finished.
 
 This repo shall be called HAL.
+
+Then each other repo is a submodule in the users particular HAL branch ?
+So the CRM guys would have a private repo spliced into their HALs.
+They would need github auth to access this repo.
