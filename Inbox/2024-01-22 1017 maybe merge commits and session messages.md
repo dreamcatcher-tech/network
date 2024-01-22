@@ -51,3 +51,5 @@ Input is really just setting what the checked out branch is, which says where th
 The visualizer of the git graph is not the same as the chat UI component, since the git one needs to show techncal info.  It could be used as the runner if you want to run a bot inside the stateboard.  Just use the gitgraph svg viewer maybe.  Make a large cytoscape gitgraph viewer.
 
 Branches can be just a ToolAction item, since they occur when a help call is made.
+
+Or, another option is to pass the tool output as a file, so that the receiving action gets some text based NL info, but also gets the tool result as well, which is inserted back into it the prompt.  Benefit here is that it is very cheap to get it to read a lot, but expensive to have it speak.
