@@ -18,3 +18,5 @@ To edit the sector is to say "edit a sector", get walked thru choosing the secto
 Combining all sectors into a single file for display should be done in the viewer component, where it is given a glob to match.  So the viewer would be chained with the reader, to do live combination.
 
 JSON file combiner would read in a glob pattern and then combine all the objects as a single array or object, depending on parameters.  This set of tools would be basic filesystem tools.  They should favour key stability too, so the files are always written out in the same order.
+
+If a filetype is json, we should be able to specify operations like renaming a key, copying a key, and other types of basic manipulation, so that we can make changes to formats where the AI says what it wants, rather than it writing the files raw, which can be subject to problems.
