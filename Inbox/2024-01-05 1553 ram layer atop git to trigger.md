@@ -49,3 +49,5 @@ We can learn what changes by comparing snapshots between the two operations.
 Then we'd make an integration so that memfs tracked its changes, and could supply that directly to git so there was no lookup time.  Finally we would do the hashing info lazily, ahead of time, so that commits were as fast as they could possibly be.
 
 Could use unionfs and store each branch as a folder on opfs, so that the branches act like a totally separate repo from each other.  They all have persistent storage, but any transient info is memfs, which is automatically reset on power failure, which is what we wanted anyway.  Merges between branches are done by a higher level process that can read both opfs folders, and does the merge using direct filesystem access, on the OPFS so it should be fast, with memfs being a read cache to help speed things up further.  Use memfs even for writes, and sync the memfs to the opfs in a background process, gradually.
+
+Must work with sharedworker - so any commit in any branch can be listened to, so that multiple sessions can be running and only listen to the commit changes they are interested in hearing about.
