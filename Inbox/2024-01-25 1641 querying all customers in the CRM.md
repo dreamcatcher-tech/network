@@ -16,3 +16,4 @@ Writing an email for each customer should involve grabbing their record, and the
 We could then use some diffing tools, or a backchecker to confirm that only the customer name was inserted, and that the customer name matched the customer record.
 
 Templates could be turned into regex, so we can confirm that a document matches the regex easily.
+
