@@ -12,3 +12,6 @@ If we used memfs and unionfs where the local filesystem was in memory, and only 
 Or, we could use memfs the whole way thru, and just reauth with github each time ?
 
 memfs alone would give us a good idea of performance troubles anyway
+
+A manual implementation of memfs would intercept all the write calls and cache them.
+Before adding to git, and in the background, it would write out to an isolated folder on the opfs.
