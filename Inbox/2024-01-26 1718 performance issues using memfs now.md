@@ -15,3 +15,5 @@ memfs alone would give us a good idea of performance troubles anyway
 
 A manual implementation of memfs would intercept all the write calls and cache them.
 Before adding to git, and in the background, it would write out to an isolated folder on the opfs.
+
+Could just cache all writes until flush is called, if we know the value is changing a lot
