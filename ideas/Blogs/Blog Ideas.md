@@ -323,3 +323,11 @@ May give users more specifically what they want, rather than relying on them con
 
 ## NL programs
 These should be easily portable to any other system of running, since they rely very little on the system that created them.  They might be coupled to the functions that are made available to them, but if these are small and simple (write file, read file, etc) then running on different LLMs or different platforms should have the same output, or one that is easily tuned.
+
+## Backup strategies for blockchains
+have a machine that only gets powered up periodically.
+distribute to every device in the org, like phones tablets and pcs.
+grandfather, father, type strategies.  Periodically we tag a commit as a backup, and make a second parent which is a squash merge of everything in the compression window.  Then next window, we do a commit pointing at this one, but we make a new one that copies this commit but sets the backup path as primary, so history fetching load goes to the backups, not the primaries.
+
+Or, if the main is not available, the backups are tried in order of decreasing detail.
+In this way we can drop much of the chatter in the chain, but still have large data available, plus if there is available capacity, we'll still store it all.
