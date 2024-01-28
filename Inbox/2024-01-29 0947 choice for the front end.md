@@ -26,3 +26,9 @@ Use deno kv as our git base store, so the git repos are instantly available, and
 Could use esm.sh to import from repos directly, so whatever is published to main is pulled in.
 
 So switch to using deno as the runtime, fresh as the delivery, and storybook as the the way to do component development.
+
+So should we run the actual chain serverside ?  Then just stream down the file changes to the client ?  When will the tests run fully serverside ?
+
+
+How to do an import of customer data in artifact ?
+If it runs server side, then the results will be more reliable, since the browser can die, and the thing continue.  Means long running tasks can be left to run, so has a better experience.
