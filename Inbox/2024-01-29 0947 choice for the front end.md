@@ -23,4 +23,6 @@ We will need a large public chain installation anyway, since we want to be trans
 
 Use deno kv as our git base store, so the git repos are instantly available, and can be globally locked.
 
-So switch to using deno as the 
+Could use esm.sh to import from repos directly, so whatever is published to main is pulled in.
+
+So switch to using deno as the runtime, fresh as the delivery, and storybook as the the way to do component development.
