@@ -17,3 +17,5 @@ Artifact functions like dispatch would be routes on the server ?
 The clients are really just watchers of artifact, not active executors.
 
 If built this way, then a desktop app simply bundles deno up inside it.
+
+Could the UI components be streamed down as files that are loaded dynamically ?  If it is packaged as being standalone, and streamed down from esm.sh, then we can use everything we are used to from it ?
