@@ -21,5 +21,3 @@ If built this way, then a desktop app simply bundles deno up inside it.
 Could the UI components be streamed down as files that are loaded dynamically ?  If it is packaged as being standalone, and streamed down from esm.sh, then we can use everything we are used to from it ?
 
 So the client is just chunks of the commits, and this is all that comes down to them.
-
-But not having 
