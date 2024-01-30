@@ -13,3 +13,6 @@ We could split it out to present as a separate deployment, that we can improve i
 
 Full pull and push to git is easiest way now.
 
+Should be able to read a path straight from the git repo without checkout, store any modifications, recognizing changes and reverting, giving instant diff detection.
+
+Then be able to rapidly walk back getting diffs out of each commit.
