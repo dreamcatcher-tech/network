@@ -9,4 +9,5 @@ We should be able to load up the customers list, and generate email lists, then 
 
 Take the xml file, break it up into chunks.  Process each one at a time, generate markdown files for each customer, along with a template.
 
-Search for current customers - this would involve walking the fs, in parallel, 
+Search for current customers - this would involve walking the fs, in parallel, interpreting them as current, and outputing the results.
+

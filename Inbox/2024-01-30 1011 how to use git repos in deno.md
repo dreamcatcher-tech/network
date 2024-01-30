@@ -45,5 +45,11 @@ Want to represent git natively on the kv store, since the hashes are keys.
 A pure kv store implementation can provide trigger abilities to watch paths and chains.
 
 Use s3 to store commit snapshots.
+
+Do we even need git, if we are just running isolates and helps, and user input ?
+
+Making a separate set of isolates that act like a persistent filesystem ?
+So reading from paths etc would be handled by this set of services.
+They could be accessed using browser or with clouds.  They could provide triggers.
 # V1
 isolate pulls the latest commit from gh.

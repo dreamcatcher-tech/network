@@ -32,3 +32,6 @@ The isolates should collaborate with user supplied isolates too, so the user can
 Describe the features of our DSL in a cleanly documented way, so that they can be managed as AI documents, as our core featureset.
 
 Routes in the front end should resolve to branches, and provide viewers that let you look inside them, whilst streaming down the commit information.
+
+How would threading be handled ? do we need to have complete commits before we can proceed to the next point, or can we have a light version, and commit everything at the end, before the isolate shuts down ?
+If the user simply input some text, we surely shouldn't need a git clone operation.
