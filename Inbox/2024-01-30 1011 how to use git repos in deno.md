@@ -34,3 +34,16 @@ Each isolate would keep a local git copy in memory, and then would push it when 
 Ultimate is a kv store in deno that holds git objects.  This could push out to ipfs for some tasks.
 
 Isolate pulls from gh, compresses, sends down to the browser to store it.  Isolate tells it when to dump it and get a new one.  The isolates share in ram their copies from one another maybe.  When the browser pulls it down, it always says what commit it is up to when it talks to the cloud.  Cloud keeps it updated.
+
+If we had a fileserver that had working copy fs and accessed everything by git commit, this would be the ideal storage layer for the isolates to interact with, like a remote passthru filesystem can be presented.
+The isolates provide compute and net, but they don't do file storage.
+The kv store is the best way to do this.
+
+If we stored by commit, and then compressed what was in there ?
+Want to represent git natively on the kv store, since the hashes are keys.
+
+A pure kv store implementation can provide trigger abilities to watch paths and chains.
+
+Use s3 to store commit snapshots.
+# V1
+isolate pulls the latest commit from gh.
