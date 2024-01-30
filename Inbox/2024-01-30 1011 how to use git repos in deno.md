@@ -115,6 +115,28 @@ This CLI should be able to show the stateboard.
 Could use ink and do a stateboard kind of properly.  Could render the terminal in the browser first, with the only input being the prompt from the user.
 
 Special files, like gpt output, could be streamed back live, so the client can piece together the file as it appears, or just make this the standard way of streaming down files to the client.  There may be some libraries for generating a diff between two versions of a json file. We can use json patch to do this, and generate a stream of patches that comes down, to avoid inefficiencies of sending the whole file each token update.
+
+The stateboard can have some serverside rendering, like query building as the user interacts, which just changes what splices get sent down.
+
+With splices, gradual loading and infinite scroll can be done, 
+Splices are designed to be fetched with query parameters.
+
+Isolates will need to give themselves an id - they are the owners of the current branch - and when they want to merge into their parents, they need to send signals to the owner of the parent (or become the parent) to make sure that merge conflicts are not created.  So they would make their commit, push to github on their branch, and then internally cause a PR to occur.  An isolate, once it is branch master, would wait for PR requests addressed to it, to know it has to fetch them.  Then ideally the PR would be in the kv store, or in some underlying store, to avoid calls out to GH.  Could use transient S3 blobs that get deleted once used.  Worst case we can pull in from GH.
+
+Splices should be streamed down, and as changes occur, SSE should update them.  So if the stateboard is showing the latest, and something changes, then they should be made aware of it.  So any query response is always left open for SSE updates.
+
+If we make sure that anything the server does could be done by a webworker in the browser, then we should be safe.  KV ops should be only for things that can only happen in cloud, like multiple isolates running on the same branch.  This can be wrapped as a lock coordinator, which is swapped out based on context.  So broadcast channel could be used in workers, or a central orchestrator, for which we use the KV since we have distribution.  
+
+CLI moves:
+must open a new session.
+then send in a prompt.
+then query for splices since the last one you had, which can be null, with a limit.
+keep the query open in case someone else updates it with something, which could be notifications or other triggers, or a peer in a shared session (permissioned by gh).
+
+Calling a prompt is like calling an isolate with some given params.
+It would be either spawn or action, and would name the prompt.  So it is just regular IO that names the isolate it wants to trigger, and then causes it to occur.
+
+The CLI is basically the whole app then, since the routes are merely calling that.  All the command line has to do, is be able to interpret the splices that come back down.  It might need to do some auth stuff.
 ## user input
 post to a url on the server, or do a commit and push that up.
 From blank:
@@ -125,6 +147,8 @@ Mid session:
 Transcription:
 Require they be logged in, post via the API, then continue the action server side.
 This means a round trip back to make a commit is bad, so the input should trigger server side commits to take place.  The users view should be just slices.
+
+anon user as in new user signup for customer portal:
 
 ## Stateboard showing a file
 This is a special kind of splice, that can be used to show the results of several splices together.
