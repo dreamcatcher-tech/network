@@ -65,9 +65,12 @@ browser could send up a commit, or it could
 
 A datastructure called a commitslice.  Represents a commit with some changes at a given path.  Browsers can subscribe to these, and they can be streamed down to the browser on request.  So to show chat history, they would request the branch, the number of commits back, and a specific path they are after, and they would get that file as it was in the various commits, along with the commit metadata.  These would not be interactive, so just render raw text.
 
+Splices also have their status, where they are transient, worktree, uncommited, hard commited, and their consensus levels too, later.  This means the UI can determine how to present these things.  The server is responsible for all the verifications, and this could be running on your own hardware.
+
 Could ask for diffs down too, rather than fulls.
 
 So the components are an isolate cloud, and a big ass low latency git server.
+The git server is in charge of authentication, the isolate cloud has a small db for coordination
 
 intergit communication still needs to be done.
 
@@ -88,8 +91,32 @@ If we don't have the commit, or our commit doesn't match the latest in the kvsto
 Store the latest pointer in the kv store, and check it is active as a background task each time it gets accessed.
 
 KV should be used to ensure jobs get done for sure when requested.
+Do watch on kv keys, so we can keep our isolate around a long time.
+
+The browser must have no git stuff, since it cannot do anything with it - its job is to cross the bridge into the cloud as quickly and lightly as possible.  What it reads out should be as light as possible too.
+
+Decide when to push back to GH sparingly - like when a large io op has occured, when io is exhausted, when the isolate timer is exhausted.  Once the current task is exhausted, or some timer has expired, or when the filesystem has quiesced ?
+
+So we make a recoverable method of getting the current working branch out.
+We do super light checkouts, as minimal as possible.
+This might be wrapped as a service at some point, so it has more control.
+We do lightweight splice fetching to whatever the client requests.
+This means the user can do some interactivity, some stateboard things, can do chat histories, but ultimately the browser is completely a viewer.
+
+We should be able to run browser side tests almost exclusively as api calls.
+
+We should be able to use a cli to interact with the system, which is backed by a gh repo.
+For unlogged in users, we can store a zipped filesystem snapshot.  We can also merge this in with user repos periodically, which means fresh isolates don't have to pull much data.
+Make a simple shell that shows chat history as simple lines on a terminal, and wraps some core commands in.
+CLI is a great model to build the system under, since it avoids pollution with react concepts.
+Start the cli, enter a prompt, stream back the splices that resulted from it.
+This CLI should be able to show the stateboard.
+
+Co
+
+Special files, like gpt output, could be streamed back live, so the client can piece together the file as it appears, or just make this the standard way of streaming down files to the client.  There may be some libraries for generating a diff between two versions of a json file. We can use json patch to do this, and generate a stream of patches that comes down, to avoid inefficiencies of sending the whole file each token update.
 ## user input
-Either post to a url on the server, or do a commit and push that up.
+post to a url on the server, or do a commit and push that up.
 From blank:
 
 Mid session:
