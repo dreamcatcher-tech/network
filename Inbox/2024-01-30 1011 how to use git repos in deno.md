@@ -67,7 +67,7 @@ A datastructure called a commitslice.  Represents a commit with some changes at 
 
 Splices also have their status, where they are transient, worktree, uncommited, hard commited, and their consensus levels too, later.  This means the UI can determine how to present these things.  The server is responsible for all the verifications, and this could be running on your own hardware.
 
-Could ask for diffs down too, rather than fulls.
+Splices in a group might refer to prior splices by way of json patches.  In fact if the whole splice model was json patch, then when you request a range of them, you always get patches.  They should also be multi file aware, so the format in a filesystem path, and a set of patches for it.  Git is really just a system for managing patches in a sequence.
 
 So the components are an isolate cloud, and a big ass low latency git server.
 The git server is in charge of authentication, the isolate cloud has a small db for coordination
@@ -112,7 +112,7 @@ CLI is a great model to build the system under, since it avoids pollution with r
 Start the cli, enter a prompt, stream back the splices that resulted from it.
 This CLI should be able to show the stateboard.
 
-Co
+Could use ink and do a stateboard kind of properly.  Could render the terminal in the browser first, with the only input being the prompt from the user.
 
 Special files, like gpt output, could be streamed back live, so the client can piece together the file as it appears, or just make this the standard way of streaming down files to the client.  There may be some libraries for generating a diff between two versions of a json file. We can use json patch to do this, and generate a stream of patches that comes down, to avoid inefficiencies of sending the whole file each token update.
 ## user input
