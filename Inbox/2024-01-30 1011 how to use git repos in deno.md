@@ -51,5 +51,13 @@ Do we even need git, if we are just running isolates and helps, and user input ?
 Making a separate set of isolates that act like a persistent filesystem ?
 So reading from paths etc would be handled by this set of services.
 They could be accessed using browser or with clouds.  They could provide triggers.
+
+If the user generates another commit, while a server side commit is in progress, the users side wins.
+Force only one browser tab to be active in the session at once time, else hard to trace.
+
+Store the commit hash and branch names of each repo in kv, and trigger based on them.
+Then store the full repo down in the browser, so that the isolate can use the browser as its filesystem.
+
+This way, access is always done using the users credentials.  For the isolate to operate, it has to retrieve info from the users browser via socketio or similar.
 # V1
 isolate pulls the latest commit from gh.
