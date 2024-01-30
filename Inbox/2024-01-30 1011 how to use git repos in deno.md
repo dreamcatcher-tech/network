@@ -86,9 +86,22 @@ So the cloud needs to keep acting as the user until all its activities are exhau
 The isolate sticks around a while, so we can rely on memfs to be relevant here.  Seems expensive to offload and then reload, so probably it sticks around.
 If we don't have the commit, or our commit doesn't match the latest in the kvstore, then we need to fetch from github.
 Store the latest pointer in the kv store, and check it is active as a background task each time it gets accessed.
+
+KV should be used to ensure jobs get done for sure when requested.
 ## user input
 Either post to a url on the server, or do a commit and push that up.
+From blank:
 
+Mid session:
+
+
+Transcription:
+Require they be logged in, post via the API, then continue the action server side.
+This means a round trip back to make a commit is bad, so the input should trigger server side commits to take place.  The users view should be just slices.
+
+## Stateboard showing a file
+This is a special kind of splice, that can be used to show the results of several splices together.
+A list of files can be a splice with multiple file paths, which may have been filtered by glob.
 
 ## starting a new session
 user can either make a commit that starts a new session, or they can send up the instruction to start a new session.
