@@ -137,6 +137,11 @@ Calling a prompt is like calling an isolate with some given params.
 It would be either spawn or action, and would name the prompt.  So it is just regular IO that names the isolate it wants to trigger, and then causes it to occur.
 
 The CLI is basically the whole app then, since the routes are merely calling that.  All the command line has to do, is be able to interpret the splices that come back down.  It might need to do some auth stuff.
+
+BroadcastChannel can be used to send snapshots of the repo in memfs around different isolates, like from a child process to a parent one.
+Might use this to find a web connection to the parent, then stream in the data we want to send.
+
+So we should test a all the maneuvres that we know we need, and test in all environments, forming a matrix of tests.
 ## user input
 post to a url on the server, or do a commit and push that up.
 From blank:
