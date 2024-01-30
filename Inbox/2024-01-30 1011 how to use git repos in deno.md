@@ -59,5 +59,42 @@ Store the commit hash and branch names of each repo in kv, and trigger based on 
 Then store the full repo down in the browser, so that the isolate can use the browser as its filesystem.
 
 This way, access is always done using the users credentials.  For the isolate to operate, it has to retrieve info from the users browser via socketio or similar.
+
+want things to keep running on the isolate side.
+browser could send up a commit, or it could 
+
+A datastructure called a commitslice.  Represents a commit with some changes at a given path.  Browsers can subscribe to these, and they can be streamed down to the browser on request.  So to show chat history, they would request the branch, the number of commits back, and a specific path they are after, and they would get that file as it was in the various commits, along with the commit metadata.  These would not be interactive, so just render raw text.
+
+Could ask for diffs down too, rather than fulls.
+
+So the components are an isolate cloud, and a big ass low latency git server.
+
+intergit communication still needs to be done.
+
+Could use the github api to request the files more directly, rather than doing a git clone.
+
+Firing up a new isolate we could pass a zip of the current repo in the request, so it doesn't have to make the request again.
+
+Long running isolates could act as the network filesystem from github, so the delay is tiny, and data is efficiently transferred.
+
+Use s3 to store a view of the FS at a given commit ?
+Use s3 to store a zip of the .git folder at the latest commit, which gets updated whenever there is a branched added to it.
+In browser this is just a blob store on the filesystem, stored by hash, with a single pointer to what latest means.
+Need to check the PAT to see if they are allowed access to that commit.
+So the cloud needs to keep acting as the user until all its activities are exhausted.
+
+The isolate sticks around a while, so we can rely on memfs to be relevant here.  Seems expensive to offload and then reload, so probably it sticks around.
+If we don't have the commit, or our commit doesn't match the latest in the kvstore, then we need to fetch from github.
+Store the latest pointer in the kv store, and check it is active as a background task each time it gets accessed.
+## user input
+Either post to a url on the server, or do a commit and push that up.
+
+
+## starting a new session
+user can either make a commit that starts a new session, or they can send up the instruction to start a new session.
+
+## keep running after the browser closes
+Isolates should be able to do a large number of requests, in a large number of branches, 
+
 # V1
 isolate pulls the latest commit from gh.
