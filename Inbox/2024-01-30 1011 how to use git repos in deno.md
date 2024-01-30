@@ -144,10 +144,25 @@ Might use this to find a web connection to the parent, then stream in the data w
 So we should test a all the maneuvres that we know we need, and test in all environments, forming a matrix of tests.
 
 Artifact should be a module, it should have a client, for dealing with splices, and it should have pluggable backends, like the deno deploy one, local version, and in browser version.  Sometimes they should cooperate, like when the client is running lightly, it would have a service worker that would be syncing down ready to take over if the net goes down.
-## user input
-post to a url on the server, or do a commit and push that up.
-From blank:
 
+/post needs to take in a branch id as a parameter.  If we got routed wrong, need to send the message to the isolate in charge of that branch.  Use broadcast channel and await an ack based on a uuid, or use kvstore.
+## process operations
+InBand:
+- current isolate
+Spawn:
+
+
+## user input
+post the prompt text as a form submission on the server.
+
+From blank:
+ - Should have started a new session already
+ - Pull in the repo or use the memory OR send a message to the thread lock holder ?
+ - the prompt is dispatched to the current session branch by way of a new commit
+ - this will trigger the IO watcher to start acting
+ - this will fire up the isolate the io asked for
+ - if it is a new
+ - 
 Mid session:
 
 
