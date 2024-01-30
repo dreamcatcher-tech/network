@@ -142,6 +142,8 @@ BroadcastChannel can be used to send snapshots of the repo in memfs around diffe
 Might use this to find a web connection to the parent, then stream in the data we want to send.
 
 So we should test a all the maneuvres that we know we need, and test in all environments, forming a matrix of tests.
+
+Artifact should be a module, it should have a client, for dealing with splices, and it should have pluggable backends, like the deno deploy one, local version, and in browser version.  Sometimes they should cooperate, like when the client is running lightly, it would have a service worker that would be syncing down ready to take over if the net goes down.
 ## user input
 post to a url on the server, or do a commit and push that up.
 From blank:
