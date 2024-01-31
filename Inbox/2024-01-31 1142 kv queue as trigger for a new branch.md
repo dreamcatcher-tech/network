@@ -28,3 +28,7 @@ User would send in a message telling some IO to execute.
 If you wanted splicing, simplest way is to just write to the kv with each transient splice until completed.
 BroadcastChannel can be used to stream out transent splices.
 Broadcast might be lost, but that is fine, as it will recover when the final splice is committed on the kv store.
+
+Otherwise each enqueued request could include a uuid for the streaming responses to it, which means that it can be watched to get updates to the key as it streams the latest patches in.
+
+The worker would listen to the key that told it to start streaming or not, like a props value against its invocation base.
