@@ -331,3 +331,9 @@ grandfather, father, type strategies.  Periodically we tag a commit as a backup,
 
 Or, if the main is not available, the backups are tried in order of decreasing detail.
 In this way we can drop much of the chatter in the chain, but still have large data available, plus if there is available capacity, we'll still store it all.
+
+## Warfabric model
+This represents the ultimate for a blockchain system.  We should be able to demonstrate how our current concepts can, with a few extra architectural pieces, be used in a war footing.  They should also integrate easily with the civilian systems too.
+
+## Repeatable computing
+This is the key to reliable.  Consensus need not be realtime.
