@@ -22,4 +22,5 @@ Could the UI components be streamed down as files that are loaded dynamically ? 
 
 So the client is just chunks of the commits, and this is all that comes down to them.
 
-But not having 
+But not having mui in the front blows work that was done and is still useful.
+So how about ship the whole mui ui separately as pure JS ?
