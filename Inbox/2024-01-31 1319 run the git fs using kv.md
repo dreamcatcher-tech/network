@@ -15,4 +15,4 @@ Seems best if we take a snap of github, and then
 It should be a dedicated action to trigger a pull from github.
 Ideally, webhooks would trigger a pull.
 
-Quick n dirty is to take whole snapshots of memfs, and use that as canon.
+Quick n dirty is to take whole snapshots of memfs, and use that as canon.  Just dump the whole thing in kv stores using data pack methods.
