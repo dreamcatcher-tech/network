@@ -22,6 +22,7 @@ Streaming responses should auto recover, since the isolate might die, so you hav
 
 Write permissions and signing could be handled inside the repos, with an access.md file
 
+listen for key changes can be used to know when something is done or not ? like when a branch has closed ?  But how reliable is listen ? will it always stick around, or will it get reinvoked if there is an error ?  What about broadcastchannel ?  If we use queue for everything, this surely must be reliable.
 ## Streaming splices
 User would send in a message telling some IO to execute.
 
