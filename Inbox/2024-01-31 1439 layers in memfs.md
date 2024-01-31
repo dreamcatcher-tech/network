@@ -13,4 +13,4 @@ These would just be layers, and the layer itself would get persisted to the kv s
 
 Then the kv itself can be just layers, where the parent makes a choice on when to compact the layers each time there is a merge.
 
-Since we never need to go backwards, we can always do fresh checkouts with a relative depth after we have synced with github, so we keep our live data small.
+Since we never need to go backwards, we can always do fresh checkouts with a relative depth after we have synced with github, so we keep our live data small. 
