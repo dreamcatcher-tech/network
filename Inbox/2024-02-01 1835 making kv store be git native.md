@@ -17,3 +17,6 @@ So the FS abstraction that writes to the store is the best way to handle git.
 We should key them by their hashes, so common content is deduplicated.  We would count the duplication counts, so we could know when to delete something.
 
 Archives move infrequently accessed things out to s3 snapshots, which are mounted in memory.
+
+If we implement the IDB interface of lightningfs, this might be all that is required ?
+This would be a stopgap until OPFS is implemented.  Or something else like NFS with snapshots.

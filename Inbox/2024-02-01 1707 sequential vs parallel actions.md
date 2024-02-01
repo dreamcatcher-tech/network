@@ -28,3 +28,5 @@ The programmer should handle these interactions, and setting the queue to be sin
 No, if the program desires threads, it should branch.  So each process does one action at a time until completion.  To move on to the next one means it has branched.
 
 Is there any point in commiting when, say 50% of the actions have been processed, to avoid having big choking pauses ?  Could be like doing a yield - this should be controlled by the programmer, not the system, else it is another form of indeterminacy.
+
+So the rule is, do all the spawning actions immediately, but do the inband actions one at a time, with a commit each time that signals the completion of one action and the start of the next.
