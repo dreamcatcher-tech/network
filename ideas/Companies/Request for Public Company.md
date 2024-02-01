@@ -14,3 +14,5 @@ As a registered issuer this company could engage in the promotion of its stock w
 Because a packet switched network must be resilient to failures of many nodes, the public company cannot hold any critical-to-function position in the network.  It must be demonstratable and believable that the network would survive without the public company, and that even if that company turned hostile, the network would continue on unihibited, with the only loss being that of capacity.
 
 Everywhere we go where we promote our system to attract users, we are in the same breath promoting the public company, for people who like the idea but don't know how to make money from within it, so they just want to give us their money.
+
+Being able to now generate promotional videos and other content using AI means our operating costs should be tiny.  No more huge bills for content creation.  Simple accounting costs.  Every service we need, we find someone willing to operate in an AI amplified way, and we launch a business that applies their skill using computers, saving us money, earning us and them money, growing our footprint.
