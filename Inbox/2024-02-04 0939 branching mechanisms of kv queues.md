@@ -15,10 +15,17 @@ Rules:
 - must have write lock on a branch to begin running the processes for it
 - an interupt action has the ability to halt the current in band action
 - a parent has the ability to enumerate all its current children
+- It is better to run a new function that try pool inside an existing one, since the isolate might time out.
+- Try to align commits with queue actions
 
 Branches can have snapshots of the git fs, so the write lock to access them is only for that specific branch, and not for anything more.
 Killing all children branches should be easy too.
 An action to interupt the current branch should be possible - while you have threadlock, you should always listen for incoming actions.
+
+## Action in band
+This sends of an action into the queue, which will execute the current action, make a commit, and then return.  It is tempting to want to run the action if we are the one that commited the action into the queue.  What if we need to wait for responses of other items ?
+If we are the first isolate, then we might do only the commit, and then dispatch the queue worker actions ?
+
 ## Pooling of multiple dispatches from clients
 If a client dispatches many requests, they should have some kind of pooling.
 Dispatch into the kv store, and then dispatch a process action to trigger induction ?
@@ -29,7 +36,7 @@ A single action on the queue, this fires up an isolate.  It is given the commit 
 
 Spawn will write a response to the parent action, with the branch name, so it can be walked or interacted with.  Spawn carries with it the name of the parent branch.
 
-Merging back to parent, it will 
+Merging back to parent, it will send a message `MERGE` with its branchid.  This will be processed by the parent thread.  It will pull in the git snapshot from the branchId file, load this up,
 ## Spawn amp
 If spawning is an action on the queue, then if we wanted to spawn many actions, this could delay the isolate for a while.  Instead we could break up the spawn actions into pieces, where each one handles a segment of the spawns that are needed.  These in turn can break up into pieces, until such point as there is a manageable amount for a single call to do, so in this way the spawn
 
