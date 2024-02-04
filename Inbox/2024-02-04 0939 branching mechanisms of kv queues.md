@@ -30,6 +30,8 @@ So there is no more subscribing to commits - commits trigger queue actions, whic
 Commit should signal surrender of the lock.
 
 Artifact is always running in the context of some memfs snapshot, and some current branch.  
+
+Snapshots should be keyed by their branch, so we can instantly load up all the snapshots that came before it, since each one represents a new layer that goes atop.  We start lazy, and don't actually read anything, but upon first read, we load up all the kv layers to see if the file requested is present.  Writing doesn't need to do any lookup, only reading needs lookup.  We could be more gradual, but ideally, when the full git fs goes kv native, this won't matter.  Tests need to include maximum branch depth.
 ## Merge pool
 All pooling should have keys of the form `[branchName,poolName]` and value `payload`. So merging would first write to the kv store, then fire off an action to merge.  When the merge was received, the receiver would try to get the branch lock, and then would read in everything that needed merging in, processing on at a time.  Once it had enough and was in danger of running out of cpu time, it would perform the complete merge, do the commit, erase the todolist, and release the write lock.  Any undone work would then attempt to get the lock, pull in as much pooled work as it can afford, and keep repeating, until the queue was drained.
 
