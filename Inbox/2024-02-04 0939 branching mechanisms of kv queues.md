@@ -29,7 +29,7 @@ So there is no more subscribing to commits - commits trigger queue actions, whic
 
 Commit should signal surrender of the lock.
 
-
+Artifact is always running in the context of some memfs snapshot, and some current branch.  
 ## Merge pool
 All pooling should have keys of the form `[branchName,poolName]` and value `payload`. So merging would first write to the kv store, then fire off an action to merge.  When the merge was received, the receiver would try to get the branch lock, and then would read in everything that needed merging in, processing on at a time.  Once it had enough and was in danger of running out of cpu time, it would perform the complete merge, do the commit, erase the todolist, and release the write lock.  Any undone work would then attempt to get the lock, pull in as much pooled work as it can afford, and keep repeating, until the queue was drained.
 
