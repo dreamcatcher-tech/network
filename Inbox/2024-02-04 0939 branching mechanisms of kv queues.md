@@ -18,6 +18,8 @@ Rules:
 - writes to the git repo are per branch, and so a spawn need only read the parent branch commit, rather than the global root git repo
 - every action must tolerate duplicates
 - a new branch has a blank io file except for the origin action that spawned it
+
+Goals:
 - duplicate detection should be the same process as normal executing - that is, it should be sniffed, rather than a separate duplicate detection model
 - It is better to run a new function that try pool inside an existing one, since the isolate might time out.
 - Try to align commits with queue actions
