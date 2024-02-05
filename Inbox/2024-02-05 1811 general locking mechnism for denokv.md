@@ -19,3 +19,5 @@ The ability to watch a lock file, and exit if some condition occurs part way thr
 If we can design this with the help of AI, then we should be able to generate rapidly some TLA+ model checking to ensure that our system is correct, provided that the kv guarantees are correct.
 
 We should also provide some recovery if the kv is not working as expected.
+
+Would use abort controllers, so you could cancel your quest for the lock if the thing you wanted done was done by someone else.  Once you get the lock, you should do as much useful work in one batch as possible, which can free up a lot of watchers.
