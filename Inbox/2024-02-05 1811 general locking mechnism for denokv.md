@@ -13,3 +13,9 @@ Configure some timeout when the lock will be forcibly taken.
 
 
 Optionally can allow a line to form, where those who want it next can be prioritized, rather than a random FFA.
+
+The ability to watch a lock file, and exit if some condition occurs part way thru
+
+If we can design this with the help of AI, then we should be able to generate rapidly some TLA+ model checking to ensure that our system is correct, provided that the kv guarantees are correct.
+
+We should also provide some recovery if the kv is not working as expected.
