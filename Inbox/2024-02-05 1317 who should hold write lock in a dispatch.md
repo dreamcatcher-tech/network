@@ -26,7 +26,8 @@ This should use the exact same functionality as external actions coming in, as o
 - HEAD - the branch head is where the current snapshot is at
 
 POOL items are in danger of being lost on system reset, as they haven't made it into chainland yet.
-Order of invocation matters, and so TIP and THREAD ensure that branches are only created once, and in order of delivery.
+Order of invocation matters, and so TIP and TAIL ensure that branches are only created once, and in order of delivery.
+These would be forbidden branch names.
 ## Ideas:
 The sequenceId could be put into the db and atomic ops used to synchronize on these before they get entered into the git repos ?
 
