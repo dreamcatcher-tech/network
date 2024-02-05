@@ -28,6 +28,8 @@ This should use the exact same functionality as external actions coming in, as o
 POOL items are in danger of being lost on system reset, as they haven't made it into chainland yet.
 Order of invocation matters, and so TIP and TAIL ensure that branches are only created once, and in order of delivery.
 These would be forbidden branch names.
+
+These items only matter for the computing context they appear in, and a fresh start on a new context would simply recompute them the same way.
 ## Ideas:
 The sequenceId could be put into the db and atomic ops used to synchronize on these before they get entered into the git repos ?
 
