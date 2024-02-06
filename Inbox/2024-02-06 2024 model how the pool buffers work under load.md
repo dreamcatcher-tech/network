@@ -41,3 +41,5 @@ Model db writes and reads, and be able to O notation style delay calculations to
 Set of rules and equivalences, like how dispatch into a cloud chain is the same as dispatch to a local chain and then use chain joining to get it up there - so might as well just go straight to cloud ?  Or store a backup locally, where local takes over if there is a network issue.
 
 We could then list the top level goals of the project and the tech required to achieve these points using atoms of reason.
+
+In distributed systems, a lot is implied, so we should document that reasoning, to avoid making a mistake, like relying on a key being null as meaning something in our system.
