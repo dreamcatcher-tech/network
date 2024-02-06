@@ -35,3 +35,5 @@ Then interface design could be done, and code could be built in tiny little piec
 Should be able to calculate ratios for relationships between different parameters of the machine performance, like queue delay average, delay variability, message size, etc.
 
 TLA+ would give the mechanical correctness, and the reasoning model would give performance enhancements.  Then as people learn more about the modelling, we can run their knowledge over everything in the background.
+
+Model db writes and reads, and be able to O notation style delay calculations to compare different solutions to the same problem.  Also show solutions with different reliability scores, when different components of a system fault, like network or storage.

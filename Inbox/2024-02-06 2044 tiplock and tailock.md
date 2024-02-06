@@ -19,3 +19,20 @@ If each linear action was a dedicated worker, that waited its turn, then the iso
 
 Commit then might as well do the job of sending ALL the actions, linear and spawn.
 
+For each given tail completion, I need to get the next tail in the queue to be able to move the tail on to it.
+
+The cost of checking out of git should be considered free, since for a specific filepath, we should be able to tune it right down to almost a single kv read.
+
+? how to know what is the next tail item ?
+At the start of each one, we would look up what the last one was, and we would watch for its value coming up in the taillock, and when it was marked as done, we would take over the taillock.
+
+Or each one calls the next one, and the last one in the commit passes it on ?
+
+Actions can be put in kv and sorted by their sequence numbers and commits.
+Each one watches the key infront of it for when its deleted, then it executes.
+Can use commit timestamps, since these are guaranteed to be monotonic.
+
+So after a commit is done, we write the tail for every sequential action followed by enqueing an action to run it.
+It tries to find the key less than it, and if there is one, it listens to it.  As soon as that one goes null, it knows it can begin its action.
+
+Tip needs no such coordination with other processes, so it can begin immediately.
