@@ -1,0 +1,22 @@
+
+>[!tip] Created: [2024-02-06 Tue 20:24]
+
+>[!question] Targets: 
+
+>[!danger] Depends: 
+
+Should be able to make an NL model that shows how the pool would behave under extreme load.
+
+Can redesign different means of processing, like the commiter always doing all the processing, or at least all the parallel processing, so the tip is always at HEAD.
+
+Maybe the worker threads can be assembled from parts, so we can play around with different configs ?
+
+Perhaps the NL could compose different arrangements and see how they play out under load ?
+
+So the model would describe what functions had to happen, and would list what different arrangements could be made, and would have a set of test functions it could use to exercise the system.
+
+Other rules can be exposed, like how there's no point running the commit rate faster than the tip, since what is gained ?  so head and tip might as well be the same thing.
+
+But if each task is as light as possible, then surety is highest.
+
+The rules and relationships can be discovered cleaner using these modelling methods.
