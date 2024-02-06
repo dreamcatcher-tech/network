@@ -26,3 +26,10 @@ The rules and relationships can be discovered cleaner using these modelling meth
 
 Also recovery processes - if we had a lot of waiting processes, which cost nothing to wait, would we be able to make them all able to do recovery in the event of a failed processing ?
 
+
+We should list out all the jobs that need to be done, and how some paths of job doing require other jobs, and some don't need anything.
+If these were analyzed atomically, and kept updated by AI, then it might be easier to envisage the whole codebase, and we would design things differently ?  Start running simulations early to figure out what is worth optimizing ?
+
+Then interface design could be done, and code could be built in tiny little pieces, possibly by AI.
+
+Should be able to calculate ratios for relationships between different parameters of the machine performance, like queue delay average, delay variability, message size, etc.

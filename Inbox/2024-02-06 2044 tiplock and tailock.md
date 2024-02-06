@@ -18,3 +18,4 @@ BUT if we did side effects, we don't know how those acted either, so it is best 
 If each linear action was a dedicated worker, that waited its turn, then the isolate gets max thread time.
 
 Commit then might as well do the job of sending ALL the actions, linear and spawn.
+
