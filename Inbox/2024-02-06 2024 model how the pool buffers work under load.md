@@ -33,3 +33,5 @@ If these were analyzed atomically, and kept updated by AI, then it might be easi
 Then interface design could be done, and code could be built in tiny little pieces, possibly by AI.
 
 Should be able to calculate ratios for relationships between different parameters of the machine performance, like queue delay average, delay variability, message size, etc.
+
+TLA+ would give the mechanical correctness, and the reasoning model would give performance enhancements.  Then as people learn more about the modelling, we can run their knowledge over everything in the background.
