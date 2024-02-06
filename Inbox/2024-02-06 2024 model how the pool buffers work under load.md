@@ -37,3 +37,7 @@ Should be able to calculate ratios for relationships between different parameter
 TLA+ would give the mechanical correctness, and the reasoning model would give performance enhancements.  Then as people learn more about the modelling, we can run their knowledge over everything in the background.
 
 Model db writes and reads, and be able to O notation style delay calculations to compare different solutions to the same problem.  Also show solutions with different reliability scores, when different components of a system fault, like network or storage.
+
+Set of rules and equivalences, like how dispatch into a cloud chain is the same as dispatch to a local chain and then use chain joining to get it up there - so might as well just go straight to cloud ?  Or store a backup locally, where local takes over if there is a network issue.
+
+We could then list the top level goals of the project and the tech required to achieve these points using atoms of reason.
