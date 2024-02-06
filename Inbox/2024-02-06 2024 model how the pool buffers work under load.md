@@ -17,6 +17,12 @@ So the model would describe what functions had to happen, and would list what di
 
 Other rules can be exposed, like how there's no point running the commit rate faster than the tip, since what is gained ?  so head and tip might as well be the same thing.
 
-But if each task is as light as possible, then surety is highest.
+But if each task is as light as possible, then surety is highest.  Also the recovery is better, it seems ?
+Ultimately we want tasks that always idempotent - they set out to do something, and if they realize along the way that it has been done by someone else, the gracefully end.
+
+Possibly using atomics means this could be done more rapidly, but with a higher chance of atomic tears.
 
 The rules and relationships can be discovered cleaner using these modelling methods.
+
+Also recovery processes - if we had a lot of waiting processes, which cost nothing to wait, would we be able to make them all able to do recovery in the event of a failed processing ?
+
