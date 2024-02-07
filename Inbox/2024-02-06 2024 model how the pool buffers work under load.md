@@ -47,3 +47,5 @@ In distributed systems, a lot is implied, so we should document that reasoning, 
 We can talk about the guarantees of the system, like sequential actions never resolving out of order, so we can show how the claims of the system pass down thru different capabilities, and where the fidelity is lost, such that lower level claims don't make it up to the top for whatever reason.  The goal should always be the strongest simplest claims should make it all the way thru the system.
 
 Claims can link to source code that shows the claim being exercised.
+
+These can be merged with issues and desires as the system gets built, like wishing that we could remove a nonce from an action, and why.
