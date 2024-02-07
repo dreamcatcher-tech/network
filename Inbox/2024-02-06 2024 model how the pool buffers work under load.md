@@ -43,3 +43,7 @@ Set of rules and equivalences, like how dispatch into a cloud chain is the same 
 We could then list the top level goals of the project and the tech required to achieve these points using atoms of reason.
 
 In distributed systems, a lot is implied, so we should document that reasoning, to avoid making a mistake, like relying on a key being null as meaning something in our system.
+
+We can talk about the guarantees of the system, like sequential actions never resolving out of order, so we can show how the claims of the system pass down thru different capabilities, and where the fidelity is lost, such that lower level claims don't make it up to the top for whatever reason.  The goal should always be the strongest simplest claims should make it all the way thru the system.
+
+Claims can link to source code that shows the claim being exercised.
