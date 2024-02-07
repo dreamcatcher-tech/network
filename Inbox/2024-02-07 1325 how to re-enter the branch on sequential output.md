@@ -18,3 +18,4 @@ We could take actions in during execution, so long as the fs of the running task
 OR we could rely on `.io.json` being not allowed to be updated by anyone to let us do a fast forward merge when the action comes back.
 
 So when the action returns, there could have been many commits with new IOs, but nothing would have altered the fs that we started the action with.
+
