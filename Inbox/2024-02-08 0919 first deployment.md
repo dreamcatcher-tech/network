@@ -34,6 +34,7 @@ Pool should probably be a broadcast channel where whomever has the headlock trie
 If you have the headlock, stick around until another pool message is received, since that might be your chance to keep working without burning the lock write again.
 
 Tailkey should be done by using enqueue so that each action enqueues the next one.
+Or, per commit, execute them in an array of all the inputs for that commit.  Isolate running could be done by a REST call to another part of the system.
 ## Possibilities
 Make a broadcast channel that is all about a particular branch, then leave it open - use this to coordinate lock contention.
 

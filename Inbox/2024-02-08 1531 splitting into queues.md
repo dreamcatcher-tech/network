@@ -12,5 +12,7 @@ In the front end, we would want to get the api by RPC, and then create functions
 
 Github operations seem to be separate again.
 
+So we need to move everything to be action based, and then how those actions get in the queue.
 
+There is an element that is action construction, which can be done by rpc.
 
