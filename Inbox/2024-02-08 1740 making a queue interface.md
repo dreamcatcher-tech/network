@@ -26,3 +26,5 @@ The queue listener just uses the same isolate tools to create the function we wa
 BUT these actions have side effects, since they change the DB ?  No matter, the side effect results are recorded in the fs layer of the device.
 
 To run artifact on artifact, which might be useful for testing, we would simply change what the dispatch function did, and make it use interchain comms.
+
+So all the other chains it runs should be branches off this root chain, which is the infrastructure repo.  This is the boundary of the system.  If we made it a normal git repo, we could trace down what actions happened in it.  But this would provide heavy contention, so it might be a virtualized chain, which never actually does a headlock or anything, unless needed for testing.
