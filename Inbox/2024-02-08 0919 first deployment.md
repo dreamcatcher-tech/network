@@ -8,7 +8,8 @@
 Watching keys is slow.
 Broadcast channel is fast but doubtful reliability.
 Queues are fast and close to the db.
-
+Watching keys might only be slow due to db RTT
+Writes are $++
 ## Remedies
 All ops that use the db need to be done via a queue to get close to the DB.
 Use atomics with retry to get the lock on the head.
@@ -23,8 +24,16 @@ Little benchmarks on the raw performance of deno deploy kv.
 - time to commit to the db
 - watch trigger time
 - watch trigger time as a function of write latency
+- kv read and write count for a single dispatch
+- rw counts as the concurrent value goes up, like 1 action vs 1000 actions
 
 Make a broadcast channel for each branch that announces outcomes each time there is a commit.  The channels are closed when db is stopped.
+
+Pool should probably be a broadcast channel where whomever has the headlock tries to process everything it heard on the channel.  It just keeps broadcasting periodically and trying to get lock until someone says it got included.
+
+If you have the headlock, stick around until another pool message is received, since that might be your chance to keep working without burning the lock write again.
+
+Tailkey should be done by using enqueue so that each action enqueues the next one.
 ## Possibilities
 Make a broadcast channel that is all about a particular branch, then leave it open - use this to coordinate lock contention.
 
