@@ -18,3 +18,11 @@ Not inside, but as a branch - so the data isn't happening inside a given chain, 
 It can derive fs layers from its own one, and it doesn't care how those layers got there.
 
 So the actions would be from the API that artifact would give us, which means the whole deployment could be presented internally like just another chain ?  The isolate, instead of being code, is a remote system.
+
+Writing artifact as an isolate.
+Getting actions out just uses a different dispatcher for the actions, namely the kv queue.
+The queue listener just uses the same isolate tools to create the function we want, and calls it, with the benefits of being in a queue.
+
+BUT these actions have side effects, since they change the DB ?  No matter, the side effect results are recorded in the fs layer of the device.
+
+To run artifact on artifact, which might be useful for testing, we would simply change what the dispatch function did, and make it use interchain comms.
