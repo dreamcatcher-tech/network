@@ -21,6 +21,8 @@ Priors should not use watch - triggering the next action should be with a queue 
 Little benchmarks on the raw performance of deno deploy kv.  
 - time to do a single queue round trip
 - time to commit to the db
+
+Make a broadcast channel for each branch that announces outcomes each time there is a commit.  The channels are closed when db is stopped.
 ## Possibilities
 Make a broadcast channel that is all about a particular branch, then leave it open - use this to coordinate lock contention.
 
