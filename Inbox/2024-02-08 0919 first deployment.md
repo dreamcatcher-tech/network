@@ -17,6 +17,10 @@ Output updates should send a message back so the sender can close the channel.
 Output should subscribe to the broadcast channel of the branch, and then filter messages it doesn't need, then disconnect.
 
 Priors should not use watch - triggering the next action should be with a queue action.  The current action should actively trigger the next action to start.  Unless we want to use poling on the prior key until it is available, which might be faster.
+
+Little benchmarks on the raw performance of deno deploy kv.  
+- time to do a single queue round trip
+- time to commit to the db
 ## Possibilities
 Make a broadcast channel that is all about a particular branch, then leave it open - use this to coordinate lock contention.
 
@@ -31,3 +35,6 @@ Output could just poll for a key that signals done.  Most reliable, probably fas
 Eg: if the output hasn't been found using polling with backoff in the first 5 seconds, transition to watching.
 
 If the nonce originated off system, then that system can re-request an update, which would start by looking for the commit that included our dispatch, walking backwards, returning the output if it finds it, or pending, or repooling it if not processed yet.
+
+## Future
+Something like amazon xray that traces the queue and produces traces of the queues performance that we can analyze to get gantt charts of dependencies and flows.
