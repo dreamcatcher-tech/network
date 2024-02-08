@@ -50,5 +50,9 @@ Eg: if the output hasn't been found using polling with backoff in the first 5 se
 
 If the nonce originated off system, then that system can re-request an update, which would start by looking for the commit that included our dispatch, walking backwards, returning the output if it finds it, or pending, or repooling it if not processed yet.
 
+Outcomes could be handled using splice subscription, so there are hooks and subscriptions that are handled, and outcomes are just another way to use that underlying feature.  Subscriptions to a file path are essential, and so subscribing to `.io.json` amounts to the same thing.  The outputs are given here, so we can just use those.
+
+A subscription would be registered in the db, and then listened to using the broadcast channel.  Each time a commit occured, and subscriptions would be read and the messages  passed out to the appropriate channels.  While a file is being written to, we would be broadcasting out to any watchers with this splice type.
 ## Future
 Something like amazon xray that traces the queue and produces traces of the queues performance that we can analyze to get gantt charts of dependencies and flows.
+
