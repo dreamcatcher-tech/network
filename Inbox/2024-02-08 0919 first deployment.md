@@ -12,6 +12,9 @@ Watching keys might only be slow due to db RTT
 Writes are $++
 BroadcastChannels clog if make too many, so one per isolate, or pid seems better.
 ## Remedies
+
+Return back the versionstamp and key that the dispatch entered the db with, then can use a combination of announce and also key polling then watching to know when this has been processed.  Or, generate a ulid that is passed with the item.  This then is written as the pool, and passed back to the enqueuer to watch for.  This is more reliable than broadcastchannel.
+
 All ops that use the db need to be done via a queue to get close to the DB.
 Use atomics with retry to get the lock on the head.
 Output updates should send a message back so the sender can close the channel.
