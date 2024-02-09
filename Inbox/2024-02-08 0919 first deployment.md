@@ -15,6 +15,8 @@ BroadcastChannels clog if make too many, so one per isolate, or pid seems better
 
 Return back the versionstamp and key that the dispatch entered the db with, then can use a combination of announce and also key polling then watching to know when this has been processed.  Or, generate a ulid that is passed with the item.  This then is written as the pool, and passed back to the enqueuer to watch for.  This is more reliable than broadcastchannel.
 
+Outcome watching should be done by watching keys that signal new commits, and says what the sequence number is for the outcomes and inputs.  This lets us know what the outcome was without reading the whole git repo.  Or, we make the git repo easy to read the io patch from, so the commit includes the io patch as separate.  This is good since reliable from the start, and can be sped up when we make kvgit.
+
 All ops that use the db need to be done via a queue to get close to the DB.
 Use atomics with retry to get the lock on the head.
 Output updates should send a message back so the sender can close the channel.
