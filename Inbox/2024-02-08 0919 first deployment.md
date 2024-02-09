@@ -10,6 +10,7 @@ Broadcast channel is fast but doubtful reliability.
 Queues are fast and close to the db.
 Watching keys might only be slow due to db RTT
 Writes are $++
+BroadcastChannels clog if make too many, so one per isolate, or pid seems better.
 ## Remedies
 All ops that use the db need to be done via a queue to get close to the DB.
 Use atomics with retry to get the lock on the head.
