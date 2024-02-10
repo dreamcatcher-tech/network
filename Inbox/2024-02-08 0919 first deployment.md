@@ -41,6 +41,17 @@ If you have the headlock, stick around until another pool message is received, s
 
 Tailkey should be done by using enqueue so that each action enqueues the next one.
 Or, per commit, execute them in an array of all the inputs for that commit.  Isolate running could be done by a REST call to another part of the system.
+
+## Locking
+watch via kv store means we can stop waiting for announcement
+as soon as the dispatch action returns, we can start watching kv
+or, we could watch kv right from the dispatch
+pool implies we want an outcome
+if commits broadcast the output sequences in each commit,
+then watches know to go get the commit
+commits are a reasonable thing to broadcast
+or the pool item could be written to with lifecycle events
+
 ## Possibilities
 Make a broadcast channel that is all about a particular branch, then leave it open - use this to coordinate lock contention.
 
