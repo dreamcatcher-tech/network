@@ -8,7 +8,7 @@
 Especially loopback.
 
 This would be something in the api that has a system level hook into the pool.
-Inside the cradle, then calls to this dispatcher would only 
+Inside the cradle, then calls to this dispatcher would go straight back in to artifact, which means they would get routed once inside artifact.
 
 Unless incoming dispatches for any chain when via the api hook anyway ?
 Dispatch into the cradle with an arbitrary PID would do what ?
