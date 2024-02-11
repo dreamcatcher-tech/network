@@ -31,3 +31,6 @@ Api should collect the actions and then the executor would decide what to do wit
 
 Artifact should never talk to other chains directly ?
 But what about getting other chains to talk directly to it ?
+
+Problem is that a dispatch action is multiple types, but the qmessage type is much simpler.
+So we could convert the dispatch action into function calls that are matched in the artifact isolate ?
