@@ -11,6 +11,7 @@ Queues are fast and close to the db.
 Watching keys might only be slow due to db RTT
 Writes are $++
 BroadcastChannels clog if make too many, so one per isolate, or pid seems better.
+Might have been that watching a key with a null value is slow to get that first null val
 ## Remedies
 
 Return back the versionstamp and key that the dispatch entered the db with, then can use a combination of announce and also key polling then watching to know when this has been processed.  Or, generate a ulid that is passed with the item.  This then is written as the pool, and passed back to the enqueuer to watch for.  This is more reliable than broadcastchannel.
