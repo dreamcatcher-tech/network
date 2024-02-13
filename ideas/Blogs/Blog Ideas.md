@@ -342,3 +342,6 @@ This is the key to reliable.  Consensus need not be realtime.
 (from SMax)
 Fair is a attribution where if you don't know who you are in the attribution table, you would be ok with it
 All of game theory relies on the actors knowing who they are, and being permanently the same player.  AI can run without knowing who it is, which means it can act in a way that supposes it could be anyone on the board, and so what would be the best move to make then ?
+
+## Infection of smart equity
+In an ambient attribution system, even tho a stockmarket company could be formed, if that company behaved badly, and stripped founders of their share, then the smart attribution system would adjust accordingly, so the traditional controls of capital do not work, since the share value is slaved to ambient attribution.
