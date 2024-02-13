@@ -11,3 +11,6 @@ So we can talk about how the features a client is asking for are related to a pa
 The reasoning and priority of these pieces would be continually juggled.
 
 Clients with problems would be invited to fund or work on these different parts.
+
+When pieces get completed, watchers are updated.
+When 

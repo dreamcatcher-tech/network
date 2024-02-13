@@ -11,6 +11,16 @@ If it could be put into blocks with defined interfaces, and each interface was e
 
 - commit a single action
 - commit multiple actions
+- using the .io.json file directly, short circuiting git
+- call the raw isolate functions directly in tests, with a thin queue listener
+- provide a test cradle that has no queue
 
 Turning the queue off
 Ensuring that promises are never detached.
+
+And then where are we trying to get to ?
+- streaming chat session with continuity
+- splice streaming to watch what is happening
+- hono api server
+- react page that can browse the outputs
+- github login
