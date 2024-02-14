@@ -13,4 +13,5 @@ The reasoning and priority of these pieces would be continually juggled.
 Clients with problems would be invited to fund or work on these different parts.
 
 When pieces get completed, watchers are updated.
-When 
+
+When programmers experience a surprise in our API, they can easily come have a chat about it.  We should be able to process issues and ideas that are not discrete, and are a little more fuzzy than what can fit in a single ticket.  Makes it easy to say things that affect a broad range of defined functionality.
