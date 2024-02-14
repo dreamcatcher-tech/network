@@ -62,3 +62,7 @@ We would have a working piece of software and so when we are introduced to compa
 The pubco would handle the contractual obligations, process payments and turn them into NFT escrows.  We would be a peer on the network, not a controller of the network.  We would maintain the realworld relationships and process the funds.  We would perform dilligence on the contractors we pay and the customers we sell to.
 
 There is still no system that offers the features we want, of repeatable computation at scale.  No blockchains offer any kind of computed fairness system.  No microtransaction system can handle royalties for every contribution to some knowledge work.
+
+## Acquisitions
+Use this vehicle as a means to do acquisitions of smaller companies.  The equity ownership of the targets counts on the balance sheet, so the company is worth more than the NFTs.
+Provides a great way for us to access capital quickly.
