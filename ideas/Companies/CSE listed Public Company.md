@@ -42,6 +42,11 @@ The general public would be invited to purchase some of the rolled up asset form
 
 If we earn funds, we would pay tax on it.  If customers instead became shareholders, we can invest the money from them before we get taxed before it, gaining us extra funds.
 
+It seemed like we could hold a company in NZ, and then be an issuer in Canada ?
+How many classes of stock can we offer ?  Could we have one per NFT ?
+
+Cost of the shares is what you pay money on, so with clever balancing, we can still get on the exchange, with large founders shares that were paid at the threshold for.  
+Might be good to do a brokered placement.
 ## V1 NFT basis
 To raise public funds to build the Dreamcatcher without corrupting the protocol requires an interface to be designed.  That interface can be a public company that raises funds controlled by us to fund packets on behalf of people who want a 3rd party to do the effort and gain a profit from it.  This seems a quick and easy way to get funding to tackle more exotic routes, like starting our own exchange in UA.
 
@@ -56,6 +61,8 @@ Mint the NFTs using an ERC1155 contract or similar, then mutate the properties o
 
 The utility of having a publicly hosted chain is better than having some short term income.  Making a PoA hosted services provider so that demo based projects can be built upon is powerful.  Particularly if the first hosted app is the Dreamcatcher work management app, so that packets can be openly bidded upon.  This means we can see our hourly rate go up as demand for our services goes up due to surge pricing.
 
+## Core should be attribution software
+A system of managing attribution in the software space, balanced fairly between labour and capital contributions, calculated in realtime based on all available data.
 ## Offerings
 We would have a working piece of software and so when we are introduced to companies around london, like we used to be, then we can start projects where we can demonstrate our utility, and we can sign contracts with them as a company to deliver and maintain services to them.  These pilots can be taking place rapidly, using our development model, and the sales meetings themselves can leave working software behind.  These news articles, particularly with new sales being announced regularly, should be surprisingly novel inside the blockchain and AI industry.
 
