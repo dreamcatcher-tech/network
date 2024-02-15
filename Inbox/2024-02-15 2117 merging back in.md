@@ -26,3 +26,4 @@ Then this gets pulled in from s3, cached if needed, and takes all the load off t
 So, the kv store is never intended to be the long term store, so we can not waste any optimization effort on it.  The long term goal is the object directory being backed by s3 using pack files
 
 Backblaze can do edge replication, so we can be close to the data.
+So the pack files would get updated on merge, and we would have a way to do range queries on the backblaze data, possibly using streaming of the index files, so we could get out what we wanted as quickly as possible.
