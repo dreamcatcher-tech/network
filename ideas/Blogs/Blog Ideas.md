@@ -345,3 +345,7 @@ All of game theory relies on the actors knowing who they are, and being permanen
 
 ## Infection of smart equity
 In an ambient attribution system, even tho a stockmarket company could be formed, if that company behaved badly, and stripped founders of their share, then the smart attribution system would adjust accordingly, so the traditional controls of capital do not work, since the share value is slaved to ambient attribution.
+
+## Max innovation rate as max extracted from each individual
+Every individual has a finite amount they can give.  It should all be spent on innovation.
+At this rate, everything we imagine becomes real almost instantly.
