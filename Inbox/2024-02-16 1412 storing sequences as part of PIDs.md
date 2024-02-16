@@ -22,3 +22,10 @@ Upon serial reply being done, if origin,
 On respond to origin action, do a merge back in.  If the branch is permitted to daemon, then the branch can still receive dispatches.
 
 Might be easier to work on pure git based functions that are independent of queues and locks and other such complications.
+
+To get pidlock is to have the right to order the pool items, by way of a commit.
+This includes outcomes.
+
+if qmsg had the commit it came from, it could use this to check it wasn't a duplicate, since 
+
+Get fs, which has a certain version assosciated with it, then get headlock and confirm the version.
