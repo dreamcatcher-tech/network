@@ -39,3 +39,5 @@ The reply mechanism for other branches should be the same as the user dispatch a
 So if the user is a dedicated branch, then we can just keep it updated like any other.  Watching for outcomes becomes an independent system.
 
 Reply seems similar to merge - maybe they are the same thing, but a merge carries some extra branch info with it, is all.  Reply to self carries the same branch info with it.  So all replies could carry their pid, and all get treated the same.
+
+Holding io inputs until the output is selected could allow us to gracefully handle double message delivery.  Branching can use the PID to know what input item was.  If it gets the latest git repo and finds that the input has been removed, that means that it is a duplicate message and it should stop immediately.
