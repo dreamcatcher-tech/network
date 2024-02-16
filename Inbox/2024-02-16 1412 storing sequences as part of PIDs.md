@@ -20,3 +20,5 @@ Setup is turning the origin action into serial processing mode.
 Upon serial reply being done, if origin, 
 
 On respond to origin action, do a merge back in.  If the branch is permitted to daemon, then the branch can still receive dispatches.
+
+Might be easier to work on pure git based functions that are independent of queues and locks and other such complications.
