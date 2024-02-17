@@ -41,3 +41,39 @@ So if the user is a dedicated branch, then we can just keep it updated like any 
 Reply seems similar to merge - maybe they are the same thing, but a merge carries some extra branch info with it, is all.  Reply to self carries the same branch info with it.  So all replies could carry their pid, and all get treated the same.
 
 Holding io inputs until the output is selected could allow us to gracefully handle double message delivery.  Branching can use the PID to know what input item was.  If it gets the latest git repo and finds that the input has been removed, that means that it is a duplicate message and it should stop immediately.
+
+Tracking a pierced action is a different thing than tracking a branch action.
+A pierce action should be tracked using the kv store, so that watchers can
+
+We might be able to efficiently walk git if each action was its own file, with its own id as the name.  Would make watching piercings much easier.
+Or, if only piercings were separate files, to allow efficient watching ?
+If a pierce got back a sequence number, then it can walk the commit log to find the outcome, if it is missing.
+So if inputs are removed only after outputs are given, then duplicate message delivery is simpler.
+So watching a pierced action should watch until a sequence was returned, and then from then on, watch that as a separate long running request, which can include what commit you have checked up to ?
+Beam down the latest commit hashes while you are watching
+
+Leaving the inputs there also allows efficient tailwalking, since when the commit is done, we can queue up serial actions and always know which ones are still waiting by what is in the io file still, without excessively walking the git log.
+If there are no other serial inputs, then we can start immediately.  Otherwise, we can tell it to wait for the highest outstanding item.
+Or, could a commit be required to be able to process the next batch of serial processing ?
+
+Unify the queues again - tail waiting is an implementation detail, and shouldn't affect the data structure.  It must be independent of the commit record, else will choke.
+
+Pierce rules of IO should still apply here.
+
+Branch start should atomic check that it is the first to start this branch, after it gets the lock.
+Pull in the parent commit, get the action out, copy it over, since need to track its execution.
+Begin execution of the action, as tho it was a serial activity.
+Queue should decide that it is close enough in proximity, so it will duck under the queue.
+When the reply comes in, be sure to act accordingly
+
+Pierce watcher is a postcommit hook, which looks at all piercings that were concluded, and then updates the kv store when it finds something.  This might use the broadcastchannel.
+Watching requires the commit and the sequence.  Issue is the timing of the broadcast channel being leaky.
+So if you were watching, write down a kv watcher, atomically pegged to the latest commit you checked up to, so that if a new commit comes in, it will definitely know that you want to see the outcome.  It will delete the key you put in to watch, which will trigger your watcher, which will make you get the latest commit and walk backwards until you have your outcome.  The latest commit would tell you if your piercing had completed or not.
+
+Origin actions - when a process is exec
+Test for repetition of execution, and when we start, we know that we have to walk the logs and get where it made external requests - these have to be the same - if we have them, we will feed them back in to the system.
+
+Purest way of watching is to watch for commits to update, then read the commit in from disk.  Whilst expensive, this is the cheapest in terms of coding and synchrony, since it rallies around a single sync point - the commit.  The HEAD update value could include the current tail for serial outputs, and the resolved parallel actions, so we can know if we should fetch the whole repo or not.   Again the queue should decide if we can process this locally, so we would be using the cached view of the repo.
+
+The pointers in git should probably match our own.  HEAD and the refs might matter.
+Refs would be like procman.
