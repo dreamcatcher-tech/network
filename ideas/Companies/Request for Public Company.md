@@ -16,3 +16,7 @@ Because a packet switched network must be resilient to failures of many nodes, t
 Everywhere we go where we promote our system to attract users, we are in the same breath promoting the public company, for people who like the idea but don't know how to make money from within it, so they just want to give us their money.
 
 Being able to now generate promotional videos and other content using AI means our operating costs should be tiny.  No more huge bills for content creation.  Simple accounting costs.  Every service we need, we find someone willing to operate in an AI amplified way, and we launch a business that applies their skill using computers, saving us money, earning us and them money, growing our footprint.
+
+If we make all the advice we receive transparent and anonymized, then we can work towards meeting any regulatory requirements for our company.  We can also figure out what the fair value of shareholdings are in the company, based on our attribution tooling.  We can make these tools available to other companies, where we can charge them for its usage by calculating what they owe us using the attribution tooling we make.  Means we can weather all the regulatory burdens of the pubco intelligently, and always be growing our knowledge base.
+
+Attribution calculation is our primary offering, and we should use it internally.
