@@ -32,3 +32,6 @@ If you come back and look for that nonce, you will have to walk commits if it is
 The commiter might lookup history for you.
 Or you might have lost it ?
 Walk history based on time.
+
+It is a separate responsibility for locking as for queueing as for tracking piercings.
+
