@@ -45,3 +45,5 @@ The isolate interface is a portable invocation interface, and so we should be ab
 Wrap compartment at the end of the queue, not the front
 
 So if the cradle does the queue wrapping, using a separate queue object, then everything else just acts like a direct endpoint for a command.
+
+If the message queue puts its responses in the kv, then we can avoid any kind of dispatch tracking.  The queue itself deals with tracking and listening for outputs, so this frees artifact to only respond to its own calls that were made into it.
