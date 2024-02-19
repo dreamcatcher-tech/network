@@ -36,3 +36,12 @@ Walk history based on time.
 It is a separate responsibility for locking as for queueing as for tracking piercings.
 
 Triggering IPC is the next test - dispatch something in which makes some other calls out, to long running branches, and starts new branches, then returns.
+
+Link the timeouts in the db to the staleness of the dispatch
+So dispatch needs a timestamp, which must be within x of now.
+
+The isolate interface is a portable invocation interface, and so we should be able to provide it to the queue directly, and have it simply wrap functions.
+
+Wrap compartment at the end of the queue, not the front
+
+So if the 
