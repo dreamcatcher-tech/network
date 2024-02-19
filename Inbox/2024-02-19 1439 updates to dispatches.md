@@ -47,3 +47,8 @@ Wrap compartment at the end of the queue, not the front
 So if the cradle does the queue wrapping, using a separate queue object, then everything else just acts like a direct endpoint for a command.
 
 If the message queue puts its responses in the kv, then we can avoid any kind of dispatch tracking.  The queue itself deals with tracking and listening for outputs, so this frees artifact to only respond to its own calls that were made into it.
+
+We could handle queue double messages queueside, not artifact side, which can make our code must simpler.  So we would write the message nonce, and would guarantee it was not set to processing before we started our operations ?
+We would atomically increment it to the next state, to know we were the only processor.
+But that means no recovery for us ?
+Making artifact functions all idempotent is more work ?
