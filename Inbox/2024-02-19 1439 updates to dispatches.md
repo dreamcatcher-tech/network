@@ -44,4 +44,4 @@ The isolate interface is a portable invocation interface, and so we should be ab
 
 Wrap compartment at the end of the queue, not the front
 
-So if the 
+So if the cradle does the queue wrapping, using a separate queue object, then everything else just acts like a direct endpoint for a command.
