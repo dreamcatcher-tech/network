@@ -35,3 +35,4 @@ Walk history based on time.
 
 It is a separate responsibility for locking as for queueing as for tracking piercings.
 
+Triggering IPC is the next test - dispatch something in which makes some other calls out, to long running branches, and starts new branches, then returns.
