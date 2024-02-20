@@ -15,3 +15,8 @@ Is the invest.fairmint.co the exact same view my community would see ?
 
 Where can the company be based in ?
 What API have you got ?
+
+How do you make money ?
+What is the smallest feasible trade ?
+Do we have access to our investor information ?
+Reporting on funds ?
