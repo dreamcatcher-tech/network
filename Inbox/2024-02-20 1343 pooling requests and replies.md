@@ -28,3 +28,11 @@ All it should be concerned about is detecting if it is a duplicate, and if the d
 So it should wait for something, like a msglock or something.
 
 poolkeys
+
+If each artifact function left something behind, then each one can do its own idempotence management
+The hardest to detect is when a message is currently being processed and a duplicate delivery occurs.
+
+The strength of the ids should cover us from any errors.
+Which means that requests should have a sequence number assigned asap, since this guarantees it can't be double committed.
+
+The queue can at least not start a message that was started, and the recovery item can wait a bit until the current item executes or fails.  The isolate should have a self destruct timer too.
