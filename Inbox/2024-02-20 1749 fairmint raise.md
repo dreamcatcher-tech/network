@@ -20,3 +20,6 @@ How do you make money ?
 What is the smallest feasible trade ?
 Do we have access to our investor information ?
 Reporting on funds ?
+
+They use the optimism chain.
+Seems unlimited classes, but they can't give us direct automation.
