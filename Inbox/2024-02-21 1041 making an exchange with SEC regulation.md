@@ -13,4 +13,6 @@ If we could integrate with company registries, then we can enable transfers with
 
 Why should doing a listing for one company be much harder than doing it for all companies ?  Like surely, since the regulation for the SEC is open ended, we could become an an agent, or pay an agent to take on some of the duties we need, and charge for the process using our systems ?
 
-If AI is the admin destoyer, then compliance hurdles are the main place they should apply.
+If AI is the admin destroyer, then compliance hurdles are the main place they should apply.
+
+Then we should be able to map out all the path ways thru different compliance requirements, and keep having that added to as we progress.  Each chat and discussion, each piece of legal advice, should grow this intelligence.
