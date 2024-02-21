@@ -16,3 +16,9 @@ Why should doing a listing for one company be much harder than doing it for all 
 If AI is the admin destroyer, then compliance hurdles are the main place they should apply.
 
 Then we should be able to map out all the path ways thru different compliance requirements, and keep having that added to as we progress.  Each chat and discussion, each piece of legal advice, should grow this intelligence.
+
+Being able to have strong kyc guarantees between our participants enables faster collaboration.
+
+In this way, we might start to look like a single large company / coop ?
+Then, if you joined the coop, all SEC regulation is different.
+Each member has strong identity, and all money is guaranteed clean.
