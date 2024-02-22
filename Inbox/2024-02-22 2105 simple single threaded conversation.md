@@ -5,5 +5,10 @@
 
 >[!danger] Depends: 
 
-Need not actually do anything, just needs to 
+Need not actually make any external calls, just needs to take in some text prompts, and return back the responses.
+
+Can do some streaming results too.
+Put in a flush command on the isolate-api, so that rapid writes don't do anything in the fs, and only on flush does all the string conversion happen.
+
+
 

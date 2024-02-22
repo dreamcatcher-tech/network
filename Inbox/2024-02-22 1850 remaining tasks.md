@@ -15,6 +15,7 @@ To get back to the HAL runner:
 - splice requests for static files
 - api calls for pierces
 - writing changes to text documents
+- interchain communications
 
 
 Make the system work with a single chat stream going back and forth.
@@ -24,3 +25,4 @@ Make a hono client that can call the deno deploy infrastructure.
 
 Hurdles
 - loading the full repo won't work for the whole CRM, so we need to break it apart intelligently, but we can use the current version to prove the concept works.
+- interchain comms so users have a private chain that is the source of all their comms

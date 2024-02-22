@@ -26,3 +26,5 @@ There may be a way to break these down too, or at least generate them rapidly or
 What's good about that is the heaviest thing we need to move around is the index, and all the repo objects can just be stored in the kv directly, making them instantly available.
 
 Whats bad is the file has a checksum, so we might need to load up the whole thing to be able to change it.  We could set something up using broadcastchannels where a given isolate can be the 'editor' and makes intended changes remotely, without needing the full index, then writes a patch of it, and broadcasts this out for the other side to use.
+
+Ultimately may be able to share objects between git repos if the paths are the same, provided we are careful not to leak between repos that shouldn't see each other.  Full public might have this advantage by default.  Careful coordinated packing might be required.  Each repo could store a pointer to the shared object along with a refcount so we know when it can be truly deleted.
