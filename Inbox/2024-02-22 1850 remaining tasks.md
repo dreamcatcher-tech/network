@@ -6,6 +6,7 @@
 >[!danger] Depends: 
 
 To get back to the HAL runner:
+- terminal version of an ai chat session
 - front end display
 - ghauth
 - branching
