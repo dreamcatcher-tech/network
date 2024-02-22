@@ -20,6 +20,7 @@ To get back to the HAL runner:
 Make the system work with a single chat stream going back and forth.
 Do that in the browser next.
 Then do that on Deno deploy.
+Make a hono client that can call the deno deploy infrastructure.
 
 Hurdles
 - loading the full repo won't work for the whole CRM, so we need to break it apart intelligently, but we can use the current version to prove the concept works.
