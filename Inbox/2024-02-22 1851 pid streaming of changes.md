@@ -21,3 +21,9 @@ Partials could be written to disk as we go, which can be used as part of the fin
 
 So by default it will stream out patches, and if you request a patch range, it will give it.
 Means you can join the party late, and it will catch you up.  This is not expected to be a heavy channel.
+
+So you're turn up, GET the latest commit, and broadcast out that you want the partial tree based on the last commit you have.
+
+Then, you'll get back a big patch to catch you up, and then extra patches as they become available.  Periodically you'll get told there is a new commit, and so you may be the patch for that.
+
+Client would fire up watchers for each fork that formed - this would be a separate request to the server.  They would start watching for commits, and then tracing out the branches that formed from each one.
