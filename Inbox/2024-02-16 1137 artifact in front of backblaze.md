@@ -14,3 +14,9 @@ Low latency availability.
 Gives an AI control layer to large binary data, and a huge processing capability.
 
 Shared storage and quick transfer between peers on the system is a good benefit.
+
+Means we can have very cheap, low latency, guaranteed available storage.
+
+We can also store across other providers.
+
+Then make a decentralized API compatible clone.
