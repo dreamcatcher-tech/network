@@ -26,3 +26,11 @@ Or, could a very simple plain text UI be made that just works enough, and then t
 If the api is data oriented, switching the UI should be easy later, but building a new UI now is unnecessary delay.
 
 The API and front end should be separate projects anyway.
+
+Cannot make a frontend without storybook or similar.
+
+The UI is independent from the api, so we should build up the api first, get that functional, so we have something solid to stand on.
+
+So build a UI using vite, as a separate project.
+
+At some point later, switch to tailwindcss or similar.
