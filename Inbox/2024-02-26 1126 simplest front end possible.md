@@ -18,3 +18,11 @@ Ideally we would just have esm directly in the browser, like ultra does.
 Could run some exercisers at different routes during testing that would do some automatic things like auto submit, and call on some canned responses.
 
 Trouble is that hono needs a build step.  This can be the same repo, just with different entry points.  If we bundle using vite, we keep going in bundling hell.
+
+The practical choice is to use vite and storybook to produce a static page, and then use the hono api to hydrate from.  We can then produce a GUI using the tools we already know, published on a separate channel, like ghpages, and hand code the api paths.
+
+Or, could a very simple plain text UI be made that just works enough, and then the switch to a UI can be deferred ?
+
+If the api is data oriented, switching the UI should be easy later, but building a new UI now is unnecessary delay.
+
+The API and front end should be separate projects anyway.

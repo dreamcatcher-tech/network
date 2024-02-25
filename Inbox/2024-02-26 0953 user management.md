@@ -11,4 +11,4 @@ The user namespace needs segmentation somehow.  Account creation time can be use
 
 Visibility of shared repos between accounts - surely we should share the objects of the same repos where possible.
 
-So if we 
+But then we need to store the session state of the browser somehow for when they come back.  So the url needs to have everything required to get things back how they were ?
