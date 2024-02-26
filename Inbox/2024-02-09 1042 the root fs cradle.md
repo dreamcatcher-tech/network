@@ -13,3 +13,8 @@ Is this the same as the special homeslice repo in github ?
 
 In deploy, this is the core repo.  
 
+
+
+So the git commands should be an isolate, and the root branch, which is the users repo, and is not forkable, should be restricted to only running a small set of commands.
+
+The goal is to start a session branch, which represents the users current terminal / UI interactions.
