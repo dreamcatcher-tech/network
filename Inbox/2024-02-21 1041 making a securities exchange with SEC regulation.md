@@ -25,4 +25,4 @@ Each member has strong identity, and all money is guaranteed clean.
 
 If we had AI assistance with all compliance material, then we could offer faster turnaround and cheaper rates with higher quality.  We could offer continuous compliance, and let people chat with our tools to learn about their situation.  Then when you're ready, have a human to certify it, which goes into the bank of knowledge.  At the same time, pull in other public certifications so we have a growing body of knowledge around these things.
 
-If we took upon ourselves the burden of auditing the companies using these ai tools, then we could obtain a transfer regulator license from the SEC to allow people to list very cheaply, then trade as tho they were public, continuously.
+If we took upon ourselves the burden of auditing the companies using these ai tools, then we could obtain a transfer regulator license from the SEC to allow people to list very cheaply, then trade as tho they were public, continuously..
