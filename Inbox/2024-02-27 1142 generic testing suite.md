@@ -13,3 +13,4 @@ Because testing the queue, and testing the web api is supposed to be a direct pa
 2. With queue - as it would be run on deno deploy
 3. Via web api - as a client would access it
 4. Web api with no queue - web should just take an artifact interface
+
