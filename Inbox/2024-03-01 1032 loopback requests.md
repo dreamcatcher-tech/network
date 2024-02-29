@@ -11,3 +11,8 @@ We could make the end of the execution find the next action, and send a message 
 
 So if upon completion, the request sends in its reply to the pool, and then sends a message for the next in the queue to execute, this is cleaner, and possibly not that much slower.
 
+Means that the execlock is passed on when execution has exhausted, not necessarily completed.
+
+Switch the api into error mode, so if further activities occur on it, it will error.
+
+Easy start is to error on loopback requests.
