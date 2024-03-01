@@ -34,3 +34,9 @@ Internally, we should rely on the execution to pass control along.
 In testing, if it has a function map it can access, this will give it the previous function so we can avoid running the function again, which is annoying.
 
 ? What about side effects ?  Currently these run inside the chain, but they should really be an action with a specific function and output, so we can replay what happened with the external system.  Hopefully we can build that in later.
+
+ExternalId, like a ulid or the accumulation index, which gives it identity relative to the transmitted.  Then once it is solidified, it gets given a sequence number, which is the reconciled and committed to disk index number, used for internal execution.  When the reply comes back, we can check the io queue to see if all the outstanding PoolRequests have returned, in which case we can resume the execution of the originating action.
+
+We could track the outstanding requests in the reply to the function being executed.
+
+IO cannot be blanked of poolrequests until the originating action has completed.
