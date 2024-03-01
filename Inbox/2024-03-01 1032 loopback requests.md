@@ -16,3 +16,21 @@ Means that the execlock is passed on when execution has exhausted, not necessari
 Switch the api into error mode, so if further activities occur on it, it will error.
 
 Easy start is to error on loopback requests.
+
+Must we store the triggering request, as well as the sequence inside that execution ?
+If we only store its value in the triggering execution, then we can figure out which action caused it by finding the highest unfinished action destined for us.  If it triggered things in our own chain, then it would get more complicated, but loopback seems wierd and should be blocked anyway.
+
+See how we go with just pure sequence numbers and nothing more.
+We should be able to figure out which action to rerun / start again once all the results come in.
+
+Trigging the called by watching vs control passing.
+Separate out the watching functions to be something that is done externally.
+The executing function should be the one to drive the computation forwards.
+So if we send a remote request off, then it completes, should we have been waiting for it ?  What if we died while waiting - who would kick it off again ?
+Might was well just leave it up to 
+
+Watching should be only for pierces - external things.
+Internally, we should rely on the execution to pass control along.
+In testing, if it has a function map it can access, this will give it the previous function so we can avoid running the function again, which is annoying.
+
+? What about side effects ?  Currently these run inside the chain, but they should really be an action with a specific function and output, so we can replay what happened with the external system.  Hopefully we can build that in later.
