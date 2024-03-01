@@ -40,3 +40,5 @@ ExternalId, like a ulid or the accumulation index, which gives it identity relat
 We could track the outstanding requests in the reply to the function being executed.
 
 IO cannot be blanked of poolrequests until the originating action has completed.
+
+A collection of requests should all be stored in the kv as a single array, as no need to do one write for each.
