@@ -9,3 +9,6 @@ If we make a component that can watch each session and all the children of the s
 This can help us see how the system is executing, so that things don't get lost in the void.
 
 This component is probably always useful and can be the default component for the stateboard.  Visibility seems the most important thing to get.
+
+At each process, we should be able to view the files.
+Then pick several processes, and show the diffs in the filesystem between the branches.
