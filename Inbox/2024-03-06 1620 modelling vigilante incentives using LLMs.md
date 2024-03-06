@@ -13,3 +13,5 @@ So any changes to the app are immediately inducted into the simulation so we can
 Set up things like engagement scores.
 
 We can model parts of a system we have no control over, and see how the system plays out.  We can use this to push for change in the system, such as modelling the incentives in the legal system, or benefits systems.
+
+We should be able to model the dreamcatcher itself, and include any policy changes we are contemplating.  Model existing innovation networks, like closed source companies.
