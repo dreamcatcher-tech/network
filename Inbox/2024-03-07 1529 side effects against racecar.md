@@ -31,5 +31,5 @@ So to make calls out to openai, you would need to do a branch request to a funct
 
 Tool calls should be the end of a request, with a further execution being invoked.
 
-
+So it can probably work if we always await actions that are made - it would be an error to make a request into the accumulator and then do something side effecty, then make another accumulation request - you must await the accumulator every time.
 
