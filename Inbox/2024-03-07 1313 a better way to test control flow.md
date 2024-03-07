@@ -15,3 +15,6 @@ Wish there was some better sense checking ?
 Ideally the spec would be given in NL, and the intermediate formats would be calculated, by NL, as proof that the spec works.  Then we end up just coding to these interfaces, and running prescribed tests that exercise the interface thoroughly.
 
 With some hope of making the programs automatically.
+
+Could isolate each branch, and test operations in that branch alone.
+Allow a snapshot to be taken at a particular place, then copy that and use that as the start of a test suite ?
