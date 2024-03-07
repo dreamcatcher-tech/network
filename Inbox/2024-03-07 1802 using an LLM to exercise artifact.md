@@ -16,3 +16,7 @@ We might be able to figure out all possible combinations of primitives, but the 
 Develop a shorthand notation to describe the sequences of moves we are attempting.
 
 Can then turn these into actual programs that can run large load on our servers.
+
+These would be all the things that can happen during repeatable computation.
+
+Would culminate in a single workflow that the engine loops over to process all actions, with each possible move being described and documented.  These are the exhaustive possible moves in the system.
