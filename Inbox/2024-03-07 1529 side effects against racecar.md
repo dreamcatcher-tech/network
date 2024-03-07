@@ -29,5 +29,7 @@ Set an alarm trigger so once exe has stopped, no more accumulation is allowed
 Ideally the format of side effects is very deliberate and narrow, where they can only do a request reply style thing.
 So to make calls out to openai, you would need to do a branch request to a function that only make api calls.
 
-Tool cal
+Tool calls should be the end of a request, with a further execution being invoked.
+
+
 
