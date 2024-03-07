@@ -32,3 +32,26 @@ Pattern for a long side effect that would pass program control to different acti
 So a supervisor would run, and would make calls out to actions, where the actions are guaranteed to run to completion at least once.
 
 Still need to watch changes to files in the browser.
+
+What is the complete list of timings that describe what a running isolate can do ?
+And, if we list the operational atoms, what is the exhaustive combination of operations that we should test for ?
+1. receive a pierce
+2. reply to a pierce
+3. request an accumulation to a remote process
+4. request an accumulation from self process
+5. move on to the next request in this process
+6. replay a
+
+Could a state machine be described in NL and then all its possible states be generated ?
+
+Specify N where this is the repetition factor beyond which repetitions are considered to have been completed.  Definitely go above 10, to cover lex vs numerical ordering bugs.
+
+What are the rules for side effects, and how do we enforce those rules ?
+1. acc intermingled with side effects are bad, since no reply - doing an accumulation is a halt of the process from within which the process might be restarted.
+
+Making an ai chat call
+1. api call with some tool calls back
+
+BUT if files changed, then serial processing requires a commit, and cannot just move on to the next action.  So, should all serial require a commit, meaning that triggering the next action is the job of commit ?  Means that IO would be more predictable.
+
+Merge can be massively parallel, up to some limit.
