@@ -59,3 +59,7 @@ Milestone: be able to have a chat using the UI, with chat history, with session 
 Security so can have secured writes.
 
 Want to get testing running on the platform, not in vscode.  These AI tests are a bit too slow to run locally anyway, plus we need synthetic tests to exercise thoroughly.
+
+Merging changes files in when branch replies come back in.
+`api.getFS( reply )` - returns an api filesystem instance that can be read with
+`api.diff( commit )` - returns the list of files that are different
