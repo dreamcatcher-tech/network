@@ -33,3 +33,29 @@ Tool calls should be the end of a request, with a further execution being invoke
 
 So it can probably work if we always await actions that are made - it would be an error to make a request into the accumulator and then do something side effecty, then make another accumulation request - you must await the accumulator every time.
 
+Need the `useEffect()` hook so that side effects are replayable.
+Or, need to hang on to the thread until the other actions have come back.
+Replay is impossible if side effect results were not stored somewhere.
+
+Storing the session file each time an activity occurs.
+
+Allowing in band actions, so it doesn't all have to be a branch action.  Needs execlock.
+
+Files being altered during execution and getting merged back in.
+
+Streaming down the changing session file, even with replay occuring.  
+
+Import of large file broken into little files.
+
+Make a simulation of AI calls so we can be rapidly assured of correct operations.
+Mock way to do an AI call, so we can simulate all the moves required.
+Simulate system load that is similar to the AI calls, so we can exercise these.
+
+Could mock any class that depends on api by returning different functions on lookup.
+Then we can test the isolates directly, without firing up all of artifact ?
+
+Milestone: be able to have a chat using the UI, with chat history, with session management.
+
+Security so can have secured writes.
+
+Want to get testing running on the platform, not in vscode.  These AI tests are a bit too slow to run locally anyway, plus we need synthetic tests to exercise thoroughly.
