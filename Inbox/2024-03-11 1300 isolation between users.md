@@ -28,3 +28,8 @@ We want the user account in artifact to be a repo too, then all these other repo
 Where should permissions be held for the repo ? in the repo itself, linked to github, or in deno independently of anything else ?
 
 Seems best as a user followed by repo names, since deploy needs to mimick the filesystem on the users computer, whereas github only represents a global registry of repo ownership
+
+Or, use a branch to indicate a user, and keep the repos as github namespaced.
+Store the head of the repo that each
+
+Concept of a merged head, where it is the hash of all the branches of the repo, so we can take a point in time snapshot.  This can allow instant walking of all valid branches ?  Could be stored as a branch itself, with a gittree as the container mechanism.
