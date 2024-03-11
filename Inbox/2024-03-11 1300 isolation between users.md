@@ -26,3 +26,5 @@ Or we could track references, so that only the last person to delete it truly re
 We want the user account in artifact to be a repo too, then all these other repos are just submodules.
 
 Where should permissions be held for the repo ? in the repo itself, linked to github, or in deno independently of anything else ?
+
+Seems best as a user followed by repo names, since deploy needs to mimick the filesystem on the users computer, whereas github only represents a global registry of repo ownership
