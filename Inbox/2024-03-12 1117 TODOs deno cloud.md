@@ -5,7 +5,6 @@
 
 >[!danger] Depends: 
 
-Execlock for serial actions.
 
 Do some bulk accumulation tests.
 
