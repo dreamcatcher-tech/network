@@ -38,3 +38,13 @@ Permissions need to be checked whenever the user wants to do something.  Maybe a
 
 > Using this permissions model, how can we allow people to share sessions / branches with each other, and interact with them seamlessly, sharing realtime streaming updates ?
 
+Use webhooks from github to give instant permissions updates.
+Allow manipulation of github permissions internally, that get pushed up to github.
+For now, store full copies of repos under each users account.
+
+Set up webhooks to pull from github when git repo changes.
+Sharing between users - if they have permissions then they can see and interact with each others branches.  The creator of a branch is the only one that can write to it.
+
+Shared repos that are genuinely two repos interacting with each other ?
+
+Private branches on shared repos ?  We could allow some branches to be designated private by the operators, like a shadow, and they would not be shown, ever - this is basically a private fork.  This is what should be used if you want this privacy.  We can probably charge more for that.  
