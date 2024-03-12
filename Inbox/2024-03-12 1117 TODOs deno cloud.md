@@ -7,6 +7,8 @@
 
 Execlock for serial actions.
 
+Do some bulk accumulation tests.
+
 Changing the AI runner to use an isolate for pure side effects.
 
 Changing runners to be pure isolates.

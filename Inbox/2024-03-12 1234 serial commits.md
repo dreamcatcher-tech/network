@@ -20,3 +20,7 @@ Also doing accumulations in band causes problems since the filesystem might chan
 
 Can we back out of this choice later, without serious damage ?
 It is simpler to require a single commit per action.
+
+If the actions had no access to the filesystem, then they could be batched.
+
+Reason to batch is speed only.
