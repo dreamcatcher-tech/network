@@ -5,12 +5,19 @@
 
 >[!danger] Depends: 
 
+Make PID be a class so can print it better, or provide a print function that sniffs objects
 
 Do some bulk accumulation tests.
 
 Changing the AI runner to use an isolate for pure side effects.
 
 Changing runners to be pure isolates.
+
+Visualize the state of artifact programmatically
+
+Use the visualization to make a block explorer that can stream output and analyze in arrears.
+
+Rerun processes from the cloud locally to verify their runs, and then debug them.  Run it first to verify the repeatability, and then the second time run with debugger attached.
 
 Benchmarks.
 
