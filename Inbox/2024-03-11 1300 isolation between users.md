@@ -35,3 +35,6 @@ Store the head of the repo that each
 Concept of a merged head, where it is the hash of all the branches of the repo, so we can take a point in time snapshot.  This can allow instant walking of all valid branches ?  Could be stored as a branch itself, with a gittree as the container mechanism.
 
 Permissions need to be checked whenever the user wants to do something.  Maybe after each action, to avoid delays.  Unless they always had their own copy, and interaction required checking in with github before proceeding.
+
+> Using this permissions model, how can we allow people to share sessions / branches with each other, and interact with them seamlessly, sharing realtime streaming updates ?
+
