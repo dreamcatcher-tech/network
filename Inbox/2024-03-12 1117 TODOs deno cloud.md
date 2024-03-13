@@ -5,7 +5,7 @@
 
 >[!danger] Depends: 
 
-Make PID be a class so can print it better, or provide a print function that sniffs objects
+File writing in branches, to get a single session chat going
 
 Do some bulk accumulation tests.
 
@@ -21,9 +21,7 @@ Rerun processes from the cloud locally to verify their runs, and then debug them
 
 Benchmarks.
 
-Solve why branch does not pool commits.
-
-Solve why serial does not pool past 20 on cloud.  How to pool all by pausing processing ?
+Solve why serial does not pool past 20 on cloud.
 
 Making some exercises that mimick the AI functions but without doing any AI calls.
 	If only we could intercept the isolate call out to the AI function, and provide a mocked response, in deno cloud.
