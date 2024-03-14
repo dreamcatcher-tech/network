@@ -25,3 +25,14 @@ Or, then could be added as objects to the repo, tagged as pooled, and then prese
 Pooled objects present as available, but if their action gets rejected, the objects are cleaned up.
 
 If they went to fs then can trigger transient watches based on this ?
+
+Partial writes during replays ?
+This could cause pointless noise.  So the accumulator should store something to avoid doing replays of writes that have already been broadcast as transients.
+Just a count and maybe a cheap hash of the contents ?
+or store the array of writes, with the paths in an array, and some kind of content.
+? is this a db storage thing, rather than something on chain ?
+Since this info only matters at runtime, it should not leave an indelible mark long term.
+
+Simple solution is to not broadcast any transients until the accumulation buffer is exhausted, since we must surely have broadcast already.
+Maybe a broadcast channel can exist for latecomers to get a full update, which can be used to help ?
+Or, use an event id in the transient, which is tracked in the accumulator, so that the server side filter will ignore double broadcasts.  This is best option.  We might be recovering, so we should still broadcast each runtime, with a different id.
