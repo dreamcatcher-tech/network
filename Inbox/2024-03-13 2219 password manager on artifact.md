@@ -12,8 +12,12 @@ Use webauthn to get strong key storage on devices.
 
 Feature is to let a team of people share a password database, and have versions and updates showing to all.
 
-This should not need a central server.
+This should not need a central server.  If webrtc was used, it could be stored on a collection of browsers, and should advise you on the replication score of the database currently, and connections to other peers.  You can also purchase a peer to automatically store your encrypted data.
 
 Lets you send private messages to each other by way of updating a shared state.
 
 Lets you have good password management at a fraction of the cost, using web standards like enclaves to secure the data.
+
+[[2024-03-14 1609 the users high castle|High Castle]] can be used to allow a group of people to operate as a single entity from the point of view of a service.  Single billing, multiple people can supply payment options in.  Access and password can only be done using high castle with multiple agreements.
+
+We can integrate with their APIs to give this multiparty access some power.
