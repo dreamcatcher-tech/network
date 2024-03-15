@@ -39,3 +39,5 @@ We should be guest mode only forever if need be - be the least intrusive we poss
 The economics of good service as credit card processor has changed - used to be easy to speak on the phone to someone and get them to sort out your problems - now not so much.  AI can change that, and restore some of that hand held service.
 
 We should be a merchant in our own service.  If you call us, we can bill you, and then if your call was our fault, you get refunded.
+
+Can offer plugins that can do extra things like budget advice, and whatever else people find useful.  Each piece runs in the same trusted model as the enclave - vendor cannot see user data, vendor gets paid by dreamcatcher.
