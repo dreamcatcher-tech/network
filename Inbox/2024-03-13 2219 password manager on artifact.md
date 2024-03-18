@@ -26,4 +26,8 @@ We can use devices to securely store private keys, and then encrypt data and sto
 
 Key rotation by getting the cold storage unit to sign a transfer item that passes its lineage on to a new set of keys.
 
-So in this way, whilst we strive to keep artifact private, we are not busted if the data is compromised.  If the platform is compromised, it might coerce the keys to be used to decrypt something then send it offsite.  So a 
+So in this way, whilst we strive to keep artifact private, we are not busted if the data is compromised.  If the platform is compromised, it might coerce the keys to be used to decrypt something then send it offsite.  So as long as we keep the static parts of the page secured, using lavamoat, then we can trust that the keys will never be abused.  Basically need to ban any transmission of decrypted data.
+
+So highly secure data can be used on our system, even tho we don't fully trust our infrastructure, as the encryption piece keeps the rest of it safe.  Best effort infrastructure coupled with on device encryption.
+
+Could also only store the secure data on the local browser, rather than public artifact, then allow some highly trusted machines to be kept secure and keep a copy for availability.
