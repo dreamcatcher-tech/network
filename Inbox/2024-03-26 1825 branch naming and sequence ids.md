@@ -19,3 +19,5 @@ Lock for branches can be just a file ending in '.lock' and we forbid branch name
 
 lock branch, and then global lock on the sequence you are about to process.
 
+What is so bad about arbitrary branch names ?
+If it was created by Artifact, we can always determine where it came from and what sequence number started it by reading the `.io.json` file ?
