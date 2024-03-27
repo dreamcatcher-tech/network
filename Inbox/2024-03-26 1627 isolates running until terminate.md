@@ -15,6 +15,10 @@ IDs should revolve around branch names and sequence numbers.
 Head should always store the commit object, since costs the same to read it in.
 
 Basically, we should use git properties as the queue management, locking, and recovery mechanisms.
+
+We can consider the updating of the head as the atomic op that we always check for.  We can know what the head was when the action was requested, so we can also know if we are stale and abandon our activity.
+
+
 # Wrapping layer around all operations
 ## Lateness detection
 If the branch is deleted, we are definitely too late, so we would miss the commit completely.
@@ -22,6 +26,10 @@ If the branch is deleted, we are definitely too late, so we would miss the commi
 Using git, we should be able to read the tip commit, get the iofile out, and find out if the operation sequence number is still outstanding.
 
 Might be useful to store io info in the commit object, so it is a single read to find out a lot of these things.
+
+## Duplicate detection
+Knowing if another process hasn't finished yet is 
+This is tricky since we need to determine liveliness.
 ## Recovery
 If the queue message is redelivered, we should
 Tickle the lock to give the other process a chance to respond ?
