@@ -33,6 +33,10 @@ We would like to list our social network on the public stock exchange, and we ca
 We could offer to do work for companies, where the money they pay in is an investment rather than a payment for services.  Since we are working with them closely, accreditation does not apply.  We would have taken their payment and turned it into investment anyway, so why not have them on the register.  Get their staff in there too, provided they are participating in building the system.  People who participate in the system and like it will likely hold their stock, so we want those members, since they won't just dump the stock.  We can link their shares to specific NFTs that we collaborated on.
 
 We can allow stock participation if you cash in some of your NFTs, so we can allow just NFT generated members to participate, since you clearly understand what's going on, and have done work.
+
+## Shareholders by acquisitions
+If we acquire companies, and have AI generated valuations, we can give existing employees stock of the companies, and then roll them up into our bigger company with a fair valuation given.  In this way, we can get to 150 quite quickly, whilst still holding a large chunk ourselves, then we can go public and keep doing this, whilst giving the shareholders a chance to cash out if they wish.
+
 ## Investing vs shareholding
 Investing is taking funds and giving them us to do with as we see fit in pursuit of some agreed common goal.  If people want to do this with us, then we should let them, so long as they pass the securities guardian requirement.  These types of shares might not trigger an issue out to everyone else, or they might only trigger a share payout upon completion.
 
