@@ -29,10 +29,24 @@ Pooling should never write the action that needs including, but should carry inf
 
 ## Atomic deletion of a pierce
 Pierce goes in, client isn't acknowledged until the pierce is written and the action to process it is entered into the queue.  Message includes the current known commit ?
+? Message includes the pierce item, which may be stored as a blob if large ?
 
 When the listener receives its message, it:
 - Check the chain is still active, which is the first read, and included in all atomic checks.
 - Get the latest commit.
-	- if not equal to the
+	- if not equal to the message commit, read all the iojson files from every commit until the message commit, to verify we are not a duplicate runner
+- with the guaranteed latest commit in hand, begin making a new commit out of all the poolable items
+- write the commit object to the database
+- atomically update the head to the new commit, batching with:
+	- latest commit is still the latest commit
+	- deleting the pool items included in the commit
 reads all the pool items,
 Check the commit that was received is still the latest one.
+
+If there are lots of pool items, these cannot all be put into a single atomic move ?
+If we have more than say 5 pierce items, bundle them all up, write to the db as a bundle, then send a new message, so we can get the atomic guarantees.
+Else we have to act like we might have some pierce items that were outside of the atomic guarantees.
+Could restrict max pierce in an op ?
+?Use a form of garbage collection where pierces are cleaned up periodically ? or an encapsulating flag is written ? or a flag scheduling their deletion ?
+
+Garbage collection of blobs can be done by walking the blob keyspace and checking that the markers representing those keys have been deleted ?  We should be able to review the exact commit involved in any garbage collected items.
