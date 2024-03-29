@@ -19,6 +19,14 @@ Repo creation can be in several states - null, preparing, active
 Preparing is used to detect duplicate messages asking for a clone ?
 Or we can just use the HEAD being available as check for active ?
 At least this is an isolated timing problem.
+Have a separate flag that indicates cloning is occuring
+? could all the writes be done atomically ?
+Use a broadcast channel to know if the clone op is active or not before taking over it ?
+Do 2PC style with timeouts for this edge case.
+Atomically create the repo
+Then pull in all the objects
+Only when done, update the head ref, so long as it is still the same
+Make a temp branch, used for cloning, for atomic locking ?
 ## Pooling
 pierce and interchain.
 Pierce should watch for head updates, figure out what changed, get prior commits if it missed them, then check the io file to know when its jobs were done.
@@ -26,6 +34,39 @@ Pierce should watch for head updates, figure out what changed, get prior commits
 Pooling should never write the action that needs including, but should carry info about the io.json file to find the info from.
 
 ? could pierce be always in a branch with a guaranteed new name, then try to merge back in ?  Merge is done when branch is deleted ?
+
+
+## Atomic execution
+? how to know if a side effect is currently in progress ? this probably needs a lock and a timeout, else remote system might be interacted with twice.
+When an execution request is received, it has:
+- the commit to start the execution from
+- the sequence of the request to start executing
+Start the execution eagerly, since this can take some time to complete
+Meanwhile:
+- get the head commit
+- check that our job has not already completed
+When execution exhausts:
+- get all poolable items for this chain
+- write the commit object and all dependents to the db
+Atomically:
+- check: head is still as we think it is
+	- if not, repeatedly update it and check our job isn't already done
+- update the new head hash
+- transmit everything into the queue
+
+## Atomic handling of accumulation actions
+Message is sent to the queue with:
+- commit of the sender
+- sequence number of the request
+When received, we:
+- read the head commit
+- if head not the same as sender, check all prior commits to see if our task has been done already
+- grab all poolable items for this chain
+- write the commit object and all its dependent objects to the db
+- atomically, do:
+	- check: head commit is unchanged
+	- update the new head hash
+	- transmit everything into the queue.
 
 ## Atomic deletion of a pierce
 Pierce goes in, client isn't acknowledged until the pierce is written and the action to process it is entered into the queue.  Message includes the current known commit ?
@@ -38,8 +79,10 @@ When the listener receives its message, it:
 - with the guaranteed latest commit in hand, begin making a new commit out of all the poolable items
 - write the commit object to the database
 - atomically update the head to the new commit, batching with:
-	- latest commit is still the latest commit
+	- check: latest commit is still the latest commit
 	- deleting the pool items included in the commit
+	- update the new head hash
+	- transmission into the queue
 reads all the pool items,
 Check the commit that was received is still the latest one.
 
