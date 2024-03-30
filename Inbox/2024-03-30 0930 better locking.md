@@ -28,7 +28,21 @@ Then pull in all the objects
 Only when done, update the head ref, so long as it is still the same
 Make a temp branch, used for cloning, for atomic locking ?
 
+The queue makes sure the system ticks forwards, then git commit ensures consistency.
+
 Key tool is watching for head changes, then recovering all commits in a stream even if watching skipped some, turning that into a stream, but only pulling whats needed, then exiting if item of interest is included in commits.
+
+Artifcat should use queue transmissions like accumulation actions that go into some special root chain ?  Else we need an envelope format.
+Transmit should be the same as accumulation.
+
+Could all the actions on the fs object be queued up as mutations, so that in one single action, all its operations are atomically run ?
+Or, could make all atomic ops go thru the db, and the db can act as an accumulator.
+The accumulator is passed along, and built up with what it needs to do a gitcommit.  This includes a set of tasks:
+- check the head is unchanged
+- update the head
+- delete all branches that were merged in
+- delete all pool items that were committed
+- transmit all messages into the queue
 ## Pooling
 pierce and interchain.
 Pierce should watch for head updates, figure out what changed, get prior commits if it missed them, then check the io file to know when its jobs were done.
