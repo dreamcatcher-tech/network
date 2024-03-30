@@ -35,7 +35,6 @@ Pooling should never write the action that needs including, but should carry inf
 
 ? could pierce be always in a branch with a guaranteed new name, then try to merge back in ?  Merge is done when branch is deleted ?
 
-
 ## Atomic execution
 ? how to know if a side effect is currently in progress ? this probably needs a lock and a timeout, else remote system might be interacted with twice.
 When an execution request is received, it has:
@@ -52,7 +51,7 @@ Atomically:
 - check: head is still as we think it is
 	- if not, repeatedly update it and check our job isn't already done
 - update the new head hash
-- transmit everything into the queue
+- transmit everything into the queue, especially the next action to execute
 
 ## Atomic handling of accumulation actions
 Message is sent to the queue with:
