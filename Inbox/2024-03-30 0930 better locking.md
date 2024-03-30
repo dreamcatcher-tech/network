@@ -27,6 +27,8 @@ Atomically create the repo
 Then pull in all the objects
 Only when done, update the head ref, so long as it is still the same
 Make a temp branch, used for cloning, for atomic locking ?
+
+Key tool is watching for head changes, then recovering all commits in a stream even if watching skipped some, turning that into a stream, but only pulling whats needed, then exiting if item of interest is included in commits.
 ## Pooling
 pierce and interchain.
 Pierce should watch for head updates, figure out what changed, get prior commits if it missed them, then check the io file to know when its jobs were done.
