@@ -45,6 +45,8 @@ The accumulator is passed along, and built up with what it needs to do a gitcomm
 - transmit all messages into the queue
 
 Need a maintenance flag on the repo, so we can do garbage collection and clone and pull effecitvely - this is the same as a lock, but it is much slower and used for heavy operations.
+
+
 ## Pooling
 pierce and interchain.
 Pierce should watch for head updates, figure out what changed, get prior commits if it missed them, then check the io file to know when its jobs were done.
