@@ -357,3 +357,8 @@ List out the modifications we made to git to make it run in this way, like remov
 Show some performance graphs for concurrency.
 Talk about how git is the perfect language for blockchains, as it covers all possible cases.
 Also how popular it is, how many tools are there to read from it, and how many services already host for it.
+
+We came at this from the other side - we started at the decentralized side, but here we've come at it from the utility side first.  We know we can build decentralized systems, but we need utility first, and anyone not incorporating AI in every possible area will be outpaced.
+
+## AI assisted high level design
+Design of a robust system, and then modelling in a language like TLA+ to ensure it makes sense architecturally are things that humans should focus on, assisted by AI.  The syntax of code is dead.
