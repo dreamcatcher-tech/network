@@ -349,3 +349,11 @@ In an ambient attribution system, even tho a stockmarket company could be formed
 ## Max innovation rate as max extracted from each individual
 Every individual has a finite amount they can give.  It should all be spent on innovation.
 At this rate, everything we imagine becomes real almost instantly.
+
+## Modified git file structure
+Using the beauty of the deno kv store, in particular the atomic enqueing of messages.
+To implement such a thing with an independent queue is a bit of a nightmare.
+List out the modifications we made to git to make it run in this way, like removing the index, how the atomic locking works.
+Show some performance graphs for concurrency.
+Talk about how git is the perfect language for blockchains, as it covers all possible cases.
+Also how popular it is, how many tools are there to read from it, and how many services already host for it.
