@@ -27,3 +27,14 @@ So can items be added to the pool as a precaution, then get removed if they are 
 Ideally we would add to the pool atomically.
 
 Exe might have to definitely commit, since no way to safely add to the pool without creating a duplicate, at the small cost of an extra commit beyond being able to pool.
+
+Every queue message:
+- has a definition of done, which can be used to determine if this job is still relevant
+
+Must detect:
+- check if we are a duplicate
+- do our job atomically
+- if fail, repeat the check and the job attempt
+- exit by either completing the atomic task, or by detecting duplication
+So the definition of job done, should be all around commits to a pid, and the io.json file status.
+Has the object of interest been included in the iojson object in a valid commit - this is the point we can stop trying.
