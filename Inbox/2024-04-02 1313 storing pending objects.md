@@ -10,3 +10,4 @@ Store the commit that we last ran from, so that to build up from blank, would ha
 But if we stored all the actions right up until everything was completed, we have less lookup time, but higher storage size.  
 
 Much simpler to just store the commits as a batch.
+Replay just notches thru the batches in order
