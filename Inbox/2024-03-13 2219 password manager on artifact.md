@@ -31,3 +31,8 @@ So in this way, whilst we strive to keep artifact private, we are not busted if 
 So highly secure data can be used on our system, even tho we don't fully trust our infrastructure, as the encryption piece keeps the rest of it safe.  Best effort infrastructure coupled with on device encryption.
 
 Could also only store the secure data on the local browser, rather than public artifact, then allow some highly trusted machines to be kept secure and keep a copy for availability.
+
+Benefit of using artifact as password manager is that some passwords could be dao controlled, and need multiple people to unlock. 
+Also, best, some services can be bonded to API control, and then the password manager is used to do multiparty actions, so that control of important things, like domain names, can be managed in this way.  Also top level root account controls can be handled by the password manager.
+
+We could also be the billing target, so something like AWS would bill us directly, and we would bill customers, so that we would handle billing disputes.
