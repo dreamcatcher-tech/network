@@ -23,4 +23,15 @@ Simplest pegging mechanism is BLS where we store the combined sig on eth and a p
 
 Meaningful merges - if an outcome is hash different but effectively the same, it is valid to switch signatures to it.
 
-The trouble is being able to trigger an eth payment with a small number of signatures.
+The trouble is being able to trigger an eth payment with a small number of signatures.  EIP-2537 will enable doing something based on a BLS signature.  So we could line up transactions in a queue, and if the BLS sig passes, then the tx is approved.
+
+Eth contract would check a proof, which is a hash based path down to the ethereum transactions that this signature approves.  Could just be a list of ints representing queued up eth transactions that our chain approves, with anything not approved needing to be resubmitted to eth.
+Or, each tx has a hash proof that gets submitted to the chain, along with the transaction.
+
+Hopefully we can have good modelling and reasoning to prove this scheme is robust.
+
+Once we have good eth integration, we can use their assets and contracts.
+We can be an AI layer atop ethereum, where our AI operates the smart contracts on behalf.
+Hopefully we can get native integration as our own bank or something, but in the meantime, we can integrate with these other payment rails.
+
+A decentralized bank would put its power in the hands of its depositors.

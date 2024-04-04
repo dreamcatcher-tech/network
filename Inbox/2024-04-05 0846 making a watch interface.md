@@ -21,3 +21,4 @@ When the last subscriber unhooks, the db watch should be torn down.
 
 Used primarily to watch a full file path.
 Might get used to watch a path within a json file.
+
