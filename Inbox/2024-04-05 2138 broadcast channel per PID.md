@@ -22,3 +22,7 @@ Have a fallback method in doing a kv key check, or some other thing periodically
 ?? what if the pierce runs a long time ?
 The client should do reconnection anyway.  On reconnection, or on some timeout, it should re-read ?
 On first connect, it reads in full, to see if what it wants has been processed, and steps backwards ?
+
+Broadcast channels are flimsy.  Recovery can use timestamps to get recent commits.
+
+The best time saver is to store helpful info along with the head write.
