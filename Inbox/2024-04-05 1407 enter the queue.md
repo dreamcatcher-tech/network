@@ -33,6 +33,12 @@ And, we absolutely have to enter the workloop via the queue so we are close to t
 
 ? what about serial bottlenecks of each session chain ?
 The session chains should not be expected to take much load.  They can still be pooled in to via piercing from the client tho.
+
+Side effects need dedicated locking, regardless if we use git to commit our actions to.
+Side effects should run like a test, with before, before each, after each, after.
+
+How would a chain read the incoming user chain to check if it has correct credentials ?
+
 ### Pierce with a watcher
 Make a 5th queue message, which is an artifact function call
 
