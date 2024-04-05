@@ -25,6 +25,14 @@ So the clients can only ever do pierces as their only function
 
 Seems a good strength that artifact is itself callable via the pierce interface ?
 
+Skipping the queue using special cases ?  Won't work since we need the commit mechanism.
+But, could we do other forms of locking not as heavy as a commit ?
+
+But, pooling and commits are there specifically to ensure no double actions.
+And, we absolutely have to enter the workloop via the queue so we are close to the db.
+
+? what about serial bottlenecks of each session chain ?
+The session chains should not be expected to take much load.  They can still be pooled in to via piercing from the client tho.
 ### Pierce with a watcher
 Make a 5th queue message, which is an artifact function call
 
@@ -32,3 +40,13 @@ Make a 5th queue message, which is an artifact function call
 
 ### Pooling a pierce
 Write the pierce object to disk, then 
+
+### The user structure with session chains
+A user account is a base repo that can never be acted on directly except to spawn session chains.
+Then session chains fire up so the user can then interact with artifact - on this chain, only the artifact isolate is allowed to be called.
+
+### side effects like clone in the chains
+If it got stuck half way, we'd want to do some cleanup ?
+If the maintenance flag on the repo is raised, we would wait until it was lowered to do this side effect ?
+So that said, clone could be just a regular queue action, with double action being handled by the side effect locking mechanism.
+Side effects need a cleanup hook when they are taking over something.  All db writes would be checking that the maintenance lock was still set as expected.
