@@ -39,6 +39,9 @@ Side effects should run like a test, with before, before each, after each, after
 
 How would a chain read the incoming user chain to check if it has correct credentials ?
 
+??? should we use commits to take in user piercings, or should we pierce every branch directly ?
+How long does a pierce actually take ? How can we get stats on this ?
+
 ### Pierce with a watcher
 Make a 5th queue message, which is an artifact function call
 
