@@ -22,6 +22,9 @@ Migth be able to bundle up authentication against these session chains.
 Seems to make the most sense to call core as a pierce.
 In effect, this makes the artifact atomic queue be the queue for all artifact calls in the system.
 So the clients can only ever do pierces as their only function
+
+Seems a good strength that artifact is itself callable via the pierce interface ?
+
 ### Pierce with a watcher
 Make a 5th queue message, which is an artifact function call
 
