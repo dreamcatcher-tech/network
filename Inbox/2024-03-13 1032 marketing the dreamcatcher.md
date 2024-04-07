@@ -10,3 +10,4 @@ We should look for those that are similar to us, and clone their systems, demons
 We can offer them a way for us to do the plumbing work, their users to get started quicker, monetization for their efforts, a way to reward users, a way for users to publish their work, a way to be self sovereign over their data.
 
 Joining with others makes us all stronger.
+
