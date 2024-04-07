@@ -8,3 +8,5 @@
 If there are two session chains, how can I join someone elses session ?  Would all my actions still go thru my origin session chain ?
 
 Yes, my actions would go into the other session chain, and the session itself would still be tethered to the original client.
+
+Sessions should be much faster if the root user chain is HAL, so a branch doesn't need to do a clone in any way ?
