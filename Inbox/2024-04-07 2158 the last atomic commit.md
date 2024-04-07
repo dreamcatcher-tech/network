@@ -18,3 +18,7 @@ When you're done, the lock gets updated with the status, so we know that it was 
 But, what if it had exe results that need to be committed ?  For this reason, fs writing should be prohibited, since exe locking is hard enough.  So we would also bad artifact action requests, and instead require a commit to be done to start those.  Effects should be pure effects, and be request reply type things ?
 
 But if we want to download some massive file, we should be able to put that in files, and have that commited back ?
+
+Only because these actions affect the repos themselves, do we need to merge in the ending of the repo lock with the atomic commit of the action being processed.
+
+Fundamentally, what the commits give us, is guaranteed execution in a distributed system, with replay ability, and data in a standard universally accepted format.
