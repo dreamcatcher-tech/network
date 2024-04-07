@@ -43,3 +43,7 @@ B2 should use a number as a versioning system, so we can walk the whole system a
 If we just never deleted objects, then this isn't a problem ?
 
 A deeper compression algo, outside of git, would go thru pack files and objects alike, and find duplicates, removing any it found, and storing reverse pointers so we could always get back to which repos used a given object.  Repos never list their objects, they always walk downwards.
+
+All writes to disk include a check that we still hold the current side effect lock.
+Basically side effect lock is held and maintained at the execution layer, the isolate itself never has to worry about this, it only has to worry about doing cleanup.
+All writes that we attempt, even doing an api call with fetch, should do these checks.
