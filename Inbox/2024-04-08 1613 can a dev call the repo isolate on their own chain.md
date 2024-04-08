@@ -10,3 +10,5 @@ We use it on our base chains, and we only allow calls from that isolate, but it 
 This means they could emulate artifact internally, completely ?
 
 Should we be allowed to attach repos into the graph at any point, and perform repo level actions on them, and should we ever need to talk to the root chain for that ?
+
+Access to the cradle context, that holds the DB, should be the thing that determines if it can be called or not.
