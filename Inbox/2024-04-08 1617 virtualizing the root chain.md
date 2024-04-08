@@ -25,6 +25,8 @@ gitGraph
    checkout session1
    merge main id:"cloned"
    commit
+   branch tomatoes
+   commit
 
 ```
 But the repo isolate should be able to run on any chain whatsoever
