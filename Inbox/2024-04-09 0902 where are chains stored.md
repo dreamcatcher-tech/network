@@ -15,3 +15,5 @@ Definitely we have a users home account chain.
 
 Add a ulid at the front of every PID that represents the dreamcatcher account ?  This could be a public key or hash of a list of public keys that are allowed to interact with that chain ?
 Could be the chainId ?
+
+The correct way is to support submodules, but we might not have that available in isomorphic-git.
