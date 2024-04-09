@@ -364,4 +364,4 @@ We came at this from the other side - we started at the decentralized side, but 
 Design of a robust system, and then modelling in a language like TLA+ to ensure it makes sense architecturally are things that humans should focus on, assisted by AI.  The syntax of code is dead.
 
 ## The future of the browser
-Make mozilla be a headless engine that renders at the whim of AI driving.  Make distributed and cloud hosted browsers, rather than on a local machine.  The downloaded info would be shared by other instances of the browser.
+Make mozilla be a headless engine that renders at the whim of AI driving.  Make distributed and cloud hosted browsers, rather than on a local machine.  The downloaded info would be shared by other instances of the browser.  The eyes of the AI is what it should become.
