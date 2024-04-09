@@ -19,4 +19,4 @@ So if the ACL was handled inside the engine, then from system chain, we should b
 
 System chain would be a blank repo with an io.json file that only allowed access to some particular pubkeys.
 
-Pierce would need to be signed so we know it comes from the users device.
+Pierce would need to be signed so we know it comes from the users device.  The keys would belong to the device, and would get rotated periodically.
