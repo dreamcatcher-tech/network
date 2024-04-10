@@ -6,3 +6,5 @@
 >[!danger] Depends: 
 
 So this would be `/.git/pool/*` 
+
+Keyspae would only be just the id, and a special key for undelivered messages, that should be stored inside the system chain .git folder.
