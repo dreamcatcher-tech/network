@@ -1,0 +1,8 @@
+
+>[!tip] Created: [2024-04-10 Wed 14:30]
+
+>[!question] Targets: 
+
+>[!danger] Depends: 
+
+So this would be `/.git/pool/*` 
