@@ -13,4 +13,6 @@ How can we give the repo isolate access to the artifact db, even tho repo was ca
 
 If is the system chain, the api provided has the system context.
 
-So perhaps the context needs to be specified in the .io.json file of the branch, 
+So perhaps the context needs to be specified in the .io.json file of the branch, which uses an isolate to load it up ?
+Or, should it be segmented by branch, by isolate ?
+What about shared between isolates ?  Then the isolate should be a combined one.
