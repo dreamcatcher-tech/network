@@ -77,3 +77,11 @@ There is still no system that offers the features we want, of repeatable computa
 ## Acquisitions
 Use this vehicle as a means to do acquisitions of smaller companies.  The equity ownership of the targets counts on the balance sheet, so the company is worth more than the NFTs.
 Provides a great way for us to access capital quickly.
+
+## Press release management with AI
+Using our internal systems, we can manage investor relations and press releases using AI generated info.
+Then we can tune this internally, amongst the experts we use, and offer this tuned version out.  Plus add certification services where they can be certed by a qualified legal expert from a pool.  We can optimize how this pool works internally, to be faster and cheaper with higher quality than any individual can do themselves, making us the preferred option.
+
+So we use a system to do our investor aspects better than anyone else in our sector, then we also sell this service as an additional revenue stream.  Anything that requires intelligence and has risks requiring certification is a potential market for us.
+
+Basically anything we consume, we turn it into an AI enhanced service, consume it ourselves, then sell it on at scale to add extra features the market wants, with our internal dreamcatcher oodaloop bundled in it.
