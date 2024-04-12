@@ -365,3 +365,6 @@ Design of a robust system, and then modelling in a language like TLA+ to ensure 
 
 ## The future of the browser
 Make mozilla be a headless engine that renders at the whim of AI driving.  Make distributed and cloud hosted browsers, rather than on a local machine.  The downloaded info would be shared by other instances of the browser.  The eyes of the AI is what it should become.
+
+## Stake to Say
+training data for AI with attribution back.  Factual assertions feed back to you.  Earn for staking reputation on validity of information.  Early news pays more.
