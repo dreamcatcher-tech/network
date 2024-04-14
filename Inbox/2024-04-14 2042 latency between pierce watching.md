@@ -75,3 +75,15 @@ Read splice sends back on a broadcast channel, since this is safest ?
 Or could write it to the db with an expiry ?
 What is the recovery process ? should we timeout if something doesn't get done ?
 Channel is a ulid
+
+Informational head is of little benefit to the user.  Makes good benchmark results.
+Splice reading should be a separate function anyway.
+
+Broadcast io.json on commit anyway, since very common to listen in to.
+Watchers can get given this splice by default.
+
+Splice requests should always be via queue, with reply by braodcast, so that it can always do the catchup of the commits, since it is close the db and has cache access.
+
+Hook into the commit broadcast channel, which includes the iojson file.
+Then do splice reads if you want more files that that gives ?
+Broadcast should not be skipping due to race conditions.
