@@ -49,3 +49,18 @@ Really want to make a single read and get all the dependent keys back too.
 If a watch is triggered then we can get individual files updated, to speed up the watch responses.
 
 BUT must ensure that concurrent ops are really only waiting for a single thing, so we don't do the same op in parallel.
+
+Write the io.json file down as a special path in the repo, where this is what gets watched directly.  So to walk the consequences of any given action,
+
+Best is if we can push the query to something closer to the metal and get a response back ?
+So if read became watch, and then read was an active request, which used the queue to make the query close to the db, and avoid all the round trips.
+Benefit is:
+1. works for any file
+2. doesn't alter the git folder structure at all
+3. splice generation can benefit from web cache speedups
+
+Maybe broadcast channel ?
+Use the queue to send in the splice request, then watch the broadcast channel to get the splice result.
+Db watch triggers when head updates, then
+
+Seems fastest, cheapest, and least complicated to make reading a splice be a queue function, and then have commits use the broadcast channel to send out updates when a commit occured ?
