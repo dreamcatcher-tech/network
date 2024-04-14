@@ -64,3 +64,14 @@ Use the queue to send in the splice request, then watch the broadcast channel to
 Db watch triggers when head updates, then
 
 Seems fastest, cheapest, and least complicated to make reading a splice be a queue function, and then have commits use the broadcast channel to send out updates when a commit occured ?
+
+Having a db watch is the same as having broadcast, but with more chance of stalling.
+Can we trust broadcast channel ?
+Given it is only splice watching, is it acceptable to have the odd fail ?
+
+First splice should be a request straight away, for head, then do the watch for all after that.
+
+Read splice sends back on a broadcast channel, since this is safest ?
+Or could write it to the db with an expiry ?
+What is the recovery process ? should we timeout if something doesn't get done ?
+Channel is a ulid
