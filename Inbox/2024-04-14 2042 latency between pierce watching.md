@@ -12,3 +12,16 @@ Suspect we might have a latency issue between splices taking too long to rebuild
 We can either do parallel read calls, where the calls happen in parallel.
 
 So the requests all get started as soon as the watch triggers, regardless of whether prior ones have stopped or not.
+
+The trouble is that the commit watcher is in a distant isolate, the rtt is murder.
+
+Broadcast channel for commit watchers, with db as a backup ?
+
+Reads of the git tree seem to be not using a cache for repeat reads ??
+
+Raw commit triggers are being delayed by the reading process.
+
+Make cache be able to be turned off to confirm with testing
+
+Use bcast channels with decorated data from commit as the watcher.
+This is faster but less reliable.
