@@ -87,3 +87,7 @@ Splice requests should always be via queue, with reply by braodcast, so that it 
 Hook into the commit broadcast channel, which includes the iojson file.
 Then do splice reads if you want more files that that gives ?
 Broadcast should not be skipping due to race conditions.
+
+Inside the db is where the bcast channels should be managed.
+As long as the db object exists, it should hold the bcast channels.
+Delete branch should broadcast the end of the branch.
