@@ -25,3 +25,25 @@ Make cache be able to be turned off to confirm with testing
 
 Use bcast channels with decorated data from commit as the watcher.
 This is faster but less reliable.
+
+Use broadcast channel to populate caches in other isolate zones ?
+
+Watch including pierce change info is the fastest possible lookup, since
+Or, for pierce watching, out of order doesn't matter ?
+
+Pierce watching is always intensely with a specific chain.
+If there is info to show, we have to go get the i
+
+Pull down the full repo all the time ?
+Pull it down to the client ?
+
+Broadcast outcomes, as well as do reading of io.json as backups ?
+Only read ones where the pierce results have occured ?
+
+Store the pierce outcomes in the head watch field, so as soon as the dbwatch triggers, the outcomes are available.
+
+Make a dedicated key for pierce outcomes to be written, which can be watched.
+
+Really want to make a single read and get all the dependent keys back too.
+
+If a watch is triggered then we can get individual files updated, to speed up the watch responses.
