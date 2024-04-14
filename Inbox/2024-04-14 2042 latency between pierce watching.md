@@ -47,3 +47,5 @@ Make a dedicated key for pierce outcomes to be written, which can be watched.
 Really want to make a single read and get all the dependent keys back too.
 
 If a watch is triggered then we can get individual files updated, to speed up the watch responses.
+
+BUT must ensure that concurrent ops are really only waiting for a single thing, so we don't do the same op in parallel.
