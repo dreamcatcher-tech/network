@@ -94,3 +94,5 @@ Delete branch should broadcast the end of the branch.
 
 Recovery:
 If the process that succeeds in the atomic commit fails to broadcast the diffs, then recovery is that, next commit, the clients detect something missing and make active requests for those items, and when they timeout in 5 mins, they will rerequest the latest one actively too.
+
+Currently we should just push the whole file contents into the broadcast
