@@ -102,3 +102,7 @@ We could treat the watch and the bcasts as hints, and we use either to begin the
 The ultimate fallback is doing the db reads ourselves - by replicating the kv stores this might be sufficient ?
 
 If we wrote down with the head the oids of the changed paths, then this could greatly speed up lookups, and using db watching is more reliable than broadcast channels.
+
+We could race the broadcast db lookup method with doing it ourselves via direct db read.
+
+Replicated read regions might solve this problem with no extra code ?
