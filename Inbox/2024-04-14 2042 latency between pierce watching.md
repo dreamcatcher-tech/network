@@ -91,3 +91,6 @@ Broadcast should not be skipping due to race conditions.
 Inside the db is where the bcast channels should be managed.
 As long as the db object exists, it should hold the bcast channels.
 Delete branch should broadcast the end of the branch.
+
+Recovery:
+If the process that succeeds in the atomic commit fails to broadcast the diffs, then recovery is that, next commit, the clients detect something missing and make active requests for those items, and when they timeout in 5 mins, they will rerequest the latest one actively too.
