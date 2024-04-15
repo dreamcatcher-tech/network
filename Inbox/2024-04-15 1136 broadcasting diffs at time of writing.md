@@ -23,3 +23,11 @@ Clients should periodically, say every 5 minutes, start the process again, and c
 
 So the request for a splice in the queue is really a request for a patch of a commit.  Start with an active request, then sit back and get the broadcast patches that come out each commit that gets done.
 
+If you can actively ask for any given file, or any commit and get it, and the broadcasts are always the diffs ?
+
+Or just broadcast a splice that has all the changed files in it, and then listeners can just reassemble as required.
+
+One off channels are separate to the general diff channels.
+
+Commit channels send out splices generated for all changes.
+Listeners have to take what diffs they want, and deal with them.
