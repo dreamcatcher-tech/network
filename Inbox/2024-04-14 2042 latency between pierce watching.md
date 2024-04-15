@@ -95,4 +95,10 @@ Delete branch should broadcast the end of the branch.
 Recovery:
 If the process that succeeds in the atomic commit fails to broadcast the diffs, then recovery is that, next commit, the clients detect something missing and make active requests for those items, and when they timeout in 5 mins, they will rerequest the latest one actively too.
 
-Currently we should just push the whole file contents into the broadcast
+Currently we should just push the whole file contents into the broadcast.
+
+We could treat the watch and the bcasts as hints, and we use either to begin the restorative process to ensure we have everything in between.
+
+The ultimate fallback is doing the db reads ourselves - by replicating the kv stores this might be sufficient ?
+
+If we wrote down with the head the oids of the changed paths, then this could greatly speed up lookups, and using db watching is more reliable than broadcast channels.
