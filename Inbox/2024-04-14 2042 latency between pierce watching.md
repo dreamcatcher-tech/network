@@ -106,3 +106,7 @@ If we wrote down with the head the oids of the changed paths, then this could gr
 We could race the broadcast db lookup method with doing it ourselves via direct db read.
 
 Replicated read regions might solve this problem with no extra code ?
+
+Could write the broadcast commit diffs to a dedicated key, with expiration, so watchers can fetch the latest one, and they watch subsequent ones.  Then use direct db queries to retrieve everything in between.
+
+But what about the dynamic loading piece ?
