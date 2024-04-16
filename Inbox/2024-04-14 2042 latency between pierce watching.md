@@ -115,3 +115,5 @@ There is always a watching / live aspect, and a historical catchup aspect.
 Watching should be the same every run, and then just buffer while catch up is executing.
 
 If something out of order, start fetching from the db, but allow an out of order channel broadcast to abort that seeking process.
+
+Db watch should be done anyway, and broadcasts are just faster and more convenient.  A problem with any subsystem and we can fallback to the db one.  DB can't be used for transients, so that is why the broadcast system needs to exist regardless of it being used for pierce watching, or artifact file watching.
