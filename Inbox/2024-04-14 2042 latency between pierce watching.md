@@ -110,3 +110,8 @@ Replicated read regions might solve this problem with no extra code ?
 Could write the broadcast commit diffs to a dedicated key, with expiration, so watchers can fetch the latest one, and they watch subsequent ones.  Then use direct db queries to retrieve everything in between.
 
 But what about the dynamic loading piece ?
+
+There is always a watching / live aspect, and a historical catchup aspect.
+Watching should be the same every run, and then just buffer while catch up is executing.
+
+If something out of order, start fetching from the db, but allow an out of order channel broadcast to abort that seeking process.
