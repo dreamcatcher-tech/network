@@ -10,11 +10,14 @@ We will always be beholden to the shape of deno deploy elasticity.
 How can this be mapped and measured ?
 How can we know when we are on a new isolate ?
 
+How do we know we are saturating deno deploy ?  How can we see the queue length ?
+
+How can billing be controlled, so we should stop at a certain amount ?
+
+All these things may be done at once via the sum() kv function.
 
 
-Making built in multipliers for request ramp up.
-A new type of queue message that is atomically run, which writes a marker for each boost message, then sends a queue message, which deletes it and does the queue amplification.
 
-So the programmer never has to worry about ramp up, they can just do huge numbers of things in parallel, then the system does the boosting automatically for them.
 
-? are large broadcasts slowing down the system ?
+
+

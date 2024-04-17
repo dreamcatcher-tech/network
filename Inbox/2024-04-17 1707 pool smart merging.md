@@ -10,3 +10,4 @@ When a large number of branches are merging back to parent, they end up each dum
 If we knew that there were already pool items in the pool, we don't need to make a new queue item for us.
 
 Use a sum, so we up the multiplier, and so if at the end this number has increased, then we will send a new pool request out.
+
