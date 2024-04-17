@@ -85,3 +85,6 @@ Then we can tune this internally, amongst the experts we use, and offer this tun
 So we use a system to do our investor aspects better than anyone else in our sector, then we also sell this service as an additional revenue stream.  Anything that requires intelligence and has risks requiring certification is a potential market for us.
 
 Basically anything we consume, we turn it into an AI enhanced service, consume it ourselves, then sell it on at scale to add extra features the market wants, with our internal dreamcatcher oodaloop bundled in it.
+
+## Xinova Phoenix
+May high profile people lost money in Xinova.  We should present them the dreamcatcher and see if they would like to continue.  Show them the attribution they will receive anyway, and invite them to boost the system to ensure its prominence.
