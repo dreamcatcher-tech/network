@@ -16,6 +16,7 @@ How can billing be controlled, so we should stop at a certain amount ?
 
 All these things may be done at once via the sum() kv function.
 Every time we add to the queue, increment the number.
+Could use a broadcast channel to add up without hitting the db, then periodically flush to db.
 
 Store states in buckets of 1min width.
 Know which bucket based on the time.
