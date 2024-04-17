@@ -54,4 +54,4 @@ So pierce gets written to db directly, making watching super light and maximally
 Every other file watch gets logged in the db ?
 Or, every other file just uses git commit watching.
 
-Can use metrics to stream down to the client how much load each of their repos is generating, by updating these statistics buckets every few seconds or so.
+Can use metrics to stream down to the client how much load each of their repos is generating, by updating these statistics buckets every few seconds or so.  Each commit should track these stats, but we should keep a live running trace as well, which is used to provide rapid summarized feedback, and to track billing.
