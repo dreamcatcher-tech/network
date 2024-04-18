@@ -53,3 +53,5 @@ Calculate an average along with the queue updates, so we can see how long, on av
 Need to know how many atomic collisions occurred in each queue action - the collision rate per unit time.
 
 Atomics could retry all async checks, and then run again, rather than restarting the whole process ?
+
+Mertics for the delay between putting something on the queue and being processed, so the delay between an execution enqueue and the corresponding dequeue.
