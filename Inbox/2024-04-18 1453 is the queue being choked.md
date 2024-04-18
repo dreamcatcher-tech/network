@@ -27,4 +27,6 @@ transmission only succeeds when it can definitely say that it increased the valu
 
 atomically apply the sum to the flag, 
 
-Assert 
+Strangely, this method works out slower - this is probably due to the way they decide when to spin up more isolates, by whats in the queue.
+
+Lay down a pool marker - an item that says we want to pool something, so even if our atomics fail, something will remain 
