@@ -21,7 +21,10 @@ So when you go to pool, if the current pool size is zero, increase the count AND
 Just hard to absolutely guarantee that an action will be dispatched that runs the queue.
 After the pool process completes, keep checking that the sum is zero, and rerun if not, untill we error, in which case the message will be rerun.   So we keep trying until we get to zero, or error, which means the next runner will get to zero, since each partial run, we are making actual commits that are valid.
 
+Could use a flag - raise the flag high, and the pooler only completes if it was able to observe it low.
 
+transmission only succeeds when it can definitely say that it increased the value atomically.
 
-What we really want is each request that comes back to include the stats about what it caused - how many deno credits, how much storage, how many AI tokens, how much the users account balance was affected.
-Delete branch should free up energy.
+atomically apply the sum to the flag, 
+
+Assert 
