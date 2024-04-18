@@ -22,4 +22,6 @@ Just hard to absolutely guarantee that an action will be dispatched that runs th
 After the pool process completes, keep checking that the sum is zero, and rerun if not, untill we error, in which case the message will be rerun.   So we keep trying until we get to zero, or error, which means the next runner will get to zero, since each partial run, we are making actual commits that are valid.
 
 
-Part of whats happening is that the parallel calls are coming in one at a time anyway.
+
+What we really want is each request that comes back to include the stats about what it caused - how many deno credits, how much storage, how many AI tokens, how much the users account balance was affected.
+Delete branch should free up energy.
