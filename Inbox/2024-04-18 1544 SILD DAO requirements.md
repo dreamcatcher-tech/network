@@ -27,6 +27,8 @@ ambient coordination - if your interests are known, then we can coordinate on yo
 finance management, like community based mortgages
 automated realtime project updates
 dispute resolution
+2D mapping first, where the DAO can describe its situation
+3D where it can act on the unreal engine version
 
 
 
