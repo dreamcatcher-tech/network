@@ -34,3 +34,7 @@ Billing is probably a category in the gateway markeplace - if their credits are 
 Nobody cares abound failed atomics - this is a cost only we carry.
 Atomic collisions are our problem, we log these differently - users see only what is in the commits.
 A well designed atomics model would have almost no collisions.
+
+Writing the stats to the bucket is also a cost too, so should count in terms of write units that we need to pass on to the customer.  Each queue message is like, x, and each file changes are done by the 1kB unit.  We charge for actions / executions plus file changes.
+
+The billing and the metrics should be the exact same storage, to be optimal.
