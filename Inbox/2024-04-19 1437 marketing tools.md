@@ -19,3 +19,10 @@ Make a list of the features required, like stripe, email, accounts, etc and see 
 like an assasination map in a murder plot, but in reverse, to find out how to reach certain people.
 
 What is the definition of online ?
+
+Every venture would need this outreach option.
+Network members would be fortified against traditional outreach, as HAL processes all incoming info for relevance.  We would require incoming to pay the AI fees to read their message.
+
+So if we made these tools internally, they could be good for every one of our users.
+
+Biggest winner would be if we could get contacts to do the promotion for us, like a commssion for introducing people you know, turning everyone into a marketer, and pushing the reqards out to the edges of the network.  Offer commision for referrals of any kind.

@@ -24,6 +24,7 @@ generative ai proposing, with iterative improvements from anyone
 checking off rules against all proposals, so no humans need to be involved, and proposers are guided
 accounting for the DAO so all the planned things have a projected cost in many different dimensions
 ambient coordination - if your interests are known, then we can coordinate on your behalf
+finance management, like community based mortgages
 
 It starts with a strong knowledge base, permanent data
 
