@@ -17,3 +17,12 @@ When triggering something based on commit, we need to attach multiple items as t
 
 So basically each action, we can see the cost and total changes caused by it.
 Also the spans that show how much time each stage took to complete.
+
+Ultimately want to have something like chrome network dev tools where you can click on a span and see more details about it.
+
+Use horizontal candlesticks to show combined stats about many different executions.
+
+Maybe show all executions of a specific isolate, to view as that execution directly ?
+
+Generate a seqeunce diagram to view interactions between chains.
+Check these diagrams against the spec to ensure correct operation looking at large numbers of executions.
