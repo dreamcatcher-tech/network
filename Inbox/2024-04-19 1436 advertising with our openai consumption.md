@@ -14,3 +14,7 @@ Rules for how to combine components together need to be tightly defined.
 As quick as we can, we need some usage data, to do some fine tuning with, so that we fit user requirements as quick as possible.
 
 Can be like powerbi, but chat based, where you can tinker around with charts easily.
+
+Let anyone run our benchmarks, and each run, they get published on the site.
+
+Create your own benchmark, and have it show up in a jitter, so you can see your performance on our system.
