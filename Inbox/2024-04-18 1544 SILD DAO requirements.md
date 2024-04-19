@@ -25,7 +25,13 @@ checking off rules against all proposals, so no humans need to be involved, and 
 accounting for the DAO so all the planned things have a projected cost in many different dimensions
 ambient coordination - if your interests are known, then we can coordinate on your behalf
 finance management, like community based mortgages
+automated realtime project updates
+dispute resolution
+
+
 
 It starts with a strong knowledge base, permanent data
+
+We need to come up with a name - generative DAO.  Basically putting the A into DAO.
 
 Daos are a proposal queue.
