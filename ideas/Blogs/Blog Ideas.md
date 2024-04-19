@@ -368,3 +368,6 @@ Make mozilla be a headless engine that renders at the whim of AI driving.  Make 
 
 ## Stake to Say
 training data for AI with attribution back.  Factual assertions feed back to you.  Earn for staking reputation on validity of information.  Early news pays more.
+
+## Multidimensional value
+Money is one dimensional.  With LLMs able to account in every possible dimension, new means of appraisal are possible - ones with more color.
