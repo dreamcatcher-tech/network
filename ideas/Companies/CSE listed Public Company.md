@@ -89,5 +89,5 @@ Basically anything we consume, we turn it into an AI enhanced service, consume i
 ## Xinova Phoenix
 May high profile people lost money in Xinova.  We should present them the dreamcatcher and see if they would like to continue.  Show them the attribution they will receive anyway, and invite them to boost the system to ensure its prominence.
 
-## Live Prospectus
+## Continuous Prospectus
 Generating a prospectus and keeping it up to date should be trivial, as well as posting updates to the prospectus.  So filing these things should be considered easy, actually, and we can look at many different examples to compare what has worked for others.
