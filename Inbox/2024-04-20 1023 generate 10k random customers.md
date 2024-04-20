@@ -21,3 +21,5 @@ Glob matcher should make the change scope be only the matched file, since concur
 Glob matcher can't handle merges ???
 
 We might want to use git style subfolders to make the sizes of the customers more manageable.
+
+Could have a built in system function that uses an isolate to generate the next filename in the list, so it can generate these on the fly and spawn queue actions immediately.
