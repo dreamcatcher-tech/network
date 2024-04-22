@@ -37,3 +37,5 @@ It starts with a strong knowledge base, permanent data
 We need to come up with a name - generative DAO.  Basically putting the A into DAO.
 
 Daos are a proposal queue.
+
+If we set the bar at blockchain native AI, that foundation is hard to approach, whilst being completely transparent.
