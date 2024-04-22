@@ -371,3 +371,8 @@ training data for AI with attribution back.  Factual assertions feed back to you
 
 ## Multidimensional value
 Money is one dimensional.  With LLMs able to account in every possible dimension, new means of appraisal are possible - ones with more color.
+
+## User improved software
+User led software design.
+Tech is already based highly on feedback from customers, which should be rewarded.  Training data or instructions for ML are another kind of feedback, and that too should be dispersed to customers.  
+Whenever users do something manual, we should record that and benefit an AI model that is shared back to all the users.  Then when new users pay, the contributors should get paid.

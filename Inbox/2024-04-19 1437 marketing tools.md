@@ -51,3 +51,5 @@ Services marketplace with commissions paid out to everyone who contributed.
 Fair pricing estimation tooling to both sides can negotiate fairly.
 
 Outreach should be much friendlier and coordinated between all parties - all the outreachers and all the recipients.  We should also get an affiliate cut of the products that are sold.  The products should be assessed by our systems as being good, ethical products too, so there is AI confirmed quality the whole system thru.
+
+If we made marketing tools first, then they can spread us farther than any other type of consumer.  If we are offering a different paradigm that empowers recipients as well as marketers, and our base has more tooling abilities than the competition, this should attract large numbers of marketing professionals.  Some of them will understand our economic offering, and turn their hand to helping us.  Using our own tools, they will be more effective than if we didn't have these tools.
