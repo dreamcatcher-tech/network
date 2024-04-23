@@ -5,3 +5,6 @@
 
 >[!danger] Depends: 
 
+No browser / device should ever have need of more than one session.
+
+Therefore, the provider is responsible for making the session.
