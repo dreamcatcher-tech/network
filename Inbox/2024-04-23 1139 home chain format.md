@@ -42,3 +42,5 @@ Like a passthru filesystem, so when you ask for stuff, it is based on a specific
 Can do the same thing for sharing repos between users.
 
 Asking to provision home automatically does the sync for you, as a new user.
+
+Should session chain be set by system as to what it will be for all users ?
