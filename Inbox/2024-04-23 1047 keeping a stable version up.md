@@ -14,3 +14,7 @@ Then the UI has some automated interaction tests run against this stand deployme
 ?? should they be released as a pair ?
 
 A dedicated release for the CRM, so it gets hand released after testing passes.
+
+How will live upgrades work ?
+
+Should deployments check the version of the db before processing requests ?

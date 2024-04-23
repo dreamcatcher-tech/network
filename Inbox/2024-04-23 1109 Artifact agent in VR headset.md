@@ -18,3 +18,8 @@ Handle automatic publish to youtube, title and comment generation.
 
 Supercuts done by summarizing the points.
 Possibly voice clone to read out the summary.
+
+Can use the same logic required for android tablet clients to make this system work.
+
+Might be able to do mic recordings directly, and so in any app, could send commands into HAL ?
+

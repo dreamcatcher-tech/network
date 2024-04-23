@@ -28,3 +28,5 @@ This home chain is where your analytics are kept.
 The engine will start a default session, and will attempt to log in using existing credentials.
 
 Anon session will make a dedicated request to get an anonymous PID.
+
+What is a session a branch of ?
