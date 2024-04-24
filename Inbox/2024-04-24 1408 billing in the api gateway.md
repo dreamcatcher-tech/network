@@ -24,3 +24,5 @@ So openai consumption credits would be treated like any other.  Preferrably deno
 So paying multiple hosters and then paying extra for them to form consensus with each other gives resilience, diversity of hosting, and lets you switch suppliers any time, possibly in realtime, with the switch decisions being made by the consensus hosters.
 
 consensus as a service.
+
+We should make the initial consumption of helps billed thru this gateway too, so that would be the first earnings for our network participants, and we would have launched using ambient attribution immediately.

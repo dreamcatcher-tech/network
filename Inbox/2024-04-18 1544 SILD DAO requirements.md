@@ -39,3 +39,10 @@ We need to come up with a name - generative DAO.  Basically putting the A into D
 Daos are a proposal queue.
 
 If we set the bar at blockchain native AI, that foundation is hard to approach, whilst being completely transparent.
+
+Show a model of STC attribution for island usage.
+Set a small tx levy to pay to STC holders.
+Show how earnings of dreamcatcher worldwide would pay a small fee to STC holders.
+So for simulated earnings, show simulated payout to STC holders.
+Experiment with any kind of land levy
+Put forwards all plans using these simulations.
