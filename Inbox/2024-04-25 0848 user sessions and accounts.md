@@ -34,9 +34,20 @@ Booting goes:
 
 
 
-Users, which are represented by a special repo
-Sessions, which are a branch of the user repo
-Orgs, which are a type of user controlled by other users
-
+Actors: Entities in the system, represented by an Actor repo
+- The first actor is the super user
+- Users, which are represented by a special repo
+- Orgs, which are a type of user controlled by other users
+Sessions: Devices authenticated as an Actor, which are a branch of the user repo
+Repos, representing a git repo, which are controlled by an Actor repo
 
 The two special users are the superuser and the anonymous user
+
+Sessions are typically used to dispatch to the HAL repo, which is what the GUI is set up to interact with.  There is not predisposition to HAL in this system, but it is primarily intended to be used in this pattern.
+
+To use with HAL, users upsert the HAL repo, which is there by default when their accounts were created, then 
+The anon chain starts with a HAL repo, which is its only allowed thing.
+This HAL helps it to authenticate, allowing customization of HAL and working with other repos.
+
+Error was treating the system like it was dedicated to HAL, but it is in fact a general system that is command line only, with one of its uses being Dreamcatcher.
+Artifact is pure computation, and when composed in a certain way, it is the Dreamcatcher.
