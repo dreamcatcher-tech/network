@@ -55,3 +55,12 @@ This might be stored direct in the db for speed ?
 The atomic commit would check the key is still listed in the valid set, so the check would be very fast.  So revoked keys are just removed from the db.  Keys are listed by the sessions they are set against, whilst also being recorded in the home chain.
 
 It has a base set of files and config that locks it down.  We want to minimize the amount of config differences that are in the home chain vs pure chain logic.
+
+So pierces should never be able to go outside of a repo, like a single session should not be able to just light up multiple repos at whim ?
+The session permissions of a repo, particularly a shared repo, need to be honoured separately.  So to log in to a shared repo like the CRM, users would have to:
+- auth with github to have a validated home account, and have their current device authenticated
+- have created a session with `orgUlid/orgname/crm` which is a remote repository, so would have been done in collaboration with that repo
+
+The CRM would be stored at `orgUlid/orgname/crm`
+
+? Maybe we would never let remote interactions occur without going thru a local session chain ?
