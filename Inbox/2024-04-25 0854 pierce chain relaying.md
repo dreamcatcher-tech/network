@@ -9,3 +9,4 @@ If a repo requires that all incoming actions come in via a session chain for eac
 
 This can be mitigated with atomic relaying, where these hops will be done in a single atomic commit, but ideally we should minimize the hops by design
 
+If we have genuinely new things to commit, then the only thing stopping a commit would be tip values are stale, so we should be able to cheaply retry, even with a long string of dependent atomic commits ?
