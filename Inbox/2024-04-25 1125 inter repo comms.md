@@ -32,3 +32,4 @@ To initiate, both parties agree on an initial commit to start the network branch
 Both hosts are always trying to merge the other hosts view in to their own.
 
 This could be extended out to N party, with one json file for each.  PIDs for each other could be used so that one channel can send to many - might be useful in consensus communications.
+

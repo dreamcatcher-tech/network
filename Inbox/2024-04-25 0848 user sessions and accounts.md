@@ -45,9 +45,27 @@ The two special users are the superuser and the anonymous user
 
 Sessions are typically used to dispatch to the HAL repo, which is what the GUI is set up to interact with.  There is not predisposition to HAL in this system, but it is primarily intended to be used in this pattern.
 
-To use with HAL, users upsert the HAL repo, which is there by default when their accounts were created, then 
+To use with HAL, users upsert the HAL repo, which is there by default when their accounts were created, then start a network branch with that repo.
 The anon chain starts with a HAL repo, which is its only allowed thing.
 This HAL helps it to authenticate, allowing customization of HAL and working with other repos.
 
+
 Error was treating the system like it was dedicated to HAL, but it is in fact a general system that is command line only, with one of its uses being Dreamcatcher.
 Artifact is pure computation, and when composed in a certain way, it is the Dreamcatcher.
+
+In this model, a user can see the activity of all of its sessions across all its devices, and snip any of them off.  They can see the net interactions that they have with all other repos on the system, regardless of whether they own them or not.  Owning means simply paying the bills.
+
+Other repos have no business knowing what sessions a user used to send comms out with.
+
+Is there a relationship between user session with the user account, and sessions in HAL ?
+What if HAL wants to make some changes to the CRM ?
+
+Session would start a new branch of HAL, using the `createSession` command.
+So first we would make a new session with our user account, then we would upsert the HAL repo, then make a new branch within that repo for our specific session.
+So now we have two sessions - one with the user account, and one with our HAL.
+?? Could HAL be system level then ? Makes it subject to central upgrades ?
+
+The account session is how we get instructions into the system.
+A new tab would have an existing session with the user account, which could have a prior session with HAL.
+
+Once a user is logged in, they can repoint their home repo at the HAL repo to work on their own fork of HAL.
