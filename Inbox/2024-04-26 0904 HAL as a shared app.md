@@ -17,3 +17,5 @@ At the start, everyone can see everyone elses forks in this centrally hosted rep
 
 We can always get the base repo they are coming out of, and we group sessions by this repo.
 May allow merging and splitting / transferal of sessions.
+
+Probably HAL sits in the store, where the store hosts the public version of things, where they are run by the platform, and billing is done by the consumer.
