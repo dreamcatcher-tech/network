@@ -69,3 +69,20 @@ The account session is how we get instructions into the system.
 A new tab would have an existing session with the user account, which could have a prior session with HAL.
 
 Once a user is logged in, they can repoint their home repo at the HAL repo to work on their own fork of HAL.
+
+HAL should pass billing back to the user accounts that invoked HAL.
+PIDs in HAL would be done per user, so a user can make multiple sessions, but can't see anyone elses sessions without permissions, where those permissions might stipulate a commit that the permission applies after.  By default applies after the permission commit.  Might be for everything on the branch.  Can be a numbered depth or a specific commit.
+
+So its the UI tools that drive the way Artifact is used to engage HAL.
+Artifact is a pure hosting system for executable git repos with high parallelism.
+Good for making custom apps using artifact, since they can be derivatives of HAL, and we just release a different UI for those systems.
+Users can store in the central HAL pointers to actually redirect to their own HAL.
+Home repo may allow some config storage on a per app basis, which app client code can use to do things unique to the app ?
+
+## CRM user
+
+## CRM commissioner
+
+## HAL anon user
+
+## HAL authenticated user
