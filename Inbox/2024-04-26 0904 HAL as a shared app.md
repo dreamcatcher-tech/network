@@ -9,3 +9,8 @@ Like the CRM, having multiple users connect seems important.
 
 Otherwise, users are cloning their own version of HAL, rather than participating in a wider network of usage.
 
+It acts like any other standalone app in the system does, where it is a base repo that is maintained by someone, and then branches are formed within it.  It should be configurable so that branches can be confidential, so the owner of the repo can't see them and can't stop them either.
+
+When running HAL, users should be able to make child branches where the top level HAL is exercising lower level HALs ?
+
+At the start, e
