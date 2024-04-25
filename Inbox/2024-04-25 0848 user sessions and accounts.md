@@ -27,6 +27,8 @@ Anon could be the system chain but without proper credentials.
 Maybe all system actions are possible in any home chain, provided account has credit.
 User / Home chains handle sessions and making repos
 
+Sessions are device specific and connect to a user account.  They represent the conduit between chainland and outside.  They enable the devices to act as the user.
+
 Booting goes:
 - system home / superuser
 - anon chain ?
@@ -79,10 +81,28 @@ Good for making custom apps using artifact, since they can be derivatives of HAL
 Users can store in the central HAL pointers to actually redirect to their own HAL.
 Home repo may allow some config storage on a per app basis, which app client code can use to do things unique to the app ?
 
+Permissions to do things on dreamcatcher is given when you log in with your home account, so a particular session can be tied to using a specific app.
+
+Should HAL be what people by default interact with, and then the CRM is just accessed by HAL ?
+Both - HAL could interact with CRMs, but it is also provided by default to users of the CRM, as its presentation layer, where it is preprimed with helps tuned to CRM activity.
+
+? how to wrap the session object when we want to target a specific repo, like HAL?
+
 ## CRM user
-
+- Sign in with a Dreamcatcher account
+- Resume their prior CRM session
+- Choose from their available CRM instances
+- start a new session with their chosen CRM
+- resume an existing crm session
+- do CRM tasks
+- Users can kill specific sessions logged in to their account
+- CRM owners can kill specific users, or require them to reauthenticate
+- changes to the CRM can be attributed to a specific user, and a specific user can be audited to see everything they did
 ## CRM commissioner
-
+- Sign in with a Dreamcatcher account
+- fork an existing CRM or create a new one
+- invite users to connect to it
+- perform administrative actions as one of the admins of the app
 ## HAL anon user
 
 ## HAL authenticated user
