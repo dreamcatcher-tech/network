@@ -13,4 +13,7 @@ It acts like any other standalone app in the system does, where it is a base rep
 
 When running HAL, users should be able to make child branches where the top level HAL is exercising lower level HALs ?
 
-At the start, e
+At the start, everyone can see everyone elses forks in this centrally hosted repo.
+
+We can always get the base repo they are coming out of, and we group sessions by this repo.
+May allow merging and splitting / transferal of sessions.
