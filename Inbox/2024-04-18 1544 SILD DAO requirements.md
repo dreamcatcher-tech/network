@@ -46,3 +46,6 @@ Show how earnings of dreamcatcher worldwide would pay a small fee to STC holders
 So for simulated earnings, show simulated payout to STC holders.
 Experiment with any kind of land levy
 Put forwards all plans using these simulations.
+
+Making a spec tool to define the requirements, and distill down some key usage scenarios is key.  The scenario tool should run lots of similar simulations, and determine if the outputs make sense.
+Should be able to digest conversations and use that to build out specs, and generate a concise list of questions for the owners to answer / decide upon.
