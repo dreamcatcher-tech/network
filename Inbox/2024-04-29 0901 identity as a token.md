@@ -20,3 +20,12 @@ Benefit of this service is no auth required inside your applications, identity i
 
 Can be running on different hosting providers and still use the same services securely.
 Can switch between auth providers seamlessly, and can use several at once.
+
+Oauth loop with github results in a specific branch that has been issued a token from the service, with github PAM token being held confidentially in the service, and
+
+They can then present this proof to others, which allows the app to take this token, ask the gh service if it is valid, then proceed engaging with the user.
+
+This model is the basis for confidential sensitive info being held by the provider and proof of the validity of this info being passed around as a token, where even the ability to check a token is controlled by the user.
+
+Means that an app need not hold any of this sensitive data, and no user needs to provide it twice.
+The whole dreamcatcher ecosystem would look like a single github oauth, so no matter how many apps your interacted with, they would only use a single oauth token with github.  Makes it easy for an app to be granted control with AI for doing things.
