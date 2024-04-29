@@ -21,3 +21,9 @@ The systemw ould be integrated with some form of payment, since it needs to be a
 If the user app / home app was integrated with the system, this is how the billing would be handled.
 
 Metrics then are mapped to interal account chainIds, and pierced in periodically.
+
+Superuser in home can have the machine id provided as a key in .env, rather than relying on it being user provided.  Once it is set, it cannot be unset unless the env is changed.
+Set the public key as an env, and keep the private key on local machine in .env file.
+
+Start with getting the machine key approved first, which creates a user account.
+If you came from a pre-existing key, you have stored the home id along with it.  We will not look it up for you.
