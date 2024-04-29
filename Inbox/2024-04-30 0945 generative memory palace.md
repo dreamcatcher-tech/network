@@ -19,3 +19,5 @@ Could offer computers that can spin up to run conventional apps for users, where
 
 Streaming 3D, so a compute cluster can generate complex geometry, or dynamic changing geometry, and it gets streamed into the headset, so all it has to do is render the scene.  Cluster does geometry chunking down, so it can summarize far away objects to reduce render load.
 Gradual loading data means low poly versions can load fast and then as more data comes in, higher rez versions.  The geometry calculations should be taking place off headset as much as possible.
+
+We can start with simple note taking reconciliation across a knowledge base.
