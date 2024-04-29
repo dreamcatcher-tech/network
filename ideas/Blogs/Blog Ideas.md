@@ -376,3 +376,17 @@ Money is one dimensional.  With LLMs able to account in every possible dimension
 User led software design.
 Tech is already based highly on feedback from customers, which should be rewarded.  Training data or instructions for ML are another kind of feedback, and that too should be dispersed to customers.  
 Whenever users do something manual, we should record that and benefit an AI model that is shared back to all the users.  Then when new users pay, the contributors should get paid.
+
+## nApps (Natural Language Apps)
+**nApps** are advanced software applications designed to utilize natural language processing (NLP) technologies to facilitate interactions and operations within business systems. They are distinct in their long-term deployment and rigid structure, combining crucial aspects of business logic with data storage to enforce consistency and reliability across the system.
+
+#### Characteristics of nApps:
+- **Longevity and Stability**: nApps are built to be enduring elements within a system, designed to operate reliably over extended periods.
+- **Structured Framework**: They maintain a rigid architecture, which is crucial for supporting consistent business processes and data management strategies.
+- **Integration of Business Logic and Data Storage**: nApps seamlessly merge the operational logic that drives business processes with the mechanisms for storing and retrieving data, ensuring a cohesive and efficient environment.
+- **Consistency Enforcement**: As the backbone of their respective systems, nApps ensure that all transactions and data manipulations adhere to established business rules and integrity constraints, thus maintaining the system's overall health and functionality.
+
+### Role and Importance:
+nApps serve as the foundational components of systems that require stable and predictable interactions, where business logic and data management are closely intertwined. By leveraging natural language interfaces, nApps enhance accessibility and usability, making complex systems more approachable for users with varying levels of technical expertise. They are integral to the system's ability to perform core functions reliably, much like the backend infrastructure of large-scale tech operations such as Google's data management and processing centers.
+
+This definition outlines the core features, roles, and significance of nApps in a modern technological ecosystem, emphasizing their critical function in ensuring system integrity and user engagement.
