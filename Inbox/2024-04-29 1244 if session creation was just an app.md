@@ -27,3 +27,10 @@ Set the public key as an env, and keep the private key on local machine in .env 
 
 Start with getting the machine key approved first, which creates a user account.
 If you came from a pre-existing key, you have stored the home id along with it.  We will not look it up for you.
+
+
+Machines knowing they are new, request a new machine id to be inserted, providing a public key.
+If accepted, they are returned a PID for the branch that represents their machine Id.
+They use this to create session branches.
+
+Any attempt to pierce a branch that doesn't exist throws an error, and the system should respond accordingly - if a session that the machine things exists actually doesn't then it should probably regenerate its machine keys since the host has forgotten them.
