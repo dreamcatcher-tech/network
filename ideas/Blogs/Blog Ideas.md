@@ -380,6 +380,8 @@ Whenever users do something manual, we should record that and benefit an AI mode
 ## nApps (Natural Language Apps)
 **nApps** are advanced software applications designed to utilize natural language processing (NLP) technologies to facilitate interactions and operations within business systems. They are distinct in their long-term deployment and rigid structure, combining crucial aspects of business logic with data storage to enforce consistency and reliability across the system.
 
+They are like dApps in their decentralization, but they are constructed using natural language.
+The are the native application format in the Artifact blockchain.  Artifact is the blockchain layer of the Dreamcatcher.
 #### Characteristics of nApps:
 - **Longevity and Stability**: nApps are built to be enduring elements within a system, designed to operate reliably over extended periods.
 - **Structured Framework**: They maintain a rigid architecture, which is crucial for supporting consistent business processes and data management strategies.
