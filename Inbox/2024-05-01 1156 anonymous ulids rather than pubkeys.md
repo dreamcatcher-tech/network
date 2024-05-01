@@ -40,7 +40,9 @@ So it really only needs to store the userId from github mapped to an actorId.
 Then from the home chain, the machine would call for itself to be merged with the base actorId.
 This would be a no-op if we currently were the authenticated actorId.
 
-Who does the merging ?
+Who does the merging ?  The one who just completed auth.  If they want to act as authenticated.
+
+Other apps have the ability to check if an account is verified against different providers, so that if they trust those providers they can grant privilege escalation.
 
 Merging should be a function of the home isolate, not the auth providers.  
 So an auth provider registers with the home isolate.
