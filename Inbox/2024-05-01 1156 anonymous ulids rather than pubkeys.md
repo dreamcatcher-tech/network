@@ -31,3 +31,8 @@ If the home branch was trusted execution, then we could rely on merged in ids be
 
 When sessions get started with HAL, they start with a hook that watches when the machine is moved, and causes HAL to update everything when this happens.
 
+But what if multiple auth providers bond actorIds together differently ?
+
+If a provider is registered with the home chain, then it has the ability to merge actorIds together.
+Calling an auth provider would 
+
