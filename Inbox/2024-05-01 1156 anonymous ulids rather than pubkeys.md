@@ -34,5 +34,13 @@ When sessions get started with HAL, they start with a hook that watches when the
 But what if multiple auth providers bond actorIds together differently ?
 
 If a provider is registered with the home chain, then it has the ability to merge actorIds together.
-Calling an auth provider would 
+Calling an auth provider would establish the mapping between machineIds and actorIds and github userIds, but would not do the actual merging.
+
+So it really only needs to store the userId from github mapped to an actorId.
+
+Who does the merging ?
+
+Merging should be a function of the 
+
+Whenever a new actor is created in HAL, then it hooks the actorId it is following, and is notified when changes occur, so it can keep its model in sync.  The hook should be sticky in that it triggers and follows, so no matter how rapidly subsequent merges occur, it will always receive a notification.  Basically whenever a branch is merged, pid change triggers are fired and then immediately reinstantiated on the merge target, so nothing is ever missed.
 
