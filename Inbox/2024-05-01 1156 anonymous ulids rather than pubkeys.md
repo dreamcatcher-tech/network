@@ -49,3 +49,4 @@ So an auth provider registers with the home isolate.
 
 Whenever a new actor is created in HAL, then it hooks the actorId it is following, and is notified when changes occur, so it can keep its model in sync.  The hook should be sticky in that it triggers and follows, so no matter how rapidly subsequent merges occur, it will always receive a notification.  Basically whenever a branch is merged, pid change triggers are fired and then immediately reinstantiated on the merge target, so nothing is ever missed.
 
+Authproviders and the home isolate are closely related.
