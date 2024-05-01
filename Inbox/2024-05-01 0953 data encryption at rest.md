@@ -25,3 +25,9 @@ If all PII has a random seed inserted in it every change, then it masks info abo
 Then the git structure works on plain files, but the storage is encrypted.
 
 Add the encryption layer inside of kv_toolbox.
+
+Layers are required in the database, so that we can do key cycling.
+Layers can be used to do gc and packing for git, but also for rotating keys in the case of compromise.  When gc is performed, we should rotate the keys anyway.
+
+Ideally we would have keys that could be set on a per repo basis.
+If each repo had an encrypted .env.vault type of thing, then only authorized actors could read it ?
