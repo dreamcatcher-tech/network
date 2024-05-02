@@ -58,4 +58,4 @@ Profit from sales in the marketplace goes towards the tools and people that cont
 
 The dreamcatcher needs an outreach system.  It should be polite, and it should reward people that contribute.  It should be multimodal, in that it uses many different channels, and uses intelligence to determine an optimal path.
 
-Let anyone engage in activity that gets submitted as part of the leadgen efforts.  You submit your messages and other contacts and then your contribution is noted.  You can 
+Let anyone engage in activity that gets submitted as part of the leadgen efforts.  You submit your messages and other contacts and then your contribution is noted.  You can have the AI help you write responses, but the AI will also chastise you if you said something detrimental to the product.
