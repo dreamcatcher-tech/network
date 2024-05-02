@@ -57,3 +57,5 @@ If we made marketing tools first, then they can spread us farther than any other
 Profit from sales in the marketplace goes towards the tools and people that contributed to enabling that deal.  Future dues continue to be calculated based on the impact of the work done.  Impact lets people rank workers, so someone whose work has long lasting impact is someone you should want to hire, and they can set their price higher to balance out the impact they are proven to have.
 
 The dreamcatcher needs an outreach system.  It should be polite, and it should reward people that contribute.  It should be multimodal, in that it uses many different channels, and uses intelligence to determine an optimal path.
+
+Let anyone engage in activity that gets submitted as part of the leadgen efforts.  You submit your messages and other contacts and then your contribution is noted.  You can 
