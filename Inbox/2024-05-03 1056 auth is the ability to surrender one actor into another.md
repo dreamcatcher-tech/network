@@ -8,3 +8,5 @@
 the auth providers let you merge identities.
 
 Allow us to treat two different actors as the same actor by melding one into the other.
+
+The athority on sameness - everything starts out different based on machine keys, but the auth providers affirm that two things are one thing.
