@@ -27,3 +27,13 @@ losses due to inferiority - what flaws or deficiencies have cost its consumers ?
 Innovation unlock - what things were enabled because of this ?
 
 Revenue enabled - how much did this project allow other projects to have significant impact ?
+
+Presence - did someone keep the flame burning at a location
+
+Communication - were comms enhanced ?
+
+Carrying capacity of the biosphere ?
+
+energy, food, water, shelter - were these things increased or decreased.
+
+Some of these are dimensions we want, and others are pure impact regardless of anything else - absolutes.
