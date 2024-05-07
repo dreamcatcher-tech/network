@@ -45,3 +45,5 @@ The data, the dimensions, the view configuration / mapping info.
 Must support conflicting views, and a prediction market for handling uncertainty.
 
 If we had these impact crystals, we can use them to arrange ourselves, seek investment, present our benefits to each other, show how ambient attribution is needed to bridge between the crystals, give those looking for impact investment a stronger tool to communicate what they want.
+
+Make crystals that show our dependence on various things.  One goal is to ultimately be independent, which means being able to function without the internet, without advanced foreign manufacturing, and without external capital.
