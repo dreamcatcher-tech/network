@@ -30,3 +30,11 @@ Anytime we hear anyone talking about any impact other than money, we should try 
 Return forecasting, so describe some scenarios, and show how the combined impact that everyone provided is rewarded.  Dial the scenarios up and down to see how the system responds.
 
 Investing is buying impact crystals that do not yet exist.  Craft a future crystal, put escrow funds against it, once something sufficiently close occurs, crystal becomes real and funds are released.
+
+How to express the STC buyers in terms of the impact of all STC activity as well as individual holders and their impact over the time they held the STC for.  So you have an impact crystal proportional to your contributions to the sum STC impact crystal.
+
+Show adding a new dimension and show it rerunning over all the data to regen the crystals, and see progress of it growing during the generation phase.  This is the same as the timeline generation.
+
+Show a timeline tool so the crystal can be scrubbed over a timeline and see how it was at different points in time and see how it changed.  Select a range on the timeline and loop replay just that time to show how a particular sequence of events impacted it.
+
+Make a geometry generator controlled by LLM then allow different viewers to be connected to it.  So can have in browser tooling, but can show them in context of the island. https://threejs.org/examples/#webgl_postprocessing_unreal_bloom
