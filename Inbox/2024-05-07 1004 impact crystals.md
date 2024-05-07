@@ -9,6 +9,8 @@ Ring them, with bulbous dendrils.
 
 The rings represent the scale of the impact at different levels.
 
+![[Pasted image 20240507124000.png]]
+
 Make an AI tool that can generate these crystals from various scenarios.  Makes a 3D viewer that can be reconfigured to handle different points of view.  AI can be used to explore these.  AI answers questions about the crystal, and can talk about how it fits in to the wider landscape, since it represents information, and all that info has provenance.
 
 Actor identification, impact assessment.
@@ -38,3 +40,8 @@ Show adding a new dimension and show it rerunning over all the data to regen the
 Show a timeline tool so the crystal can be scrubbed over a timeline and see how it was at different points in time and see how it changed.  Select a range on the timeline and loop replay just that time to show how a particular sequence of events impacted it.
 
 Make a geometry generator controlled by LLM then allow different viewers to be connected to it.  So can have in browser tooling, but can show them in context of the island. https://threejs.org/examples/#webgl_postprocessing_unreal_bloom
+
+The data, the dimensions, the view configuration / mapping info.
+Must support conflicting views, and a prediction market for handling uncertainty.
+
+If we had these impact crystals, we can use them to arrange ourselves, seek investment, present our benefits to each other, show how ambient attribution is needed to bridge between the crystals, give those looking for impact investment a stronger tool to communicate what they want.
