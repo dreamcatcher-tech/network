@@ -33,3 +33,11 @@ So the basic version is just an overview of the model, and the tools to pull in 
 Can be used for crime scene reconstructions and alternate timelines, giving people VR access to famous murder scenes.  People should turn up and take 3D scanner versions, or use loads of photos to blanket a scene, then crews get to work with AI assistance to build up plausible scenarios of what happened.
 
 The AI can build up a case, and say what is required to go beyond reasonable doubt, as well as put thru arbitrarily wild theories, and let anyone suggest a case.
+
+This is much more fun and engaging than a raw history lesson.  Makes them think about why things occurred the way they did, teaches verification of data, builds something lasting - these are skills that transfer to every single area of their lives, which is what history is supposed to be about.
+
+Reward people for spotting inconsistencies.  They could chat with the machines and ask questions about inconsistencies.  Marks would be awarded for finding something new or missing, or finding an inconsistency, rather than a fictitious exam.  Those rewards can pay out to them in royalties, or in escrowed money.
+
+Battles are one thing, daily life is another.
+
+Can let them experiment with how things would have gone if some aspects were different.  The exam could be a fictitious change, and the students have to figure out the impact of those changes, with the help of AI, and build out a new alternate model.  There should be a list of genuine alternate realities that everyone has agreed might have happened, and the students need to build those out more.
