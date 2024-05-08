@@ -17,3 +17,8 @@ Auth in with simply a password based thing, so if we present the same password, 
 
 OR just keep the same machine keys for test, and only ever sign in with that.
 
+ls of a repo is different again.
+
+/machines/
+/actors/actor1/
+
