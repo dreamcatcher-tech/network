@@ -79,5 +79,34 @@ So repo names can only really be related to github, and nothing else.
 
 Billing pointer can go in the `.git` folder, which can ultimately point to an actorId
 
+If all actors stored a list of the repos they are in control of, then when surrender, can remap these all to the new value.  The pointer should be in the root of the git folder.
+Billing pointer contains a type and a public key
+It can point to another repo maybe ?
+
+Unclear what parent of a repo means - can destroy it seems the obvious one.
+
+A repo with no parent needs a billing actor, or no billing actor means user pays.
+Children repos use io.json to point to their parent, and their parent points to them.
+
+At some point, the top repo changes to point to a branch as the billing Id / owner.
+
+Each actor branch stores the repos the own inside of a file inside their branch.
+
+This can tie in to getting the github keys out of auth for doing clones.
+
+When the session asks for a clone, clone has the ability to look up the PAT for this session, and use that for authentication.
+
+PIDs could include the actor account in them too, such that actor accounts are run by a hosting account, or are sovereign ?
+
+The central registry of home accounts might be a mistake ?  They need a sponsor until they have credit themselves ?  We need a protocol level way of giving people guarantees about what the actor they are dealing with is.
+
+So if PIDs held actor info, then this works ?
+So a repoId could be an array, or have an extra field that is `parent`?
+The parent needs to store somewhere what their children are.
+
+Merging an actor rewrites the pointer file in all the child repos it has.
+Repo making repo is not supported yet, so only actors make repos for now.
+A repo could make an actor ? then it can do whatever it wants when it becomes and actor ?
+The bill gets sent up to the actorId 
 
 
