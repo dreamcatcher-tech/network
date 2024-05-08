@@ -57,3 +57,27 @@ Branches still coordinate with each other in a trusted single execution environm
 Inter repo can be arbitrarily delayed.
 Branches can be forked, so a new version can occur that gets merged back in ?
 
+Branches are used to model actors and machines, since these are processes in the real world, and they all fork a single repo, so that control of the rules can be maintained, so that identity on the platform has integrity.
+
+For each Actor, we also have 
+
+Or, the repos are free floating, and have a link bank to the actorId that pays for them
+Surrender needs to leave a marker so next time some billing occurs, the pointers are moved ?
+So each actor can have a branch to represent the repos that they control ?
+
+If the control or billing was stored in a repo, then it needs a commit whenever the actor changes, which seems reasonable.
+Ideally we would have this pointer in one place, and it gets updated ?
+Is it a hosting repo, or a repo repo ?
+then when the billing agent changes, it just gets updated here.
+Repos could have child repos, and this would be held in this one large repo ?
+
+Home should hold the accounting rules for all the repos it hosts.
+Make an independent id for the billing entity of repos, then when the actor moves, this gets repointed 
+
+The namespaces of these repos must not clash when an actor surrenders to another actor.
+So repo names can only really be related to github, and nothing else.
+
+Billing pointer can go in the `.git` folder, which can ultimately point to an actorId
+
+
+
