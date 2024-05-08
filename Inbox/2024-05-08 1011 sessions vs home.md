@@ -36,3 +36,24 @@ Do users even need to be making their own repos, in order to use HAL ?
 How is the relationship of parent and child carried on between git checkouts ?
 Is it only within the context of chainland that this relationship exists ?
 
+The chain config, and whom it accepts controls from should be in the git repo somewhere.
+The root io.json seems the appropriate place to set this.
+If a child branch wants to create a new repo, then it needs to contact the root branch, and this would then make the request to system.
+
+Multi parent means the bill is split how ?
+
+Cloning where there is no .io.json means what ?
+
+But which is the master branch and where is this stored ?
+
+What does free floating mean ?  So not everything needs a parent ?
+
+ls all the repos should read from the base branch 
+
+???? should the base branch hash be part of every action anyway ?
+So in .io.json, each commit we always say what the head of main branch is, to have consistent view of the inter repo states ?
+
+Branches still coordinate with each other in a trusted single execution environment.
+Inter repo can be arbitrarily delayed.
+Branches can be forked, so a new version can occur that gets merged back in ?
+
