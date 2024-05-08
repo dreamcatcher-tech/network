@@ -22,3 +22,17 @@ ls of a repo is different again.
 /machines/
 /actors/actor1/
 
+children could be listed in the io.json file, of the master branch ?
+But is the child repo the child of a specific branch, or the full repo ?
+Since it is the billing arrangement, it should be at the repo level.
+It should be in the config since it is a layer above the branch interactions.
+
+But if actors are branches, how can an Actor own a repo ?
+
+Billing parent should be very cheap to look up, and should be included in the pid ?
+
+Do users even need to be making their own repos, in order to use HAL ?
+
+How is the relationship of parent and child carried on between git checkouts ?
+Is it only within the context of chainland that this relationship exists ?
+
