@@ -17,3 +17,5 @@ So as long as your activities pass the DAO scrutiny and the AI keeps you in comp
 So, we should set up the legal frameworks and governance to allow remote projects to take advantage of this jurisdiction.  Profit share is apportioned using LLMs.  Some of that goes to the island.  The more we can generate product out of the use cases on the island, the more connections we make, and the deeper the showroom we recreate, the better for everyone involved.
 
 It is of great advantage to be in a tax free jurisdiction, have a physical presence, and a collaborative lab environment.
+
+If people could transfer their revenue generation in local jurisdictions to this other jurisdiction, then there can be significant tax advantages.  This business hosting service, like a cloud provider for your business, is valuable.
