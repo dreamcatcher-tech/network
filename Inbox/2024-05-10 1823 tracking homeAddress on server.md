@@ -27,3 +27,11 @@ If we had predictable commits, then we could generate it solely from a signing k
 
 Ideally we would poke a hole to install the home repo and set up ourselves as the master machine init, so we have admin rights on the admin level based on our special machine id.
 Then, only piercings that have that sig can target admin level settings, and all other permissions are denied.
+
+So we would puncture the system once, from a privileged vantage point, with a single action, which was to deploy the home system, which is the foundation of identity for the system.
+From that point on, everything is subject to signature controls.
+
+
+This could be a repo that was run in colab with other entities.
+
+It is unique in that the branches are named after public keys, so it means there is no chance of collision without it being genuinely the same key.
