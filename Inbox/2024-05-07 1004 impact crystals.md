@@ -47,3 +47,8 @@ Must support conflicting views, and a prediction market for handling uncertainty
 If we had these impact crystals, we can use them to arrange ourselves, seek investment, present our benefits to each other, show how ambient attribution is needed to bridge between the crystals, give those looking for impact investment a stronger tool to communicate what they want.
 
 Make crystals that show our dependence on various things.  One goal is to ultimately be independent, which means being able to function without the internet, without advanced foreign manufacturing, and without external capital.
+
+Forward crystals are ones that do not exist that you would like to see.
+Then the solver kicks in an attempts to collect stucks and outcomes together that would cause the kind of impact you want to see.
+
+Basic rules are that impact crystals can be merged and split many times.  They can be fractionalized and exploded out to their individual dimensions and parts of dimensions.  anyone can add a new dimension to view and assess something as, and the viewers can be altered to suit.  Prediction markets exist for finding consensus between many people as to the impact of something, and AI can be used to take a guess.
