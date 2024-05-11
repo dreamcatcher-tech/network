@@ -13,3 +13,5 @@ Supplier needs yet another format.
 
 Each delay in entry that requires a human to do somethnig is a chance to forget.
 Ideally everything should be kept updated in realtime.
+
+Make a system to take in emails, and templates, and keep them updated, plus auto fill in everything.
