@@ -15,3 +15,8 @@ So we could make apps in this way for a purposefully small dataset, and so long 
 
 Things like deduplication, updating all relevant items when a single item gets dropped in.
 So long as we manage the scope to always fit a context window, or we shard the windows effectively, then the apps are happening in context all the time.
+
+Easy to segment todo lists into topic areas.
+Easy to produce a report about progress.
+
+Shared todo lists between peers can be kept up to date easily by patching in the changes from others
