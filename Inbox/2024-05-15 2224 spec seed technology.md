@@ -1,0 +1,20 @@
+
+>[!tip] Created: [2024-05-15 Wed 22:24]
+
+>[!question] Targets: 
+
+>[!danger] Depends: 
+
+there is a seed of text that should be droppable into artifact, that will cause the machine to generate a fully tested workable crm.
+
+As we test and refine the system, in the background it tries to distill down a new seed that still has all the end results that we wanted.
+
+Use staging so that it knows it will derive a certain portion or piece, rather than the whole thing all at once.
+
+Ultimately will test the grown from seed against the current patched / whipped iteration for equivalence in all tests.
+
+We should be able to show multiple apps that can be recompiled in this way.
+
+Means that if we drop this page or two of text in, the LLM should be able to test and retest and reshape itself into a working llm, and demonstrate simulations of the full working system.
+
+Hopefully the intelligence of later models shines thru better using seed, rather than using constraints.

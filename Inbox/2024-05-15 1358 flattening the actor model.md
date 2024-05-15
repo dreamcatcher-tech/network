@@ -16,3 +16,4 @@ Unauthed machines make a temporary actor, where this actor is merged when they a
 Advantage is that the machine session never moves, so all the things the machine sessions did, still remain with the exact same PID.
 
 Redirects of PIDs could be done if you had a prior commit where the pid was one thing, then we should have a way to walk quickly and find where the PID changed ?
+
