@@ -60,3 +60,4 @@ DNS is something that should be managed session side, not server side.  It shoul
 Inside an isolate, if we want to get some well known things, we need to know a registry name / address.  Our host should supply one if we don't have one already.
 
 ? Could DNS be used for checking if a PID exists, or a session exists AND that we have permission to access it ?
+
