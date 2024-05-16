@@ -17,3 +17,4 @@ It would test competency on a regular basis during professional career.
 Can use this to run company quizes so we are constantly testing staff lack of knowledge and mapping areas of weakness.  Based on emails, instead of correcting, it asks probing questions about something, massaging out dissonance in team members.
 
 Dissonance is a chance to reach a deeper understanding, so should be debated thru.
+

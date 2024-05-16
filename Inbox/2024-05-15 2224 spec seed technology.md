@@ -18,3 +18,9 @@ We should be able to show multiple apps that can be recompiled in this way.
 Means that if we drop this page or two of text in, the LLM should be able to test and retest and reshape itself into a working llm, and demonstrate simulations of the full working system.
 
 Hopefully the intelligence of later models shines thru better using seed, rather than using constraints.
+
+Inverted programming starts with all possible programs and takes away from it.  Contemporary programming is iterative / additive.  Inverted starts with every program and separates the pieces out.  Seed regenerates the end result from the smallest possible input.  As the models get better, seed time and seed size go way down.  There will always be a seed tho, however more of the seed will be included in the model itself.
+
+Our next major adjustment / adaptation, is when the big models release data management / record management systems.  We should map out the developments in the AI space that will be cause for concern for us.
+
+So is this yet again another intermediary step ?  However the internet has gone thru many intermediate phases, all of which have been wildly profitable, none of which are the end state.
