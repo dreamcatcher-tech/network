@@ -24,3 +24,7 @@ Inverted programming starts with all possible programs and takes away from it.  
 Our next major adjustment / adaptation, is when the big models release data management / record management systems.  We should map out the developments in the AI space that will be cause for concern for us.
 
 So is this yet again another intermediary step ?  However the internet has gone thru many intermediate phases, all of which have been wildly profitable, none of which are the end state.
+
+Seed tech is something that gets incredibly better when new models come.  It provides a way to upgrade an application automatically when a new model comes on the scene.
+
+The more we can have operations that instantly are better as more powerful models are released, we will benefit the most, the fastest.  Focusing on how the apps are made, financed, deployed, upgraded - this seems a good area.
