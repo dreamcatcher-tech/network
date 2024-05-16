@@ -28,3 +28,5 @@ So is this yet again another intermediary step ?  However the internet has gone 
 Seed tech is something that gets incredibly better when new models come.  It provides a way to upgrade an application automatically when a new model comes on the scene.
 
 The more we can have operations that instantly are better as more powerful models are released, we will benefit the most, the fastest.  Focusing on how the apps are made, financed, deployed, upgraded - this seems a good area.
+
+We absolutely have to be positioned in a way that our offering is improved as the models improve, and ideally with an automated upgrade path, so that it is hands off as soon as new models come out.  Riding the uplift in AI is crucial to survival.  The pace is about to accelerate, and anyone not directly attached to the model growth will be left behind.
