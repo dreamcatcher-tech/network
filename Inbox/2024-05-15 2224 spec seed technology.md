@@ -20,3 +20,18 @@ Means that if we drop this page or two of text in, the LLM should be able to tes
 Hopefully the intelligence of later models shines thru better using seed, rather than using constraints.
 
 Does that mean that, the physical environment, because it can grow seeds, is also similar in that it contains within it every possible tree already, and a specific seed is just enough that it can extract the tree from the surrounds ?
+Inverted programming starts with all possible programs and takes away from it.  Contemporary programming is iterative / additive.  Inverted starts with every program and separates the pieces out.  Seed regenerates the end result from the smallest possible input.  As the models get better, seed time and seed size go way down.  There will always be a seed tho, however more of the seed will be included in the model itself.
+
+Our next major adjustment / adaptation, is when the big models release data management / record management systems.  We should map out the developments in the AI space that will be cause for concern for us.
+
+So is this yet again another intermediary step ?  However the internet has gone thru many intermediate phases, all of which have been wildly profitable, none of which are the end state.
+
+Seed tech is something that gets incredibly better when new models come.  It provides a way to upgrade an application automatically when a new model comes on the scene.
+
+The more we can have operations that instantly are better as more powerful models are released, we will benefit the most, the fastest.  Focusing on how the apps are made, financed, deployed, upgraded - this seems a good area.
+
+We absolutely have to be positioned in a way that our offering is improved as the models improve, and ideally with an automated upgrade path, so that it is hands off as soon as new models come out.  Riding the uplift in AI is crucial to survival.  The pace is about to accelerate, and anyone not directly attached to the model growth will be left behind.
+
+If our build capabilities were directly tied to model quality, then as models improve, we can build much faster and with a higher quality.
+
+Seed is required so that the new model nuances are spotted as the whole thing is built using the model, so the model makes the best choices to suit it at every stage.
