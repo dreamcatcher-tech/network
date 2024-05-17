@@ -18,3 +18,5 @@ We should be able to show multiple apps that can be recompiled in this way.
 Means that if we drop this page or two of text in, the LLM should be able to test and retest and reshape itself into a working llm, and demonstrate simulations of the full working system.
 
 Hopefully the intelligence of later models shines thru better using seed, rather than using constraints.
+
+Does that mean that, the physical environment, because it can grow seeds, is also similar in that it contains within it every possible tree already, and a specific seed is just enough that it can extract the tree from the surrounds ?

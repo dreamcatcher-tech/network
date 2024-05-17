@@ -392,3 +392,12 @@ The are the native application format in the Artifact blockchain.  Artifact is t
 nApps serve as the foundational components of systems that require stable and predictable interactions, where business logic and data management are closely intertwined. By leveraging natural language interfaces, nApps enhance accessibility and usability, making complex systems more approachable for users with varying levels of technical expertise. They are integral to the system's ability to perform core functions reliably, much like the backend infrastructure of large-scale tech operations such as Google's data management and processing centers.
 
 This definition outlines the core features, roles, and significance of nApps in a modern technological ecosystem, emphasizing their critical function in ensuring system integrity and user engagement.
+
+## The dangers of single pricing
+It is blunt, and inconveniences users.
+You need to be measuring what you're doing.
+Sell to the concept that people want their tools to improve, so they pay for the value now.  Encourage them to pay for specific features to occur, where they pay for the change, not just the consumption.
+Show the (forgot the name) method of pricing where you ask your user base 4 questions.
+Show that the variance between answers, in a group with a lot of variance, means that large numbers of people will be priced out of the marketplace, and a large number will not paying what they can afford.  So you should be considering everyones unique position when setting a price.
+This used to be administratively prohibitive, but with AI we can do it now.
+This is how things work in tribes where everyone has deep acenstal ties to each other and a collective goal to survive as a whole.

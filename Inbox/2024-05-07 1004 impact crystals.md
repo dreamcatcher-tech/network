@@ -52,3 +52,5 @@ Forward crystals are ones that do not exist that you would like to see.
 Then the solver kicks in an attempts to collect stucks and outcomes together that would cause the kind of impact you want to see.
 
 Basic rules are that impact crystals can be merged and split many times.  They can be fractionalized and exploded out to their individual dimensions and parts of dimensions.  anyone can add a new dimension to view and assess something as, and the viewers can be altered to suit.  Prediction markets exist for finding consensus between many people as to the impact of something, and AI can be used to take a guess.
+
+Show every impact as having a cost - good deals are ones where the cost to the supplied is low but the impact is high.  Impact cost is the losses sustained when redirecting energy from one place to another. These crystals need to be offset against the output.  Intelligent decisions are ones where the output is far greater than the input.
