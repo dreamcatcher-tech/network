@@ -30,3 +30,7 @@ Seed tech is something that gets incredibly better when new models come.  It pro
 The more we can have operations that instantly are better as more powerful models are released, we will benefit the most, the fastest.  Focusing on how the apps are made, financed, deployed, upgraded - this seems a good area.
 
 We absolutely have to be positioned in a way that our offering is improved as the models improve, and ideally with an automated upgrade path, so that it is hands off as soon as new models come out.  Riding the uplift in AI is crucial to survival.  The pace is about to accelerate, and anyone not directly attached to the model growth will be left behind.
+
+If our build capabilities were directly tied to model quality, then as models improve, we can build much faster and with a higher quality.
+
+Seed is required so that the new model nuances are spotted as the whole thing is built using the model, so the model makes the best choices to suit it at every stage.
