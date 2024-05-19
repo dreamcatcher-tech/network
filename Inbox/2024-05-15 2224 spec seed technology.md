@@ -35,3 +35,7 @@ We absolutely have to be positioned in a way that our offering is improved as th
 If our build capabilities were directly tied to model quality, then as models improve, we can build much faster and with a higher quality.
 
 Seed is required so that the new model nuances are spotted as the whole thing is built using the model, so the model makes the best choices to suit it at every stage.
+
+So seed is like people setting out to do a task - they don't describe all their processes up front, they just add in rules as they get going.  The bot system should be made like that, since it should work with the humans right from this stage.  Iterative rule definitions mean the system is more organic, and able to handle all the unique parts of any given process, rather than a rigid thing.  The simulation assessment loop is the only thing that is hard coded.
+
+Number of steps should be a mtric to know the seed was made right - a human would spot this inefficiency immediately.
