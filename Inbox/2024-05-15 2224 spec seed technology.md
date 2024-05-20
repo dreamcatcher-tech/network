@@ -39,3 +39,9 @@ Seed is required so that the new model nuances are spotted as the whole thing is
 So seed is like people setting out to do a task - they don't describe all their processes up front, they just add in rules as they get going.  The bot system should be made like that, since it should work with the humans right from this stage.  Iterative rule definitions mean the system is more organic, and able to handle all the unique parts of any given process, rather than a rigid thing.  The simulation assessment loop is the only thing that is hard coded.
 
 Number of steps should be a mtric to know the seed was made right - a human would spot this inefficiency immediately.
+
+We should build systems by building simulating users, and then get the AI to derive guardrails from that.  New features are new behaviours injected into the users.  Base the users on a base model, and have some basic rules for what a reliable system is.  Fiddling with the simulations should be how systems are made.  So the scenarios get generated first, and the expectation is baked into the users, then the system adjusts to solve the scenarios, sometimes with help from a human.
+
+Machine should know all the tools at its disposal, and see everything in a dashboard, like cost, time taken, correctness, frustration, number of loops to get intent out.
+
+Then match up real world usage into the sims, so they act more faithfully.  Each user might be learned from, or categorized, so that they have a more customized pleasant experience.
