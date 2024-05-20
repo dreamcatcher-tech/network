@@ -28,6 +28,11 @@ If the spawn is going to need to execute the isolate, then it will always be slo
 
 When @@daemon gets called, system will make the daemon branch automatically, but will call this hook on the new branch if it has been created.  So daemon with a reply uses `noBranch` and will be executed like anything else, but @@daemon is a dedicated call that has no reply sent back.
 
+Can ensure be called inside an accumulation ?
+It should have the same effect.
+
+? can this be deferred ?
+
 
 If the branch request is daemon / noreply, then it should be enough just to put it on the branches slice, but also we can go ahead and write all the nested branches too.
 
