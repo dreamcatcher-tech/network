@@ -33,6 +33,8 @@ It should have the same effect.
 
 ? can this be deferred ?
 
+Make a test that verifies create a session at every step of the way.
+
 
 If the branch request is daemon / noreply, then it should be enough just to put it on the branches slice, but also we can go ahead and write all the nested branches too.
 
