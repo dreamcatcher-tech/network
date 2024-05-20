@@ -46,3 +46,22 @@ Could make the git commits deterministic by using time and details of the parent
 Can avoid the commit if the permissions are the same as the parent, so the config and everything is derived if not present, and so we can avoid any commits at all, and just write the head straight to db ?
 BUT if we query the branch, we end up with the parent io, which would mess with its identity.
 So in the io file, we should write the current PID, so we can know we are in a derived child ?
+
+HOW can the origin of this action be traced, with its dynamic entry point, but requiring a static signature from the client to capture their intent ?
+
+Make it as a pierce action that gets intercepted by the engine, and if it is not needed, it is discarded, if it is, then the pierce enters at the target, then the ensure is system level from there down.
+
+Since it is identity related, should it be restricted to identity related functions ?
+Should it be a special function dedicated to identity creation, which can include authentication as well ?
+Pierce the terminal only if the pid doesn't exist.  If not exist, then the terminal action is picked up by the machine to make the pid exist.
+
+This actor management should probably be built in to the system.
+So the pierce comes in to the terminal, but only if pid is not present.
+Then if required, the terminal calls the app base, which will be treated as an identity call.
+
+If the app was configured to all identity services to create branches, then it can be instantly created by system. and the creation maps back to the terminalid.
+Comes in to the terminal as a signed request, then calls standard functions to get the base actor, then the session.
+This actor/session format is the same across the whole platform.
+
+api.isPid which would check if the app has an actor for us, ensures one if needed.
+if actor is present, ensures we have the session we asked for.
