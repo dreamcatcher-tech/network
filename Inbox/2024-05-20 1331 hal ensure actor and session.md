@@ -20,6 +20,14 @@ So the isolate would have `@@daemon` as a function to spawn a new child, which c
 
 What about a response where the initial response matters ?  Would need another config option probably - this is not used anywhere currenctly.
 
+We insert the action at the lowest path with no ancestor.  It is expected to gracefully return if the child already exists.
+It is expected to deploy to each child in the path as a system level action.
+`@@ensureDaemon` can be an action too, which is interpreted specially by the system, in that no reply will be sent ?  Or, just treat those branches as no reply ?
+
+If the spawn is going to need to execute the isolate, then it will always be slow, but if it can be somehow just inert, so no exe, then it is fast.  So if the isolate has a @@daemon function then we need to run it at each step, but if it doesn't we can just rapidly create the daemon with the same config as the parent.  So @@daemon would be a lifecycle hook, but if we can skip it, we would.
+
+When @@daemon gets called, system will make the daemon branch automatically, but will call this hook on the new branch if it has been created.  So daemon with a reply uses `noBranch` and will be executed like anything else, but @@daemon is a dedicated call that has no reply sent back.
+
 
 If the branch request is daemon / noreply, then it should be enough just to put it on the branches slice, but also we can go ahead and write all the nested branches too.
 
