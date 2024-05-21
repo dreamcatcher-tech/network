@@ -7,3 +7,5 @@
 
 navigate PIDs like a filesystem, and show the filesystem at each PID.
 Then lastly, navigating the history of the commits.
+
+Might be best as a stateboard view ?
