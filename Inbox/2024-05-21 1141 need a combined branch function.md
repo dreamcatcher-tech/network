@@ -19,3 +19,5 @@ There can be no pooling danger, since the branches do not exist.
 Need the api to be able to wrap any branch, internally or externally, and present the same API back.
 
 So programming it is like being inside an isolate, even if outside.  Engine and session management functions can go outside it, but have `terminal.api` be the exact same API as what is presented inside the isolates.  Allow the api to be used to wrap another address `terminal.api.wrap( pid )` which gives the same functions, but for a remote pid.
+
+Make a no-reply daemon function that can take recursive args to telescope out some children rapidly
