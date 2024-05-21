@@ -45,3 +45,5 @@ We should build systems by building simulating users, and then get the AI to der
 Machine should know all the tools at its disposal, and see everything in a dashboard, like cost, time taken, correctness, frustration, number of loops to get intent out.
 
 Then match up real world usage into the sims, so they act more faithfully.  Each user might be learned from, or categorized, so that they have a more customized pleasant experience.
+
+Start with users trying to do something, and use this as the definition of the system.  Gather scenarios and expectations, then generate synthetic users, then keep refining the system until those users accept it in virtual UAT.
