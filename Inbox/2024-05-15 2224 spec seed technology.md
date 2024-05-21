@@ -47,3 +47,5 @@ Machine should know all the tools at its disposal, and see everything in a dashb
 Then match up real world usage into the sims, so they act more faithfully.  Each user might be learned from, or categorized, so that they have a more customized pleasant experience.
 
 Start with users trying to do something, and use this as the definition of the system.  Gather scenarios and expectations, then generate synthetic users, then keep refining the system until those users accept it in virtual UAT.
+
+So we are always simulation first, and each time users interact, we adjust the simulators to include their behaviour.  Then we run these in huge numbers with high temperatures, and ensure the system is configured to handle it.  When theorizing about the system, this is the best way, then when we have real users, this is the best way too.  Once groups become distinct, automatically split the system, or merge if similar.
