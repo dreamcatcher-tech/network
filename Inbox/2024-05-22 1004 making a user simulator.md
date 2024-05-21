@@ -10,3 +10,5 @@ This is the first thing we need to make a reliable system that was self generate
 Make a simulator and an appraisal system that checks if the users intent was met correctly.
 
 It would be shown then output of the other bots, and it would be purposefully blinded to only see the last page of output.
+
+Given a specific user, they would generate separate files that represent their queries, and then the user would be the other bot pushing in their responses.  So like a crossover cable.
