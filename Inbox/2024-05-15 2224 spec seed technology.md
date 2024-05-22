@@ -55,3 +55,5 @@ The only hand cranking that should be occurring in system design is that humans 
 So first we need to make a tool like a compiler that can generate a system and recurrently test it in the simulators until it passes.  The spec of the system is the simulated users.  Restrictions on the users indicate feature releases.  Some requests can be marked as later, and we can use this as roadmapping for the system.  Solving these items faster is rewarded.
 
 Different themes or features can be focused upon, rather than executing everything at random, so we can focus and demonstrate a particular feature, using the simplest case, then using all the error handling cases we know about, such as network failure, bot failure / hallucinations
+
+The users should be able to run the simulator in their own branch, so they can explore how the system works and so they can present the features they want or the rule changes they are thinking about.
