@@ -24,3 +24,11 @@ Folder is the help that executes
 May need to bind the commit to the session change more strongly, as somewhat disconnected currently.  Could store the commit in the session, so we can be lazy.
 
 One visualizer for the chat history, but also a more powerful viewer / editor to perform advanced operations on the branch network.
+
+A tree explorer works because due to the independence of branches, we can contain all commits in a certain branch, so it works by way of a transformation.  We can use icons to indicate when files were pulled in.  It is not strictly accurate, but it is more usable with the destructive simplifications it affords.
+
+Add a 'file' to the end to indicate the eventual merge status, which might be a discard.  So a discarded merge has just an icon with no message attached to it.
+
+The full viewer can be a gitgraph diagram, which is full raw git.  This can have clickability and action buttons and things so it can do more things.
+
+Because mermaid is a text format, we can use chat to talk about it perhaps ?
