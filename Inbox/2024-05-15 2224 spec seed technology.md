@@ -49,3 +49,9 @@ Then match up real world usage into the sims, so they act more faithfully.  Each
 Start with users trying to do something, and use this as the definition of the system.  Gather scenarios and expectations, then generate synthetic users, then keep refining the system until those users accept it in virtual UAT.
 
 So we are always simulation first, and each time users interact, we adjust the simulators to include their behaviour.  Then we run these in huge numbers with high temperatures, and ensure the system is configured to handle it.  When theorizing about the system, this is the best way, then when we have real users, this is the best way too.  Once groups become distinct, automatically split the system, or merge if similar.
+
+The only hand cranking that should be occurring in system design is that humans should be tweaking the simulated users, to indicate their core drivers and to change how their synthetic actions are being generated.  Then we may tweak the solver, but the output is ultimately AI driven.  The solver records our inputs and treats them like useful nuggets to rely upon.
+
+So first we need to make a tool like a compiler that can generate a system and recurrently test it in the simulators until it passes.  The spec of the system is the simulated users.  Restrictions on the users indicate feature releases.  Some requests can be marked as later, and we can use this as roadmapping for the system.  Solving these items faster is rewarded.
+
+Different themes or features can be focused upon, rather than executing everything at random, so we can focus and demonstrate a particular feature, using the simplest case, then using all the error handling cases we know about, such as network failure, bot failure / hallucinations
