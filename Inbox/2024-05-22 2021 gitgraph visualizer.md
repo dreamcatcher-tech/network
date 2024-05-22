@@ -22,3 +22,5 @@ Submit for help
 Folder is the help that executes
 
 May need to bind the commit to the session change more strongly, as somewhat disconnected currently.  Could store the commit in the session, so we can be lazy.
+
+One visualizer for the chat history, but also a more powerful viewer / editor to perform advanced operations on the branch network.
