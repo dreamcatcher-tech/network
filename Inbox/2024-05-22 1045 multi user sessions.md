@@ -21,3 +21,5 @@ This model would make multiple session inputs be sane.
 Should we have to wait for a file to change a value ?
 If we allow a process to hook a file and resume when that file changes ?
 Then it can wait until the file has become open, race to get the lock, then proceed.
+
+strangely seems to work just fine actually 
