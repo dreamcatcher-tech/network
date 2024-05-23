@@ -54,3 +54,16 @@ Then the solver kicks in an attempts to collect stucks and outcomes together tha
 Basic rules are that impact crystals can be merged and split many times.  They can be fractionalized and exploded out to their individual dimensions and parts of dimensions.  anyone can add a new dimension to view and assess something as, and the viewers can be altered to suit.  Prediction markets exist for finding consensus between many people as to the impact of something, and AI can be used to take a guess.
 
 Show every impact as having a cost - good deals are ones where the cost to the supplied is low but the impact is high.  Impact cost is the losses sustained when redirecting energy from one place to another. These crystals need to be offset against the output.  Intelligent decisions are ones where the output is far greater than the input.
+
+Making a very simple viewer:
+Get the bot to generate json that has a format checker applied to it.
+bot generate a view config to say what axes mean what, and how to colorize.
+use threejs to build these crystals using simple primitives.
+
+Show combining crystals.
+Show exploding crystals into components, so you can trade a portion of it.
+Show combining, where multiple types of impact are melded together.
+
+Use streamtube graph type https://plotly.com/javascript/streamtube-plot/
+Show scale based crystals, like local all the way out to global
+Show bad things, like death, murder, holocaust
