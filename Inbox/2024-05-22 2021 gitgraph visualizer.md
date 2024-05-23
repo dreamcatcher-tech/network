@@ -32,3 +32,7 @@ Add a 'file' to the end to indicate the eventual merge status, which might be a 
 The full viewer can be a gitgraph diagram, which is full raw git.  This can have clickability and action buttons and things so it can do more things.
 
 Because mermaid is a text format, we can use chat to talk about it perhaps ?
+
+The current thread can be the inflated nice gui elements, then top and bottom can be condensed down gitgraph views ?
+
+Or have the tree navigator be a button panel that can be shown any time, or be asked for inside the AI.
