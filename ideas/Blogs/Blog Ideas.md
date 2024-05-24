@@ -404,3 +404,5 @@ This is how things work in tribes where everyone has deep acenstal ties to each 
 
 ## Inverted apps
 apps where the head of the project is maintained by a public AI, so there is not project owner as such.  Projects do not get abandoned.  The AI merges when functions are similar, and forks when functions are similar enough.  Funding is managed by the AI base don work done, where people can put some cash against the project, and the project earns royalties.
+
+The testing framework says we build them simulator first.
