@@ -14,3 +14,5 @@ The AI can recommend people in the marketplace based on what it knows about you.
 We the app vendor handle quality of services and dispute resolution, whilst bundling up what was learned each time and distributing it out to all consumers.  Service people can improve the bot directly to earn more funds, like how stack overflow or wikipedia works, except they will get more service leads and also earn revenue from the platform.
 
 We should be trying to pull in all kinds of services so we can start assembling the anything app that is backed by any service.  Each service earns royalty for the contributors.  People who are paying can offer their fees up as escrow to solve it using the platform, then they would also earn royalty.
+
+We would use this app for our own company accounting, and make it transparent.
