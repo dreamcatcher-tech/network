@@ -24,6 +24,11 @@ But home address should never change, really ?
 A unified splice stream could be made by re-requesting each time you want to add something, so that only a single isolate is used for a large number of splice watches.
 
 ?? use middleware to pause requests until the db is unlocked
+await an `.isProvisioned()` check before allowing the middleware to pass thru
+
+Call start and stash the promise, then have middleway that pauses until the start has completed.
+In this way, we might not need to hit the queue possibly.
+Another queue subsystem should be avoided if possible.
 
 Sequence
 First boot locks the db
