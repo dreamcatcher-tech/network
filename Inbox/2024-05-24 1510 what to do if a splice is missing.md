@@ -8,7 +8,6 @@
 The browser needs to keep retrying to recover from network faults, but if the splice itself is missing, what to do ?
 
 Is it possible to read from a commit that does not exist ?  No.
-Is it possible to read from a commit that does not exist ?
 
 Make the db watch be the way the homeaddress is set ?
 

@@ -16,3 +16,15 @@ Always read it from the database every time it is requested ?
 Set an env var so that if it matches the current home repoid, we will drop the db cleanly, then reprovision.
 
 Otherwise, effects should be grabbed instantly, since we might be the recovery, so last to run is always assumed to be the safety, and anyone else should abort.
+
+? Should the clients hook the home address and get told when a change occured ?
+But home address should never change, really ?
+? what if home address was long term stable all the time ?
+
+A unified splice stream could be made by re-requesting each time you want to add something, so that only a single isolate is used for a large number of splice watches.
+
+?? use middleware to pause requests until the db is unlocked
+
+Sequence
+First boot locks the db
+bounces any requests until the 
