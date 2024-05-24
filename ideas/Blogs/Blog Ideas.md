@@ -401,3 +401,6 @@ Show the (forgot the name) method of pricing where you ask your user base 4 ques
 Show that the variance between answers, in a group with a lot of variance, means that large numbers of people will be priced out of the marketplace, and a large number will not paying what they can afford.  So you should be considering everyones unique position when setting a price.
 This used to be administratively prohibitive, but with AI we can do it now.
 This is how things work in tribes where everyone has deep acenstal ties to each other and a collective goal to survive as a whole.
+
+## Inverted apps
+apps where the head of the project is maintained by a public AI, so there is not project owner as such.  Projects do not get abandoned.  The AI merges when functions are similar, and forks when functions are similar enough.  Funding is managed by the AI base don work done, where people can put some cash against the project, and the project earns royalties.
