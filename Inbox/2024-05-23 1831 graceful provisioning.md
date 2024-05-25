@@ -38,3 +38,14 @@ So the locking should only be done by the queue processing action - the server i
 Sequence
 First boot locks the db
 bounces any requests until the 
+
+
+First request that comes in could trigger the system.
+Or, make a queue item that triggers it as soon as the system boots.
+
+Make a provisioning isolate that requires only the pierce and then takes care of the rest including unlocking the db when its done.
+Await db unlocking to proceed with any requests.
+Cache the response, since it only locks at boot time.
+
+So use a request, so we get the full timeout, and make each instance check if the db is locked, and the await the homeaddress to be fetched.
+Reprovision requires a env var change and any external request to kick the system.
