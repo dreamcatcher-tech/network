@@ -30,7 +30,10 @@ Call start and stash the promise, then have middleway that pauses until the star
 In this way, we might not need to hit the queue possibly.
 Another queue subsystem should be avoided if possible.
 
-Probl
+Problem is that the first isolate has died by the time the actor install completes.
+? Might be different if done during a request ?
+So appears the initial smoke test is simply to turn it on, and the most we could hope for is a queue action that we fired off - that inital action seems to get stopped for different reasons.
+So the locking should only be done by the queue processing action - the server is just a normal checker to await home initialization
 
 Sequence
 First boot locks the db
