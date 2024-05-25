@@ -30,6 +30,8 @@ Call start and stash the promise, then have middleway that pauses until the star
 In this way, we might not need to hit the queue possibly.
 Another queue subsystem should be avoided if possible.
 
+Probl
+
 Sequence
 First boot locks the db
 bounces any requests until the 
