@@ -16,3 +16,4 @@ Set some free tier limits, so limit how many new machines an IP address can cons
 
 If the system comes under too much load, we can start requiring hash proofs to be generated for each one.
 
+Each api endpoint, we should check if we can thrash it, and maintain a table of the cost borne by us from malicioius requests.  Costs that we cannot pass on to customers.  Free tier should be denominated in terms of credits they can use for free ?  Or some services they can perpetually use.
