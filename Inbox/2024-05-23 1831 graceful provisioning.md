@@ -26,7 +26,7 @@ A unified splice stream could be made by re-requesting each time you want to add
 ?? use middleware to pause requests until the db is unlocked
 await an `.isProvisioned()` check before allowing the middleware to pass thru
 
-Call start and stash the promise, then have middleway that pauses until the start has completed.
+Call start and stash the promise, then have middleware that pauses until the start has completed.
 In this way, we might not need to hit the queue possibly.
 Another queue subsystem should be avoided if possible.
 
@@ -34,11 +34,6 @@ Problem is that the first isolate has died by the time the actor install complet
 ? Might be different if done during a request ?
 So appears the initial smoke test is simply to turn it on, and the most we could hope for is a queue action that we fired off - that inital action seems to get stopped for different reasons.
 So the locking should only be done by the queue processing action - the server is just a normal checker to await home initialization
-
-Sequence
-First boot locks the db
-bounces any requests until the 
-
 
 First request that comes in could trigger the system.
 Or, make a queue item that triggers it as soon as the system boots.
@@ -48,4 +43,5 @@ Await db unlocking to proceed with any requests.
 Cache the response, since it only locks at boot time.
 
 So use a request, so we get the full timeout, and make each instance check if the db is locked, and the await the homeaddress to be fetched.
-Reprovision requires a env var change and any external request to kick the system.
+
+## Reprovision requires a env var change and an external request to kick the system.
