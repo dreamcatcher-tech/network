@@ -12,3 +12,7 @@ Rescheduling is handled by this agent, where you can sell your place in the queu
 Shops can begin with their own agents that are customer facing, then our platform helps them negotiate scheduling with clients.
 
 Even just integrating directly with amazon, where we browse the items for you, and notify on new discoveries, taking an affiliate cut from them.  We can handle all the tracking of parcels etc.
+
+Basically any time there is intelligence being supplied to people, we should also have on hand a marketplace of specialized people to select from, or engage with.  The AI would manage the work, put a cap on.
+
+If the AI could set escrow terms, and another service acts as QA, then the AI can fully manage the project since the terms are enforced upon the suppliers by the rulesetter.  Gives the same function to arbitrary services as what smart contracts did to money on chain - the rules are always followed.

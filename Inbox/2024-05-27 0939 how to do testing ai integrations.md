@@ -26,3 +26,23 @@ Promote should take the helps but requires extra setting to promote the default 
 github syncing functions.
 
 Later, have a trigger ability, so that when a help changes, the description of that help is updated too.
+
+So if we can deliver a system that can list what the isolates can do, can verify the functions are correct in the helps, can run a help that you made, and update the help, that should be enough ?
+Needs to push and pull out.
+
+Set of HAL management functions:
+- change the entry file to something
+- reset the entry file to default
+- push the changes upstream
+- list all the HAL sessions
+
+
+list all the terminal sessions
+
+Help breadcrumbs, so change the focus of where the prompt goes to.
+
+And how to maintain a list of files - a knowledge base - about a set of things.
+
+What are the tools required to make user simulators ?
+
+How to get the git data format in and out should be the key aspect of what we are doing.
