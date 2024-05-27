@@ -11,3 +11,8 @@ Then we can scrape and check their corporate data and their websites, to get lis
 ### Record your interactions with your lawyer
 Use this as a secure whiteroom for yourself.  Invite your lawyer to join.  Or a compatible lawyer from the services directory, like xero.  Provides AI advice on documents, help with drafting, fact checks things, breaks out checks into blocks
 
+
+## Misc
+Make a tool specifically designed to handle troublesome lawyers, like many of the employment lawyers that cause undue stress for employers.  Lets employers pool together to stop these bad actors, and still ensures staff have a fair process.  Ideally would invite staff to begin the process themselves.  Cheaper to have AI settle disputes than get lawyers involved.
+
+Burstable workforces would have this built in, so the company would be helped to be in compliance much cheaper.
