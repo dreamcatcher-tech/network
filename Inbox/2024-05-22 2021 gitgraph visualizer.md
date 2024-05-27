@@ -36,3 +36,8 @@ Because mermaid is a text format, we can use chat to talk about it perhaps ?
 The current thread can be the inflated nice gui elements, then top and bottom can be condensed down gitgraph views ?
 
 Or have the tree navigator be a button panel that can be shown any time, or be asked for inside the AI.
+
+Show all branches in a gitgraph tree
+Build it up from git commits and walking the history backwards.
+Gives us the debug view of what is going on, in realtime.
+Configure with a max branch count setting to avoid getting caught in huge parallel threads.
