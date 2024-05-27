@@ -43,3 +43,16 @@ If we want to run our own version of the repo, then this prompt should work ther
 Or, should each branch be always watching to see if it needs to pull from upstream ?
 
 Need to seek out help files that can help do things we asked for.
+
+The help file lets us assemble isolate functions together for different purposes using NL instructions.
+
+Then this help can become a function that another help can call too.
+
+The help should be configurable as a pure drone, which means it cannot do any text back, and it must do a function call return.
+
+They need to be scoped to some context, like HAL would have some specific helps that only relate to HAL.
+They also act as a bridge where it is too far to infer from a general help, and so a specific help is constructed that eases the discovery and guides the execution.
+
+A help function wrapper would be where the api descriptions needed changing, so instead of changing the api, we would set up the help description to include function params, which were worded a certain way ?
+
+The helps should be able to say what parameters they need, and to push back when insufficient.
