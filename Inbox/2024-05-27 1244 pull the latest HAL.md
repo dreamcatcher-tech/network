@@ -15,6 +15,16 @@ But there is a multi step process - first we need to find the help that knows ab
 Finally, we want to call the actual isolate functions to perform the task at hand.
 Then, because we are in a branch, we need to pull down the latest changes into our branch.
 
+Also this is happening in the superuser repo, not us.
+Calling clone in HAL is different.
+A HAL update is different to other updates.
+Updating from your actor level into session is different.
+Pushing down into all currently running sessions matters.
+
+In the session prompt, show a HAL upgrade as a message ?  Upgrade message formats if required.
+
+Give me a superuser session should allow me to somehow become the superuser ?
+
 Sure, here are 10 example prompts:
 
 1. "Can you clone the HAL repository from GitHub for me?"
@@ -27,3 +37,9 @@ Sure, here are 10 example prompts:
 8. "Pull the HAL repository from GitHub for me."
 9. "Could you clone the HAL repo on GitHub?"
 10. "Grab the HAL repository from GitHub."
+
+If we want to run our own version of the repo, then this prompt should work there too ?
+
+Or, should each branch be always watching to see if it needs to pull from upstream ?
+
+Need to seek out help files that can help do things we asked for.
