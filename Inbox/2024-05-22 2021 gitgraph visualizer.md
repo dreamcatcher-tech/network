@@ -41,3 +41,5 @@ Show all branches in a gitgraph tree
 Build it up from git commits and walking the history backwards.
 Gives us the debug view of what is going on, in realtime.
 Configure with a max branch count setting to avoid getting caught in huge parallel threads.
+
+Using an explorer tree, we could allow a user to edit any given message, and then give them left and right arrows to switch between responses.  In this way, they can fork at any point, but the merging back is only ever managed by the system - so they can fork what they entered.
