@@ -11,6 +11,9 @@ the git isolate can answer questions about git, by providing top level data and 
 
 Basically if we can use intelligence to define the functions, then our code shouldn't change much at all since we are never having to do presentation layer changes.
 
+But there is a multi step process - first we need to find the help that knows about these types of operations.  Then, there may be some process to follow in the help, like checking a login.
+Finally, we want to call the actual isolate functions to perform the task at hand.
+Then, because we are in a branch, we need to pull down the latest changes into our branch.
 
 Sure, here are 10 example prompts:
 

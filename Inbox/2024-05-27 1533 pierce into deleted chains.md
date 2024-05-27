@@ -9,3 +9,6 @@ Due to race conditions, we might be able to allow pierce to hit a chain with no 
 
 If this gets called on to execute tho, the error would never make it back, rather than never making it in.
 
+If the head is changing rapidly, we shouldn't cause the pooling to wait.
+
+If the head doesn't exist, bail
