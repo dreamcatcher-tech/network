@@ -20,3 +20,12 @@ If the process dies, it *might* have sent twice.
 We should let the system do network things atomically - like only start this process if we still have the lock.  We can do this by wrapping fetch, and adding an abort signal in it.
 
 We would watch the lock, and if the lock gets broken we abort immediatley.
+
+Maybe the lock should be exclusive, in that it needs to timeout before it can be released.
+Lock holder will have a setTimeout that re-ups the lock every few seconds.
+Then the repo lock can be used by side effects.
+Possibly a queue can form to acquire the lock.
+
+Await repo lock seems different to side effect lock.
+
+Waiting for the db to give the result back seems fast enough.
