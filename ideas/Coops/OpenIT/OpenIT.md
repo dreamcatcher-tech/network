@@ -10,3 +10,7 @@ If we get an anchor tenant, like C, then use that to cover staff overheads, plus
 
 To be able to replace a whole IT support contract with software only and a remote worker marketplace.
 May have some provisioning services where people courier devices away to, and we keep devices on standby locally.
+
+The hardest part of the process was the email comms and the quote preparation - if this could be generated live, as well as the costings and checking all the details, plus nice ways to say and exclude problems, then life would be pretty easy.
+
+So if something goes over budget, should switch to 50% billing or similar, since we would both be sharing the risk.
