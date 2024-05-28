@@ -13,4 +13,10 @@ May have some provisioning services where people courier devices away to, and we
 
 The hardest part of the process was the email comms and the quote preparation - if this could be generated live, as well as the costings and checking all the details, plus nice ways to say and exclude problems, then life would be pretty easy.
 
-So if something goes over budget, should switch to 50% billing or similar, since we would both be sharing the risk.
+So if something goes over budget, should switch to 50% billing or similar, since we would both be sharing the risk.  Having a marketplace for architectural appraisals helps.  Also bounty for best solution to problems.
+
+Translate specific problems into anonymous problems so they can be published makes the marketplace return.  Making a marketplace for ideas, testing, bounty.
+
+Incentives for lowing the cost of things down.  Incentives for improving business processes that impact bottom line.
+
+Sign people up with the promise of eliminating IT support services, and show how we are incentivized to do that.  Our primary sale is Dreamcatcher apps, but we run services to ensure a good safe experience for all.  We help the transition, and we charge for the change, not the ongoing.  We expect reward when we lower overall costs.
