@@ -56,3 +56,5 @@ They also act as a bridge where it is too far to infer from a general help, and 
 A help function wrapper would be where the api descriptions needed changing, so instead of changing the api, we would set up the help description to include function params, which were worded a certain way ?
 
 The helps should be able to say what parameters they need, and to push back when insufficient.
+
+A merge in our system requires a bit of speciality.  We would never overwrite the .io.json file.N
