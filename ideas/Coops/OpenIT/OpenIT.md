@@ -22,3 +22,5 @@ Incentives for lowing the cost of things down.  Incentives for improving busines
 Sign people up with the promise of eliminating IT support services, and show how we are incentivized to do that.  Our primary sale is Dreamcatcher apps, but we run services to ensure a good safe experience for all.  We help the transition, and we charge for the change, not the ongoing.  We expect reward when we lower overall costs.
 
 We might be able to offer software solutions that are cheaper to use than buying hardware and support.  Custom solutions can be cheaper, provided they can be reliably maintained.  Using an open network of maintainers makes it easier and more likely to not lose support.  A closed source app will almost always give you trouble.  So a few use cases, like a large data storage service, would show that this is the case.  If we can find use cases that we can fund into bigger opportunities, then these business can benefit, and the it provider gets intro royalties.
+
+Change control 
