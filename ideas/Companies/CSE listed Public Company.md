@@ -34,6 +34,7 @@ We could offer to do work for companies, where the money they pay in is an inves
 
 We can allow stock participation if you cash in some of your NFTs, so we can allow just NFT generated members to participate, since you clearly understand what's going on, and have done work.
 
+So if we strike a deal for $20,000, then you can pay us in cash, or you can purchase stock off us with it, possibly in full or in part.  Incentives are there for number of independent shareholders.
 ## Shareholders by acquisitions
 If we acquire companies, and have AI generated valuations, we can give existing employees stock of the companies, and then roll them up into our bigger company with a fair valuation given.  In this way, we can get to 150 quite quickly, whilst still holding a large chunk ourselves, then we can go public and keep doing this, whilst giving the shareholders a chance to cash out if they wish.
 
