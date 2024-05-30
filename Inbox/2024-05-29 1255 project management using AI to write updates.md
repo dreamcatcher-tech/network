@@ -14,3 +14,5 @@ Generate update emails rapidly, with humour, and relevancy.
 Trigger when updates are required by keeping a model of what each person knows, needs to know, so that when something changes they are notified correctly.
 
 Trigger change control requests.
+
+Track what critical information was stated when, keep track of expectations too - as in predictions and likelihoods.  Track others on their statements too.
