@@ -20,3 +20,5 @@ Track what critical information was stated when, keep track of expectations too 
 Have a predictions market where the AI places bets, but humans can place bets too.
 
 Stakeholders can indicate what they are interested in, and state their goals.  Then progress towards these goals can be evaluated any time there is new comms.  So when a vendor agrees to make a software change, then this would indicate progress towards a specific goal.  This is done in the heads of all participants normally.  Throw up a red flag when something bad happens towards a goal.
+
+Handle change control requests using AI.  Can be for change of project scope, or can be for changes within an IT environment.  Requiring information for change control is definitely an AI based task.
