@@ -23,3 +23,5 @@ Process branches maybe shouldn't be tracked ?
 Hal doing merges should ripple up ?
 
 Pattern of development seems to be do the commands manually as direct function calls under test, then make a help that uses them, then try integrate them with the wider help network.
+
+Might need to make a dedicated merge branch, where all the incoming merges are done, then conflicts are intelligently processed.

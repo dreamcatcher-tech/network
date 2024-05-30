@@ -18,3 +18,5 @@ Trigger change control requests.
 Track what critical information was stated when, keep track of expectations too - as in predictions and likelihoods.  Track others on their statements too.
 
 Have a predictions market where the AI places bets, but humans can place bets too.
+
+Stakeholders can indicate what they are interested in, and state their goals.  Then progress towards these goals can be evaluated any time there is new comms.  So when a vendor agrees to make a software change, then this would indicate progress towards a specific goal.  This is done in the heads of all participants normally.  Throw up a red flag when something bad happens towards a goal.
