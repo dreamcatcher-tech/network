@@ -20,3 +20,5 @@ We need to standardize the interface, and make sure that all ops are the same pa
 read, write, ls.
 
 They should also be very commit efficient too.
+
+Branch tests should be the same as file paths, in that exists and ls should be the same.  
