@@ -33,3 +33,7 @@ Binding to head means it will track head, and will always use the most recent ve
 ? Should we get a file handle too ?
 
 Should we lock a file for writing, so that it is still in the same state when we get back to it ?
+
+Searching of these files should be the same too - searching branches or doing ai operations on the branches should be the same.
+
+locked to a specific commit can only read, but if you want to write, you should be able to create a fork ?
