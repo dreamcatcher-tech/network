@@ -22,3 +22,14 @@ read, write, ls.
 They should also be very commit efficient too.
 
 Branch tests should be the same as file paths, in that exists and ls should be the same.  
+
+Need to be able to treat branches the same as files.
+
+First get a handle / wrapper on the PID.  Default is us.  Then lock to a specific commit.
+
+So rather than burdening each function call with the pid, commit, and path info, create an object that is bound to those params, and then start the interactions.
+Binding to head means it will track head, and will always use the most recent version of a file.
+
+? Should we get a file handle too ?
+
+Should we lock a file for writing, so that it is still in the same state when we get back to it ?
