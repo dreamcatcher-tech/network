@@ -26,5 +26,6 @@ Once have this ability, then could have a generalized explorer.
 
 So make ability to get a specific splice, then ask for a range of splices from the server, to speed things up.
 
-So for each change to the session file, save the commit that made it, and any branches that forked or merged in.  If its a help related tool call, 
+So for each change to the session file, save the commit that made it, and any branches that forked or merged in.  If its a help related tool call, store the type of branch it was - command, help, or agent.
+Merges track the incoming branch commit.
 Like a layer atop the git graph that shows how the session actions caused git operations.
