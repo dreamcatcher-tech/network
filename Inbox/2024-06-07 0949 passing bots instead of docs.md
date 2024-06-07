@@ -15,3 +15,8 @@ Some of them specialize in managing collections of files, some in particular kno
 
 Then can coordinate with each other to push the top level goals forwards.
 
+Periodically run the whole QA sessions into a compaction process, that updates the core sysprompt / knowledge base, so that the answers are of increasingly higher quality.  Test the exact responses against the new sysprompt or model and confirm they match expectation with the modified sysprompt.
+
+Need a way to set up a permanent bot, and then people start new sessions with each one.  Collaborators can see each others sessions, and can even share sessions.
+
+People can set up their own checks on the bot to get flagged when something they consider invariant and fundamental changes.
