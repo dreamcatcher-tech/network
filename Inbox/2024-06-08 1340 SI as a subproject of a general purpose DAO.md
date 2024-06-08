@@ -15,3 +15,4 @@ Means that the DAO can immediately have trust that its actions will be carried o
 
 Or we could have two DAOs - a for profit and a non profit ?
 
+Depending on who paid what fees, we could set up a top level DAO and run the dreamcatcher as a project, as well as SI.  Basically aim to save on registration fees and upkeep of company resources.

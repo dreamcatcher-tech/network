@@ -25,8 +25,8 @@ Also impact crystals for each docbot is generated.
 
 Need summarizers of the sessions of these bots, and the surfacing of new questions.
 
-Make a negotiation tool that lets people agree on little pieces and priorities together before voting.
+Make a negotiation tool that lets people agree on little pieces and priorities together before voting.  So the bot stores the stance of different people, and looks to isolate the dispute out to a single focused resolution to put to a vote contest.
 
-Be able to put in messages from other people
+Be able to put in messages from other people, where multiple people can converse on a topic.
 
 Bots should have reference to material that it provided as answers.  Ultimately there should be a reference document that the bot provides its answers from.

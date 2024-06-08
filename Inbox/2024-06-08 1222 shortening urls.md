@@ -6,5 +6,7 @@
 >[!danger] Depends: 
 
 full PID is burdensome.
-Allow for generation of a shorturl that
+Allow for generation of a shorturl that can be shared and unmapped.
+
+This does require an explicit step however, so if it can be avoided, that is better.
 
