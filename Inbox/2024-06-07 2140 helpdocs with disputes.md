@@ -24,3 +24,7 @@ Could make NFTs of these bots, where they are dynamic.  The NFT is used to certi
 Also impact crystals for each docbot is generated.
 
 Need summarizers of the sessions of these bots, and the surfacing of new questions.
+
+Make a negotiation tool that lets people agree on little pieces and priorities together before voting.
+
+Be able to put in messages from other people
