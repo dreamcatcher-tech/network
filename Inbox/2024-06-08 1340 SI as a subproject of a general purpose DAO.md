@@ -12,3 +12,6 @@ The DAO specializes as a real world gateway service, where the will of the DAO i
 Means that the DAO can immediately have trust that its actions will be carried out.  This top level specialized in trust and in self correction, like how a cloud provider guarantees you a virtual machine with minimal downtime.  The service charges for each request, and handles its own corrections internally.
 
 ??? Could we list the DAO, or a DAO project, on the CSE stock exchange as per [[CSE listed Public Company]] ?
+
+Or we could have two DAOs - a for profit and a non profit ?
+
