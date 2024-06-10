@@ -16,3 +16,5 @@ But it is a portal straight in to the filesystem.
 The bot can come in and make changes for you, but ultimately you can edit directly.
 
 When you hit save, the bot will process that for you.
+
+Could be part of an explorer window so you can browse the filesystem easily 
