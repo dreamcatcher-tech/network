@@ -18,3 +18,10 @@ How will synth based programming be integrated in this model ?
 
 ? What is a help in this model, then ?
 We should be able to store many helps in a single repo and pick from them, like a catalogue.
+
+An image is what is used to start up an agent instance.
+
+Can we make a cheap version running as a branch ?
+Making a session with an agent that is disposable should be simple ?
+Some agents may be able to learn from each session and upgrade their programming.
+Specifying the commit to boot the image of means no learning.

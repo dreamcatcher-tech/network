@@ -19,3 +19,5 @@ So in this case, the AI only called functions with references, passing thru the 
 
 General format for passing by reference and then getting involved to modify the value if there are errors in the ref function call.
 Any time the AI is calling a funciton, it should create a file, so it gets passed by reference from that point on.
+
+File attachment should pop up a speeddial that has a file, a text window, a url which will pass the whole webpage in.
