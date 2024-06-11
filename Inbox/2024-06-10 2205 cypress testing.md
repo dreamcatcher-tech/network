@@ -7,3 +7,5 @@
 
 Make a nice way to interpret what is show in the messages tab visually.
 May fetch the data from the api, and verify that it matches what was expected, then verify that what is shown is correct ?
+
+Read the messages object to check the output is as expected.
