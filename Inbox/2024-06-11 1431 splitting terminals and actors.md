@@ -15,3 +15,9 @@ It could allow sessions to be started anonymously, or it could require sessions 
 So could a machine auth with one provider as one particular actor, and with another as a different actor ?
 
 Yes, we cannot stop that ?
+
+A machine stores a pointer to the actor it has authenticated as, or is unauthenticated.
+Each actor stores pointers to the machines that it controls.
+If an app wants to know 
+
+The advantage of this design is 
