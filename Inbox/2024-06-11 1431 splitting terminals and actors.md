@@ -18,6 +18,11 @@ Yes, we cannot stop that ?
 
 A machine stores a pointer to the actor it has authenticated as, or is unauthenticated.
 Each actor stores pointers to the machines that it controls.
-If an app wants to know 
+If an app wants to know what actor a terminal belongs to, the terminal will present an actorID it claims to be a part of, then the app verifies it by trying to read from a file in the actor repo that matches the machine of the terminal.
+
+The machine cannot be faked since 
+
+? could the actor repo issue tokens to terminals which are signed ?
+No since have to deal with revocation - a straight lookup is better.
 
 The advantage of this design is 
