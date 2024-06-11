@@ -10,3 +10,5 @@ If we simply make a jitter that can display the sectors in the stateboard, and t
 Do name change, color change, frequency change instructions.
 
 Do on date calculations, holidays planning.
+
+Stateboard is in modes for all runs, or specific dates, with a widget to move around directly.
