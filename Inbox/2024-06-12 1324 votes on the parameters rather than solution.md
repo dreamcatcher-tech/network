@@ -10,3 +10,7 @@ Let the tests and specs be voted on gradually, rather than a final solution, so 
 Some of these rules are core, and common to all proposals, and some are in the main proposal.
 
 These are the test of the proposal rather than the src.
+
+If we all agree on what a solution should at least fulfill, that is progress.
+
+if we agree that 
