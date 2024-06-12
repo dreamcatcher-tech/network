@@ -20,3 +20,6 @@ Show it clearly as taking over the whole page and changing color that this is li
 To backstage about a specific message, or a part of a message, select the item, then click 'add backstage' which is a chat about this chat, with things like permissions.
 
 Select multiple chats or parts in the add button, so they show up as stacked.
+
+Start a prompt with "backchat blah blah blah" will open the backchat view directly.
+Check if this is actually meant for backchat or not.
