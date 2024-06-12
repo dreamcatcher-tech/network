@@ -5,3 +5,4 @@
 
 >[!danger] Depends: 
 
+Need a way to chat on the side with the system, or make notes for later.

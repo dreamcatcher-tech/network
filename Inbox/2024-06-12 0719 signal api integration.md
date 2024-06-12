@@ -11,3 +11,5 @@ Use typing indicators to indicate when the bot is thinking.
 Use 1cent per message with Melrose labs: https://melroselabs.com/landings/signal-api/
 
 Or run our own inside deno as an api that gets charged for.
+
+Lets people invite the bot into group chats, and have it provide intelligence and logging.
