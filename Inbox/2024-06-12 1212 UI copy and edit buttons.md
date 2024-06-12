@@ -14,6 +14,7 @@ When expand, the copy, edit, share buttons become available.
 For any actor that is not you, you can copy.
 For any assistant, you can cause regeneration.
 For you, you can also edit as well as copy.
+Any message you can delete - leaves a scar showing the message was deleted.
 
 May add read aloud text.
 

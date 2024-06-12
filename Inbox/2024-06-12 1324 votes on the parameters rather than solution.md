@@ -14,3 +14,5 @@ These are the test of the proposal rather than the src.
 If we all agree on what a solution should at least fulfill, that is progress.
 
 if we agree how we will assess any given solution, that is progress.
+
+[[2024-04-18 1544 SILD DAO requirements]]
