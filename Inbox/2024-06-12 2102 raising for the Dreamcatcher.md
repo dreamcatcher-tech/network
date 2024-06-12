@@ -5,4 +5,4 @@
 
 >[!danger] Depends: 
 
-O
+If we raised capital to build the platform for NL apps with this internal model of fairness, is that a valid thing to attract capital for ?
