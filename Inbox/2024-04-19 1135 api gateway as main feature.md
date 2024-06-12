@@ -16,3 +16,9 @@ Our ability to replay the exact events and processing means that programs can be
 We could raise for the construction of this platform, with paying customers running early on.
 
 Couple this with the AI job market, as the platform to host AI services with custom data.
+
+If we can make these api functions easy to connect to NL programmed bots, then people can build almost anything.  Let people submit their own code into the isolate library as well.
+
+linkedin posts where a DAO can publish and sign a post.  Humans can take this over, but only the DAO can sign its posts thru that official channel.  So you know something comes from the org if the signature with a link to proof is there.  Ideally followers would consume media posts directly in the AI app.
+
+Perhaps the AI could log in and generate an API key in the webpage even.
