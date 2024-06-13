@@ -23,3 +23,10 @@ No.
 Can we know exactly what branch name will be created when we execute something ?
 
 If we store a counter each time we branch, then we hard set the branch, then we can know we are collision free.
+
+Reading the io.json in the client, we can interpret exactly what branches were formed and when.
+
+Getting the branches back when they close is not so easy since the io.json is flushed.
+
+So pulling down an io.json years in the future will not yield the branches without walking it backwards, which is annoying and expensive.
+So if the session stored the commit that the tool call came back in on, that should be sufficient.
