@@ -30,3 +30,14 @@ Getting the branches back when they close is not so easy since the io.json is fl
 
 So pulling down an io.json years in the future will not yield the branches without walking it backwards, which is annoying and expensive.
 So if the session stored the commit that the tool call came back in on, that should be sufficient.
+Branches are available in the io.json file at any time, which can be tracked while they are running, then anything that has closed and been deleted, we should save what the commit that came back was, somehow.
+
+Since functions can return undefined, we can't easily figure out what commit it came from.
+So we could make a new type of function call that returned the result as well as the meta
+```js
+const actions = await api.tracedActions( 'isolate-name' )
+const { result, meta } = await actions.someAction()
+```
+Meta includes the commit that the action result came in on, which would be the merge input in our case.  The exact branch name as well.
+
+Make sure branches are not deleted until after the requesting action is processed, else there is a blind spot where the branch is deleted, the branch reference is deleted from io.json, but the recieving action hasn't updated any records.
