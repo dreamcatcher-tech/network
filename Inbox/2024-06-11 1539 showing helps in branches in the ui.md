@@ -7,7 +7,7 @@
 
 Fetching the session files seems to be different for while it is running vs when it returns.
 
-When the branch has returned,
+When the branch has returned, it gets deleted, so cannot be retrieved.
 
 What we do know is the commit at the time of the fork.
 We can control the pid of this branch too, as it can be strongly set without error.
@@ -40,4 +40,21 @@ const { result, meta } = await actions.someAction()
 ```
 Meta includes the commit that the action result came in on, which would be the merge input in our case.  The exact branch name as well.
 
+Or, insert a symbol on the promise that gets returned ?
+```js
+const promise = actions.someAction()
+const { result, meta } = await withMeta( promise )
+
+// OR
+const { result, meta } = await withMeta( actions.someAction() )
+
+```
+
+The meta data is placed on a symbol on the promise.  When it settles, the meta field will be populated.
+
+Meta includes:
+- the commit that the reply came in on, which might be different to the current one we are running on
+
 Make sure branches are not deleted until after the requesting action is processed, else there is a blind spot where the branch is deleted, the branch reference is deleted from io.json, but the recieving action hasn't updated any records.
+
+Could parse the 
