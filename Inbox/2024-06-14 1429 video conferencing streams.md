@@ -19,3 +19,9 @@ Transcribe happens live, on each chunk, using activity detection.
 
 Then the chat is intelligently parsed, and built on by participants.
 People can turn off the shared mic and expand on ideas in the chat.
+
+Compress the chat to remove stuttering and other things.  Replace cues like trying to butt in with a deliberate chat action, rather than the text - so compress out the meaning, to focus the chat.
+Register objection to different statements.
+Allow voting to be happening live, in discussion.
+
+Then can mint NFTs of the conversation, with content, AI contributions, and impact crystal representing the meeting.  This becomes a collectible and tradeable item.

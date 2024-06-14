@@ -23,3 +23,28 @@ Changes can be presented as a bot, and the total impact can be assessed by HAL. 
 
 Handle generation of quotes and proposals.
 Allow AI to interogate the soundness of proposals, reconcile against existing infrastructure, then check against best practice, ensure all questions are answered about it.  Bot can then answer questions based on the pool of facts.  Compare against market rates to indicate the fairness of the quote.
+
+The problem is that there is no internal driver inside an IT company to favour reduced effort.  So like a 3rd party needs to exist that makes money by being the cost driver down.  A company that works hard to ensure that it is no longer required - how can those incentives be set up ?  Capitalism doesn't allow such incentives to exist.  But an AI system could be given these goals and could continually, altruistically do these assessments.  So dreamcatcher would vend a system that could be trusted to goal down the costs.  We pay out to people that cut costs.  If the AI was looking at the full picture, and was goaled towards that, then it can earn impact for people which is reputation, which shows as good reputation for being earnest, driving costs down, and charging a fair price for doing it.  Viewing the whole keeps it focused on overall impact.  So an AI that viewed the whole interactions, and rated impact of different behaviours, could help to optimize these kinds of local good wholistic bad behaviours.  Like a managed world view.  A government, of sorts.
+
+If we had the platform that provided generative feedback on planned IT changes, then we can also run a marketplace that can offer component services, and hardware services, as was as scoped locally, to enable the plans to be carried out.  We are an IT planning company and market maker, we don't provide it service directly.  By having this market, we ensure competition of ideas and pricing.  The marketplace keeps everyone honest.  We are the markert rule setter, and we offer a highly intelligent marketplace, and make our money from thruput in the market.  We compete to be the most efficient and fairest, and so that drives prices down for our customers.  Internally on our platform, participants compete with each other, ensuring strong internal health.
+
+Example of intelligence is contemplating a backup solution, and then it sends to backblaze, the system should check how long it will take using the current provisioned fibre line, cost of overage data, check with the telecom supplier what deals are available.
+
+Wholistically blend all IT spend, from phone lines and data to cell phones and plans.
+
+Offer insurance for quality of the environment - no IT supplier wants to take on liability for the environment, but we could insure it against a certain fault happening.  This could be the full fee, and inside that, we manage the environment as required to never have to pay out.
+
+The general theme of wholistic project management because each specialist is always trying to avoid taking on liability.
+
+Set up partner programms with lots of little vendors, find these little companies and offer them a way to jack in to our services marketplace.
+
+Running Cap on a crude version of this platform might be the first step.
+
+We should ideally supply leased hardware that has functional and uptime and availability guarantees, so you rent the capability, and we insure against any faults.
+
+Just replacing the negotiation for getting work checked and signed off would be easy and valuable.  Insert this in between the relationship between Cap and Brig.
+This would be valuable to all parties, as it bridges the knowledge gap, saves Cap money and stress, saves Brig time and results in happier customers.
+
+If we were the deal negotiation platform, then we can escrow the funds and take a cut of that, whilst sorting out issues, providing insurance for completion being done.  Provide independent QA to assure the quality of the work.  Hold back some payment until time has passed to ensure no faults.  Have our own team of standby engineers to deal with faults caused, which is covered by the insurance, and fined to the service provider.
+
+Reputation of the supplier comes into question if the QA fails the work or has to go back and forth a lot.

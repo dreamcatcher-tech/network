@@ -50,11 +50,20 @@ const { result, meta } = await withMeta( actions.someAction() )
 
 ```
 
-The meta data is placed on a symbol on the promise.  When it settles, the meta field will be populated.
+The meta data is placed on a symbol on the promise.  When it settles, the meta field will be populated. 
 
 Meta includes:
 - the commit that the reply came in on, which might be different to the current one we are running on
+- might want to await for lifecycle events, like branch formed, action executed.
 
 Make sure branches are not deleted until after the requesting action is processed, else there is a blind spot where the branch is deleted, the branch reference is deleted from io.json, but the recieving action hasn't updated any records.
 
-Could parse the 
+Could parse the io.json file and retrieve the reply directly ?
+
+We only need to record when the branch comes in and closes, then we would store what commit it returned upon.
+Could store the commit in the reply object ?
+In pendings, we have the commit that it returned on.
+So we can read it straight from the iojson.
+So we might do this under the hood in the accumulator ?
+
+Write the tool call as pending when we make it ?
