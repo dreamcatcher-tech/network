@@ -50,3 +50,5 @@ If we were the deal negotiation platform, then we can escrow the funds and take 
 Reputation of the supplier comes into question if the QA fails the work or has to go back and forth a lot.
 
 Is it enough to have a consultant that acts as a cost cutter survivie on reputation, and always broker the service providers ?
+
+All change control needs a rollback plan with cost.  Basically drive the org thru atomic changes.
