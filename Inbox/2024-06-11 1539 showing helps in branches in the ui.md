@@ -67,3 +67,12 @@ So we can read it straight from the iojson.
 So we might do this under the hood in the accumulator ?
 
 Write the tool call as pending when we make it ?
+
+So the UI would watch the main branch, and then when a tool call that causes a branch occurs, the UI would start watching this new branch.  When the branch closes, the UI loads the final commit which is stored in the main branch.
+Need to know what the branch id is based on tool call.  This could put an id in for tracing purposes so the branch is tagged.
+Or we might be able to get the branch id out at call time somehow?
+
+When the branch returns, we want to store the commit of the closing commit, so we can read the session file in its last state.
+
+
+We could intercept the exact 'engage' action call, and know to watch this one specially ?

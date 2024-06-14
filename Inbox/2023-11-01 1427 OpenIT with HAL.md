@@ -48,3 +48,5 @@ This would be valuable to all parties, as it bridges the knowledge gap, saves Ca
 If we were the deal negotiation platform, then we can escrow the funds and take a cut of that, whilst sorting out issues, providing insurance for completion being done.  Provide independent QA to assure the quality of the work.  Hold back some payment until time has passed to ensure no faults.  Have our own team of standby engineers to deal with faults caused, which is covered by the insurance, and fined to the service provider.
 
 Reputation of the supplier comes into question if the QA fails the work or has to go back and forth a lot.
+
+Is it enough to have a consultant that acts as a cost cutter survivie on reputation, and always broker the service providers ?
