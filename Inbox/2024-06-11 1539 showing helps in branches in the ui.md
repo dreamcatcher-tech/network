@@ -76,3 +76,8 @@ When the branch returns, we want to store the commit of the closing commit, so w
 
 
 We could intercept the exact 'engage' action call, and know to watch this one specially ?
+This is the only call that is interpretable by the UI - other operations might require specialized UI elements.
+
+For each tool call, if it is an action that causes a branch, we can write what its branch pid was down ?
+
+Can open up for making tool calls into vector stores, and other things.

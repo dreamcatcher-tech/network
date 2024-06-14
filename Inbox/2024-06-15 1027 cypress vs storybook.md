@@ -19,3 +19,9 @@ Allow multibranch to be controlled independently and see the impact in the UI.
 Mount the app react components exactly as they would be presented in the UI.
 
 Driving the UI would be the same as driving the chains, since they ultimately result in a prompt being inserted into the session.
+
+We actually want a specialized test runner, so that not only is the UI shown, but the ai responses are shown.  
+
+Be able to flick thru large numbers of synthetic tests to see what the response was in the UI.
+
+Need a level higher - a stats dashboard that shows the combined results of all the synth inputs and appraisals.
