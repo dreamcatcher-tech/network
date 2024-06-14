@@ -20,3 +20,6 @@ Make the site documentation chattable, so that any questions can be asked of it.
 When new kinds of questions get asked, we can create a stuck, and either improve HAL or expand the docs, so we can always give the owners of the system the data in the way they want it.
 
 Changes can be presented as a bot, and the total impact can be assessed by HAL.  User questions can get stored for future reference as permanent questions that get asked of every proposal.
+
+Handle generation of quotes and proposals.
+Allow AI to interogate the soundness of proposals, reconcile against existing infrastructure, then check against best practice, ensure all questions are answered about it.  Bot can then answer questions based on the pool of facts.  Compare against market rates to indicate the fairness of the quote.
