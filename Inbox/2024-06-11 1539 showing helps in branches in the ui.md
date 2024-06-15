@@ -93,3 +93,18 @@ We can just do a mapping, but it is easier to somehow tag the request ?
 
 Want to cover the general case of a toolcall causing a branch.
 Should all tool calls attach a parameter that includes the toolid ?
+
+If we did not need to inject the branch name in, then could we track branch creation ?
+Injecting the id of the branch is over constraining - we should be able to know what the branch we just created was.
+
+We need to somehow know in the UI when a branching tool call has been made.
+
+Should the forking be handled in executeTools and not inside the isolate ?
+Then if the tool exec is in charge of branching and writing the tool maps file, we can easily track this in the UI.
+Should every command run in a branch, then this becomes easy to do ?
+Then each command is reduced to simple request reply.
+
+? how should we say when to never close vs request reply ?
+Creating a long running branch would be a dedicated system level command, as opposed to something at the discretion of the tool that was running.
+
+Sending the toolid into the tool is wrong since this is an orchestration level problem, and should not be internal to the tool.
