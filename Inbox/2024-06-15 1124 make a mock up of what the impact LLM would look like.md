@@ -14,3 +14,7 @@ Then we can put it in charge of work on Satoshi Island, so we can demonstrate an
 Needs to separate impacted and impactee - as in who is impacted and who contributed.
 
 Need to start an open source work effort, so we can openly talk about what is going on.
+
+Show how the chat would work to get different views of the data.
+
+This should be a collab effort between multiple labs, like meta and google too.

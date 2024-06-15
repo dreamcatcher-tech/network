@@ -80,4 +80,16 @@ This is the only call that is interpretable by the UI - other operations might r
 
 For each tool call, if it is an action that causes a branch, we can write what its branch pid was down ?
 
-Can open up for making tool calls into vector stores, and other things.
+Can open up for making tool calls into vector stores, and other things.  So interpret the isolate and function call to display its progress in a unique way.
+When making a branch, name it after the tool call, so we can look it up.
+
+Store a map of tool call statuses.  When executing, we can trace its branch pid.  When completed, we can trace its most recent commit.
+
+The tool call is unique, so we can use it as our branch name.
+
+The issue is that not all tool calls branch, but when they do, we need to somehow signal what the branch name is.
+
+We can just do a mapping, but it is easier to somehow tag the request ?
+
+Want to cover the general case of a toolcall causing a branch.
+Should all tool calls attach a parameter that includes the toolid ?
