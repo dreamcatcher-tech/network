@@ -49,3 +49,5 @@ Put forwards all plans using these simulations.
 
 Making a spec tool to define the requirements, and distill down some key usage scenarios is key.  The scenario tool should run lots of similar simulations, and determine if the outputs make sense.
 Should be able to digest conversations and use that to build out specs, and generate a concise list of questions for the owners to answer / decide upon.
+
+DAO proposals should always have an impact assessment, like a change control form, on all affected parties.  When there is a group, it should assess a single one (like an STC holder) and also any named parties that are different form the collective.  This should indentify conflicts of interest.  Pump and dump schemes should fail the test here since there would be losers in that game - we want win win scenarios.
