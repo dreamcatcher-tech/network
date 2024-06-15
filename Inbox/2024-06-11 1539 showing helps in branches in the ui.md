@@ -108,3 +108,7 @@ Then each command is reduced to simple request reply.
 Creating a long running branch would be a dedicated system level command, as opposed to something at the discretion of the tool that was running.
 
 Sending the toolid into the tool is wrong since this is an orchestration level problem, and should not be internal to the tool.
+
+But if we do things in branch, we have to deal with merging the changes back in.
+Could lock the branch from doing anything until the branch returns.
+Help in a branch means we need to handle merging anyway.
