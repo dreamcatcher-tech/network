@@ -25,3 +25,14 @@ We actually want a specialized test runner, so that not only is the UI shown, bu
 Be able to flick thru large numbers of synthetic tests to see what the response was in the UI.
 
 Need a level higher - a stats dashboard that shows the combined results of all the synth inputs and appraisals.
+
+[[2024-06-10 2205 cypress testing]]
+
+BUT we might be able to test the deployed pages for functionality.
+
+Hook up something in cypress to do appraisal of the results being something like what we would expect even tho not exactly.
+Test github login loops ?
+So the tests we use in development could be applied to the production or staging deployment, and pass or fail.
+
+So it might not be good for the testing of integration with other services, like fetching web pages.
+Help with assuring quality on each release, since we are not releasing different UI elements for different customers, and it all works the same way.
