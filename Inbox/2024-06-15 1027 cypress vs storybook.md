@@ -34,5 +34,5 @@ Hook up something in cypress to do appraisal of the results being something like
 Test github login loops ?
 So the tests we use in development could be applied to the production or staging deployment, and pass or fail.
 
-So it might not be good for the testing of integration with other services, like fetching web pages.
+So it might be good for the testing of integration with other services, like fetching web pages.
 Help with assuring quality on each release, since we are not releasing different UI elements for different customers, and it all works the same way.
