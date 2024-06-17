@@ -17,3 +17,15 @@ Advantage is that the machine session never moves, so all the things the machine
 
 Redirects of PIDs could be done if you had a prior commit where the pid was one thing, then we should have a way to walk quickly and find where the PID changed ?
 
+If have multiple sessions in HAL and want to list all the sessions you have, how would this be done ?
+Write the sessions in the actor, so that when you authenticate, the sessions in the actor are copied over.
+
+Store the sessions in the machine ?
+listing sessions lists all machines and then lists all sessions
+
+Store in machine until you are authenticated, then copy into the authenticated actor ?
+Store them as sessions based on apps, where each app has a directory where it can list data.
+It could be any data, but for starters it can be sessions that the user is involved in.
+
+Inbox for sessions you have been granted access to ?
+Just a general inbox, with AI processing for spam, paid for by sender.
