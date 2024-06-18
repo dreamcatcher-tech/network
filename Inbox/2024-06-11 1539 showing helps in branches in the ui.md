@@ -115,3 +115,5 @@ Help in a branch means we need to handle merging anyway.
 
 BUT only branch returns should have this commit information attached ? 
 If it wasn't a branch, then the commit should be undefined
+
+The commit one before the commit where we are executing should have the info about 
