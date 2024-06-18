@@ -24,3 +24,9 @@ Use the agent view for a help call, since it is effectively running an agent ?
 
 The different between an agent and a help tho?
 Helps are instructions consumed by agents that add extra tools and sysprompts to enable them to do something they couldn't before - like a form of on the fly fine tuning.
+
+What if there are extra commands that get called when an isolate occurs.
+Up to each command to have its own display mechanism, else could overload the UI.
+So for an isolate, it is just a straight open closed operation.
+
+But importing the changes to the files is important too.
