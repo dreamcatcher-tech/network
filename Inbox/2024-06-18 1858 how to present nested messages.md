@@ -18,7 +18,7 @@ User can zoom in to this help either with buttons or they can chat to the callin
 
 Each tool call represents a portal into an other branch, which says the start and the end result, and everything in between is open.
 
-Inside the out and in, there is a full re
+Inside the out and in sandwich, there is a full rendering of the interactions happening in the help.  Perhaps the UI can focus on this particular one ?
 
 Use the agent view for a help call, since it is effectively running an agent ?
 

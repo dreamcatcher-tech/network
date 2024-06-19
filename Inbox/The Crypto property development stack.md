@@ -38,3 +38,5 @@ So then, if the builder model is promoted as the next phase of the project, and 
 Its separation also makes it easier to integrate an OpenAI partnership at this level.
 
 Operating independently means a fresh set of rules for operation, and a decoupling from Vanuatu. Making this layer would drag Satoshi Island into compliance as it is currently a little bit aimless while it grapples with how to become a builder when it is really just land.  Providing this layer virtually and globally means that crypto inhabitants can be fluid worldwide, and can be assured of compatibility and standardization anywhere they might go, in whatever language, where they trust the builder layer to have terraformed the underlying land layer into a form they understand and can interact with.
+
+Probably this same model can be used for apartment blocks / existing property, as well as shared co-working spaces in a wework style situation.
