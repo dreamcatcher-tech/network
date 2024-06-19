@@ -18,3 +18,9 @@ The fact pool should support staking, where different people accept and stake ag
 
 a knowledge base could be the same as a customer records.
 Large numbers of text info that represents different things.
+
+Be able to ask a bot to thoroughly drill down on a particular topic, and then ensure it captured and filed and researched everything. 
+
+Research bot goes off and verifies claims.
+
+Flip it around and use them as quizers, to make sure you understand a topic and don't say a word wrong.  Can lace these questions into your daily usage.
