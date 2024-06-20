@@ -10,3 +10,6 @@ Each time a new idea occurs, we can ensure it is documented, ratified, and groun
 Then make maps of people who can be contacted and have been contacted.
 
 Perhaps with a unified model of people so we have a shared view of synthetic people.
+
+Each spec should be reconciled and separated from each other one.
+Humans can cleanse it periodically and chat with the whole lot quite rapidly.
