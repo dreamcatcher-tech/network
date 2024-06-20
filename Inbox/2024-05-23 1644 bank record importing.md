@@ -22,3 +22,6 @@ Files are stored with a description about what they are and any notes about what
 
 Maintain a list of lost payments, which we have not found any recipient for.
 Draft emails and make contact with people who made errors in their account payments.
+
+Make all the payments refer to a single file.
+Ingest the file, break it up by row, then assign each row one at a time, using the bot plus the rules the human has set up.  Rules could be stored on each individual customer, so if there is a common mistake, then we write a note on the false positive that says to go somewhere else.  Badget it by which authority said that.
