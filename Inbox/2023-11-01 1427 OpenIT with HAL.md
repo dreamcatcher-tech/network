@@ -54,3 +54,11 @@ Is it enough to have a consultant that acts as a cost cutter survivie on reputat
 All change control needs a rollback plan with cost.  Basically drive the org thru atomic changes.
 
 Being able to chat with the site docs is very useful, and integrates naturally with a marketplace for ideas.  So instead of static site documentation, there is a pool of knowledge about the site, and the bots can present it in a few standard forms, but can also generate new ways of looking at it, and can answer any questions you might have.  As questions get asked, the docs get built out more, so questions deepen the knowledge without creating more work.
+
+Should be able to make a new bot, and quickly attach a large amount of relevant data, as well as link to other bots, so the info stays live, as in we can have triggers that update what our docs say when changes are detected.
+
+Map out money waste, as in license and software and labour that has been sunk into something that gets discarded.
+Tally up the labour cost applied to each unit in the network, so we can know where the high mutable value pieces are - these are dangerous pieces as they are costly to rebuild.
+Show the costs of IT functions mapped to functions in the business, to see which ones have high yield.
+
+Sustainability with all hardware having a recycling plan and value in place.  Also have an expected failure of each unit based on other units being used by people running our software.
