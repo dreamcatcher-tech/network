@@ -52,3 +52,5 @@ Reputation of the supplier comes into question if the QA fails the work or has t
 Is it enough to have a consultant that acts as a cost cutter survivie on reputation, and always broker the service providers ?
 
 All change control needs a rollback plan with cost.  Basically drive the org thru atomic changes.
+
+Being able to chat with the site docs is very useful, and integrates naturally with a marketplace for ideas.  So instead of static site documentation, there is a pool of knowledge about the site, and the bots can present it in a few standard forms, but can also generate new ways of looking at it, and can answer any questions you might have.  As questions get asked, the docs get built out more, so questions deepen the knowledge without creating more work.
