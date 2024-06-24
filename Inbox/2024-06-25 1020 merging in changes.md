@@ -4,3 +4,27 @@
 >[!question] Targets: 
 
 >[!danger] Depends: 
+
+Should the merge cause a commit ?
+Should it reference history ?
+
+If the files just appeared out of nowhere, this would be ok since you could only have access to them if the merge had occured already.
+
+Files do just appear from within isolates anyway.
+
+This should be the same as a bulk copy and write operation, with some efficiency shortcuts.
+
+If there are uncommitted changes in the filesystem, then these would be applied in order ?
+
+So the merge would just completely blank everything ?
+
+It must be constrained to be something in the history of this branch, so we probably need a pid with it too ?
+Must be within some search range ?
+
+? how can we know, given a commit object, which branch it is part of ?
+We can know if it is part of this repo, but that could allow branches to jump read isolation.
+
+Or we could only allow it to occur using a symbol result that we passed in to the isolate ?
+Since it means it is a commit we have a handle on somehow.
+
+Maybe it can only be something that was passed in with meta, otherwise we can't know if they have permission to view it, or if it is part of history, without traversing history fully
