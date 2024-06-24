@@ -17,3 +17,9 @@ Use some old school servers, like heroku dynos.
 But still has issue of requireing a watch on the kv store.
 
 Log a watch with the kv store, and when changes occur, look up the watch list, then fire off something to hookdeck or the watch service to trigger anyone watching without causing an isolate to be always active with a listen on the db keys.
+
+Have a root chain notion, where the root pid is listened to.  But this messes with permissioning a bit.
+
+However, if a repo was considered a single read permission domain, and all branches can read all others, then the root chain system works ?
+
+So each Machine and Actor is its own repo ?
