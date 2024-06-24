@@ -12,3 +12,5 @@ To get assessed by them costs a fee too.
 Could have our own regulator murdex, where the roundtable votes if something is a scam or not, and then ddos or other types of suppression mechanism opens for funding.
 
 Regulators.  Regulate any scamming of crypto property.
+
+So rather than each project having to set up a DAO, we have projects inside a master DAO, where the rules of the master DAO are enforced at shared cost to all, and some fundamental principles are adhered to, such as compliance.

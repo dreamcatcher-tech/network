@@ -22,3 +22,7 @@ Need to show the PID in the input bar.
 
 Show the versions with a versions command that can walk back in history and return a splice for each version of the file, which includes the commit info.
 Can ask to see the diff or just get the commits for the splices.
+
+If you issue the command `rejoin` then you can become that session ?
+
+Backchat should be constant, and almost be linked to the terminal session you're on ?
