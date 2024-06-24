@@ -66,3 +66,7 @@ Sustainability with all hardware having a recycling plan and value in place.  Al
 Be able to do whatif analysis, so we can detect the impact of changing a particular app and how it would allow a reconfiguration of the whole environment.  Be able to chat with the docs.
 
 Preservation of the decision making behind each piece.  The doc blanks how things came to be.  The decisions and the votes and opinions from all parties should be encapsulated in the doc, and so we should be able to ask what the history of the doc was, and why it came to be that way.
+
+Arrive an an insurance based model that is transparent as to the costs and the formula.
+If we get no call outs, no issues, then we reduce the rates proportionately.
+May clearly show the bleed between sites, so an expensive site costs all sites, but only if it could have reasonably happened to the other sites.
