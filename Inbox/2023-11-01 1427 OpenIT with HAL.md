@@ -62,3 +62,7 @@ Tally up the labour cost applied to each unit in the network, so we can know whe
 Show the costs of IT functions mapped to functions in the business, to see which ones have high yield.
 
 Sustainability with all hardware having a recycling plan and value in place.  Also have an expected failure of each unit based on other units being used by people running our software.
+
+Be able to do whatif analysis, so we can detect the impact of changing a particular app and how it would allow a reconfiguration of the whole environment.  Be able to chat with the docs.
+
+Preservation of the decision making behind each piece.  The doc blanks how things came to be.  The decisions and the votes and opinions from all parties should be encapsulated in the doc, and so we should be able to ask what the history of the doc was, and why it came to be that way.
