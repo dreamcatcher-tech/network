@@ -90,3 +90,10 @@ May high profile people lost money in Xinova.  We should present them the dreamc
 
 ## Continuous Prospectus
 Generating a prospectus and keeping it up to date should be trivial, as well as posting updates to the prospectus.  So filing these things should be considered easy, actually, and we can look at many different examples to compare what has worked for others.
+
+## DAO as majority shareholder
+Could a marshal islands DAO LLC be the significant holder of shares in the company ?  In this case, we could keep individual holdings down, and the DAO can make decisions ?  Membership / ownership of the DAO controls these shares and so can be used as a way to get crypto investment that buys shares in pubcos for profit ?
+
+So membership in the DAO could be priced at the assets of the DAO, and so it can be a significant holder of public company stock, can enact a vote, all that good stuff.  Then crypto can invest in the DAO and it can trade its tokens for cash to be able to buy more stocks.
+
+?Could the reverse be done, where the pubco owns the DAO ?

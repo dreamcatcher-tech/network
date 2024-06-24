@@ -5,7 +5,8 @@
 
 >[!danger] Depends: 
 
-Upstream DAO appears to have folded.
+The company Upstream DAO appears to have folded.
+GVO guys seem to despise this software, so perhaps an NL based system is better.
 
 We could fill that gap by allowing all the wallets to be connected, read in all the proposals, and parse by AI what you should vote, based on your core values that you have taught us along the way.
 
