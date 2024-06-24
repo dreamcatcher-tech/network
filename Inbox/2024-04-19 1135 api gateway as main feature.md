@@ -23,4 +23,4 @@ linkedin posts where a DAO can publish and sign a post.  Humans can take this ov
 
 Perhaps the AI could log in and generate an API key in the webpage even.
 
-This becomes huge as people start making bots on our platform.
+This becomes huge as people start making bots on our platform.  Then they start requesting ways to connect to other services.
