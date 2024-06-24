@@ -18,3 +18,7 @@ Harnesses the distinction between large binary files and repository text files.
 The binary files could use bittorrent to replicate amongst local clients.
 
 Then can track who has what pieces, so we can know if we are sufficiently replicated between all sites.
+
+Then make an email server, so can take in the emails they are being shown.
+
+? What if we could have all the browsing of the org go thru 
