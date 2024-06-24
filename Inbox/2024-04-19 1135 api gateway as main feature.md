@@ -22,3 +22,5 @@ If we can make these api functions easy to connect to NL programmed bots, then p
 linkedin posts where a DAO can publish and sign a post.  Humans can take this over, but only the DAO can sign its posts thru that official channel.  So you know something comes from the org if the signature with a link to proof is there.  Ideally followers would consume media posts directly in the AI app.
 
 Perhaps the AI could log in and generate an API key in the webpage even.
+
+This becomes huge as people start making bots on our platform.
