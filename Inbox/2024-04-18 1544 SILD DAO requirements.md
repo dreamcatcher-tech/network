@@ -36,7 +36,7 @@ It starts with a strong knowledge base, permanent data
 
 We need to come up with a name - generative DAO.  Basically putting the A into DAO.
 
-Daos are a proposal queue.
+Daos are a proposal queue.  Each proposal is a PR.
 
 If we set the bar at blockchain native AI, that foundation is hard to approach, whilst being completely transparent.
 
@@ -53,3 +53,7 @@ Should be able to digest conversations and use that to build out specs, and gene
 DAO proposals should always have an impact assessment, like a change control form, on all affected parties.  When there is a group, it should assess a single one (like an STC holder) and also any named parties that are different form the collective.  This should indentify conflicts of interest.  Pump and dump schemes should fail the test here since there would be losers in that game - we want win win scenarios.
 
 DAO needs to control the land mappings to people - if someone steals the digital asset, it needs to be forcibly reconciled with the physical.  So land transfers need to have some stand-down period during which they are traded ?  Or some bond is paid by traders to ensure the assets stay in the system.  The DAO should set these rules and act as arbiter.
+
+Have a unified plan that all mini plans feed in to, with accounting automatically maintained for each step.
+
+Get the KOLs to have a discussion about how they would have their impact measured ?
