@@ -32,4 +32,4 @@ Maybe it can only be something that was passed in with meta, otherwise we can't 
 
 What about merge up to parent ?
 
-Detect when conflicts occured, and bounce the action, requiring reconciliation before
+Detect when conflicts occured, and bounce the action, requiring reconciliation before.
