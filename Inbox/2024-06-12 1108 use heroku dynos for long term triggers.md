@@ -11,3 +11,4 @@ This can be used as the trigger service.
 Browsers should connect with multiple trigger requests in a single connection, to avoid large numbres of connections.
 
 Can save some db load perhaps.
+
