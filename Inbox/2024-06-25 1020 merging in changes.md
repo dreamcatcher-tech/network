@@ -33,3 +33,9 @@ Maybe it can only be something that was passed in with meta, otherwise we can't 
 What about merge up to parent ?
 
 Detect when conflicts occurred, and bounce the action, requiring reconciliation before.
+custbot has a session where a record is changed.
+when the changes need to be pushed up, we would send up a PR action to the parent.
+This would run and would update the file only if it was unchanged since when we last merged.
+If error, then we need to merge branch back in and consider the differences, then decide it doesn't matter to us, or if we want to raise attention somehow.
+Once settled, try again.
+Repeat until dead.
