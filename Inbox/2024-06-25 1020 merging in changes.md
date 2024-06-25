@@ -27,4 +27,9 @@ We can know if it is part of this repo, but that could allow branches to jump re
 Or we could only allow it to occur using a symbol result that we passed in to the isolate ?
 Since it means it is a commit we have a handle on somehow.
 
-Maybe it can only be something that was passed in with meta, otherwise we can't know if they have permission to view it, or if it is part of history, without traversing history fully
+Maybe it can only be something that was passed in with meta, otherwise we can't know if they have permission to view it, or if it is part of history, without traversing history fully.
+
+
+What about merge up to parent ?
+
+Detect when conflicts occured, and bounce the action, requiring reconciliation before
