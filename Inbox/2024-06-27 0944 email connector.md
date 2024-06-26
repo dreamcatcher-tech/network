@@ -17,3 +17,5 @@ Decouple the send and receive functions from the storage of the inbox.
 Linked to the dns service so you can purchase or rent subdomains.
 
 Automated spam trackdown processes, with filing of complaints.
+
+May need a throttling component that updates a shared counter and can reserve some capacity, so that we don't get throttled.  Or, just employ backoff so it just goes as fast as we can before getting throttled and it just dials up and down.
