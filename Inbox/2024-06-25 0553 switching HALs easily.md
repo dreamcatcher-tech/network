@@ -30,3 +30,12 @@ Could store in the metadata about the repo, accessible by the host only, and so 
 ? is there any point in a branch being owned individually ?
 
 Maybe each actor should be its own repo, not a branch ?
+
+If we had the default being something broadly acceptable, then Smax can toggle what his default new session bot is, so he can experiment around.
+Provide a catalog of known good bots that make good entry point bots.  These can include things like different orchestrations.
+
+If you mess this up, you can call on backchat, who is always listening.
+
+So backchat is stable all the time.
+
+Maybe liferaft is always listening on any untested bot and when you sound like you want to exit, it will jump in ?
