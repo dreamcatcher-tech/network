@@ -24,10 +24,32 @@ Write the sessions in the actor, so that when you authenticate, the sessions in 
 
 Apps need a concept of an actor, so they can be controlled and so they can bill and be billed.
 
-Store in machine until you are authenticated, then copy into the authenticated actor ?
 Store them as sessions based on apps, where each app has a directory where it can list data.
 It could be any data, but for starters it can be sessions that the user is involved in.
+Is an app a fork of a base, or is it its own repo that the user installs and keeps updated ?
 
 Inbox for sessions you have been granted access to ?
 Just a general inbox, with AI processing for spam, paid for by sender.
 can include regular email in this piece too.
+
+HAL is flat sessions too, with each session linked back to a particular actor.
+If the actors only execute in a trusted way, then whatever the actor says is theres, actually is theirs.
+
+But what is HAL ? A repo that gets forked by sessions ?  A dedicated repo that each actor starts ?
+Is it in the actor repo ?
+Then actors start bots ?
+
+? what about flattening terminals down too, so each one is just a fork of a base repo ?
+
+Branch as an agent ?
+
+If an agent session can come with the files of a particular repo, and its own files ?
+Starting a session of an agent running on the current file system lets it make changes to this filesystem and then merge them back in.
+Can be given permission to modify only some files.
+
+Starting an agent that can then have multiple sessions with it seems a little different, but same ?
+The agent boots off the image, where it really is a filesystem (aka a blank repo) then import the agent image, and then allow sessions to be started from this main branch.
+
+Customer bot would be the fs of the whole crm, then access restricted to the customers folder, then the customer bot fired up, then a new session starts, which branches from the customer bot branch, which is always synced with master.
+Then the session branch starts, and occasionally merges back to the customer bot branch, which then merges back into master and handles triggers to other bots ?
+
