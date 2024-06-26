@@ -8,10 +8,12 @@
 If every machine needs to go via an auth provider anyway, then we might be able to flatten the actor branch hierarchy.
 
 So all machines would be tied to a single repo, and they would have arbitrarily many sessions.
+Or, each one could be its own repo, where it was spawned by a gateway repo.
 
 Actor ids would be another repo again - the Actors repo - which requires cooperation with at least 1 authProvider.  If a machine is unauthed, then it just stays as an unauthed machine.  Authed means that more than one machine can act as a single actor.
 
 Unauthed machines make a temporary actor, where this actor is merged when they auth.
+But it is really just copying over the contents ?
 
 Advantage is that the machine session never moves, so all the things the machine sessions did, still remain with the exact same PID.
 
