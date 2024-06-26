@@ -14,3 +14,9 @@ This locks the info, and makes it shareable.  Plus we can point to it when we wa
 Any new readers can be alerted when their browsed view is different in some way.
 
 This should accrue attribution for these things when they get used.
+
+Do a scrape using puppeteer and store the rendered html too.
+Also store a screenshot.
+Then use image recognition to transform the screenshot into markdown.
+Or use something like turndown service to attempt to transform to markdown.
+Then use a scraping service as well to see if better quality is returned.  These reference options should be sufficient to work from or derive things.
