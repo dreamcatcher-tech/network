@@ -5,7 +5,7 @@
 
 >[!danger] Depends: 
 
-If every machine needs to go via an auth provider anyway, then we might be able to flatten the actor branch heirarchy.
+If every machine needs to go via an auth provider anyway, then we might be able to flatten the actor branch hierarchy.
 
 So all machines would be tied to a single repo, and they would have arbitrarily many sessions.
 
