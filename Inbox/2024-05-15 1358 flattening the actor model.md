@@ -58,9 +58,12 @@ A central state app is one that sessions can change in some way.
 This can be tiered as well, like all CRMs can feed into a higher level one maybe.
 
 Consider a model where all the customer records are in a file system tree, then you want to make a change to them - move up from there.
-hit the main branch and request to fork into a session, 
+hit the main branch and request to fork into a session, with a given bot image, scoped to a certain set of files.  This would have a chroot applied so the bot only sees a specific path within the filesystem.  Could be limited to a specific commit or range of commits too ?
 
-Allow an isolate to hook the processing of PRs, copys, moves - this is where we put 
+So a session can start with any agent image at all.
+
+
+Allow an isolate to hook the processing of PRs, copys, moves - this is where we put the notification logic to make whatever changes are needed to other parts of the system.
 
 Terminals allow actions that prove what machine something came from, and optionally what actor that came from, if you have been allowed to read that.
 
