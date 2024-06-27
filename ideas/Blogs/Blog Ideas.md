@@ -414,4 +414,9 @@ Conflict resolution using AI to find common ground.
 Can split the debate to be against reasonable generalities and help find overlaps between parties.  Humans can guide this process too, but ultimately the AI seeks to establish two fair and reasonable positions, then work to close the gaps.
 
 ## Towards immutable deployments
-If an app and all its state can be run in a way that is repeatable, and guaranteed provenance from the dev to the user, this is how the future of apps should look.  Means longlived apps that never break are possible, since we offer a system where the app is always available, and can be made available offline even.
+If an app and all its state can be run in a way that is repeatable, and guaranteed provenance from the dev to the user, this is how the future of apps should look.  Means longlived apps that never break are possible, since we offer a system where the app is always available, and can be made available offline even.  https://github.com/denoland/deploy_feedback/issues/683
+## ImpactGPT
+[[2024-06-18 1227 ImpactGPT]]
+Write a blog post talking about the benefits of such a system, describe the pipeline it fits in, and talk about how such a system might be built.  Describe where we are now, and give a forecast of a path to get there.
+
+![[Dreamcatcher Pipeline.png]]
