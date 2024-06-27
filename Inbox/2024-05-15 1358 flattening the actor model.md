@@ -57,3 +57,12 @@ Some apps you clone the repo, others you fork the main branch.
 A central state app is one that sessions can change in some way.
 This can be tiered as well, like all CRMs can feed into a higher level one maybe.
 
+Consider a model where all the customer records are in a file system tree, then you want to make a change to them - move up from there.
+hit the main branch and request to fork into a session, 
+
+Allow an isolate to hook the processing of PRs, copys, moves - this is where we put 
+
+Terminals allow actions that prove what machine something came from, and optionally what actor that came from, if you have been allowed to read that.
+
+Map machines to actors ?  Use a LUT to speed this up ?
+
