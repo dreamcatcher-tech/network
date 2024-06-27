@@ -422,4 +422,4 @@ Write a blog post talking about the benefits of such a system, describe the pipe
 ![[Dreamcatcher Pipeline.png]]
 
 ## Optimum business efficiency
-If all the services are operated by an AI, which is doing a better job than people, 
+If all the services are operated by an AI, which is doing a better job than people, then the business state hits a stability point.  We are all guided by pure optimums, and the pricing is all set with optimal goals in place.  So being able to manage a huge number of small businesses using LLMs is the opportunity - turn them into standard things, and make them all stock market tradeable, and ensure their staff are all treated fairly.
