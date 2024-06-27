@@ -420,3 +420,6 @@ If an app and all its state can be run in a way that is repeatable, and guarante
 Write a blog post talking about the benefits of such a system, describe the pipeline it fits in, and talk about how such a system might be built.  Describe where we are now, and give a forecast of a path to get there.
 
 ![[Dreamcatcher Pipeline.png]]
+
+## Optimum business efficiency
+If all the services are operated by an AI, which is doing a better job than people, 

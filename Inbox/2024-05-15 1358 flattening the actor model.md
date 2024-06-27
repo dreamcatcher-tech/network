@@ -53,3 +53,7 @@ The agent boots off the image, where it really is a filesystem (aka a blank repo
 Customer bot would be the fs of the whole crm, then access restricted to the customers folder, then the customer bot fired up, then a new session starts, which branches from the customer bot branch, which is always synced with master.
 Then the session branch starts, and occasionally merges back to the customer bot branch, which then merges back into master and handles triggers to other bots ?
 
+Some apps you clone the repo, others you fork the main branch.
+A central state app is one that sessions can change in some way.
+This can be tiered as well, like all CRMs can feed into a higher level one maybe.
+
