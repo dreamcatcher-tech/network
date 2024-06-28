@@ -83,7 +83,14 @@ Run various bots as forks of the base branch, s* is for sessions, but a* is for 
 
 The difference between being in a session with a bot, and controlling a session with a bot at a distance.  3rd person.  This is the POV of the conversation.  First person is you are talking to the bot directly.  3rd person is when you are talking to one bot, and then it is interacting with the other bot on your behalf.
 
+Having some AI logic that occurs in the app that isn't part of the interaction with it - basically holding the consistency is a bot.  Things like when a customer is changed, then we need to update the routes before we consider the change done.  Also these updates should be async, as in they can queue up as messages in a queue that needs processing.
+
+Take the CRM repo, and fork a new branch of it, or a new repo, since branches indicate some shared space with others.  So basically clone a new version of the base image.
+
+
 Stories:
 engaging with a bot directly
 starting a new session with a bot
-		bot handing off your conversation to another bot
+bot handing off your conversation to another bot
+creating a new repo
+using a bot someone else made on your files

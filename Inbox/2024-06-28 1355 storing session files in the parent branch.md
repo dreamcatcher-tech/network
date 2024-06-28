@@ -20,3 +20,5 @@ Store it in the .sessions folder, so it does not polute.
 https://github.com/dreamcatcher-tech/artifact/issues/181
 
 undo last N entries should be a permitted operation.
+
+May also store a reference to the exact bot images that was used to instance it ?
