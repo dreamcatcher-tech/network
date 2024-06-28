@@ -103,6 +103,17 @@ If anonymous, could use an actor branch, if register, actor is its own repo ?
 Then just have a table that mapped between machines and actors ?
 Actor repoId could be generated from the machine public key that created it ?
 
+? could we branch from the actor branch and do some kind of new image in that branch ?
+The only thing not allowed is to modify the system files of the base actor repo.  Anything else is ok.
+
+? should a terminal connect to a remote repo directly, or should it go from an actor session ?
+It is able to go direct, but that would depend on whether its session was instructed to go direct.
+It could go in relay mode, so there is still log of what happened, otherwise it is lost.
+
+? How would a remote repo determine what actor credentials the machine represented ?
+The terminal presents its actorid, or a signed token from the actor authority, which the repo should subscribe to, in order to be notified of revocations of a given machine.
+
+
 
 Stories:
 engaging with a bot directly
