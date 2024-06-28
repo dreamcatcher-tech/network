@@ -81,4 +81,4 @@ Could a terminal go and interact directly with a nApp ?
 Actor repo is an nApp that holds all your files, and holds reference to bot images.
 Run various bots as forks of the base branch, s* is for sessions, but a* is for agents ?
 
-The differe
+The difference between being in a session with a bot, and controlling a session with a bot at a distance.  3rd person.  This is the POV of the conversation.  First person is you are talking to the bot directly.  3rd person is when you are talking to one bot, and then it is interacting with the other bot on your behalf.
