@@ -69,3 +69,16 @@ Terminals allow actions that prove what machine something came from, and optiona
 
 Map machines to actors ?  Use a LUT to speed this up ?
 
+Should you be able to us the intelligence of the systems you assembled in HAL to interact with any bot on the network, and any system outside of the network ?
+So then the actors are the base system, for each user, and then those sessions can interact with other systems, and can invoke different bots on them ?
+The apps are ultimately filesystem stores, and we are free to use any intelligence we like to cause their updates and things to occur.
+
+Things like checking formats would all be done inside the nApp, but figuring out what to change is optionally handled by anything you want, or we can supply some defaults - we dont' much care.
+So the internal logic is handled by the provided nApp systems, but interactions are via HAL.
+
+Could a terminal go and interact directly with a nApp ?
+
+Actor repo is an nApp that holds all your files, and holds reference to bot images.
+Run various bots as forks of the base branch, s* is for sessions, but a* is for agents ?
+
+The differe
