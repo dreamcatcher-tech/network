@@ -87,6 +87,22 @@ Having some AI logic that occurs in the app that isn't part of the interaction w
 
 Take the CRM repo, and fork a new branch of it, or a new repo, since branches indicate some shared space with others.  So basically clone a new version of the base image.
 
+Tinker with a bot as child branches in a HAL session.
+Actor repo is run by the system and acts as your home.
+Then when happy, start its own repo as an agent image.
+Start a new repo instance, or start a branch.
+Ultimately set the repo free to make it run without controls.
+start a new session with any other repo.
+
+Branches do not carry enough isolation from parent to be a long term solution - the parent still controls and can see inside of these branches.
+
+So actors may be not branches but stand alone repos ?
+Branches are data cheaper, but you can't export them.
+Machines are really attached to the hosting provider more than the actor.
+If anonymous, could use an actor branch, if register, actor is its own repo ?
+Then just have a table that mapped between machines and actors ?
+Actor repoId could be generated from the machine public key that created it ?
+
 
 Stories:
 engaging with a bot directly

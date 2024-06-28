@@ -26,3 +26,7 @@ Even if you didn't eat it, you can still hold the NFT if the recipient didn't wa
 Salmon takes about 2 - 3 years to grow.
 
 Basically let the consumers participate at any point in the provenance, rather than just the end, and use it as a fundraising mechanism, since it is like crowdsourcing / kickstarter for farming.  Purchase a product ahead of time, possibly get delivery of it, see the provenance along the way, know that it is a sustainably and ethically sourced product, learn about the whole process, and contribute to improving that process.
+
+If we set up a service that provided loan facilities to farmers based on crowdsales of future products ?
+Could also sell the actual capital equipment, like milking machines, and then pay the owners of the tokenized equipment royalties.
+

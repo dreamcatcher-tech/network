@@ -27,3 +27,4 @@ Possibly the tailings mine concept can be used so the concentrate can be purchas
 
 Most importantly, we give people a clean exit out of crypto, since the gold tokens can be redeemed with ID and then you get genuine gold holdings, or you can cash them out into fiat.
 The gold can be NFTed, so that we can trace it and put holds on it for regulatory purposes, but one bad spend won't poison the whole batch.
+
