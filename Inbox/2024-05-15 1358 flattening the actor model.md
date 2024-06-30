@@ -129,13 +129,24 @@ Even if you start interacting with someone elses backchat, your backchat stays p
 Ban creating new repos until you are logged in, else we can't get those repos back
 backchat routes your prompt inputs and decides where to put all your stuff, and backchat takes in the pierce from the device.
 
-steps to log in
+### steps to log in
 prove the machine key
-request the actor pid to use with the machine key
 request a new backchat branch based on a ulid
-server will respond with a full pid, which might be an authenticated actor or it might be a transient actor based on the machine key
+server will respond with a full pid, which might be an authenticated actor or it might be a transient actor based on the machine key is supplied if this actor is not authed
+pid is now `repoId/dc/HAL/actor_KTSV4RRFFQ69G5FAV/backchat_Y6BQ8S3N1WX5JVHD`
+
+
+Store machines in a branch, with a pointer to the actor they are linked to.
+Inside actors, store a reference to the machines.
+To recover a machine, we read the machine branch and see if there is a pointer to an actor in there.
+Authing the machine changes what the actorid is that it points to
 
 How can we prove that an actor branch moved to a different one, or was otherwise transferred ?
+
+Set the name of the actor, even if not authed.  When auth, offer to update the name or keep the existing one.  All actions use the actorId.
+
+ActorId should be a ulid, and be short, so remove the timestamp portion of it.  `actor_KTSV4RRFFQ69G5FAV`
+
 
 Stories:
 engaging with a bot directly
