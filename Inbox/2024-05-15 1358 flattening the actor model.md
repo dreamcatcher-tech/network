@@ -115,6 +115,14 @@ The terminal presents its actorid, or a signed token from the actor authority, w
 
 ? could the terminal be flattened too, and pierce direct into a session, where its session never actually changes ?  Seems different tho, as terminal is for all kinds of things, like reads and stats, whereas the session is for a focused thing.
 
+To be without backchat is to be connected into artifact raw, and not via the AI interfaces.
+So because of that, everywhere you go in the system, all your prompts route thru a HAL session.
+? Make a terminal and a session inside of HAL, and make machines as simply the rights to pierce in ?
+Backchat is a dedicated session, attached to the terminal, but sessions can be navigated around.
+Can't really take over another backchat session, since this is equivalent to taking over the tab ?
+Suppose it could be allowed, for remote control.
+So the backchat session gets created by a machine, and is assosciated with a tab.
+
 
 Stories:
 engaging with a bot directly
