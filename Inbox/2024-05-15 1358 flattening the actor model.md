@@ -113,6 +113,7 @@ It could go in relay mode, so there is still log of what happened, otherwise it 
 ? How would a remote repo determine what actor credentials the machine represented ?
 The terminal presents its actorid, or a signed token from the actor authority, which the repo should subscribe to, in order to be notified of revocations of a given machine.
 
+? could the terminal be flattened too, and pierce direct into a session, where its session never actually changes ?  Seems different tho, as terminal is for all kinds of things, like reads and stats, whereas the session is for a focused thing.
 
 
 Stories:
