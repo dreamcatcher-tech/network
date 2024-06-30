@@ -122,7 +122,11 @@ Backchat is a dedicated session, attached to the terminal, but sessions can be n
 Can't really take over another backchat session, since this is equivalent to taking over the tab ?
 Suppose it could be allowed, for remote control.
 So the backchat session gets created by a machine, and is assosciated with a tab.
-
+If it is one backchat per tab, is this suitable?
+Start with your backchat thread and a default session, then use this to navigate around any way you like.
+? what if everything relayed thru backchat anyway ?  Lets it run moderation checks and do topic switching in the background.
+Even if you start interacting with someone elses backchat, your backchat stays persistent, and allows you to eject out.
+Ban creating new repos until you are logged in, else we can't get those repos back
 
 Stories:
 engaging with a bot directly
