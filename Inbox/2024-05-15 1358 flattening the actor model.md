@@ -127,6 +127,15 @@ Start with your backchat thread and a default session, then use this to navigate
 ? what if everything relayed thru backchat anyway ?  Lets it run moderation checks and do topic switching in the background.
 Even if you start interacting with someone elses backchat, your backchat stays persistent, and allows you to eject out.
 Ban creating new repos until you are logged in, else we can't get those repos back
+backchat routes your prompt inputs and decides where to put all your stuff, and backchat takes in the pierce from the device.
+
+steps to log in
+prove the machine key
+request the actor pid to use with the machine key
+request a new backchat branch based on a ulid
+server will respond with a full pid, which might be an authenticated actor or it might be a transient actor based on the machine key
+
+How can we prove that an actor branch moved to a different one, or was otherwise transferred ?
 
 Stories:
 engaging with a bot directly
