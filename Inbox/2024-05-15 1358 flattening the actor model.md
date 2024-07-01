@@ -134,7 +134,18 @@ prove the machine key
 request a new backchat branch based on a ulid
 server will respond with a full pid, which might be an authenticated actor or it might be a transient actor based on the machine key is supplied if this actor is not authed
 pid is now `repoId/dc/HAL/actor_KTSV4RRFFQ69G5FAV/backchat_Y6BQ8S3N1WX5JVHD`
+a new backchat comes with a new hal session, so backchat is like root session and the new session is where the prompts are being directed currently.
 
+
+
+Resume is a request for a new or resume backchat branch, where we are supplying the previous backchat id `backchat_Y6BQ8S3N1WX5JVHD` and will get back the full pid that we can use, which might be as we requested or something different.
+
+Inside the backchat is the currently targetted HAL session branch - this is where the prompts are currently targetted to go, and where the UI should read from.  
+
+All the backchats are stored in files, which are periodically synced with master, so that all backchats can be aware of all other backchats.
+All the session branches are stored in files
+
+You would never make a new backchat session inside a backchat session - the only way is to open a new tab.  You might be able to resume a previous backchat session if you wanted to.  When taking over a session, now two tabs are interacting with the same session ?  this would only be allowed for the same actor, as an external actor needs to have their own backchat session to be able to interact ?
 
 Store machines in a branch, with a pointer to the actor they are linked to.
 Inside actors, store a reference to the machines.
@@ -147,6 +158,20 @@ Set the name of the actor, even if not authed.  When auth, offer to update the n
 
 ActorId should be a ulid, and be short, so remove the timestamp portion of it.  `actor_KTSV4RRFFQ69G5FAV`
 
+Recover from the deletion of a session file or branch by rolling back to whatever was previous, or sitting in backchat view waiting for instructions.
+
+When running sessions, we can group them in a way that shows the images that were used to start them, what files are available to them, and how far along they are in running.
+
+? how would we signal to the UI to show the backchat session ?
+Just change the target of backchat to be backchat, and it will change the UI to be in backchat mode.
+
+Back button would move backchat navigation around, giving you a way to do undo.
+So backchat to edit a given prompt and then hit back button would roll you back to whatever the state was before, and carrying on from there would cause a branch in backchat.
+
+Machines can be just a branch of the Actors repo, which is special in that it shares no files with each actor branch.
+Means our backup is pulling a single repo, with all branches.  This backup would likely trigger a merge with every branch if they can't done one recently, and the push / pack the whole repo, then pull it back down where we restart the system.
+Deployment then is a single repo, and making a single branch for machines in that repo, with the superuser machine key in there, and the superuser actor id.
+Superuser actor can be special too
 
 Stories:
 engaging with a bot directly
