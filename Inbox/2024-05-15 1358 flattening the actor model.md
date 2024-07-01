@@ -196,6 +196,8 @@ Maybe the reply can update the accounting for billing purposes ?
 
 Use folders to represent child threads, so they can all be rolled up to the top branch easily.
 
+What does it mean to send 
+
 Stories:
 engaging with a bot directly
 starting a new session with a bot
