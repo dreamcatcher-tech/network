@@ -205,7 +205,13 @@ Backchat has pierce functionality.
 request a new backchat and optionally request a resumption
 request a default thread to start or not
 backchat has the `prompt()` function with optional attachments.
+return the pid of the backchat, and if you asked for it, the pid of the target thread.
 
+engine needs a function that is upsert.
+
+come in with the machine pubkey
+check if we have an actor already for this machine
+if not, make one, along with the backchat session, and optionally the thread
 
 Stories:
 engaging with a bot directly
