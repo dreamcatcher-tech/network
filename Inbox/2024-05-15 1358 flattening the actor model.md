@@ -196,6 +196,11 @@ Maybe the reply can update the accounting for billing purposes ?
 
 Use folders to represent child threads, so they can all be rolled up to the top branch easily.
 
+Sending in a prompt to the targetted thread with our last known expectation of what that is, so if it changed underneath us, we get an error.
+
+Store all threads that a backchat session makes inside the backchat folder ?
+Attach metadata about the backchat to each thread.
+
 What does it mean to send a prompt message now ?
 What about pierce to interact with raw isolates ?
 how will external services update their files ?  maybe with pierce actions or with just PRs ?
