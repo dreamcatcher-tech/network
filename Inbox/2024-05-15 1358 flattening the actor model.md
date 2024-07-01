@@ -196,7 +196,9 @@ Maybe the reply can update the accounting for billing purposes ?
 
 Use folders to represent child threads, so they can all be rolled up to the top branch easily.
 
-What does it mean to send 
+What does it mean to send a prompt message now ?
+What about pierce to interact with raw isolates ?
+how will external services update their files ?  maybe with pierce actions or with just PRs ?
 
 Stories:
 engaging with a bot directly
