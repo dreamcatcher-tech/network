@@ -185,6 +185,15 @@ Backchat should boot with the session giving a little intro and saying who it is
 Backchat can run remote repos too.
 Would it allow resume of a prior session with a remote bot ?
 
+So backchat comes with a new HAL thread already ?
+Backchat has what API ?
+Should backchat be the only thing that can do repo level controls ?
+Is backchat an isolate, with an api ?
+Then on the program api, this api is exposed ?
+
+Make a fire and forget action, so backchat ignores replies.  Maybe the only error we care about is a redirect ?
+Maybe the reply can update the accounting for billing purposes ?
+
 Stories:
 engaging with a bot directly
 starting a new session with a bot
