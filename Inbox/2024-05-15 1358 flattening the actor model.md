@@ -171,7 +171,19 @@ So backchat to edit a given prompt and then hit back button would roll you back 
 Machines can be just a branch of the Actors repo, which is special in that it shares no files with each actor branch.
 Means our backup is pulling a single repo, with all branches.  This backup would likely trigger a merge with every branch if they can't done one recently, and the push / pack the whole repo, then pull it back down where we restart the system.
 Deployment then is a single repo, and making a single branch for machines in that repo, with the superuser machine key in there, and the superuser actor id.
-Superuser actor can be special too
+Superuser actor can be special too.
+
+In testing, HAL starts off bare, but can be provisioned to clone down from github.
+
+Active session vs finished session depends on if the filename matches any branch name.
+Can restart a session by opening a branch with that name.
+
+So backchat is a stable ai chat session that keeps system sanity - you cannot upgrade this piece normally, but everything can be changed.  It is like the UI that chatgpt presents you - modifying it is likely to break base functionality.  Could upgrade it, same as any other bot, but we should allow a boot mode like safe mode, so if you break your backchat, you can back out of it.
+
+Backchat should boot with the session giving a little intro and saying who it is.
+
+Backchat can run remote repos too.
+Would it allow resume of a prior session with a remote bot ?
 
 Stories:
 engaging with a bot directly
