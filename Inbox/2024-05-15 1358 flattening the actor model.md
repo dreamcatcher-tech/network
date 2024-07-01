@@ -218,6 +218,10 @@ come in with the machine pubkey
 check if we have an actor already for this machine
 if not, make one, along with the backchat session, and optionally the thread
 
+Backchat needs to intercept all prompts, and splice off anything that starts with backchat.
+Later this can be done with intelligence, but for now its just raw strings.
+Later can run whatever it passed on to as a fork that gets rolled back if backchat chooses, so it needs to pause before doing anything irreversible.
+
 Stories:
 engaging with a bot directly
 starting a new session with a bot
