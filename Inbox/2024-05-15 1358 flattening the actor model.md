@@ -194,6 +194,8 @@ Then on the program api, this api is exposed ?
 Make a fire and forget action, so backchat ignores replies.  Maybe the only error we care about is a redirect ?
 Maybe the reply can update the accounting for billing purposes ?
 
+Use folders to represent child threads, so they can all be rolled up to the top branch easily.
+
 Stories:
 engaging with a bot directly
 starting a new session with a bot

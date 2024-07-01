@@ -28,3 +28,7 @@ Hopefully we can run our own testing scripts using the browserbase scraper.
 Have a teach mode where you click on things in the live page, and we record this and try to run it automatically.  Show the results of the automation in stateboard.
 
 This should be the only way that browsing is done in an org, since we capture everything for reference.
+
+Build up summaries and ratings of movies by scraping various dbs around the place, so the user is presented with a nice selection of screenshots, info, and trailers.
+AI can decide to download something for you that it thinks you will like.
+Download the first 10 minutes or so, then you can start watching while it fetches the rest.
