@@ -199,6 +199,13 @@ Use folders to represent child threads, so they can all be rolled up to the top 
 What does it mean to send a prompt message now ?
 What about pierce to interact with raw isolates ?
 how will external services update their files ?  maybe with pierce actions or with just PRs ?
+Backchat has pierce functionality.
+
+?What is the purpose of machine now ?
+request a new backchat and optionally request a resumption
+request a default thread to start or not
+backchat has the `prompt()` function with optional attachments.
+
 
 Stories:
 engaging with a bot directly
