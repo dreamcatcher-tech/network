@@ -14,3 +14,5 @@ People can start new sessions which change the knowledge the bot keeps and share
 
 eg: go thru all your youbute videos and pull out every user story that we ever mentioned.
 Now for each user story, try to run them using our sandbox environment.
+
+https://www.npmjs.com/package/youtube-caption-extractor

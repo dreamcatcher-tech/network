@@ -24,3 +24,7 @@ linkedin posts where a DAO can publish and sign a post.  Humans can take this ov
 Perhaps the AI could log in and generate an API key in the webpage even.
 
 This becomes huge as people start making bots on our platform.  Then they start requesting ways to connect to other services.
+
+Provide npm libs with api keys as the marketplace - so you can run any code you like, and consume these api keys when you make the calls, but you just can't read the api keys.
+
+Provide a proxy object that is usable by anyone, but on the trusted side we inject the api keys.

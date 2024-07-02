@@ -222,6 +222,11 @@ Backchat needs to intercept all prompts, and splice off anything that starts wit
 Later this can be done with intelligence, but for now its just raw strings.
 Later can run whatever it passed on to as a fork that gets rolled back if backchat chooses, so it needs to pause before doing anything irreversible.
 
+Checking machine registrations
+If we make a branch for every machine, then store some data about the machine params that were included, like a fingerprint, and a log of connections.  This can be fire and forget since we are recording this as telemetry, not as critical system data.
+So we check if the branch exists, and if it does, this stores the actorId assosciated with the connection.
+Once you're authed as the machine, then you can gain access to the actor.
+
 Stories:
 engaging with a bot directly
 starting a new session with a bot
