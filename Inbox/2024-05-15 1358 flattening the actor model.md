@@ -227,6 +227,11 @@ If we make a branch for every machine, then store some data about the machine pa
 So we check if the branch exists, and if it does, this stores the actorId assosciated with the connection.
 Once you're authed as the machine, then you can gain access to the actor.
 
+Or, store machines in a single branch as a file, sharded by machine first char.
+Periodically purge inactive ones.  
+Makes backup easier.  Lookup is quick too.
+Action would be a pierce into the machines branch to guarantee the machine and log the new connection ?
+
 Stories:
 engaging with a bot directly
 starting a new session with a bot
