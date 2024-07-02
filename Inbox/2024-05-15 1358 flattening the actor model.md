@@ -232,6 +232,10 @@ Periodically purge inactive ones.
 Makes backup easier.  Lookup is quick too.
 Action would be a pierce into the machines branch to guarantee the machine and log the new connection ?
 
+backchats are stored as files, and so if a file exists but no branch, cause the branch to start.
+
+Back button in the browser - the focused chat session is what back gives, which can include backchat sessions.  Just rolls back what the UI is watching to a prior commit in backchat, where the focus switch occured.  Store these in the state.  Restore the history when resuming a backchat session.  Doing something different creates a fork of the branch.
+
 Stories:
 engaging with a bot directly
 starting a new session with a bot
