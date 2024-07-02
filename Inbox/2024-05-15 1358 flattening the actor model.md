@@ -255,6 +255,9 @@ Answer is to store the ip addresses in the actor records.
 Then the machine to actor mappings is something we store as the system operator.
 Can store the hash of the machineId, so it isn't even the machineId itself.
 
+Making a new branch should only require it being entered into the json branches key, since we know it will be created immediately after.
+We should know the sessionId externally, since it involves randomness.
+
 Stories:
 engaging with a bot directly
 starting a new session with a bot
