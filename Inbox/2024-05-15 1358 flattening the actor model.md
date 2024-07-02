@@ -236,6 +236,15 @@ backchats are stored as files, and so if a file exists but no branch, cause the 
 
 Back button in the browser - the focused chat session is what back gives, which can include backchat sessions.  Just rolls back what the UI is watching to a prior commit in backchat, where the focus switch occured.  Store these in the state.  Restore the history when resuming a backchat session.  Doing something different creates a fork of the branch.
 
+So can agents be loaded with a different set of files, which can be separate from the thread we are starting ?  So could make a hal thread in home that was based off some far away image, using files from a remote repo ?  Or does the repo have to start the session to give us access to the files ?
+Or should we clone the repo into something we control, then create a session branch ?
+Accessing multipel remote repos would be like accessing multiple git submodules.
+
+Must every session be in the same place, or can I start a session anywhere in chainland ?
+Our remote sessions would be a git submodule or a symlink ?
+Use submodules mounted in a submodules folder, then have symlinks that point to the sessions within these submodules.
+Making a session in a branch in our home would probably update the symlink to point to the random location but still present the session in a standard way, so backchat is aware of it.  
+
 Stories:
 engaging with a bot directly
 starting a new session with a bot
