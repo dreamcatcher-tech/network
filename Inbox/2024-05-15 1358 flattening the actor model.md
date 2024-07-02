@@ -245,6 +245,16 @@ Our remote sessions would be a git submodule or a symlink ?
 Use submodules mounted in a submodules folder, then have symlinks that point to the sessions within these submodules.
 Making a session in a branch in our home would probably update the symlink to point to the random location but still present the session in a standard way, so backchat is aware of it.  
 
+If machineIds were a branch, then people could read their machineId files, and have provenance ?
+Or we could allow permissioned access into the filesystem ? but this is hard to prove.
+Is it acceptable to keep this data private, as it is how we validate connections of the system ?
+If it was stored by branch, this is much better, since each machine can be shared with the user.
+However, in a branch, we cannot backup the whole repo, as the branch count is too high.
+Files can be packed, branches cannot be packed.
+Answer is to store the ip addresses in the actor records.
+Then the machine to actor mappings is something we store as the system operator.
+Can store the hash of the machineId, so it isn't even the machineId itself.
+
 Stories:
 engaging with a bot directly
 starting a new session with a bot
