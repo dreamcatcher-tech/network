@@ -10,4 +10,4 @@ Also we have AI to parse the merges, so much less of a problem than it used to b
 
 Scrape all the wording and concepts around Ditto to build strong cases for our offline abilities: https://ditto.live/in-the-news
 
-Could use the same type of w
+Could use the same type of wording and language and ideas scraping as with the postgres os project.
