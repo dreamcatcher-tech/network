@@ -12,3 +12,6 @@ However if we were the ultimate service provider, and people just effectively wo
 Ideally people should be able to start selling goods and services on our platform, and we do the billing on their behalf.  Or, other payment providers can do that billing.
 
 Probably can have a standard format for payments, using ledger plain text or similar.
+
+May connect to registering a legal entity: [[2024-07-03 1349 connect to stripe atlas so people can make legal entities on our platform]]
+
