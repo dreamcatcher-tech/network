@@ -22,3 +22,5 @@ So to the client, we would send a continual stream of patches that are always di
 Once the full commit is made, we fully replace whatever the patched versions are.
 
 Broadcast channel starts sending all the time anyway ?  or only for things that are being watched ?  So have to register a streaming watcher in the db in order to receive these ?
+
+Any writes to the fs, if they are a text file, and if there are multiple writes occuring to the same file, AND more than x seconds have passed, will start to broadcast their changes.  Its only for multiple changes to the file and a lag time passes, then we go to the bother of setting up broadcast.  Wait like 200ms or something.
