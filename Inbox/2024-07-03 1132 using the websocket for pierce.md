@@ -17,3 +17,6 @@ What about getting the payloads to be pulled direct from backblaze or S3 ?
 
 We could store some tokens in the db, and look these up when the client makes a GET request, or just check the signature on the token, and set a very low expiry time, like a few minutes.
 Provide one off signed tokens along with the subscription result to allow the user to fetch the file for x minutes.
+
+So probably safest thing is to store the jwt in a cookie, and then do a db check on it each request ?
+Or, require fetching a token from the websocket, storing it only in ram, and presenting it on each request.
