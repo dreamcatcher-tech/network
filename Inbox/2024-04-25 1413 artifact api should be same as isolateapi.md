@@ -19,3 +19,5 @@ If we look at the commits of the incoming actions, if they came from the same co
 BUT that already happens, if we run the actions in any order.
 
 Allow a base function that takes an array of requests, and makes them directly in the remote location.  This could be wrapped in an api function so it seems as tho we are calling the functions remotely, but we are in effect sending the actions over to that chain.  The first action could be the branch making one, and all the others execute in the same branch ?
+
+The remote 
