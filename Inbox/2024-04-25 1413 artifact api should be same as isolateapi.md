@@ -39,3 +39,13 @@ Almost like a way to can up a bunch of executions and unleash them remotely, lik
 Another option is to get the isolate to call this same function but in the remote location, so I can carry on and have my code execute in the remote location maybe ?
 
 Issue is sometimes we want to call something as a function, and other times as an action that causes a commit.
+
+Need a way to build up a stack of actions, and the execute them remotely, returning their results.
+
+```js
+api.requests<T>( isolate: string )
+```
+
+? how can we make api calls, like write to the fs, be an action ?
+Maybe they should have been actions under the hood anyway, so they can be done the same way for remote targets as they would be done for internal targets ?
+They would also be subject to replay ability.
