@@ -423,3 +423,18 @@ Write a blog post talking about the benefits of such a system, describe the pipe
 
 ## Optimum business efficiency
 If all the services are operated by an AI, which is doing a better job than people, then the business state hits a stability point.  We are all guided by pure optimums, and the pricing is all set with optimal goals in place.  So being able to manage a huge number of small businesses using LLMs is the opportunity - turn them into standard things, and make them all stock market tradeable, and ensure their staff are all treated fairly.
+
+## Lowering the barrier to contribution
+If coding barriers are lowered to
+To make a code contribution to a product you use every day is nearly impossible.  Learning to code when you don't know already is hard, but even skilled coders can't make a meaningful contribution of fix the things that bother them.
+We all know the joke of the guy who joined Jira, fixed a long standing bug, and then left.
+
+Show some graphs of the lowering of the barrier to entry.
+It used to be that every one contributed, but the barrier to entry was incredibly high - basically work at CERN.  Then it lowered to being almost a basic right.
+
+low barriers, high adoption rates, fast turn around times, then add rewards.
+Reduces the difference or gradient between the suppliers of the software and the creators.
+
+Expand out to sharing compute resources to reduce costs and maximize performance.
+Ultimately everything would be born by the members - a purely peer to peer environment.
+
