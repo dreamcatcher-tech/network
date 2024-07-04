@@ -424,6 +424,7 @@ Write a blog post talking about the benefits of such a system, describe the pipe
 ## Optimum business efficiency
 If all the services are operated by an AI, which is doing a better job than people, then the business state hits a stability point.  We are all guided by pure optimums, and the pricing is all set with optimal goals in place.  So being able to manage a huge number of small businesses using LLMs is the opportunity - turn them into standard things, and make them all stock market tradeable, and ensure their staff are all treated fairly.
 
+There is a final fairness optimization coming.  At that point, there is provably no more efficiency that can be gained in the business.  Musical chairs ends, and whoever is sitting in place will stay there.  Only regulation will change it, and swiftly, since it will be AI deployed.  The end of market forces.
 ## Lowering the barrier to contribution
 If coding barriers are lowered to
 To make a code contribution to a product you use every day is nearly impossible.  Learning to code when you don't know already is hard, but even skilled coders can't make a meaningful contribution of fix the things that bother them.
