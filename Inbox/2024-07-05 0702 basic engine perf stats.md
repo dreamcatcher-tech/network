@@ -16,3 +16,8 @@ At engine shutdown, give the stats and also per branch stats.
 Number of branches completed.
 
 These stats could be stored in the db.  They should be part of the user billing and metrics.
+
+Make a benchmark that counts the number of commits it takes to boot the engine.
+
+Also # to boot backchat - or the time until first prompt, when the user can start to input text.
+This is the cold start time, but number of commits is important to manage too.
