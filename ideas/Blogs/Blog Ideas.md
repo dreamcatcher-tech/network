@@ -439,3 +439,10 @@ Reduces the difference or gradient between the suppliers of the software and the
 Expand out to sharing compute resources to reduce costs and maximize performance.
 Ultimately everything would be born by the members - a purely peer to peer environment.
 
+## Psychology and AI
+To build a brain is to know it
+To describe what we are building we need new words and studies, so there is an explosion coming in understanding of psychology
+Are there types of intelligence that we do not comprehend ?
+shaping of intelligence - all the unspoken nuances
+Framing problem - being able to detect relevance
+Focus - the fact that we can only really focus on one thing at a time and switch between them

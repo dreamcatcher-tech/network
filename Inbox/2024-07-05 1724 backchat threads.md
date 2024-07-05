@@ -53,3 +53,5 @@ Helps: pieces of text that contain instructions for an agent to expand and fine 
 Agents: system prompts and commands for calling isolates.  When they are invoked using an AI model, the invocation becomes a Thread.
 
 Threads: A running agent, containing stateful conversation and the filesystem in a possibly mutated state.
+
+What about changing the backchat help ?
