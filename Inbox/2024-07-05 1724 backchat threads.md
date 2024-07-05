@@ -46,12 +46,12 @@ What about a thread that calls into another thread to make changes ?  That might
 
 How to change the agent that runs the backchat thread ?  pointer to a file ?
 
-Isolates: pieces of conventional code packaged in such a way as to be callable by AI models.
+In the actor base dir would be all the agent files the system can access ? 
+In there is the backchat agent.
+Backchat has a default agent to load up too.
+Testing backchat just runs like testing any other agent.
 
-Helps: pieces of text that contain instructions for an agent to expand and fine tune their abilities to get jobs done, instead of packing everything into the system prompt.  The instructions might involve calling on other agents
+back and forward just changes what the backchat focus is one.
+If we send an action to some other
 
-Agents: system prompts and commands for calling isolates.  When they are invoked using an AI model, the invocation becomes a Thread.
-
-Threads: A running agent, containing stateful conversation and the filesystem in a possibly mutated state.
-
-What about changing the backchat help ?
+? Should sessions be sorted by timestamp using a full ulid ?
