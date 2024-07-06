@@ -24,7 +24,13 @@ If the back button takes you to the backchat view it would show the full current
 backchat might not show when thread switching, since it might interpret and then do an action for you? or would it always show backchat momentarily while it responds ?
 
 ? What does calling an agent look like, where you want to do that in the third person ?
+This is calling an agent as a function, which we would detect in the UI and decorate differently to a normal tool call.  You could tell backchat that you wanted to jump into that thread and talk to it directly.
 
+? should a thread be upserted, or always created ?
+booting backchat should optionally create the first thread
+Backchat can be used to start a thread but also can start the thread using its ai tool calls
 
 On disk format of a thread
 - the path to the agent it was loaded from
+- commits that created each message
+- the commits of the tool call branches that occured
