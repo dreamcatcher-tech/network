@@ -26,6 +26,10 @@ backchat might not show when thread switching, since it might interpret and then
 ? What does calling an agent look like, where you want to do that in the third person ?
 This is calling an agent as a function, which we would detect in the UI and decorate differently to a normal tool call.  You could tell backchat that you wanted to jump into that thread and talk to it directly.
 
+We would keep the backchat component always loaded and ready, so when you switch to backchat it is always crisp.  Burn every other agent except backchat, since that is the good one.
+
+Pushing the backchat button would not change the focus serverside, and would delay a focus switch until the model had time to respond.
+
 ? should a thread be upserted, or always created ?
 booting backchat should optionally create the first thread
 Backchat can be used to start a thread but also can start the thread using its ai tool calls
