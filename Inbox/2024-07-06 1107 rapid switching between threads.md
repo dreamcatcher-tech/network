@@ -30,6 +30,8 @@ We would keep the backchat component always loaded and ready, so when you switch
 
 Pushing the backchat button would not change the focus serverside, and would delay a focus switch until the model had time to respond.
 
+Whatever the target is, the focus should always switch to it immediately, and then optionally backchat will intercept it.  This allows the UI to just track the server side focus.  Client would know if the user has deviated from tracking and would not yank them back.
+
 ? should a thread be upserted, or always created ?
 booting backchat should optionally create the first thread
 Backchat can be used to start a thread but also can start the thread using its ai tool calls
