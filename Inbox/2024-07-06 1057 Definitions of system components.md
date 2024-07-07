@@ -11,4 +11,16 @@ Helps: pieces of text that contain instructions for an agent to expand and fine 
 
 Agents: system prompts and commands for calling isolates.  When they are invoked using an AI model, the invocation becomes a Thread.
 
-Threads: A running agent, containing stateful conversation and the filesystem in a possibly mutated state.
+Agent: has capacity to be made of any combination of a system prompt, isolates, and helps.
+
+Threads: A running agent, containing stateful conversation and the filesystem in a possibly mutated state.  The index of threads is available to Backchat.
+
+Backchat: A special thread aware thread.
+
+Actor: A branch representing an identity on the system.  This is commonly a human, but can also be a machine.  It represents a permission domain.  It contains one or more machines.
+
+HAL: 
+
+
+
+
