@@ -9,9 +9,7 @@ Isolates: pieces of conventional code packaged in such a way as to be callable b
 
 Helps: pieces of text that contain instructions for an agent to expand and fine tune their abilities to get jobs done, instead of packing everything into the system prompt.  The instructions might involve calling on other agents
 
-Agents: system prompts and commands for calling isolates.  When they are invoked using an AI model, the invocation becomes a Thread.
-
-Agent: has capacity to be made of any combination of a system prompt, isolates, and helps.
+Agent: has capacity to be made of any combination of a system prompt, isolates, and helps.  When they are invoked using an AI model, the invocation becomes a Thread.
 
 Threads: A running agent, containing stateful conversation and the filesystem in a possibly mutated state.  The index of threads is available to Backchat.
 
