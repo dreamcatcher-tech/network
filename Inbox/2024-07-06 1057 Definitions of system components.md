@@ -5,7 +5,7 @@
 
 >[!danger] Depends: 
 
-Isolates: pieces of conventional code packaged in such a way as to be callable by AI models.
+Isolates: pieces of conventional code packaged in such a way as to be callable by AI models.  These code calls can include API calls to external services and other side effect inducing things.
 
 Helps: pieces of text that contain instructions for an agent to expand and fine tune their abilities to get jobs done, instead of packing everything into the system prompt.  The instructions might involve calling on other agents
 
