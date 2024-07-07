@@ -14,3 +14,5 @@ Mermaid could have layout added, but they would be very crude.
 Seems best to stick to plain text.
 
 It shouldn't need hugely complex systems, since it is for every day people to understand it.  Should be enough to describe the CRM company, at least.
+
+"Triad" as the name to represent a file location by path, branch, and commit
