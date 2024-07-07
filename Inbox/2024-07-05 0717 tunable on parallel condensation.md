@@ -5,7 +5,7 @@
 
 >[!danger] Depends: 
 
-If there are linear set of steps, then we should do them in the same isolate to avoid the queu being used.
+If there are linear set of steps, then we should do them in the same isolate to avoid the queue being used.
 
 Also we should detect at each step if we have already run.
 
