@@ -6,3 +6,5 @@
 >[!danger] Depends: 
 
 By default backchat should start a default thread, unless told otherwise.
+
+That thread is what would be focused.
