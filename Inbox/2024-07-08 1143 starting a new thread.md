@@ -47,3 +47,15 @@ Or we make the ln point to the remote Triad, which we keep in sync periodically.
 
 This can take advantage of blob dedupte under the hood, since as the host, so long as we repsect the privacy of the tenants, we are free to dedupe the data at whim.
 
+So the symlink should point to a network object ?
+Or, the thread object would be a remote pointer to a file held somewhere else ?
+The symlink would include the 
+Or make a dedicated object that represents remote triads.
+It is better as a pointer to a single network submodule, so that it can be referenced an unlimited number of times but the update mechanism is still the same.
+So the symlink points to a `network` path, and the those works to keep those paths synced remotely by subscription.
+At the repo base, the base io.json might include subscription info ?
+Or we might have a `.io` folder and store all the network info in there.
+
+Making the remote repos should as submodules, so that they can be checked out fully.
+We would provide a url that pointed to a place that we controlled so that we always have an available copy in our own domain.
+Updates to the submodules would be considered a delayed commit, where it can be redone, so long as the system moved forwards, not backwards or sideways, to reduce the commit noise.

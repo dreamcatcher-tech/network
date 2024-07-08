@@ -74,3 +74,10 @@ May clearly show the bleed between sites, so an expensive site costs all sites, 
 Break up signable docs into parts, so the repeated terms and conditions are clear, and the changes are highlighted.  If you agree to a given part and it is included again, it is reduced in priority, and folded on screen.  Comment may be generated on why it is included.  Signatures can be done on just sections, or on the whole doc.  Versions can be notarized on chain.
 
 Make the platform focus on unbiased interpretation of the contract, and automatically ask all kinds of pointed questions of the sender.  Means that if you use our platform, its like having someone on your side all the time, and if you seek a fair deal, you can intro people to the platform.
+
+Set up checklists for all assets, like who owns it, what it cost, what the depreciation on it is.
+Then have this model of assets on our repo, all in plain text, all queryable using NL.
+
+Being able to have Quotes that the consumers can view in any way, and the users can set up their own dashboards that are kept in sync.
+
+Place to start is a HAL based IT management system, work with Bri to help them use it internally.  Then move into Cap and up to Prop.  Use this as the place to get our docs and awareness of the environment set, also where to manage the roadmap, and the signed off work requiremets.  Connect monitoring directly to the platform.
