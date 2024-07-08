@@ -39,3 +39,11 @@ Poolstall is when we can have actions that change nothing in the filesystem, and
 Buffers things like parent commit updates if nothing materially changed ?
 But then a child might have changed, so we should lift up ?
 This could be stored as files, and then everything could hit a single branch to track head info ?
+
+If we just simply make a thread datastructure for internal threads, then use ln with submodules to handle remote repos and partial checkouts with proofs ?
+In the meantime, we can manually copy the objects over to this special `network` directory, and then use an ln to point to these remote files, and we have a subsystem that keeps the directly connected to the remote.  
+
+Or we make the ln point to the remote Triad, which we keep in sync periodically.
+
+This can take advantage of blob dedupte under the hood, since as the host, so long as we repsect the privacy of the tenants, we are free to dedupe the data at whim.
+
