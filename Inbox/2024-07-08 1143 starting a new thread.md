@@ -8,3 +8,5 @@
 By default backchat should start a default thread, unless told otherwise.
 
 That thread is what would be focused.
+
+Scoping a threads file access is done at the branch level, not within the thread file itself.
