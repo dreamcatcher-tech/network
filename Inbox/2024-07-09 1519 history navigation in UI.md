@@ -23,5 +23,8 @@ If we had the actorId and the threadId, then we could share anything.
 We could make shorteners that make friendly links for sharing, once we move to private by default.
 
 When we load up another actors threads, our backchat should be able to inject into them.
-So we would switch our focus 
 Backchat would know we were asking for a thread that wasn't within our actor.
+So we would switch our focus where backchat would be called requesting a focus switch to a remote branch, which would pop up the backchat dialog.
+Then once the focus has switched, after the thread was validated, the UI switches, and there is now a symlink in our directory pointing at this remote thread.
+
+Backchat could show a loading UI showing it is trying to load a remote thread.
