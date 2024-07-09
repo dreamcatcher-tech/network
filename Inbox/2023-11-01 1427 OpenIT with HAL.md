@@ -81,3 +81,5 @@ Then have this model of assets on our repo, all in plain text, all queryable usi
 Being able to have Quotes that the consumers can view in any way, and the users can set up their own dashboards that are kept in sync.
 
 Place to start is a HAL based IT management system, work with Bri to help them use it internally.  Then move into Cap and up to Prop.  Use this as the place to get our docs and awareness of the environment set, also where to manage the roadmap, and the signed off work requiremets.  Connect monitoring directly to the platform.
+
+Use QR stickers to id equipment, so that reading sends a photo of the equipment, which is useful at the same time.
