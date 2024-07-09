@@ -28,3 +28,13 @@ So we would switch our focus where backchat would be called requesting a focus s
 Then once the focus has switched, after the thread was validated, the UI switches, and there is now a symlink in our directory pointing at this remote thread.
 
 Backchat could show a loading UI showing it is trying to load a remote thread.
+
+So the thread is the unit of history - whatever thread we are focused on, we will always show that thread in its most recent state.  To view it at a prior state would require a direct command to backchat, and the thread would be limited to a specific commit.  So an extra optional parameter on the hash which loads the thread at a fixed commit rather than head.  Then doing something at that point might fork ? or might require an explicit rollback ?
+
+Backchat could copy the thread to a new thread, which is why the threadId should not be stored in the thread itself.
+
+So no matter what the location of the thread, it would ultimately a threadId inside of this actor.
+But then sharing it again would be a different path, since we would make a new threadId ?
+If there are collisions, then we need to just make a new name, which is genuinely random, that just points to the other place.
+
+If an actorId was given in the hash url that isn't our actorid, then we make a new thread in our dir to represent this thread.  We always target threads in our home directory, even if they point to other places.
