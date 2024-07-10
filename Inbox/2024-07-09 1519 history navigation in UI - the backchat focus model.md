@@ -38,3 +38,16 @@ But then sharing it again would be a different path, since we would make a new t
 If there are collisions, then we need to just make a new name, which is genuinely random, that just points to the other place.
 
 If an actorId was given in the hash url that isn't our actorid, then we make a new thread in our dir to represent this thread.  We always target threads in our home directory, even if they point to other places.
+
+Threads can have summaries, which can include a list of topics that gets continually updated.
+
+If the top level app contains a focus marker, that tracks whatever thread the UI is currently focused on.
+If this goes null, then we use the backchat supplied focus ?
+back and forwards pops and pushes threadIds into history.
+Cancelling backchat is the same as switching the userside focus
+Serverfocus is the last thread that the server side backchat connected to
+
+? what happens if serverfocus switches while the user 
+? how can the user rejoin serverfocus ?
+
+When closing backchat, need to cancel the mic from running
