@@ -83,3 +83,5 @@ Being able to have Quotes that the consumers can view in any way, and the users 
 Place to start is a HAL based IT management system, work with Bri to help them use it internally.  Then move into Cap and up to Prop.  Use this as the place to get our docs and awareness of the environment set, also where to manage the roadmap, and the signed off work requiremets.  Connect monitoring directly to the platform.
 
 Use QR stickers to id equipment, so that reading sends a photo of the equipment, which is useful at the same time.
+
+Incident response, post incident review generation and suggestions.  Root cause analysis questions, and keep bubbling up the root causes to the top.  Review all current procedures and show which root causes are not being mitigated.
