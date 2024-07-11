@@ -80,4 +80,6 @@ The prompt needs to be targetted at the given threadId, be that backchat or focu
 
 Make a test rig that modifies the thread in the page each time prompt goes up.
 
+The only thing that changes history, is when the user triggers the prompt, which will cause a new history state to be pushed, and now you are at the tip.  Then, if you're still at the tip, when a new focus object somes, that is pushed onto history too.
+
 History navigation might highlight what the activity at this point in history was, by tracking the message commit that was new at that point and scrolling it into view.
