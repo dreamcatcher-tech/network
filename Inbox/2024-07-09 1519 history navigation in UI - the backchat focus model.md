@@ -47,7 +47,35 @@ back and forwards pops and pushes threadIds into history.
 Cancelling backchat is the same as switching the userside focus
 Serverfocus is the last thread that the server side backchat connected to
 
-? what happens if serverfocus switches while the user 
-? how can the user rejoin serverfocus ?
+? what happens if serverfocus switches while the userfocus has moved ?
+? how can the user rejoin serverfocus, and start tracking the serverfocus ?
 
-When closing backchat, need to cancel the mic from running
+Whenever the user is on the current serverfocus, then changes to serverfocus will be applied to the UI.  If they were back in history when this happens, forwards history will be overwritten.
+Or, you need to be at the tip of history, where serverfocus is being added to, and only if you are at the tip, will you be pulled forwards by the serverfocus.
+
+If you enter something into a prompt while back in history, this will clear forwards history and you will now be tracking serverfocus.
+
+Backchat would let us subscribe to the serverfocus.
+When it changes, we push a new item on the history.
+back and forward just sets the focus different.
+If we are currently at the highest state in history, then we move ourselves forwards.
+So have a flag that is at tip, and if we are not at tip, then do not track the serverfocus.
+
+Same sticky setting can be used for scrolling to the bottom of the page.
+If some new content came in AND we are scrolled at the bottom of the page THEN scroll all the way down.  Otherwise wait until the stickiness is restored before tracking page bottom again.
+
+When closing backchat, need to cancel the mic from running.
+
+If the user closes backchat, this should not change history state.  So forwards and back would keep the same movements.
+
+For each step in history, we could store the backchat and the threadId, so the user can toggle between them, with no changes ?
+
+So container manages the hiding and showing of backchat, independent of what the focus is.
+One level higher, at the App level, the focus is determined from the history changes and the serverfocus.  Serverfocus changes always pushes onto the stack.
+App is always passing down the backchat and the target threads, so no need to show focus, just show if backchat is focused ?
+But then we need the last focused item, which sits behind backchat.
+So backchat is never the focus, but it can be showing
+
+The prompt needs to be targetted at the given threadId, be that backchat or focus.
+
+History navigation might highlight what the activity at this point in history was, by tracking the message commit that was new at that point and scrolling it into view.
