@@ -78,4 +78,6 @@ So backchat is never the focus, but it can be showing
 
 The prompt needs to be targetted at the given threadId, be that backchat or focus.
 
+Make a test rig that modifies the thread in the page
+
 History navigation might highlight what the activity at this point in history was, by tracking the message commit that was new at that point and scrolling it into view.
