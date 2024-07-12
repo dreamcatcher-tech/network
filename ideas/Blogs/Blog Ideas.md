@@ -448,3 +448,14 @@ Are there types of intelligence that we do not comprehend ?
 shaping of intelligence - all the unspoken nuances
 Framing problem - being able to detect relevance
 Focus - the fact that we can only really focus on one thing at a time and switch between them
+
+## The citadel
+Why is a trusted area in service of users crucial to replacing code based software ?  Because all these apps need a credential store, payments, and private data, and so if we can gain user trust, our apps will be preferred, even if all else was equal about them.
+
+If we can then start doing things like price comparisons for everyones private data, like insurance payments, mortgages, car insurance.  We continually get price data.
+Capture their concerns, like extra clauses they want in their insurance, and try broker this on their behalf.
+
+Eventually, we can form a pool of purchasing power.
+Also if we talk to service providers, we can switch our customers instantly using an API.  Eg: cove insurance, or others that are tailored to the marketplace.
+
+So instead of each app springing up to take a narrow piece of private processing, we want any app to be able to do the private processing, where we guarantee the execution.  So like raytio should be an app platform, not just a single standalone thing.
