@@ -9,3 +9,5 @@ Periodically scrape the site and see if anything changed.
 
 Keep watch on customers and pricing.
 
+Watch a github repo for releases and commits and issues.
+Gives an easy way to digest a whole project and all their issues.
