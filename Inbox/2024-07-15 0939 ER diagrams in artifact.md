@@ -15,3 +15,8 @@ So the rules get entered in the top, and some user stories are generated.
 Then when people actually use it, further user stories and stucks are generated as the users complain or the bots detect friction.
 
 Basically systems that take the chance of hallucination and multiply it, so the reliability goes up above a certain level.
+
+Upgrading the ERD / transitioning to a new one could be tricky ? would require rerunning testing, as well as the new types of tests that we would expect to change.  Make the old tests fail and so you work to change these tests and the ERD, then hit upgrade.
+
+System visits every record to see if it is in compliance.
+
