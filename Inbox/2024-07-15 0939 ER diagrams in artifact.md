@@ -13,3 +13,5 @@ The rules are checked each time any action occurs.  The diagram checked too, but
 
 So the rules get entered in the top, and some user stories are generated.
 Then when people actually use it, further user stories and stucks are generated as the users complain or the bots detect friction.
+
+Basically systems that take the chance of hallucination and multiply it, so the reliability goes up above a certain level.
