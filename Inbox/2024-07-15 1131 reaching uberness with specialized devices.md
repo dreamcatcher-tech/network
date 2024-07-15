@@ -20,3 +20,8 @@ Bins should be drawer shaped, but could also just dump into a draw based storage
 Once standardized, these can be dumped at a depot, or join the matternet, which makes them easier and cheaper to handle.
 
 A mulcher could turn up in a drawer, and be used to mulch waste into drawers giving you near limitless capacity.
+
+For green waste, the ideal model is that you can have the bin for free so long as a min order is placed, else a bin rental fee is incurred each month.  Then if you give us notice, you get a cheap rate, if you want last minute, costs more, if you are a regular last minute customer then you get cheaper pricing since using it more gets a discount.
+
+Its like you need a certain size to be able to support on demand usage, since overheads tend to be fixed.  Then sharing the burstiness benefits with staff can ensure good commitment - if they make more during surge, this is desirable to them.  They can also self organize.
+So a symbiotic relation could be found, like daycare and restaurants, where high load in one correlates to low load in the other, so that more burstable services can be supplied, vs trying to lock people in.

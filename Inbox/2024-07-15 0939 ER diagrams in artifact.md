@@ -20,3 +20,6 @@ Upgrading the ERD / transitioning to a new one could be tricky ? would require r
 
 System visits every record to see if it is in compliance.
 
+Testing can be going thru each rule and checking against the diagram ?
+Generate a negative of the rule and check the result of the question against the diagram is false ?
+
