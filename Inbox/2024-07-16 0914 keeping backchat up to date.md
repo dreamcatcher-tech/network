@@ -27,3 +27,8 @@ Or, make backchat have a way to read into the threads directly, without need to 
 We could track which branches are dirty, so we can quickly know what to pull in, and it still be repeatable.
 
 Backchat keeps its local view of the threads up to date at all times whenever a reply comes back.
+
+Better, have a single file in the actor that stores summaries of the threads.
+This is continually kept up to date, like a db index file.
+List of topics can be kept up to date too, with many different threads that link to a given topic.
+Can be sharded by context window, to allow rapid fetching, or can be vector stored.
