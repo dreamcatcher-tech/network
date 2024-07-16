@@ -69,3 +69,10 @@ Show scale based crystals, like local all the way out to global
 Show bad things, like death, murder, holocaust
 
 These crystals might be enough on their own to encourage behaviour.  If there was a tool for special needs children, then some people might take the time to walk other people thru the app, and for doing so they get impact shares, as well as possibly money if anything comes of it.  Like pyramid marketing but using impact instead of cash.  So knowing how much impact you created by recruitment and helping others to use the app can go a long way - you can see the total impact you caused.
+
+Rending using impact code blocks in markdown.
+
+```impact
+dimensions
+viewer
+```
