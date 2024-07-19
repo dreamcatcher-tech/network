@@ -5,3 +5,8 @@
 
 >[!danger] Depends: 
 
+If we make a new file, like an agent, then 
+
+So a thread should list its dirty files somehow ?
+
+What does just saying "backchat" do ?  Should this just focus backchat ?
