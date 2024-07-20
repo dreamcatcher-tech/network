@@ -26,3 +26,7 @@ A full safe deployment would run all the repo tests as well before publishing th
 
 It just means that setup is a single thing, not multiple things.
 But what about keeping the app separate and just deploying to deploy ?
+Then give it a vite url.
+
+Ultimately if we can get to the ability for people to export their repos, or talk between versions of hal, so that on the new one, we can show them their old repos and offer an import ?
+Or, do an auto import ?
