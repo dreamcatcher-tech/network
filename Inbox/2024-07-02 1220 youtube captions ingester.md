@@ -16,3 +16,5 @@ eg: go thru all your youbute videos and pull out every user story that we ever m
 Now for each user story, try to run them using our sandbox environment.
 
 https://www.npmjs.com/package/youtube-caption-extractor
+
+Make a simple isolate that can run this package based on a url, so we can pull in the transcriptions easily.
