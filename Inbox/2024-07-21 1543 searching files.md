@@ -36,3 +36,11 @@ Have a table that was presenting a single index file of all customers, which its
 Then when rows are filtered out,
 
 Basically we can't have the overhead of reading every single file, so we need them all either on hand in ram, or in a single file.  Or queryable in a database.
+
+Have multiple index files, to allow the changes to be smaller.
+So for each field of interest in the crm, or each query of interest, we set up an index file and a watcher on it.
+So each commit, the index file gets updated to the new dir hash of the customers list.
+The index file being for each query type means the file can be small.
+We can also shard it to reduce the filesystem load.
+We would make new types of queries as needs were discovered, but the users could make these queries too, and keep them updated, since they would be maintained by an intelligent agent.
+Then doing a search considers the indexes we have available, and might make a new index if required.  Making a new one would walk a user thru it checking the query was what they wanted, before spending all the credits to build the full one.

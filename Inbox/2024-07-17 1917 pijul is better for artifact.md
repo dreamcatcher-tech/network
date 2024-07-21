@@ -20,3 +20,8 @@ In git land, a complete unified merged view of all files could be expensive, pij
 The complexity of adding a file change, in large directories, is O(1) for Pijul, but O(n) for git.  If Pijul had its top level snapshot built using HAMT structures to make it very efficient, then it might be an extremely well performing module.  If we can insert this structure in early in the project, it might stick.
 
 We could write specs for what each function in our port of pijul does, and so we can test if the module works correctly, since most of the code checks would be done for us already.  We could then abstract out artifact to use either system.  Then perhaps automated code builders could try repeatedly to solve these things, so we have a js port ?
+
+Pijul patch format should allow for parts of a line to be replaced too ?
+Also pieces of a binary file.
+
+The patch is awesome for updating a single row in a large file, since it is very pure, expressing only the changes that occured.
