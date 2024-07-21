@@ -14,3 +14,6 @@ Parallel agent calls seem hard.  They might be done using a copy of the thread t
 
 Store info about the stateboard that is showing at each point in the thread.
 Have summaries for sections, and topics, of which there can be several for a particular section of the thread.
+
+For now, the switchboard will choose from a list of all agents
+

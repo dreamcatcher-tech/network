@@ -12,3 +12,6 @@ Prompt should be able to get the switchboard to choose something, like if I say 
 When the thread runs, we see the switchboard churning, then it calls a function call
 
 Assistants need to be named by the hash of the git file that made them, so there is no ambiguity.
+
+Remove the collapse button, instead this shows the agent details for each message.
+For the users, this shows details about them.
