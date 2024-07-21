@@ -44,3 +44,5 @@ The index file being for each query type means the file can be small.
 We can also shard it to reduce the filesystem load.
 We would make new types of queries as needs were discovered, but the users could make these queries too, and keep them updated, since they would be maintained by an intelligent agent.
 Then doing a search considers the indexes we have available, and might make a new index if required.  Making a new one would walk a user thru it checking the query was what they wanted, before spending all the credits to build the full one.
+
+Since pricing for queries is dropping, we should just run full blown AI queries in parallel, rather than trying to be fancy with the index files.   The speed is the only issue, but the complexity around making a query system seems too hard in comparison ?  We can certainly operate for a while with full queries, and we just eat the price of it, then later we optimize.
