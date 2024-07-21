@@ -29,3 +29,10 @@ If the number of files stays under 50k, then running a mini query on every singl
 If a graphql system was run and kept live, then we could possibly run this in the browser ?
 The bot can generate graphql queries to pull up date quickly, without running thru all records, which is rather wasteful.
 So the md files would be contiually shadowed with a json file, which in turn is used to back a graphql service.
+
+They liked the component where you type and then suitable items show up, ranked.
+We could do that by downloading all records to the browser, and then plain text searching thru them ?
+Have a table that was presenting a single index file of all customers, which itself is possibly sharded / chunked.
+Then when rows are filtered out,
+
+Basically we can't have the overhead of reading every single file, so we need them all either on hand in ram, or in a single file.  Or queryable in a database.
