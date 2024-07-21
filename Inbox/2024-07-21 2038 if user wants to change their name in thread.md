@@ -18,4 +18,8 @@ Facts need to go back to the thread, scroll them back, and throw up the stateboa
 Is the CRM just the factpool ?
 
 Pijul patches should have file hash at each point, so they can be found across space time.
-backlink scoring like google.
+backlink scoring like google. 
+
+the operator cannot switch out to a new thread.
+
+backchat is now like the window manager on a desktop.
