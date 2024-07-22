@@ -10,3 +10,11 @@ list the current version, the release date, the stability commitments, the data 
 State that the data could be lost at any time due to system resets.
 
 Bugs are automatically logged, you can see them here: blahblah.
+
+Pointers to previous versions.
+
+Stamp for the UI as well ?
+
+List the outstanding bugs, so users can ask questions about what is still wrong with it.
+
+List out the milestones that are coming.
