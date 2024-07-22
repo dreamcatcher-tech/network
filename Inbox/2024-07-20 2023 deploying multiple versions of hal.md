@@ -30,3 +30,9 @@ Then give it a vite url.
 
 Ultimately if we can get to the ability for people to export their repos, or talk between versions of hal, so that on the new one, we can show them their old repos and offer an import ?
 Or, do an auto import ?
+
+Do a redirect on a previous one when it has run its course.
+
+Add the previous URLs into the current stable deployment.
+
+If we use the preview urls, then this are always virgin deployments.

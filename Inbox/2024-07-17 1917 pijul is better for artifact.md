@@ -25,3 +25,5 @@ Pijul patch format should allow for parts of a line to be replaced too ?
 Also pieces of a binary file.
 
 The patch is awesome for updating a single row in a large file, since it is very pure, expressing only the changes that occured.
+
+Receiving splices automatically has the diffs in them, so the patches can be streamed down almost raw.

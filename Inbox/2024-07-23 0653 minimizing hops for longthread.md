@@ -24,3 +24,5 @@ Switchboard says what agent to run.
 Run the agent, show it to the user.
 
 Backchat becomes not a trigger word, but an agent with a single powerful tool - the ability to switch the current thread out.
+
+Backchat then becomes an agent, which manages threading, rather than an entity.
