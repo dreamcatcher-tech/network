@@ -24,3 +24,5 @@ Be able to issue meta commands, like truncate, where the thread gets wiped back 
 Clone and restart a thread as a new entity ?
 
 Make a thread comparator tool, so when driving remote threads, then we can compare to known good results, and possibly select a new favourite, or new sections of favourites.
+
+Then, running a remote thread can call other remote threads, which gives us leverage.
