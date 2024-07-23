@@ -26,3 +26,5 @@ Clone and restart a thread as a new entity ?
 Make a thread comparator tool, so when driving remote threads, then we can compare to known good results, and possibly select a new favourite, or new sections of favourites.
 
 Then, running a remote thread can call other remote threads, which gives us leverage.
+
+We could change the sysprompt of a certain agent, and then ask for the thread to be rerun, so we can see what the response would be.  Apply intelligence so that if the replayed next prompt no longer makes sense like the original did, try generate something different or ask the user.

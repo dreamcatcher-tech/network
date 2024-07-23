@@ -36,3 +36,5 @@ Do a redirect on a previous one when it has run its course.
 Add the previous URLs into the current stable deployment.
 
 If we use the preview urls, then this are always virgin deployments.
+
+As new versions become stable, we can set up redirects to point all the old ones to the new ones.
