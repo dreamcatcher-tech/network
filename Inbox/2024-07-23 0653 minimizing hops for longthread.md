@@ -26,3 +26,6 @@ Run the agent, show it to the user.
 Backchat becomes not a trigger word, but an agent with a single powerful tool - the ability to switch the current thread out.
 
 Backchat then becomes an agent, which manages threading, rather than an entity.
+
+??should we keep the execution environments completely separate ?
+quick completions might be useful for things that don't require switching users out, like db queries.
