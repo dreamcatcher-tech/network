@@ -14,3 +14,9 @@ We should store here the oid of the agent file, and the accompanying assistant i
 Compare the oid of the agent file now, with the oid that is stored.
 
 Needs to detect out of sync agent files with the main branch.
+
+When the user is making modifications to local files, that is what matters.
+So the hash of the file, and the hash of the tools matter.
+
+agenthash is the oid of the agent file, and the hash of the tool object, hashed together.
+Registry would hold the agenthash mapped to the assistantid
