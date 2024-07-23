@@ -29,3 +29,6 @@ Backchat then becomes an agent, which manages threading, rather than an entity.
 
 ??should we keep the execution environments completely separate ?
 quick completions might be useful for things that don't require switching users out, like db queries.
+
+Do we need assistants to do longthreading ?
+We could achieve a similar effect using completions, and it would be much faster to get up and running ?
