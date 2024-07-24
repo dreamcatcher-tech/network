@@ -459,3 +459,7 @@ Eventually, we can form a pool of purchasing power.
 Also if we talk to service providers, we can switch our customers instantly using an API.  Eg: cove insurance, or others that are tailored to the marketplace.
 
 So instead of each app springing up to take a narrow piece of private processing, we want any app to be able to do the private processing, where we guarantee the execution.  So like raytio should be an app platform, not just a single standalone thing.
+
+## history of Artifact
+We started with one thread per file, but then moved to treat threads as independent entities.  Turns out this is what a git branch is, so we copied the git datastructure.
+We had good logic generation for the backend of apps, good resilience in operations - all the blockchain goodness without the blockchain pain - but the user interface requried complex logic and lengthy consultations with the users.  When AI came, we could solve this problem.  But we also reduced the business logic generation down to natural language too.  Now the whole thing runs on a git compatible blockchain with AI running all the logic of each company system, including our own.
