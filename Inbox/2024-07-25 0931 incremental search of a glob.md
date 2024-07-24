@@ -27,6 +27,6 @@ Live geocoding can just show a component for the geocoding, and have the results
 Should show the outline of the property, or a colored pin for the property.
 Then the fine adjustment lets you move the pin to be somewhere specific as a separate widget.
 
-Indexing at the start can just be a smoosh of all the text
+Indexing at the start can just be a smoosh of all the text in the records, stored in sharded files to reduce the rewrites when the records change.  
 
 Stateboard should be a function call with some params.

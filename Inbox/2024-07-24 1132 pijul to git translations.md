@@ -23,3 +23,5 @@ The git structure itself could be stored as patches too, rather than the full fi
 So use the git structure as the index of the repo to allow rapid retrieval of anything, then use patches in reverse to walk backwards.  The git commit is transient and not stored anywhere permanent.
 
 Then retrieval from patches just walks back to the most recent git commit, and then rebuilds at that point, since it has the git hash to start from.
+
+Use the deno cache to store git structure, but commit pijul to db since always space efficient.
