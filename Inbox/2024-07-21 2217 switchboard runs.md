@@ -40,3 +40,9 @@ Hybrid would be the longthread is only for the switchboard, and the assistant ch
 So if we wanted to do fancy multiple calls, then we would need to use assistants or use completions.
 So might be worth struggling on with assistants, enjoying some of the benefits of automated thread management, and then when we want to do fancy things, use the chat completions method.
 
+Ultimately, assistants is to help you with state management if you are not managing your own state.  We are, so it is extra painful to keep our state in sync with assistants, whilst also keeping our state compatible with other models and apis.
+
+Switchboard would store the choice that it made where ?  Is it simply evident in the action that was run next, by way of tool call ?
+
+Need to store how many messages were fed in to the next call, altho that again is retrievable from the action.  But storing in the thread object allows us to represent that in the UI.
+
