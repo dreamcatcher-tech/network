@@ -29,4 +29,6 @@ Then the fine adjustment lets you move the pin to be somewhere specific as a sep
 
 Indexing at the start can just be a smoosh of all the text in the records, stored in sharded files to reduce the rewrites when the records change.  
 
+Send an AI call off to create an embedding, and then send this back down to the browser to do searches on the repo embeddings, then insert those results at the top of the stack tagged as AI processed results.
+
 Stateboard should be a function call with some params.
