@@ -32,3 +32,12 @@ Indexing at the start can just be a smoosh of all the text in the records, store
 Send an AI call off to create an embedding, and then send this back down to the browser to do searches on the repo embeddings, then insert those results at the top of the stack tagged as AI processed results.
 
 Stateboard should be a function call with some params.
+
+Could do fuzzy string searches client side, with a big smoosh of all the keywords of the records that we want to search.
+Index type is just plain text, or template based, where it provides all the words separated by a space, one per line, with the filename at the start.
+Then as PK results come back, we pull those records down from the server, using cache if available, showing the raw text in the meantime.
+https://www.npmjs.com/package/didyoumean2 is fast and fuzzy
+https://www.fusejs.io/ seems highly performant too
+fusejs index can be cached as well, if it matches the index shards
+
+Run the matcher in a webworker to avoid blocking the render.

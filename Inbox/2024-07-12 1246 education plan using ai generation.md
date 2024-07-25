@@ -25,3 +25,5 @@ Flash cards or swipe cards can be used to educate staff.
 Staff can frame hypothetical scenarios to the system, and then tweak with lots of different similar things being generated, so they can understand how the system works, and what they are expected to do.
 
 Could be long running tasks that you haven't thought about in a while.  If you swipe left then you don't want any other niggles and want something fresher.  We should be able to figure out what you like quite quickly.
+
+Map out the mind, abstract reasoning, history, categorization, maths.  Then see what areas we want to focus on, and what areas we are having good progress in.

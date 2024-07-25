@@ -23,3 +23,13 @@ The other option is that instead of using assistants, we could manage threading 
 Building up the state on the openai servers is problematic, particularly if the threads get long.
 
 Benefit is access to vector stores and code interpreter tooling.
+Future gains come out way as they upgrade this interface ?
+
+but also, assistants cannot do multiple parallel calls with different temperature responses ?
+
+Overall assistants offers less flex, more state, and is not as configurable.  
+If we need a vector store, we would need to create our own threads and run that way ?
+But ideally, we would run our own vector stores too ?
+
+Hybrid would be the longthread is only for the switchboard, and the assistant choice includes the number of messages to pass back, as well as the number of topics to pass in too, so the longthreading is still handled on their side ?
+
