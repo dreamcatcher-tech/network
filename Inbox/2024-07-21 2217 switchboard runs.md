@@ -31,10 +31,10 @@ Overall assistants offers less flex, more state, and is not as configurable.
 If we need a vector store, we would need to create our own threads and run that way ?
 But ideally, we would run our own vector stores too ?
 We can treat it like a completions call if we need to, so that code interpreter can run, but otherwise no point lumbering along with it.
+Assistants does allow an external way to view the threads.
+Does offer thread truncation, but the switchboard should do that.
 
 Hybrid would be the longthread is only for the switchboard, and the assistant choice includes the number of messages to pass back, as well as the number of topics to pass in too, so the longthreading is still handled on their side ?
-
-Assistants can do vision, but chat cannot.
 
 So if we wanted to do fancy multiple calls, then we would need to use assistants or use completions.
 So might be worth struggling on with assistants, enjoying some of the benefits of automated thread management, and then when we want to do fancy things, use the chat completions method.  We want vision, so need to keep at it.
