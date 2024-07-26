@@ -1,0 +1,26 @@
+
+>[!tip] Created: [2024-07-26 Fri 14:28]
+
+>[!question] Targets: 
+
+>[!danger] Depends: 
+
+Help you set up your own website that gets generated automatically, with automatic chatbot integration.
+
+Be nice to be able to supply labour to construction sites as integrated project management.
+So hooking in to what the project was to supply the jobbing staff in an elastic fashion.
+
+Auto posting on job sites, and managing these postings.
+
+Doing ad campaigns on social media to get attention of candidates.
+
+voice transcriptions, whilst pulling in relevant data, and taking customer notes, setting reminders.
+
+Generating question hints, like if they mention some other person, you ask more about them.
+Basically be able to have novice recruiters be profitable quickly by hinting.
+
+Summarizing topic searches so can seem more engaging on the phone.
+
+Auto network mining, wher
+
+Pull in linked in and socials to get a better picture of someone.
