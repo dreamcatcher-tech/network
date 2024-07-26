@@ -40,3 +40,12 @@ Last action to be received is the one that sets the new threadId.
 The threadId is cached in the client.
 
 ? Is the focus only a client side concept ?  Might make no difference
+
+Track focus, and emit an event on focus changed.  Cache in clientside, and if changes on the server, we just push onto the history.
+As soon as they enter something in to a historical thread, this is the new now ?
+But we should keep the forwards threads.
+If the backchat thread changes externally, then the client will simply add that to its history, but will not automatically follow it.
+
+If the user goes back in history and enters something, then we will not update anything.  The client would know locally what the last transmitted threadId was, and knows if the remote side changes to match this.
+
+Trouble is that backchat is switching the whole pid each time ?

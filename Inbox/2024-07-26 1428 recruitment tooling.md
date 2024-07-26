@@ -21,6 +21,10 @@ Basically be able to have novice recruiters be profitable quickly by hinting.
 
 Summarizing topic searches so can seem more engaging on the phone.
 
-Auto network mining, wher
+Auto network mining, where we try to drag up suitable candidates from the book for a specific job.
+Generate job openings to chase down based on likelihood.
+Keep in touch with candidates, and farm more candidates.  Generate appointments to follow up with others, and keep detailed notes on each meeting.
 
 Pull in linked in and socials to get a better picture of someone.
+
+Candidates to interview each other to get the quality up, then get a share of the success fee.
