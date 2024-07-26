@@ -20,3 +20,5 @@ Being able to now generate promotional videos and other content using AI means o
 If we make all the advice we receive transparent and anonymized, then we can work towards meeting any regulatory requirements for our company.  We can also figure out what the fair value of shareholdings are in the company, based on our attribution tooling.  We can make these tools available to other companies, where we can charge them for its usage by calculating what they owe us using the attribution tooling we make.  Means we can weather all the regulatory burdens of the pubco intelligently, and always be growing our knowledge base.
 
 Attribution calculation is our primary offering, and we should use it internally.
+
+As soon as we can use Dreamcatcher to make bots to solve any task, then we should start operating a company, so we don't waste time on all the admin overheads.  Whenever a problem occurs, we just generate a bot solution.  Once we live in this dreamland, we can take on the public company task as a way of generating publicity, funding, and capital gains, where we are trading the future success of our venture to cover our losses over the past 5 years.
