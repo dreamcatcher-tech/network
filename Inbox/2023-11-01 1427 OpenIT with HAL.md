@@ -85,3 +85,5 @@ Place to start is a HAL based IT management system, work with Bri to help them u
 Use QR stickers to id equipment, so that reading sends a photo of the equipment, which is useful at the same time.
 
 Incident response, post incident review generation and suggestions.  Root cause analysis questions, and keep bubbling up the root causes to the top.  Review all current procedures and show which root causes are not being mitigated.
+
+Promise tracker - scan all emails going in and out, and keep a list of promises of things to be done and delivered.  Then ensure there is a followup, and let people see the exact email that made the promise.  Falls into a class of email filtering where it is comprehending everything people say on behalf of your company, and makes sure people stick to it.
