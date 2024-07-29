@@ -24,3 +24,6 @@ Steps:
 - call the `once` completion to determine if we should send the prompt to the current focus, or back to backchat
 
 Backchat could have some buttons showing the most recent threads we were accessing.
+
+No need to check the ai call if the focus is already backchat - move straight on to agent selection.
+Agent selection can be skipped if there is only one agent configured on the thread.
