@@ -46,3 +46,9 @@ We would make new types of queries as needs were discovered, but the users could
 Then doing a search considers the indexes we have available, and might make a new index if required.  Making a new one would walk a user thru it checking the query was what they wanted, before spending all the credits to build the full one.
 
 Since pricing for queries is dropping, we should just run full blown AI queries in parallel, rather than trying to be fancy with the index files.   The speed is the only issue, but the complexity around making a query system seems too hard in comparison ?  We can certainly operate for a while with full queries, and we just eat the price of it, then later we optimize.
+
+Make the browser download the whole repo, and then do a search based on this local copy.
+Keep the repo up to date by watching the commits.
+Use OPFS to get good storage performance, and long term storage.
+Or just use the fs from isogit.
+Make it periodically pack the git files and update the B2 storage, as this is what we should use to pull down from ?

@@ -6,3 +6,5 @@
 >[!danger] Depends: 
 
 We need a way to constrain the switchboard to only choose certain agents.
+
+The agent search should have a glob patter restricting its activities.
