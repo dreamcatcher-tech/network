@@ -4,3 +4,5 @@
 >[!question] Targets: 
 
 >[!danger] Depends: 
+
+Artifact apps are a form of packaging for saas
