@@ -11,3 +11,7 @@ Then, whatever the DAO already agreed to, whatever you propose must be consisten
 Building up the rules one rule at a time, and keeping them isolated from each other, rather than having proposals being a jumble
 
 Existing DAO can have their proposals analyzed to try figure out the business rules in retrospect.
+
+Basically generating [[2024-07-31 0701 making a system for managing design ideas|design ideas]] is the same as a DAO since people can vote using different ways of calculating the weight.
+
+Timeline management can be in here too.

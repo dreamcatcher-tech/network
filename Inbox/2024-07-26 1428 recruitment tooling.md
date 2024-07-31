@@ -28,3 +28,7 @@ Keep in touch with candidates, and farm more candidates.  Generate appointments 
 Pull in linked in and socials to get a better picture of someone.
 
 Candidates to interview each other to get the quality up, then get a share of the success fee.
+
+Collab between members ?
+
+Have a company that voluntarily wants to rotate out staff, where they can net out the recruitment fee by donating some staff if they want to move them on.
