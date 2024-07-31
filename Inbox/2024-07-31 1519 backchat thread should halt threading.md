@@ -5,7 +5,8 @@
 
 >[!danger] Depends: 
 
-we would add the tool call result 
+we would add the tool call result to the thread, but not engage the thread any more.
+This only occurs in the backchat thread.
 
 ONLY if the focus is the same after this tool call returns would we rerun the thread.
 
