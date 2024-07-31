@@ -14,3 +14,5 @@ The handle would have a laser scanner, or any other type of scanner.  This handl
 Can carry extra battery charge ability.
 
 Guns can have a zoom feature for the scanner.
+
+Or use proglove solutions, and use standard phones that are carried nearby for cell connections.
