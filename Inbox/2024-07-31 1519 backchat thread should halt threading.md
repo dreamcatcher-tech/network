@@ -26,3 +26,12 @@ agents:switch should be prepopulated with valid names as an enum, so the model c
 Restore navigation - we must be able to browse and navigate freely amonst filepaths, branches, and commits.
 
 Display additional instructions for the agent each run too, so this can be displayed in the gui.
+
+If backchat doesn't know how to handle something, it should start a new thread about that thing.
+
+We should test the agents in more isolation - isolated from switchboard, with a few select test prompts, to ensure the behaviour is the same.
+This needs to somehow be done on platform, rather than in the dev environment.
+If we could run these tests inside the repo, using a CI version of deno, that would be ideal ?
+If the tests could be assosciated with the agent somehow, then we could use the tests to generate summaries and other nice things.
+
+If the testing in CI is happening using artifact on the Agents repo, then 
