@@ -62,3 +62,9 @@ Or, just test the basic deployability of the system, but never test the AI funct
 
 Can all stories be designed in this way ? Can the CRM be fully defined in this way ?
 What about testing of widget inputs, like searching for customers ?  We can only test the prompting, and widgets need to supply a specific type of prompt input.
+
+Tests seem independent of the business rules ? As in, we can write a test before we have the business rules set up.  So we might be able to infer the business rules from a test ?
+Are the tests actually the business rules ?
+Definitely the user stories should be used to generate tests ?
+
+Need a scenario setting before / beforeEach to indicate what the initial state of the system is before the tests are executed.  Maybe one scene per file is permitted ?

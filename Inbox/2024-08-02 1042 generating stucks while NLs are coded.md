@@ -12,3 +12,21 @@ If we can show the detection of actor stucks, and dev stucks, and show how they 
 This can be described as a context diagram of problems being generated internally, being published
 
 The context diagram of the dreamcatcher should clarify everything.
+
+The basic premise is that we can generate apps incredibly fast, and continually adapt them rapidly, for very low cost.  We need to prove this working, but it is looking very likely we can do this.  However the
+
+The types of network services we provide to any given venture are:
+- external problem solving
+	- blockchain matters here, so small contributors can be assured of ongoing royalty payments in the future, and trust the modifications that occur, by being able to see how it works
+- deduplication of problem solving
+- shared cost of problem solving
+- shared access to customers
+- ambient attribution - solving the problem of how to cut up the pie in a project or venture - this is where we want to make the majority of our money
+
+The effects we want to induce are
+- merging of business functions between businesses
+- faster collaboration between people
+
+Make a revenue project diagram in mermaid over time showing our sources of revenue and how we want them to change.
+Show where we plan to spend our money over time too - platform features, acquisition so we can demonstrate and test, plus get a revenue base.
+

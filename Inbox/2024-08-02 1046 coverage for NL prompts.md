@@ -5,7 +5,7 @@
 
 >[!danger] Depends: 
 
-One NL bot could 
+One NL bot could assess and test for the impact of particular parts of the prompt to calculate coverage.
 
 If you remove the suspected low impact area of the prompt, then measure the outcome, we can figure out the importance of each part.
 
