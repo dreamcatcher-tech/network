@@ -7,6 +7,8 @@
 
 We should not be relying on AI calls to be made to test parts of the system.  We should be mocking the calls, and then running tests in the HAL repo.
 
+We should not be relying on the ai calls to test artifact in any way - artifact is purely mechanical.  It should never rely on external prompts to get its job done.
+
 The testing framework needs to be HAL native, so that it can run as an artifact app, and be testing using NL monte carlo.
 
 Dashboards for bots should be in terms of probability of integrity / correctness and shape / presentation.
