@@ -32,3 +32,5 @@ Candidates to interview each other to get the quality up, then get a share of th
 Collab between members ?
 
 Have a company that voluntarily wants to rotate out staff, where they can net out the recruitment fee by donating some staff if they want to move them on.
+
+Should be able to map out an entire city, like Kiev, and keep track of where all the people are, so we can resell and connect consumers of their services better.

@@ -44,3 +44,21 @@ Specify a github repo or a section by way of a PID:
 - optional repoid
 - commit
 So when running the test suite, it first provisions the system using the parameters given to ensure the files are correct.  If nothing is specified, it assumes the tip of the filesystem it is running in now.
+
+HAL is intended to never contain any actual software code - it is to be pure NL.
+
+So artifact would need some tools for testing it could run and interpret NL test specs correctly.
+
+If we can get a full NL development loop going, where NL apps are produced using NL assistance at all steps of the way, we can avoid the human effort of typing, and the specialized environments like vscode required to run these things.
+
+Is the CRM to be a completely separate repo to HAL ?
+So long as it is written as pure NL, that should be sufficient for us to work on without compromising our goals.
+? Then is each instance of the CRM a dedicated repo too ?
+Surely these would be a fork, so they remain able to merge in upstream changes ?
+Each one should have a base branch that was unique to it, too, so that a company can have several different CRMs but all with a different base branch, rather than a whole lot of separate repos ?
+
+So the artifact tests should never need HAL to be cloned down, and should always be bare ?
+Or, just test the basic deployability of the system, but never test the AI functionality of the HAL repo.
+
+Can all stories be designed in this way ? Can the CRM be fully defined in this way ?
+What about testing of widget inputs, like searching for customers ?  We can only test the prompting, and widgets need to supply a specific type of prompt input.
