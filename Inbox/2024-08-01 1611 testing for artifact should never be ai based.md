@@ -36,3 +36,11 @@ It should be able to focus in on a specific test, sort all failing tests, rerun 
 The CI testing would be when we pull into artifact, before updating everything, it would run the CI tests.
 
 The externally owned account that triggered an action should always be tracked, as this is who the bill is being sent to.  They should be able to hit stop at any time, and it would halt all action.  They should also be able to see the fan out of all consequential actions that occured.
+
+Need to haul in files to the tests.
+Specify a github repo or a section by way of a PID:
+- path or glob or array of globs
+- repo name in git
+- optional repoid
+- commit
+So when running the test suite, it first provisions the system using the parameters given to ensure the files are correct.  If nothing is specified, it assumes the tip of the filesystem it is running in now.
