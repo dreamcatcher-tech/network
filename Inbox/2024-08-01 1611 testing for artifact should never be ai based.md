@@ -22,6 +22,10 @@ Tests should allow:
 - a collection of chain of prompts
 - a mixture of chain of prompts and one shot prompts
 - generative prompts that use an AI to generate a response based on what came before and some instructions
+- setting the filesystem state for the tests, which is reset each run
+- mocking the isolate functions that get called whilst allowing some functions to execute unimpeded
+
+Should allow for parallel test execution, for rapid speed.
 
 if plain backticks are used, the text is an instruction to the bot ? or if we prefix it.
 
@@ -68,3 +72,9 @@ Are the tests actually the business rules ?
 Definitely the user stories should be used to generate tests ?
 
 Need a scenario setting before / beforeEach to indicate what the initial state of the system is before the tests are executed.  Maybe one scene per file is permitted ?
+
+Making this testing framework should be very quick, 
+There is the runner, and also the constructor, which are independent.
+Then the reporter is in charge of generating and sometimes saving results.
+Can save timing info too to get speed indications and stats between runs.
+Benchmark info can include token cost, number of commits.
