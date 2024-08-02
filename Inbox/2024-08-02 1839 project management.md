@@ -27,3 +27,5 @@ GPT question
 - timelines / roadmaps / priorities at any given tick
 - which concepts lasted the longest ? rank all concepts in terms of lifetime
 - what records have private information in them and need censorship ?
+
+ingest git issues
