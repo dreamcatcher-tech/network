@@ -27,6 +27,19 @@ The effects we want to induce are
 - merging of business functions between businesses
 - faster collaboration between people
 
-Make a revenue project diagram in mermaid over time showing our sources of revenue and how we want them to change.
+Make a revenue projection diagram in mermaid over time showing our sources of revenue and how we want them to change.
+- ambient attribution
+- 
 Show where we plan to spend our money over time too - platform features, acquisition so we can demonstrate and test, plus get a revenue base.
+- platform reliability, security
+- integrations - with blockchains, email, chat apps, common cloud apps
+- acquisitions of small businesses to measure the improvements and learn from
+
+User acquisitions reasons over time
+
+User retention reasons over time
+- the features
+- the people
+- the attribution
+- the private data trust
 
