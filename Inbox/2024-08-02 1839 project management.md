@@ -29,3 +29,5 @@ GPT question
 - what records have private information in them and need censorship ?
 
 ingest git issues
+
+goal is to present to LP a meeting summary as a bot.
