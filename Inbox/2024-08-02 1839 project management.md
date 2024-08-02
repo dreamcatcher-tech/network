@@ -17,7 +17,13 @@ LP Questions
 - why not outsource
 - why so hard - what is the bottleneck, where are you stuck
 
+
 GPT question
 - list architectural events in a timeline
+- name all the people
+- connect entity lifecycle events to contributors
 - extract entity / concept names and synonyms
 - what was our target feature set
+- timelines / roadmaps / priorities at any given tick
+- which concepts lasted the longest ? rank all concepts in terms of lifetime
+- what records have private information in them and need censorship ?
