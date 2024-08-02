@@ -11,3 +11,13 @@ Bots to make:
 - time commitments - a published roadmap / timeline of where we're heading
 - investment deck - LP to give examples
 - generating press releases
+
+LP Questions
+- why so long
+- why not outsource
+- why so hard - what is the bottleneck, where are you stuck
+
+GPT question
+- list architectural events in a timeline
+- extract entity / concept names and synonyms
+- what was our target feature set
