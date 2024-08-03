@@ -23,6 +23,6 @@ Attribution calculation is our primary offering, and we should use it internally
 
 As soon as we can use Dreamcatcher to make bots to solve any task, then we should start operating a company, so we don't waste time on all the admin overheads.  Whenever a problem occurs, we just generate a bot solution.  Once we live in this dreamland, we can take on the public company task as a way of generating publicity, funding, and capital gains, where we are trading the future success of our venture to cover our losses over the past 5 years.
 
-Key is to make the value we are reversing in be the NFTs that have been created, and the expenditures will be to fund these NFTs.  We would reinvest all profits, and use tax credits in the company.  These assets would 
+Key is to make the value we are reversing in be the NFTs that have been created, and the expenditures will be to fund these NFTs.  We would reinvest all profits, and use tax credits in the company.  These assets would be what the share price should trade on.
 
 Listing in the US might not be so burdensome since we have a compliance meeting machine.
