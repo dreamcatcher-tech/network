@@ -68,3 +68,6 @@ Acquisitions are a way to pump funded problems into the network.
 
 We need micropayments - the same quality guarantees as receiving a bank payment, but for huge numbers of very small amounts.
 Reliability of operation, capable of netsplit due to political reasons.
+
+
+Make a context diagram, but use size of boxes to represent size of revenue / effort ?
