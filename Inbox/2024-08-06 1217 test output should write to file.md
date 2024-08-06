@@ -14,3 +14,16 @@ The test output file would mimick the input file, but would be strictly formatte
 Naming should be the same as the test spec itself, and it just overwrites it, and can use git to recover it.
 
 Runs would not be saved upwards unless we explicitly said ?
+
+The runs take place in a branch, and then their results are accumulated into an output file.
+
+Synth would tell the runner to run a glob pattern of files, then a new branch would form, dedicated to that run, with a file named appropriately.
+	Synth would only be running a single run at a time, never more than one.
+
+
+
+Goals:
+- run a collection of test files
+- run all the test files in a repo
+- run a single test in a file
+- run with generated prompts, reporting statistics back

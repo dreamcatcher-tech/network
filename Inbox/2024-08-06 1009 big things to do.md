@@ -11,6 +11,8 @@ Remote repo untrusted
 Consensus
 indexing
 automatic trigger actions
+squash merging
+large binary files
 
 billing
 resource tracking
