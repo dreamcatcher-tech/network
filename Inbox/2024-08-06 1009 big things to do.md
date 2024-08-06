@@ -5,6 +5,7 @@
 
 >[!danger] Depends: 
 
+pulling down and upgrading data
 Remote repo interactions
 Remote repo untrusted
 Consensus
