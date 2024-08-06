@@ -22,3 +22,6 @@ What to write into the spec file - update it automatically with the last run ?
 Be able say not to update the spec file.
 Shouldn't write to the spec file, but should generate a results file, which then links to individual run files
 Generate a dashboard file that shows all of the tests that we ran.
+
+Show the generated prompts by just asking the generator to run, and seeing what the results are.
+Testing the generator bot should have some good examples.
