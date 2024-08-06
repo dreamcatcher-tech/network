@@ -9,4 +9,4 @@ Then basically fix it up until all the expectations pass.
 
 This is the iterative improvement cycle of the dreamcatcher.
 
-Should be able to have a spec, and show it failing, then pass it off 
+Should be able to have a spec, and show it failing, then pass it off to be completed with some escrow attached.
