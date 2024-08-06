@@ -7,4 +7,4 @@
 
 Threads are peers, but they need to be able to inherit or be a clone of an existing thread.
 
-Be able to pull the last 
+Be able to pull the last message out of a thread, rather than rewriting it into a file.
