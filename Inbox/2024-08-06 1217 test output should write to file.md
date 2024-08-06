@@ -26,7 +26,7 @@ Once done, if the synth wants to read it, we give functions to read a specific r
 
 Multiple versions of a test would just be another object in an array.
 If the variation params are set in the top level config, then we just repeat the whole test run a number of times.
-Have the summary written too, updated automatically each time a new result comes in.
+Have the statistical  summary written too, updated automatically each time a new result comes in.
 
 
 Goals:
