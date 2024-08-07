@@ -26,3 +26,4 @@ Downloading all the repo is valid, as we might choose to pull the whole git repo
 Provides a way to track changes and subscribe to those changes, by tracking the git commit.
 
 websocket can just send up a range of the directory files it wants, and pull them down in chunks.
+the git array should automatically store things in the order they last changed in, so last modified is first.
