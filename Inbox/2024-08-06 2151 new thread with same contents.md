@@ -18,3 +18,9 @@ When it does the push, it can also update statistics on the top level summary ob
 Check the runId is still correct, as we should never be writing to a superseded run.
 
 But could this be done in a generalizable form ?
+Like be able to decorate any object based on its schema with a function that can read and manipulate it ?
+Then we could use isolate function mappings to make these nice for the model to call, but under the hood, and in NL, with a bot to help, we are just 
+
+This probably falls under the clause of thread parsing, where we might want to extract out files from the thread without going thru context, or we might want to start a new thread with some parts of the prior thread ?
+
+It might be easier to run thru context but set temp low.

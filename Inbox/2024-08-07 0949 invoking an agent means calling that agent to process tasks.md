@@ -16,4 +16,6 @@ Only when that agent has finished running should control switch back to the prio
 Invoking a new thread and running an agent within it is a different thing.
 would not cause thread to be listed in the actor controlled threads, since it is controlled by the spawning thread.
 
-Seems we would only do this for the purposes of evaluating agents, or providing some kind of dojo interaction.
+Seems we would only do this for the purposes of evaluating agents, or providing some kind of dojo interaction.  It should not be used for completing a users requests ?
+
+But if we want a loop where the agents try to improve a prompt of an agent, then we might want it to run in this way ?
