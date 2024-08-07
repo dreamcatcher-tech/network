@@ -23,4 +23,6 @@ Avoids multiple http requests.
 
 Downloading all the repo is valid, as we might choose to pull the whole git repo to provide light weight client side widgets.  Eject old data.
 
-Provides a way to track changes and subscribe to those changes.
+Provides a way to track changes and subscribe to those changes, by tracking the git commit.
+
+websocket can just send up a range of the directory files it wants, and pull them down in chunks.
