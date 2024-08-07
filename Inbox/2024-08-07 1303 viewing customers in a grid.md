@@ -15,5 +15,8 @@ So we should pull down the full file listing, one file at a time probably, using
 
 Then we use the generated filter and sort to modify the list.
 
+This system could be the actual rapid search function.
 
-Downloading multiple files using websocket 
+Downloading multiple files using websocket should be very fast, and could do whole directories.
+We could periodically send backpressure signals up the stream so it doesn't choke.
+Avoids multiple http requests.

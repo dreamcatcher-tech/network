@@ -18,3 +18,13 @@ Trigger a modification loop, where you run the faulty tests thru the creator bot
 Focus in on a specific test and specific expectation, where you write a transient test file, in a branch, and loop over it endlessly until you get a bot that can pass, possibly with the help of the creator bot.
 
 Show incomplete runs with runs from any previous versions on disk, and just highlight them in a different color to show prior.
+
+Runs record needs to store each test, probably by an id, and then record summary and run info against it.  These results would be piling up as the runs complete, and should be added to the run record file as soon as they are available.
+
+There is one run record per file, and each test inside it is run the same number of times as all the rest normally.  A test can be run independently, but this requires a specific focus.
+If the runner chooses to rerun a specific test, then 
+
+A new run record is created whenever the test file changes its hash.
+
+Summary only applies for each individual test.  The test file causes many of these to be created.
+The config says how many variations to do for the whole file, but the directly prompted runner can do custom values for each test.
