@@ -25,3 +25,5 @@ Generate a dashboard file that shows all of the tests that we ran.
 
 Show the generated prompts by just asking the generator to run, and seeing what the results are.
 Testing the generator bot should have some good examples.
+
+Best way is use the AI as part of the prompt, so it runs the prompt and then generates some special artifacts to allow us to check expectations without doing any prompting work

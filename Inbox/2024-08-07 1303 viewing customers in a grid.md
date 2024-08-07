@@ -20,3 +20,7 @@ This system could be the actual rapid search function.
 Downloading multiple files using websocket should be very fast, and could do whole directories.
 We could periodically send backpressure signals up the stream so it doesn't choke.
 Avoids multiple http requests.
+
+Downloading all the repo is valid, as we might choose to pull the whole git repo to provide light weight client side widgets.  Eject old data.
+
+Provides a way to track changes and subscribe to those changes.

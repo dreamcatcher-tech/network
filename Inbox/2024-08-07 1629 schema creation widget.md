@@ -15,3 +15,7 @@ If a multistep process involved a schema and some other stuff, this widget would
 So for a web server, this widget would be called on whenever we wanted to alter the parameters of the api we are presenting, and it would be a very focused and dedicated task, rather than the blank file problem that faces devs who do not know about a particular subject.
 
 The impact of changing something upstream could be easily seen.
+
+Could also be used to generate a function mapping for our system, with helpful hints, and a test run widget assembled alongside, so that when you save something, it triggers some example invocations to be run, so you can see what the output is like.
+
+Means we can couple these input widgets with display widgets, and link them up in pipelines like mermaid diagrams.
