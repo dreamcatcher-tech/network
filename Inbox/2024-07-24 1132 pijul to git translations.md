@@ -25,3 +25,7 @@ So use the git structure as the index of the repo to allow rapid retrieval of an
 Then retrieval from patches just walks back to the most recent git commit, and then rebuilds at that point, since it has the git hash to start from.
 
 Use the deno cache to store git structure, but commit pijul to db since always space efficient.
+
+?? how would we grab just the git repo and then start making more patches that were compatible ?
+Git would need to be like a snapshot where all the patches reset to point to the previous git commit.
+Needed to maintain compatibility.
