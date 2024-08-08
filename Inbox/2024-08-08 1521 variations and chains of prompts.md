@@ -16,3 +16,5 @@ Viewer for the thread should be just the normal HAL thread viewer.
 Is the whole HAL interface just a widget anyway :thinking: ?
 
 How to submit several chains in ?
+
+When we want to test being multiple different actors on the system, we now need to run a set of variations for each actor to verify.  How should this be represented in the TPS report ?
