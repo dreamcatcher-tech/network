@@ -12,12 +12,19 @@ Second person makes some changes.
 the diffs are presented and chatted about, with reasoning contributing to a fact pool.
 individual facts are debated over and merged.
 
+stateboard shows diffs side by side.
+Make a special widget for having multiple versions side by side, like 10.
+Also can chat about and summarize the changes.
+Generate ai batches of changes, where there is some similarity between all the changes, so we can have a discussion about each type of change - this gets extracted out to an atom - at least if we can agree on an atom together, we are making progress.
+
 Maybe simpler than a doc is an atomic fact list ?
 Or maybe a doc is the simplest case of this ?
 
 Pass commentary on a proposal given a body of knowledge.
 
-How can a test that drives the stateboard or does individual document editing be tested ?
-Need to make some assertions about the stateboard state too.
+Trouble is that the AI isn't making any decisions in any way, it is merely assisting.
+Test allowing small deviations on the plan ?
+Test requiring updates to be posted or the funding gets cut.
 
-How can the test drive be viewed while it is running, so we can see the interactions live, as they are happening, in another window ?
+another good starting use case is the tracking of progress from KOLs - so they need to submit progress in some way, and if the AI deems progress is outside of the agreement, the AI blocks the funding, so it excuses any given person having to seem rude, it is simply the rules being set and then the AI executing them intelligently, politely, mercilessly - this is how blockchain was supposed to be, but without intelligence it is very limited
+

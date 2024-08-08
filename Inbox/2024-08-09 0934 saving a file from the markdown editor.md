@@ -11,3 +11,5 @@ If all changes go via the prompt, then the AI can check what is happening and do
 Or we could put triggers against files, but it seems better to use the prompt to save.
 
 Can adorn it with AI calls that are not blockchained, to do things like spellcheck, check the format of yaml and propose changes.
+
+Blockchain the request data for billing audits.
