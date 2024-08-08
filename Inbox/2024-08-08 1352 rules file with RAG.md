@@ -31,3 +31,5 @@ These files and the assosciated tools can be used to make indexes that are searc
 These files could be generated all over the place to provide ways of thinking about directories of files, and files themselves could be broken down in this way.
 
 The files could include mappings, where the original data is a chunk, and the mapping transforms it into something different.
+
+Upgrade tranforms could process these files when a new requirement is given, and we could walk the list with transformers in parallel.  Provide a widget that shows the transformation status of these data structures.
