@@ -53,3 +53,7 @@ Agreement on atoms, and storing the discussion.  This is a shared discussion of 
 Biggest benefit of the DAO is execution of rules and intelligence without anyone having to put in any extra effort.  It could score a proposal as stupid, or conflicting, or say why its bad, without anyone having to respond.  Effortless refusal.
 
 Forces reasoning about everything we do.
+
+Respond to a question on an issue that is in conflict, by saying the viewpoints that have stabilized, and saying what weights are behind each one.  Based on personal preference, you can choose either one, or you can vote on one, even if you don't have tokens.
+
+If we always store what people wanted, and who they are, then we can calculate the agreement in multiple parallel ways.  Reaching agreement on assertions seems fundamental.

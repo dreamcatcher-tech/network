@@ -29,3 +29,9 @@ Use the deno cache to store git structure, but commit pijul to db since always s
 ?? how would we grab just the git repo and then start making more patches that were compatible ?
 Git would need to be like a snapshot where all the patches reset to point to the previous git commit.
 Needed to maintain compatibility.
+
+Pijul should be able to map 1:1 to git, if the notion of a commit is introduced to pijul.
+Each patch that shows up in a commit is just the changes that would have happened to that file in git.  We can compute what the git hash would have been, as well as have what the pijul patch was.
+
+A commit can be a top level directory wrapper around pijul, and so any changes to the directory are in essence a commit.
+Can make metadata file that is the commit info that is stored in git.
