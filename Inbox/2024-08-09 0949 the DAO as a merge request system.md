@@ -49,3 +49,7 @@ Score people and give badges for certain grades.
 Atom extraction from documents.
 
 Agreement on atoms, and storing the discussion.  This is a shared discussion of many with the AI.
+
+Biggest benefit of the DAO is execution of rules and intelligence without anyone having to put in any extra effort.  It could score a proposal as stupid, or conflicting, or say why its bad, without anyone having to respond.  Effortless refusal.
+
+Forces reasoning about everything we do.
