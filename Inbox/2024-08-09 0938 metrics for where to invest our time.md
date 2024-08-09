@@ -18,7 +18,7 @@ increase in usage - estimate how many more people would pay to use the system if
 Map this against changing prices of data storage projections.
 net dollar increase - show that if it gets cheaper, more people use it, and then we get more money since the high price is holding back mass adoption.
 
-Then go raise some funds
+Then go raise some funds for each packet of change we want.
 
 Compatibility loss nill.
 Time to git commit might be slightly higher.
