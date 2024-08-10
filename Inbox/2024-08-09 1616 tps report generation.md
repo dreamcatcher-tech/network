@@ -56,8 +56,24 @@ The manager can be told to pull from the home dir, so run the tests on the refer
 Each session starts a new thread, and one tps report per executing file is made.
 
 Objects are:
-- workbench - a branch where one or more files are asked to be run, and can be changed and rerun.  A place where experimentation occurs.  It knows where it was requested from, and is a randomly generated ID.  The current target files in the workbench are changed for each test cycle.  The workbench controls the invocation of runners for the individual test files.
+- workbench - a branch where one or more files are asked to be run, and can be changed and rerun.  A place where experimentation occurs.  It knows where it was requested from, and is a randomly generated ID.  The current target files in the workbench are changed for each test cycle.  The workbench controls the invocation of runners for the individual test files.  Capable of running multiple executes of tests concurrently.
 - test suite - the group of tests described in the .test.md file
-- test - an individual test in that .test.md file
-- iteration - an individual run of a test.  multiple runs combine with variance to give a tps report
+- test case - an individual test case in that .test.md file
+- iteration - an individual run of a test case.  multiple runs combine with variance to give a tps report
 - tps report - the outcome of running a test suite.  One tps report per test file.
+
+Need to have a handle on a workbench to be able to run tests.
+Workbench can be told to run 1 or more test files, and can be told to run 1 or more test cases within those files.
+A execution of a collection of test cases is called a test run.
+A test run will generate one tps report per test file.
+
+? should the tps reports be able to cover multiple files in a single file ?
+Seems very messy to do this.
+
+Workbench interface:
+- execute( globPatterns: string[],  )
+
+Test Planner is called by the workbench, and is given all the files to run.
+It is called in its own isolated branch.
+
+Files are always controlled by the caller and can be set to anything in the run branch.
