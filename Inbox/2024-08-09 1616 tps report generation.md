@@ -26,3 +26,6 @@ Test as a branch at the actor level, then child branches that run for different 
 Otherwise the test is only accessible from within the current user branch, and may not be long lived.
 
 Is testing an app, or just a branch ?
+
+Testing is an app that is built in to HAL, and it runs in its own branch.
+Inside that branch, 
