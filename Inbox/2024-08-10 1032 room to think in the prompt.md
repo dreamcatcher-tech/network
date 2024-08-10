@@ -19,3 +19,9 @@ Can additionally stop the prompt part way thru and do some reassessment to keep 
 Also allows the bot to answer the question "why did you say that ?" with more clarity, since its thinking is recorded.
 
 The trick is to influence the final outcome with some thinking beforehand.
+
+So if we combine this with HAL3 having 3 versions of the prompt output, made with varying temperature settings, then we can do parallel step by step thinking, select the best one.
+
+Showing this in the UI would be fun, as the 3 results would come in at different times, then the selection would be made, then the rest of the prompt would be generated, possibly again in parallel.
+
+We will probably always get better results from doing thinking in this way.
