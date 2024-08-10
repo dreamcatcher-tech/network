@@ -12,3 +12,5 @@ We should be able to try generate large numbers of files that test certain devia
 As well we should be able to talk about the file, and get help from a centrally agreed fact pool ?
 
 If a fact is disputed, it should summarize the contrary viewpoints.
+
+Eg: test the agent creation tool by generating loads of valid yaml and seeing how that passes the testing.
