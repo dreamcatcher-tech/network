@@ -24,4 +24,4 @@ So if we combine this with HAL3 having 3 versions of the prompt output, made wit
 
 Showing this in the UI would be fun, as the 3 results would come in at different times, then the selection would be made, then the rest of the prompt would be generated, possibly again in parallel.
 
-We will probably always get better results from doing thinking in this way.
+We will probably always get better results from doing thinking in this way, no matter how the models improve.
