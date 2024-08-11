@@ -1,1 +1,0 @@
-A model for describing Innovation as an assemblage of network components and tramission lines.  Described in the blog post [[Modelling Innovation as a Comms Network]]

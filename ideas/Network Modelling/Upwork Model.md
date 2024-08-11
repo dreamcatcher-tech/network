@@ -34,9 +34,9 @@ This is a permissionless router that requires transmissions to be formed into Pa
 ## Implementation
 We can operate this model using UpWork as it is right now, and present ourselves as a freelance company that bids for work, then publishes the jobs we want fulfilled on upwork too.  We would seek to deduplicate Funders so they can share their costs, and we would seek to engage Do-ers.
 
-Ultimately we would seek to have Do-ers themselves taking over some of our roles, and so long as eveyone honours ambient attribution, we would all
+Ultimately we would seek to have Do-ers themselves taking over some of our roles, and so long as everyone honors ambient attribution, we would all benefit fairly.
 
-The attirbution model is what we hope leads to greater coordination between competing Do-ers, and coordination between Funders.
+The attribution model is what we hope leads to greater coordination between competing Do-ers, and coordination between Funders.
 
 We would be the salespeople of the Dreamcatcher way of doing things to Funders.  We may need to float some of the jobs with a small amount of funding to entice people in at first.  This should be very cheap compared to the lessons we will learn.
 
