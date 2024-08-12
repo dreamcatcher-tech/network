@@ -2,9 +2,9 @@ The internet was born of packet switching over transmission lines, taken to its 
 
 In this model, various organizational structures are modelled by their network topologies, and their performance in transmitting from source to target is compared.
 
-Innovation is modelled as an infinite source of zero cost and of unknown origin, that is transmitted through a newtork of people who are connected together in varying topologies with various transmission properties modelled by groups of components.  The only limit on the rate of innovation flowing from the source is the transmission network thru which it flows.
+Innovation is modelled as an infinite source of zero cost and of unknown origin, that is transmitted through a network of people who are connected together in varying topologies with various transmission properties modelled by groups of components.  The only limit on the rate of innovation flowing from the source is the transmission network thru which it flows.
 
-Incentives are modelled as always in proportion to innovation received.  Incentives are consumed entirely by the transmission network, as the Innovation source requires no fuel in this model. At the highest level, the model is:
+Incentives are modelled as proportions to innovation received.  Incentives are consumed entirely by the transmission network, as the Innovation source requires no fuel in this model. At the highest level, the model is:
 ```mermaid
 graph TD
 	A[Innovation] ---> B[Network]
@@ -13,6 +13,13 @@ graph TD
 ```
 
 ## Components
+### Incentives
+Vary costs are accrued for each part of the network.  Incentives are released by problems back to the network, and depending on how the network is configured, different amounts reach the network components.  All components can draw on debt, which is a store of incentives from past solutions that can be reallocated.  If no incentive reaches a component, it will never operate again.  This can be used to capture a startup venture that receives some funding to try get a particular part of the network operating sustainably, but fails to do so, and so all the stored incentive is lost.
+
+Incentives can only have come from solved problems, and a sustainable network configuration is able to continue indefinitely.
+
+These are different to buffers that store innovations - these are buffers that store incentives.
+
 ### People as Transmission lines
 These are transmission circuits in the network model.  They have a fixed maximum capacity.  For the purposes of this model, innovation is something that flows through people, rather than something people create.
 
@@ -30,7 +37,13 @@ graph TD
 	X ---> C{Company}
 ```
 ### Switch
-Any place where people coordinate with each other necessitates a switch change packets between transmission lines
+Any place where people coordinate with each other necessitates a switch change packets between transmission lines.  In its purest form, this is a fair market.  The switch function takes a damping parameter, that describes restrictions on the switch.  The purest switch has the potential to connect with any person.
+
+This relates to the selection of ideas too, where the quality of the ideas can be related to the number of people it was open to, as well as the incentives to solve it.
+
+If ideas a measured as random injections into a transmission line, and the rest is methodical processing, then we can show how the speed and quality are affected by varying arrangements of components.  An equation can be formulated to show these outputs with varying parameters like money, time, people, incentive connections.
+
+Switching cost is an important factor, as a manual switch consumes standby costs and switch costs and is very slow so has a low switching rate, but an AI switch is very fast and cheap, with perhaps some quality tradeoffs.
 ### Contractors
 There are circuits that are temporarily dedicated to the traffic of its owner, but can switch between owners more rapidly than FTEs.  They can also multiplex, and serve transmissions of several owners simultaneously
 ### Freelancers
@@ -47,7 +60,7 @@ These components also modify the solution components, and combine them with each
 This component receives innovation but destroys them upon receipt.  The loss may be partial, and per part of a packet, or randomly be the full packet.
 
 ### Buffers
-These components can store up innovation for an arbitrary time before continuing transmission.  A Buffer has a decay function built in, as innovation does not store well.
+These components can store up innovation for an arbitrary time before continuing transmission.  A Buffer has a decay function built in, as innovation does not store well.  Innovation degrades over time as well as the whole circuit being wasted if another part of the network solves the problem sooner, meaning that all the incentives spent in this portion of the circuit are wasted.
 
 ### Connection Broker
 A common component in Innovaiton networks is a switch that brokers connections before allowing innovation to flow.  This component is seen in [[Upwork Model|Upwork]], and represents the portion of their model that requires [[Funders]] and [[Do-ers]] to negotiate with each other before Innovation can be attempted.  This places extra load on both transmission lines and 
