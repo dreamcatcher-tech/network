@@ -101,3 +101,6 @@ Test runners break up the job further into each individual case
 - 
 
 A watching run is one where the files are being edited and the tests need to rerun if they would have been affected by those changes.
+
+- Create the tests branch if it doesn't exist.
+- In there, start a run controller if we don't have one already.
