@@ -60,7 +60,14 @@ Objects are:
 - test suite - the group of tests described in the .test.md file
 - test case - an individual test case in that .test.md file
 - iteration - an individual run of a test case.  multiple runs combine with variance to give a tps report
-- tps report - the outcome of running a test suite.  One tps report per test file.
+- test run - an invocation of a collection of test files.  Can be rerun with different parameters.  Can have the collection of files changed, or can be told to scope down to an individual file.
+- tps report - the outcome of a test run.  Lists all the test files used in the run and shows the run status and outcomes of each one.
+
+? how would we retrieve prior runs for an individual file, if the patterns for whats included in the run have changed ?
+Designed so that when you're running, you
+But if each testfile had its own tps report, then we could fish up prior runs easier ?
+But we would still be inside of the same run session, since no deliberate sharing between branches.
+Workbench file could be something like a manifest, that lists the parameters of the test ?
 
 Need to have a handle on a workbench to be able to run tests.
 Workbench can be told to run 1 or more test files, and can be told to run 1 or more test cases within those files.

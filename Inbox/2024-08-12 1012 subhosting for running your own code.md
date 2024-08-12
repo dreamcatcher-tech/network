@@ -26,3 +26,8 @@ Run a mini stackblitz environment and try to run the code there.
 
 Per account means we could control spend more accurately for each one.
 Modelled like this makes it easier for them to host their own versions.
+
+Or we could just have a series of subhosting deployments that represented groups of independent functions.  Like publishing on npm basically, but it is liver than that.
+Publish to jsr, and then we make deployments that pull these pieces in so they are runnable.
+
+Subhosting is the purest form of isolation tho, and would force us to have cross repo comms in an efficient way.
