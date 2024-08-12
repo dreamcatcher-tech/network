@@ -31,3 +31,5 @@ Or we could just have a series of subhosting deployments that represented groups
 Publish to jsr, and then we make deployments that pull these pieces in so they are runnable.
 
 Subhosting is the purest form of isolation tho, and would force us to have cross repo comms in an efficient way.
+
+May do the user supplied code as running inside of cloudflare webworkers since these allow dynamic imports.
