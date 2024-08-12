@@ -87,3 +87,17 @@ Test Planner is called by the workbench, and is given all the files to run.
 It is called in its own isolated branch.
 
 Files are always controlled by the caller and can be set to anything in the run branch.
+
+Either going to be individual files, or run via a controller type thing.
+The controller would be able to run batches of runs, doing things like linear, or parallel executions.
+A Widget that can read the controller file, would be able to read the files that were executing, and would look up the TPS reports for display.
+When loading a specific tps report, you could rerun the test, and this would cause the controller to tell then task runner to do something.  So the widget controls the task runner by talking to the controller, since the controller tracks it all.
+
+Test controller actions are async tho, and the test runners.
+Test runners break up the job further into each individual case
+
+- controller gathers all the files together required to execute a run
+- controller starts the runners for each test file
+- 
+
+A watching run is one where the files are being edited and the tests need to rerun if they would have been affected by those changes.
