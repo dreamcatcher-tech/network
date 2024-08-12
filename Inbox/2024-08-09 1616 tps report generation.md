@@ -56,12 +56,15 @@ The manager can be told to pull from the home dir, so run the tests on the refer
 Each session starts a new thread, and one tps report per executing file is made.
 
 Objects are:
-- workbench - a branch where one or more files are asked to be run, and can be changed and rerun.  A place where experimentation occurs.  It knows where it was requested from, and is a randomly generated ID.  The current target files in the workbench are changed for each test cycle.  The workbench controls the invocation of runners for the individual test files.  Capable of running multiple executes of tests concurrently.
+- test run - a branch where one or more files are asked to be run, and can be changed and rerun.  A place where experimentation occurs.  It knows where it was requested from, and is a randomly generated ID.  The current target files in the workbench are changed for each test cycle.  The workbench controls the invocation of runners for the individual test files.  Capable of running multiple executes of tests concurrently.
 - test suite - the group of tests described in the .test.md file
 - test case - an individual test case in that .test.md file
 - iteration - an individual run of a test case.  multiple runs combine with variance to give a tps report
-- test run - an invocation of a collection of test files.  Can be rerun with different parameters.  Can have the collection of files changed, or can be told to scope down to an individual file.
 - tps report - the outcome of a test run.  Lists all the test files used in the run and shows the run status and outcomes of each one.
+
+From within a run, how would we scope down to single file and focus on it ?
+Request to manipulate the running on that one file would go from the runner branch, and would use the state of the runner to control what to run.
+When a run of an individual file completes, the tps report is copied back into the runner branch.
 
 ? how would we retrieve prior runs for an individual file, if the patterns for whats included in the run have changed ?
 Designed so that when you're running, you
