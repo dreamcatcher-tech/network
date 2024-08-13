@@ -116,3 +116,7 @@ The test agent can ask for status.
 A widget is shown that is bonded to the controller.
 
 Each time the thread talks to the controller, it takes the latest files across with it.
+
+
+So a tps report is for a single file that is scoped within a controller branch.
+When tests are done, the controller merges the tps reports back in to its base.
