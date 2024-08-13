@@ -22,3 +22,5 @@ Then we can charge for the line rental, but we can also sell the service of havi
 If the audio stream routing and muxing was controlled by a json config, then the bot could be tasked with recomposing any way we like.
 
 Faxing can be added too, with recognition of documents and workflow triggering.
+
+Basically have conversations and have streams of audio that get saved and transcribed.

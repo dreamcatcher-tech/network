@@ -103,3 +103,8 @@ We can show that the cost of this gateway negotiation drains the incentive buffe
 ## Things to model but unsure how
 ### Patents
 These represent some artificial control over a particular frequence of the innovation network.  Need to be able to illustrate how patents can block problems getting the ideal solution, since extra innovation was required to go around some patents, and the usage is not fairly governed, so the innovation rate remains suboptimal.
+
+## Alternatives
+### modeling people as actors with random innovation antennas
+Assume the innovation spread is random, and that all actors have differing levels of innovation potential.
+The innovation is random as to what it applies to, and so if the agent cannot switch, the innovation is discarded.
