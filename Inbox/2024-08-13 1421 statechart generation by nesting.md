@@ -12,3 +12,5 @@ Means we can test it independently.
 Start with an NL description of what the piece does, and then build it out from that description.
 
 The description is the primary thing to get accurate, since everything else is derived from it.  The bots have nothing else to go on.
+
+Restrict statechart generation to always be completely self contained, rather than allowing child charts to act on 

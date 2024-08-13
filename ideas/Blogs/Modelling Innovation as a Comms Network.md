@@ -108,3 +108,10 @@ These represent some artificial control over a particular frequence of the innov
 ### modeling people as actors with random innovation antennas
 Assume the innovation spread is random, and that all actors have differing levels of innovation potential.
 The innovation is random as to what it applies to, and so if the agent cannot switch, the innovation is discarded.
+
+### simulation without a model
+If we generate actors that match our model, then we could generate outputs by repeatedly running the model.  Model as statecharts so we can chat about the models instantly.
+Set rules for the model.
+Generalize as a workbench for creating state machines that represent behaviours.
+
+Set up some actors in a configuration that represents an FTE company.
