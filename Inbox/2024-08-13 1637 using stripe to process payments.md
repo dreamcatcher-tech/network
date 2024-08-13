@@ -23,3 +23,92 @@ Could we sell equity in one of these companies ?
 Ideally we have a company that holds our NFTs, then list that.
 
 The gateway company is run by us as a not for profit, and merely facilitates commerce.  We want this piece to be able to be done by anyone, and be able to trade between these entities.
+
+What about letting our actors set up shop and charge money to customers directly ?
+
+Basically so long as they are governed by our rules, we should be able to act as their store front ?
+Purchasing a service should be just the same as purchasing anything else from us ?
+We should manage the currency in the system - like the bank.
+
+If people deposit crypto, then can we pay out in cash by doing an exchange somehow ?
+If people deposit in fiat, can we pay out in crypto ?
+We could keep these things completely separate, so you can manage both using the platform, but you cannot mix between the two using our payment gateway.
+
+So our gateway issues tokens on chain to represent funds, and those tokens get moved around.  They allow us to track the location, freeze, yank, reverse - everything.
+Other gateways can exist, and funds might be exchangeable between them, so long as the kyc and AML information exchanged in an adequate way too.
+
+At the start, we will have two gateways that both use stripe, and we will test moving between them.
+
+The secondary sales of NFTs are banned on stripe, so once you have created an NFT that represents the work that you paid to be done, you can sell it elsewhere on the platform, but those funds cannot mix with your stripe gateway funds.  We would call out that our rules are based on stripe doing the payment processing, and if you want to move your funds to a different gateway, then we can offer services for that.
+
+The NFTs can be sold for crypto, which simply changes the ownership target.  You cannot pay for the sale using the gateway service.  The gateways plug in to the main network, the main network also plugs in to cryptocurrency rails.
+
+If the ownership changes, the stripe payout target changes with it, and any holder can claim previous unclaimed stripe credits for the item they hold - the holder needs to drain the royalties.
+
+Payment flow:
+- on the platform, decide it is time to top up
+- choose a payment gateway, like crypto, american gateway, some other gateway
+- go thru the onboarding flows of them
+- deposit funds
+- spend with anyone who will take them
+- exchange with other members on the platform - exchange for crypto currency is not permitted by stripe gateway funds, but exchange with crypto for crypto is fine
+
+Service providers, like the api gateway, would need to be able to take payment from these gateways.  So the hosting provider entity would take payments from the crypto gateway or the stripe gateway - it doesn't really care.
+
+Identity flow
+- some gateways would also offer identity
+
+Selling the ownership of the content seems possibly contentious.
+That we sell the consumption using other payment methods as well as stripe seems fine.
+
+You cannot send funds to another user with stripe processed funds.
+The allowed transaction types 
+
+We would launch as pure stripe to start with, and then use some resources to make a crypto version separately, then work hard to make sure the merge is seamless.
+
+The holding company, which is not the gateway, might also be the hosting company, which is who we trade as, as individuals,
+Set up the gateways with strong articles of incorporation to stop any acquisition ruining the trust.
+
+Part of the service is that the g
+
+Holding co can act as a shield for the creators, so they can work as tho they are members of the holding co, and not draw down funds until later.  Then if the whole system gets acquired, their holdings stay there too.
+In these companies, people could change holdings for equity.
+
+We should offer hard coded rules that:
+- ensure work done is at market rate, and good quality for the amount of money spent
+- ensure that no trading can be done for crypto
+- purchasing content ownership vs consuming content
+
+Sell meeting times using AI assisted consultations, so that questions can be asked, and an NFT is made of the event.
+
+Might be easiest to just set up the gateway as also the hosting company at the start ?
+
+The holding company should be able to host the legal entities of people monetising using our platform.  This is independent of the gateway services.  They should be able to set up as a project within our holding company, get phone numbers, physical address, ability to bill directly.  Payments back in to the dreamcatcher would need them to go into the gateway bank account.
+
+Charity gateway would be separate, and would have tight controls on accountability and tracing of where the money went.  It might be done thru the outcome driven gateway, as you want to put money towards something specific happening, or it might be given to someone to manage on your behalf to get the outcome you want.  Returns on these, and reuse, come by way of impact crystals.
+
+First, buy from the hosting services company directly.
+Second, buy from the workers on the platform, to get things built
+third, buy from works for specific real world services and goods using the platform
+
+One of customers, or holding a balance and paying from that.
+
+But platform usage also includes software usage
+There is no difference between purchasing ai credits and purchasing software usage.
+? Did you purchase from the platform, or from the suppliers ?
+Must have been the platform, since the platform needs to split the payments
+
+Up to a limit where you go flat rate - so set a max spend for usage, and above that you can get greatly decreased pricing.
+
+- gateway used to hold a balance, with auto recharge
+- used to pay for compute resources, and software usage, which disperses to contributors
+- pay for escrowed software units, then pay out to contributors
+
+```mermaid
+flowchart LR
+    Buyer((Buyer)) -.-> Platform[[Platform]]
+    Platform -.-> Seller1((Seller 1))
+    Platform -.-> Seller2((Seller 2))
+    Platform -.-> Seller3((Seller 3))
+
+```
