@@ -108,3 +108,10 @@ A watching run is one where the files are being edited and the tests need to rer
 
 Test branch has files that track all the running test invocations for this actor, so the actor can easily see every single running test .
 
+Controller only allows a single test run at a time, so if want many then should make multiple controllers.
+Controller starts and then instantly returns.
+Controller is a daemon.
+The test agent can ask for status.
+A widget is shown that is bonded to the controller.
+
+Each time the thread talks to the controller, it takes the latest files across with it.
