@@ -61,6 +61,7 @@ Objects are:
 - test case - an individual test case in that .test.md file
 - iteration - an individual run of a test case.  multiple runs combine with variance to give a tps report
 - tps report - the outcome of a test run.  Lists all the test files used in the run and shows the run status and outcomes of each one.
+- file runner - runs an individual file by breaking up the test cases and ordering the dependencies.
 
 From within a run, how would we scope down to single file and focus on it ?
 Request to manipulate the running on that one file would go from the runner branch, and would use the state of the runner to control what to run.
