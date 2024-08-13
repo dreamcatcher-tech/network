@@ -33,3 +33,9 @@ Publish to jsr, and then we make deployments that pull these pieces in so they a
 Subhosting is the purest form of isolation tho, and would force us to have cross repo comms in an efficient way.
 
 May do the user supplied code as running inside of cloudflare webworkers since these allow dynamic imports.
+
+? how would this work for an application like the CRM ?
+Would it be deployed as its own actor ? a self running instance, that had its own billing arrangement and its own url ?
+How would something get migrated from a users owned repo to a standalone actor repo ?
+How would super user account be managed ?
+Suppose the controller would be just other authenticated and hosted actors.
