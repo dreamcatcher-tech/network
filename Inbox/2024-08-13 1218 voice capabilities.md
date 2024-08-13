@@ -6,6 +6,7 @@
 >[!danger] Depends: 
 
 use livekit to do streaming webrtc from the browser, which can be transcribed by deepgram.
+livekit lets us mux and relay the audio so participants get good quality audio.
 
 Then use sip trunking so that people can set up their own inbound numbers that connect to their instance.
 

@@ -5,4 +5,6 @@
 
 >[!danger] Depends: 
 
+Build up items for discussion, and have bots attempt to answer them before the call starts.
 Also list out what topics were covered during the day when we both worked.
+
