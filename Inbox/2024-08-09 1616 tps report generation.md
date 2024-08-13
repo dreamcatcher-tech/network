@@ -120,3 +120,4 @@ Each time the thread talks to the controller, it takes the latest files across w
 
 So a tps report is for a single file that is scoped within a controller branch.
 When tests are done, the controller merges the tps reports back in to its base.
+The thread never talks to anything but the controller.
