@@ -118,6 +118,38 @@ Lets people purchase things on behalf, like going to the supermarket to collect 
 
 Want to let people connect their stripe account into dreamcatcher directly.  This allows them to take in payments.  Dreamcatcher handles compliance, and liability, if they use the AI governance decision making systems.  So we defend you.
 
+We must launch as promoting ambient attribution, which is the dreamcatcher AI system.
+
+Tracking affiliate rewards when people have caused transactions to occur.
+
+Users could take payments directly, like how shopify does, or they could be purchased from inside the dreamcatcher network.  We would effectively be wrapping stripe functions with an AI layer, and then pick ones that work well to build out more and remove reliance on stripe and increase margins, with maybe some extra features.
+
+Ideally we would be creating an AI marketplace so agents can do shopping for you, rather than these standalone websites.  In creating a store front, you could present AI tooling to the world, and take checkout using stripe payments, but you could also sell direct AI to AI.
+
+You can use our platform to run and manage your business under your own brand, while at the same time listing your service in our online marketplace.  You can additionally offer your services as a whitelabel service.
+
+So we would generate invoices on your behalf, or if you worked for a network entity, that local entity would issue invoices for services rendered, like plumbing.
+Set up those entities rapidly and in an automated fashion.
+
+How can the gateway be a peer, too ?
+Definitely the hosting provider is a peer.   Content creators are peers in the same way.
+The gateway, or some other entity, might need to take responsibility for the work being created, since otherwise we are an escrow service.  If the gateway is responsible for the product being delivered, then the contributors are just suppliers to the gateway entity, like staff.
+So we are holding the funds not as escrow, but as prepayment for services to be rendered, then we are responsible for rendering those services.
+
+An exchange, using stripe services for compliance, would be a separate entity in our system.
+
+The gateway needs to be reponsible for the funds, and never passing them thru.  So the credits are issued by the seller.  When software is consumed, you consume it from the gateway.  It pays out to external entities.  It is the hosting company at first, but it just accrues value against it the same way as any other actor on the dreamcatcher can accrue revenue.
+
+The gateway would be the holder of the work NFTs.
+
+Hosting company handles:
+- data storage and execution
+- identity management and verification
+Payment company handles:
+- stripe integrations
+Escrow company handles
+- liability for delivery of solutions
+
 ```mermaid
 flowchart LR
     Buyer((Buyer)) -.-> Platform[[Platform]]
