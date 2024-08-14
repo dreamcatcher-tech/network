@@ -4,3 +4,5 @@
 >[!question] Targets: 
 
 >[!danger] Depends: 
+
+We could bankroll stucks that we believe will have a guaranteed payout ?

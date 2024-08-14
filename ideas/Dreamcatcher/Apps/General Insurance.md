@@ -26,4 +26,11 @@ Over time we would always adapt down to below market since it would be the lowes
 ## High Tech addons
 If you drive with a device that measures your car and records dashcam, you are far cheaper to insure and your premiums go down, plus the claim cost (excess) goes down.
 
+## Customized by chat
+Have an insurance provider that can automatically assess any thing you want to insure, so when you buy anything, it can be added to your policy.  Purchasing per item means you can track the lifecycle of the item, and insure it and claim for it.
+
+Being able to offer insurance via an API means can have bespoke services rapidly.
+Have a shared identity model, like stripe.
+Buy insurance for small things, like postage of small items, on a per item basis.
+
 

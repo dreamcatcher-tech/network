@@ -14,3 +14,4 @@ Have the second camera take a selfie so the back of the phone is assessible.  Di
 Compare these mappings of the device to expected to detect drops and other damage.
 
 Sound for mic testing and speaker testing.
+

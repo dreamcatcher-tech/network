@@ -104,6 +104,20 @@ Up to a limit where you go flat rate - so set a max spend for usage, and above t
 - used to pay for compute resources, and software usage, which disperses to contributors
 - pay for escrowed software units, then pay out to contributors
 
+Gateway could offer its own cards, so people can access funds instantly, including their credited balance.
+Stripe lets us set up treasury, so we could act like their bank account.
+Gives them dreamcatcher controls over their spending.
+
+> If dreamcatcher issues cards, then we can allow dreamcatcher to manager a users purchasing from online stores, including tracking delivery, disputing fraudulent purchases.
+
+If you purchase from a dreamcatcher capable store, then the fees are waived, since this is an internal transaction.
+
+Lets workers bill customers directly, and we handle all the admin of payment processing - they can personalised invoices, but we brand it to let people know we are handling the admin.
+
+Lets people purchase things on behalf, like going to the supermarket to collect a bunch of things.
+
+Want to let people connect their stripe account into dreamcatcher directly.  This allows them to take in payments.  Dreamcatcher handles compliance, and liability, if they use the AI governance decision making systems.  So we defend you.
+
 ```mermaid
 flowchart LR
     Buyer((Buyer)) -.-> Platform[[Platform]]
