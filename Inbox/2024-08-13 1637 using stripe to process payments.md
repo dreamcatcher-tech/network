@@ -171,6 +171,8 @@ Can the builders marketplace be separate to the consumables ?
 Builders marketplace holds the NFTs, and pays out to them, but the gateway takes in consuming payments, with the builders marketplace being a seller ?
 
 Consumable as the output.
+
+A single untouchable entity that holds copyright to all the products, and then relicenses slices of rights to holders in a ledger.  The rights of the holders are that whenever money is paid to the network for usage, it will be distributed in a fair way.
 ## Test cases
 ### redlids customers payment handling
 Redlids would need to register as a seller.
@@ -192,7 +194,7 @@ All other AI system are assistive in nature, not governing.  The choice to condu
 
 There are two types of activity supported in our model, one of consuming software, and the other of constructing software.  Consuming software is presented for purchase either directly on the Dreamcatcher platform, or by 3rd party storefronts, such as a company website that was powered by the Dreamcatcher.
 
-Ecosystem.
+The gateway operates as a non profit entity, for the benefit of the ecosystem, to allow members to trade.  It must not be owned, as it can choke the growth of the network.
 ### Software consumption
 ```mermaid
 flowchart LR
