@@ -210,7 +210,9 @@ flowchart LR
     Platform -.-> Contributor3([Worker 3])
 
 ```
-During software construction activity, clients request work to be done, and 
+During software construction activity, clients request work to be done from the platform, and once the QA requirements have been met, the funds are dispersed to the workers, in proportion to their work.
+
+Flattening AIs, where the conversino of assets has an impact as to how many funding tokens they get in the end.
 
 ### Storefront sales
 ```mermaid
