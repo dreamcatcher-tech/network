@@ -150,15 +150,6 @@ Payment company handles:
 Escrow company handles
 - liability for delivery of solutions
 
-```mermaid
-flowchart LR
-    Buyer((Buyer)) -.-> Platform[[Platform]]
-    Platform -.-> Seller1((Seller 1))
-    Platform -.-> Seller2((Seller 2))
-    Platform -.-> Seller3((Seller 3))
-
-```
-
 Equity fundraising should be all about the NFT generation.  We can allow people to trade in their NFTs of the things they bought for some shares in the company, and some calculated rate that reflects the amount of money they put in to cause the thing to be made.
 
 Also can pay for the things to be built using shares, so you pay the entity, then we issue stock, then we use those funds, tagged, to be deployed only on specific earmarked tasks, and if that happens, your stock is now held by you.  If we do that 150 times, we have all the shareholders we need.
@@ -185,3 +176,51 @@ Consumable as the output.
 Redlids would need to register as a seller.
 Then when payments come in, some of that payment goes to the dreamcatcher platform, and is dispersed to the NFT holders.
 We would offer AI assisted dispute resolution, and allow connecting other services like debt collection services, which would need to be paid for separately.
+
+The core of the Dreamcatcher is the AI governance system of Ambient Attribution.  This is an LLM powered system that determines 3 things for every consumption transaction on the platform:
+- what is the impact of the consumption, in several dimensions, one of which is money ?
+- given that impact, what is the price the consumer should pay ?
+- given the impact and the consumption, and the contributions to create that impact, what is the attribution due to each contributor ?
+This automated decision making is then used to make dispersal payments from the consumers to the contributors.
+
+The second AI governance system used by the platform is the quality assurance system, that determines when 
+
+All other AI system are assistive in nature, not governing.  The choice to conduct business under AI governance is the primary offering the Dreamcatcher makes to all participants.
+## Money flow diagrams
+
+There are two types of activity supported in our model, one of consuming software, and the other of constructing software.  Consuming software is presented for purchase either directly on the Dreamcatcher platform, or by 3rd party storefronts, such as a company website that was powered by the Dreamcatcher.
+
+### Software consumption
+```mermaid
+flowchart LR
+    Buyer([Buyer]) -.-> Platform[[Platform]]
+    Platform -.-> Seller1([Contributor 1])
+    Platform -.-> Seller2([Contributor 2])
+    Platform -.-> Seller3([Contributor 3])
+
+```
+### Software construction
+```mermaid
+flowchart LR
+    C1([Client1]) -.-> Platform[[Platform]]
+    C2([Client2]) -.-> Platform[[Platform]]
+    C3([Client3]) -.-> Platform[[Platform]]
+    Platform -.-> Contributor1([Worker 1])
+    Platform -.-> Contributor2([Worker 2])
+    Platform -.-> Contributor3([Worker 3])
+
+```
+During software construction activity, clients request work to be done, 
+
+### Storefront sales
+```mermaid
+flowchart LR
+	Customer1([Customer1]) -.-> Store([Store Front])
+	Customer2([Customer2]) -.-> Store([Store Front])
+	Store -.-> Platform
+    Buyer([Buyer]) -.-> Platform[[Platform]]
+    Platform -.-> Seller1([Seller 1])
+    Platform -.-> Seller2([Seller 2])
+    Platform -.-> Seller3([Seller 3])
+
+```

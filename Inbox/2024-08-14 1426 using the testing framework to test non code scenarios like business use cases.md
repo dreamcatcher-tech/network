@@ -16,3 +16,7 @@ Be able to generate scenarios that are partial, and ask for more options after g
 "say I have a customer who came to our website and they want to set up a collection service ? what then ?"
 
 We should be able to explain negative scenarios, like bad actors, and understand better why certain rules are set they way they are.
+
+Make a special tool that is the scenario explorer.  If we have made an ERD properly, then saying any kind of scenario should allow us to generate a standard usage example, which might overlap with some prior examples.  Given a standardized example, we should be able to run animated diagrams that grow a layout of nodes in a standard way, with a play button to explore the sequences of their additions.
+
+Also asking questions about the business model should be answerable by this system.
