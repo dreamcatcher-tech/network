@@ -243,5 +243,5 @@ flowchart LR
 
 ```
 
-Selling Slicenses
+
 
