@@ -195,23 +195,25 @@ There are two types of activity supported in our model, one of consuming softwar
 ### Software consumption
 ```mermaid
 flowchart LR
-    Buyer([Buyer]) -.-> Platform[[Platform]]
+    Buyer([Buyer]) -.-> Platform[[Gateway]]
     Platform -.-> Seller1([Contributor 1])
     Platform -.-> Seller2([Contributor 2])
     Platform -.-> Seller3([Contributor 3])
 
 ```
 ### Software construction
+
 ```mermaid
 flowchart LR
-    C1([Client1]) -.-> Platform[[Platform]]
-    C2([Client2]) -.-> Platform[[Platform]]
-    C3([Client3]) -.-> Platform[[Platform]]
+    C1([Client1]) -.-> Platform[[Gateway]]
+    C2([Client2]) -.-> Platform
+    C3([Client3]) -.-> Platform
     Platform -.-> Contributor1([Worker 1])
     Platform -.-> Contributor2([Worker 2])
     Platform -.-> Contributor3([Worker 3])
 
 ```
+
 During software construction activity, clients request work to be done from the platform, and once the QA requirements have been met, the funds are dispersed to the workers, in proportion to their work.
 
 Flattening AIs, where the conversion of assets has an impact as to how many funding tokens they get in the end.
@@ -228,3 +230,15 @@ flowchart LR
     Platform -.-> Seller3([Seller 3])
 
 ```
+
+### Trading Slicenses (license shares)
+
+```mermaid
+flowchart LR
+    Buyer([Bidder]) -.-> Platform[[Platform]]
+    Platform -.-> Seller1([Offerrer])
+
+```
+
+Selling Slicenses
+
