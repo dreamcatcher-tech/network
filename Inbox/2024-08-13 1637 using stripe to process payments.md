@@ -158,3 +158,14 @@ flowchart LR
     Platform -.-> Seller3((Seller 3))
 
 ```
+
+Equity fundraising should be all about the NFT generation.  We can allow people to trade in their NFTs of the things they bought for some shares in the company, and some calculated rate that reflects the amount of money they put in to cause the thing to be made.
+
+Also can pay for the things to be built using shares, so you pay the entity, then we issue stock, then we use those funds, tagged, to be deployed only on specific earmarked tasks, and if that happens, your stock is now held by you.  If we do that 150 times, we have all the shareholders we need.
+
+Make diagrams how buyers can contact an external store front, or purchase internally.  Purchase in the AI powered marketplace. Run thru all use cases and show how this business model handles all that.
+## Test cases
+### redlids customers payment handling
+Redlids would need to register as a seller.
+Then when payments come in, some of that payment goes to the dreamcatcher platform, and is dispersed to the NFT holders.
+We would offer AI assisted dispute resolution, and allow connecting other services like debt collection services, which would need to be paid for separately.
