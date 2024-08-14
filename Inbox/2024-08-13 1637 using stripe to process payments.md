@@ -177,13 +177,15 @@ Redlids would need to register as a seller.
 Then when payments come in, some of that payment goes to the dreamcatcher platform, and is dispersed to the NFT holders.
 We would offer AI assisted dispute resolution, and allow connecting other services like debt collection services, which would need to be paid for separately.
 
+## Dreamcatcher Business Model
+
 The core of the Dreamcatcher is the AI governance system of Ambient Attribution.  This is an LLM powered system that determines 3 things for every consumption transaction on the platform:
 - what is the impact of the consumption, in several dimensions, one of which is money ?
 - given that impact, what is the price the consumer should pay ?
 - given the impact and the consumption, and the contributions to create that impact, what is the attribution due to each contributor ?
 This automated decision making is then used to make dispersal payments from the consumers to the contributors.
 
-The second AI governance system used by the platform is the quality assurance system, that determines when 
+The second AI governance system used by the platform is the quality assurance system, that determines when work has been completed sufficiently.
 
 All other AI system are assistive in nature, not governing.  The choice to conduct business under AI governance is the primary offering the Dreamcatcher makes to all participants.
 ## Money flow diagrams
@@ -212,7 +214,7 @@ flowchart LR
 ```
 During software construction activity, clients request work to be done from the platform, and once the QA requirements have been met, the funds are dispersed to the workers, in proportion to their work.
 
-Flattening AIs, where the conversino of assets has an impact as to how many funding tokens they get in the end.
+Flattening AIs, where the conversion of assets has an impact as to how many funding tokens they get in the end.
 
 ### Storefront sales
 ```mermaid
