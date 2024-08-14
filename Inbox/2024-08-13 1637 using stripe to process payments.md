@@ -210,7 +210,7 @@ flowchart LR
     Platform -.-> Contributor3([Worker 3])
 
 ```
-During software construction activity, clients request work to be done, 
+During software construction activity, clients request work to be done, and 
 
 ### Storefront sales
 ```mermaid
