@@ -164,6 +164,22 @@ Equity fundraising should be all about the NFT generation.  We can allow people 
 Also can pay for the things to be built using shares, so you pay the entity, then we issue stock, then we use those funds, tagged, to be deployed only on specific earmarked tasks, and if that happens, your stock is now held by you.  If we do that 150 times, we have all the shareholders we need.
 
 Make diagrams how buyers can contact an external store front, or purchase internally.  Purchase in the AI powered marketplace. Run thru all use cases and show how this business model handles all that.
+
+Make a series of diagrams representing the business use cases we want to support, which are essentials of the dreamcatcher, and then try fit stripe integration around that.  Not all use cases will be supported must likely, and all will have jurisdictional restrictions.
+
+Escrow functions could be entirely crypto based, and the buying and selling of the NFTs is crypto only, but we pay out usage based on who holds the NFTs, and to collect, you need to set up a connected account.
+
+Need to make the dreamcatcher platform able to support different types of gateway provider, so that a users balance is seen as a unified whole.
+
+Show the payouts going to 3 types: 
+- contributors
+- funders
+- traders - someone who acquired shares in the output 
+
+Can the builders marketplace be separate to the consumables ?
+Builders marketplace holds the NFTs, and pays out to them, but the gateway takes in consuming payments, with the builders marketplace being a seller ?
+
+Consumable as the output.
 ## Test cases
 ### redlids customers payment handling
 Redlids would need to register as a seller.
