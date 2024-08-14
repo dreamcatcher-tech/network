@@ -4,7 +4,7 @@
   "newFileLocation": "current",
   "attachmentFolderPath": "website/static/obsidian",
   "pdfExportSettings": {
-    "includeName": true,
+    "includeName": false,
     "pageSize": "A4",
     "landscape": false,
     "margin": "0",
