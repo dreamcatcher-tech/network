@@ -192,6 +192,7 @@ All other AI system are assistive in nature, not governing.  The choice to condu
 
 There are two types of activity supported in our model, one of consuming software, and the other of constructing software.  Consuming software is presented for purchase either directly on the Dreamcatcher platform, or by 3rd party storefronts, such as a company website that was powered by the Dreamcatcher.
 
+Ecosystem.
 ### Software consumption
 ```mermaid
 flowchart LR
@@ -224,7 +225,7 @@ flowchart LR
 	Customer1([Customer1]) -.-> Store([Store Front])
 	Customer2([Customer2]) -.-> Store([Store Front])
 	Store -.-> Platform
-    Buyer([Buyer]) -.-> Platform[[Platform]]
+    Buyer([Buyer]) -.-> Platform[[Gateway]]
     Platform -.-> Seller1([Seller 1])
     Platform -.-> Seller2([Seller 2])
     Platform -.-> Seller3([Seller 3])
