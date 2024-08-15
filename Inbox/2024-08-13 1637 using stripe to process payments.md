@@ -173,6 +173,8 @@ Builders marketplace holds the NFTs, and pays out to them, but the gateway takes
 Consumable as the output.
 
 A single untouchable entity that holds copyright to all the products, and then relicenses slices of rights to holders in a ledger.  The rights of the holders are that whenever money is paid to the network for usage, it will be distributed in a fair way.
+
+If stripe give us a problem, then we can use https://www.payoneer.com/marketplace/ who LP has connections with.
 ## Test cases
 ### redlids customers payment handling
 Redlids would need to register as a seller.
