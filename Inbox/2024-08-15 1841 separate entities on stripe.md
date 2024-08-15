@@ -7,11 +7,11 @@
 
 consumption of software seems easy - who we pay out to and how we calculate that, so long as it is logical, should be allowed to be anything we say.
 
-Construction of software, particularly the escrow component, could use rails other than stripe, but if we can get set up as stripe compliant, that would be great.  The key is, can these two pieces be independent ? as in, can ambient attribution function in consumption mode and stripe be ok with how that works ?
+Construction of software, particularly the escrow component, could use rails other than stripe, but if we can get set up as stripe compliant, that would be great.  The key is, can these two pieces be independent ? as in, can ambient attribution function in consumption mode and stripe be ok with how that works, given that the attribution tables change externally ?
+
 If we can avoid being escrow, and clients agree to engage the producer node directly, where the producer node then engages the freelancers, then we are not holding funds on behalf, we are responsible for doing the work, and we retain the work.
 
-
-Trading of software rights
+Trading of software rights might require that the ownership transfers to the trading entity, and maybe it cannot leave ?  Presumably the purpose is for dispute settlement.
 
 Any particular mode of operation that doesn't fit traditional, we can use crypto for.
 
