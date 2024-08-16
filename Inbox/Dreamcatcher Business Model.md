@@ -57,7 +57,7 @@ flowchart LR
 
 ```
 
-### Trading license shares)
+### Trading license shares
 Here when someone holds license shares that another person wants they can sell them in a bids and asks market, and now the new owner is the one who receives the royalties for the consumption of the software the license represents.
 
 ```mermaid
