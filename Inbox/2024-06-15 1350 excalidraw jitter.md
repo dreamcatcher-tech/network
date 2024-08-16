@@ -18,3 +18,5 @@ Allow shared usage.
 
 Maybe show diffs between diagrams, or at least get the AI to comment ?
 Generate images and save them, plus keep an image updated every time a save occurs.
+
+Use the mermaid to excalidraw plugin, to let the bots start with a mermaid diagram and then change it to be excalidraw format so it can be edited.
