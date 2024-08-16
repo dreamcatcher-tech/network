@@ -18,8 +18,12 @@ Any particular mode of operation that doesn't fit traditional, we can use crypto
 Does the right to the completed work need to belong to the trading company ?
 Upon completion of the work, and the end of all dispute periods, then the assets could move to the trading company, or to the consumption company.
 
-Minting NFTs is a free service we provide that is akin to a data export.  They would need to pay the gas fees, and we will track the contributions.
+Minting NFTs is a free service we provide that is akin to a data export.  They would need to pay the gas fees, and we will track the contributions.  Holders of the royalty certificates would be able to convert them to an NFT free of charge, and withdraw from the stripe controlled ecosystem.
 
 How does acquisitions vehicle work ?  This would need to be a separate entity.  We need to main network built out.  Building out the software pieces and acquiring companies seems very separate.  Build the software one first, get that acquired into a pubco, then build up the business buying company, get that acquired too.
 
 Add cooldown period on trades of the items, where the revenue cannot be claimed.  Lets people revoke their purchase decision.  Or forbid sale for anything over the revenue projections ?
+
+The work product must be of fair value and good quality.
+
+We are doing revenue sharing, since the software is licensed under AGPL, and royalty implies IP ownership.  All works are considered derivatives of the dreamcatcher, where Dreamcatcher Command is the holder of all 
