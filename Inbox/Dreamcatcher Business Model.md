@@ -69,9 +69,9 @@ flowchart LR
 
 
 ## Investment vehicle
-The platform cannot be owned by any single entity to ensure fair treatment of all.  The way to raise capital in this system is use the software construction model, but by way of an investment vehicle that utilizes the software construction model.
+To ensure fair treatment of all, the platform cannot be owned by any single entity.  This structure is affirmed by permitting more than one gateway to operate harmoniously.  The way to raise capital in this system is use the software construction model, but by way of an investment vehicle.  This avoids raising capital into the gateway directly, removing the temptation to corrupt the network for short term gains.
 
-This entity would sell equity for capital, and would use that capital to act as a client for work to be done, as shown here:
+This investment vehicle would sell equity for capital, and would use that capital to act as a client for work to be done, as shown here:
 
 ```mermaid
 flowchart LR
@@ -98,7 +98,7 @@ flowchart LR
 ```
 
 
-The company may also spend that capital on acquiring license shares from those willing to trade, and would engage in promotional activities and business development to increase the value of the license shares it holds.
+The company may also spend that capital on acquiring license shares from those willing to trade, and would engage in promotional activities and business development to increase the value of the license shares it holds:
 
 ```mermaid
 flowchart LR
@@ -108,7 +108,7 @@ flowchart LR
 
 ```
 
-The primary category of license shares it seeks are those that are core parts of the Dreamcatcher, as those will be the attributed to, so far as we can see.  The company valuation should largely be due to the market value of the license shares it holds, and it can periodically transfer those licenses to shareholders as a dividend, or sell some off to raise further capital:
+The primary category of license shares it seeks are those that are core parts of the Dreamcatcher, as those will be the attributed to, so far as we can see.  The company valuation should largely be due to the market value of the license shares it holds, which is based on the revenue it is earning, and it can periodically transfer those licenses to shareholders as a dividend, or sell some off to raise further capital:
 
 ```mermaid
 flowchart LR
