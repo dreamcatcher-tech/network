@@ -13,4 +13,4 @@ Give it a function call exit, and force it to use only functions.
 
 Controller runs as a drone, and assembles the list of files, then calls the file runner on each one.
 
-This could be a pure isolate, since it would be called 
+This could be a pure isolate, since it would just need to assemble the list of files to run, and then in a separate branch, call the file runner agent on each one.
