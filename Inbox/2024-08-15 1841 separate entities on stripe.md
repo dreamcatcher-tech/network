@@ -29,3 +29,6 @@ The work product must be of fair value and good quality.
 We are doing revenue sharing, since the software is licensed under AGPL, and royalty implies IP ownership.  All works are considered derivatives of the dreamcatcher, where Dreamcatcher Command is the holder of all.
 
 Proposing a company that has the revnenue shares as certs on our own chain rather than NFTs might be simpler to list.
+
+Generate standard business plans:
+
