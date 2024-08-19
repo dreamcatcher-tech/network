@@ -28,9 +28,11 @@ The work product must be of fair value and good quality.
 
 We are doing revenue sharing, since the software is licensed under AGPL, and royalty implies IP ownership.  All works are considered derivatives of the dreamcatcher, where Dreamcatcher Command is the holder of all.
 
-Proposing a company that has the revnenue shares as certs on our own chain rather than NFTs might be simpler to list.
+Proposing a company that has the revenue shares as certs on our own chain rather than NFTs might be simpler to list publicly.  Explaining how we hold NFTs where those NFTs can be sold to anyone seems a bit hard.  But we could bundle that up with our own chain that has transfer control so that only authorized accounts can be traded to.  This creates internal transfers only, and only transferred between people who have signed up to stripe.
 
 Allow any kinds of assets to be used as part of the purchase agreement.  Can also be kudos.  Can mint your own impact - like gratitude.
+
+We might need to restrict transfers to accounts that have signed up with stripe, to ensure that trade is only with authorized parties.  As a revenue share bearer agreement, it can be misused.
 
 Generate standard business plans:
 
