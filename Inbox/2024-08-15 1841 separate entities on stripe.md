@@ -30,5 +30,7 @@ We are doing revenue sharing, since the software is licensed under AGPL, and roy
 
 Proposing a company that has the revnenue shares as certs on our own chain rather than NFTs might be simpler to list.
 
+Allow any kinds of assets to be used as part of the purchase agreement.  Can also be kudos.  Can mint your own impact - like gratitude.
+
 Generate standard business plans:
 
