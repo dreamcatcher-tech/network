@@ -57,3 +57,10 @@ DAO needs to control the land mappings to people - if someone steals the digital
 Have a unified plan that all mini plans feed in to, with accounting automatically maintained for each step.
 
 Get the KOLs to have a discussion about how they would have their impact measured ?
+
+
+Atoms mode for extracting small pieces of agreement out
+first tests - shared editing of a doc
+tracking progress reports of KOLs
+Questions on where the AI data processing goes
+cost on developing the DAO platform - tie in to the project management of the AI
