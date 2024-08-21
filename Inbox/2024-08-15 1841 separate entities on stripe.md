@@ -34,5 +34,18 @@ Allow any kinds of assets to be used as part of the purchase agreement.  Can als
 
 We might need to restrict transfers to accounts that have signed up with stripe, to ensure that trade is only with authorized parties.  As a revenue share bearer agreement, it can be misused.
 
-Generate standard business plans:
+Gateway cost structure can be controlled using AA too.  The price setter can be continually asking tough questions as to why the costs of something are high, and always inviting solutions from the network to get those costs down.  The AI so coded can follow business goals that humans find conflicting, like lowering the cost of operating at the expense of their own salary.  And so if the scrutinizer is externally controlled, and network appraised, then the business can function ethically.
+
+Might need a dispute window for constructions mode, and show sequence diagrams about how disputes are handled.  Offer an additional service for quality insurance, where a human takes on liability for the quality of the work.
+
+
+
+Generate standard business plans based on these examples:
+- https://blog.hubspot.com/marketing/sample-business-plans
+- https://www.growthink.com/businessplan/help-center/business-plan-examples
+- https://www.shopify.com/blog/business-plan-examples
+- https://www.bplans.com/sample-business-plans/
+- https://www.bplans.com/technology-business-plans/
+- https://www.bplans.com/holding-company-business-plan/
+
 

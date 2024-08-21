@@ -25,6 +25,7 @@ flowchart LR
     Platform -.-> Seller3([Contributor 3])
 
 ```
+Payouts are only available to contributors after a cooldown period that is longer than the buyer charge back period.  Chargeback as not disputed, they are immediately processed.  Contributor disputes about the calculated payment amount need to be raised within this same period, or else the attribution is considered final.  
 ### Software construction
 
 ```mermaid
@@ -42,6 +43,10 @@ During software construction activity, clients request work to be done from the 
 
 Flattening AIs, where the conversion of assets has an impact as to how many funding tokens they get in the end.
 
+Clients are free to remove their funding at any point in time up until the workproduct is completed.  Once the workproduct is completed they can raise a dispute about the quality of the work.
+
+Workers are free to dispute with us their payout amount.  This dispute period is the same as the client dispute period.  Once the workproduct settles and the dispute period passes, the payout amounts are considered final, and workers can begin to withdraw.
+
 ### Storefront sales
 Sometimes customers are better served by another entity providing them with a store front, rather than consume the software thru the Dreamcatcher directly.  Here a billing relationship is passed thru to the gateway, allowing a more tailored customer experience, with the customers possibly unaware they are interacting with the Dreamcatcher:
 
@@ -57,7 +62,7 @@ flowchart LR
 
 ```
 
-### Trading license shares
+### Trading revenue share agreements
 Here when someone holds license shares that another person wants they can sell them in a bids and asks market, and now the new owner is the one who receives the royalties for the consumption of the software the license represents.
 
 ```mermaid
@@ -120,3 +125,11 @@ flowchart LR
 
 
 
+## Notes
+Key is it allows for multiple contributors to do a contract job, and gives them an ongoing revenue share.  Allows multiple clients to co-fund a piece of work they want done.  There is no equity involved.  These modifications are extensions of our software platform.  We pay out to all contributors, but we hold funds on behalf if entities are not registered with us.
+
+Our core offering is this allocation mechanism.  That is what the platform is about.  It being disputable, transparent, understandable is key.
+
+Using simple but transparent AI tooling to assist in allocating fairly amongst contributors.  This tooling is running on our own system.
+
+Need an entity that is responsible to hold funds unpaid - the residues - these could be paid out to NFTs on the eth chain, or require an email validation.
