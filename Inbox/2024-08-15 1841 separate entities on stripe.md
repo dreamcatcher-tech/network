@@ -38,7 +38,36 @@ Gateway cost structure can be controlled using AA too.  The price setter can be 
 
 Might need a dispute window for constructions mode, and show sequence diagrams about how disputes are handled.  Offer an additional service for quality insurance, where a human takes on liability for the quality of the work.
 
+At the start, we cannot be trading as this would securities.  Trading between active participants seems reasonable, and hints at the future.
 
+If we separate the collection of funds from the payout, then we do not need to meet stripe rules to take money in.  Payouts can be done using on chain methods, possibly with Stripe acceptance to do payouts.
+
+Could make a platform service where accredited investors are on the platform and can freely trade in the revenue share agreements that we generated.  Outside, people can trade them any way they like.  If they withdrew their data into an NFT, which is free of charge.
+
+The core offering to the buyers is a system that attempts to fairly compense everyone involved in the production of what they consumed.  Using the platform, people can stake multiple kinds of funds against construction of items, 
+The buying is primarily for the use of cloud compute services.
+Larger payments can be made for large bulk services, like a full CRM along with support.
+
+Its almost like we want to be a crowdfunding platform ourselves.  We might need to launch without this component ?
+
+Sounds like we need a legal network first, to be able to cost effectively figure out all the compliance rules.  Maybe partner with a fledgling crowdfunding platform.
+
+Clients are directly contracting for the work.  They have the ability to dispute the work done.  The issue comes with the expectation of profit.  So long as the calculation of revenue sharing is decentralized ?  We may make the software, but what matters is who runs it and with what configuration.  The expectation of profit is what makes it a security.
+
+Might be easier to do a big traditional raise to produce a system that meets decentralized revenue requirements, using a decentralized AI.  At least we would have the working platform available to aid us.  We could cite the hurdles we want to overcome, and lay out the plan to get there.  We can show initial usage, and we think we get big usage if we had some of the core components built, like this decentralized marketplace.
+
+We distribute funds using an external calculation.  This dispersals are not obligated in any way, as all our software is open source, but we make payments to the producers of those pieces as best we can.
+
+If the workproduct is used by us, we will pay out.  Others may use it and pay out too.  This is in no way a guarantee of any utility or profit return.
+There is no guarantee of returns in the same way as making any open source component has no guarantee of returns, but some people might give you something.
+
+So the first entity is simply purchasing software usage from us.  How we pay people for that isn't any of Stripes business, we think ?  Except for the fact that the platform is independent from us, and other payment services might get included in the list.
+
+Nominate an independent settler of disputes.  This can be different for each clients inputs, so the works know who is likely to accept or not, and who is putting in false money.  Clients can self dispute, which means they are in complete control of the funds dispersal. 
+
+As the buyers use the software, they indicate extra features they want and would pay more for.  They offer prepayed consumption as a prize to deliver the feature.
+
+Prepurchasing of features.
 
 Generate standard business plans based on these examples:
 - https://blog.hubspot.com/marketing/sample-business-plans

@@ -463,3 +463,6 @@ So instead of each app springing up to take a narrow piece of private processing
 ## history of Artifact
 We started with one thread per file, but then moved to treat threads as independent entities.  Turns out this is what a git branch is, so we copied the git datastructure.
 We had good logic generation for the backend of apps, good resilience in operations - all the blockchain goodness without the blockchain pain - but the user interface requried complex logic and lengthy consultations with the users.  When AI came, we could solve this problem.  But we also reduced the business logic generation down to natural language too.  Now the whole thing runs on a git compatible blockchain with AI running all the logic of each company system, including our own.
+
+## decentralized securities
+If a payout mechanism was a random roll of the dice on the eth chain, is the revenue dependent on the efforts of others ?  It also depends on this decentralized chance mechanism.  If the royalty payout is decentralized, then we can sell them anywhere.  We need then, to have a threshold for when an item is sufficiently decentralized, as the revenue comes from multiple independent sources.

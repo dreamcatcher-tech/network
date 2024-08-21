@@ -13,7 +13,7 @@ Types can be inferred from them when in use.
 
 Just makes the api while programming a little less helpful.
 
-Unless we made jsdoc comments that went over the top, so that we could manually write these in.
+Unless we made jsdoc comments that went over the top, so that we could manually write these in.  But this duplicates comments.
 
 But what about when we what multiple types of api in the same isolate ? like an admin version and a regular version ?
 
