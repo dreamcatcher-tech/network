@@ -38,3 +38,7 @@ Use window scrolling if this is too cramped.
 If you select a prior stateboard, the button will change to say that you selected this message, but also that you can view this stateboard
 
 Store topic summaries with stateboard so that stateboards can be fetched by NL.
+
+If the user uploads a file or large text snippet, then they click on it, the stateboard should show what they had.  But how would they go back to the stateboard they were last on ?  Do we now need a button to navigate it ?
+Or we could show this as a modal, as it is the uploaded thing, and not yet "in" the system ?
+Modals occur for the file selector, so a modal viewer seems valid ?

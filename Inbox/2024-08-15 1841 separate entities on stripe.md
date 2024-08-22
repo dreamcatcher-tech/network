@@ -83,6 +83,15 @@ None of these types of activities are forbidden, they just need strict complianc
 
 You can export your record of contribution into an NFT.  This is optional and free to do.
 
+Construction is a JV platform.
+The fact that the requester shows a use case where they would want to use it, and that use case is novel, means that they put in some effort about it.
+
+We could require that, in order to JV something, or trade a cert, you need to have held a balance of x for y months and you can spend 10% per month.
+
+Think we want to make our own registered crowdfunding platform, so people can trade legitmately.  We can test the model by doing a crypto version, which is outside of legislation, and uses smart contracts to manage the system, as well as consensus of AI bots that has to reach a certain decentralized amount who are using genuine openai keys to agree on a result.
+
+Making revenue sharing that is based on AI would be difficult to regulate, but if we could do it, then this would be a highly novel crowdfunding platform.  The contention is who is coding and running the AI - this needs to be regulated.  If this was decentralized, we could avoid the regulation, as the platform is run by disparate volunteers who cannot individually change the outcome.
+
 Generate standard business plans based on these examples:
 - https://blog.hubspot.com/marketing/sample-business-plans
 - https://www.growthink.com/businessplan/help-center/business-plan-examples
