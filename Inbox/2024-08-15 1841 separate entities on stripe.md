@@ -67,7 +67,21 @@ Nominate an independent settler of disputes.  This can be different for each cli
 
 As the buyers use the software, they indicate extra features they want and would pay more for.  They offer prepayed consumption as a prize to deliver the feature.
 
-Prepurchasing of features.
+Prepurchasing of features.  This can be held while the feature is worked on, and requires the user to actively release the funds after purchase.  They have no obligation to complete the purchase.  
+
+We could just due pure sales at the start, to make things easy, then turn on contstruction contracts later, then finally trading.
+
+Could set up an entirely independent entity that works in crypto, with only a smart contract anonymously deployed.
+
+The smallest possible setup is selling access to the dreamcatcher network, paying our own software hosting bills, collecting gross profit.  People are free to run the software on their own, in support of self sovereignty of data.  We would partner with dreamcatcher command to include our gateway is part of the base wallet offerings.
+
+Take in contract payments as an independent company, possibly using wise to transact with, since it is typically larger payment amounts.  Payouts would be better with wise, since lower fees.
+
+Ultimate is to become a regulated issuer in particular markets, then we can offer all kinds of securities trading, like a stockmarket.  At each stage, we list a compliant version, then inside that work to overcome the container - at stripe we simply take consumption payments, then work to take construction payments.  We then list a public company to take construction payments, and work to enable trading making us a form of stock exchange.
+
+None of these types of activities are forbidden, they just need strict compliance adherence.  If we can meet that compliance very cheaply, then we can offer the tradeability we desire.
+
+You can export your record of contribution into an NFT.  This is optional and free to do.
 
 Generate standard business plans based on these examples:
 - https://blog.hubspot.com/marketing/sample-business-plans
