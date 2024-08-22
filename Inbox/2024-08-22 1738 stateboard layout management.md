@@ -36,3 +36,5 @@ Input button shows the selections and also the stateboard button which changes t
 Use window scrolling if this is too cramped.
 
 If you select a prior stateboard, the button will change to say that you selected this message, but also that you can view this stateboard
+
+Store topic summaries with stateboard so that stateboards can be fetched by NL.
