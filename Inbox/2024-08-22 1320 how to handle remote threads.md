@@ -11,3 +11,6 @@ Or backchat needs to switch you to running exclusively in the remote thread.
 
 Otherwise we need a way to break out of threads, whereas backchat was supposed to do that.
 
+So remote threads need to exist on the remote app.
+
+your current thread can be pointed at any other branch as its cwd.

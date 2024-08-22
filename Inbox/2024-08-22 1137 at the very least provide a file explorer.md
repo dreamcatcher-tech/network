@@ -20,3 +20,10 @@ This should be an option to show on the prompt.
 Modifying a previous commit would create a new branch.
 
 Then should be able to browse their own repos, list all their repos.
+
+What about a selection in the current branch, like when you select the stateboard historically ? This should show up as prompt info ?
+When you submit it, then we add some extra info as an assistant message, that says how the stateboard has changed, and what the users selection inside the stateboard has changed to.
+
+The explorer component could be set to only show the changed files in a commit.
+
+So sounds like some kind of wiring diagram where the bots have connections and transforms wired up between different components.
