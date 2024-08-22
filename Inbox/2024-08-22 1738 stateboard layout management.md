@@ -21,4 +21,11 @@ The prompt becomes always visible, including a stop button.
 
 But if this happens, then the scroll bars are separate.
 
-What does the
+What does the stateboard do when backchat pops up ?
+Browse your chats in a panel ?
+Should be the same, but just inside of the backchat dialog.
+
+In the space that the selection items go, there is a button for making the stateboard take over the view.
+If your screen is too small, this button is present, otherwise it shows up to the right of the chat, and only when requested.
+
+Some widgets would be narrow, and some would allow scrolling in them ?
