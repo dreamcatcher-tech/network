@@ -5,4 +5,6 @@
 
 >[!danger] Depends: 
 
-Make a widget that lets you craft your own parameters, and then also have the bot help you craft them, so you can make a call to anything
+Make a widget that lets you craft your own parameters, and then also have the bot help you craft them, so you can make a call to anything.
+
+Should be able to chat with this bot and work out the parameters you want, and then make it update the agent calling parameters ?
