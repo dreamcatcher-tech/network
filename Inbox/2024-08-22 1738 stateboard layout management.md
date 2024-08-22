@@ -42,3 +42,7 @@ Store topic summaries with stateboard so that stateboards can be fetched by NL.
 If the user uploads a file or large text snippet, then they click on it, the stateboard should show what they had.  But how would they go back to the stateboard they were last on ?  Do we now need a button to navigate it ?
 Or we could show this as a modal, as it is the uploaded thing, and not yet "in" the system ?
 Modals occur for the file selector, so a modal viewer seems valid ?
+
+If an isolate call returns a file, then that file should be browseable.  so in the UI, if you click on the tool call that shows the diffs, the stateboard should show the contents of that file.
+
+If you deselect that from the messages list, the stateboard would go back to however it was before.  Or just do nothing for now, and figure out the best usage later.
