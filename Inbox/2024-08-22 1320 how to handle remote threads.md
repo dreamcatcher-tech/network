@@ -14,3 +14,8 @@ Otherwise we need a way to break out of threads, whereas backchat was supposed t
 So remote threads need to exist on the remote app.
 
 your current thread can be pointed at any other branch as its cwd.
+
+Summoner could also decide that you want to escape out one level.
+So you could be in some random thread, and then say you want to do some crm work, and it would switch you in to crm thread, and the summoner would pull you out and send you back to your original thread.
+
+This avoids leaking info when switching between agents, where some of those agents might be from a general store.

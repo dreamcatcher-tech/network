@@ -29,3 +29,10 @@ In the space that the selection items go, there is a button for making the state
 If your screen is too small, this button is present, otherwise it shows up to the right of the chat, and only when requested.
 
 Some widgets would be narrow, and some would allow scrolling in them ?
+
+Pop up the stateboard as a modal that can be dismissed which covers up the messages view ?
+switch out the messages view with stateboard.
+Input button shows the selections and also the stateboard button which changes to a messages button
+Use window scrolling if this is too cramped.
+
+If you select a prior stateboard, the button will change to say that you selected this message, but also that you can view this stateboard
