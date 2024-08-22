@@ -7,4 +7,4 @@
 
 "take me to the copywriter bot" should be intercepted by switchboard as a message meant for switchboard itself.
 
-Also 
+Also temp files can have friendly names in the prompt from the widget.
