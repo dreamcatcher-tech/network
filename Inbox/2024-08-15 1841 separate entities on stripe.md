@@ -92,6 +92,12 @@ Think we want to make our own registered crowdfunding platform, so people can tr
 
 Making revenue sharing that is based on AI would be difficult to regulate, but if we could do it, then this would be a highly novel crowdfunding platform.  The contention is who is coding and running the AI - this needs to be regulated.  If this was decentralized, we could avoid the regulation, as the platform is run by disparate volunteers who cannot individually change the outcome.
 
+So if we raised cap to build that crowdfunding platform, and the payback for investors was based on the NFTs we created, then we can set equity pricing at x, the shares are classed by the round number they represent, and the money is pooled and tagged based on how it was expended.  The key payback is in the certificates the company generates for itself, or the NFTs that it holds.  Crowdfunding seems best way to get users on to the platform.
+
+No other platform that is regulated is ever going to permit an AI based revenue share model.  We need to start doing it, and then run the distribution in a decentralized way, to ensure the calculation is out of our hands.
+
+Consumption and then small JVs seems the best way.
+
 Generate standard business plans based on these examples:
 - https://blog.hubspot.com/marketing/sample-business-plans
 - https://www.growthink.com/businessplan/help-center/business-plan-examples

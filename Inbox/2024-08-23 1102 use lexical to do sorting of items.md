@@ -9,3 +9,5 @@ Has a dnd feature already, so no setup for us there.
 Has undo / redo.
 
 can use in the DAO as can have comments attached to a doc too.
+
+Have linked to atoms panels, and edit the atoms at the same time.
