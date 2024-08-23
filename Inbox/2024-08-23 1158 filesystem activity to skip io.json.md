@@ -14,3 +14,4 @@ ls for a large directory needs to pass back the hash of the tree object, and tha
 Especially if each tool occurs in a branch, this is a lot of wasted writing.
 Read and write need only be repeatable in the accumulator.
 
+Could add compression for actions when putting them in the queue.
