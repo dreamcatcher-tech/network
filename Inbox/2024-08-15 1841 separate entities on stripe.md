@@ -100,6 +100,11 @@ Consumption and then small JVs seems the best way.
 
 If there is no certificate issued - no right whatsoever - it cannot be a security, as nothing was exchanged.  To mint a record of your contribution is again, not a security.  Then if independently, the Dreamcatcher, which aims to attribute fairly to all who contribute, ends up paying them something, that seems independent.  We recorded only that you contributed.  A separate entity sells the software as a hoster, where it charges a fee to run the open source software for you.  It takes some of that money after its bills are cleared and disperses it using the Dreamcatcher.
 
+Charge a membership fee to be able to trade contribution, like a coop.
+Call it a late contribution fee - paying in contribution later.  It is up to the holders to accept contributions or not.  Nothing changes hands, but the contribution is added to.
+
+Global attribution is maybe the purpose of the dreamcatcher central blockchain.  If the payments are dispersed using a base currency underneath, and funds always kept separate, so you can withdraw clean funds only.
+
 Generate standard business plans based on these examples:
 - https://blog.hubspot.com/marketing/sample-business-plans
 - https://www.growthink.com/businessplan/help-center/business-plan-examples
