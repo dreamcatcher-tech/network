@@ -19,3 +19,5 @@ Allows deduplication of the questions.
 
 AI can speak a summarized question for you.
 If an AI voice sounded like you but said something much smarter than you would, might you like that ?
+
+Basically helps with meetings by dropping it down.  Can do conferencing by connecting multiple rooms together.  Button to block out the other rooms.
