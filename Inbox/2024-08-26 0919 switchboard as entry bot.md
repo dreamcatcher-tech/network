@@ -12,3 +12,10 @@ So basically we have an arbitrary arrangement that generates the system process,
 
 This agent may choose to switch to something else.
 
+Each agent is in fact a mini switchboard then.
+
+It needs to invoke the next agent in the chain with possibly a modified prompt.
+How would it yield control back ?
+
+The goal is to get the system presenting visually again.
+
