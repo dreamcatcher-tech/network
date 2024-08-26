@@ -17,3 +17,5 @@ Could make these files available in a deployment of our own, so they get publish
 
 BUT cannot be determined at runtime - needs to be referenced at deploy time.
 So still need some tricks to get around it, like a worker that uses a blob url.
+
+May need to make our own registry or set of deployments that creates a new deno deployment whenever the source code changes, which gets remotely called by the running artifact.
