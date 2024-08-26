@@ -119,6 +119,8 @@ Need a graph showing the external attribution calculation.  So the external netw
 
 Why not subcontract the hosting ?  Makes it more of a passthru company at that stage.  Hoster control guarantees correct calculations.
 
-If we became a regA+ US company, we could issue securities on a per project basis almost, and allow free trading of these markers ?  This might be a better way to operate.  Then we might be able to be a crowdfunding platfrom, or at least create one, or appear like one, where all the securities are just from a single issuer - us.
+If we became a regA+ US company, we could issue securities on a per project basis almost, and allow free trading of these markers ?  This might be a better way to operate.  Then we might be able to be a crowdfunding platfrom, or at least create one, or appear like one, where all the securities are just from a single issuer - us.  Signalling intent might be part of regA which we could use for the construction side of the business.
 
-Checks to make, are equity percentages over time, listing possibilities, liquidity, etc.  Need to follow some popular company paths.
+Checks to make, are equity percentages over time, listing possibilities, liquidity, etc.  Need to follow some popular company paths.  If we could sell equity on a secondary market, this could allow withdrawls.  Owning the NFTs and selling those seem like the cleanest path forwards ?
+
+Where we can, we would allow our salary to stay in the company and we would reinvest it, rather than lose funding to taxes or expenses.  We should be able to draw down on those payments at any time.
