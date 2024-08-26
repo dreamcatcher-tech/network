@@ -4,3 +4,5 @@
 >[!question] Targets: 
 
 >[!danger] Depends: 
+
+We should be able to generate load using artifact itself.  
