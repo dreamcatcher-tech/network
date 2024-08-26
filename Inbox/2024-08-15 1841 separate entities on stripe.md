@@ -115,4 +115,6 @@ Generate standard business plans based on these examples:
 
 There is no guarantee or requirement for us to pay for the GPL software we use.  This is in the license terms.  We endeavour to make attribution payments based on a network agreed value for our usage.  For revenue that we collected, we facilitate the withdrawl of.  The claimants need to have gone thru the stripe sign up process.  The calculation of these figures is external.
 
-Need a graph showing the external attribution calculation.
+Need a graph showing the external attribution calculation.  So the external network of dreamcatcher gives the hoster the guidance for how to pay out the attribution for what was consumed.  Then the investment crowdfunded vehicle funds things to be build, which alters the external attribution table, and receives payment from the hoster.  The hoster also pays to all the contributors that did the work too.
+
+Why not subcontract the hosting ?  Makes it more of a passthru company at that stage.  Hoster control guarantees correct calculations.
