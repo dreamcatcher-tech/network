@@ -113,4 +113,6 @@ Generate standard business plans based on these examples:
 - https://www.bplans.com/technology-business-plans/
 - https://www.bplans.com/holding-company-business-plan/
 
+There is no guarantee or requirement for us to pay for the GPL software we use.  This is in the license terms.  We endeavour to make attribution payments based on a network agreed value for our usage.  For revenue that we collected, we facilitate the withdrawl of.  The claimants need to have gone thru the stripe sign up process.  The calculation of these figures is external.
 
+Need a graph showing the external attribution calculation.
