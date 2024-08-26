@@ -10,3 +10,5 @@ If a token has a listing, maybe a separate venture can be set up to find worldwi
 Could we piggy back on the existing listing perhaps ?
 
 Making the island be a base for ventures, with regulation and compliance.
+
+Could run a node of the dreamcatcher, which is a segmented version of the software.  This would manage the token and the usage, as the DAO.
