@@ -124,3 +124,11 @@ If we became a regA+ US company, we could issue securities on a per project basi
 Checks to make, are equity percentages over time, listing possibilities, liquidity, etc.  Need to follow some popular company paths.  If we could sell equity on a secondary market, this could allow withdrawls.  Owning the NFTs and selling those seem like the cleanest path forwards ?
 
 Where we can, we would allow our salary to stay in the company and we would reinvest it, rather than lose funding to taxes or expenses.  We should be able to draw down on those payments at any time.
+
+Renaming trading, since nothing changes hands back.
+
+The company exists because if the dreamcatcher was available, we could use it to make itself, but we do not have the trust mechanisms that the system provides, so we need an existing trust mechanism to build under.  Describe the Dreamcatcher, and what it plans to be.  Show how the company would receive payments from the Dreamcatcher when software is consumed.
+
+No IP ownership implies no royalties.  But could a model be formed where there is IP ownership ?  perhaps only if that ownership was a central entity, and it could never change hands, but that entity could force payment for its use.
+
+backcontribution could be just an API call that costs money.  Or it could be an in game action to purchase something.  So long as we can stop people buying things because they think they're going to make a profit - they must declare what they expect to make, and their calculations, and we need to show how it matches what is currently happening ?
