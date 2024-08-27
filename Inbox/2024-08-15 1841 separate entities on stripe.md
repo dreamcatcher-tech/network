@@ -132,3 +132,26 @@ The company exists because if the dreamcatcher was available, we could use it to
 No IP ownership implies no royalties.  But could a model be formed where there is IP ownership ?  perhaps only if that ownership was a central entity, and it could never change hands, but that entity could force payment for its use.
 
 backcontribution could be just an API call that costs money.  Or it could be an in game action to purchase something.  So long as we can stop people buying things because they think they're going to make a profit - they must declare what they expect to make, and their calculations, and we need to show how it matches what is currently happening ?
+
+If the decentralized attribution system is built, we anticipate it would reward all contributors to this effort, but that is not within our control, and is not to be considered as part of the offering of this company.  We can state this as a denial, as a way of highlighting the concept, then people can make up their own mind.  We simply say that, that future attribution is not part of what we are offering.
+
+The percentages we chose were calculated manually, and were subject to some discussion.  The plan for future raises was laid out being wary of how much more knowledge we will have after raise 1, and planning for having AI tooling to help in the decision making.  These plans should be considered not a commitment, but the reasoning for the current step.  This is the lightest step we know how to make without jeopardizing the future of the Dreamcatcher.
+
+The start has few select people with a normalizing function.  Each quarter, the production rate, effort rate, is normalized to match a salary.  This only carries on until we have more data about what the correct pricing for this kind of work is.
+
+Also we are collecting payments for the API gateway usage.
+A tip, or a late contribution, must be given after consuming a given piece of software.  You can then tip for its construction.  This will be of benefit to the contributors, and records your contribution to the overall work product.  All contributions are acknowledged in the dreamcatcher, and based on that dynamic algorithm, some may be determined as being owed.  Adherence to that rule is at the discretion of the gateway that collected the money, and represents no rights whatsoever.
+Tips may be refused by the contributors, and other tippers can choose to accept the tip.
+
+So our license is a license of denial, where we state how there are no rights conveyed.
+
+One of the milestones would be the construction of other alternative gateways.  A crypto gateway is a great example, as it could be made truly decentralized, as a smart contract, with payment flows controlled by smart contract.  If we bond eth to dreamcatcher using crypto, and have a decentralized version of the dreamcatcher that can reach consensus and is run by multiple independent parties, then it cannot be stopped.
+
+The gateways can publish a version of the software that is tailored to their gateway.
+The canonical software would allow the presentation of multiple gateways, and some whitelisting services that check the gateways for compliance.
+
+A good story for that company then is to say that in order to truly fairly appraise every one of the crowdfunding shareholders' contribution, we need a bunch more tooling and software. We're going to use the money raised in this thing to build that software. And once we've figured out how to do that, then we're going to use that tooling to figure out more accurate returns for every shareholder, past and present, in that company along with all the other contributors along the way.
+
+There is no token or any such thing planned within this blockchain.  It is a decentralized computing market, and it has no intrinsic currency.   Its purpose is the determination of what fair is, in whatever form the request may take.  It costs resources to run, those resources are transferred from the payer to the computing providers and to the software contributors who made the request possible.  We determine only relative value between things, and so an internal absolute value such as an internal crypto currency defeats that goal.  Fair implies relative.
+
+The second company believes that acquiring small business is the way forwards.
