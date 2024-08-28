@@ -175,3 +175,7 @@ Test that the sale of secondary securities is a capital gain, and see under what
 Check what reporting requirements are on wefund and others, for founders selling shares.
 
 A consulting company could be formed that can take on jobs to do work for certain companies, which it would make public.  This might be just the jobs gateway, but it might be best as an independent entity, made to bridge into the traditional way that people contract to build things, until we have more dreamcatcher tooling available.
+
+No employees, only work done using the dreamcatcher protocol.
+
+People should
