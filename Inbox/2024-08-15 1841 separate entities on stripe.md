@@ -196,3 +196,17 @@ Offer a contractual option, where a company can put up funds AND sign an agreeme
 Set up a contracting company that is a preferred partner, which is first point of contact for incoming people.
 
 Would it hurt to make the processing entity be the same as the worker ?
+
+Be careful to align with the gateway company - make sure these things are seen as separate, and that the funded entity doesn't rely too heavily on specific features of the gateway.  Also the gateway cannot be seen as taking advantage of the efforts of the funder, altho the attribution flows would reflect these contributions.
+Use the Dreamcatcher to log in to startengine and sign up and manage payments.
+Ensure that our communications with them are public too.
+Show their stock balances on the platform.  Possibly facilitate the trade between holders.
+Use dreamcatcher or mic'd up style to manage investor relations.
+
+Be careful of the requirement to have the largest shareholder be a US resident.  Can be done with a single person LLC that holds the shares, but then have to check that IRD doesn't tax the capital gains.
+Could publicize this structure as a generic model, and sell the certification that it works.
+
+CPA review was about $1,200 for startengine.
+Would need publicized accounting work in the US, using the Dreamcatcher, to assure that the tax structure worked.
+
+Securities Guardian can be a product we offer to other startups to manage their companies and their investor relations.  Pubcos have accountants that are highly attached to them.  Startups on crowdfunders do not have the savy or the budget, so a tool for them would be quite useful.  Charge by upside.
