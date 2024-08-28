@@ -142,6 +142,7 @@ The start has few select people with a normalizing function.  Each quarter, the 
 Also we are collecting payments for the API gateway usage.
 A tip, or a late contribution, must be given after consuming a given piece of software.  You can then tip for its construction.  This will be of benefit to the contributors, and records your contribution to the overall work product.  All contributions are acknowledged in the dreamcatcher, and based on that dynamic algorithm, some may be determined as being owed.  Adherence to that rule is at the discretion of the gateway that collected the money, and represents no rights whatsoever.
 Tips may be refused by the contributors, and other tippers can choose to accept the tip.
+Tip restrictions do not apply for crypto.
 
 So our license is a license of denial, where we state how there are no rights conveyed.
 
@@ -154,4 +155,23 @@ A good story for that company then is to say that in order to truly fairly appra
 
 There is no token or any such thing planned within this blockchain.  It is a decentralized computing market, and it has no intrinsic currency.   Its purpose is the determination of what fair is, in whatever form the request may take.  It costs resources to run, those resources are transferred from the payer to the computing providers and to the software contributors who made the request possible.  We determine only relative value between things, and so an internal absolute value such as an internal crypto currency defeats that goal.  Fair implies relative.
 
+Do a wefund equity raise, then do a brokered deal to get listed on the CSE.
+
+It will build integration components that can be reused by gateways, like stripe api, some blockchain integrations.
+
 The second company believes that acquiring small business is the way forwards.
+
+For copyright, the code must be published on github, with a suitable license.  We never host the code ourselves, the code always comes from github, so the copyright restrictions problems belong to github, as we are passing thru the content faithfully.
+
+Primarily is a system by which we can all make small contributions across a broad range of things, and how we can start companies with minimal initial conditions, and have fair treatment of all participants be completely taken care of.  A collaborative environment where we can get on with doing useful things and know that our reward will be fair.  An environment where no matter what, your contribution is immutable, and cannot be taken away from you - contributions are soulbound.
+
+> contributions are soulbound
+
+We would be launching with a CRM that is deployed and consumed, a platform that people can use to ask questions about the offering, email service, FullSpektrum as a consumer, with openai partnership signed.
+
+Start is a flat 30% markup on costs, with this changing once the dreamcatcher AI price calculations are determined.  API gateway is a cost+ model too, again subject to the AI price model when it comes online.
+
+Test that the sale of secondary securities is a capital gain, and see under what conditions they are tax free.  We don't draw a salary, so we need to use the share sales to fund our existence.
+Check what reporting requirements are on wefund and others, for founders selling shares.
+
+A consulting company could be formed that can take on jobs to do work for certain companies, which it would make public.  This might be just the jobs gateway, but it might be best as an independent entity, made to bridge into the traditional way that people contract to build things, until we have more dreamcatcher tooling available.
