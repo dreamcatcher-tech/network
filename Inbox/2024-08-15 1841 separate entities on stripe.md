@@ -178,4 +178,6 @@ A consulting company could be formed that can take on jobs to do work for certai
 
 No employees, only work done using the dreamcatcher protocol.
 
-People should
+People should look at this company's goal as building a tool that we can all use to coordinate together commercially, with the rules of interaction defined in code and by transparent AI.  Then we would each use this tool to bring opportunities to the ecosystem.
+
+Dual class structure to separate voting shares.
