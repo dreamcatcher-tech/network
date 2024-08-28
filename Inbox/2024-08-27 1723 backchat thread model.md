@@ -52,8 +52,17 @@ Or, make a PID ?
 Ejection from any thread would be just going back to backchat, and then it being used to select which thread you want to navigate to.
 
 The routing of prompts should be doable on the client side to allow widgets to provide rapid navigation around the system.
-threads should hold reference to their 
+threads should hold reference to their focus.
 Parent and child threads.
+Inside the thread, we should store what its current focus is.
+A thread is responsible for intercepting calls that come to it, and relaying thru, or intercepting and conditionally relaying.
+
+Could read the focus in from the message history of the target ?
+Easiest to just pass to the thread, and the thread would be configured to pass things thru.
+
+? how would a crm remote thread work ?
+
+How to make agents pass the thread on, and use a prompt in it ?
 # Example
 Start a new CRM thread.
 Be able to talk to backchat, and signal that you want to connect to the crm.  Start a new thread on the CRM and then switch focus over to that.
