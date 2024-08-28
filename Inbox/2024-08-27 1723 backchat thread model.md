@@ -42,6 +42,12 @@ When a message lands on a thread, it goes via a switchboard to determine which a
 
 If backchat doesn't have a base thread, then it should create a fresh one.
 
+backchat would store this as its focusid.
+backchat would keep a stash of all its threads that it was aware of.
+this would get loaded up into M to choose between.
+M may need direct triggering, rather than recognition.
+
+use a 
 # Example
 Start a new CRM thread.
 Be able to talk to backchat, and signal that you want to connect to the crm.  Start a new thread on the CRM and then switch focus over to that.

@@ -181,3 +181,7 @@ No employees, only work done using the dreamcatcher protocol.
 People should look at this company's goal as building a tool that we can all use to coordinate together commercially, with the rules of interaction defined in code and by transparent AI.  Then we would each use this tool to bring opportunities to the ecosystem.
 
 Dual class structure to separate voting shares.
+
+May take in wefund shares and list on the startengine marketplace for trading.
+
+Making the platform and making the ai seem separate.  The platform aims to be a place to construct almost any conceivable AI product.  By collaborative labour and capital the speed that these pop up should be faster than traditional methods.  This speed is unlocked by fair attribution.
