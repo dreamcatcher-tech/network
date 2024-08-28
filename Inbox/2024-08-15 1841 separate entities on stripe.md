@@ -210,3 +210,10 @@ CPA review was about $1,200 for startengine.
 Would need publicized accounting work in the US, using the Dreamcatcher, to assure that the tax structure worked.
 
 Securities Guardian can be a product we offer to other startups to manage their companies and their investor relations.  Pubcos have accountants that are highly attached to them.  Startups on crowdfunders do not have the savy or the budget, so a tool for them would be quite useful.  Charge by upside.
+
+Prebuyers can be given very strong disclosures such as https://help.wefunder.com/testing-the-waters-legal-disclosure  
+Get a charter together, similar to https://wefunder.com/charter
+We almost need to gain regulation CF approval so we can let people purchase and trade contributions between themselves.
+This model, and the goal of getting this approved should be crucial.
+
+The issue with these company structures is that it kills the small ventures.  Makes it really hard to crowdfund a small little slow company - we need to make a platform that can do this legitimately.  Until then, we have to follow the rules of the company.
