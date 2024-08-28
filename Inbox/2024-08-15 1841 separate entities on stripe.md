@@ -190,3 +190,9 @@ The capabilities of this model are broad - this company is raising not for all o
 We are attempting to provide a means of capital investment and returns that is compliant but thinner than company structures, and universally compatible.
 
 Should we have a company that is load bearing, that takes on the risk ?
+
+Offer a contractual option, where a company can put up funds AND sign an agreement with the risk bearing entity to complete the work.  Can be used as an extra enticement.
+
+Set up a contracting company that is a preferred partner, which is first point of contact for incoming people.
+
+Would it hurt to make the processing entity be the same as the worker ?
