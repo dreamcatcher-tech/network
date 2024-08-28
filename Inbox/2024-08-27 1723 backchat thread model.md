@@ -47,7 +47,13 @@ backchat would keep a stash of all its threads that it was aware of.
 this would get loaded up into M to choose between.
 M may need direct triggering, rather than recognition.
 
-use a 
+use a threadIndex, since we shouldn't be able to just hit any given thread ?
+Or, make a PID ?
+Ejection from any thread would be just going back to backchat, and then it being used to select which thread you want to navigate to.
+
+The routing of prompts should be doable on the client side to allow widgets to provide rapid navigation around the system.
+threads should hold reference to their 
+Parent and child threads.
 # Example
 Start a new CRM thread.
 Be able to talk to backchat, and signal that you want to connect to the crm.  Start a new thread on the CRM and then switch focus over to that.

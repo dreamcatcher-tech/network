@@ -185,3 +185,8 @@ Dual class structure to separate voting shares.
 May take in wefund shares and list on the startengine marketplace for trading.
 
 Making the platform and making the ai seem separate.  The platform aims to be a place to construct almost any conceivable AI product.  By collaborative labour and capital the speed that these pop up should be faster than traditional methods.  This speed is unlocked by fair attribution.
+
+The capabilities of this model are broad - this company is raising not for all of them, but for a narrow foundational component.  Where we move to after this foundation is a company decision.  Making this system run in a decentralized state is a foundational requirement.  Recruiting further hosting operators, payment providers, and other load bearing entities is part of the company goal, but only to enable them by software, not to create or operate them.
+We are attempting to provide a means of capital investment and returns that is compliant but thinner than company structures, and universally compatible.
+
+Should we have a company that is load bearing, that takes on the risk ?
