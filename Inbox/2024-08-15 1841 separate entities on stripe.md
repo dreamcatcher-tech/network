@@ -217,3 +217,5 @@ We almost need to gain regulation CF approval so we can let people purchase and 
 This model, and the goal of getting this approved should be crucial.
 
 The issue with these company structures is that it kills the small ventures.  Makes it really hard to crowdfund a small little slow company - we need to make a platform that can do this legitimately.  Until then, we have to follow the rules of the company.
+
+Might want YC plus a crowdfund.  YC validates, crowdfund gets a following plus extra cap.  Then listing publicly gives us liquidity.
