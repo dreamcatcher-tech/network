@@ -25,3 +25,9 @@ Hidden means the summoner functions are stripped from the thread before being se
 If the thread is currently deferring to another thread, the summoner runs using the complete thread converted to api params.
 
 If the thread is direct or undeferred, then it will attempt to determine if we should switch between other threads that are in scope.  If nothing found in scope, but we think they might mean to switch to an out of scope thread, the thread searching agent is called in the base thread
+
+Switching threads is also switching topics, so whichever occurs, we should always drop back to the default bot for interrogation if we are not sure.
+
+If the summoner determines you want to jump threads but it isn't sure what thread.
+
+M runs inside each base thread, and it may switch you around randomly.
