@@ -20,3 +20,5 @@ Launching the crowdfunding is dependent on being able to express our tasks in a 
 If we took all the supplied example companies, and then included the structures that made them, like the corporate structures and investments, then this is what the Dreamcatcher would be.
 
 This looking inside a company and analyzing it, is a fabulous use case for our system, and I would like to do this experiment as soon as we have the capability.
+
+Making a base system to autonomously do many of the common tasks of a company, like keeping release notes updated, website updated, roadmap.  It should all be automatically derived.  So maybe LP would benefit most from him trying to use it to accomplish something, and we build up tooling to make it possible.
