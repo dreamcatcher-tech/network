@@ -16,3 +16,7 @@ Being able to map out our roadmap, and steps to go, with a calculation about tim
 Swing on this as the thing to build - what will he do with all these ideas, all this invention that will never be realized ?  Every inventors desire for recognition from their ideas - what would a safe place need to honour ?
 
 Launching the crowdfunding is dependent on being able to express our tasks in a meaningful way, like agile tasks.  This is the trigger point of the company formation.
+
+If we took all the supplied example companies, and then included the structures that made them, like the corporate structures and investments, then this is what the Dreamcatcher would be.
+
+This looking inside a company and analyzing it, is a fabulous use case for our system, and I would like to do this experiment as soon as we have the capability.
