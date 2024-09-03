@@ -9,4 +9,5 @@ Asking a drone to defend its choices sometimes seems useful, particularly for sw
 
 What about agents being able to switch out to other agents ?
 
-It could 
+It could be "which agent should this go to ?" and it choose the topic switcher.
+So switchboard could come before topic switch.
