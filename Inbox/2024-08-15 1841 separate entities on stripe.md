@@ -221,3 +221,5 @@ The issue with these company structures is that it kills the small ventures.  Ma
 Might want YC plus a crowdfund.  YC validates, crowdfund gets a following plus extra cap.  Then listing publicly gives us liquidity.
 
 Profit from this company is expressly denied, but profit from a global registry that aim's to attribute to all who contribute, this is your only reward.
+
+Of all these ai apps coming, we propose a platform that captures versions of them all.  It is the complete application lifecycle, made possible with the simplification of pricing and equity distribution.  We want to be a place to experiment rapidly with new AI topography, new models, all with limited code.
