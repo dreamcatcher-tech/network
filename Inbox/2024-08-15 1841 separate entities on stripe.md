@@ -219,3 +219,5 @@ This model, and the goal of getting this approved should be crucial.
 The issue with these company structures is that it kills the small ventures.  Makes it really hard to crowdfund a small little slow company - we need to make a platform that can do this legitimately.  Until then, we have to follow the rules of the company.
 
 Might want YC plus a crowdfund.  YC validates, crowdfund gets a following plus extra cap.  Then listing publicly gives us liquidity.
+
+Profit from this company is expressly denied, but profit from a global registry that aim's to attribute to all who contribute, this is your only reward.
