@@ -11,4 +11,3 @@ A stack is better than having modals and other types of in place UI.  Stack is m
 
 Should use the stateboard as the way of using the messages thread to display more things, like the agent definitions should show up in stateboard, not in messages.
 
-update reasoning and match count
