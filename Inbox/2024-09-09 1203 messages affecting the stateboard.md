@@ -22,3 +22,5 @@ The stateboard control message is what would show in the message thread, and it 
 Ai initiated stateboard changes show in the message thread, and can be clicked on.
 
 Agent viewer would show the full blown agent, both as raw markdown, but also as fully processed api calls.  Possibly allow an api call to be done, so you can play with it.
+
+File upload tool could show the upload in the stateboard ?  Or just upload as a loose object, then attach it in ?

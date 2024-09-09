@@ -20,3 +20,4 @@ Sandbox action is to take the most recent thing from the parent, until you chang
 ## Updating the actor base
 Need to get an action in to this base branch to do a pull.
 Use the navigator to set the focus of the thread to be the actor base branch.  This would be included in additional information.
+	Navigator can be an agent.
