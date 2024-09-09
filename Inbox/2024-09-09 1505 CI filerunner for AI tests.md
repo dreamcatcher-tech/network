@@ -12,3 +12,6 @@ Use Deno.test to check things off in the tps report, so that the failures repres
 
 In this way, we can use the filerunner to exercise our bots, but inside a CI environment, which is useful while trying to code parts of the system.
 This can also be done to give surety before merging in a PR to make some changes.
+
+
+Ultimately we should be able to mock the AI responses, so that we can assure the mechanics of the system, separately from making AI calls out.
