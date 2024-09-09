@@ -37,3 +37,7 @@ Attach some file openers to it, like the agent browser and editor ?
 Stateboard isolate tool has some options, like scope? Also starting directory ?
 
 read the file by using oids and fetching git objects directly.
+
+? Should the file explorer attachment be a way to call up the stateboard with a file exporer ?
+
+A repo widget would handle things like pull and push, but could also be controlled by the AI at the same time, since it would interact with an isolate of the same / similar name ?
