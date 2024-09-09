@@ -27,3 +27,13 @@ File upload tool could show the upload in the stateboard ?  Or just upload as a 
 
 Stateboard have a little button where the prompt would go so that it can be toggled in or out.
 That widget goes to the right side of the prompt when retracted.  Is there even in full size version.  This can be a FAB which just moves with the stateboard.
+
+Repobrowser - can just be a quick search widget.
+Open a repo then shows the file browser widget, with the branch explorer stacked on top ?
+
+What to do when a file in the filebrowser is clicked ?
+Attach some file openers to it, like the agent browser and editor ?
+
+Stateboard isolate tool has some options, like scope? Also starting directory ?
+
+read the file by using oids and fetching git objects directly.
