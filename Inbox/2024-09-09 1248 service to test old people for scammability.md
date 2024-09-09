@@ -7,3 +7,5 @@
 
 pay $20 and we'll try scam your grandma and report back on the scamability score.
 Then optionally provide training to help them resist tricks.
+
+Use AI generated messages to test them, and AI generated voice.

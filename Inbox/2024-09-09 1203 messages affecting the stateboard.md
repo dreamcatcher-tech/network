@@ -24,3 +24,6 @@ Ai initiated stateboard changes show in the message thread, and can be clicked o
 Agent viewer would show the full blown agent, both as raw markdown, but also as fully processed api calls.  Possibly allow an api call to be done, so you can play with it.
 
 File upload tool could show the upload in the stateboard ?  Or just upload as a loose object, then attach it in ?
+
+Stateboard have a little button where the prompt would go so that it can be toggled in or out.
+That widget goes to the right side of the prompt when retracted.  Is there even in full size version.  This can be a FAB which just moves with the stateboard.
