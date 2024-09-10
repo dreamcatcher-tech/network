@@ -8,3 +8,4 @@
 Optionally add pieces of the triad, like commit and filepath ?
 
 Triads need to have url params unified as well as be inside function parameters.
+
