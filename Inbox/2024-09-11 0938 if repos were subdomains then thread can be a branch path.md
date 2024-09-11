@@ -23,3 +23,5 @@ When the drop the remote modal, the hash changes back.
 
 Should there be a remote button to pull this back up, if remote is set ? like a go back to remote button ?
 Close remote would show in the message stream, and then when they click on it again, the thread pops up.
+
+Changing the remote shows as a fake tool call in the messages thread.
