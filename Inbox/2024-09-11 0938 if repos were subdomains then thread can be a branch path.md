@@ -25,3 +25,9 @@ Should there be a remote button to pull this back up, if remote is set ? like a 
 Close remote would show in the message stream, and then when they click on it again, the thread pops up.
 
 Changing the remote shows as a fake tool call in the messages thread.
+
+If the change in invalid, the error should make its way back to the client.
+
+If we specify something invalid, it should blank.
+What if the show remote also has a show remote ? Clicking show remote inside that remote would switch the remote again ? 
+Then closing would go back thru the stack again ?
