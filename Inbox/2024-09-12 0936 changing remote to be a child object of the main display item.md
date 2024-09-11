@@ -35,3 +35,5 @@ Stacks with crosses is much easier now, rather than managing a stack.
 
 How to show when the remote is loading ?
 Sending in empty props shows it as loading the remote
+
+If we pass down what level inside the stack this threebox is, then we can behave differently.
