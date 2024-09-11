@@ -9,3 +9,6 @@ Optionally add pieces of the triad, like commit and filepath ?
 
 Triads need to have url params unified as well as be inside function parameters.
 
+HASH BEHAVIOUR
+
+If no hash, then as soon as the backchat thread loads up, set the hash to be the current target thread.
