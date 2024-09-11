@@ -31,3 +31,13 @@ If the change in invalid, the error should make its way back to the client.
 If we specify something invalid, it should blank.
 What if the show remote also has a show remote ? Clicking show remote inside that remote would switch the remote again ? 
 Then closing would go back thru the stack again ?
+
+Selecting remote selection tool calls in the message thread would bring up the remote selection ?  But that ruins using the messages like an extended stateboard.
+
+? how to view historic remote threads ?
+If that thread has a remote, that seems even weirder ?
+
+If the whole thing showed in the stateboard ?
+
+USE THE STATEBOARD to guide the remote thread usage ?
+In the stateboard, it can list the remotes, arbitrarily deep ?
