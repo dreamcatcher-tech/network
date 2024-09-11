@@ -41,3 +41,6 @@ If the whole thing showed in the stateboard ?
 
 USE THE STATEBOARD to guide the remote thread usage ?
 In the stateboard, it can list the remotes, arbitrarily deep ?
+
+show remote inside a remote would drop back to base thread and change the remote again?
+Or, open up the remote navigator ?
