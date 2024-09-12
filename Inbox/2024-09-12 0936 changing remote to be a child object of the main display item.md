@@ -37,3 +37,7 @@ How to show when the remote is loading ?
 Sending in empty props shows it as loading the remote
 
 If we pass down what level inside the stack this threebox is, then we can behave differently.
+
+If we have a function that sets session storage and fragment whenever they change due to UI activity, then we can know if we have reloaded / remounted and the hash is not what we currently set it as.
+
+At mount, we would know we have become something else.  This is when we can set the remote to be this thing, but only if it is not equal to our own thread, since we cannot be our own remote.
