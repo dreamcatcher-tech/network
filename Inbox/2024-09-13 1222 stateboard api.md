@@ -33,3 +33,5 @@ If the file disappears, then we back you out to the last known location.
 fetch by oid should be enough.  in backchat, it should use the cache, and it should 
 
 How should the files and path objects handle their async nature ?
+
+Provide hooks that give some files.
