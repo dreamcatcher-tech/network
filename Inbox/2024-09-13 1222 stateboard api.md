@@ -20,3 +20,13 @@ File requests need to be a request for a hash, which goes in the cache.
 
 
 ? how would this help give us ability to upgrade HAL by doing  a pull, by addressing the root ?
+
+any time a path gets opened, we need to start watching it.
+back out of a path and we stop watching it, but can recover it quickly.
+May show the stale versions we last had while we pull down the more recent things.
+
+Use a generalized version of the threadwatcher, which uses this to string together a path, and keep watch of what is happening.
+
+But the difference is that it gets passed down as a commit, which is definitive.
+
+If the file disappears, then we back you out to the last known location.
