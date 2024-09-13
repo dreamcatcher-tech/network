@@ -6,3 +6,5 @@
 >[!danger] Depends: 
 
 Also possibly we can cancel the stream, and this should cancel the computation ?
+
+Possibly, and at any rate we can stop any follow up actions, or any parallel actions.
