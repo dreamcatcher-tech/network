@@ -17,3 +17,6 @@ Its basically backchat with some chroot restrictions.
 Branch explorer would allow us to manually control branch targets before teaching the machine about branches.
 
 File requests need to be a request for a hash, which goes in the cache.
+
+
+? how would this help give us ability to upgrade HAL by doing  a pull, by addressing the root ?
