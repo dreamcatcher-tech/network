@@ -7,8 +7,9 @@
 
 This webhook would hit the main deployment, and would cause us to do a pull.
 
-If the repo had changed, then we would trigger pulls on all forked branches ?
+Each time an actor branch runs, that branch checks the update trees all the way down.
 
-Or, each time an actor branch runs, that branch checks the update trees all the way down.
+Gets its parent, walking all the way to the root.  If the root is different to the last parent, do a merge, then pull that thru down to the current branch, which gets updated before executing.
 
-When we 
+May make this manual for now, since seems a bit of work otherwise ?
+Could run a client side checker that can warn when an update is needed ?
