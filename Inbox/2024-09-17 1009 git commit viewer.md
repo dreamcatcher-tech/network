@@ -12,3 +12,5 @@ This could be rendered in markdown too, making it simpler to display ?
 How would the diff viewer work ? how to select the files for comparison ?  Need to be able to select multiple files.
 
 If the selection was never wiped by just navigating away, then we could hold multiple files across multiple branches.
+
+Branch explorer would link to the commit graph navigation, and allow rapid branch display.  Branch display would be in a chonky display.
