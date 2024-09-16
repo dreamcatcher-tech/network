@@ -32,3 +32,6 @@ Clipboard that causes a selection to be sticky on the prompt, allowing you to se
 
 Is there a way to map out the knowledge spec / range of the system, so we can know about areas we are missing, and functions that are incomplete ?  Be able to describe very plainly what they areas of the domain are.
 
+Select in the widget includes primary target, as well as additional focused items.
+Editing of the item shows as the editing having occured.
+The prompt allows deletion of the selected items.
