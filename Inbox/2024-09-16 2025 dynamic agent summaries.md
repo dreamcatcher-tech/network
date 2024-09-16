@@ -35,3 +35,4 @@ Is there a way to map out the knowledge spec / range of the system, so we can kn
 Select in the widget includes primary target, as well as additional focused items.
 Editing of the item shows as the editing having occured.
 The prompt allows deletion of the selected items.
+When you change focus after having editing, we can add that to the prompt stack, so you can discard it if you want.
