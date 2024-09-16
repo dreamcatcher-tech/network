@@ -6,3 +6,7 @@
 >[!danger] Depends: 
 
 Use mini to generate advertisements for agents based on the current context.
+
+What widgets have you got ?
+
+Selection of the 
