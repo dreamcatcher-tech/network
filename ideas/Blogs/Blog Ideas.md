@@ -472,3 +472,6 @@ We have conventional filesystems, which everyone is used to, then we have the ul
 Then we have blockchains, which are a minor subset of all the operations git can do.
 
 The git gap can be bridged by AI systems, since they can expose you to any level you want, and can give you the goals you want.  Everyone understands conflicts and how they happen, but how to fix them is not always clear, even to experts.
+
+## Amplification of labour
+If you have the system where You can amplify the labor of any given person Then what we need is to find an equation that expresses The benefit of waiting instead of Continuing with labor and the old way that is being replaced And so at what point does it make sense to completely wait until the end Is there a mathematical expression that varies The Amplification factor of the labor to the gains that are taken with the goal being to show that the longer we delay the arrival of the amplification 2 Then the worst of we would be, even though doing the job manually would have some beneficial output, At what point would that be overtaken?
