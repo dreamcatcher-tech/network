@@ -20,5 +20,10 @@ When stacked, exiting out of one takes you up to the next higher dimension.
 Or, if they are layed out on the same page, we can click around and see them load up.
 
 Or, an api can be locked to some config and shown next to some other config.
+This would be set by the AI that laid out the stateboard, depending on the laybout.
 
 Toggle tracking, in case the tip moves forwards and you want to stay in sync with it.
+
+## Story: how to PR against parent
+Select the branch you want  to PR against, and select the branch you want to PR from.
+The git agent will be triggered and knows how to initiate these PRs.
