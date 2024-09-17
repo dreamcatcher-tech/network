@@ -28,6 +28,9 @@ This would be set by the AI that laid out the stateboard, depending on the layou
 
 Toggle tracking, in case the tip moves forwards and you want to stay in sync with it.
 
+Branches by convention can trace their parents by their names.  At any given spot, we can view the children directly.
+So the commits we want, are only those on the path of the current branch  or the target branch ?
+
 "update this repo"
 - gitbot starts up
 - walks the branches up to the root
