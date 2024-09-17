@@ -466,3 +466,9 @@ We had good logic generation for the backend of apps, good resilience in operati
 
 ## decentralized securities
 If a payout mechanism was a random roll of the dice on the eth chain, is the revenue dependent on the efforts of others ?  It also depends on this decentralized chance mechanism.  If the royalty payout is decentralized, then we can sell them anywhere.  We need then, to have a threshold for when an item is sufficiently decentralized, as the revenue comes from multiple independent sources.
+
+## the git gap
+We have conventional filesystems, which everyone is used to, then we have the ultimate in multiuser data management, and in between is this huge gap.  Very few applications integrate git into their data structures or much less their UIs.  Yet github is worth x billion.
+Then we have blockchains, which are a minor subset of all the operations git can do.
+
+The git gap can be bridged by AI systems, since they can expose you to any level you want, and can give you the goals you want.  Everyone understands conflicts and how they happen, but how to fix them is not always clear, even to experts.

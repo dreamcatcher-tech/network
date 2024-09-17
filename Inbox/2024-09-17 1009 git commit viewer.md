@@ -19,10 +19,21 @@ Stack the views for branches, commits, so they can be composed any way we like.
 When stacked, exiting out of one takes you up to the next higher dimension.
 Or, if they are layed out on the same page, we can click around and see them load up.
 
+Can provide a different frame that can be used by the AI to display different degrees of navigation
+
+Supply each view type as a standalone widget, and then compose them in frames as required.
+
 Or, an api can be locked to some config and shown next to some other config.
-This would be set by the AI that laid out the stateboard, depending on the laybout.
+This would be set by the AI that laid out the stateboard, depending on the layout.
 
 Toggle tracking, in case the tip moves forwards and you want to stay in sync with it.
+
+"update this repo"
+- gitbot starts up
+- walks the branches up to the root
+- if it can merge them in, it does so, coming back down the stack
+- Might ask for confirmation when pulling into the actor repo, since will change everything
+	- memory would cause this to be done regardless, if that's how you wanted things
 
 ## Story: how to PR against parent
 Select the branch you want  to PR against, and select the branch you want to PR from.
