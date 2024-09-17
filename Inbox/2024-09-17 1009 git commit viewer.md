@@ -41,3 +41,7 @@ So the commits we want, are only those on the path of the current branch  or the
 ## Story: how to PR against parent
 Select the branch you want  to PR against, and select the branch you want to PR from.
 The git agent will be triggered and knows how to initiate these PRs.
+
+## Testing
+How can we test a thread that has stateboard changes ?
+If the stateboard is only ever passed in with selections, then we should be able to express this in the test files.
