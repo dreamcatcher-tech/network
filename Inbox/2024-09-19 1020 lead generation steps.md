@@ -32,4 +32,4 @@ Develop an AI-powered tool that empowers users to identify and connect with high
 
 This feature aims to revolutionize lead generation by combining strategic planning with AI capabilities to create efficient, personalized, and high-impact networking opportunities. It enhances conversion rates, fosters collaborative growth, and opens new revenue streams by intelligently connecting users with key industry figures.
 
-To get ar
+To get around proxy blocking, make the linkedin requests proxy thru the customers computer directly, since it is legitimately them making the conneciton.  Make this be an app on their phone they install, and then connect up with the account.
