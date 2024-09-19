@@ -4,3 +4,5 @@
 >[!question] Targets: 
 
 >[!danger] Depends: 
+
+Artifact error should not break the whole UI, and should allow for a retry option.
