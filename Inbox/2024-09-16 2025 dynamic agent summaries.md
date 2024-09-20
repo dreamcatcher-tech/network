@@ -13,7 +13,7 @@ Selection of the messages in the message thread.
 Selection of the primary target element vs the rest of the selections.
 
 
-May allos selections between screens, so multiple paths.
+May allow selections between screens, so multiple paths.
 
 "what model was used in the last call ?"
 bot that knows how to read and interpret the thread file, so can give that exact answer, by way of introspection.
