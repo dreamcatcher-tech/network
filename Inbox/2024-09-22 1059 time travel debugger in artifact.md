@@ -34,3 +34,15 @@ Faulted witness can be displayed in the UI, where the UI pulls together the view
 Show rerunning stepping thru, so it can go commit by commit, or keep running up until a particular commit.  Show where some data was different, which means an inconsistency.  This would be shown as a specially colored branch.
 
 Have a UI element that only shows when a debugger is connected, and in there are the controls to do debugging, which then updates the branch explorer to give feedback.
+
+A serverless debugger might be possible.  Run in lambda and collect debug info at each step ? Rerun the process when the browser steps forwards one notch.  Could run in lambda and use the chrome remote debug protocol to stream it back to the browser, so the browser debugger can be used to step thru the serverside code, removing the need for a dev environment to be set up.
+
+Then can chat thru code changes that run the unit tests of the system as a whole, and ultimately release a new version, which you can then test out in the problem use case and verify it works correctly, allowing you to switch between system building and consuming very rapidly.
+
+Ideally we want a debugger that can be driven by an AI, so it can run the debugger at a specific breakpoint, analyze.  Its usage patterns are different to a human.
+
+AI debugger tooling seems quite important, as well as having a sandboxed environment to run these debugger sessions in, then be able to connect a true debugger, like chrome, up to the deployment.
+
+If all debug info could be captured in a trace, then we might be able to present it back to the AI in a more consumable format, allowing free navigation thru the execution, with instant step forwards and back.
+
+Must store the githash with the deployments so we can recreate the code exactly.
