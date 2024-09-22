@@ -49,3 +49,5 @@ Must store the githash with the deployments so we can recreate the code exactly
 
 The vscode runner starts a dev server, which then opens a socket to the webpage.
 Otherwise, it is hard to get the socket to tunnel thru deploy and back into the local machine.  They need a separate server to manage the connections between them.
+
+BUT Since the debugging messaging is very small, we can use chains to manage the messaging.  So can be running any browser, and then have vscode running anywhere, then it still handles the debug information.
