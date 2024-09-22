@@ -45,4 +45,7 @@ AI debugger tooling seems quite important, as well as having a sandboxed environ
 
 If all debug info could be captured in a trace, then we might be able to present it back to the AI in a more consumable format, allowing free navigation thru the execution, with instant step forwards and back.
 
-Must store the githash with the deployments so we can recreate the code exactly.
+Must store the githash with the deployments so we can recreate the code exactly
+
+The vscode runner starts a dev server, which then opens a socket to the webpage.
+Otherwise, it is hard to get the socket to tunnel thru deploy and back into the local machine.  They need a separate server to manage the connections between them.
