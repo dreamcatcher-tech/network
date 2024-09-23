@@ -13,3 +13,8 @@ stop can be either stop and wait next input, or stop and pass on execution someh
 
 OR treat switch as a special command that gets detected and has special impact on the loop that is running.
 
+
+
+CAN the whole router function be removed if the loop() function covers routing from a switchboard call ?
+
+So the longthread function only gets told to run the router agent, then all else is same as any other agent ?
