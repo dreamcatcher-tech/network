@@ -13,3 +13,5 @@ After writing back changes to the db, the next most useful thing becomes the ban
 
 Processing emails seems next best ?
 If these can be drafted and generated ?
+
+We should drive to get this connection working, since it establishes us on their premises.
