@@ -30,3 +30,8 @@ Stack these components, since we do not need them all at once, and it can be fru
 The control of this should be up to the AI to select for you, but you could manually control it too if a control widget was always rendered, that gave control to the human as to what bits to turn on and off.
 
 Scroll into view seems difficult ?
+
+Navigate to the last child merge and fork, so can walk the history very quickly to look for useful events.
+
+NL powered search where we go looking for commits that match some NL query.
+Set the number of workers to do the crawling.
