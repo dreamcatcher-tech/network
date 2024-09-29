@@ -28,3 +28,5 @@ So there is io children and git children.
 
 Stack these components, since we do not need them all at once, and it can be frustrating to have them all.
 The control of this should be up to the AI to select for you, but you could manually control it too if a control widget was always rendered, that gave control to the human as to what bits to turn on and off.
+
+Scroll into view seems difficult ?
