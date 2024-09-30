@@ -1,0 +1,8 @@
+
+>[!tip] Created: [2024-09-30 Mon 18:17]
+
+>[!question] Targets: 
+
+>[!danger] Depends: 
+
+EDU, Automated Book Generation. An engaging thing for a child is to be able to ask questions or somehow affect the outcome of the story. If we had a colour E-ing screen, then we could formulate a sentence structure using models in the background, momentarily, periodically pause and ask the child what they think happens next. Based on what they say and based on our leading questions, we can change the future of the story. The future of the story can be laced with certain outcomes that we want, like sharing, turn-taking, other strategies for cohesive social behaviours. And then we can generate images that are based on this changing storyline. So when they turn the page or at the appropriate point in the story, then the images change. We can also do things like stall the story until the child can read the word, tells us what the word is, touches on the appropriate position on the page to indicate recognition of an object or the solution to a light complex moral problem, such as choosing a door. These stories can be live monitored by humans in the background, it could be the parents moving the switches in the background, or it could be a paid person. The parents could also offline suggest different stories that the bot has worked out, could be good themes or timelines or things to do, and the parents can increasingly add elements from the child's day-to-day life into this particular story.
