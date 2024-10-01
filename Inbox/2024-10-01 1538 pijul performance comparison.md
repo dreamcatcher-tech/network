@@ -12,3 +12,4 @@ For each GIT commit, we generate the equivalent change within Pijul and then rec
 So long as we could maintain a hybrid mode of operating, where git compatibility was maintained along with pijul as the backend, then we can make this work.  Git compatibility is crucial for integration with tools like github and others.
 
 If the git metadata was treated like a patch in pijul, then we can manipulate it any way we like.
+
