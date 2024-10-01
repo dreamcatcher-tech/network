@@ -30,8 +30,8 @@ ConfirmCaseCount should cover the order check of the test cases too.
 Creating the test report should require the befores to be called in order.
 Incrementally creating the tps report should be key.
 Allow the befores to be in any order, but when confirm is called, the order is checked.
+Incremental is best, since means it can always be schema correct.
 
 If there is a case that has run before, fork from that.  Else create a new one.
-Incre
 
 Should we just run the before tests again, from scratch ? they are not meant to be a time saving gesture, rather a correctness gesture.
