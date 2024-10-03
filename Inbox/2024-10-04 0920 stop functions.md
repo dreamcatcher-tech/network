@@ -26,5 +26,16 @@ User could resume it ?
 User could rerun any given isolate function ?
 Hook up the artifact debugger, and run the function in a local instance, to reproduce how it ran.
 
+broadcast the stop, rather than causing more actions to occur.
+The stop has a signature, and so it can check the broadcasts are legitimate.
+When the exe thing sees these broadcasts, it halts immediately, and errors out all the actions.
+
+No responses back to the parent are required, to save on 
+So stop replies are not transmitted, they just end.
+
 ## safeguards
 May need a watcher of runs, or in general, to detect if some looping is occuring.
+These stops should occur during any function action.
+This might be mitigated by billing, where each function call has a token allocation / billing allocation, and if it goes above this
+The accounting would be linked to the invocations of each pierce.
+So the pierce goes thru backchat to get its accounting allowance, and is used to measure everything.
