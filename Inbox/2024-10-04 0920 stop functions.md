@@ -25,3 +25,6 @@ User could resume it ?
 
 User could rerun any given isolate function ?
 Hook up the artifact debugger, and run the function in a local instance, to reproduce how it ran.
+
+## safeguards
+May need a watcher of runs, or in general, to detect if some looping is occuring.
