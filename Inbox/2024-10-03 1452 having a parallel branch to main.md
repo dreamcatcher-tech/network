@@ -12,3 +12,5 @@ If we want to PR up, then we should do that with a squash merge, to remove all t
 Until we do that, we can just clobber in the meantime.
 
 Sorting out conflicts and doing our own handling of differences seems key.
+
+Currently the hole control branch is being forked into an actor, but it should be forked off from main only.
