@@ -20,3 +20,7 @@ How can we check the import, if we processed the records using AI ?
 Do the same transform twice, but in a different way, with different models ?
 Take the markdown, generate compliant xml, and see if they are the exact same ?
 The reversal principle, that demonstrates complete control of the process.
+
+So an agent could be running that simply allows a web push and request to be made at the behest of the remote artifact instance.  This thing could also provide a tunnel for all web api requests to go thru, rather than requiring cloudflare ?
+
+Using cloudflare would be better since the app could be used remotely, too.
