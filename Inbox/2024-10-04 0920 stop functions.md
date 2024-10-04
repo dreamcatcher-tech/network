@@ -5,7 +5,20 @@
 
 >[!danger] Depends: 
 
-Use a broadcast channel to 
+Use a broadcast channel to send out system wide halts where a channel is based on the pierce ID, or the account id.  But this might cause a lot of chatter, so we could simply set a db flag.
+
+If the stop was related to the billing approval, this seems easier to watch.  So each pierce includes a funding amount allocated to that action which each runner checks.
+When it is running, they all check periodically if there are funds left, and if not, they stop running.  They all update this balance with their run info, and the commit they made.  This data is stored external to the commits themselves, else it would be hard to recreate ?
+
+When going on to the next action, you read the remaining credits for the action, and also if it got cancelled.  While running it in exe, we are watching this amount.  We might be updating it as we go, or just relying on passing back the balance within the action, so exact consumption of a given commit is by calculating the diff between in and out.
+
+The billing would be db cost, exe cost, api costs, token cost, plus freeform units that an api can determine to add.
+
+Or billing could be stored in the commit messages, or in the io.json files, and to calculate the bill, we walk backwards.
+
+Best is to pass the billing info back with the reply, and the authorization goes forwards with the request.
+
+User must be able to see where it ran out of funds.
 
 Send the origin hash of the action along with all actions, which can be used to halt everything that is a consequence of that.
 

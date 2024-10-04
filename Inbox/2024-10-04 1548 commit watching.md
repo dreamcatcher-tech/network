@@ -17,3 +17,6 @@ OR if the tip of all related branches was always tracked ?
 Needs a different mode where can watch all the children ?  
 All children as default might overload the system ?
 All tips of all children, or all tips of all parents.
+
+Arrange the commits by chronological order ?
+Cache all the splices so we can avoid making some server calls.
