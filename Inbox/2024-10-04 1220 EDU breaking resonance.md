@@ -14,3 +14,5 @@ It can be commanded to speed up and slow down, but can also detect when it is ju
 Also display its tempo and playback speed settings.
 
 Can go into modes, like wait for instruction confirmation mode.
+
+So here we can produce a book that was specifically designed to be read out by an AI, where some of the voices are also tuned to have very descriptive things about them. The pictures should be uploaded into the bot so that it knows how to talk about them, and the pictures should be designed to be easily interpreted by the bot. In this way, when the page gets turned, we may have page turning indicators or cameras that can show us, but ultimately the bot can read out the book using all kinds of interesting voices, but also incorporating extra knowledge that's part of the child's personalised curriculum to keep the child engaged.
