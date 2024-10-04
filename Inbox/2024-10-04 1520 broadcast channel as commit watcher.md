@@ -7,6 +7,8 @@
 
 
 
-Need to watch backchat commits too, since these are always relevant.
+this might be faster than the db watching ?
 
-When watching a thread, we should 
+It takes 3 seconds from sending in a prompt until the first commit in the target thread is seen.
+
+Takes 6 commits until the response comes back in, excluding commits on the backchat branch.

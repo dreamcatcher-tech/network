@@ -33,6 +33,8 @@ When the exe thing sees these broadcasts, it halts immediately, and errors out a
 No responses back to the parent are required, to save on 
 So stop replies are not transmitted, they just end.
 
+Must be able to stop a thread remotely, too, so hook up to a running branch complex, and then be able to identify what the triggering id was, and stop it remotely.  Also see the total bill racked up for that action, from a distance.
+
 ## safeguards
 May need a watcher of runs, or in general, to detect if some looping is occuring.
 These stops should occur during any function action.
