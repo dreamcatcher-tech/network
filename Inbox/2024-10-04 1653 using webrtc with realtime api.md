@@ -20,3 +20,4 @@ Driving in a car would need a GPU based model that could handle responses when o
 Bot would always get given the running task list each new prompt from the user, or the bot can call a local function to check the status.
 
 Basically turns the live interactive into async heavy operations, that are well suited for offline intermittent network use.
+
