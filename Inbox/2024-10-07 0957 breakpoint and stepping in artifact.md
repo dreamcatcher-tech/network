@@ -25,3 +25,5 @@ If messages were stored as only what changed, then stepping back would be going 
 This method would be very space efficient, and would offer great caching opportunities, whereas any time the thread changes, the whole thread has to be re-downloaded.
 
 History display would be always fast to load, and would progressively fill up the history.
+
+A strong point of the git format is that it allows multithreading to take place in a very debuggable way, so we can recreate and replay what would otherwise be a very hard to recreate situation, since the threads never interact with each other the same way twice.  Replaying and fixing gets us much quicker to high reliability, since every fault is guaranteed to be able to be replicated.
