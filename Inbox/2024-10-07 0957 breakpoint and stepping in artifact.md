@@ -20,3 +20,8 @@ Get presented with the list of transmissions that resulted, and can choose to se
 Twiddling of arrival times - some actions are timing related, so we could replay the system and twiddle with the order of execution to figure out if we get acceptable results each time.
 
 Step back in time is possible too, since we are never debugging in realtime, we are only doing replays of executions.
+
+If messages were stored as only what changed, then stepping back would be going thru the commits, rather than a different way of navigating history.
+This method would be very space efficient, and would offer great caching opportunities, whereas any time the thread changes, the whole thread has to be re-downloaded.
+
+History display would be always fast to load, and would progressively fill up the history.
