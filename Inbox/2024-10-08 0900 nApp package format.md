@@ -44,3 +44,5 @@ We should export functions in an artifact interface, which allows tools to be ex
 The benefits of exporting a tool in this way is that it is tied to the dreamcatcher ecosystem, and is attributable, it is callable in a standard way.
 
 Some nApps might be able to run in the browser, and be run in an iframe or other isolation mechanism ?
+
+Lifecycle hooks, like when the agent is being run, ended, and other times, we can run some kind of function that will update state to keep things relevant ?
