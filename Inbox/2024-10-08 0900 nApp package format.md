@@ -37,3 +37,10 @@ Use case branches of actual usage need to be linked to it as well somehow, so yo
 Making an AI native package format means it is chattable.
 
 Once we have AI tools to manage this spec, then we should do it, since it takes a lot of work to do without AI help, but with AI, it could be quite easy.
+
+They include files that come with it, which might be starting formats and templates, or a knowledge base, or a prepopulated database file.
+
+We should export functions in an artifact interface, which allows tools to be exported from the nApp too.
+The benefits of exporting a tool in this way is that it is tied to the dreamcatcher ecosystem, and is attributable, it is callable in a standard way.
+
+Some nApps might be able to run in the browser, and be run in an iframe or other isolation mechanism ?
