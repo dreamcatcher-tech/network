@@ -15,3 +15,9 @@ nApps are the way we bridge between the software world and the inference world.
 nApps are how AI is connected to the rest of the world.
 
 Need to call it with background options, so all nAapp calls have a specific format.
+
+a regular isolate call could indeed call this function ?
+
+but the napp isolate should be separate, and done specially.
+
+When it gets called, 
