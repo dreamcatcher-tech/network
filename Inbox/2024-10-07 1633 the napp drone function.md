@@ -22,4 +22,4 @@ but the napp isolate should be separate, and done specially.
 
 When it gets called, it runs in a branch, so that it doesn't take any resources, but also so it doesn't block the main thread.
 
-Multitasking can be added later.
+Multitasking can be added later.  Multitasking is when we call several napps and carry on with something else while those operations complete.

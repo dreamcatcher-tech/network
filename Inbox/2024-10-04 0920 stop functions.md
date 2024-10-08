@@ -48,9 +48,17 @@ So stop replies are not transmitted, they just end.
 
 Must be able to stop a thread remotely, too, so hook up to a running branch complex, and then be able to identify what the triggering id was, and stop it remotely.  Also see the total bill racked up for that action, from a distance.
 
+When call stop, should use broadcast channel to signal that we want a stop.
+The pending action should cause all promises to cancel, and this would bubble up.
+So the stop is recognized at the edges of computation, and ripples up. 
+We would know we have stopped since the action we called would ultimately resolve.
+
+If an action was set to run independently, then it should be attached to some tracking table on the users account, and it should stop in a similar way.
+Closing would notify the parent and so on until it reached the top and confirmed it had stopped.
 ## safeguards
 May need a watcher of runs, or in general, to detect if some looping is occuring.
 These stops should occur during any function action.
 This might be mitigated by billing, where each function call has a token allocation / billing allocation, and if it goes above this
 The accounting would be linked to the invocations of each pierce.
 So the pierce goes thru backchat to get its accounting allowance, and is used to measure everything.
+
