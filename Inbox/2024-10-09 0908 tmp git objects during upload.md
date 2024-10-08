@@ -32,3 +32,5 @@ OR make the basic ops, like write, be done at the time of upload.
 So the instruction is everything the server needs to do a pierce.
 You send in the destination, the pid, in the headers, and then the body is the binary stream, which could be several files or a single one.
 
+
+
