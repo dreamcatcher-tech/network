@@ -16,3 +16,4 @@ nApp dependencies would be git objects, and so you could cache them easily.
 Must include payments deep in the network.
 
 Mount the dependent napps in a specific location within this napp.
+So customers napp would be mounted at `/customers/`
