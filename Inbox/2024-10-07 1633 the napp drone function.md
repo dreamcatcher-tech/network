@@ -20,4 +20,4 @@ a regular isolate call could indeed call this function ?
 
 but the napp isolate should be separate, and done specially.
 
-When it gets called, 
+When it gets called, it runs in a branch, so that it doesn't take any resources, but also so it doesn't block the main thread.
