@@ -506,3 +506,7 @@ quoted from: https://github.com/sys-repo/sys/blob/main/README.md
    Even if you have to detour to build the tools and expect to throw some of them out after you’ve finished using them.
 
 <p>&nbsp;</p>
+## Complexity for tasks
+https://effect.website/ has a nice graphic showing how the complexity of a simple task goes up with the addition of features.  We should show how using our system adds complexity to a single file for achieving things like redundancy, replay, persistence, global distribution
+
+![[Pasted image 20241010110929.png]]
