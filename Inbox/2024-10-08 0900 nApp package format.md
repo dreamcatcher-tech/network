@@ -46,3 +46,12 @@ The benefits of exporting a tool in this way is that it is tied to the dreamcatc
 Some nApps might be able to run in the browser, and be run in an iframe or other isolation mechanism ?
 
 Lifecycle hooks, like when the agent is being run, ended, and other times, we can run some kind of function that will update state to keep things relevant ?
+
+## Presentation
+It should look much like jsr.io, and should present what it is meant to do, provide a test playground where you can chat to the package directly, can ask it what it does etc.  Can also use a deeper tool to interpret what it advertises so you ask meta questions about itself, vs the interface it advertises.
+
+All apps should now how to hoist their call if they are incapable of answering, and so meta style questions should be hoisted.
+
+Then it would show files, which lets people browse the package and see what is in it.
+
+There
