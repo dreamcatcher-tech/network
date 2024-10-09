@@ -58,3 +58,48 @@ Docs would be the exported info about the package, like definitions, terms.
 Language would be what NL flavour it was in, and show show translations between the different languages so people can read in different languages.
 
 Cert the translations, so the tests are rewritten in the other language and the translation is affirmed by some people.  Probably monetization in doing this work.  Tools can make this happen rapidly so people can just read very quickly.
+
+The tests and the latest tps report can be shown, and can be engaged with immediately.  Show the languages the tps reports have been run on, too, using both input translation and whole prompt translation.
+
+To call on this thing is to simply chat to it.
+
+The classical code tools are exported as json interfaces, and can be called on using the llm to chat some params, or manually entering params, or a combination, where a widget is shown that has blanks for you to fill out, which you can chat with and get them filled out with suitable example.
+
+Basically the LLM bundled with the napp knows well how to make the tool calls, so you can play with it in this way.
+
+Changes and more tests can be added directly to the package, and you can try solve them or want an AI try solve them.
+
+The publication page should be no different to the workbench for working on it.
+
+Versions lets you navigate to past versions.
+
+Contributions shows the indifidual contributions that were made, and any contributions that were large enough to warrant an NFT being made prior to commencement.  So can see the effort gone in.
+
+Attribution lets you trace how the payment for these things was dispersed.
+
+Tokens burned shows burns during creation, a typical test burn, and also the current usage burn.  Scores from all the LLMs that are appraising its usage are also given, like some kind of guardian network.  You can take the one provided, or run your own.
+
+Running the classical code would run it in a branch and show the effect.
+
+To call it publicly may cause a link to the invocation to be logged against the package.
+To call privately means you link to this git branch.
+You can update the execution stats, or hosters can update the stats without disclosing actual runs.
+
+Have scores to show all the things a good napp needs.
+
+Can try it with different llms, and show the different test scores when running under each one.
+
+Independent comparisons with other packages.
+
+The tooling code can be any language, and is run in a serverless fashion.
+So this format could also be used for serverless apps to call on it using just a web call.  Can make it easy for code writers to bundle up their code and publish in this runnable way which means zero setup to start interacting, as it can be called using the json functions.
+Slap an LLM in front of it and make it easily demonstratable with no environment setup.
+Plus we are selling hosting services.
+
+Each package is capable of being run without any network connections.
+
+Permissions required is stated, like it might need some access to the api gateway, which is how to access everything, it might need filesystem access to be granted for it to work effectively.
+
+If it needs something exotic and stateful like a sql db, it should come with an example bundled in.  
+
+Users can run it on a dedicated fork if they want to keep it private.
