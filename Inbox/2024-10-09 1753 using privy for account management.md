@@ -22,3 +22,5 @@ Before they log in, we do not sign the pierce messages, except with some localst
 
 Once they log in, they get a higher daily balance, and we sign their transactions with this eth wallet.
 
+Sell higher grade accounts to have private data.
+
