@@ -54,4 +54,7 @@ All apps should now how to hoist their call if they are incapable of answering, 
 
 Then it would show files, which lets people browse the package and see what is in it.
 
-There
+Docs would be the exported info about the package, like definitions, terms.
+Language would be what NL flavour it was in, and show show translations between the different languages so people can read in different languages.
+
+Cert the translations, so the tests are rewritten in the other language and the translation is affirmed by some people.  Probably monetization in doing this work.  Tools can make this happen rapidly so people can just read very quickly.
