@@ -17,3 +17,8 @@ use privy integrations to show up on the list of other apps that we can share ou
 
 But how then do we transition to being a central auth provider ?
 
+Use their embedded wallets as the way to sign messages.
+Before they log in, we do not sign the pierce messages, except with some localstorage signature, but this restricts what they can do, and their guest balance.
+
+Once they log in, they get a higher daily balance, and we sign their transactions with this eth wallet.
+
