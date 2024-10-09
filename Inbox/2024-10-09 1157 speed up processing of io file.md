@@ -15,4 +15,4 @@ Also making the io channel flush correctly would save a lot of the parsing time.
 
 If the io file held the PID in it, then we can lock the logic of it, so it can be cached in a weakmap.
 
-But, no need to freeze, since ts handles the safety of all modifications since then
+But, no need to freeze, since ts handles the safety of all modifications since then.
