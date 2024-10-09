@@ -480,3 +480,29 @@ If you have the system where You can amplify the labor of any given person The
 Finally, the benefits of having a blockchain system underneath become apparent. Being able to attach the complete system state to any fault that has been recorded, allows trivial debugging to take place, where the running system has captured the bug exactly as it occurred. No more processing of logs, no more guessing at system state, no more deploying simply with more logging attached. Additionally, by having this full system state, system bugs may be fixed entirely by an AI, where the expectation was not met, but all the information was available for the AI to reason its way to a suitable outcome. This can be deployed at an arbitrarily small level to allow people to infinitely customise their own home applications, to make them do exactly what they want, every single time, without the need for expert advice from a human. No longer do you have to accept the mass market software results, you can customise it just for you, for a market of one, for the same price as it costs to make an app for a market of a million. The days of mass-produced software being the only way to receive software are over. Everyone can have as much software as they want, that does exactly as they wish from now on.
 
 The question becomes, what should we do with such a system.
+
+## Text - the universal interface
+
+quoted from: https://github.com/sys-repo/sys/blob/main/README.md
+
+[Doug McIlroy's](https://en.wikipedia.org/wiki/Douglas_McIlroy) as quoted by [Salus](https://en.wikipedia.org/wiki/Peter_H._Salus) in "[A Quarter Century of Unix](https://www.google.co.nz/books/edition/_/ULBQAAAAMAAJ?hl=en&gbpv=0)" ([ref](https://blog.izs.me/2013/04/unix-philosophy-and-nodejs/)):
+
+- Write programs that do one thing and do it well.
+- Write programs to work together.
+- Write programs to handle text streams, because that is a universal interface.
+
+[Doug McIlroy's](https://en.wikipedia.org/wiki/Douglas_McIlroy) 4-point formulation of the [Unix Philosophy](http://www.catb.org/esr/writings/taoup/html/ch01s06.html):
+
+1. **Make each program do one thing well.**  
+   To do a new job, build afresh rather than complicate old programs by adding new features.
+
+2. **Expect the output of every program to become the input to another, as yet unknown, program.**  
+   Don’t clutter output with extraneous information. Avoid stringently columnar or binary input formats. Don’t insist on interactive input.
+
+3. **Design and build software, even operating systems, to be tried early, ideally within weeks.**  
+   Don’t hesitate to throw away the clumsy parts and rebuild them.
+
+4. **Use tools in preference to unskilled help to lighten a programming task**,  
+   Even if you have to detour to build the tools and expect to throw some of them out after you’ve finished using them.
+
+<p>&nbsp;</p>
