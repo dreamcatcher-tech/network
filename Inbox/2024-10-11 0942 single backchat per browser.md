@@ -7,11 +7,12 @@
 
 If a shared worker or service worker was handling all the backchat operations, which meant zero load on the ui thread, then 
 
-msw might be good for storybook so we can fake or mock responses from the widget api, since this is a shared api and no easil made static by dropping in props from on high.
+msw might be good for storybook so we can fake or mock responses from the widget api, since this is a shared api and no easil made static by dropping in props from on high.  Can also model loading and offline responses.
 
 Especially since there might be many instances of the api running ?
 
 BUT having pure props means that we can deny network access for the widgets easily.
+Pure props means we can tick a change along by putting in a single new splice.
 
 If the backchat branch was per browser, then it just makes a new thread each time a new tab opens, which it does already, anyway.
 
