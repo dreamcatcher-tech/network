@@ -12,3 +12,5 @@ Then show how it relates to a particular napp, and how many napps might fulfill 
 If we can demonstrate the modularity of our system, this completes the utility demonstration - if people could see how it could be anything at all for them, just like github can be anything at all.
 
 Then, we can focus on demonstrating the attribution.
+
+BUT is this all possible using artifact alone ? is it simply that the AI makes the usage of this system much nicer ?
