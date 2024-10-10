@@ -115,3 +115,7 @@ Napps should be aware of their costs, and they should be able to estimate accura
 We can test this by sampling real invocations and asking it to estimate those parameters.  A good estimator score means you can rely on the results it gives.
 
 It should be able to show its widgets that it exports too, and show scenarios where they exist, as well as how they can be combined, which an LLM should exercise for you.  Then when you chat, you can have a mini stateboard show what you would see, and interact with it there.  Also show the selection integration so you can know how it feed back into the prompt selection ui.
+
+## Notes
+
+Peer deps say other napps that this thing expects to call but that aren't children of it.
