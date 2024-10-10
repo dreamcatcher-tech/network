@@ -22,3 +22,4 @@ The price of platform coin goes up over time, based on usage, so new users are p
 But, without stock, we cannot get some gains for our efforts, altho we would have NFTs that could be sold and would reflect similar types of gains.  We could list a pubco afterwards, as a peer, which expends effort into the network, but this would not need to be the first action.
 
 So the buildside would be entirely crypto based, but the buy side would be purchasing from a hoster directly.  Prohibit stripe payers from receiving any profit share, as this is problematic with credit card clearance.
+

@@ -14,3 +14,7 @@ Because it is immutable, it should be readily available to anything that wants t
 But deploy is not quite built this way, so we would have to make something on lambda or something that allows true dynamic imports.
 
 Or just make a packaging function that makes a static import map out of the library and stores it in the cache.
+
+May use cloudflare platforms to be able to deploy multiple packages.  Or just make a periodic big deployment that as the latest version of a publised package in it.
+
+Or just use subhosting and make a deployment for each package.
