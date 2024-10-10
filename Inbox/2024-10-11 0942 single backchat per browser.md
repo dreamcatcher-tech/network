@@ -22,3 +22,6 @@ They can actually process concurrent requests, since while one pierce is awaitin
 OR pierce the remote thread directly ?
 Then the tab session stamps the pierce so we know which tab session did what ?
 
+Saves the creation of a new backchat branch each time, and allows a shared worker to be in charge of a single backchat.
+
+The core problem tho, is that commits and things are taking too long anyway, so speed isn't the reason to do this, but a more efficient data infrastructure is the reason - central worker that handles network and binary tasks and can pass big binary data around by URL to take all load of the ui thread.  Signing messages and other operations.
