@@ -513,3 +513,5 @@ https://effect.website/ has a nice graphic showing how the complexity of a simpl
 
 ## Reliable probabilistic systems
 the difference between reliable execution in conventional systems, and reliable execution in probabilistic systems.  Show how the only way to get reliability out of a probabilistic system is heavy probabilistic testing.  Define where artifact ends and dreamcatcher begins.
+
+Describe why the napps format is needed.
