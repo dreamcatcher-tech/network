@@ -107,3 +107,11 @@ Users can run it on a dedicated fork if they want to keep it private.
 the tests of one napp can be applied against another to show switchability - the hash of the test folder would be the same.
 
 Mock responses for its tools can be provided, to allow testing without making expensive or slow calls out to the api gateway.
+
+If you can chat with a napp, then you should be able to chat with the collection of napps to find the best one for your needs.  Generate some example responses you want, and ask the user to confirm them if they have time, then crawl the list and run queries against each one looking for suitability.  Raise an issue if needs are not met with ones that come close.
+
+Napps should be aware of their costs, and they should be able to estimate accurately the price of their invocations.
+
+We can test this by sampling real invocations and asking it to estimate those parameters.  A good estimator score means you can rely on the results it gives.
+
+It should be able to show its widgets that it exports too, and show scenarios where they exist, as well as how they can be combined, which an LLM should exercise for you.  Then when you chat, you can have a mini stateboard show what you would see, and interact with it there.  Also show the selection integration so you can know how it feed back into the prompt selection ui.
