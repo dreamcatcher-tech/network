@@ -38,3 +38,11 @@ So either you participate, or the efforts of others are decentralized and disint
 In the first instance, you are receiving a completed thing, when it is unconstructed.  Secondly, once constructed, whatever revenues you receive is not the result of any particular person.  So we could make this thing tradeable if the unit was being used by disconnected parties.  This is when it is decentralized and generally useful.  Participation is required to be directly useful, but indirect, which includes revenue from Dreamcatcher, needs to be sufficiently decentralized that nobody can be relying on a single individual for those gains - at that point it can be traded publicly.
 
 During the killzone, we will need to treat carefully and build up legal expertise and cash reserves to defend this view.  We can raise a traditional company to support this view.
+
+When decentralized, we can issue a currency that represents aggregate value, which is used to store and pay the attributions.  It slowly inflates based on usage.
+
+We would actively alert the SEC when individuals are promoting our token by parsing using AI.
+
+We could stop participating as a show that the thing works fine in our absence.
+
+we would have the whole network be in this participation mode only, then we would allow some items to be classes as decentralized.  Then we would ultimately strive for the core network to be decentralized too.  Along the way, we would raise a traditional security to fuel the network, not to build it, where the design goals fluctuate a lot.  But once the goals are set, and the network is stable, we list publicly and use that to boost the network on its way to decentralization, thru intelligent dispersal of capital.
