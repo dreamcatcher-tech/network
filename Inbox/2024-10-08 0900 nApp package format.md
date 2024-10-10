@@ -103,3 +103,7 @@ Permissions required is stated, like it might need some access to the api gatewa
 If it needs something exotic and stateful like a sql db, it should come with an example bundled in.  
 
 Users can run it on a dedicated fork if they want to keep it private.
+
+the tests of one napp can be applied against another to show switchability - the hash of the test folder would be the same.
+
+Mock responses for its tools can be provided, to allow testing without making expensive or slow calls out to the api gateway.
