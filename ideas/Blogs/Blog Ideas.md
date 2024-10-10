@@ -510,3 +510,6 @@ quoted from: https://github.com/sys-repo/sys/blob/main/README.md
 https://effect.website/ has a nice graphic showing how the complexity of a simple task goes up with the addition of features.  We should show how using our system adds complexity to a single file for achieving things like redundancy, replay, persistence, global distribution
 
 ![[Pasted image 20241010110929.png]]
+
+## Reliable probabilistic systems
+the difference between reliable execution in conventional systems, and reliable execution in probabilistic systems.  Show how the only way to get reliability out of a probabilistic system is heavy probabilistic testing.  Define where artifact ends and dreamcatcher begins.

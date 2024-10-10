@@ -17,3 +17,8 @@ Must include payments deep in the network.
 
 Mount the dependent napps in a specific location within this napp.
 So customers napp would be mounted at `/customers/`
+
+When calling tools that a napp exports, this would be just the remapping format ?
+Or might need a separate section ?
+Or, is the only way that functions can be deployed is via napp ?
+So to call your own functions, you call the self napp ?
