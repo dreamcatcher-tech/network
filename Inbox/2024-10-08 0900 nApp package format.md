@@ -132,3 +132,19 @@ All network should go via that api gateway, which is an action driven network in
 Worst case we can allow some special access in cases that need it, and we'll work to standardize that access.
 
 But if we passed in the whole folder, then it worked on it in isolation and passed it back, that might be enough, so they waouls be little minibranches that only alter the narrow file content that it was allowed to access.
+
+We would attach a model, which is a specific kind of api, which would come with some replay ability, some mocking ability, so you could easily lay out what responses you want back so you can prove our your logic without the variance of AI plaguing you.
+
+Could allow multiple models and show them having been tested.  Could swap out the model and then run the tests. 
+
+Browse suitable api providers - maybe these are napps too, where we choose some defaults, but you can easy swap them out.
+
+Basically if everything comes as a unit - a package - it is much easier to reason about, pass around, improve, rely upon.
+
+Some of the network gateway functions would be provided by trusted parties, and others would be someone else just providing an API key and some billing arrangement, to make it easy for anyone to just spin up the thing and go, rather than having to connect a bunch of services all together, just to have a play.
+
+All API calls are replayable, which makes it easy to debug, or to simulate and test against.
+
+The ability to produce reliable AI is separate to the ability to produce reliable code - it is an entirely different medium, and needs to be approached differently - it is probabilistic assurance, rather than deterministic.
+
+Napps can be taken and made portable easily, so someone could self host very simply.
