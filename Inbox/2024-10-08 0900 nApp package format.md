@@ -119,3 +119,8 @@ It should be able to show its widgets that it exports too, and show scenarios wh
 ## Notes
 
 Peer deps say other napps that this thing expects to call but that aren't children of it.
+
+? Do we need a standard for the comms between these napps ?
+like an sbar type of method, which is proven to be effective in medical and military settings.  This should be overrideable and so plain text is possible, but this format is preferred, and the napp should indicate it is tuned for a particular request type.
+
+Or maybe its on the caller to call in a specific way that is proven to be beneficial ?
