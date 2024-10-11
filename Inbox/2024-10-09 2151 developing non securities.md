@@ -46,3 +46,5 @@ We would actively alert the SEC when individuals are promoting our token by pars
 We could stop participating as a show that the thing works fine in our absence.
 
 we would have the whole network be in this participation mode only, then we would allow some items to be classes as decentralized.  Then we would ultimately strive for the core network to be decentralized too.  Along the way, we would raise a traditional security to fuel the network, not to build it, where the design goals fluctuate a lot.  But once the goals are set, and the network is stable, we list publicly and use that to boost the network on its way to decentralization, thru intelligent dispersal of capital.
+
+So if we get the platform concept working and demonstrating utility and growth, then we go reverse back into the shell where the patents are, so we can apply those patents to expanding the capabilities and enforcing the principles of the platform, as well as raising capital.
