@@ -124,3 +124,11 @@ Peer deps say other napps that this thing expects to call but that aren't childr
 like an sbar type of method, which is proven to be effective in medical and military settings.  This should be overrideable and so plain text is possible, but this format is preferred, and the napp should indicate it is tuned for a particular request type.
 
 Or maybe its on the caller to call in a specific way that is proven to be beneficial ?
+
+Needs a section for api calls, also a filesystem map / chroot, as it might need some config data about where to write things.  Also network permissions, maybe on a per isolate level, or at least at the napp level, so we can lock down the package access.
+
+All network should go via that api gateway, which is an action driven network interface.  Streaming of sockets would be a speciality service, but again that could be standardized in terms of what packets and what addresses.
+
+Worst case we can allow some special access in cases that need it, and we'll work to standardize that access.
+
+But if we passed in the whole folder, then it worked on it in isolation and passed it back, that might be enough, so they waouls be little minibranches that only alter the narrow file content that it was allowed to access.
