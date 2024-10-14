@@ -85,6 +85,7 @@ lose points for delivery discipline late.
 
 Sell services to have a registered psych review your game scenarios and provide insight / advice.  Use the scoring mechanism and show the outcomes, and then allow the game solver to try have the best outcomes using different methods.
 
+The key to all discipline is understanding cause and effect.
 ## Negative scores
 - inconsistent discipline
 - witnessing arguments.
