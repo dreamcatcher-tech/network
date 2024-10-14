@@ -9,3 +9,8 @@ How easy to upgrade with a new model ?
 
 Easy to integrate an external api
 
+time to include new feature.
+
+Portability - can you run it on your own systems ?
+
+Collaboration ?

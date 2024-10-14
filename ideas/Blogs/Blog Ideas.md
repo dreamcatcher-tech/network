@@ -525,6 +525,13 @@ We propose then that a meta package format is required, where the exported inter
 
 We offer a translation layer, where a highly efficient router handles translating the json calls to native function calls, in whatever language the napp is in.  So if js calls python, it goes by this layer into native python and then back out.
 
-To further extend this, 
+To further extend this, we can sit the napp runner atop artifact
 
-Each call needs to come
+Each call needs to come with files and a filesystem area that it is allowed to modify.
+Calls need to say where the state should go, in case we want to call successively.
+
+Then offer a platform that is basically serverless running of these napps at scale.  It starts with the package itself in the package hoster being runnable straight from the web page, then allows it to be composed in the dreamcatcher, but you could also call this from other applications as well.
+
+In js make a library that can run napps inside javascript where the api comes out correctly typed.
+
+This format also captures the ne
