@@ -515,3 +515,16 @@ https://effect.website/ has a nice graphic showing how the complexity of a simpl
 the difference between reliable execution in conventional systems, and reliable execution in probabilistic systems.  Show how the only way to get reliability out of a probabilistic system is heavy probabilistic testing.  Define where artifact ends and dreamcatcher begins.
 
 Describe why the napps format is needed.
+
+## Why another package format
+All functions across all languages need to be called by AI using json.  That might change in the future, but for LLMs, this seems true long term, and it is definitely true right now.  Any future calling format then, would also be able to call by way of json, for backward compatibility and broad utility.
+
+So then, what has been lacking for a unifying package format is the means of communication.  Invocation usually needs to be via the package managers custom tool, or at the very least, invocation needs to be in the language of the package manager.  But what if it weren't ?
+
+We propose then that a meta package format is required, where the exported interface is described and invoked by json.  It can operate at two layers - one is pure package format, where it can be invoked
+
+We offer a translation layer, where a highly efficient router handles translating the json calls to native function calls, in whatever language the napp is in.  So if js calls python, it goes by this layer into native python and then back out.
+
+To further extend this, 
+
+Each call needs to come

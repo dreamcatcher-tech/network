@@ -90,6 +90,8 @@ The key to all discipline is understanding cause and effect.
 Provide a recording system where behavioural exceptions can be listed, so we can trace them over time.  Remedies and other related notes can be added.  Reasoners try to spot trends in the behaviours and measure effectiveness of steering.
 
 All parents do this where they report on their child to one another, so this system might help them do that more formally with very little effort, and offer suggestions for help.  Maintain a behavioural plan and tweak it over time.
+
+As the parental tolerance goes down, rolling the dice gets a probability multiplier for when you're going to throw your toys out of the cot.
 ## Negative scores
 - inconsistent discipline
 - witnessing arguments.
