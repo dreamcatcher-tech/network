@@ -521,17 +521,29 @@ All functions across all languages need to be called by AI using json.  That mig
 
 So then, what has been lacking for a unifying package format is the means of communication.  Invocation usually needs to be via the package managers custom tool, or at the very least, invocation needs to be in the language of the package manager.  But what if it weren't ?
 
-We propose then that a meta package format is required, where the exported interface is described and invoked by json.  It can operate at two layers - one is pure package format, where it can be invoked
+We propose then that a meta package format is required, where the exported interface is described and invoked by json.  It can operate at two layers - one is pure package format, where it can be invoked by any other runtime with any other environments, or it can be run on artifact.  When it gets called, it needs adapters passed in to give it network ability and filesystem ability, as well as permissions.
 
-We offer a translation layer, where a highly efficient router handles translating the json calls to native function calls, in whatever language the napp is in.  So if js calls python, it goes by this layer into native python and then back out.
+Inside each package runtime is the ability to load the code natively with varying degrees of permissions.  If required it can dockerize the whole thing.  Every major language has their own form of sandboxing.
 
-To further extend this, we can sit the napp runner atop artifact
+We offer a translation layer, where a highly efficient router handles translating the json calls to native function calls, in whatever language the napp is in.  So if js calls python, it goes by this layer into native python and then back out.  This runner is callable by each native language externally, so js can have an npm package that can run a napp, where that napp might be written in js, and is an npm package, or it might be python, or a rust crate.
+
+In a browser, with a bundler, we can offer some ability to pass thru the underlying package if it is browser compatible, so the napp can work with bundlers.
+
+To further extend this, we can sit the napp runner atop artifact, which is its native home, but artifact simply provides a git filesystem, and repeatable execution abilities - the napp format is independent.
+
+Repeatable build issues are dealt with by having the package source present, and then building yourself in the running environment, rather than accepting prebuilts.  If there is attestation, or if you opt in, you can trust the build, but the source is always hashable.
+
+Git means that multiple napps that share elements are deduplicated.  Upgrades download only what changed - the napp package delta.
+
+The format includes payment for use, and payment for modifications, as well as attibution to distribute out the payments.
 
 Each call needs to come with files and a filesystem area that it is allowed to modify.
-Calls need to say where the state should go, in case we want to call successively.
+Calls need to say where the state should go, in case we want to call successively.  Also the calls would return some stateid to the caller, so it can resume the call.
 
-Then offer a platform that is basically serverless running of these napps at scale.  It starts with the package itself in the package hoster being runnable straight from the web page, then allows it to be composed in the dreamcatcher, but you could also call this from other applications as well.
+Then offer a platform that is basically serverless running of these napps at scale.  It starts with the package itself in the package hoster being runnable straight from the web page, then allows it to be composed in the dreamcatcher, but you could also call this from other applications as well.  Could call via api on the hoster, or could run it natively in the same machine, or make your own hosting environment.  So your app can start making api calls to the serverless platform, can change between hosters, or keep several hosters as failover, then migrate to running on your own hardware.
 
 In js make a library that can run napps inside javascript where the api comes out correctly typed.
 
-This format also captures the ne
+This format also captures the need for natural language calls, which leverage intelligence to perform the calls.  The intelligence can be presented as a pure NL interface, or it can be used by function calls.
+
+The packaging can optionally manage all the descriptions, images for logos, etc.
