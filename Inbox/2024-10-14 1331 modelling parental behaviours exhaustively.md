@@ -86,6 +86,10 @@ lose points for delivery discipline late.
 Sell services to have a registered psych review your game scenarios and provide insight / advice.  Use the scoring mechanism and show the outcomes, and then allow the game solver to try have the best outcomes using different methods.
 
 The key to all discipline is understanding cause and effect.
+
+Provide a recording system where behavioural exceptions can be listed, so we can trace them over time.  Remedies and other related notes can be added.  Reasoners try to spot trends in the behaviours and measure effectiveness of steering.
+
+All parents do this where they report on their child to one another, so this system might help them do that more formally with very little effort, and offer suggestions for help.  Maintain a behavioural plan and tweak it over time.
 ## Negative scores
 - inconsistent discipline
 - witnessing arguments.
