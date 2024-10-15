@@ -148,3 +148,7 @@ All API calls are replayable, which makes it easy to debug, or to simulate and t
 The ability to produce reliable AI is separate to the ability to produce reliable code - it is an entirely different medium, and needs to be approached differently - it is probabilistic assurance, rather than deterministic.
 
 Napps can be taken and made portable easily, so someone could self host very simply.
+
+Must include billing functions for running.
+
+Can have its own money, so an instance can be allowed to operate with its own funds, making decisions autonomously.

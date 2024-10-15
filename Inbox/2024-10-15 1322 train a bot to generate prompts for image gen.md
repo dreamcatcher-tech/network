@@ -30,3 +30,5 @@ o1 can then help you reason about the changes you want and have a go at tweaking
 The visual show of it grinding thru options would be better than text since it is easier to understand its progression than raw numbers of text.  But if we had some running progress bars or score cards, that would work too.
 
 Shows how multistage calculation gets you closer to your goal.
+
+Also if the requests are getting moderated, we should be able to get the bots to try figure out ways around it, and you can guide it for a range of prompts to experiment with, so you can condense down the responses.
