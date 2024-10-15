@@ -547,3 +547,5 @@ In js make a library that can run napps inside javascript where the api comes ou
 This format also captures the need for natural language calls, which leverage intelligence to perform the calls.  The intelligence can be presented as a pure NL interface, or it can be used by function calls.
 
 The packaging can optionally manage all the descriptions, images for logos, etc.
+
+Distinct difference between deterministic and probabilistic computing.
