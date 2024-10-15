@@ -16,3 +16,7 @@ For multiple image generations, like when the IP Adapter setting in octo.ai is a
 We should be able to have a comparator run for how to achieve ip transfer on a range of different settings and approaches.  Offer prizes for increasing the score value of these tests.
 
 We should be able to have people talk about these topics, and immediately have example napp output to show, which people can intercept and play with themselves.
+
+Do grind generation, where the output is fed back into a vision aware model, and the differences are written out, then o1 comes up with a plan to update it, then it loops again.
+
+It checks itself to ensure it hasn't run afowl of any loop limits.
