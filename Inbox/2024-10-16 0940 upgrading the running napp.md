@@ -10,3 +10,5 @@ To know that the napp has upgraded, something needs to check or watch to see if 
 We could periodically check, or check lazily every time there is an action then raise up a flag.
 
 Ideally we would check for an upgrade before running any actions and do the upgrade first.
+
+napp upgrades are a single atomic step, so you can't get your running system into a partial state.
