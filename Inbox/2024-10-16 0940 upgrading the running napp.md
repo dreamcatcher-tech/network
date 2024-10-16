@@ -12,3 +12,7 @@ We could periodically check, or check lazily every time there is an action then 
 Ideally we would check for an upgrade before running any actions and do the upgrade first.
 
 napp upgrades are a single atomic step, so you can't get your running system into a partial state.
+
+On disk formats would need to be handled ?
+
+Can test the last handful of messages inside this napp and make sure there are no errors ?

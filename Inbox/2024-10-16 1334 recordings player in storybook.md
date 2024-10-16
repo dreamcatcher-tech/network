@@ -8,3 +8,5 @@
 Use addons and the connection that have to server to write snapshot files to disk.
 
 Addon panel that lets you inspect the responses and what is queued up, and let you tamper with them, possibly with an AI assistant to do the tamper.
+
+They have added the ability to write to the files from within the storybook, so we can jack in to this.

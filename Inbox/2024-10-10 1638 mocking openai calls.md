@@ -21,6 +21,8 @@ Or set a global flag to compare them and ensure the results are equivalent still
 
 Or use pollyjs to do the request recording and replay ?
 
+BUT what if the ai calls are happening out of order ?
+So it should be bonded to the PID they are happening on, since this guarantees order.
 ## custom mocker
 
 If we hook the completions logic, we can indicate that we want to build up some mocks based on filename.
