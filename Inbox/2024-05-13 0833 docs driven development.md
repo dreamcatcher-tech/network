@@ -14,3 +14,5 @@ Ideally the AI should call the human where it got stuck ?  First fix the docs or
 The key is programming to an interface.
 
 Ideally there would be a model checker like TLA+ running in parallel, and so the model has to pass model validation first.  Later we might at crypto checking to ensure a protocol we are proposing is secure ?
+
+If the plan doesn't make sense to the AI, then it needs more work.  Only once it makes sense should we commence work of any kind.
