@@ -14,3 +14,7 @@ If it was run externally then it shows good reliability.
 What would a statuspage napp look like ?
 
 Do napps need cron specifications ? is cron an api gateway call ?
+
+Do a single api call that tests everything, and can return some stats and graphs.
+
+Making our own version that just charged you for what it uses would be good.
