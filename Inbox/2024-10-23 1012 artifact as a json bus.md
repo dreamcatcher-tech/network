@@ -6,3 +6,5 @@
 >[!danger] Depends: 
 
 Relays json objects and the files snapshot.
+
+The sole purpose is to manage file snapshots, execution branches, and json message passing between the executing napps.
