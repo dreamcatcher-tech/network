@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inbox/2024-10-21 1651 lockdown compartments essential for debugging strange code.md",
+                "file": "Inbox/2024-10-22 2035 change isolate lookup to be based on napps.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-10-21 1651 lockdown compartments essential for debugging strange code"
+              "title": "2024-10-22 2035 change isolate lookup to be based on napps"
             }
           }
         ]
@@ -194,7 +194,11 @@
   },
   "active": "4b9389217724988c",
   "lastOpenFiles": [
+    "Inbox/2024-10-22 2032 remove file ops from api and overwrite native ones.md",
+    "Inbox/2024-10-22 2035 change isolate lookup to be based on napps.md",
     "Inbox/2024-10-22 1705 mapping napp to code.md",
+    "Inbox/2024-10-21 1651 lockdown compartments essential for debugging strange code.md",
+    "Requests.md",
     "Inbox/2024-10-22 1701 isolating react components.md",
     "Inbox/2024-10-22 1646 isolating react components.md",
     "Inbox/2024-10-22 1644 help bot that can run some code to verify an assumption before answering.md",
@@ -211,7 +215,6 @@
     "Inbox/2024-10-22 0948 napps as a way to do ai calls in any circumstance reliably.md",
     "Inbox/2024-10-22 0943 AI tests to ensure competency with a service.md",
     "Inbox/2024-10-22 0941 runtime as a napp.md",
-    "Inbox/2024-10-22 0935 use ses with endo already bundled.md",
-    "Requests.md"
+    "Inbox/2024-10-22 0935 use ses with endo already bundled.md"
   ]
 }
