@@ -43,13 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inbox/2024-10-23 0929 testing napps without blockchain.md",
+                "file": "Inbox/2024-10-23 1012 artifact as a json bus.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-10-23 0929 testing napps without blockchain"
+              "title": "2024-10-23 1012 artifact as a json bus"
             }
           }
         ],
@@ -246,10 +246,12 @@
   },
   "active": "6dcf7e6eab1cdfc1",
   "lastOpenFiles": [
+    "Inbox/2024-10-23 1009 rules for napp referencing.md",
+    "Inbox/2024-10-23 1012 artifact as a json bus.md",
+    "Inbox/2024-10-22 1705 mapping napp to code.md",
+    "Inbox/2024-10-23 0929 testing napps without blockchain.md",
     "Inbox/2024-10-23 0943 remote app like CRM.md",
     "Inbox/2024-10-23 0946 instant return actions.md",
-    "Inbox/2024-10-23 0929 testing napps without blockchain.md",
-    "Inbox/2024-10-22 1705 mapping napp to code.md",
     "Inbox/2024-10-22 2035 change isolate lookup to be based on napps.md",
     "Inbox/2024-10-22 2032 remove file ops from api and overwrite native ones.md",
     "Inbox/2024-10-22 1605 rewriting side effects.md",
@@ -270,8 +272,6 @@
     "Inbox/2024-10-22 0948 napps as a way to do ai calls in any circumstance reliably.md",
     "Inbox/2024-10-22 0953 a coin based on compute thruput.md",
     "Inbox/2024-10-22 0935 use ses with endo already bundled.md",
-    "Inbox/2024-10-21 1651 lockdown compartments essential for debugging strange code.md",
-    "ideas/Interpulse/API/Hooks for async iterables and hamts.md",
     "dictionary/Transmission Network",
     "website/static/obsidian/Pasted image 20241010110929.png",
     "sketches/artifact sketches.excalidraw",

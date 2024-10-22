@@ -16,3 +16,5 @@ The napp object might be an export, or at least accessible at a certain path ?
 Need to align things with the napp.json and the internal package manager.
 
 napps can rewrite the tool names of the napps they import, too.
+
+If it is a napp, it is also an npm package, and so we can import code from other napps as tho they were native modules.
