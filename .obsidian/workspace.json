@@ -43,13 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inbox/2024-10-22 1644 help bot that can run some code to verify an assumption before answering.md",
+                "file": "Inbox/2024-10-22 1705 mapping napp to code.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-10-22 1644 help bot that can run some code to verify an assumption before answering"
+              "title": "2024-10-22 1705 mapping napp to code"
             }
           }
         ],
@@ -246,9 +246,12 @@
   },
   "active": "6dcf7e6eab1cdfc1",
   "lastOpenFiles": [
-    "Inbox/2024-10-22 1646 isolating react components.md",
-    "Inbox/2024-10-22 1644 help bot that can run some code to verify an assumption before answering.md",
     "Inbox/2024-10-22 1605 rewriting side effects.md",
+    "Inbox/2024-10-22 1705 mapping napp to code.md",
+    "Inbox/2024-10-22 1644 help bot that can run some code to verify an assumption before answering.md",
+    "Inbox/2024-10-22 1701 isolating react components.md",
+    "Inbox/2023-10-10 1422 AI musings.md",
+    "Inbox/2024-10-22 1646 isolating react components.md",
     "Inbox/2024-10-22 1611 napp as a key on existing config files.md",
     "Inbox/2024-10-22 1555 financial admin gateway service.md",
     "Inbox/2024-10-22 1537 function calling.md",
@@ -256,7 +259,6 @@
     "Inbox/2024-10-22 1518 sniffing the runtime.md",
     "Inbox/2024-10-22 1521 make a widget to edit napp json.md",
     "Inbox/2024-10-22 1500 how to edit the napp json live.md",
-    "Inbox/2023-10-10 1422 AI musings.md",
     "Inbox/2024-10-22 0941 runtime as a napp.md",
     "Inbox/2024-10-22 1157 codecoverage for agents.md",
     "Inbox/2024-10-22 0943 AI tests to ensure competency with a service.md",
@@ -271,8 +273,6 @@
     "Inbox/2024-10-21 1528 artifact being a napp.md",
     "Inbox/2024-10-21 1016 napp workflow.md",
     "Inbox/2024-10-21 1513 api gateway as dependency injection.md",
-    "Inbox/2024-10-21 1525 theory is that all comms can be json.md",
-    "Inbox/2024-10-21 1424 code mirroring to a filesystem.md",
     "website/static/obsidian/Pasted image 20241010110929.png",
     "sketches/artifact sketches.excalidraw",
     "sketches",
