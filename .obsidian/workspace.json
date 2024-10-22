@@ -17,7 +17,9 @@
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "2024-05-24 1530 db version prefixes"
             }
           },
           {
@@ -30,7 +32,9 @@
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "2023-05-08 1614 SILD Efforts"
             }
           },
           {
@@ -39,11 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inbox/2024-10-22 0941 runtime as a napp.md",
+                "file": "Inbox/2024-10-22 1449 gateway is side effects.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "2024-10-22 1449 gateway is side effects"
             }
           }
         ],
@@ -63,7 +69,9 @@
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "2024-09-17 0948 streaming infrastructure has multiple uses"
             }
           }
         ]
@@ -86,7 +94,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -101,7 +111,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "byModifiedTime"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -109,7 +121,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -132,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Inbox/2024-10-22 0941 runtime as a napp.md",
+                "file": "Inbox/2024-10-22 1449 gateway is side effects.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +154,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 2024-10-22 1449 gateway is side effects"
             }
           },
           {
@@ -149,10 +165,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Inbox/2024-10-22 0941 runtime as a napp.md",
+                "file": "Inbox/2024-10-22 1449 gateway is side effects.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 2024-10-22 1449 gateway is side effects"
             }
           },
           {
@@ -163,7 +181,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -175,7 +195,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           },
           {
@@ -184,8 +206,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Inbox/2024-10-22 0941 runtime as a napp.md"
-              }
+                "file": "Inbox/2024-10-22 1449 gateway is side effects.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2024-10-22 1449 gateway is side effects"
             }
           },
           {
@@ -193,7 +217,9 @@
             "type": "leaf",
             "state": {
               "type": "git-view",
-              "state": {}
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
@@ -220,8 +246,10 @@
   },
   "active": "6dcf7e6eab1cdfc1",
   "lastOpenFiles": [
-    "Inbox/2024-10-22 1157 codecoverage for agents.md",
+    "Inbox/2023-10-10 1422 AI musings.md",
+    "Inbox/2024-10-22 1449 gateway is side effects.md",
     "Inbox/2024-10-22 0941 runtime as a napp.md",
+    "Inbox/2024-10-22 1157 codecoverage for agents.md",
     "Inbox/2024-10-22 0943 AI tests to ensure competency with a service.md",
     "Inbox/2024-10-22 0948 napps as a way to do ai calls in any circumstance reliably.md",
     "Inbox/2024-10-22 0953 a coin based on compute thruput.md",
@@ -238,7 +266,6 @@
     "Inbox/2024-10-21 1424 code mirroring to a filesystem.md",
     "Inbox/2024-10-21 1414 shifting to actions with no functions calling installed napps.md",
     "Inbox/2024-10-21 1141 napp wrapping eth contracts.md",
-    "Inbox/2023-10-10 1422 AI musings.md",
     "Inbox/2024-10-21 1106 napp provenance.md",
     "Inbox/2024-10-21 0955 monitoring system.md",
     "Inbox/2024-10-15 1830 napp HAL.md",
@@ -246,7 +273,6 @@
     "Inbox/2024-10-20 1042 canvas editing of docs using chunked documents.md",
     "Inbox/2024-10-18 1612 pointing the UI at the API.md",
     "Inbox/2024-10-18 1654 static http server straight from artifact.md",
-    "Inbox/2024-10-18 1519 isolates as napps.md",
     "website/static/obsidian/Pasted image 20241010110929.png",
     "sketches/artifact sketches.excalidraw",
     "sketches",
