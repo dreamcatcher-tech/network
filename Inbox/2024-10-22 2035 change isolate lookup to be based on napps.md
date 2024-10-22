@@ -14,3 +14,5 @@ You could just asset it, if you know what it is supposed to be.
 Then you would error if it wasn't as you thought.
 
 Also can send the action based on the napp at the commit you read.
+
+So you could assert that some particular napp was present, and this would be done by retrieving the interface of the thing, which you could include typings for.
