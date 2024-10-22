@@ -11,3 +11,5 @@ Sideeffects are resolved based on the environment at the top level, and are refe
 Napp reference patter is either a string to a napp.
 
 Self referential napp resolution patterns.
+
+Are gateway functions just tool calls that are known to run with side effects ?

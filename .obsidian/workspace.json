@@ -43,13 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inbox/2024-10-22 1449 gateway is side effects.md",
+                "file": "Inbox/2024-10-22 1537 function calling.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-10-22 1449 gateway is side effects"
+              "title": "2024-10-22 1537 function calling"
             }
           }
         ],
@@ -246,8 +246,12 @@
   },
   "active": "6dcf7e6eab1cdfc1",
   "lastOpenFiles": [
-    "Inbox/2023-10-10 1422 AI musings.md",
     "Inbox/2024-10-22 1449 gateway is side effects.md",
+    "Inbox/2024-10-22 1537 function calling.md",
+    "Inbox/2024-10-22 1518 sniffing the runtime.md",
+    "Inbox/2024-10-22 1521 make a widget to edit napp json.md",
+    "Inbox/2024-10-22 1500 how to edit the napp json live.md",
+    "Inbox/2023-10-10 1422 AI musings.md",
     "Inbox/2024-10-22 0941 runtime as a napp.md",
     "Inbox/2024-10-22 1157 codecoverage for agents.md",
     "Inbox/2024-10-22 0943 AI tests to ensure competency with a service.md",
@@ -269,10 +273,6 @@
     "Inbox/2024-10-21 1106 napp provenance.md",
     "Inbox/2024-10-21 0955 monitoring system.md",
     "Inbox/2024-10-15 1830 napp HAL.md",
-    "Inbox/2024-10-20 1423 letter about openai.md",
-    "Inbox/2024-10-20 1042 canvas editing of docs using chunked documents.md",
-    "Inbox/2024-10-18 1612 pointing the UI at the API.md",
-    "Inbox/2024-10-18 1654 static http server straight from artifact.md",
     "website/static/obsidian/Pasted image 20241010110929.png",
     "sketches/artifact sketches.excalidraw",
     "sketches",
