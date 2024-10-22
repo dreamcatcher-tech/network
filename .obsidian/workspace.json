@@ -1,25 +1,77 @@
 {
   "main": {
-    "id": "c00a06d8cb49aec8",
+    "id": "c6cc975b1dbd4612",
     "type": "split",
     "children": [
       {
-        "id": "b7d63d4741c23f72",
+        "id": "c58d32c79bda320d",
         "type": "tabs",
         "children": [
           {
-            "id": "4b9389217724988c",
+            "id": "68e01547a2af31f4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inbox/2024-10-22 2035 change isolate lookup to be based on napps.md",
+                "file": "Inbox/2024-05-24 1530 db version prefixes.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-10-22 2035 change isolate lookup to be based on napps"
+              "title": "2024-05-24 1530 db version prefixes"
+            }
+          },
+          {
+            "id": "9c18791c9fc8c747",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Inbox/2023-05-08 1614 SILD Efforts.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2023-05-08 1614 SILD Efforts"
+            }
+          },
+          {
+            "id": "6dcf7e6eab1cdfc1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Inbox/2024-10-23 0929 testing napps without blockchain.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2024-10-23 0929 testing napps without blockchain"
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "a858ac9a40a69ca1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "867ad7bc3a60edde",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Inbox/2024-09-17 0948 streaming infrastructure has multiple uses.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2024-09-17 0948 streaming infrastructure has multiple uses"
             }
           }
         ]
@@ -28,15 +80,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "fa479bdff73b21e7",
+    "id": "a6cb3451c04b16ee",
     "type": "split",
     "children": [
       {
-        "id": "038335d6b628ab06",
+        "id": "34f9c99b58de12e8",
         "type": "tabs",
         "children": [
           {
-            "id": "25b2391ff0a4ba56",
+            "id": "4fa229407c6ec089",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,24 +100,24 @@
             }
           },
           {
-            "id": "fd1d36e3f10c0760",
+            "id": "05a1b20970ba37ab",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "lambda",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
-                "sortOrder": "alphabetical"
+                "sortOrder": "byModifiedTime"
               },
               "icon": "lucide-search",
               "title": "Search"
             }
           },
           {
-            "id": "918f13349caca657",
+            "id": "0051972a53502e9b",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -78,23 +130,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 385.5
   },
   "right": {
-    "id": "6bdf841c79d566fb",
+    "id": "94680e7a51acf229",
     "type": "split",
     "children": [
       {
-        "id": "266309bb61bedb27",
+        "id": "b95b661ae52d2793",
         "type": "tabs",
         "children": [
           {
-            "id": "2df65c7939228671",
+            "id": "d6ef65516c8583b1",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Requests.md",
+                "file": "Inbox/2024-10-22 1449 gateway is side effects.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,25 +156,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Requests"
+              "title": "Backlinks for 2024-10-22 1449 gateway is side effects"
             }
           },
           {
-            "id": "04392b9c7c564bcf",
+            "id": "fdc9d694ea930df8",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Requests.md",
+                "file": "Inbox/2024-10-22 1449 gateway is side effects.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Requests"
+              "title": "Outgoing links from 2024-10-22 1449 gateway is side effects"
             }
           },
           {
-            "id": "5cc487112ac99a87",
+            "id": "fee16c2f29329ee9",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -135,29 +187,7 @@
             }
           },
           {
-            "id": "d50638a1aa812457",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Requests.md"
-              },
-              "icon": "lucide-list",
-              "title": "Outline of Requests"
-            }
-          },
-          {
-            "id": "6436b2a8071ee516",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
-          },
-          {
-            "id": "875998c83b6ece0f",
+            "id": "01873a59cf9a684e",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -169,13 +199,35 @@
               "icon": "lucide-archive",
               "title": "All properties"
             }
+          },
+          {
+            "id": "cd026aa9874b0e35",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Inbox/2024-10-22 1449 gateway is side effects.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2024-10-22 1449 gateway is side effects"
+            }
+          },
+          {
+            "id": "3926a1cdeeecb886",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 404.5
+    "width": 456.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -192,29 +244,41 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "4b9389217724988c",
+  "active": "6dcf7e6eab1cdfc1",
   "lastOpenFiles": [
-    "Inbox/2024-10-22 2032 remove file ops from api and overwrite native ones.md",
-    "Inbox/2024-10-22 2035 change isolate lookup to be based on napps.md",
+    "Inbox/2024-10-23 0943 remote app like CRM.md",
+    "Inbox/2024-10-23 0946 instant return actions.md",
+    "Inbox/2024-10-23 0929 testing napps without blockchain.md",
     "Inbox/2024-10-22 1705 mapping napp to code.md",
-    "Inbox/2024-10-21 1651 lockdown compartments essential for debugging strange code.md",
-    "Requests.md",
-    "Inbox/2024-10-22 1701 isolating react components.md",
-    "Inbox/2024-10-22 1646 isolating react components.md",
-    "Inbox/2024-10-22 1644 help bot that can run some code to verify an assumption before answering.md",
-    "Inbox/2024-10-22 1611 napp as a key on existing config files.md",
+    "Inbox/2024-10-22 2035 change isolate lookup to be based on napps.md",
+    "Inbox/2024-10-22 2032 remove file ops from api and overwrite native ones.md",
     "Inbox/2024-10-22 1605 rewriting side effects.md",
+    "Inbox/2024-10-22 1644 help bot that can run some code to verify an assumption before answering.md",
+    "Inbox/2024-10-22 1701 isolating react components.md",
+    "Inbox/2023-10-10 1422 AI musings.md",
+    "Inbox/2024-10-22 1646 isolating react components.md",
+    "Inbox/2024-10-22 1611 napp as a key on existing config files.md",
     "Inbox/2024-10-22 1555 financial admin gateway service.md",
     "Inbox/2024-10-22 1537 function calling.md",
-    "Inbox/2024-10-22 1521 make a widget to edit napp json.md",
-    "Inbox/2024-10-22 1518 sniffing the runtime.md",
-    "Inbox/2024-10-22 1500 how to edit the napp json live.md",
     "Inbox/2024-10-22 1449 gateway is side effects.md",
-    "Inbox/2024-10-22 1157 codecoverage for agents.md",
-    "Inbox/2024-10-22 0953 a coin based on compute thruput.md",
-    "Inbox/2024-10-22 0948 napps as a way to do ai calls in any circumstance reliably.md",
-    "Inbox/2024-10-22 0943 AI tests to ensure competency with a service.md",
+    "Inbox/2024-10-22 1518 sniffing the runtime.md",
+    "Inbox/2024-10-22 1521 make a widget to edit napp json.md",
+    "Inbox/2024-10-22 1500 how to edit the napp json live.md",
     "Inbox/2024-10-22 0941 runtime as a napp.md",
-    "Inbox/2024-10-22 0935 use ses with endo already bundled.md"
+    "Inbox/2024-10-22 1157 codecoverage for agents.md",
+    "Inbox/2024-10-22 0943 AI tests to ensure competency with a service.md",
+    "Inbox/2024-10-22 0948 napps as a way to do ai calls in any circumstance reliably.md",
+    "Inbox/2024-10-22 0953 a coin based on compute thruput.md",
+    "Inbox/2024-10-22 0935 use ses with endo already bundled.md",
+    "Inbox/2024-10-21 1651 lockdown compartments essential for debugging strange code.md",
+    "ideas/Interpulse/API/Hooks for async iterables and hamts.md",
+    "dictionary/Transmission Network",
+    "website/static/obsidian/Pasted image 20241010110929.png",
+    "sketches/artifact sketches.excalidraw",
+    "sketches",
+    "New folder",
+    "website/static/obsidian/Dreamcatcher Pipeline.png",
+    "website/static/obsidian/dreamcatcher pipeline",
+    "website/static/obsidian/Pasted image 20240507124000.png"
   ]
 }
