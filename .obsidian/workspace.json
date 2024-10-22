@@ -1,77 +1,25 @@
 {
   "main": {
-    "id": "c6cc975b1dbd4612",
+    "id": "c00a06d8cb49aec8",
     "type": "split",
     "children": [
       {
-        "id": "c58d32c79bda320d",
+        "id": "b7d63d4741c23f72",
         "type": "tabs",
         "children": [
           {
-            "id": "68e01547a2af31f4",
+            "id": "4b9389217724988c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inbox/2024-05-24 1530 db version prefixes.md",
+                "file": "Inbox/2024-10-21 1651 lockdown compartments essential for debugging strange code.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-05-24 1530 db version prefixes"
-            }
-          },
-          {
-            "id": "9c18791c9fc8c747",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Inbox/2023-05-08 1614 SILD Efforts.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2023-05-08 1614 SILD Efforts"
-            }
-          },
-          {
-            "id": "6dcf7e6eab1cdfc1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Inbox/2024-10-22 1705 mapping napp to code.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2024-10-22 1705 mapping napp to code"
-            }
-          }
-        ],
-        "currentTab": 2
-      },
-      {
-        "id": "a858ac9a40a69ca1",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "867ad7bc3a60edde",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Inbox/2024-09-17 0948 streaming infrastructure has multiple uses.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2024-09-17 0948 streaming infrastructure has multiple uses"
+              "title": "2024-10-21 1651 lockdown compartments essential for debugging strange code"
             }
           }
         ]
@@ -80,15 +28,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "a6cb3451c04b16ee",
+    "id": "fa479bdff73b21e7",
     "type": "split",
     "children": [
       {
-        "id": "34f9c99b58de12e8",
+        "id": "038335d6b628ab06",
         "type": "tabs",
         "children": [
           {
-            "id": "4fa229407c6ec089",
+            "id": "25b2391ff0a4ba56",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -100,24 +48,24 @@
             }
           },
           {
-            "id": "05a1b20970ba37ab",
+            "id": "fd1d36e3f10c0760",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "lambda",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
-                "sortOrder": "byModifiedTime"
+                "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
               "title": "Search"
             }
           },
           {
-            "id": "0051972a53502e9b",
+            "id": "918f13349caca657",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -130,23 +78,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 385.5
+    "width": 300
   },
   "right": {
-    "id": "94680e7a51acf229",
+    "id": "6bdf841c79d566fb",
     "type": "split",
     "children": [
       {
-        "id": "b95b661ae52d2793",
+        "id": "266309bb61bedb27",
         "type": "tabs",
         "children": [
           {
-            "id": "d6ef65516c8583b1",
+            "id": "2df65c7939228671",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Inbox/2024-10-22 1449 gateway is side effects.md",
+                "file": "Requests.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2024-10-22 1449 gateway is side effects"
+              "title": "Backlinks for Requests"
             }
           },
           {
-            "id": "fdc9d694ea930df8",
+            "id": "04392b9c7c564bcf",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Inbox/2024-10-22 1449 gateway is side effects.md",
+                "file": "Requests.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2024-10-22 1449 gateway is side effects"
+              "title": "Outgoing links from Requests"
             }
           },
           {
-            "id": "fee16c2f29329ee9",
+            "id": "5cc487112ac99a87",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -187,7 +135,29 @@
             }
           },
           {
-            "id": "01873a59cf9a684e",
+            "id": "d50638a1aa812457",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Requests.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Requests"
+            }
+          },
+          {
+            "id": "6436b2a8071ee516",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "875998c83b6ece0f",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -199,35 +169,13 @@
               "icon": "lucide-archive",
               "title": "All properties"
             }
-          },
-          {
-            "id": "cd026aa9874b0e35",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Inbox/2024-10-22 1449 gateway is side effects.md"
-              },
-              "icon": "lucide-list",
-              "title": "Outline of 2024-10-22 1449 gateway is side effects"
-            }
-          },
-          {
-            "id": "3926a1cdeeecb886",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 456.5
+    "width": 404.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -244,41 +192,26 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "6dcf7e6eab1cdfc1",
+  "active": "4b9389217724988c",
   "lastOpenFiles": [
-    "Inbox/2024-10-22 1605 rewriting side effects.md",
     "Inbox/2024-10-22 1705 mapping napp to code.md",
-    "Inbox/2024-10-22 1644 help bot that can run some code to verify an assumption before answering.md",
     "Inbox/2024-10-22 1701 isolating react components.md",
-    "Inbox/2023-10-10 1422 AI musings.md",
     "Inbox/2024-10-22 1646 isolating react components.md",
+    "Inbox/2024-10-22 1644 help bot that can run some code to verify an assumption before answering.md",
     "Inbox/2024-10-22 1611 napp as a key on existing config files.md",
+    "Inbox/2024-10-22 1605 rewriting side effects.md",
     "Inbox/2024-10-22 1555 financial admin gateway service.md",
     "Inbox/2024-10-22 1537 function calling.md",
-    "Inbox/2024-10-22 1449 gateway is side effects.md",
-    "Inbox/2024-10-22 1518 sniffing the runtime.md",
     "Inbox/2024-10-22 1521 make a widget to edit napp json.md",
+    "Inbox/2024-10-22 1518 sniffing the runtime.md",
     "Inbox/2024-10-22 1500 how to edit the napp json live.md",
-    "Inbox/2024-10-22 0941 runtime as a napp.md",
+    "Inbox/2024-10-22 1449 gateway is side effects.md",
     "Inbox/2024-10-22 1157 codecoverage for agents.md",
-    "Inbox/2024-10-22 0943 AI tests to ensure competency with a service.md",
-    "Inbox/2024-10-22 0948 napps as a way to do ai calls in any circumstance reliably.md",
     "Inbox/2024-10-22 0953 a coin based on compute thruput.md",
+    "Inbox/2024-10-22 0948 napps as a way to do ai calls in any circumstance reliably.md",
+    "Inbox/2024-10-22 0943 AI tests to ensure competency with a service.md",
+    "Inbox/2024-10-22 0941 runtime as a napp.md",
     "Inbox/2024-10-22 0935 use ses with endo already bundled.md",
-    "Inbox/2024-10-21 1651 lockdown compartments essential for debugging strange code.md",
-    "ideas/Interpulse/API/Hooks for async iterables and hamts.md",
-    "ideas/Blogs/Upwork Model.md",
-    "dictionary/Transmission Network/Transmission Network.md",
-    "dictionary/Transmission Network",
-    "Inbox/2024-10-21 1528 artifact being a napp.md",
-    "Inbox/2024-10-21 1016 napp workflow.md",
-    "Inbox/2024-10-21 1513 api gateway as dependency injection.md",
-    "website/static/obsidian/Pasted image 20241010110929.png",
-    "sketches/artifact sketches.excalidraw",
-    "sketches",
-    "New folder",
-    "website/static/obsidian/Dreamcatcher Pipeline.png",
-    "website/static/obsidian/dreamcatcher pipeline",
-    "website/static/obsidian/Pasted image 20240507124000.png"
+    "Requests.md"
   ]
 }
