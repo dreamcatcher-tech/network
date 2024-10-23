@@ -26,4 +26,6 @@ Show how to rename parameters, or change descriptions.
 If the module exports is forced to map to the tool names, then we can use the ts types from the exported functions.
 
 export napp.ts which holds all the function calls ?
-napp.json is consumed 
+napp.json is consumed and parsed as json-schema and then napp.ts is imported to get types info out, and a list of exported functions.
+
+So napps.ts is the conventional code side of the interface, and the napp.json is the system bus side of the interface.  Inside and outside of the interface.
