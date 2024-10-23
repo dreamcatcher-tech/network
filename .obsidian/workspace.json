@@ -43,13 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inbox/2024-10-24 0937 talk to deno about jsr extension for napps.md",
+                "file": "Inbox/2024-10-24 1042 making the artifact server be just a jsr package.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-10-24 0937 talk to deno about jsr extension for napps"
+              "title": "2024-10-24 1042 making the artifact server be just a jsr package"
             }
           }
         ],
@@ -246,8 +246,9 @@
   },
   "active": "6dcf7e6eab1cdfc1",
   "lastOpenFiles": [
-    "Inbox/2024-10-24 1050 abstracting the kv queue.md",
     "Inbox/2024-10-24 0937 talk to deno about jsr extension for napps.md",
+    "Inbox/2024-10-24 1050 abstracting the kv queue.md",
+    "Inbox/2024-10-24 1153 abstracting the git thing.md",
     "Inbox/2024-10-24 1042 making the artifact server be just a jsr package.md",
     "Inbox/2024-10-24 1041 show some basic moves with napps.md",
     "Inbox/2024-10-23 1513 is a side effect a napp.md",
@@ -271,7 +272,6 @@
     "Inbox/2024-10-23 1012 artifact as a json bus.md",
     "Inbox/2024-10-23 1009 rules for napp referencing.md",
     "Inbox/2024-10-22 1705 mapping napp to code.md",
-    "Inbox/2024-10-23 0929 testing napps without blockchain.md",
     "dictionary/Transmission Network",
     "website/static/obsidian/Pasted image 20241010110929.png",
     "sketches/artifact sketches.excalidraw",
