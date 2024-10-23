@@ -19,3 +19,11 @@ Initially all the names should align for the napp to pass validation.
 
 How can a napp file be made in isolation, like a new one ?
 How can  running napp be modified and run, using the modified version ?
+
+Be able to omit optional parameters.
+Show how to rename parameters, or change descriptions.
+
+If the module exports is forced to map to the tool names, then we can use the ts types from the exported functions.
+
+export napp.ts which holds all the function calls ?
+napp.json is consumed 
