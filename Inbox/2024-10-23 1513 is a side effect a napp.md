@@ -19,3 +19,16 @@ If it was a binary stream, it can be stored in a temp file and returned in this 
 side effects are not repeatable.
 
 Multiple side effects, like 3 instances that all hit the same web address and compare their results ?
+
+So it needs enforce that only one commit is possible, since it will make the API call and get the response, and that's all.
+
+Billing relationship is handled here.
+
+Because of the single request being turned into a json call, it can be mocked, for testing behaviours.
+
+VAlidate the bindings between inner and outer with a supplied function call, that will be made by us, using json format invocation, that will validate the schemas provided match the internal representation of the types, so a zod schema invocation.
+## A service with external resources
+If a sql database instance was running somewhere
+
+## Querying moneyworks
+Running a query out to the accounting system means it would do a single request and get the response, and then commit it, possibly with some files.
