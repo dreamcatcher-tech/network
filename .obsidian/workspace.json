@@ -43,13 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inbox/2024-10-23 1327 merge static and UI deployments.md",
+                "file": "Inbox/2024-10-24 1443 issue with ghaction workflows breaking modularity.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-10-23 1327 merge static and UI deployments"
+              "title": "2024-10-24 1443 issue with ghaction workflows breaking modularity"
             }
           }
         ],
@@ -246,6 +246,8 @@
   },
   "active": "6dcf7e6eab1cdfc1",
   "lastOpenFiles": [
+    "Inbox/2024-10-23 1327 merge static and UI deployments.md",
+    "Inbox/2024-10-24 1443 issue with ghaction workflows breaking modularity.md",
     "Inbox/2024-10-24 1359 authoring napps on platform.md",
     "Inbox/2024-10-24 1416 dojo agents.md",
     "Inbox/2024-10-24 1419 raising an racing.md",
@@ -253,7 +255,6 @@
     "Inbox/2024-10-24 1402 issue with platform is it is not permanent.md",
     "Inbox/2024-10-24 1403 making a static page as a napp.md",
     "Inbox/2024-10-24 1407 running infrastructure as artifact means billing for everything.md",
-    "Inbox/2024-10-23 1327 merge static and UI deployments.md",
     "Inbox/2024-10-23 1513 is a side effect a napp.md",
     "Inbox/2024-10-24 0937 talk to deno about jsr extension for napps.md",
     "Inbox/2024-10-24 1041 show some basic moves with napps.md",
@@ -271,7 +272,6 @@
     "Inbox/2024-10-23 1331 concurrent browsing ability.md",
     "Inbox/2024-10-23 1120 rewriting the isolate API types.md",
     "Inbox/2024-10-23 1322 impact measurement connections.md",
-    "Inbox/2024-10-23 1251 tests should be napp agents with prompt injections.md",
     "dictionary/Transmission Network",
     "website/static/obsidian/Pasted image 20241010110929.png",
     "sketches/artifact sketches.excalidraw",

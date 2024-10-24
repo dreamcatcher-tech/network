@@ -33,3 +33,5 @@ Artifact the engine could be a napp, and could be running entirely as a side eff
 backchat, the client, becomes simply an interface to a given napp, and it simply bridges across the web to handle the invocation and present it back to whatever is running as tho everything was a locally called async function.
 
 nappchat
+
+Make a standard to export the zod schemas so any app can get TS types easily, and also ensure the zod schemas match up with the json schemas in the napp packages, so we would generate these automatically and ensure 
