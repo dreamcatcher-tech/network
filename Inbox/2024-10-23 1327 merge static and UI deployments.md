@@ -21,4 +21,15 @@ Then we are maintaining a library of standard napps, and an engine that runs the
 
 Ping should include a secret in env vars, so we don't get thrashed, since this call invokes billable actions.
 
-Should the UI just be a package inside the deno workspace ?
+Should the UI just be a package inside the deno workspace ?  It is not part of the standard library.
+
+If the UI was a single deployment, and then it hosted the api, which was running on published stable packages, this makes the UI locked with the api ?
+
+Is the browser interface part of the napps library ?
+No, this seems part of the engine.
+
+Artifact the engine could be a napp, and could be running entirely as a side effect ?
+
+backchat, the client, becomes simply an interface to a given napp, and it simply bridges across the web to handle the invocation and present it back to whatever is running as tho everything was a locally called async function.
+
+nappchat
