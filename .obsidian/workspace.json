@@ -43,13 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inbox/2024-10-25 0930 how to read a md file from another package.md",
+                "file": "Inbox/2024-10-25 1226 how zod schema exports work.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-10-25 0930 how to read a md file from another package"
+              "title": "2024-10-25 1226 how zod schema exports work"
             }
           }
         ],
@@ -246,8 +246,9 @@
   },
   "active": "6dcf7e6eab1cdfc1",
   "lastOpenFiles": [
-    "Inbox/2024-10-24 1710 napp runner widget.md",
     "Inbox/2024-10-25 0930 how to read a md file from another package.md",
+    "Inbox/2024-10-25 1226 how zod schema exports work.md",
+    "Inbox/2024-10-24 1710 napp runner widget.md",
     "Inbox/2024-10-24 1814 iframe in jsr package page.md",
     "ideas/Blogs/Blog Ideas.md",
     "Inbox/2024-10-23 1327 merge static and UI deployments.md",
@@ -271,7 +272,6 @@
     "Inbox/2024-10-24 1153 abstracting the git thing.md",
     "Inbox/2024-10-23 1514 make ai generated schedules.md",
     "Inbox/2024-10-23 1519 reading from a jsr module filesystem.md",
-    "Inbox/2024-10-23 1521 json object modification methods.md",
     "dictionary/Transmission Network",
     "website/static/obsidian/Pasted image 20241010110929.png",
     "sketches/artifact sketches.excalidraw",
