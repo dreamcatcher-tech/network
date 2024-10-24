@@ -9,3 +9,4 @@
 - napp extending another napp
 - dependency of a napp being switched at runtime
 - side-effects of a napp being switched at runtime
+- mocking side-effects of a napp.

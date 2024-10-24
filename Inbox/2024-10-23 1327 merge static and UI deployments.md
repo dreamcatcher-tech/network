@@ -20,3 +20,5 @@ add a totally separate gh action that tests the engine, builds the UI, deploys t
 Then we are maintaining a library of standard napps, and an engine that runs them, all as the same commit.
 
 Ping should include a secret in env vars, so we don't get thrashed, since this call invokes billable actions.
+
+Should the UI just be a package inside the deno workspace ?
