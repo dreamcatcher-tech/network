@@ -34,4 +34,10 @@ backchat, the client, becomes simply an interface to a given napp, and it simply
 
 nappchat
 
-Make a standard to export the zod schemas so any app can get TS types easily, and also ensure the zod schemas match up with the json schemas in the napp packages, so we would generate these automatically and ensure 
+Make a standard to export the zod schemas so any app can get TS types easily, and also ensure the zod schemas match up with the json schemas in the napp packages, so we would generate these automatically and ensure that usage in the UI side was typed correctly.
+
+If the UI is built using napp packages, then it never executes them locally, it only calls in the types, so the whole interface can be transported to the browser.
+
+The guts is much less useful, since 
+
+Another way to do guts is to set an env var that switches what the cradlemaker makes.
