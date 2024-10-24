@@ -43,13 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inbox/2024-10-24 1814 iframe in jsr package page.md",
+                "file": "Inbox/2024-10-25 0930 how to read a md file from another package.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-10-24 1814 iframe in jsr package page"
+              "title": "2024-10-25 0930 how to read a md file from another package"
             }
           }
         ],
@@ -247,11 +247,12 @@
   "active": "6dcf7e6eab1cdfc1",
   "lastOpenFiles": [
     "Inbox/2024-10-24 1710 napp runner widget.md",
+    "Inbox/2024-10-25 0930 how to read a md file from another package.md",
     "Inbox/2024-10-24 1814 iframe in jsr package page.md",
+    "ideas/Blogs/Blog Ideas.md",
     "Inbox/2024-10-23 1327 merge static and UI deployments.md",
     "Inbox/2024-10-24 1518 inbound gateways for napps.md",
     "Inbox/2024-10-24 1443 issue with ghaction workflows breaking modularity.md",
-    "ideas/Blogs/Blog Ideas.md",
     "Inbox/2024-09-17 0948 streaming infrastructure has multiple uses.md",
     "Inbox/2024-10-24 1359 authoring napps on platform.md",
     "Inbox/2024-10-24 1416 dojo agents.md",
@@ -271,7 +272,6 @@
     "Inbox/2024-10-23 1514 make ai generated schedules.md",
     "Inbox/2024-10-23 1519 reading from a jsr module filesystem.md",
     "Inbox/2024-10-23 1521 json object modification methods.md",
-    "Inbox/2024-10-23 1131 converting a plain screen to be touch.md",
     "dictionary/Transmission Network",
     "website/static/obsidian/Pasted image 20241010110929.png",
     "sketches/artifact sketches.excalidraw",
