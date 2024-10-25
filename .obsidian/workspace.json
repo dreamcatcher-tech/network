@@ -43,13 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inbox/2024-10-25 2023 graphics components in napps.md",
+                "file": "Inbox/2023-10-10 1422 AI musings.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-10-25 2023 graphics components in napps"
+              "title": "2023-10-10 1422 AI musings"
             }
           }
         ],
@@ -246,8 +246,8 @@
   },
   "active": "6dcf7e6eab1cdfc1",
   "lastOpenFiles": [
-    "Inbox/2023-10-10 1422 AI musings.md",
     "Inbox/2024-10-25 2023 graphics components in napps.md",
+    "Inbox/2023-10-10 1422 AI musings.md",
     "Inbox/2024-10-25 2020 space for a meta registry that blends all registries.md",
     "Inbox/2024-10-25 1226 how zod schema exports work.md",
     "Inbox/2024-10-25 0930 how to read a md file from another package.md",
