@@ -25,4 +25,8 @@ The only hard constraint is that the default export of the napp must contain at 
 
 So should the export be a bag of functions that match, or the direct exports ?
 
+Must make it nice to declare the schemas in a single place and reuse them.  Zod might have the types generator used to build types up, and definitely schema generator.
+
+Zod types should be called inside the compartment.  Precompiled schemas are probably the best thing.  Or generating a zod function from a schema.
+
 zod is sugar on top, and optional.
