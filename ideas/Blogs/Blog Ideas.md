@@ -549,3 +549,11 @@ This format also captures the need for natural language calls, which leverage in
 The packaging can optionally manage all the descriptions, images for logos, etc.
 
 Distinct difference between deterministic and probabilistic computing.
+
+## ghaction workflows breaking modularity
+
+These break modularity since they're always bespoke and attached to repos with some custom config.
+
+If this functionality was done with napps that triggered on different events, then a napp can be used as the development environment for other napps, and so the ghactions can be standardized and part of the package, instead of only part of the repo.
+
+The execution environment being separate to the packaging structure is what causes this leak in the abstraction of a package, resulting in ghactions.

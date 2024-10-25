@@ -26,7 +26,13 @@ Billing relationship is handled here.
 
 Because of the single request being turned into a json call, it can be mocked, for testing behaviours.
 
-VAlidate the bindings between inner and outer with a supplied function call, that will be made by us, using json format invocation, that will validate the schemas provided match the internal representation of the types, so a zod schema invocation.
+Validate the bindings between inner and outer with a supplied function call, that will be made by us, using json format invocation, that will validate the schemas provided match the internal representation of the types, so a zod schema invocation.
+
+gateway needs to have some keys. 
+needs to be addressable.
+may need some logic.
+The call to the gateway shouldn't hold permissions, the execution declares what deno permissions it needs.
+
 ## A service with external resources
 If a sql database instance was running somewhere
 
