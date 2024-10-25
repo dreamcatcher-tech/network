@@ -6,3 +6,5 @@
 >[!danger] Depends: 
 
 This should be a team exercise, and anyone who suggests a link to me should be coached into using this system and keeping it up to date.
+
+Allows people to act as groups.

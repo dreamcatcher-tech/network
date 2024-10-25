@@ -21,4 +21,6 @@ No gases, no plumbing, no split units with some part outside.
 
 Could be very compact.
 
-Vortex can be used to filter the air finely.
+Vortex can be used to filter the air finely, like a dyson.
+
+Compressors as flexible belows style, so large and slow.
