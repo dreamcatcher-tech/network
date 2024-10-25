@@ -43,13 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inbox/2024-10-25 2111 need web scrapers to track whats happening.md",
+                "file": "Inbox/2024-10-25 2133 vortex tube cooling efficiency.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-10-25 2111 need web scrapers to track whats happening"
+              "title": "2024-10-25 2133 vortex tube cooling efficiency"
             }
           }
         ],
@@ -246,8 +246,9 @@
   },
   "active": "6dcf7e6eab1cdfc1",
   "lastOpenFiles": [
-    "Inbox/2023-10-10 1422 AI musings.md",
     "Inbox/2024-10-25 2111 need web scrapers to track whats happening.md",
+    "Inbox/2024-10-25 2133 vortex tube cooling efficiency.md",
+    "Inbox/2023-10-10 1422 AI musings.md",
     "Inbox/2024-10-25 2023 graphics components in napps.md",
     "Inbox/2024-10-25 2020 space for a meta registry that blends all registries.md",
     "Inbox/2024-10-25 1226 how zod schema exports work.md",
@@ -271,7 +272,6 @@
     "Inbox/2024-10-24 1041 show some basic moves with napps.md",
     "Inbox/2024-10-24 1042 making the artifact server be just a jsr package.md",
     "Inbox/2024-10-24 1317 wrapping ethereum in a napp.md",
-    "Inbox/2024-10-24 1318 composing multiple hosting environments.md",
     "dictionary/Transmission Network",
     "website/static/obsidian/Pasted image 20241010110929.png",
     "sketches/artifact sketches.excalidraw",
