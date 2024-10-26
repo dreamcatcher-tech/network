@@ -22,3 +22,7 @@ It should be derived entirely from the napp api that is presented.
 Types for this can be imported from the napp, but this again should be separate from the compartment
 
 Using this method, we don't care if we are being called locally, or over the web, or on a blockchain.
+
+But now the addressing system of the blockchain, with PIDs, has gotten in the way.
+PIDs should not really be inside of any napp unless it needs to know about remote chain access.
+So the stance of all napp functions should be unaware of what a PID is.
