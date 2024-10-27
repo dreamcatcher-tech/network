@@ -36,3 +36,7 @@ We would crowdsource the registry maintenance using AI and the dreamcatcher.  As
 Dreamcatcher about the automated allocation of funds as well as the attribution systems.
 
 By making the registry be decentralized, it becomes the stickiest registry available, since it is the only one where everyone is free to leave.
+
+Current package registries do not make the packages directly deployable, since that isn't what the design of the package is.  Yet with multiple options to connect hosts, and portability options for hosting, one can compose an app on the registry directly, with the help of AI, and then deploy it and monetize it.
+
+Solves the supply chain issue since all packages run in their own isolated sandbox, and the messages between them are explicitly declared, declarative, and the permissions are narrowed down to that individual package, rather than the whole app, defaulting at nothing.
