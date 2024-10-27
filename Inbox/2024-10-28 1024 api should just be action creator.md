@@ -38,3 +38,5 @@ But then how do we handle the addressing ?
 So a napp action needs to include what napp it is destined for, which needs a 'self' key, for everything defined locally, which avoids a global namespace.
 
 Seems we need to actually write the ts types to disk, that they can be imported without issue, as import on .json cannot be used as a ts type at runtime.
+
+The runtime environment should compile the ajv schemas on first read, and cache them on disk, so that next time it runs, it can be instant.
