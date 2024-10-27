@@ -47,7 +47,14 @@ This is fine in code land, since code requires publication of some kind, but jus
 
 FOR TYPES just make a simple wrapper that when given the function name, will infer the types exactly.  So for a remote api, it would just import that type of the mods export.  It would pull in the ajv schema, but would pull types from the default export.  Validation would be ajv based, since we cannot trust zod.   Or we could just trust zod, and rely on the serverside ?
 
+This tight binding is required so that code tools work seamlessly, as they see the napp layer as transparent.
+
 Then the types are provided by mod.ts, and the runtime validation provided by either zod or ajv.
 
 
 So mod needs to be limited to the napp functions, else since we are doing type inference, the code side might think it can call functions that the napp side cannot process, so the inside needs to look the same as the outside, to maintain code compatiblity.
+
+
+client and napp-api should be the same, so when inside a napp, should be the same as using the client from the outside.  The interface should be identical.
+
+Merge the isolateapi and the client api, with the only different being what engine is dropped in to each one.
