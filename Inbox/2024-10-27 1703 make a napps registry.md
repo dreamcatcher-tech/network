@@ -30,3 +30,9 @@ Our registry would generate versions of a package that was usable by every other
 People could publish very thin wrappers around popular packages.  These could be done largely by AI, and would represent the first large scale AI coding task undertaken.
 
 You should be able to download the whole registry onto your own computer, and should be able to get paid for seeding the packages like how torrent servers work.  Leechers get asked to pay more, and in general everyone is encouraged to pay a small amount, in money, or in bandwidth.
+
+We would crowdsource the registry maintenance using AI and the dreamcatcher.  As seed funding comes in, it gets allocated to package conversion and testing.  Missing packages are defined by their interface.  Faults with packages are monitored inside the dreamcatcher.
+
+Dreamcatcher about the automated allocation of funds as well as the attribution systems.
+
+By making the registry be decentralized, it becomes the stickiest registry available, since it is the only one where everyone is free to leave.
