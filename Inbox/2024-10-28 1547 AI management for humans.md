@@ -20,3 +20,5 @@ Whey should toxicity be constrained to online meetings ? why is it not omnichann
 Why not a moderator for all my comms, that is pluggable into all kinds of psychological models ?
 
 Toxicity is not the only kind of fault - it could be distraction, deviation from goals, poorly worded.
+
+You should be able to cobble together your own system as a blend of systems.

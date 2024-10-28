@@ -56,3 +56,8 @@ Additionally, could we use Request and Reponse from the web definitions ?
 
 So the standard would be to export JTD out of the napp.jsonc ?
 
+? Why does it seem that having a napps registry is closer to having AI do anything you want for you than having any other form of system ?  We should be able to offer any functionality of any AI no code system using purely this registry.  This encourages people to make their versions of the innovations they see unfolding, in a pluggable way, where peoples data stays with them during switching, since they never gave their data up.
+
+The days of sticky platforms because the users data is with you are gone - AI can migrate any data anywhere - the best tooling is to make the data universally acceible anyway, then the sticky platform is the one that understands this unrestricted format, revealing the universal blockchain, as opposed to designing it and defending it.  It is what remains when all central interest is removed.
+
+In an app store, moderation and payments is crucial.  In an AI moderated system, this overhead reduces to near nothing.  
