@@ -44,6 +44,10 @@ Solves the supply chain issue since all packages run in their own isolated sandb
 Can have benchmarks, action cost, and AI token cost benchmarks running constantly, as well as consumption stats about the actual execution of the functions.
 Can supply your computer to do free operation of certain libraries that you like, or people can pay for some kind of consensus managed execution, or closed hosted, or dual closed hosted.
 
+Show extra tools like tokenizer to analyze the outputs, and be able to build eval helpers.
+
+Have an online debugger for timetravel debugging, with AI assistance of your choice built in.
+
 Seek to specify the format we use like the ietf does: https://datatracker.ietf.org/doc/rfc8927/
 
 Json type definitions, or JTDs seem like the standard we need for interop ?
@@ -51,3 +55,4 @@ Json type definitions, or JTDs seem like the standard we need for interop ?
 Additionally, could we use Request and Reponse from the web definitions ?
 
 So the standard would be to export JTD out of the napp.jsonc ?
+
