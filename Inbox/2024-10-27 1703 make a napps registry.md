@@ -61,3 +61,9 @@ So the standard would be to export JTD out of the napp.jsonc ?
 The days of sticky platforms because the users data is with you are gone - AI can migrate any data anywhere - the best tooling is to make the data universally acceible anyway, then the sticky platform is the one that understands this unrestricted format, revealing the universal blockchain, as opposed to designing it and defending it.  It is what remains when all central interest is removed.
 
 In an app store, moderation and payments is crucial.  In an AI moderated system, this overhead reduces to near nothing.  
+
+Advantage is that we get massive multithreading for not much effort.  This need not go via a blockchain, and could just be pure rest based invocations.  So the packages would get coded up as single threaded, which is easier to reason about, then their invocations are managed by a napp interface, so they can have queue management and load balancing handled outside the code - it just asks for everything and may hint at a priority - the host should figure out the optimum thruput.
+
+Ideally we could have a napp host built in to deno or nodejs, so it gets called directly in band with no network losses.  Deno coud just use workers the same as the browser.
+
+Make a version that works in a browser to do the same thing for running browser compatible napps in multiple worker threads, to max out  the local computer resources.

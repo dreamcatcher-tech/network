@@ -53,3 +53,5 @@ Sending files is done using a list of filepaths.  The sending system needs to wr
 The function just runs, and outputs things that are pure and simple, then the execution layer stamps things on it, hoisting the refinement higher.
 
 The execution layers are reflected in the action layers.
+
+How to handle the self napp ?  this might have been modified, so we need to id it by its hash somehow ?
