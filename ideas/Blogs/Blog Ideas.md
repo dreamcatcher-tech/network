@@ -557,3 +557,11 @@ These break modularity since they're always bespoke and attached to repos with s
 If this functionality was done with napps that triggered on different events, then a napp can be used as the development environment for other napps, and so the ghactions can be standardized and part of the package, instead of only part of the repo.
 
 The execution environment being separate to the packaging structure is what causes this leak in the abstraction of a package, resulting in ghactions.
+
+##  the growth of json-schema tooling
+it points to this missing hole in the ecosystem, where a package format that was native json-schema is ripe.  The growth of json schema tooling correlates to the growth of LLM packages.
+
+https://npmtrends.com/openai-vs-zod-vs-zod-to-json-schema
+
+## Practical purity
+If a side effect occurs but nobody is around to witness it, is it a side effect ?

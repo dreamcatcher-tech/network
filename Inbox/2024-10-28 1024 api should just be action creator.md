@@ -46,4 +46,10 @@ If we abandon types, then we just need to handle json schema, and resolved jsons
 layer of making the action creators is different to where to send those action creators.
 If we are executing within a compartment, then no addressing is needed.
 
-? how to send files with the action ?
+? how to send files with the action ?  That should surely be a reference to a git commit ? or it could be pluggable, like a format version number and data relative to that ?  If it sends a hash to be looked up, then it should imply permissions to fetch those things ?
+
+Sending files is done using a list of filepaths.  The sending system needs to wrap the action in enough info that these files are retrievable.  So actions are layered, where the app makes a simple version, then the execution context uses an addressing scheme unique to it.
+
+The function just runs, and outputs things that are pure and simple, then the execution layer stamps things on it, hoisting the refinement higher.
+
+The execution layers are reflected in the action layers.
