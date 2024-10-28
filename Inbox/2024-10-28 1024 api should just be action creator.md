@@ -40,3 +40,10 @@ So a napp action needs to include what napp it is destined for, which needs a 's
 Seems we need to actually write the ts types to disk, that they can be imported without issue, as import on .json cannot be used as a ts type at runtime.
 
 The runtime environment should compile the ajv schemas on first read, and cache them on disk, so that next time it runs, it can be instant.
+
+If we abandon types, then we just need to handle json schema, and resolved jsonschema.
+
+layer of making the action creators is different to where to send those action creators.
+If we are executing within a compartment, then no addressing is needed.
+
+? how to send files with the action ?
