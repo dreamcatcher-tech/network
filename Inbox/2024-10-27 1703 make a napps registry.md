@@ -40,3 +40,14 @@ By making the registry be decentralized, it becomes the stickiest registry avail
 Current package registries do not make the packages directly deployable, since that isn't what the design of the package is.  Yet with multiple options to connect hosts, and portability options for hosting, one can compose an app on the registry directly, with the help of AI, and then deploy it and monetize it.
 
 Solves the supply chain issue since all packages run in their own isolated sandbox, and the messages between them are explicitly declared, declarative, and the permissions are narrowed down to that individual package, rather than the whole app, defaulting at nothing.
+
+Can have benchmarks, action cost, and AI token cost benchmarks running constantly, as well as consumption stats about the actual execution of the functions.
+Can supply your computer to do free operation of certain libraries that you like, or people can pay for some kind of consensus managed execution, or closed hosted, or dual closed hosted.
+
+Seek to specify the format we use like the ietf does: https://datatracker.ietf.org/doc/rfc8927/
+
+Json type definitions, or JTDs seem like the standard we need for interop ?
+
+Additionally, could we use Request and Reponse from the web definitions ?
+
+So the standard would be to export JTD out of the napp.jsonc ?
