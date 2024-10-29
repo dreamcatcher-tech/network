@@ -11,3 +11,10 @@ Or is it ? what if we stopped the fs from changing during waiting ? Would save i
 
 No, fs needs to shift forwards, in case it was us who dispatched an action out.
 
+So whenever executing, we need to be able to resolve a range of already executing functions.
+
+Need to resolve promises late once they are running, allowing the reuse of the function cache.
+
+Should be much easier if we have abstracted it out.
+
+Parameters and Returns can be keys in actions that determine if they are a reply or not.
