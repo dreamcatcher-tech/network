@@ -5,7 +5,11 @@
 
 >[!danger] Depends: 
 
-If the purpose of the tasks is to make the system capable of genuine decentralized profit share, so that profit sharing is not at risk of being classed a security, then
+If the purpose of the tasks is to make the system capable of genuine decentralized profit share, so that profit sharing is not at risk of being classed a security, then that is something that has plagued crypto ventures for a long time - how to be decentralized and not a security.
+
+Then the people that stand to profit the most from such a system would be the most likely to invest in it.
+
+Being classed as a security is actually the badge of centralization.  Many people strongly believe in decentralization and want to support it.
 
 We only need enough of a legal opinion to say its possible, and some initial guidance on how hard.  Then we work towards that.
 
@@ -19,4 +23,4 @@ Make a legal entity that holds the funds, and has the charter to pursue the give
 
 We cannot use bank or stripe for this, since would be problematic and more open to securities registration, plus we now have a bank account which can be frozen.
 
-Bank accounts are less transparent than something on chain.
+Bank accounts are less transparent than something on chain.  This would be very suspicious to someone like stripe and would cost a lot of admin time.
