@@ -78,4 +78,4 @@ The transformation efforts:
 1. converting all packaged code into json functions
 2. converting all API services into side effects
 
-Further proof is the adoption of RFC for JTDs which indicate a shift to cross language types for programming.
+Further proof is the adoption of RFC for JTDs which indicate a shift to cross language types for programming.  
