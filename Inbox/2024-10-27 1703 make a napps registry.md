@@ -79,3 +79,8 @@ The transformation efforts:
 2. converting all API services into side effects
 
 Further proof is the adoption of RFC for JTDs which indicate a shift to cross language types for programming.  
+
+Three unrelated things:
+1. securities free project funding
+2. ai function calling
+3. ai control of humans
