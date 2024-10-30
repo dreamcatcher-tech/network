@@ -45,3 +45,7 @@ For mocking, we can skip the snapshot part and just use the ram shims.
 FS should be separate from git, as this is just an implementation detail.
 
 FS needs to have a layer that takes persistence commands, where the live ram version is pushed down to deeper storage.  The snapshot id is passed up.
+FS needs to know about snapshot references, so that it can move things around by their content reference id, rather than their full value.
+How that reference is modelled should be freeform, and it doesn't care about the underlying implementation.
+
+Then we should make a very simplisitic version underneath which just ids everything with a counter.
