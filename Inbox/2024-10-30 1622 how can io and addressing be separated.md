@@ -29,3 +29,19 @@ The datastructure should be the same between the accumulator and the pendings sl
 Then, the commit is just the id of the snapshot that we want to switch to, which the accumulator knows how to switch between.
 
 api and accumulator should actually be the same thing, practically ?
+
+Accumulator includes being given the local filesystem, and the actions.
+
+When fulfilling things like fs reads, do not store them, just fulfill them live.  If they are remote reads, then if they resolved, you would fulfill them live, but using objects from the git object repo.
+
+Is the accumulator useful anywhere else ?
+Possibly the mock api gateway system ?
+
+It never gets injected with resolved promises, only with open requests or settled requests.
+
+Want the fs piece split in two - the backing store and the live dynamic data.
+For mocking, we can skip the snapshot part and just use the ram shims.
+
+FS should be separate from git, as this is just an implementation detail.
+
+FS needs to have a layer that takes persistence commands, where the live ram version is pushed down to deeper storage.  The snapshot id is passed up.

@@ -18,3 +18,12 @@ Sell a single server module that has everything assembled, that can be used as a
 Purchase these credits using credit card.
 
 The price might be controlled by algorithm to give gains over time.
+
+If this could be used as providing GPU training compute, then we could be off.
+Could run pytorch using jsconfunctions, being controlled from a javascript control plane and payments management.
+
+If we could wrap hugging face in this api, then we could pay to keep some services running, and just pool resources, selling access to each service.
+
+Wrap a quantum service would be quite fun too.
+
+Make a FaaS demo running llama models locally to demonstrate the concept.
