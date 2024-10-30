@@ -71,3 +71,9 @@ Make a version that works in a browser to do the same thing for running browser 
 This immediately shifts the browser to be a direct window into serverless execution.  The browser need only be lightweight, fast, and visual.  It makes all programming languages directly compatible with browser based control and interaction, with no glue code in between.
 
 Its not that its nocode / lowcode, its that its zero code orchestration.  Its allowing the browser to call arbitrary code safely, in any order, without anything in between doing the wiring.
+
+Focusing on providing apps for LLMs to use as tools, and hosting those tools, vs trying to do things with the LLMs directly.
+
+The transformation efforts:
+1. converting all packaged code into json functions
+2. converting all API services into side effects
