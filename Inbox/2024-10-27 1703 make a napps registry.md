@@ -77,3 +77,5 @@ Focusing on providing apps for LLMs to use as tools, and hosting those tools, vs
 The transformation efforts:
 1. converting all packaged code into json functions
 2. converting all API services into side effects
+
+Further proof is the adoption of RFC for JTDs which indicate a shift to cross language types for programming.
