@@ -44,6 +44,9 @@ Want the fs piece split in two - the backing store and the live dynamic data.
 For mocking, we can skip the snapshot part and just use the ram shims.
 
 FS should be separate from git, as this is just an implementation detail.
+We could make the same dynamic layer underneath, simply in read only mode, and so we could store these things in ram and connect them up.
+
+So when we want to use git, we just swap out the interface to the dyanamic thing.
 
 FS needs to have a layer that takes persistence commands, where the live ram version is pushed down to deeper storage.  The snapshot id is passed up.
 FS needs to know about snapshot references, so that it can move things around by their content reference id, rather than their full value.
