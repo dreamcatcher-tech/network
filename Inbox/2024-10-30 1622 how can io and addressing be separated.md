@@ -57,3 +57,7 @@ Then we should make a very simplisitic version underneath which just ids everyth
 Instead of making a new accumulator each time, might be simpler to insert directly into the running one, if it exists ?
 
 Reading from the filesystem needs to be fulfilled at runtime, and would only happen to the running accumulator, by fulfilling its promises, so that the filesystem requests are kept as instructions only, and not data.  That data is always fulfilled at runtime, live.
+
+OR should we just implement what we already have, get it working, and then make changes to the system after that ?
+
+But pulling out the distinctions might not be possible without a refactor ?
