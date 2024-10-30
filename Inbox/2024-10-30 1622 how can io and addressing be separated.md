@@ -53,3 +53,7 @@ FS needs to know about snapshot references, so that it can move things around by
 How that reference is modelled should be freeform, and it doesn't care about the underlying implementation.
 
 Then we should make a very simplisitic version underneath which just ids everything with a counter.
+
+Instead of making a new accumulator each time, might be simpler to insert directly into the running one, if it exists ?
+
+Reading from the filesystem needs to be fulfilled at runtime, and would only happen to the running accumulator, by fulfilling its promises, so that the filesystem requests are kept as instructions only, and not data.  That data is always fulfilled at runtime, live.
