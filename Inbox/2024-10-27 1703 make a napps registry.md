@@ -67,3 +67,7 @@ Advantage is that we get massive multithreading for not much effort.  This need 
 Ideally we could have a napp host built in to deno or nodejs, so it gets called directly in band with no network losses.  Deno coud just use workers the same as the browser.
 
 Make a version that works in a browser to do the same thing for running browser compatible napps in multiple worker threads, to max out  the local computer resources.
+
+This immediately shifts the browser to be a direct window into serverless execution.  The browser need only be lightweight, fast, and visual.  It makes all programming languages directly compatible with browser based control and interaction, with no glue code in between.
+
+Its not that its nocode / lowcode, its that its zero code orchestration.  Its allowing the browser to call arbitrary code safely, in any order, without anything in between doing the wiring.
