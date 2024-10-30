@@ -36,6 +36,7 @@ When fulfilling things like fs reads, do not store them, just fulfill them live.
 
 Is the accumulator useful anywhere else ?
 Possibly the mock api gateway system ?
+The accumulator is probably the entry point of the recorder for snapshot testing and recording
 
 It never gets injected with resolved promises, only with open requests or settled requests.
 
