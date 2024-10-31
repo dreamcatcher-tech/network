@@ -74,3 +74,32 @@ Ideally we only need to send a single trigger action to the recieving chain, tha
 That merges the accumulator and the api, so we are actually making a disposable api object, which stores promises, and gets injected with accumulator objects.
 
 When an action is output that is a read of something local, then we fulfill it and resume execution.  We could stop execution at any point tho ?
+
+So the io channel is just a tree of accumulators.
+The api is just a wrapper around the accumulator.
+The exe is the compartment loader and the io channel object.
+
+io represents a single thread of execution, deadling only in messages and snapshots.  It is what creates snapshots.
+Still want the ability to only execute one incoming action at a time.
+
+Piercing
+Addressing externally is the responsbility of that layer, not of the internal system.
+
+Overall issue is that layers of addressing details have been flattened into the request objects, and the io channel is also flat, which makes it hard to reason about, error prone, and difficult to iterate.  It is tanlged up with addressing and snapshotting.
+
+What if requests was an array of accumulations ?
+And so the accumulation would be defined recursively ?
+
+Gives us a clean way to see the impact of any given action on the broader system.
+
+Internal id of actions should be opaque and not visible internally.  IO just needs to know how to attach incoming actions at the right place in the structure.  Exe cache would just hold the api that was inserted, which holds the promises that it put in.
+
+Layers are:
+1. action layer
+2. Addressing layer
+3. snapshot layer
+4. exe layer
+5. pooling
+6. queueing
+
+? where should process types go, like when we want to spawn a branch or not ?
