@@ -108,3 +108,7 @@ Layers are:
 DX is clumsy when trying to make a thread and then talk to it.
 So threading should actually be a separate thing, and should return a target api object to communicate with the created thing.
 The thing could be either created or created upon first action.
+
+threading and remote access becomes the same thing, with the only change being threading starts a new thread, and then returns back a remote interface targettged at that thread.  Then thread lifecycle actions can be sent to it, which get processed differently.
+
+Wrap in the self taget, wrap others in the remote target address.

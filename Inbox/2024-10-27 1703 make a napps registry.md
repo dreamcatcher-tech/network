@@ -84,3 +84,5 @@ Three unrelated things:
 1. securities free project funding
 2. ai function calling
 3. ai control of humans
+
+Makes packages become apis, just as we can call apis regardless of what language it was running in.
