@@ -104,3 +104,7 @@ Layers are:
 6. queueing
 
 ? where should process types go, like when we want to spawn a branch or not ?
+
+DX is clumsy when trying to make a thread and then talk to it.
+So threading should actually be a separate thing, and should return a target api object to communicate with the created thing.
+The thing could be either created or created upon first action.
