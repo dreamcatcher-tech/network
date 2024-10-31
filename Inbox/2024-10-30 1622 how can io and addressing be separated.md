@@ -61,3 +61,16 @@ Reading from the filesystem needs to be fulfilled at runtime, and would only hap
 OR should we just implement what we already have, get it working, and then make changes to the system after that ?
 
 But pulling out the distinctions might not be possible without a refactor ?
+
+Internal channels can be the same as the accumulator.
+
+Can we make accumulations for actions that need to close immediately ?
+
+Making everything be the accumulator is an improvement, so we should do it.
+What about transporting actions by just the reference to the commit, so they get reconstituted based off of git, which will hopefully hit the cache.
+
+Ideally we only need to send a single trigger action to the recieving chain, that there are messages, then they need to go open the io file to get those messages out.
+
+That merges the accumulator and the api, so we are actually making a disposable api object, which stores promises, and gets injected with accumulator objects.
+
+When an action is output that is a read of something local, then we fulfill it and resume execution.  We could stop execution at any point tho ?
