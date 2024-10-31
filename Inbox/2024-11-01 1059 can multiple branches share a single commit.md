@@ -28,3 +28,6 @@ The exe branch represents then the refs folder of the .git folder.
 This structure can hold git commits that point to branch tips, so it can be completely the contents of the refs folder, but like a meta commit, where this commit chain is interpreted differently, and can be expanded out to be the refs folder.
 
 This would provide the max possible thruput in terms of branching.  Execution of a batch of branches could be done with a single queue action, and all the branch actions get unpacked rapidly, quickly, then execution can begin.
+
+We can make the files changes branches be controlled separately, so the git history never pulls in the control layer.  All these experience commits, and inside the commit message, or inside a single special file, they would see the commit of the supervisor tree.
+This mirrors how git gets used, since the dev makes changes and from the branch perspective they just magically appear there.
