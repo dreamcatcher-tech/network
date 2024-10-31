@@ -558,7 +558,7 @@ If this functionality was done with napps that triggered on different events, th
 
 The execution environment being separate to the packaging structure is what causes this leak in the abstraction of a package, resulting in ghactions.
 
-##  the growth of json-schema tooling
+## the growth of json-schema tooling
 it points to this missing hole in the ecosystem, where a package format that was native json-schema is ripe.  The growth of json schema tooling correlates to the growth of LLM packages.
 
 https://npmtrends.com/openai-vs-zod-vs-zod-to-json-schema
