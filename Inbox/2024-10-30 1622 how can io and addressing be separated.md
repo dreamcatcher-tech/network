@@ -81,6 +81,7 @@ The exe is the compartment loader and the io channel object.
 
 io represents a single thread of execution, deadling only in messages and snapshots.  It is what creates snapshots.
 Still want the ability to only execute one incoming action at a time.
+Makes more sense to only allow one trail to be running at a time, so we are in effect single threaded.  We can do things that spawn new threads instantly, since this has no affect on the local state.
 
 Piercing
 Addressing externally is the responsbility of that layer, not of the internal system.
