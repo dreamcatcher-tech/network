@@ -114,3 +114,7 @@ threading and remote access becomes the same thing, with the only change being t
 Wrap in the self taget, wrap others in the remote target address.
 
 Should the mergeReply actually just include the filesystem snapshot that came back with the reply ?  Rather than passing back the whole git filestructure, just pass back the filesystem snapshot.
+
+Best to write functionalities on the inside, inside of napps, and build up the functions that way, since what the napps can do is all that matters.
+
+Then start exercising the interfaces, like an FS interface check, which can be applied to either the gitkv part or the in ram part.
