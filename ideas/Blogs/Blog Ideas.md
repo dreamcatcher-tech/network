@@ -565,3 +565,9 @@ https://npmtrends.com/openai-vs-zod-vs-zod-to-json-schema
 
 ## Practical purity
 If a side effect occurs but nobody is around to witness it, is it a side effect ?
+
+## hole in the ecosystem for small to medium projects with decentralized returns
+Big projects are decentralized, but small projects struggle to get big enough to be called decntralized and along the way are easily snuffed out.
+Dreamcatcher is a project to allow even the smallest possible project to raise funds and guarantee that any returns are decentralized, right from the outset.  This avoids being a security, and allows projects to start decentralized.
+
+This current position actually forces centralization, by making it so hard to start decentralized, that you have to start centralized, and then switch to decent, which is nearly impossible as temptation and mounting complexities block it.
