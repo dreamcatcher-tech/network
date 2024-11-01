@@ -15,3 +15,5 @@ If you do not specify a tool in the napp, it is the natural language interface ?
 Otherwise you have to specify a tool ?
 
 A napp could spec the agent as the main tool ?
+
+If it did not specify main, or it named the agent as main, then the default is an agent tool call.
