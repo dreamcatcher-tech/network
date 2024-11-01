@@ -46,3 +46,9 @@ Pooling still required as all the individual executors report back their results
 There can be multiple control branches per repo.
 
 Key is that we get given the hash of the whole process tree each time, which can be used as a reference to ensure repeatability.
+
+If this data structure had an easy way of knowing what actions needed to be executed, then we could batch them off for processing.  The sharding should group things in the same branch together, so that caches benefit the most.
+
+The runners should detect when they're saturated and send a new action into the db for processing automatically ?  Deno deploy seems to reuse isolates but not sure if this is in the same ram space.  If we took control of that, we might still end up in the same ram space anyway, so seems best to let deno handle all the spin up.
+
+One queued message for each execution, with possibly batching if there are too many messages to queue at once.  Then the guaranteed execution is a separate layer, outside of git, that is just a reliable execution with great scale parameters.  Then we can test this item totally separately of anything gitlike, as this is just part of the environment interface.
