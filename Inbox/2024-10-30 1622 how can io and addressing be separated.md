@@ -118,3 +118,14 @@ Should the mergeReply actually just include the filesystem snapshot that came ba
 Best to write functionalities on the inside, inside of napps, and build up the functions that way, since what the napps can do is all that matters.
 
 Then start exercising the interfaces, like an FS interface check, which can be applied to either the gitkv part or the in ram part.
+
+No action should ever go outside the exe branch(es).
+So addressing only needs to be concerted with the thread it is targeting.
+
+Any inter-repo comms would need to go via some kind of network gateway, since we have to have a dedicated branch that we share with the other repo.
+
+Actions always target latest, so they do not need to be snapshot awareness.
+
+A napp could be allowed to see inside its own io ?
+Be able to walk thru the state history ?
+? how to deal with forks and merges when dealing with snapshot walking ?
