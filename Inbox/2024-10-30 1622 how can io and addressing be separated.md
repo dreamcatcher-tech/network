@@ -132,3 +132,7 @@ Be able to walk thru the state history ?
 
 But the actions going out need thread addresses, however incoming actions do a particular thread have no such thing.
 Also actions going out are always in array sequence, whereas coming in uses sparse addressing
+
+clean up the xample napp.jsonc
+make tool to navigate the code inside the napp
+fixture for napps calling another napp.
