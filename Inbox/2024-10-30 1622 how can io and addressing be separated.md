@@ -129,3 +129,6 @@ Actions always target latest, so they do not need to be snapshot awareness.
 A napp could be allowed to see inside its own io ?
 Be able to walk thru the state history ?
 ? how to deal with forks and merges when dealing with snapshot walking ?
+
+But the actions going out need thread addresses, however incoming actions do a particular thread have no such thing.
+Also actions going out are always in array sequence, whereas coming in uses sparse addressing
