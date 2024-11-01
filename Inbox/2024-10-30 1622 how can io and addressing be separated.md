@@ -112,3 +112,5 @@ The thing could be either created or created upon first action.
 threading and remote access becomes the same thing, with the only change being threading starts a new thread, and then returns back a remote interface targettged at that thread.  Then thread lifecycle actions can be sent to it, which get processed differently.
 
 Wrap in the self taget, wrap others in the remote target address.
+
+Should the mergeReply actually just include the filesystem snapshot that came back with the reply ?  Rather than passing back the whole git filestructure, just pass back the filesystem snapshot.
