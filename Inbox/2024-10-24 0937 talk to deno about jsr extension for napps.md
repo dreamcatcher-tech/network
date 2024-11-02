@@ -23,3 +23,5 @@ Insurance pools to cover support assurance, reaction times.
 
 Talk about this super computer that Ryan Dahl keeps going on about.
 Make it a reality, since all your stuff would be on this computer, and not always somewhere else.
+
+Must make it operate in an offline fashion, so the hosting is hybrid and for high reliability or trust.
