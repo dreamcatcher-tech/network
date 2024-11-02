@@ -20,3 +20,6 @@ LLM replay and be able to use the opensource actions against the LLMs, sold at a
 Show call costs assosciated with all the presented LLMs, and offer revenue sharing.  Offer a mode where deploy can run the napps, or even the modules, and then people who produce these certified modules can receive revenue share.
 
 Insurance pools to cover support assurance, reaction times.
+
+Talk about this super computer that Ryan Dahl keeps going on about.
+Make it a reality, since all your stuff would be on this computer, and not always somewhere else.
