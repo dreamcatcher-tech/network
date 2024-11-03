@@ -9,4 +9,4 @@ Being able to run a package directly on deploy with nothing more than the go but
 
 We can make it come with a basic frontend.
 
-The playground could shift to making napps and deploying those instantly.
+The playground on deno could shift to making napps and deploying those instantly.
