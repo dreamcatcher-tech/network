@@ -40,3 +40,11 @@ Be great if we could stream the actions, so instead of creating all the workers 
 The creation of the tasks can cause isolate timeout, so we need to batch that somehow.
 
 Pool processing might be done up to some compute limit, where the commit is made and the instruction to the queue to amplify is sent off, rather than doing all the work, to avoid timeout of the isolate ?
+
+We should on the artifact side, decide how to shard out the tasks, and then send those instructions out.  The shockwave call would work out how to make the individual instructions for shockwave, and would create an array of them all.
+
+The array would get parsed by shockwave, which would then break the task up into batches, as much as was required.  It might write the full array to disk, or at least using batched atomics until it was done.  Then amplify it.
+
+In regular calling, shockwave would be called with the resulting executions that needed to occur as a result of all the tension in the thread complex.
+
+? Any sp
