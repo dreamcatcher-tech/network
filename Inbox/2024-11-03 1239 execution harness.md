@@ -38,3 +38,13 @@ Could read it by just getting the ids of the history, and then selecting a speci
 Ids must be a DAG where each one points to one or more parents, and they always ultimately terminate in a single commit.
 
 We could allow snipping history and just tolerate the broken git history, but that is bad since existing git tools won't process that well.
+
+FS doesn't care that its git, just cares that it has this navigable property.
+Current commit for the execution branch is the same - doesn't care that its git, just cares sometimes that it can get the id, and also read from prior ids.
+
+Fire and forget promises should provide an id so we can get the result at some later date.
+When they return, the proctree should label them as ignored, so no need to start up an execution to reprocess it, since it has been completed.
+
+Also allows promise racing ?
+
+Procmanager, so if have multiple branches doing processing, there is a top level branch that coordinates them all and does message passing between them.
