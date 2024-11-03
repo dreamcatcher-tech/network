@@ -25,3 +25,29 @@ Talk about this super computer that Ryan Dahl keeps going on about.
 Make it a reality, since all your stuff would be on this computer, and not always somewhere else.
 
 Must make it operate in an offline fashion, so the hosting is hybrid and for high reliability or trust.
+
+The goal is to talk about making jsr packages deployable.  
+
+Run benchmarks with tasks of varying type:
+1. very simple tasks
+2. long async task, like a web call that takes a long time, or a timed delay
+3. long compute task, like grinding out some hashing or creating crypto keys
+4. mixture of tasks
+
+Then show the effect of batch size, and task size.
+
+Run these benchmarks against an auto deployed deploy instance, which is like the preview deployment.
+
+Might be nice to get job results as they come in, rather than waiting right until the end ?
+
+??? how to retrieve the results of the job ?
+poll for the job results ?
+When the shockwave completes, the results can be retrieved by using a getMany call.
+
+Could read from the job ids early if you wanted, but is more efficient to use getMany.
+
+
+emit progress by watching the job count.
+show progress in enqueing by watching the job enqueue.
+emit a done enqueue once the enqueued jobs counter hits the total value.
+store this statistic.

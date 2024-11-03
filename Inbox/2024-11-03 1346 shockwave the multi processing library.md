@@ -47,4 +47,8 @@ The array would get parsed by shockwave, which would then break the task up into
 
 In regular calling, shockwave would be called with the resulting executions that needed to occur as a result of all the tension in the thread complex.
 
-? Any sp
+? Any speedup by writing the tasks to disk, and then reading them, rather than writing and rewriting each time a new batch cut is made ?
+
+So write the task list to disk, then trigger all the queue actions to read from that, which should be faster than rewriting all the time.  This initial write can be used for stats too ?
+
+If the jobs hold binary data, this might need special treatment in some way, maybe writing in batches ?

@@ -88,3 +88,4 @@ Three unrelated things:
 Makes packages become apis, just as we can call apis regardless of what language it was running in.
 
 Must be running offline mode.  The reliability should be in finding the hashes of the pieces that make up the package, not the availability of a particular network service.  Should be able to pull from peers, local cache, the works.  Then we have a few strong hosts, and the network has practically perfect uptime.
+
