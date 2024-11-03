@@ -19,3 +19,24 @@ chunk metrics too, so can say how many chunks there are in the queue and what
 chunk counter, which is messages that are unammplified.  Allow for nesting of chunks too.
 
 Queue length parameter, so we know the total queue length.
+
+If we can avoid having to make a new thread for each operation, that can save a lot of time too.
+So if the shockwave library can be called as a napp, and it is given a set of globs, and some function to run on each instance, then it would do all that and only report back when it was done.
+
+The results would be deterministic.
+
+Is it about running napps exclusively ?
+
+Features:
+1. Deterministic output
+2. rapid online of parallel workers using various techniques
+
+
+Can we use shockwave to run variations during evals, rather than creating a new thread per execution ?
+It might be faster than bottlenecking thru the proctree.
+
+Be great if we could stream the actions, so instead of creating all the workers upfront, start them as soon as we know any of them, so when walking a filesystem, we would stream in the files, and dispatch tasks as soon as we were aware of them.
+
+The creation of the tasks can cause isolate timeout, so we need to batch that somehow.
+
+Pool processing might be done up to some compute limit, where the commit is made and the instruction to the queue to amplify is sent off, rather than doing all the work, to avoid timeout of the isolate ?
