@@ -16,4 +16,6 @@ Dashboard to show its peak performances.
 ? some way to know its live performance by storing some metrics somewhere ?
 chunk metrics too, so can say how many chunks there are in the queue and what
 
+chunk counter, which is messages that are unammplified.  Allow for nesting of chunks too.
+
 Queue length parameter, so we know the total queue length.
