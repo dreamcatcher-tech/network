@@ -52,3 +52,9 @@ In regular calling, shockwave would be called with the resulting executions that
 So write the task list to disk, then trigger all the queue actions to read from that, which should be faster than rewriting all the time.  This initial write can be used for stats too ?
 
 If the jobs hold binary data, this might need special treatment in some way, maybe writing in batches ?
+
+Write some commit data down for the whole job, so the job metadata.
+Then when the processor runs it gets the job data, but also the job metadata, which can be used to reduce duplicate writes to the db.
+
+Hopefully we could hash the data, and then use the web cache to save some time and costs.
+Use the expiration of the cache to match the job expiration.
