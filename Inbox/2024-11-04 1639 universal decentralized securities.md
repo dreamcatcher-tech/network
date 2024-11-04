@@ -18,3 +18,5 @@ Things you cannot use elsewhere can never be decentralized income streams.
 But technology should be, by default, a decentralized stream.
 
 Ventures that set up as a decentralized work quality appraiser.  Once we know what the threashold for decentralized is, these companies can set up and do this work and prove they are disinterested.
+
+The market need is for a way to have genuine decentralized profits, so small ventures can be exempt from securities laws.  This will include AI based restrictions on what everyone who is involved is saying to the public.

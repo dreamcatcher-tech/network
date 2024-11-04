@@ -16,3 +16,5 @@ Use this as a secure whiteroom for yourself.  Invite your lawyer to join.  Or a 
 Make a tool specifically designed to handle troublesome lawyers, like many of the employment lawyers that cause undue stress for employers.  Lets employers pool together to stop these bad actors, and still ensures staff have a fair process.  Ideally would invite staff to begin the process themselves.  Cheaper to have AI settle disputes than get lawyers involved.
 
 Burstable workforces would have this built in, so the company would be helped to be in compliance much cheaper.
+
+See the legal problems as a programming problem, with optimization tasks.  The AI would process all the data and generate responses, then ratify against known good things before getting certed by humans in the loop.

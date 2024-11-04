@@ -31,3 +31,14 @@ Use the db for thread coordination,
 System to allow cooperative parallel commiting if we mark the pool items as partials, then new actions will only pool the items not in the partial pool ?
 But this is susceptible to delays during recovery, which we do not want.
 
+Storing tension
+If each IO.json tracks if its children have tension, then we can walk the tree down.
+So any change to a child ripples up to the parent at the top.
+BUT if we track all the external actions coming in, then if these are unresolved, these are the only things that can be causing actions.
+We could mark if they are under tension, or waiting something external to happen.
+
+The proc branch could be related to a single terminal session, or to init, or some other kind of demarcation.  This means the chance of collisions while calculating it are much smaller than the full system.
+
+Its almost like a lightweight thread vs heavy.
+We should be able to nest these threads, based on usage.
+
