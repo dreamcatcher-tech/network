@@ -89,3 +89,5 @@ Makes packages become apis, just as we can call apis regardless of what language
 
 Must be running offline mode.  The reliability should be in finding the hashes of the pieces that make up the package, not the availability of a particular network service.  Should be able to pull from peers, local cache, the works.  Then we have a few strong hosts, and the network has practically perfect uptime.
 
+## Competitors
+We should make a map of all the major package registries on the internet, map out their control structures, incentive structures maybe, and indicate how they may have been subjected to a control that's not in our best interest, and show that there's an opportunity for a unified package repository that stays open and has incentives built into it to keep it sustained.
