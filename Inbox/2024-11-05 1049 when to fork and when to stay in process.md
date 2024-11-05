@@ -34,3 +34,5 @@ Or, a chaser can be sent out, whose job it is to wait for the jobs to complete, 
 Watcher is more reliable tho, since updates to the batch might not know they are the last one, or might collide a lot if they are trying to update without seeing a difference in the object.  The process might crash in between doing the job sumission and in processing the last item.
 
 Chaser goes out as the last task, which starts watching for the job completion.
+
+Could shard the reducer functions, and implement a custom merge, since all the requests in a wave would no conflict, and we could merge them all together.  Would produce wasted git objects tho.
