@@ -10,3 +10,5 @@ Being able to interact with snapshots using the json interface is maybe overreac
 Requires that the running of the napp have some state that lingers between calls ?
 
 Or, the snapshot could be passed in, and the snapshot napp is simply interpreting it ?
+
+Multiple parents might be just two snapshots.
