@@ -55,3 +55,6 @@ profit share of the hosting company is how attribution gets paid out.
 No assets are ever stored inside the company, so a legal dispute would result in shutdown if unresolved.
 
 Allow individuals to use the company, and trading as is their personal name.
+
+If its 12GBP to register a subsidiary, then we might as well create a sub for each venture.
+`subsidiary-name.dc-nat-uk1`
