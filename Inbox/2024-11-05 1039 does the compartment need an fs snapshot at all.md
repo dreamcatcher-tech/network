@@ -29,3 +29,9 @@ How does a remote branch that is not an exe branch get read from ?
 So the fs thing would have a range of actions ?
 The napps interface would be used to create the actions that the runner thing would handle.
 Means the fs json function interface can use the same tooling as everything else.
+
+Could push the fs resolutions into the Trail object ?
+
+Or, pass a resolver into the compartment ?
+
+No point doing the resolving if the execution is cached and doesn't need it.
