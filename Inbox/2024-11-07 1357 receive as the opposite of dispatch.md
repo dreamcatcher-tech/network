@@ -29,3 +29,5 @@ Relate to all multithreaded programming paradigms.  Make sure we nestle inside a
 Write demo apps that use all the features and show how they work.
 
 Inside the execution branch, hold lock on the data branches, so that threads do not collide and need merging.
+
+We cannot have shared memory since we want to run with massive parallelism.
