@@ -1,0 +1,8 @@
+
+>[!tip] Created: [2024-11-08 Fri 09:27]
+
+>[!question] Targets: 
+
+>[!danger] Depends: 
+
+As soon as we can bulk email, we can start sending account updates and service receipts, and attach marketing information on those.
