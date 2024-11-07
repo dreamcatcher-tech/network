@@ -13,4 +13,6 @@ exit, which terminates the current thread.
 
 kill, which terminates some other thread.
 
-daemon
+daemon would cause the process to be moved to be a child of the init process.
+
+We should be able to make a reasoned document that maps traditional process control functions to our api, and explain why the differences.
