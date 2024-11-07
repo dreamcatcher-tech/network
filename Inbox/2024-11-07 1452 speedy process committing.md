@@ -16,3 +16,5 @@ Response would be just the filepaths and the oids.  The reconciler then bubbles 
 ? when would it send out all the actions ?
 
 How would it handle knowing when it is time to commit vs when to keep executing single operation things ?
+
+If the thread just did things that were local, with no transmission, or just reads, then we should keep going with them in the process until we hit the action limit, or execution time limit.

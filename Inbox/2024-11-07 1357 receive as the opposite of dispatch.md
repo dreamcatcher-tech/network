@@ -24,3 +24,8 @@ Then say what is different in content addressable systems.
 Show how we implement the core features.
 This would make a great intro to the programming model.
 Plus the bots would understand it strongly, since the relationship to things it knows is powerfully strong, and it relates to all the things it knows about.
+
+Relate to all multithreaded programming paradigms.  Make sure we nestle inside a universal one that is acceptable to all the languages.
+Write demo apps that use all the features and show how they work.
+
+Inside the execution branch, hold lock on the data branches, so that threads do not collide and need merging.
