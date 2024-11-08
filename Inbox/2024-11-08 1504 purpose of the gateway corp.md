@@ -7,6 +7,10 @@
 
 Want to provide an easy onramp for coordination with limited liability protections that doesn't use shares to measure ownership or contribution.
 
+Want to get away from implicit companies and into declarative companies.  Declarative means they declare their goals, and the management towards that is external and AI managed.
+
+The control of what the company is becomes based on external forces.  If you want to change, you would abandon it and start again.
+
 If no need for shareholdings, then the incorporation can be very light.
 
 If taking on liabilities, then we can offer a shared system, but best if you purchase your own.
