@@ -28,3 +28,6 @@ Compartment runs a single thread to exhaustion, but the transmissions are also r
 Compartment takes a trail, then executes a napps functions.
 
 It should boot, then be injected with something that seals it and reserves its usage for only the root user.
+
+## Using the trail as a way of tracking promise state and controlling execution
+Only thing wrong with it, is the compartment's attachment to it as a signalling system.
