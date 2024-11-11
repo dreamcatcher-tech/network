@@ -26,3 +26,5 @@ What the engine does is to ensure persistent running of a napp, whereas a compar
 Compartment runs a single thread to exhaustion, but the transmissions are also required to keep the whole system moving forwards.
 
 Compartment takes a trail, then executes a napps functions.
+
+It should boot, then be injected with something that seals it and reserves its usage for only the root user.
