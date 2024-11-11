@@ -21,4 +21,8 @@ Then it is also given a napp to start running, as tho that is the installed thin
 
 Is execution an interface, or is it dependent on the objects we pass in ?
 
-WHa
+What the engine does is to ensure persistent running of a napp, whereas a compartment does simple running.
+
+Compartment runs a single thread to exhaustion, but the transmissions are also required to keep the whole system moving forwards.
+
+Compartment takes a trail, then executes a napps functions.
