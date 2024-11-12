@@ -13,5 +13,8 @@ dispatch to a non api napp
 isolated code execution
 restartable execution
 
+napps that are passthru
+napps with code exports
+napps with an agent export
 
 and then maybe some characteristics we care about, like speed, ram usage, latency, peak chain rate.
