@@ -34,3 +34,5 @@ Host functions:
 4. await dirs and files changes from the repo
 
 Making a payment updates the balance the hold holds for you, which it provides a readonly link to your repo.  An area of your repo that the host will not let you change.
+
+Engine is then something that awaits external authenticated triggers saying that a new user just got created.  So hosts need an interface that allows for new IDs to be inserted into the system, and needs to set up some base repos, which is what the ids and payment systems would be connected to.
