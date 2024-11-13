@@ -36,3 +36,5 @@ Host functions:
 Making a payment updates the balance the hold holds for you, which it provides a readonly link to your repo.  An area of your repo that the host will not let you change.
 
 Engine is then something that awaits external authenticated triggers saying that a new user just got created.  So hosts need an interface that allows for new IDs to be inserted into the system, and needs to set up some base repos, which is what the ids and payment systems would be connected to.
+
+The server says what is the base repo the authenticated user can access.  From there, they can figure out what else they can access.  They should be able to pierce in to any other repo, since their auth would cause the target parent heirarchy to be looked up, and then if their auth gives access to the parent, they can access the child.

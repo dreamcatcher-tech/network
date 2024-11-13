@@ -18,3 +18,5 @@ napps with code exports
 napps with an agent export
 
 and then maybe some characteristics we care about, like speed, ram usage, latency, peak chain rate.
+
+[[2024-11-14 1225 reasoner should help naming concepts]]

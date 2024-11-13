@@ -29,5 +29,7 @@ Compartment takes a trail, then executes a napps functions.
 
 It should boot, then be injected with something that seals it and reserves its usage for only the root user.
 
+The server is an auth wrapper around the engine which is running.  Server can use the engine to store is auth information, but it just provides a way to access that from outside chainland.
+
 ## Using the trail as a way of tracking promise state and controlling execution
 Only thing wrong with it, is the compartment's attachment to it as a signalling system.
