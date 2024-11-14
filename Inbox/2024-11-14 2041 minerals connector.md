@@ -14,3 +14,7 @@ So makes more sense to vault the ore than the mineral.
 make a connector system that uses AI to map out all the mineral productions round the world, and at what price, and then start communicating and cutting deals to connect up suppliers to buyers for a fee.
 
 May make a listing system for complicated deals using AI to craft solutions and optimizations.
+
+Map out all the contacts, how they like to be spoken to, map all the connections, handle multi lingual translations, build up a list of agents in the field.  Navigate complex compliance.
+
+Build up maps of supply and demand.  Have tools to figure out what a fair deal price is for minerals.
