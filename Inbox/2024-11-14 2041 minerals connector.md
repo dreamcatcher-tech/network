@@ -18,3 +18,5 @@ May make a listing system for complicated deals using AI to craft solutions and 
 Map out all the contacts, how they like to be spoken to, map all the connections, handle multi lingual translations, build up a list of agents in the field.  Navigate complex compliance.
 
 Build up maps of supply and demand.  Have tools to figure out what a fair deal price is for minerals.
+
+Making these deals seems very interesting, and a great way to leverage AI to process messaging of all kinds.
