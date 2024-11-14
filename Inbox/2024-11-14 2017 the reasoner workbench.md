@@ -16,5 +16,7 @@ There are some base rules for reasoning that get applied, and from there it is u
 
 Additionally, render in ways that match it to the external world.  Detect contradictions with the real world.  Create tests to verify the correctness of the knowledge base, and say which are assumptions and which are fact.
 
+The internal part could be seeded by external data, like a newspaper article.
+
 The process continues for multiple render loops.
 And multiple people can submit errors in renders.
