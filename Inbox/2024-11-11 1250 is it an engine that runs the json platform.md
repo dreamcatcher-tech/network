@@ -31,5 +31,7 @@ It should boot, then be injected with something that seals it and reserves its u
 
 The server is an auth wrapper around the engine which is running.  Server can use the engine to store is auth information, but it just provides a way to access that from outside chainland.
 
+The browser could be made to be a remote host, and just connect in this way, but seems better as a thin host since less complication.
+
 ## Using the trail as a way of tracking promise state and controlling execution
 Only thing wrong with it, is the compartment's attachment to it as a signalling system.
