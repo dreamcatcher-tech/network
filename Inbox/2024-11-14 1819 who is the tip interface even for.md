@@ -29,3 +29,5 @@ Then when the inflator gets written to, it has ids that the receive side uses to
 
 options:
 - trail has a special 
+
+When doing remote writes, the binary data is written to a git object in the local repo, then the hash is transferred, then re-read as a local object on the far side.  Might be transferring a temporary file system.

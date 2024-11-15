@@ -22,3 +22,5 @@ The process continues for multiple render loops.
 And multiple people can submit errors in renders.
 
 Running instances of napps are a rendering too, and so stucks refer to renders.
+
+Simple version would show looping to refine a simple statement about some parts of the system, using the rules of reasoning.
