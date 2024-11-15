@@ -20,3 +20,5 @@ The internal part could be seeded by external data, like a newspaper article.
 
 The process continues for multiple render loops.
 And multiple people can submit errors in renders.
+
+Running instances of napps are a rendering too, and so stucks refer to renders.
