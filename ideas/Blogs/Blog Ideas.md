@@ -571,3 +571,6 @@ Big projects are decentralized, but small projects struggle to get big enough to
 Dreamcatcher is a project to allow even the smallest possible project to raise funds and guarantee that any returns are decentralized, right from the outset.  This avoids being a security, and allows projects to start decentralized.
 
 This current position actually forces centralization, by making it so hard to start decentralized, that you have to start centralized, and then switch to decent, which is nearly impossible as temptation and mounting complexities block it.
+
+## the ideal computing platform
+If we write about what the ideal platform looks like, and include AI in this model, then we can compare ourselves against this ideal, and also compare all other solutions, including fragmented solutions, where multiple products are combined together to achieve the platform.  This can show if anyone else is trying to be this unified platform, or how a unified platform can displace marketshare from larger encumbents that do not 
