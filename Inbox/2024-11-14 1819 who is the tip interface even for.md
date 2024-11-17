@@ -13,12 +13,9 @@ So local tip takes a narrowed form of action that would otherwise be addressed o
 
 Making it be the same as the api interface helps a little bit, but then we have a conversion problem between the two.  Being the same means it could be passed in as part of the api for testing, rather than relying on the action translation system ?
 
-how to write a uint8array ?
-
 Receive is easy, but transmit is hard.
 
 trail should have always the special channel buffer side thing.
-the content should never be inserted
 give it an index number, which gets recovered from the temp thing.
 
 So inflating also means going thru all the outcomes, retrieving the inflation id, and ensuring that these ids are inflated and present.
