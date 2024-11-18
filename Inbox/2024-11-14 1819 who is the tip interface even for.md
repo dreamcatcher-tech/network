@@ -24,7 +24,5 @@ Then when the inflator gets written to, it has ids that the receive side uses to
 
 ? can this be used to send snapshots around the place ?
 
-options:
-- trail has a special 
 
-When doing remote writes, the binary data is written to a git object in the local repo, then the hash is transferred, then re-read as a local object on the far side.  Might be transferring a temporary file system.
+When doing remote writes, the binary data is written to a git object in the local repo, then the hash is transferred, then re-read as a local object on the far side.  Might be transferring a temporary file system, or just files named in the dedicated network branch.
