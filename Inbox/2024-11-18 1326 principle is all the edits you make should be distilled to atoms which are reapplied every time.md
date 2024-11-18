@@ -29,3 +29,13 @@ you may snip the knowledge tree and scope the atoms you want at a certain layer.
 It should be aware of the outputs of tests.
 
 When generating code, should start with generating ts interfaces and types first, based on how the diagrams explain the interactions of the system.
+
+Every chat you have should be part of this process, so whenever you converse, 
+
+The key is to do this in a group - so if we are all having all our chats contribute to the atoms, and the bots can check in what we meant, and then we have group consensus ability, then we are a team.  And we are as efficient as possible.
+
+Get correction at the time if you are talking and saying something contradictory.
+
+Get the team to face difference circumstances, like expos chat groups interviews, and record the answers.  Drill team members on the answers.
+
+bug bounty so when errors are detected in the core knowledge, rewards are paid out.  This is on top of the attribution.
