@@ -21,3 +21,9 @@ Basically keeps a spec in sync behind your code at all times.
 This is easily cloned by anybody, but it is applicable to all kinds of endeavour.  The social network of helping each other out, coupled with the napp registry, and the dreamcatcher rules attracting and holding everyone together, with the final hurdle being the dreamcatcher out competing all single point efforts, since it can quickly absorb, monetize, have feature equivalence, and incent disparate people to come together sooner, with less overhead, to share more prize.
 
 The point solution company requires a much higher threshold since people need to come together earlier and with greater cohesion before they activate.
+
+So when you are modifying a render, the top level atoms may get updated and be drawn to your attention, which would cause a shadow copy to do a range of edits thruout the codebase, which you should be aware of too.
+
+you may snip the knowledge tree and scope the atoms you want at a certain layer.
+
+It should be aware of the outputs of tests.
