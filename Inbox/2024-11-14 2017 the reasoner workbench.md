@@ -28,3 +28,8 @@ Simple version would show looping to refine a simple statement about some parts 
 This is a novel approach to software construction, but it applies to the construction of any thing at all.  This is the intelligence of the whole system, and no amount of tooling or experts will replace it.  So making tools that specialize in reasoning, and then plugging in generation afterwards, with the corrections being used to change the top level things.  This is the principle of reasoning.
 
 Reconciling the workbench with the broader knowledge the model has, this seems key.
+
+Key really is reasoning hard about the top level tree of knowledge, and working to make changes to that which can cause changes to the rendered output of a specific thing.
+
+It should also be able to back infer, or reverse engineer, by reading a codebase.  May attempt to come at it from multiple angles, change the order of incremental parsing, and other divide and conquer strategies.
+Use the reasoner to come up with different approaches to solve this task.

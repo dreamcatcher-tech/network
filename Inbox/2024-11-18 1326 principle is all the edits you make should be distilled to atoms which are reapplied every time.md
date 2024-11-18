@@ -39,3 +39,8 @@ Get correction at the time if you are talking and saying something contradictory
 Get the team to face difference circumstances, like expos chat groups interviews, and record the answers.  Drill team members on the answers.
 
 bug bounty so when errors are detected in the core knowledge, rewards are paid out.  This is on top of the attribution.
+
+So basically, as you are chatting, knowledge graph changes are being made, and the implications worked thru, like website updates. 
+These alternate views can be good to show scenarios too, like if we changed our name, or other such things, so that all the artifacts that get generated have the implications reasoned thru.
+
+So basically for every chat, or talk, the background analyzer should be reasoning about if the knowledge graph should change.  This is good since it makes maximal use of all your chats.  When new models come out, we can run the checks across the whole knowledge base too, so we might squeeze some extra detail out.
