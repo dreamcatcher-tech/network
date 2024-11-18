@@ -27,3 +27,5 @@ So when you are modifying a render, the top level atoms may get updated and be d
 you may snip the knowledge tree and scope the atoms you want at a certain layer.
 
 It should be aware of the outputs of tests.
+
+When generating code, should start with generating ts interfaces and types first, based on how the diagrams explain the interactions of the system.
