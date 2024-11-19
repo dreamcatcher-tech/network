@@ -39,3 +39,5 @@ When we change the format, or the bots that we can extract with, we should repea
 May include corrections that we use to patch the incoming info to make reconciliation easier ?
 
 Common corrections in the ingestion pipeline might be useful ?
+
+Be able to process each file in full context, not in chunks, by processing in batches.
