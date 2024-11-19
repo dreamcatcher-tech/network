@@ -29,3 +29,13 @@ Give it the reference definitions, and then get it to recurse all the transcript
 So then after we talk, the idea is we spend a bit of time reconciling back in, and then summarize the changes with the commit being released.
 
 Cursor doesn't have stucks in band.  Also I can't change or fix their bugs in any way - their business model doesn't allow it.
+
+Filters where we can gather a list of files that had some ai tooling run.
+
+Being able to make your own agents, separate to the files you're working on, like bringing one repo to bear on another repo.
+
+When we change the format, or the bots that we can extract with, we should repeat the process again.
+
+May include corrections that we use to patch the incoming info to make reconciliation easier ?
+
+Common corrections in the ingestion pipeline might be useful ?
