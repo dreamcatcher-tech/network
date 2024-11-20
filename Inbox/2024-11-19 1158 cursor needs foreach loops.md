@@ -41,3 +41,8 @@ May include corrections that we use to patch the incoming info to make reconcili
 Common corrections in the ingestion pipeline might be useful ?
 
 Be able to process each file in full context, not in chunks, by processing in batches.
+
+Lacks large scale reasoning by way of looping a for loop over each file at a time.
+
+When reconciling, consider the changed file against every other file, and look for mutual changes.
+Then of all the changed files during recon, compare them with each other file one by one, making the next layer of changes.  Continue until some stability threshold is reached.
