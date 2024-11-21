@@ -27,3 +27,5 @@ In the evals, can try to game the system, and produce odd results.  Test bias to
 Test against different classes of value.
 
 First step is to compare the relative value of all the different classes of contribution.
+
+Basically we can black box the basic algorithm, and treat it like a magic function, then try out different wants of fulfilling those requirements, with fairness being the goal, and cost, understanding, and explainability being the balancing goals.
