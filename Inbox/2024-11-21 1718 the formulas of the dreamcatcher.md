@@ -18,4 +18,12 @@ Formula needs to be easily understood by everyone, easily interrogated.  Must be
 
 We could probably make some eval rules for how this works, as in going thru some real world examples, and then having a guess at the relative weights.
 
-There are potentially many formulas we could apply, but the core general formula is that we take all the contributions recorded, and then 
+There are potentially many formulas we could apply, but the core general formula is that we take all the contributions recorded, and then work out relative value, for a given usage, then attribute back to each person based on the sum of their relative contribution values.
+
+Harnesses that valuable contributions happen a lot.
+
+In the evals, can try to game the system, and produce odd results.  Test bias towards certain types of contribution.  Detect long running frauds, like gradually changing the code and then ending up back where it was before, but having defrauded the original contributors.
+
+Test against different classes of value.
+
+First step is to compare the relative value of all the different classes of contribution.
