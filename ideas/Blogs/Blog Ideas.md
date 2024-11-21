@@ -574,3 +574,6 @@ This current position actually forces centralization, by making it so hard to st
 
 ## the ideal computing platform
 If we write about what the ideal platform looks like, and include AI in this model, then we can compare ourselves against this ideal, and also compare all other solutions, including fragmented solutions, where multiple products are combined together to achieve the platform.  This can show if anyone else is trying to be this unified platform, or how a unified platform can displace marketshare from larger encumbents that do not provide unified.
+
+## Ambientism
+beyond capitalism and communism, ambientism is where an automated system takes care of your needs amongst the economy.  So we should map out what types of functions you want from the country, and show how ambientism would work, to reduce your concerns, increase the performance of your surroundings, treat everyone fairly, and provide rapid auditing.  Envisage a world where al these concenrs, taxation, commons, friend networking, job hunting, product selection - all this is optimized.  Show leaving school where school was in this ambience system so you come out already an expert at something relevant, whatever that happens to be.

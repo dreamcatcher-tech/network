@@ -17,3 +17,5 @@ Then make the relevant changes.
 Need something better than diffs to represent what changed ?  
 
 Some kind of severity score, or number of new topics added - a complexity shape that shows what it did.
+
+Need to trace back when a patch makes changes, so we know a note has been ingested.  Then search for orphans that haven't be ingested anywhere ?
