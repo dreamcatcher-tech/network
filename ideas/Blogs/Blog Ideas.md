@@ -577,3 +577,10 @@ If we write about what the ideal platform looks like, and include AI in this mod
 
 ## Ambientism
 beyond capitalism and communism, ambientism is where an automated system takes care of your needs amongst the economy.  So we should map out what types of functions you want from the country, and show how ambientism would work, to reduce your concerns, increase the performance of your surroundings, treat everyone fairly, and provide rapid auditing.  Envisage a world where al these concenrs, taxation, commons, friend networking, job hunting, product selection - all this is optimized.  Show leaving school where school was in this ambience system so you come out already an expert at something relevant, whatever that happens to be.
+
+Show some dashboards to measure how close a city is to ambience.  Every city offers some kind of ambient services, else people would not congregate there.  Score current cities and some ideal cities and varying levels of deployment.
+
+Show how different levels of rollout scores at different levels.
+Show what a childs lifecycle looks like in one of these cities, and score their cost to the city and their benefit in this system.  Compare with a taxed child.  Show how their total expressive output potential is higher at every stage.  Show how immigration can work.
+
+Ambient cities.
