@@ -24,3 +24,9 @@ Would be good for multiple participants wanting to see streaming data.
 
 ? Use livekit for all the client side data ? since it has an RPC interface, which would let us call in to the queue processing region directly.
 Can avoid the double processing of broadcast channels and then relay on to clients, which is effectively a totally separate data channel.
+
+issue with livekit, is that you get charged for the connection minutes.  We could just tear down the room as soon as the messaging has stopped.
+
+Seems best to just do broadcast of messages with some catchup mechanism, and rely on this to get streamed data across.  Maybe clients broadcast back to allow bulk messages, rather than many small messages.  Or just batch them up in chunks.
+
+Clients can rerequest the full catchup packet, or specific message numbers, which get re sent.
