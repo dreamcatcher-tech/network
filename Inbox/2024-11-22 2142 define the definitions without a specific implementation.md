@@ -12,3 +12,7 @@ Link back these things to the definitions.  Show on a graph what parts of the im
 Then bring in the blog posts and other items.
 
 Blogs should never have any new information, but just assemble in a consumable way what is included in definitions and implementations.  This should make them chattable, and the sys prompt that caused the tone and presentation of the blog should be present in the bot.
+
+Have some way to compare our system to other economic systems, based on a standard set of metrics or appraisals ?
+
+Somehow, claude started talking about sustainable value creation.
