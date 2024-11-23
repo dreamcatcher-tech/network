@@ -36,9 +36,17 @@ Once we can handle everything, and leverage vercel keeping everything up to date
 Key is to pick the right insertion point so as to leverage the existing technologies, like auth, then overtake them using stucks.  The heart of the dreamcatcher doesn't need to be fully dreamcatcher, fully artifact - it can have an element of traditional - we only seem to care about the persistence of data, and the execution of AI calls against a filesystem.
 
 Should we perhaps just run everything using the templates, and nothing of our own EXCEPT the bulk mass calculation and filesystem parts ?
+Basically whatever isn't directly on the path to enabling the stuckloop should be compromised and use existing tools.
+If it is never going to be public, like the logged in users table, then we can just use traditional systems, like postgres, and just take whatever we're given to save every ounce of time and be part of a large base of users that will be sharing our problem.
+
+Also can incrementally pull it apart, so use the base layer, get the ai up and running, then migrate over to privy, rather than all at once.
 
 ? make a drizzle-orm compatible layer so we can connect straight in ?  Or just hand crank it ?
 
 messages could get saved in the db as a single file for every message, which makes it easier to truncate, more efficient writing, less db calls.  Use cache to make it quick to repiece - just save the latest fully reconstructed message history.
 
 Saving the message and getting it pegged before making the AI call seems crucial for provenance, but not much else.
+
+auth could be a git repo with files.
+every api request could require a validated id to be sent with it, else the api would reject the call ?
+make some secrets from the front end, to bond a front end to a backend.
