@@ -22,6 +22,7 @@ Running a DAO where the AI allows members to update a knowledge base, and build 
 
 Then we ultimately want to get to be a decentralized computing platform.
 
+We seem to be a generic form of human in the loop, which is generalized, and can be applied to any kind of problem, with varying revenue share payments.
 ## Contribution AI
 takes in a git repo, and some usage info, then works out who made what contributions and how valuable they are ?
 
