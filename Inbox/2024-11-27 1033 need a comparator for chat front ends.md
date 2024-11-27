@@ -8,6 +8,20 @@
 
 need a place to just show chats with some internal components and artifacts.
 
+LibreChat
+Fully featured
+But huge numbers of files
+Not serverless first.
+Huge overhead to turn on all the features, as modularity is hard
+To do our core components it is overkill
+Unlikely to be secure
+If this could be done modularly, in a serverless first way, then we could dreamcatcher it ?
+has about a million databases connected to it, so we need to get that down to interfaces
+Looks like a very unstable prototype that does everything, and will struggle to hold together.
+It shows how a program should be simple to one click deploy
+So keep a note of the features we need in the UI, keep using the vercel one, until we need a new one.  Also keep note of how to convert libre into this blockchain version.
+? is it enough to deliver the crm on ?
+
 https://github.com/Yonom/assistant-ui 
 This is quite good, nice and clean, but doesn't have the fork ability like librechat.
 This would be the choice if librechat becomes too hard to strip bits out of it.
@@ -38,3 +52,4 @@ We charge for these calculations, at a flat rate, but we charge a cut if we are 
 Allow anyone to run this self hosted, but it will generate a fee for itself when this happens.
 
 Then we go about using this system to enable people to cooperate faster.
+
