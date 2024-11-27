@@ -14,3 +14,5 @@ If efficiency was the agreed goal, then we can make machines to assess whether a
 So comparing any system against this ideal, and then summing the losses of the whole system, we can start to appraise how different models are maximally capable of functioning.
 
 Perfect planning using an AI might perform less well than AI guidance with human choice, since people perform better when they are free.
+
+There is something to be said about having all the excess value of a system reinforcing the parts that made the system strong in the first place, rather than being syphoned off.
