@@ -14,3 +14,7 @@ The browser would call the api directly, and then the vercel server would just p
 It is possible that the napps could be very closely realted to the context protocol ?
 
 napps with state equals an mcp server instance ?
+
+Use the streaming format from the vercel api with some optional catchup messaging, so that we can resume a stream if we lose some messages.
+
+Needs to implement billing asap.  So MCP but with billing built in.
