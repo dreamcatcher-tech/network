@@ -11,3 +11,5 @@ The AI can select these items based on NL queries, or you can manually select th
 Never make an action occur in the app that doesn't have the AI along with you.
 
 So all the things with app are all in artifact windows.
+
+Maybe the selection model of the app needs to be its own statechart, since everything seems to be flinging around everywhere.
