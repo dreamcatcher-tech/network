@@ -20,6 +20,8 @@ Once you start chatting, its locked ?
 You could change it ? but we would need to make a tool item showing that the context changed.
 If you set it back, or delete that context change, then it goes back to how it was.
 
+Changing the available agents is shared state between all chats.
+
 Is this interface enough to:
 - use the CRM system ?
 - provision and manage autonomous agents ?

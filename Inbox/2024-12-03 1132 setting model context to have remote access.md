@@ -17,4 +17,4 @@ starting from blank, the user would
 
 
 
-If we had a reasoned UI, then we could 
+If we had a reasoned UI, then we could get the bots to design narratives for how the system would be used, and to check if these were complete
