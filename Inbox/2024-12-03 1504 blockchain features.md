@@ -7,3 +7,7 @@
 
 inference training distributed.
 general computation.
+currency as a side effect.
+
+
+Intrinsic currency might be needed for agents to pay for their existence.
