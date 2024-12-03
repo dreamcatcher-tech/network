@@ -20,3 +20,14 @@ So, if we could use the napp.json to create the function signature, and then we 
 Or, as part of the registry, we might compile into wasm and run some optimizer on it ?  makes the module a single cacheable unit, gives it isolation in the browser, can make it runnable dynamically too without fussing around with import graphs ?
 
 https://deno.com/blog/v2.1#first-class-wasm-support
+
+May also be able to eval using esm.sh:
+
+```js
+import { esm } from "https://esm.sh/build"; 
+const { render } = await esm`
+/* @jsx h */ import { h } from "npm:preact@10.13.2"; import { renderToString } from "npm:preact-render-to-string@6.0.2"; 
+export const render () => renderToString(<h1>Hello world!</h1>); `; 
+
+console.log(render()); // "<h1>Hello world!</h1>"
+```
