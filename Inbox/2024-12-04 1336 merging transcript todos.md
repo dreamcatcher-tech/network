@@ -13,3 +13,4 @@ add in the concept of being able to represent many different use types:
 - crypto mining / pooled inference
 
 suppose we would just change how the front end walks thru the auth flows to operate directly.
+
