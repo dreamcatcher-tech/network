@@ -15,3 +15,4 @@ Can go try find it.
 Can upload humming or other text descriptions.
 people help others find it or ask further questions.
 
+use a shazam like api to find sounds based on snippets of recording, and then start the process of retrieval.

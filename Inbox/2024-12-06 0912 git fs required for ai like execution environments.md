@@ -20,3 +20,5 @@ Git is very minimal, and runs very fast when optimized.  Also very compatible wi
 Also easy to read the latest version since it is presented on your filesystem.
 
 Can allow object level permissions, where a certain person is allowed to access a certain file, but only during a certain series of commits, since the permissions are stored with the file and can change by way of a commit.
+
+Filesystem sandbox required.
