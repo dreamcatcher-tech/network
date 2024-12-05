@@ -1,0 +1,14 @@
+
+>[!tip] Created: [2024-12-05 Thu 16:29]
+
+>[!question] Targets: 
+
+>[!danger] Depends: 
+
+Articles that are snipped and digested by bot, and you can chat with the bot about it.
+
+It could read you passages, or could abridge the article since it knows what you are interested in.
+
+It could be referenced whenever you talk about topics that it represents.
+
+Acts like a web archive of knowledge.
