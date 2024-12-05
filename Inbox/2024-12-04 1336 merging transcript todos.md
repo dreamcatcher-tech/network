@@ -8,7 +8,7 @@
 add in the concept of being able to represent many different use types:
 - dedicated app for a single customer
 - processing napps in a pipeline
-- voice puck agents
+- voice puck agents / voice assistants
 - web apis exposed over the web
 - crypto mining / pooled inference
 - act as an ai music player
