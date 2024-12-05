@@ -8,3 +8,4 @@
 If we used structured data, this might be more reliable ?
 
 Also becomes queryable like a regular database, or a graphql query ?
+
