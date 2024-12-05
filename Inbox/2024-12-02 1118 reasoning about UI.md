@@ -9,4 +9,3 @@ For any given discussion about a feature, we should be able to input a transcrip
 
 Theory is that for every use case, we should be able to present it / access it / wire it up, using the basic chat interface.
 
- 
