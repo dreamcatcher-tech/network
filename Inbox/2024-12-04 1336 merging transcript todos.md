@@ -11,6 +11,7 @@ add in the concept of being able to represent many different use types:
 - voice puck agents
 - web apis exposed over the web
 - crypto mining / pooled inference
+- act as an ai music player
 
 suppose we would just change how the front end walks thru the auth flows to operate directly.
 
