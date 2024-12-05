@@ -12,6 +12,10 @@ need to have:
 - stuck loop criticisms on document generation, or stateboard selections
 
 
+changes to implement:
+- block.tsx needs to generalized, to handle any kind of widget
+- title controls need to be standardized, and configured by the block item, with a `.copy()` method to get a text version of the content, even if it isn't copy able, for example
+
 
 We need this model inserted upstream, since it might be annoying to do it multiple ways.
 Maybe click on the weather icon, and it opens up a map artifact.
@@ -19,3 +23,4 @@ Maybe click on the weather icon, and it opens up a map artifact.
 Faults:
 - scrolling in stateboard mode does not mimick scrolling one back in chat mode
 - no scroll to bottom button
+- document.tsx needs 'block' removed from its args
