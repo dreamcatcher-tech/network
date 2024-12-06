@@ -24,3 +24,4 @@ Faults:
 - scrolling in stateboard mode does not mimick scrolling one back in chat mode
 - no scroll to bottom button
 - document.tsx needs 'block' removed from its args
+- blocks should be a standard interface so we can supply our own ones via package import
