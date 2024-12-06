@@ -10,6 +10,9 @@ need to have:
 - historical version pulled up from clicking on chat events
 - select any thing we like, including the default messages
 - stuck loop criticisms on document generation, or stateboard selections
+- shared chat resume / fork / group chat
+- shared chat needs to offer signup options
+- shared chat to gift credits to people you shared with
 
 
 changes to implement:
