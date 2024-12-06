@@ -15,6 +15,7 @@ need to have:
 changes to implement:
 - block.tsx needs to generalized, to handle any kind of widget
 - title controls need to be standardized, and configured by the block item, with a `.copy()` method to get a text version of the content, even if it isn't copy able, for example
+- maybe pass the whole chat and input objects into the block object so it doesn't remake them
 
 
 We need this model inserted upstream, since it might be annoying to do it multiple ways.
