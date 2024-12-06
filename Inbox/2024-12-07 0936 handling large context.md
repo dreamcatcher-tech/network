@@ -15,6 +15,8 @@ May digest into short summaries, which are not embeddings, but act in a similar 
 
 The model should be able to loop to dig for more context, and the context digger should run while the progress ai is describing what it is doing, sort of like how o1 does its reasoning.
 
+chat context seems better as the attachments button, since all chat context is attachments ?
+
 
 
 corporations in the gateway companies would be the first prototypes of the AI operator, where they let you do anything at all, you are instantly compliant, and it can talk with you about why.  We all add to it and learn from it, but it allows you to start a company instantly. 
