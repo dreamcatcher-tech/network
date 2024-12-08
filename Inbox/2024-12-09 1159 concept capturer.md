@@ -9,6 +9,8 @@ It might be that we need to speak together in a way that captures a concept thor
 
 So in a meeting, we would fire this tool up, and start having our audio streams go into this, so the concept gets filled out and reasoned about rapidly.
 
+We would have this list of topics being realtime detected, and we could close of some we are not interested in, which would stop those concepts coming up again.
+
 Develop an AI-driven conversational oversight tool that:
 
 1. Receives real-time, speaker-tagged, transcribed audio from a technical conversation.
@@ -24,3 +26,5 @@ Use a pipeline that starts with real-time speech-to-text input and a streaming L
 3. For each concept introduced, generate 2–3 re-interpretations that highlight gaps or ambiguities.
 4. Continuously log concepts and who introduced them.
 5. Expose a minimal interactive UI with a few large actionable buttons—e.g. “Clarify this concept further,” “Confirm if the concept was understood,” or “Reinterpret the concept”—that user presses to guide the LLM’s next inference steps.
+
+Whatever buttons are pressed, unresolved issues are put back in the bucket for the next meeting.

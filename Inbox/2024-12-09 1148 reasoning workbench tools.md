@@ -20,3 +20,5 @@ At each stage, highly reason and highly debate at this control plan layer.
 Later debates come in at this level and change the code below.
 
 Whole point is to reason in layers, and then focus in on just that piece.
+
+Stitch multiple files together to present to the model for consideration.
