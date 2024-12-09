@@ -22,3 +22,5 @@ Later debates come in at this level and change the code below.
 Whole point is to reason in layers, and then focus in on just that piece.
 
 Stitch multiple files together to present to the model for consideration.
+
+Ability to select a portion of a document and narrow the scope down to working on just this part.
