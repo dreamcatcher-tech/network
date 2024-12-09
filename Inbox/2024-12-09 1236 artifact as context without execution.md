@@ -5,6 +5,7 @@
 
 >[!danger] Depends: 
 
-If we avoid the parallel execution component, 
+If we avoid the parallel execution component, then we can make artifact just be a large git repo.
 
 Then could we implement everything we aim for using a different llm provider backend ?
+
