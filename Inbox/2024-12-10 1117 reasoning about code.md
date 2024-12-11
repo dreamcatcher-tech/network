@@ -19,3 +19,17 @@ Start by generating a readme that lays out the motivation, and top level design 
 Then once this is correct.
 
 This technique is layering, where a different render is done at each layer, and then corrected to add finer detail not able to be added in the higher layer due to being too far removed, then all the layers up to that point are used to render the next layer, so the steering gets increasingly accurate.
+
+If the vendor docs are included, do we need to tell o1 to use these instructions, or if we named the folder correctly, might that be enough ?
+
+Do we need to message about updating changelog, creating deno project ?
+
+We must include the prompts, or the chats, that went with the codegen, but we might want to replace the concat data with either a filler, or some info that can be generated, so it gets populated / hydrated, at a specific git commit.
+
+concat tool could be selecting from a range of prompts, which can be modified, possibly collaborated on.
+
+It should also check for updates from jsr.
+
+Need some tasks that go into the folder too, so the bot may optionally be able to work in.
+
+? do we get better results from doing one task at a time, like updating the README after the code is finished, or does it not matter ?
