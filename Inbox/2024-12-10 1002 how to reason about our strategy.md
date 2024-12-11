@@ -18,3 +18,5 @@ Design a series of techniques for how a DAO can manage communication, and then b
 Really want law machine, but not just to generate content, to form social networks, help funding happen.
 
 Want crawlers, to pull in novel ideas from the internet, and sketch them out on our platform.
+
+Should be very clear about the differences in the system components we are building, and each challenge should be inducted into the source material.

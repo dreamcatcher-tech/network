@@ -14,3 +14,8 @@ May make a concat tool that can expand out links in the top level spec, so it ca
 Almost like we need to include the prompts used to generate the code inside the git repo, so people know how it was built - source is not source so much any more, source without prompts is worthless.
 
 May help to generate multiple strategies and then pick the best one ?
+
+Start by generating a readme that lays out the motivation, and top level design of the module.
+Then once this is correct.
+
+This technique is layering, where a different render is done at each layer, and then corrected to add finer detail not able to be added in the higher layer due to being too far removed, then all the layers up to that point are used to render the next layer, so the steering gets increasingly accurate.
