@@ -4,3 +4,5 @@
 >[!question] Targets: 
 
 >[!danger] Depends: 
+
+Makes all napps callable by the cli.
