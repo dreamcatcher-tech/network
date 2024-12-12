@@ -33,3 +33,7 @@ It should also check for updates from jsr.
 Need some tasks that go into the folder too, so the bot may optionally be able to work in.
 
 ? do we get better results from doing one task at a time, like updating the README after the code is finished, or does it not matter ?
+
+skills to gain:
+- adding docs for packages to influence their usage, so that we can change how the bot uses things by what docs we supply, perhaps with a prompt indicating to use existing packages or those in the vendor-docs folder.
+- modularizing - being able to cut the project into isolated pieces, so we can work on just little bits at a time.
