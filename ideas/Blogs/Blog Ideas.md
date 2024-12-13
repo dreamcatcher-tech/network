@@ -589,3 +589,21 @@ Ambient cities.
 Is git a suitable structure to run the whole world on ? possibly.  Explain how we can all be independent and yet each of us has a single hash view of the world by way of who we are connected to.  All the worlds data as a single hash.
 
 But using pijul, we could have different views of the world, but all still have a single hash view, that might work better than git maybe ?
+
+## Code integration using napps
+Napp is a JSON-based packaging format that allows an LLM to orchestrate complex tool interactions without writing traditional code. Instead of manually wiring together modules and writing glue code, you define tools, agents, dependencies, and evaluations directly in the Napp configuration. The LLM then uses this data to call functions and coordinate tasks as needed, streamlining integration and removing the need for developers to handle technical plumbing.
+
+By standardizing functions and configurations, Napps make it possible for AI systems to flexibly combine modules from different ecosystems into one coherent pipeline. This reduces complexity, increases reusability, and enables an AI to dynamically adjust workflows without manual code changes. With Napps, developers can focus on defining the desired outcomes, while the LLM orchestrates the necessary tools and runtimes under the hood.
+
+But it isn't just LLM driven things, humans can wire together napps without writing code, too.
+
+Do some scenarios for time to first prototype, time to make a fix, time to integrate a fix.
+The LLM being flexible and supple means napps can evolve without breaking things.
+
+## From Glue Code to Orchestrated Flows: How Napps Transform Integration
+
+Show how many apps there are vs the packages, based on napkin math about the amount of code that gets written that isn't in a package.  This is lost effort.
+
+Napps eliminate the painstaking manual coding required to integrate modules. Instead of writing glue code, Napps rely on a standardized JSON format, letting LLMs handle all the orchestration. This means you can plug together a diverse set of tools without worrying about language boundaries or boilerplate. The complex, brittle wiring of traditional integration is replaced by a straightforward configuration file that the AI can interpret and act upon.
+
+By removing the need to write integration code, Napps drastically reduce complexity and speed up development. They turn what used to be a slow, error-prone process into a flexible, AI-driven workflow. Developers spend less time fixing broken connections and more time focusing on functionality. The result is a more adaptive, maintainable, and future-proof approach to building reliable, composable systems.
