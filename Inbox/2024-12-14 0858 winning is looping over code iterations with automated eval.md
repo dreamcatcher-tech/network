@@ -16,3 +16,7 @@ Linter errors is an important change here, but more meaningful
 architectural changes - system should always be reassessing if an architectural change would perform better.  Go down multiple parallel development paths testing different assumptions, so you know the solution space was properly explored.
 
 Should be able to set its own evals, or ask for a change on some given evals.
+
+Would look like spinning plates.
+
+Might need a VR space, or use multiple desktops, so can focus in on a specific thing, and have everything on hand rapidly, to tick the AI along further.
