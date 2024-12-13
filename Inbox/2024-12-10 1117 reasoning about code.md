@@ -54,4 +54,6 @@ could have a set of base rules, and format / lint rules, which can be added to t
 
 So ultimately if you have the tests, then using prompting only, you should be able to clean generate the whole project codebase.  Grind over this condensing it until this is the case, which makes it ready for easy modification.  This is the process of reverse compiling, or prompt compression.
 
+This grind gives a repeatability score, which is a measure of how reproducible the prompts used are, in terms of durability - as in the ambiguity score, which should be how many times across a gamble, was an unsatisfactory outcome received.
+
 sequences of generation, since may need to build up from spec to code etc, like a seed unfurling.
