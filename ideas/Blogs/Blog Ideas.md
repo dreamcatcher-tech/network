@@ -584,3 +584,8 @@ Show how different levels of rollout scores at different levels.
 Show what a childs lifecycle looks like in one of these cities, and score their cost to the city and their benefit in this system.  Compare with a taxed child.  Show how their total expressive output potential is higher at every stage.  Show how immigration can work.
 
 Ambient cities.
+
+## git for the world
+Is git a suitable structure to run the whole world on ? possibly.  Explain how we can all be independent and yet each of us has a single hash view of the world by way of who we are connected to.  All the worlds data as a single hash.
+
+But using pijul, we could have different views of the world, but all still have a single hash view, that might work better than git maybe ?
