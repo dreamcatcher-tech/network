@@ -600,6 +600,8 @@ But it isn't just LLM driven things, humans can wire together napps without writ
 Do some scenarios for time to first prototype, time to make a fix, time to integrate a fix.
 The LLM being flexible and supple means napps can evolve without breaking things.
 
+post about the different types of data consumption patterns, like request response, side effects.
+
 ## From Glue Code to Orchestrated Flows: How Napps Transform Integration
 
 Show how many apps there are vs the packages, based on napkin math about the amount of code that gets written that isn't in a package.  This is lost effort.
