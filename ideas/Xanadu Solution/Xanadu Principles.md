@@ -19,3 +19,5 @@ From the [Wikipedia Page](https://en.wikipedia.org/wiki/Project_Xanadu#Original_
 17.  The Xanadu client–server communication protocol is an openly published standard. Third-party software development and integration is encouraged.
 
 Closest approximations have been limited prototypes like OpenXanadu or offshoots (Udanax) and some decentralized hypermedia efforts, but none fully realized the original vision. Key issues include persistent, globally unique document addressing; dynamic transclusion at scale; secure micropayments and complex royalty structures; and universal access control. The complexity and overhead of maintaining stable links, ensuring stable identity, and handling real-time document royalties have been the main roadblocks. With advancements in distributed storage (e.g., content-addressed systems like IPFS), secure identities, and integrated micropayments (e.g., blockchain-based solutions), some of these challenges could be revisited and potentially solved.
+
+the cheapest micropayments system is a deferred one - so one that 
