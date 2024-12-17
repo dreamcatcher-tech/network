@@ -14,3 +14,5 @@ napps execution environment.
 viewer widget.
 
 conversion between artifact and a db query.
+
+authentication using privy.
