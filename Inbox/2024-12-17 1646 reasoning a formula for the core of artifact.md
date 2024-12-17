@@ -5,5 +5,6 @@
 
 >[!danger] Depends: 
 
-the procedure that repeats often, and all its concerns.
+The procedure that repeats often, and all its concerns.
 
+Turn its core its some kind of formula, and reason thru the interfaces required to run the core.
