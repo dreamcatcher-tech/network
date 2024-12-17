@@ -16,3 +16,7 @@ viewer widget.
 conversion between artifact and a db query.
 
 authentication using privy.
+
+block components in the ui.
+
+napp interface.
