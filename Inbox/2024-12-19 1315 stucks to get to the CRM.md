@@ -27,4 +27,6 @@ Ask me for more details for whichever ones are missing.
 17. napp cli tool
 18. users with multiple repos on artifact
 19. shared repos between participants
-20. stucks map view
+20. stucks map view, with stucks as a graph, possibly force directed
+21. make the openai napp to call models using text and tools
+22. local napps on client premise pushing and pulling data up to the cloud instance

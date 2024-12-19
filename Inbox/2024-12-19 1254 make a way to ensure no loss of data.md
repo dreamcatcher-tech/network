@@ -20,3 +20,5 @@ What areas was there data loss ?
 What was new data ?
 
 Is the formatting correct etc ?
+
+Set up some CI napp runs to check the business rules of the repo are adhered to.
