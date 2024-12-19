@@ -15,3 +15,5 @@ Ask me for more details for whichever ones are missing.
 5. napps execution environment for a pure filesystem
 6. stucks data structure
 7. stucks management agent, so we can chat with it about changing the stucks
+8. git as a database for artifact
+9. napp execution on artifact
