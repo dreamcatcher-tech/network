@@ -30,3 +30,4 @@ Ask me for more details for whichever ones are missing.
 20. stucks map view, with stucks as a graph, possibly force directed
 21. make the openai napp to call models using text and tools
 22. local napps on client premise pushing and pulling data up to the cloud instance
+23. authentication between the web auth and the artifact auth
