@@ -5,7 +5,7 @@
 
 >[!danger] Depends: 
 
-So for example launch EDU as a product line, 
+So for example launch EDU as a product line, set up a company.
 
 Being able to rapidly scale up these companies, and recruit people to work on them, effectively, cross border, and part time, with no harm from coming or going.
 
