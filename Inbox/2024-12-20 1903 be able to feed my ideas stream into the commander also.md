@@ -6,3 +6,7 @@
 >[!danger] Depends: 
 
 Plus my whatsapps, and my pomodoros.
+
+This way, the commander knows what I've been working on.
+
+Ideas should get pushed towards the commander to categorize and clump them.
