@@ -14,3 +14,5 @@ So the humans are important but rapidly switchable.
 They would have a dedicated front end, that would push back into the dreamcatcher architecture, where problem detection, help services, improvement by users, is all available.
 
 So the presented front end, and the billing are separate, and pay in to the dreamcatcher network and infrastructure.
+
+So then we could finance this venture using traditional capital, have the dreamcatcher its blockchain in the background, as simply what powers the venture.
