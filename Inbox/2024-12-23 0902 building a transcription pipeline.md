@@ -17,3 +17,5 @@ to build:
 
 How to verify the accuracy of the transcription ?
 - best done by keeping a list of points or topics that were identified, and using that to build upon
+
+What is the napp executor ?
