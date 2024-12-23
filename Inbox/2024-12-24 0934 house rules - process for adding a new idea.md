@@ -80,3 +80,5 @@ When vote mode is triggered, commander goes thru each participant in turn.
 Opening of meeting is identification mode, where speakers are identified.
 
 Implementation approach can be tabled and debated, but it isn't about best, its about things that are declared as goals, like fastests, cheapest, more reliable.
+
+Commander should be able to detect when people are interupting or talking over each other, and should issue commands or reminders for everyone to please wait their turn to speak.
