@@ -74,3 +74,9 @@ We need a training process for new people to get inducted to the protocol, but w
 I have an issue where my key topics, like setting a crm target date, drop from importance.  Also to get them there, I should only have to debate the commander, now Smax.
 
 The keywords of the system should be uncommon words, to avoid false triggers, like "endex" to end a particular phase, like solution phase.
+
+When vote mode is triggered, commander goes thru each participant in turn.
+
+Opening of meeting is identification mode, where speakers are identified.
+
+Implementation approach can be tabled and debated, but it isn't about best, its about things that are declared as goals, like fastests, cheapest, more reliable.
