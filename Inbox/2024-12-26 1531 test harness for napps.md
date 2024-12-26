@@ -12,3 +12,5 @@ Just point the harness at the napp entry point, and then execute using the napp 
 Should help by giving some kind of debug features of the napp interface, to trace calls in between modules ?
 
 Hopefully the tracing and debugging can be done by LLMs since it is all in json and they know how to mess with those things to get the desired outcomes.
+
+Can do automatic file cleanup by running an FS in ram.
