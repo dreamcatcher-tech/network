@@ -1,0 +1,12 @@
+
+>[!tip] Created: [2024-12-28 Sat 12:15]
+
+>[!question] Targets: 
+
+>[!danger] Depends: 
+
+make full context questions that can go into o1, with context costing showing, where token count and cost of the inference under different models and settings can be shown.
+
+If we can make a system that can reliably operate on the git repo of the notebook I am currently using, then this will be an incredible boost in productivity.
+
+If it can work on any repo automatically, this is a great tool.
