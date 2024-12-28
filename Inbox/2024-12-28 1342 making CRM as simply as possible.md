@@ -6,3 +6,7 @@
 >[!danger] Depends: 
 
 Run a nextjs app locally, and have a local version of deno deploy ?
+
+use ngrok to access this application, so we can call on it to do things, rather than requiring it to have a webhook to artifact ?
+
+Lets us tunnel it and browse the app too.
