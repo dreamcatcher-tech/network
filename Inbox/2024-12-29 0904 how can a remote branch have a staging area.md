@@ -21,3 +21,26 @@ Error if you exit the function without calling save somewhere ?
 Commit and spawn start to look very similar.  Seems only feasible that commit requires a list of files to do the commit with.  Also seems required that there should be a wrapper that gives access to the file as a mutable staging area thing - a working directory - which acts like it is right there with you.
 
 Make it optionally attempt to merge even if you have fallen out of date ?
+
+? How are files passed in to the functions ?
+In a cli app, files are implicitly passed by way of the cwd.  The program can do things with these beyond just the calling parameters.  Every invocation is occuring within a snapshot, so it can be mutated, and the commited.  Commit in your own branch would be like calling your own wrapper around your own state and calling commit on it.
+
+Commit should error if there is nothing to commit, unless you tell it to do an empty one ?
+
+If you go to merge and your remote handle on the remote branch has unsaved changes, this should error. 
+
+Reset will discard your changes.
+
+So for all branch related things, you get a handle on the remote branch, and then you get the api.
+For local, you can get a remote handle on your own branch, but you also have direct access to it ?
+
+push and pull could require you to switch branches, since it would only work on the current handle you have.
+
+you can only have one handle on a remote branch at a time, so you can't make errors like not committing changes to one handle and then doing a merge or delete with the other.
+
+So the snapshot interface becomes almost all the interface logic you need ??????
+
+The api is by default a snapshot interface, but it also allows you to get handles on other branches ?
+
+Setting remotes can be done at the time you call the function, as well as changed in the settings ?
+This would be equivalent to setting the state of the branch ?
