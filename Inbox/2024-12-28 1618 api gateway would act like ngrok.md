@@ -12,3 +12,5 @@ So basically, using the api gateway, we could replay all outbound requests.
 ngrok might be good for all cli apps too, since it gives good hook back inside, rather than keeping a websocket open on deno deploy.
 
 Share the requests to your service with others on your team. They can replay these requests with one-click and give you feedback instantly, accelerating debugging and improving your webhooks.
+
+could replace the Deno.serve with ngrok, so get better logs, and also security.
