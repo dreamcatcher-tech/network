@@ -20,3 +20,5 @@ So we'd have one webpage gets opened as the speaker, and this is what the child 
 Measure our success by length of engagement, plus improvement of metrics like vocab, pronunciation.
 
 Record poorly pronounced words so that we can critique them, and provide tips on how to improve.  This might go to a human to work with.  We could then match our listening to these words, which we could spell phonetically so we can detect them, then if they sound wrong we would issue corrective instructions, and generate sentences that use these words heavily.
+
+The web page would hook the server infrastructure and register itself, then the controller webapp would see this thing.  The server then tracks the conversation, and sends various control messages into the application.
