@@ -22,3 +22,7 @@ Measure our success by length of engagement, plus improvement of metrics like vo
 Record poorly pronounced words so that we can critique them, and provide tips on how to improve.  This might go to a human to work with.  We could then match our listening to these words, which we could spell phonetically so we can detect them, then if they sound wrong we would issue corrective instructions, and generate sentences that use these words heavily.
 
 The web page would hook the server infrastructure and register itself, then the controller webapp would see this thing.  The server then tracks the conversation, and sends various control messages into the application.
+
+Use livekit EOU detection to manually trigger when the model should start talking, even tho we have realtime on.
+
+Run the server side turn detection concurrently, and just use it to trigger when we should speak.
