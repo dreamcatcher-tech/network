@@ -17,4 +17,4 @@ This would possibly be a widget that had a chat notation side bar, and if it was
 
 So we could do computation totally independently, and only optionally use artifact capabilities for reliable sustained execution at scale.
 
-So reading a book and we could be spining off many side threads and asking questions against our knowledge base.
+So reading a book and we could be spinning off many side threads and asking questions against our knowledge base.  Preferrably spinning via voice.
