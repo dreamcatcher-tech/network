@@ -44,3 +44,28 @@ The api is by default a snapshot interface, but it also allows you to get handle
 
 Setting remotes can be done at the time you call the function, as well as changed in the settings ?
 This would be equivalent to setting the state of the branch ?
+
+If your function is rehydrated, and handles you had open point to snapshots that have changes, what should we do ?
+Should we check for conflicts at rehydration time, and automatically tick forwards if we can ?
+Should we allow you to commit and create a fork as a side effect, then do a merge ?
+What if you pop the changes into a stash, pull the latest changes, and then push the stash back on ?
+Ask the snapshot if there are any conflicts that would occur ?
+Require the 'ignore conflicts' flag if you are about to overwrite something ?
+
+make a commitAll function so that all open handles are committed to ?
+
+a handle on a process is a superset of a handle on a remote branch, since processes are like a branch within a branch.  Might be like the different between a thread or a fiber, and a branch.
+
+A branch can be a process, or just a data branch.
+fibers are independent mini branches on a single branch, managed by a process manager.
+Each one can act like a branch, and store arbitrary data, but they are contained within a folder structure on an encapsulating branch.
+
+snapshot interface should give meta about its own state, too, like the alias, the crypto, etc.
+
+?? how can a remote standalone repo be set up ?  do they all have to be attached to an actor repo, which is someone who pays the bills ?  So the crm would create an org, at the host level, and then they would fund that host repo, and then start the crm as a child ?
+
+Can a repo be set free, as in have no parent ?  then in the actors host repo, the link is symbolic rather than hard, and the user may end up with access removed from it.
+
+? mv repo, cp repo ?
+can a repo be moved and keep its crypto intact ?
+can a repo be found by a path from its host repo ?
