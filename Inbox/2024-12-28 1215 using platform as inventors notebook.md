@@ -14,3 +14,7 @@ If it can work on any repo automatically, this is a great tool.
 Ideally I could be reading some article or some output, and I could be making side notes as I go, that are being turned into their own threads, and then I can at the end deal with a summarization, or flick over to these ones.  
 
 This would possibly be a widget that had a chat notation side bar, and if it was selected could quickly switch out which chat was showing, but keep the stateboard the same.
+
+So we could do computation totally independently, and only optionally use artifact capabilities for reliable sustained execution at scale.
+
+So reading a book and we could be spining off many side threads and asking questions against our knowledge base.
