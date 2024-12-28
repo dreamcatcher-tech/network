@@ -5,4 +5,4 @@
 
 >[!danger] Depends: 
 
-Run a nextjs app 
+Run a nextjs app locally, and have a local version of deno deploy ?

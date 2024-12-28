@@ -26,3 +26,26 @@ The web page would hook the server infrastructure and register itself, then the 
 Use livekit EOU detection to manually trigger when the model should start talking, even tho we have realtime on.
 
 Run the server side turn detection concurrently, and just use it to trigger when we should speak.
+
+Do a nice quick LLM call before triggering a reply ?
+
+Do a pure voice pipeline for now ?
+
+use webrtc but do our own manual VAD.
+So we run a voice pipeline that detects when its turn and triggers that automatically.
+
+controller has a button to push pause, and when to resume.
+
+dials to alter the turn detection ratio ?
+
+Detect when it is getting cut off, and then start increasing the delay if it gets cut off a lot ?
+
+controller has all the controls of the model, and the client just relays these thru to the server, and relays the server events back to the controller.
+
+These dials could be set on the laptop doing the client processing.  Then use a cell phone with another controller instance running, which can do voice transcription of instructions and then send that thru.  May use realtime transcription so the total speed is faster when we hit send.
+
+Could use the broadcast channel to send events around between devices.
+
+Show when the server is about to trigger vad, and then let us push a button to give a delay.
+
+Run the voice pipeline thing on the laptop, in a docker container, then use that to trigger realtime generation.
