@@ -24,3 +24,10 @@ in browser, download all the customer records to the browser storage, and then b
 or make an index on artifact, download the index, pull each record as required.
 
 could use llms to generate the view of the customer form the xml record ?
+
+Use a UI that is no chat whatsoever ?  Just purely widgets ?
+
+The customer editing widget would require an api backend to make calls into, to do edits, and the do reads from.
+
+The vercel front end would be making calls out to the deno db service.
+This could be in the cloud, to make it easy to maintain, and it just has very strict api key access ?
