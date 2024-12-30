@@ -33,3 +33,5 @@ The vercel front end would be making calls out to the deno db service.
 This could be in the cloud, to make it easy to maintain, and it just has very strict api key access ?
 
 Use a B2 key to secure the deployment.  Use a deno deploy db to host the git system.
+
+Store the gps coords in one of the moneyworks fields, so we can start doing geocoding without having a db going ?
