@@ -73,3 +73,19 @@ can a repo be found by a path from its host repo ?
 So the api object would itself be an address, so it could be passed in as an arg for any of the functions ?
 
 getting access to itself is what happens if a blank connect occurs.
+
+Do we need a way to await the creation of a branch that doesn't exist yet, or error if it occurs.
+
+Whenever a new wrapper occurs, it will always check the validity, so that it gets the latest snapshot id.  We can provide a separate function that will watch for the creation of the branch, or watch for the deletion.
+
+Might not combine graph and fiber options, since you cannot operate on data in a fiber remotely in the same way, like how you would need to hit commit, fibers don't need that.
+
+When connected to a process, do any of the graph operations make sense to do ?
+
+also when connected to a branch, the process functions make no sense either, so the presence of either one says what type of api this is.
+
+processes should have an exists function, to test if some other process path exists.  So to do this, you could connect a process wrapper to a particular process, possibly root, then run the exists call, and the ls calls to navigate the process tree.  Basically largely the same IP as the file tree.
+
+process wrapper checks there is a process manager installed remotely.
+
+the address info should be tucked under an address getter, so that address is passed as an object with an address key within it ? or just suffer the translation.
