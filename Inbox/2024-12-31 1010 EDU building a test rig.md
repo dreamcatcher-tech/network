@@ -69,3 +69,5 @@ Try get the bot to detect when it got interupted.
 The innate model has no concept of being interupted, so we need to figure it out another way.
 
 Deepgram speaker detection timestamp analysis tries to pick the cadence of the conversation, so that VAD works bettter, and is more dynamically adjustable.
+
+measure things like idea stickability, stubbornness, how easily can they be swayed off an idea.
