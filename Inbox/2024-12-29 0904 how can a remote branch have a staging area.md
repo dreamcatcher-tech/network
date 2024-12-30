@@ -70,4 +70,6 @@ Can a repo be set free, as in have no parent ?  then in the actors host repo, th
 can a repo be moved and keep its crypto intact ?
 can a repo be found by a path from its host repo ?
 
-So the api 
+So the api object would itself be an address, so it could be passed in as an arg for any of the functions ?
+
+getting access to itself is what happens if a blank connect occurs.
