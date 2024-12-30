@@ -69,3 +69,5 @@ Can a repo be set free, as in have no parent ?  then in the actors host repo, th
 ? mv repo, cp repo ?
 can a repo be moved and keep its crypto intact ?
 can a repo be found by a path from its host repo ?
+
+So the api 

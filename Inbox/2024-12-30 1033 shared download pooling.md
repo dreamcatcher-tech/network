@@ -18,3 +18,5 @@ The person who made the first full call should get paid some fraction of what th
 It can also be flagged as repeatable with conditions, like if the api endpoint model for transcription remains the same, then we should expect the same output.
 
 We could force a redial, but often that is not needed.
+
+Can be used for torrents, where if we already have the file, you can just pay the person who uploaded it a small fee which is cheaper than all the resources you would expend downloading it again.
