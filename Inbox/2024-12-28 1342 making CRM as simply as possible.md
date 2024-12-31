@@ -84,3 +84,5 @@ Can't decide if we should run the web app locally, or run it remotely and just r
 
 We could just use files on disk to store the blob objects for now ?
 Just delete old ones, and do not use the history functions.
+
+Keep the chat system with postgres, and use the filesystem for storing xml data / git objects.
