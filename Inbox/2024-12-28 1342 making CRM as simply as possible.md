@@ -83,3 +83,4 @@ near zero effort, but completely throw away code.
 Can't decide if we should run the web app locally, or run it remotely and just run the api locally, or run the api in the actual cloud.
 
 We could just use files on disk to store the blob objects for now ?
+Just delete old ones, and do not use the history functions.
