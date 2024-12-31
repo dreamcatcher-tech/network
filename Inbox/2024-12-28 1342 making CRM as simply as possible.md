@@ -86,3 +86,19 @@ We could just use files on disk to store the blob objects for now ?
 Just delete old ones, and do not use the history functions.
 
 Keep the chat system with postgres, and use the filesystem for storing xml data / git objects.
+
+If we go with b2 as the storage system, which seems easy to secure, and also same effort as any other blob storage, including on disk, then we might as well run the main app in cloud, with git and blob being an api only service.  It doesn't have to be the persistence for the whole application.
+
+So a service would connect to moneyworks, and would upload the data straight into the deno deploy api, backed by b2.  Or better, the server stores it on b2 directly, and deno only reads the file to check the checksum, which is free traffic on both sides I think.
+
+
+
+The blob access could be to a totally separate service, and outside of the chats and other things.
+
+Instead of user management, the users all have to enter a specific key ? or, they proxy thru a service ?
+
+Or they come in, we set a cookie on their browser, and then we allow in very specific machines only and assign identity against this, so no need to have security in place.
+
+Initially we'll just be very data heavy on what we upload, then move to be something more elegant.
+
+ingress of files, fastest go to to deno deploy, then out to b2 storage, unless we can be safe with the hashing in b2, so we can just upload straight to b2 for free.
