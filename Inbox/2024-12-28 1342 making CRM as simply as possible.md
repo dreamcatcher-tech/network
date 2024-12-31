@@ -79,3 +79,7 @@ Strategy changes allowing rapid CRM development:
 
 what about using a postgres db, like what is already set up in the UI sample for the bots, and just storing the xml directly in the postgres db ?
 near zero effort, but completely throw away code.
+
+Can't decide if we should run the web app locally, or run it remotely and just run the api locally, or run the api in the actual cloud.
+
+We could just use files on disk to store the blob objects for now ?
