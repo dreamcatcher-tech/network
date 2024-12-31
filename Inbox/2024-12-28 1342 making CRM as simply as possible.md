@@ -102,3 +102,16 @@ Or they come in, we set a cookie on their browser, and then we allow in very spe
 Initially we'll just be very data heavy on what we upload, then move to be something more elegant.
 
 ingress of files, fastest go to to deno deploy, then out to b2 storage, unless we can be safe with the hashing in b2, so we can just upload straight to b2 for free.
+
+deno deploy api that presents the blob storage api, since we can have anything we like backing that, and then pushes blobs thru to b2, while streaming, possibly encrypting on the way.
+
+The writer watches the PENDING git branch, and when it changes, it merges it in to main.
+The writer updates main whenever moneyworks changes.
+Pending is what the app works on, and something is not considered saved until this pending branch is merged in with main.  We agree on what we think pending should be, and if main changes outside of pending, pending will not be merged - it is servers job to reconcile so that pending can merge with no conflicts.
+
+? is there a simpler way to do the storage than this ?
+Make an api interface that just stores things on disk and ensures locking.  Should be very simple to implement this interface.
+Run the deno stuff locally, and have a key out to backblaze ?
+Webapp seems easiest to host on cloud, due to easy deployment control.
+api might be local, but that seems hard.
+
