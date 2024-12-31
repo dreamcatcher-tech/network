@@ -49,3 +49,7 @@ Could use the broadcast channel to send events around between devices.
 Show when the server is about to trigger vad, and then let us push a button to give a delay.
 
 Run the voice pipeline thing on the laptop, in a docker container, then use that to trigger realtime generation.
+
+tell it that if we trigger speech during the quiet times, we want it to initiate something, like ask a question, tell a story, or some other thing.  So if the child is quiet, we might trigger a check to see if they're there.
+
+Have games as modules that people can insert, where the bot knows how to play a certain game, which might come with some functions.

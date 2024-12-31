@@ -76,3 +76,6 @@ Strategy changes allowing rapid CRM development:
     
 6. **Potential Future Investment Model**  
     Instead of purely charging for software, they raise the idea of a possible investment arrangement. They want to install a working solution first before discussing any long-term financial or partnership details.
+
+what about using a postgres db, like what is already set up in the UI sample for the bots, and just storing the xml directly in the postgres db ?
+near zero effort, but completely throw away code.
