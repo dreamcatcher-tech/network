@@ -9,6 +9,13 @@ pm2 runs a deno task that pulls from a published jsr package which asks for an a
 It requests the moneyworks base url, and defaults to the name file.
 Or, gets told what url to pull the git branch from, where it pulls from an api and git branch, where it gets its pull instructions from, including the moneyworks URL.  moneyworks password can be stored in env file, or in localStorage.
 
+Asks for:
+1. the moneyworks url
+2. username
+3. password
+4. api url (includes repo dns or id and branch)
+5. api key
+
 start off by pushing into a local running instance of the api that only listens on localhost.
 
 It doesn't have any b2 type storage, and it just stores direct to files on disk, using git put object.
