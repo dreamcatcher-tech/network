@@ -13,3 +13,11 @@ start off by pushing into a local running instance of the api that only listens 
 
 It doesn't have any b2 type storage, and it just stores direct to files on disk, using git put object.
 
+
+
+The api for uploading is a bunch of binary files ?
+or it uploads the binary files individually, into a staging area, and the executes a commit, which is atomic, which updates the head of the git branch.
+
+This seems very much like just a strong git repo, with a simplified interface.
+
+merge() requires two branches, a repo, and will error if there are conflicts.  It will also say what the commit we thought was the tip of both branches was, so we can bail if something changed.  Or we can allow forcing the change to go thru.
