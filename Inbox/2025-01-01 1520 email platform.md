@@ -15,4 +15,5 @@ Importing the whole mailbox seems like a useful thing but a bit of a chore.
 
 
 
-Receive in the 
+Receive in the email into an s3 bucket using aws, and then ingest that into git asynchronously.
+
