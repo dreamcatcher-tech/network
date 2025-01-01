@@ -53,3 +53,14 @@ Run the voice pipeline thing on the laptop, in a docker container, then use that
 tell it that if we trigger speech during the quiet times, we want it to initiate something, like ask a question, tell a story, or some other thing.  So if the child is quiet, we might trigger a check to see if they're there.
 
 Have games as modules that people can insert, where the bot knows how to play a certain game, which might come with some functions.
+
+Allow the web page to connect my voice up thru the speaker, so that I can talk out of the speaker.  Could optionally allow the speaker mic to be turned on thru the phone, so we can be in another room listening.
+
+Make it be able to play songs and tunes by way of tool calls.
+Sound effects from a library.
+
+use https://killedbyapixel.github.io/ZzFX/ to generate sound effects, and let the bot use these to tell a story.  Could use https://freesound.org/ and search for new sounds for a more dynamic experience.  Background o1 could use this to add more tools to the library on the fly.
+
+Music requests can be asked for, and then we can go download the song somewhere so the kids can play it next time.  Video would let us talk about their dancing.  Sound might let them start to play instruments.
+
+Button to trigger discipline, and cause, or use my voice to trigger a particular type of aciton.
