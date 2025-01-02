@@ -22,8 +22,7 @@ query params are used to do different things:
 POST
 - objects that have changed on disk, receive back a hash
 - commit (supply the commit object) - can only work if head is referenced as the first parent and all the referenced objects are present on disk
-- ping - check that the server is alive
-- check - check if the api key is valid and working
+- ping - check that the server is alive, pass back auth status - if key is invalid it would reject the call
 - createRepo ( name ) - create a new repo 
 
 
