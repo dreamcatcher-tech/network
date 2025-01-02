@@ -7,6 +7,8 @@
 
 Remote repos are handled by push and pull, but we want to not actually download the whole repo, so we are acting like a browser.
 
+A good rule is that the client should not need to know about the internals of git, so they shouldn't need a git library.
+
 We then take on the roll of a filesystem provider.
 
 We should use urls to indicate:
@@ -18,8 +20,8 @@ query params are used to do different things:
 * latest => returns the latest commit immediately
 
 POST
-- commit (supply the commit object) - can only work if head updates
-- 
+- objects that have changed on disk, receive back a hash
+- commit (supply the commit object) - can only work if head is referenced as the first parent and all the referenced objects are present on disk
 
 
 push up the objects we want to update.
