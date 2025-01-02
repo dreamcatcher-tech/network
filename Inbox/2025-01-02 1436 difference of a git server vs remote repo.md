@@ -37,3 +37,6 @@ If we define an ts interface, then we can bridge it across a web interface.
 
 
 ???? is this interface the same as the NappApi interface ?
+
+The mock server should be supplied as part of the live server, or even as part of the interface tests, since remote or mock or files shouldn't matter - the client would look the same.
+Should be able to supply a mock fetch so that networking is avoided during the tests.
