@@ -39,3 +39,11 @@ If we define an ts interface, then we can bridge it across a web interface.
 
 The mock server should be supplied as part of the live server, or even as part of the interface tests, since remote or mock or files shouldn't matter - the client would look the same.
 Should be able to supply a mock fetch so that networking is avoided during the tests.
+
+In the main napps interface, of the artifact api, we should be able to do a bunch of commands, and only when we're ready, send off an actual action.  So opening the branch can be done using any kind of access methods.  The protocol could be bound up in a multiaddress, using our own protocol when it is direct between repos, but it could also be using urls to communicate.  It could be a consensus swarm, so lots of ways.
+
+Diff is important, as well as getting the metadata.
+
+Equals, where we put in a filename and compare it with a file that we have in the snapshot.
+
+flush is good for performance, so we can begin uploading files that have changed, even if we are not ready to commit ?
