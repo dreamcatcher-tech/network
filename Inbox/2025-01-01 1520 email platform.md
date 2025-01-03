@@ -19,3 +19,5 @@ Receive in the email into an s3 bucket using aws, and then ingest that into git 
 
 Pull apart into our own format for further processing.
 Begin auto processing to generate responses.
+
+Make a cheap version that includes a watermark advertising our services.  Get affiliate sales if people sign up and pay.  So we can allow you to, when looking to find a new supplier, shortlist a bunch based on web search, then email them all and engage in conversations to figure out what you want.  Each email advertises how our bots can be used for the recipients to process their email too.
