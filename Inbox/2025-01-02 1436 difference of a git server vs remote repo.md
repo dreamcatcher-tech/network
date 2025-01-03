@@ -53,3 +53,10 @@ The repo connection object could include a range of addresses for how to access 
 Authentication can be different each time as well, sort of like multiaddress but for auth and connectivity.  So we would have an api at the end of the interface, at a url, with a given key being used to connect to it and authenticate.
 
 Might not need to use the queues in deno, since we don't need to do any actual tasks ?  Heavy lifting is using b2.
+
+branch can be awaited, or not.  Branch can be specified with config option to allow the remote side to generate some parts of the name, so we are guaranteed not to have a collision.
+
+If you do a bunch of operations and then the remote comes back with a name error, then what ?
+
+If you don't allow some freedom to choose a free name, then you must await the operation before continuing.  Or, just make it awaitable anyway, and it just goes faster if you allow some freedom.
+
