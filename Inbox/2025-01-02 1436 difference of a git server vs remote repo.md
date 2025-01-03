@@ -51,3 +51,5 @@ flush is good for performance, so we can begin uploading files that have changed
 The repo connection object could include a range of addresses for how to access it, but it would always present the same interface.
 
 Authentication can be different each time as well, sort of like multiaddress but for auth and connectivity.  So we would have an api at the end of the interface, at a url, with a given key being used to connect to it and authenticate.
+
+Might not need to use the queues in deno, since we don't need to do any actual tasks ?  Heavy lifting is using b2.
