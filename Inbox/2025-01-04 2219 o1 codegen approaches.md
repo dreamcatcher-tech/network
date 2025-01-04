@@ -20,3 +20,5 @@ Work in layers, where the features we want will be built upon a foundation that 
 It might be that when implementing the next layer, we do that layer, and then rerun the base layer as the changes are reconcilled between the two.
 
 We should seek to insolate changes to a particular folder in the project too, since the smaller change radius the better.
+
+Get it to have a set of strategies for working with different frameworks.  Like with deno, get it to seek and confirm libraries it wants first, and possibly generate the docs from the source of the latest version if needed.  Then go ahead and do the implementation, using the latest versions of all the modules, and having done a search for recent releases.
