@@ -23,3 +23,8 @@ Want noise cancellation with krisp
 
 list files in the bucket.
 have a trigger that hooks back to the deployment when the bucket is updated.
+
+Because we don't have active room control, controlling sessions becomes hard.
+
+Provide a little dj widget so can play multiple tracks at once, select, deselect, and have them time synchronized together.  Provide a unified timeline to scrub over.  Show track waveforms.
+All tracks being shown should be immediately playable.
