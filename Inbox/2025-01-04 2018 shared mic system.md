@@ -28,3 +28,12 @@ Because we don't have active room control, controlling sessions becomes hard.
 
 Provide a little dj widget so can play multiple tracks at once, select, deselect, and have them time synchronized together.  Provide a unified timeline to scrub over.  Show track waveforms.
 All tracks being shown should be immediately playable.
+
+audio quality must be redundant so we never miss anything.
+
+? could we avoid all this rigmarole, and just record on the mic with a good clean timestamp or sync sound / echo estimation between participants ?
+So we would be simply storing the audio locally, and when the shared room says stop, we push all the audio we have up to artifact ?
+
+We could upload incremental snips, and also do incremental transcribes on each segment too, so we have these utterance blocks.
+
+Seems a lot of the features we are attempting require supressing or removing many of the livekit features which is the two way audio feed ?
