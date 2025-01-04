@@ -64,3 +64,5 @@ use https://killedbyapixel.github.io/ZzFX/ to generate sound effects, and let th
 Music requests can be asked for, and then we can go download the song somewhere so the kids can play it next time.  Video would let us talk about their dancing.  Sound might let them start to play instruments.
 
 Button to trigger discipline, and cause, or use my voice to trigger a particular type of aciton.  Used when kid is interupting, or getting too excited and needs to calm down.
+
+Make VAD turn off but just signal when its active, and we would use the livekit API to trigger the generation based on deeper end of turn detection.

@@ -118,3 +118,5 @@ api might be local, but that seems hard.
 Need a backblaze mock using local disk anyway, just for in memory development, which should be just the blob interface that we provide.
 
 We can set the passwords for the users, so they can be on a special deployment with signups disabled, and then we still keep the AI ability running.  
+
+Make artifact adapters that just store on local files.

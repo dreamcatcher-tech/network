@@ -17,3 +17,7 @@ The paths to the objects would be using repo ids, so the permissions check would
 ? secure deduplication between repos ? 
 If we stored the objects purely by hash, then we can deduplicate between repos.
 To delete them, we would store a count of how many repos referred to that item.
+
+
+granary project is good for deno compatible code.
+https://github.com/milkey-mouse/git-lfs-s3-proxy simple js script that passes all requests thru to a B2 backend.

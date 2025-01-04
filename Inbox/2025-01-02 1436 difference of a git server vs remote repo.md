@@ -60,3 +60,4 @@ If you do a bunch of operations and then the remote comes back with a name error
 
 If you don't allow some freedom to choose a free name, then you must await the operation before continuing.  Or, just make it awaitable anyway, and it just goes faster if you allow some freedom.
 
+Make artifact be git compatible, where it could be used to push and pull repos to using existing git clients.  This would allow our moneyworks server to store xml all on disk, and then do a massive git commit.
