@@ -5,3 +5,4 @@
 
 >[!danger] Depends: 
 
+want the highest possibly quality audio, with max redundancy so that even with connection issues something audible still makes it thru.
