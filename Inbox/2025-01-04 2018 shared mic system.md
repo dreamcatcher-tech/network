@@ -20,3 +20,6 @@ coordinating track start time should be in absolute, not relative time, so never
 Need to start auto egress, and to show each participant the tracks for download, plus let them delete them possibly.  Definitely they need to finalize them.
 
 Want noise cancellation with krisp
+
+list files in the bucket.
+have a trigger that hooks back to the deployment when the bucket is updated.
