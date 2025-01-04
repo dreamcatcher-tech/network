@@ -4,3 +4,7 @@
 >[!question] Targets: 
 
 >[!danger] Depends: 
+
+https://www.docingest.com/docs/livekit.io
+
+need a way to make the diagrams nice, so can interpret them without using image recognition.
