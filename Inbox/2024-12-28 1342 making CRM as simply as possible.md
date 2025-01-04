@@ -119,4 +119,4 @@ Need a backblaze mock using local disk anyway, just for in memory development, w
 
 We can set the passwords for the users, so they can be on a special deployment with signups disabled, and then we still keep the AI ability running.  
 
-Make artifact adapters that just store on local files.
+Make artifact adapters that just store on local files, so we can get going.

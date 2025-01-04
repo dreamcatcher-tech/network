@@ -21,3 +21,7 @@ To delete them, we would store a count of how many repos referred to that item.
 
 granary project is good for deno compatible code.
 https://github.com/milkey-mouse/git-lfs-s3-proxy simple js script that passes all requests thru to a B2 backend.
+
+Very simple to make our own repos use the lfs protocol directly, but can also make these files available using a traditional client, or they can download the files using the web and then push them into their own lfs server to connect up with the repo.
+
+Ultimately, we should present LFS files as a conventional filesystem and under the hood use git so we can manage versioning and integrity and permissions.
