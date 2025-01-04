@@ -6,3 +6,11 @@
 >[!danger] Depends: 
 
 want the highest possibly quality audio, with max redundancy so that even with connection issues something audible still makes it thru.
+
+Add ability to:
+- live transcribe
+- signal buttons from partipants, like they are thinking, they can private record, they want to mute for the other side and just record for themselves.
+
+If connection issues occur, switch over to the transcription which is pushed up from the server side and is the full data ?
+
+we want to use auto egress feature in livekit.
