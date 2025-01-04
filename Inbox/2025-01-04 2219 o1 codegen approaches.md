@@ -22,3 +22,7 @@ It might be that when implementing the next layer, we do that layer, and then re
 We should seek to insolate changes to a particular folder in the project too, since the smaller change radius the better.
 
 Get it to have a set of strategies for working with different frameworks.  Like with deno, get it to seek and confirm libraries it wants first, and possibly generate the docs from the source of the latest version if needed.  Then go ahead and do the implementation, using the latest versions of all the modules, and having done a search for recent releases.
+
+Seems to be best at finding a good simple architecture first - gets hard when the architecture is wrong.  Asking it for a fresh implementation from scratch, or based on some simple examples gives good results, and good direction.  The machine has a sort of instinct, or a way of doing things that it can't explain but that is often good, but regardless of quality, it is hard to fight against the instinct or the 'flop' of the LLM.  So you need an architecture that flops well.
+
+Putting format inhibits logical correctness - let it flop with its chosen math format, then do a translation to something like github compatible markdown.
