@@ -40,3 +40,5 @@ Before making a change, it should declare what files are to be changed, what lib
 It should be looking to split files apart for modularity.  It could propose some cuts and then you work together to discuss why they cuts are being made.
 
 So this becomes like a toolbox where you can apply different tools for different effect.
+
+Making a tool call that does a special trick and pulls in the previous chat that caused the tool call to be made. Taking advantage of cache tokens, carrying in the entire context, and performing one very narrow, narrow task. Which is to do generation of one single file.  Allows faster generation with more focused output, and can have strategies that loop over the end result to make it of high quality and adherence.
