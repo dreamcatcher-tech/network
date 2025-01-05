@@ -45,3 +45,7 @@ use the browser realtime transcription to detect when speech has paused a bit, a
 Must hit the server to get the time before starting. When stopping, everyone stops as soon as they get the broadcast message.
 
 Use the livekit react components as a way to copy out some of their code and use it to do our layouts and things, as well as speaker identification, input selection, and activity.
+
+A new participant should see the recording status when they join.
+
+Stop record should stop no matter what.
