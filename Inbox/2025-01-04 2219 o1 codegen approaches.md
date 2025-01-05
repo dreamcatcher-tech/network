@@ -26,3 +26,5 @@ Get it to have a set of strategies for working with different frameworks.  Like 
 Seems to be best at finding a good simple architecture first - gets hard when the architecture is wrong.  Asking it for a fresh implementation from scratch, or based on some simple examples gives good results, and good direction.  The machine has a sort of instinct, or a way of doing things that it can't explain but that is often good, but regardless of quality, it is hard to fight against the instinct or the 'flop' of the LLM.  So you need an architecture that flops well.
 
 Putting format inhibits logical correctness - let it flop with its chosen math format, then do a translation to something like github compatible markdown.
+
+Try having all the files in context, and then can ask questions and tasks, and first thing it does is narrow the context, and then start to grind away.

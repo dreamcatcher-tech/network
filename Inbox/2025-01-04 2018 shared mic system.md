@@ -40,4 +40,6 @@ Seems a lot of the features we are attempting require supressing or removing man
 
 Data ingestion processes should be totally separate from any kind of real-time streaming. So, when humans are having a meeting, separate channels, separate systems should be used for taking the voice and streaming it off to the side.
 
-use the browser realtime voice to detect when speech has paused a bit, and then send that off to whisper as a little batch.
+use the browser realtime transcription to detect when speech has paused a bit, and then send that off to whisper as a little batch.
+
+Must hit the server to get the time before starting. When stopping, everyone stops as soon as they get the broadcast message.
