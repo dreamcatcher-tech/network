@@ -28,3 +28,15 @@ Seems to be best at finding a good simple architecture first - gets hard when th
 Putting format inhibits logical correctness - let it flop with its chosen math format, then do a translation to something like github compatible markdown.
 
 Try having all the files in context, and then can ask questions and tasks, and first thing it does is narrow the context, and then start to grind away.
+
+I should be able to edit multiple threads in the message stream, so I can be forking off in serveral directions with the info I have.  
+
+I need to be able to have confidence that the info I have isn't a one off, that it has been run multiple times already and I'm looking at the average response.  Also my question should have been reformulated and so I know it always answered best.
+
+So, one, we should have a set of templates for commonly used things that we want to make, so we can say what to start with. So you, like, take the XYZ thing from the shelf and mush it in with this other thing here. And then you keep building it up like that.  This would include strategies for how to approach things, and could have several strategies, which are tried in parallel.
+
+Before making a change, it should declare what files are to be changed, what libs should be included, and it should have to deliberate what files to import.
+
+It should be looking to split files apart for modularity.  It could propose some cuts and then you work together to discuss why they cuts are being made.
+
+So this becomes like a toolbox where you can apply different tools for different effect.
