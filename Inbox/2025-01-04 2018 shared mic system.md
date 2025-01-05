@@ -43,3 +43,5 @@ Data ingestion processes should be totally separate from any kind of real-time s
 use the browser realtime transcription to detect when speech has paused a bit, and then send that off to whisper as a little batch.
 
 Must hit the server to get the time before starting. When stopping, everyone stops as soon as they get the broadcast message.
+
+Use the livekit react components as a way to copy out some of their code and use it to do our layouts and things, as well as speaker identification, input selection, and activity.
