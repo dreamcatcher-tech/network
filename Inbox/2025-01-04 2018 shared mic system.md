@@ -37,3 +37,7 @@ So we would be simply storing the audio locally, and when the shared room says s
 We could upload incremental snips, and also do incremental transcribes on each segment too, so we have these utterance blocks.
 
 Seems a lot of the features we are attempting require supressing or removing many of the livekit features which is the two way audio feed ?
+
+Data ingestion processes should be totally separate from any kind of real-time streaming. So, when humans are having a meeting, separate channels, separate systems should be used for taking the voice and streaming it off to the side.
+
+use the browser realtime voice to detect when speech has paused a bit, and then send that off to whisper as a little batch.
