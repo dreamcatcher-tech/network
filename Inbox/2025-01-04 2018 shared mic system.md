@@ -49,3 +49,5 @@ Use the livekit react components as a way to copy out some of their code and use
 A new participant should see the recording status when they join.
 
 Stop record should stop no matter what.
+
+When a file gets deleted, it should broadcast to everyone that they need to refresh the bucket list.

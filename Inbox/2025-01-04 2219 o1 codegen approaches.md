@@ -42,3 +42,7 @@ It should be looking to split files apart for modularity.  It could propose some
 So this becomes like a toolbox where you can apply different tools for different effect.
 
 Making a tool call that does a special trick and pulls in the previous chat that caused the tool call to be made. Taking advantage of cache tokens, carrying in the entire context, and performing one very narrow, narrow task. Which is to do generation of one single file.  Allows faster generation with more focused output, and can have strategies that loop over the end result to make it of high quality and adherence.
+
+Recognize patterns, like remote API, and let the user configure preferences for what type of pattern they prefer.  So if you want a specificy type of api or server framework, the preset prompts would ensure that this pattern was followed well.
+
+It might be easier to generate one file at a time, rather than multiple concurrent files that are meant to work together.  Also doing rules during generation is bad - we should let it generate things with very few constraints, and only then should we shape it into a format, style or other thing that we require.  Reducing the size of the leaps we require of the machine is good - many small steps will have superior quality to few large steps.
