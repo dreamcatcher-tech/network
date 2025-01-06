@@ -56,3 +56,4 @@ it needs to keep track of intents or specs, so as you go, it should be jotting d
 Make a file with all the interfaces of all the code in the system and the docs to describe them.
 This guides the code generation better.
 If the flop is wrong, then you need to steer it incrementally.
+
