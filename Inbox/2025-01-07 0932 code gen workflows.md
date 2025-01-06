@@ -33,3 +33,5 @@ Flop plus some adjustment seems inevitable, since right first time seems out of 
 Errors in the app while running, in the browser, should be fed back to the model, and it should iterate on fixing them, preferrably all at once.  So when generating, use a logging framework that feed back into the stuckloop, and is hooked at all major places, like in try catch.
 
 Testers would be agents that are designed to go thru a list of specs, and attempt to check if the app meets these specs by interacting with the app - UAT effectively.  This should be automated.  
+
+It is important to lay out the app architecture, so there can be no confusion.
