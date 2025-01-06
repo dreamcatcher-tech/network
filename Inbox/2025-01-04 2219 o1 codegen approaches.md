@@ -51,6 +51,8 @@ Always try make interfaces within the system, so if you are going to make api ca
 So we might make a front end library that exports the api calls of the system, and then have an interface for it that is passed in, along with a mock, to a front end generator, like v0.
 In v0, we could provide the interface to the web app part of things which ran the web service.
 
+it needs to keep track of intents or specs, so as you go, it should be jotting down things that are important to you, and as soon as it detects a conflict, it should immediately stop and clarify.
+
 Make a file with all the interfaces of all the code in the system and the docs to describe them.
 This guides the code generation better.
 If the flop is wrong, then you need to steer it incrementally.
