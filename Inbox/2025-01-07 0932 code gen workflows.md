@@ -26,4 +26,6 @@ This points towards a collaborative nature between ai tooling that has been made
 
 Its almost like starting from scratch - rinsing the project - gives higher quality outputs, rather than patching repeatedly.  So long as the units are small, this should go well.
 
-Ideally a big project would be broken up into modules, so each one could be rinsed and supplied its output as an interface back to the larger assembly project.  That assembly might 
+Ideally a big project would be broken up into modules, so each one could be rinsed and supplied its output as an interface back to the larger assembly project.  That assembly might need the modules as source files, or need them in some kind of way that makes it friendly to use, possibly as an interface import.
+
+Flop plus some adjustment seems inevitable, since right first time seems out of reach for current models.  The issue is that v0 has a great tool wrapper around the ai, a tool wrapper that we sort of want for ourselves.
