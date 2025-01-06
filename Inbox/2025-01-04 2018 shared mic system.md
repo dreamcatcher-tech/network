@@ -55,3 +55,6 @@ When a file gets deleted, it should broadcast to everyone that they need to refr
 Might use deno deploy as purely an api backend, and a polling result system.
 
 So deno would be an api project that uses some kind of shared interface that we hold constant between the front end and the back end.
+
+
+Participants should be able to join without logging in, but users log in and can do admin things.
