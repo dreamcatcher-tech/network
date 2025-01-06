@@ -57,3 +57,6 @@ Make a file with all the interfaces of all the code in the system and the docs t
 This guides the code generation better.
 If the flop is wrong, then you need to steer it incrementally.
 
+Take in all the conversaionts, or at least the transcriptions that you put in to v0 or into any tool, like our own platform, and try to elicit a spec out each time, so try to keep a background set of laws or assertions that you have made.  It should think about these, and pad them out with things it thinks you should have in there as rules, and also it calls your up on any contradictions.
+
+This is the background model of the bot, and it should be treated specially by the bot, and fed in as part of its sysprompt every time.  It should always be able to call the tool to update these rules.  In this way, you can say whatever you want, and then it will build up a stable view, so that when it does tasks, it has these rules in mind.
