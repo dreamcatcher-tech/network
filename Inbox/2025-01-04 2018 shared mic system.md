@@ -52,3 +52,6 @@ Stop record should stop no matter what.
 
 When a file gets deleted, it should broadcast to everyone that they need to refresh the bucket list.
 
+Might use deno deploy as purely an api backend, and a polling result system.
+
+So deno would be an api project that uses some kind of shared interface that we hold constant between the front end and the back end.
