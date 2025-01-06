@@ -29,3 +29,7 @@ Its almost like starting from scratch - rinsing the project - gives higher quali
 Ideally a big project would be broken up into modules, so each one could be rinsed and supplied its output as an interface back to the larger assembly project.  That assembly might need the modules as source files, or need them in some kind of way that makes it friendly to use, possibly as an interface import.
 
 Flop plus some adjustment seems inevitable, since right first time seems out of reach for current models.  The issue is that v0 has a great tool wrapper around the ai, a tool wrapper that we sort of want for ourselves.
+
+Errors in the app while running, in the browser, should be fed back to the model, and it should iterate on fixing them, preferrably all at once.  So when generating, use a logging framework that feed back into the stuckloop, and is hooked at all major places, like in try catch.
+
+Testers would be agents that are designed to go thru a list of specs, and attempt to check if the app meets these specs by interacting with the app - UAT effectively.  This should be automated.  
