@@ -46,3 +46,10 @@ Making a tool call that does a special trick and pulls in the previous chat that
 Recognize patterns, like remote API, and let the user configure preferences for what type of pattern they prefer.  So if you want a specificy type of api or server framework, the preset prompts would ensure that this pattern was followed well.
 
 It might be easier to generate one file at a time, rather than multiple concurrent files that are meant to work together.  Also doing rules during generation is bad - we should let it generate things with very few constraints, and only then should we shape it into a format, style or other thing that we require.  Reducing the size of the leaps we require of the machine is good - many small steps will have superior quality to few large steps.
+
+Always try make interfaces within the system, so if you are going to make api calls, you should have an object that controls these, which allows you to mock them out nicely.
+So we might make a front end library that exports the api calls of the system, and then have an interface for it that is passed in, along with a mock, to a front end generator, like v0.
+
+Make a file with all the interfaces of all the code in the system and the docs to describe them.
+This guides the code generation better.
+If the flop is wrong, then you need to steer it incrementally.
