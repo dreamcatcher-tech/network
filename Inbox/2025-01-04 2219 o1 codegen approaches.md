@@ -49,6 +49,7 @@ It might be easier to generate one file at a time, rather than multiple concurre
 
 Always try make interfaces within the system, so if you are going to make api calls, you should have an object that controls these, which allows you to mock them out nicely.
 So we might make a front end library that exports the api calls of the system, and then have an interface for it that is passed in, along with a mock, to a front end generator, like v0.
+In v0, we could provide the interface to the web app part of things which ran the web service.
 
 Make a file with all the interfaces of all the code in the system and the docs to describe them.
 This guides the code generation better.
