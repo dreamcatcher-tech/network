@@ -35,3 +35,11 @@ Errors in the app while running, in the browser, should be fed back to the model
 Testers would be agents that are designed to go thru a list of specs, and attempt to check if the app meets these specs by interacting with the app - UAT effectively.  This should be automated.  
 
 It is important to lay out the app architecture, so there can be no confusion.
+
+It seems we need to take the time to care about the achitecture, and make separations of UI and backend, since UI seems easy to do, provided it targets a mock interface for actions.  v0 should be incharge of writing the mock, and we just give it an interface to target for its interactions with the server.  Then we'd also make a debug window that we could toggle things in the mock, so we could test all the events in the system, and get these all corrected.
+
+Then pass the interface over to o1 + cursor, and lock the interface using system prompt instructions for v0.
+
+Might need a way to tightly constrain what files it can work on.
+
+Generating the UI layouts is definitely best in v0, but once we have it, we should pull it down into something like cursor for connecting it up to the rest of the logic.
