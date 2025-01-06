@@ -23,3 +23,7 @@ in our platform, we would expect that these multiple flops would be run in the b
 o1-pro might be able to look at the generated code and determine if it meets the requirements or not, and then would adjust its seed prompt in a certain way.  It could be passed screenshots of the app for appraisal.
 
 This points towards a collaborative nature between ai tooling that has been made, and so making a platform to faciliate this is key, rather than closed systems that can't integrate with other systems.
+
+Its almost like starting from scratch - rinsing the project - gives higher quality outputs, rather than patching repeatedly.  So long as the units are small, this should go well.
+
+Ideally a big project would be broken up into modules, so each one could be rinsed and supplied its output as an interface back to the larger assembly project.  That assembly might 
