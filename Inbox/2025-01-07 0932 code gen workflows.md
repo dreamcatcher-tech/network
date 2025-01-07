@@ -45,3 +45,5 @@ Might need a way to tightly constrain what files it can work on.
 Generating the UI layouts is definitely best in v0, but once we have it, we should pull it down into something like cursor for connecting it up to the rest of the logic.
 
 There is an issue with vercel where to deploy the code is a build step, whereas for us, the sketching would be already deployed, so no kind of publish step required.
+
+Using v0, may be best to build it up component at a time, rather than full app ?  Just use it to rapidly build sections, then improve each section in isolation - changing all at once is a fault.
