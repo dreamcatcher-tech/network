@@ -43,3 +43,5 @@ Then pass the interface over to o1 + cursor, and lock the interface using system
 Might need a way to tightly constrain what files it can work on.
 
 Generating the UI layouts is definitely best in v0, but once we have it, we should pull it down into something like cursor for connecting it up to the rest of the logic.
+
+There is an issue with vercel where to deploy the code is a build step, whereas for us, the sketching would be already deployed, so no kind of publish step required.
