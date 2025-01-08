@@ -35,3 +35,5 @@ So the client is always doing paged pulls of the complete set, and when it has t
 It could cache things, based on hash, but then we're in artifact territory again.
 
 Being able to receive chunked items in any order can speed things up too maybe ?
+
+When a record updates, it flashes blue to indicate change.  So if looking at a screen and a record changes on the server, it will flash blue to show it is changing.
