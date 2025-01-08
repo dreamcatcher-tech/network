@@ -25,3 +25,13 @@ SSE streaming down results is quite good.
 The key issue seems to be that using server side logic means a unique deployment.  One ideal is to have standard client side functions that pull on artifact, which is the same for all things, and then the front end just presents this standard data differently as a ui widget ?
 
 Having a napp that runs server side in response to a ui widget doing something seems fine ?
+
+paginated loadmore would be just the client does a fetch with the current latest hash of the tree, and the filter, and then the server would pull in the data and do the filter on it.
+
+A way to handle the filter is to only allow the fetching of the full record list, and doing the filtering on the client side.
+
+So the client is always doing paged pulls of the complete set, and when it has them, it does the sort and filter and whatever that way.  
+
+It could cache things, based on hash, but then we're in artifact territory again.
+
+Being able to receive chunked items in any order can speed things up too maybe ?
