@@ -19,3 +19,9 @@ Easiest seems to be just streaming down cheap versions only as requested, signal
 Crude version is just complete refresh.
 
 The deno deploy service holds the b2 objects in cache or the actual git items in the git cache, so the access is very fast and local.
+
+SSE streaming down results is quite good.
+
+The key issue seems to be that using server side logic means a unique deployment.  One ideal is to have standard client side functions that pull on artifact, which is the same for all things, and then the front end just presents this standard data differently as a ui widget ?
+
+Having a napp that runs server side in response to a ui widget doing something seems fine ?
