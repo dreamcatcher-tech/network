@@ -25,5 +25,5 @@ metrics
 
 dimensions are in question - how are new ones added
 
-
+assumption: people want to enter all data
 
