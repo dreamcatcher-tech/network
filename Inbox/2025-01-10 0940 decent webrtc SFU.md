@@ -20,3 +20,9 @@ So instead of a heavy broadcast, we can have very short broadcasts, and the bots
 This is a good avenue to go down, since the reliability of blockchains but also brought to realtime streaming seems gold.
 
 Every venture always has the economic structure baked in to it, like conways law or something, and so having a clean and fair equity structure is key
+
+This should be able to work on local meshes, so that on a local city block network, the service can be discovered and the video call can occur strictly between meshed nodes, rather than going thru the telcoms carrier.
+
+Cut thru forwarding can be applied on the wireless mesh to ensure very low latencies.
+
+Replace the local phone system within a corporation, and remove the local lan as different to the internet.
