@@ -26,3 +26,7 @@ This should be able to work on local meshes, so that on a local city block netwo
 Cut thru forwarding can be applied on the wireless mesh to ensure very low latencies.
 
 Replace the local phone system within a corporation, and remove the local lan as different to the internet.
+
+A network built in this way should be easy to make a netflix clone, particularly where the media is coming from different places rather than a centralized library, and it should also be able to support low latency video calling and gaming, all on the same underlying transport, so it makes this like one layer above the internet where the additional concerns of the last decade have been incorporated.
+
+The model is that all sensors are broadcasting constantly, and are able to broadcast to the whole world in realtime, then all use cases are actually just a degradation of that, rather than struggling hard to lift each node up to be that world broadcast capable thing.  This is an inverse model to the current way of doing things.
