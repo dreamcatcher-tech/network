@@ -32,3 +32,7 @@ A network built in this way should be easy to make a netflix clone, particularly
 The model is that all sensors are broadcasting constantly, and are able to broadcast to the whole world in realtime, then all use cases are actually just a degradation of that, rather than struggling hard to lift each node up to be that world broadcast capable thing.  This is an inverse model to the current way of doing things.
 
 A decentralized, trust-layer SFU with sandboxed app execution can preserve data sovereignty by separating code authorship from data handling. The SFU acts as a neutral broker for streams, while sensitive data is processed in isolated runtimes. The “always-on” mic scenario benefits from this because neither the hardware maker nor the app vendor directly sees raw streams; instead, they interact with a third-party node specialized in secure transport and execution. This approach is akin to autonomous “virtual entities” that can independently join or leave any system, but with cryptographic guarantees to safeguard user data end to end.
+
+Being an SFU seems like something that traditional centralized struggles with due to the architecture, and so it is costly to do at scale in central.  So a decentralized version should out perform by all measures.
+
+WebRTC should be used for sending and receiving the workloads as well, due to the minimum latency, so we can be even faster than the nearest anything.  And once quic becomes mainstream, our apps have excellent switchability characteristics too.
