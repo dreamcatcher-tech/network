@@ -14,3 +14,5 @@ Then make a version of pm2 so that we can manage what napps run locally, and get
 Allow you to run any napp as a service on a local machine.
 
 The artifact api can be made to point to the local filesystem, it just errors when you ask for history, UNLESS it finds itself inside of a git repo AND it has permission.
+
+We would sync these with a remote git repo on artifact, so that we could provide version history by getting the git repo view.
