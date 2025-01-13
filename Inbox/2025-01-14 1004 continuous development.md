@@ -41,3 +41,5 @@ Overall, this **reasoning workbench** approach fosters a fluid, real-time interp
 Once we get that working with team mates, we can all be working on different sections, and can see when someone else is working on something, and can listen in, or talk to them directly.  Like a google docs style thing, but you're either muted (same as if you're both typing on the keyboard) or collarobative, where you're talking to each other and the bots are grinding.
 
 Snapshots get taken so that when the speech is made, the exact context is available to the bot so it knows what you could see at the time.  If it also had your gaze info, that would help it a lot too.
+
+And further, as I progress my way down through the file, I would go line by line and my comments would be reflective of what the cursor was on at that point, and then below the file, the bot should be regenerating the code so that it matches what I'm saying as I go down line by line, so more important things need to come at the top, like functions that would define how everything else works, and so as my comments go in, as I review it from top to bottom, the bot begins trying to fill in the blanks underneath.
