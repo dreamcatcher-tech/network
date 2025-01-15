@@ -14,3 +14,5 @@ It could run by way of cron, where the server triggers the poller to poll ?  Mea
 We would make in memory mocks of the atomic and blob stores.
 
 We could push to b2 directly and store the atomic db locally, to skip having a deno deployment ?
+
+Run first on a mock, in ram version of the blob store and db.
