@@ -5,10 +5,30 @@
 
 >[!danger] Depends: 
 
-exists()
+.ping()
+.exists()
+.environment.init()
+artifact.scope.repository.publicKey
+.default()
+.bind({ branch: })
+.lineage.write.fork
+.files.read.exists
+.files.read.json
+.files.isDirty()
+.lineage.write.commit
+.latest()
+.files.write.json
 
+Plan is to write a mock that can used in memory to run the service and just see what changes.
+Give the CLI the option to start from a given value by default, possibly by setting something like --today so it only watches from midnight.
 
 
 Need some repo info, like the default branch etc.
 
 repo init should create a default branch and store it somewhere.
+
+when we go init, this returns the repoid, since it should be cryptographically bound.
+
+Need to store some info about the repo in the atomic store, or maybe in the config file somewhere.
+
+The info should store info about the blob store and how to get to it.  Blobs are just completely opaque dumb buckets.
