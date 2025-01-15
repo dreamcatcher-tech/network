@@ -32,3 +32,5 @@ when we go init, this returns the repoid, since it should be cryptographically b
 Need to store some info about the repo in the atomic store, or maybe in the config file somewhere.
 
 The info should store info about the blob store and how to get to it.  Blobs are just completely opaque dumb buckets.
+
+So really the CLI should be creating an action and then calling a local napp execution environment that pipes its artifact operations out.  It should use a cron job to schedule its own repetation, or use the api setTimeout to trigger the function to run again later.  Or just yolo it and let the napp run forever, since we aren't in serverless this matters less.
