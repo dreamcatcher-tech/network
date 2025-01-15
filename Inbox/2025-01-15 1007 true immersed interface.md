@@ -12,3 +12,5 @@ Everyone working on shared screens, anyone can see what anyone is doing or what 
 We can achieve this using just browser tabs, and then show it as a large number of screens in a virtual world.
 
 If we work on just providing browsers, then this can avoid having a full blown computer.
+
+Eye tracking so it knows what you're looking at.
