@@ -26,3 +26,5 @@ Stitch multiple files together to present to the model for consideration.
 Ability to select a portion of a document and narrow the scope down to working on just this part.
 
 Being able to take a screenshot of something and upload it instantly, using the chrome desktop tools for taking screenshots.
+
+We should be able to generate multiple versions of a particular theme, and then be able to compare them all to extract the important parts out, and to see what differences there were between them.
