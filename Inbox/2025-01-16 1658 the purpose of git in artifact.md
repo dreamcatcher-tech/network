@@ -24,3 +24,9 @@ Its almost like there are some other providers, too, like an environment provide
 So lineage and files seem very related.
 
 Git is really just a way to structure data in blobs so that we have lineage.  Plus giving this connectivity.
+
+A snapshot / tip layer is stateful, whereby it holds the live data within it.
+
+Snapshot should track is dirty based on what it has read ? or should its object cache hold this ?
+
+So tip seems to be passing thru everything in the lineage provider, except it intercepts commit() and puts in its own change data.
