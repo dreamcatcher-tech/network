@@ -7,4 +7,4 @@
 
 So that interface should be able to be wrapped very lightly in a napp interface, and then the LLMs can call it directly.
 
-It should be broken up into segments, with a different napp for each function ?
+It should be broken up into segments, with a different napp for each function ? 
