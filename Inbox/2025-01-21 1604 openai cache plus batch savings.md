@@ -6,3 +6,5 @@
 >[!danger] Depends: 
 
 So if we use cache tokens and use batch, do we double up on savings ?
+
+Be good for heavy brainstorming sessions.
