@@ -6,3 +6,5 @@
 >[!danger] Depends: 
 
 These reasoner workbenches are essential as we tackle harder problems, since we need to leverage AI to effectively think harder, longer, farther.  The search for wisdom.
+
+They should constantly be reassessing the top level architecture of any given plan.
