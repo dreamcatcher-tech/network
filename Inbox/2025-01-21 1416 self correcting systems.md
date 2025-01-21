@@ -1,0 +1,16 @@
+
+>[!tip] Created: [2025-01-21 Tue 14:16]
+
+>[!question] Targets: 
+
+>[!danger] Depends: 
+
+Each time the workbench is guided to do something different, we can emulate what the human did, so we can do it automatically next time.
+
+We can be building up background instructions and tunings to replicate this.
+
+We can also see if what the human is doing is likely fruitful, and advise them as such.
+
+So whenever someone does something that gets a better outcome, we record and process that, so it is immediately available as an updated tool strategy that we will attempt when something looks similar.
+
+For each individual, we can prefer it, if they do it often, since we are there to serve them.
