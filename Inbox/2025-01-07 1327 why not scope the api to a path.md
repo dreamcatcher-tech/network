@@ -1,0 +1,8 @@
+
+>[!tip] Created: [2025-01-07 Tue 13:27]
+
+>[!question] Targets: 
+
+>[!danger] Depends: 
+
+Seems too cumbersome ? 

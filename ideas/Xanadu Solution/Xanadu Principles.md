@@ -17,3 +17,13 @@ From the [Wikipedia Page](https://en.wikipedia.org/wiki/Project_Xanadu#Original_
 15.  Every Xanadu service provider can charge their users at any rate they choose for the storage, retrieval and publishing of documents.
 16.  Every transaction is secure and auditable only by the parties to that transaction.
 17.  The Xanadu client–server communication protocol is an openly published standard. Third-party software development and integration is encouraged.
+
+Closest approximations have been limited prototypes like OpenXanadu or offshoots (Udanax) and some decentralized hypermedia efforts, but none fully realized the original vision. Key issues include persistent, globally unique document addressing; dynamic transclusion at scale; secure micropayments and complex royalty structures; and universal access control. The complexity and overhead of maintaining stable links, ensuring stable identity, and handling real-time document royalties have been the main roadblocks. With advancements in distributed storage (e.g., content-addressed systems like IPFS), secure identities, and integrated micropayments (e.g., blockchain-based solutions), some of these challenges could be revisited and potentially solved.
+
+the cheapest micropayments system is a deferred one - so one that accumulates micropayments before setting is cheaper than one that records each transaction.
+
+not sure why server identity matters, and it can't be the same as a person ?
+
+How can we know if xanadu can actually be solved ?
+
+reverse transclusion as a way of atributing back for code snippets.  So for all code, we attribute back to whoever said it first, or something like it.  For all code, we order it as a type of function pattern or something, so that all docs point back to the early writers.

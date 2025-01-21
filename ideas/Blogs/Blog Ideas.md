@@ -549,3 +549,63 @@ This format also captures the need for natural language calls, which leverage in
 The packaging can optionally manage all the descriptions, images for logos, etc.
 
 Distinct difference between deterministic and probabilistic computing.
+
+## ghaction workflows breaking modularity
+
+These break modularity since they're always bespoke and attached to repos with some custom config.
+
+If this functionality was done with napps that triggered on different events, then a napp can be used as the development environment for other napps, and so the ghactions can be standardized and part of the package, instead of only part of the repo.
+
+The execution environment being separate to the packaging structure is what causes this leak in the abstraction of a package, resulting in ghactions.
+
+## the growth of json-schema tooling
+it points to this missing hole in the ecosystem, where a package format that was native json-schema is ripe.  The growth of json schema tooling correlates to the growth of LLM packages.
+
+https://npmtrends.com/openai-vs-zod-vs-zod-to-json-schema
+
+## Practical purity
+If a side effect occurs but nobody is around to witness it, is it a side effect ?
+
+## hole in the ecosystem for small to medium projects with decentralized returns
+Big projects are decentralized, but small projects struggle to get big enough to be called decntralized and along the way are easily snuffed out.
+Dreamcatcher is a project to allow even the smallest possible project to raise funds and guarantee that any returns are decentralized, right from the outset.  This avoids being a security, and allows projects to start decentralized.
+
+This current position actually forces centralization, by making it so hard to start decentralized, that you have to start centralized, and then switch to decent, which is nearly impossible as temptation and mounting complexities block it.
+
+## the ideal computing platform
+If we write about what the ideal platform looks like, and include AI in this model, then we can compare ourselves against this ideal, and also compare all other solutions, including fragmented solutions, where multiple products are combined together to achieve the platform.  This can show if anyone else is trying to be this unified platform, or how a unified platform can displace marketshare from larger encumbents that do not provide unified.
+
+## Ambientism
+beyond capitalism and communism, ambientism is where an automated system takes care of your needs amongst the economy.  So we should map out what types of functions you want from the country, and show how ambientism would work, to reduce your concerns, increase the performance of your surroundings, treat everyone fairly, and provide rapid auditing.  Envisage a world where al these concenrs, taxation, commons, friend networking, job hunting, product selection - all this is optimized.  Show leaving school where school was in this ambience system so you come out already an expert at something relevant, whatever that happens to be.
+
+Show some dashboards to measure how close a city is to ambience.  Every city offers some kind of ambient services, else people would not congregate there.  Score current cities and some ideal cities and varying levels of deployment.
+
+Show how different levels of rollout scores at different levels.
+Show what a childs lifecycle looks like in one of these cities, and score their cost to the city and their benefit in this system.  Compare with a taxed child.  Show how their total expressive output potential is higher at every stage.  Show how immigration can work.
+
+Ambient cities.
+
+## git for the world
+Is git a suitable structure to run the whole world on ? possibly.  Explain how we can all be independent and yet each of us has a single hash view of the world by way of who we are connected to.  All the worlds data as a single hash.
+
+But using pijul, we could have different views of the world, but all still have a single hash view, that might work better than git maybe ?
+
+## Code integration using napps
+Napp is a JSON-based packaging format that allows an LLM to orchestrate complex tool interactions without writing traditional code. Instead of manually wiring together modules and writing glue code, you define tools, agents, dependencies, and evaluations directly in the Napp configuration. The LLM then uses this data to call functions and coordinate tasks as needed, streamlining integration and removing the need for developers to handle technical plumbing.
+
+By standardizing functions and configurations, Napps make it possible for AI systems to flexibly combine modules from different ecosystems into one coherent pipeline. This reduces complexity, increases reusability, and enables an AI to dynamically adjust workflows without manual code changes. With Napps, developers can focus on defining the desired outcomes, while the LLM orchestrates the necessary tools and runtimes under the hood.
+
+But it isn't just LLM driven things, humans can wire together napps without writing code, too.
+
+Do some scenarios for time to first prototype, time to make a fix, time to integrate a fix.
+The LLM being flexible and supple means napps can evolve without breaking things.
+
+post about the different types of data consumption patterns, like request response, side effects.
+
+## From Glue Code to Orchestrated Flows: How Napps Transform Integration
+
+Show how many apps there are vs the packages, based on napkin math about the amount of code that gets written that isn't in a package.  This is lost effort.
+
+Napps eliminate the painstaking manual coding required to integrate modules. Instead of writing glue code, Napps rely on a standardized JSON format, letting LLMs handle all the orchestration. This means you can plug together a diverse set of tools without worrying about language boundaries or boilerplate. The complex, brittle wiring of traditional integration is replaced by a straightforward configuration file that the AI can interpret and act upon.
+
+By removing the need to write integration code, Napps drastically reduce complexity and speed up development. They turn what used to be a slow, error-prone process into a flexible, AI-driven workflow. Developers spend less time fixing broken connections and more time focusing on functionality. The result is a more adaptive, maintainable, and future-proof approach to building reliable, composable systems.
