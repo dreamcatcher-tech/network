@@ -64,3 +64,5 @@ The owned repos have a management branch that point back to the owners.  For the
 What if for now, the main repo was the home repo, and we add child repos later ?
 
 Each time environment gets updated, we update the pointers of the child repos - the hash of the refs branch is what identifies them.  this is also the consensus branch.
+
+[[Entity Management using Environment Repos]]
