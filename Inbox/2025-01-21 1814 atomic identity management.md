@@ -49,3 +49,18 @@ What if each branch in the home repo was the refs branch of the child repos ?
 If we could extract out the requirements of the problem, then we could make a set of rules that any proposed solution needs to meet, as well as a number of db hits budget.
 
 just store the did access in config for now.
+
+Being able to back out - so long as call company data is in a repo and we can export that and re-import it, then we can dump the db to do upgrades.
+
+Have a key like repos/repoPubkey/owners/did1
+Means we can rapidly get the list of owners
+Have the same for owned
+Or, have a mgmt branch and store those relationships in there as commits.
+Gives us the history, but costs an extra lookup, however it isn't using the expensive kv store, so easy and can be bulk.
+
+Best design is the did pointing to a home repo, which has data in it for owned repos.
+The owned repos have a management branch that point back to the owners.  For the env repo, this branch just points at the did.
+
+What if for now, the main repo was the home repo, and we add child repos later ?
+
+Each time environment gets updated, we update the pointers of the child repos - the hash of the refs branch is what identifies them.  this is also the consensus branch.
