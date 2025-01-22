@@ -7,6 +7,8 @@
 
 There is a missing feature in all the comms apps where I can't have a moderator between me and my contacts.  The major platforms might integrate this feature, but a user controlled version the bridges networks will always be best.
 
+We could write a chrome extension that hooks into the webpage and accessess the chat data from the web ui's.  Scanning a QR code might require some trickery tho.
+
 **Inventor’s Notebook Entry**
 
 **Date:** January 22, 2025  
