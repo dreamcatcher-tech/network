@@ -12,3 +12,7 @@ To copy a UI, copy the dom elements, and provide a screenshot, and work with the
 Then break the UI up into storybook components, and work on each one in isolation, which can be done well in bolt.new, since we can lock and target files.
 
 Force the types into separate files, and tightly control the shape of the props.  Then we can force the AI to stay in its lane.
+
+Use lock and target to keep things isolated.
+
+Have visual testing and interaction testing to make sure that when changes occurred the output is still the same.  Periodically do a skim of the diffs of the code.
