@@ -10,3 +10,5 @@ We could make a code writing strategy that allowed the LLM to flop and then post
 To copy a UI, copy the dom elements, and provide a screenshot, and work with the bot to polish the result.  This gives very powerful copying results.
 
 Then break the UI up into storybook components, and work on each one in isolation, which can be done well in bolt.new, since we can lock and target files.
+
+Force the types into separate files, and tightly control the shape of the props.  Then we can force the AI to stay in its lane.
