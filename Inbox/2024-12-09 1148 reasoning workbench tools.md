@@ -28,3 +28,5 @@ Ability to select a portion of a document and narrow the scope down to working o
 Being able to take a screenshot of something and upload it instantly, using the chrome desktop tools for taking screenshots.
 
 We should be able to generate multiple versions of a particular theme, and then be able to compare them all to extract the important parts out, and to see what differences there were between them.
+
+So what we need is the likes of Bolt.new or V0.dev, but made for general purpose reasoning. These tools, the reasoning tools, should be able to take advantage of any specialist tool and drive it, like a web front-end development platform.
