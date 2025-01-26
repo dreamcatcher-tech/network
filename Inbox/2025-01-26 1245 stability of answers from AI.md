@@ -34,3 +34,9 @@ The source of truth for AI should be singular, decentralized, and vast.
 This can then become the training data for the next gen.
 
 Conflicts are highlighted, and humans help settle these differences.
+
+this should also include insights from anonymized usage data that people have contributed, and should be ground and reasoned over to produce insights as well as be the format that the raw data comes in so it can be used for training too.  This global FS is what the AI should train on, and what it should use as RAG.  
+
+RAG seems eternal, since making a machine to hold all knowledge seems hard and expensive ?  So it has intelligence and wikipedia, and then it should perform better than anything which tried to hold it all inside, plus it is auditable, plus it can have multiple conflicting views, depending on what the user chooses to subscribe to.
+
+In military applications, this can support conflicting and theoretical datasets, so handle fog of way and disinformation.
