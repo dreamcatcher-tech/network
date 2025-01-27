@@ -45,5 +45,13 @@ So if the artifact api was purely action translation, then we could send it stra
 
 We do a special case on write actions, where we intercept those locally.  Everything else is turned into an action.
 
+the interpreter now, takes these actions and does something with them.
+
+The execution is the thing that takes the actions from inside the function and does something with them.
+
+In the case of a client application, the interpreter would take the generated actions, intercept write ones, then pass thru actions to the server backend.  The server would take those actions, 
+
+
+
 
 
