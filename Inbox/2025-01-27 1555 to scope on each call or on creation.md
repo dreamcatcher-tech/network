@@ -88,3 +88,9 @@ things like latest need to be handled using watchers.
 For each branch, we need to sequence the requests, by using a websocket, to ensure they are in order.  A branch is a synchrnony boundary.  Only latest needs to be used - latest would be supplied by watching for changes ? or latest would include a height.  
 
 at this point, it is now a napp format interaction.
+
+Then we need the final stage of the interpreter, which converts outcomes back into their real forms, like throws or results.
+
+In context, we'd grab the proxy service, and insert the tip.
+
+The services have the same shape, and end up at the same place, but there is a web service, the web service.  context might be the action receiver - part of the thing that takes in the actions.
