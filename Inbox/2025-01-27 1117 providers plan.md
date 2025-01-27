@@ -8,6 +8,8 @@
 get providers api ok
 check provider implementations
 check context implementations
+get flush tests working correctly
+
 
 delete git-fs and its tests.
 
