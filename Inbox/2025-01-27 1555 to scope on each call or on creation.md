@@ -84,3 +84,7 @@ So we make one provider out of the top
 Once it hits the db, it is assumed safe.
 
 things like latest need to be handled using watchers.
+
+For each branch, we need to sequence the requests, by using a websocket, to ensure they are in order.  A branch is a synchrnony boundary.  Only latest needs to be used - latest would be supplied by watching for changes ? or latest would include a height.  
+
+at this point, it is now a napp format interaction.
