@@ -5,11 +5,11 @@
 
 >[!danger] Depends: 
 
-get providers api ok
+run init as a working test using a mock
 check provider implementations
 check context implementations
 get flush tests working correctly
-
+ensure git-fs tests are properly carried over
 
 delete git-fs and its tests.
 
