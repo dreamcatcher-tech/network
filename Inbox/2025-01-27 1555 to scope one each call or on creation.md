@@ -51,6 +51,17 @@ The execution is the thing that takes the actions from inside the function and d
 
 In the case of a client application, the interpreter would take the generated actions, intercept write ones, then pass thru actions to the server backend.  The server would take those actions, 
 
+interpreter on the server:
+- receives an action somehow
+- checks to see if the request has validated the action correctly, by signing a message or whatever
+
+
+Need a sequence number to have ordering of requests.
+
+So how the actions come into the implementation / system interpreter is the only difference between clients and in thread contexts.
+
+So implementation would look just like action creators, but would be actual functions.
+
 
 
 
