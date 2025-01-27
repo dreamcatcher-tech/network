@@ -19,6 +19,31 @@ Context could be the holder of the api too, since we aren't going to have any ot
 
 We will have multiple versions of stores, but everything else will likely stay the same.
 
-Providers have to be 
+Providers have to be interfaced because they get bridged.
 
 But what about separating by web interface ?
+
+But what if we only bridged the stores ???
+
+The stores are much simpler.  
+
+So then context becomes the only interface, we declare the artifact interface just for cleanliness, but the providers merge with context.
+
+Theres sort of no point
+
+Then permissioning is just on every sores call.
+
+Make the rpc calls be pure interface calls, and the provider is just part of the context instantiation.
+
+Sot he web interface is just pure web function calls ?
+
+scope becomes just part of the action structure, which includes a signature somewhere.
+
+Writes are the only special case ?
+
+So if the artifact api was purely action translation, then we could send it straight thru to web, and implement on a context, that is passed in some  stores.  The stores could be scoped and permissioned, since a scoped action can only act within the scope ?
+
+We do a special case on write actions, where we intercept those locally.  Everything else is turned into an action.
+
+
+
