@@ -29,9 +29,9 @@ The stores are much simpler.
 
 So then context becomes the only interface, we declare the artifact interface just for cleanliness, but the providers merge with context.
 
-Theres sort of no point
+Theres sort of no point having this provider interface.
 
-Then permissioning is just on every sores call.
+Then permissioning is just on every scopes call.
 
 Make the rpc calls be pure interface calls, and the provider is just part of the context instantiation.
 
@@ -66,3 +66,21 @@ So implementation would look just like action creators, but would be actual func
 
 
 
+so its just an action creator system, that has a counter that goes up each time an action is created so the order is assured.
+
+commit gets intercepted.
+
+implementations of each of the actions are part of the context.
+
+context wraps the action creator with some extra things.
+
+but the action interpreter, is the implementation, and its objects should match exactly the shape of the implemented interface, except it doesn't output actions.
+
+So going to actions is what bridges the web and the inner chain interface.
+
+On the server side is an action router, that takes an action in, and routes it back to the implementation, then returns back the results.  It may translate it, like async iterables into SSE's.
+
+So we make one provider out of the top
+Once it hits the db, it is assumed safe.
+
+things like latest need to be handled using watchers.
