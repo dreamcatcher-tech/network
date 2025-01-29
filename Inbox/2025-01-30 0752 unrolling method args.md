@@ -27,3 +27,13 @@ const action = {
 ```
 
 The standard for napps should be this files array, and we can send all that using multipart form data.  Basically anything that is binary should be sent as a file.
+
+So if we made a format that allowed for functions to be passed in, for napps ? 
+
+The napps action interpreter would process these.
+
+we need not have payload ?
+payload could be always an array, which represents args ?
+If payload was not an array, then it is a single object arg.
+
+Issue is if the payload arg needs to be an array ? in this case we'd need to put it inside an array ?
