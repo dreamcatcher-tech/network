@@ -22,7 +22,9 @@ const action = {
 	files: {
 		'some/file': Uint8Array[],
 		'other-file': Uint8Array[]
-	}
+	},
+	sequence: 2342,
+	signature: 'f223fasdfqwefxyz'
 }
 ```
 
