@@ -20,3 +20,14 @@ Have visual testing and interaction testing to make sure that when changes occur
 Trying to do fancy things with code to avoid typing is stupid - the LLMs make laborious or repetitious code easy, so if there are two interfaces, like a client and server interface, then just write them out twice since the tricks required to handle the subtle differences is far harder.
 
 this seems like learning to code all over again, with a new set of heuristics, tricks and smells.  Like clean LLM code.
+
+Dump code regularly.
+
+Abandon chats - its faster and fresher to look at problems anew, rather than being led down yesterdays paths - if you haven't implemented something in a day, then it probably isn't worth carrying on that path.
+
+There might be advantage to getting o1-pro to generate mutliple files at once, since they seem to have coherence of some kind ?
+
+Absolutely need a top level plan that the human and machine are working thru.
+Plan needs revamping constantly.
+Human needs to debate strategy often.
+Means that bot can attempt to solve things ahead of time.
