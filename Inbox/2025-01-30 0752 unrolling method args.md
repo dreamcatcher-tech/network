@@ -51,3 +51,6 @@ So openai choosing just a single object is sort of unique.  If we support rpc st
 If payload is an array
 
 Or we just call it params
+
+So if you send a single object, then the function gets this whole thing.
+If you send an array, then the function gets these as an args array.
