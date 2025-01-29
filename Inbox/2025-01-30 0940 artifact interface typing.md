@@ -18,3 +18,5 @@ One way is to make the return types of the context be just whatever the function
 Or, run some codegen to extract out an interface with not all these exact return types and things ?
 
 BUT seems any time we are returning an artifact object, we are returning a new scope.
+
+Might be easiest to just redeclare the interface for the provider, as a straight copy.

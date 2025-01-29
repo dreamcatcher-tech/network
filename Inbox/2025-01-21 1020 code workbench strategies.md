@@ -16,3 +16,7 @@ Force the types into separate files, and tightly control the shape of the props.
 Use lock and target to keep things isolated.
 
 Have visual testing and interaction testing to make sure that when changes occurred the output is still the same.  Periodically do a skim of the diffs of the code.
+
+Trying to do fancy things with code to avoid typing is stupid - the LLMs make laborious or repetitious code easy, so if there are two interfaces, like a client and server interface, then just write them out twice since the tricks required to handle the subtle differences is far harder.
+
+this seems like learning to code all over again, with a new set of heuristics, tricks and smells.  Like clean LLM code.
