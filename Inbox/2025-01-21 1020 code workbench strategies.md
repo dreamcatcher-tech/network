@@ -44,3 +44,7 @@ Code changes seem to ripple thru - a top level command goes in, and then it walk
 Do rough cuts - don't have to inspect everything during the first pass - just trying to rapidly find the large architectural faults, then gradually refine them again and again.
 
 Once have it tight enough that can stop changing whole files, and start doing high precision test impelementation.  Then start making changes whilst ignoring all the tests, and studying how the tests break.
+
+Need to be able to mark blocks of code as good, and provide a high weight to changing, so the bot can see what we value, and what we like.  Should also walk thru some code we like and valued, and it should look for differences and techniques, and try to apply them so they look familiar to us.
+
+Batching should grind over the code at night looking for small subtle improvements and running down theories for improvements.
