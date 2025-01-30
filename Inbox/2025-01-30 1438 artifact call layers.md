@@ -13,8 +13,10 @@ all else goes in to an action creator, which makes standard form actions based o
 
 the provider interface takes in functions calls and returns server based return types.
 
-So using the mocks, we should be able to pass the provider into the context, and it will run accurately.
+So using the mocks, we should be able to pass the server provider into the context, and it will run accurately.
 
 Then we can attach the real db and it will run directly contacting the db.
 
 THEN we bridge the provider using an action bridge, where it goes to the server to run, and then return.
+
+So we make a translator for the server interface that turns it into actions, and then make a generic reciever that receives actions, passes them in to the server provider, and returns the results.
