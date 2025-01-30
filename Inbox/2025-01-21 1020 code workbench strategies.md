@@ -40,3 +40,7 @@ Plus we can see usage info streaming in, so we know hot paths - like coverage, b
 In a folder, start with one file, get it super right, and then use it as an example for the next folder.  Doing things like this amplifies the effort put in to each file along the way, resulting in far higher resultant quality for less.
 
 Code changes seem to ripple thru - a top level command goes in, and then it walks thru the code base making changes.
+
+Do rough cuts - don't have to inspect everything during the first pass - just trying to rapidly find the large architectural faults, then gradually refine them again and again.
+
+Once have it tight enough that can stop changing whole files, and start doing high precision test impelementation.  Then start making changes whilst ignoring all the tests, and studying how the tests break.
