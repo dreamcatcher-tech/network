@@ -36,3 +36,7 @@ Make a decision tree that tracks everything.
 Have an overwatch that makes decisions based on cost, where it is trying to avoid wasteful work, based on how much money it has left and what it was told to do.
 Then these trees can be shared amongst people, so we can all be poking at it.
 Plus we can see usage info streaming in, so we know hot paths - like coverage, but for heat.
+
+In a folder, start with one file, get it super right, and then use it as an example for the next folder.  Doing things like this amplifies the effort put in to each file along the way, resulting in far higher resultant quality for less.
+
+Code changes seem to ripple thru - a top level command goes in, and then it walks thru the code base making changes.
