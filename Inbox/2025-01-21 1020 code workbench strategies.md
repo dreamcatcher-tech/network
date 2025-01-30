@@ -31,3 +31,8 @@ Absolutely need a top level plan that the human and machine are working thru.
 Plan needs revamping constantly.
 Human needs to debate strategy often.
 Means that bot can attempt to solve things ahead of time.
+
+Make a decision tree that tracks everything.
+Have an overwatch that makes decisions based on cost, where it is trying to avoid wasteful work, based on how much money it has left and what it was told to do.
+Then these trees can be shared amongst people, so we can all be poking at it.
+Plus we can see usage info streaming in, so we know hot paths - like coverage, but for heat.
