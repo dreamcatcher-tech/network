@@ -48,3 +48,5 @@ Once have it tight enough that can stop changing whole files, and start doing hi
 Need to be able to mark blocks of code as good, and provide a high weight to changing, so the bot can see what we value, and what we like.  Should also walk thru some code we like and valued, and it should look for differences and techniques, and try to apply them so they look familiar to us.
 
 Batching should grind over the code at night looking for small subtle improvements and running down theories for improvements.
+
+Reverse back to the top level architecture at all times.  The top level we always know is there, so we should be able to deduce it, or try to make it, especially based on formats that have worked in the past.
