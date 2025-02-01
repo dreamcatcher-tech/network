@@ -16,3 +16,5 @@ So us maintaining the top level directives is crucial.
 Having a system of bots that can help us manage this is crucial.
 
 Once we can publish top level intelligence, then the execution and promotion of those efforts becomes relatively trivial.
+
+Basically agreeing on the end goal, and then building out modules that support that, and acknowledging the environment we're in and how we will insert - this is the core skill - having a clear top level well reasoned out goal.
