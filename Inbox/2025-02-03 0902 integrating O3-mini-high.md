@@ -29,6 +29,8 @@ So just use o3 until can know it isn't working, and then switch to pro and see i
 
 pro seems good at hard code problems, but the issue is that there are even hard problems at all - it says the design is wrong if mini struggles ?  Or mini needs some extra prompting, which might be module specific prompts to explain how things should be done.
 
+So the issue is, is the lower quality worth the less of a wait, since the speed is excellent ?
+
 ## Fomulas
 A concise way to model this is to define a single “effectiveness” metric that balances quality (Q) against time (T), rework (R), and human cognitive load (C). One example:
 
