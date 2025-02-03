@@ -23,3 +23,5 @@ Then implement watches that detect common errors from the lint loops, so we can 
 Create a test runner app on our local machine, so that it hooks into deno deploy and can perform all the services that are being asked for.
 
 We should always be watching for corrections the human does, and add them to per file, per project, per user, per company, or global patterns that we should add to the prompt.
+
+So the key is that we can make this system teachable, so it can deduce a prompt to ensure that our requests are fulfilled.  When we make the correction, it tries several prompt updates, makes some tests, and checks that if it had the prompt originally, it wouldn't have made that same mistake.
