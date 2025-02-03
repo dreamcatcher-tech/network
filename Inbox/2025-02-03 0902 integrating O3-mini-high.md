@@ -31,6 +31,8 @@ pro seems good at hard code problems, but the issue is that there are even hard 
 
 So the issue is, is the lower quality worth the less of a wait, since the speed is excellent ?
 
+Sometimes it seems o3 is not able to solve, or a deeper solution is required, so recognizing when a loop has occurred, and calling on heavy guns, like o1-pro, or the human, is essential.
+
 ## Fomulas
 A concise way to model this is to define a single “effectiveness” metric that balances quality (Q) against time (T), rework (R), and human cognitive load (C). One example:
 
