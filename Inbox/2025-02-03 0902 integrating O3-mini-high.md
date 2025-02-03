@@ -25,7 +25,9 @@ Morale improves since progress is 'done' not 'waiting'.
 
 Learning rate is the biggest gain, since it isn't the quality of the code that matters (above the minimum acceptable amount) it is the learning rate of the human.  Also the conservation of the humans limited resources, like working memory.
 
+So just use o3 until can know it isn't working, and then switch to pro and see if it works better ? unless we have general knowledge requirements.
 
+## Fomulas
 A concise way to model this is to define a single “effectiveness” metric that balances quality (Q) against time (T), rework (R), and human cognitive load (C). One example:
 
 
@@ -43,3 +45,5 @@ $$
 The human brain function that struggles with juggling many tasks simultaneously is typically called **working memory** (or sometimes the “central executive”). Factoring working memory as CC in the formula helps capture how increasing simultaneous tasks burdens the human, lowering overall effectiveness.
 
 So we should be able to guage this rate for the world that Smax is doing, vs any other approach.
+
+
