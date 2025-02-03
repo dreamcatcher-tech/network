@@ -25,3 +25,5 @@ Create a test runner app on our local machine, so that it hooks into deno deploy
 We should always be watching for corrections the human does, and add them to per file, per project, per user, per company, or global patterns that we should add to the prompt.
 
 So the key is that we can make this system teachable, so it can deduce a prompt to ensure that our requests are fulfilled.  When we make the correction, it tries several prompt updates, makes some tests, and checks that if it had the prompt originally, it wouldn't have made that same mistake.
+
+Give it ability to focus in on a specific test, and loop around until it gets the tests running one at a time.
