@@ -27,6 +27,8 @@ Learning rate is the biggest gain, since it isn't the quality of the code that m
 
 So just use o3 until can know it isn't working, and then switch to pro and see if it works better ? unless we have general knowledge requirements.
 
+pro seems good at hard code problems, but the issue is that there are even hard problems at all - it says the design is wrong if mini struggles ?  Or mini needs some extra prompting, which might be module specific prompts to explain how things should be done.
+
 ## Fomulas
 A concise way to model this is to define a single “effectiveness” metric that balances quality (Q) against time (T), rework (R), and human cognitive load (C). One example:
 

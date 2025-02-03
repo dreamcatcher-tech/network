@@ -21,3 +21,5 @@ Be nice to ask o1-pro, in the workbench, for how to add extra features, given th
 Then implement watches that detect common errors from the lint loops, so we can prompt those to not happen, and test against the dataset of when they occured.
 
 Create a test runner app on our local machine, so that it hooks into deno deploy and can perform all the services that are being asked for.
+
+We should always be watching for corrections the human does, and add them to per file, per project, per user, per company, or global patterns that we should add to the prompt.
