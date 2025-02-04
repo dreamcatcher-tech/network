@@ -33,6 +33,8 @@ So the issue is, is the lower quality worth the less of a wait, since the speed 
 
 Sometimes it seems o3 is not able to solve, or a deeper solution is required, so recognizing when a loop has occurred, and calling on heavy guns, like o1-pro, or the human, is essential.
 
+o3-mini is a few shot thing, great for sketching, but deeper optimizing and bug finding requires o1-pro.  So use it to get the structure right.
+
 ## Fomulas
 A concise way to model this is to define a single “effectiveness” metric that balances quality (Q) against time (T), rework (R), and human cognitive load (C). One example:
 
