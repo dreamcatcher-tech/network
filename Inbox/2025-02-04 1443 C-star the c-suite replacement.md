@@ -30,3 +30,13 @@ The LLC can give the operator legal power, and will manage the contractual relat
 Can provide services that C* can call upon natively, like legal insurance, certified advice.
 
 Basically if it can have access to accounting services that are instant, it can make a better decision.
+
+Then people with rep can get involved in the decisions, so they can run thousands of companies by contributing a little bit to each.
+
+Also have a marketplace for services which can be set up to auto switch.
+
+Present the problem of how to get paid to this group of individuals.
+
+Then we start building up proprietary advice, and data from inside many companies, so we can act better.
+
+The data that nobody wants to share is what we should charge money on.  Once we process it, the advice is ours.
