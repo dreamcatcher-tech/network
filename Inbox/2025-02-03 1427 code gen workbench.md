@@ -27,3 +27,9 @@ We should always be watching for corrections the human does, and add them to per
 So the key is that we can make this system teachable, so it can deduce a prompt to ensure that our requests are fulfilled.  When we make the correction, it tries several prompt updates, makes some tests, and checks that if it had the prompt originally, it wouldn't have made that same mistake.
 
 Give it ability to focus in on a specific test, and loop around until it gets the tests running one at a time.
+
+So if we can define an interface we want to meet, and we can write some tests that exercise it properly, then we should churn on the internal implementation to get the best of several runs, so that we can be confident we haven't got stuck on some local minimum ?
+
+We should also ask if the tests are outdated and if they still serve the intent ?  The intent should always be in question.
+
+Maybe start with the tests we want to write first, and then do the implementation ?
