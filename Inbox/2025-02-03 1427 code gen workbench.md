@@ -33,3 +33,5 @@ So if we can define an interface we want to meet, and we can write some tests th
 We should also ask if the tests are outdated and if they still serve the intent ?  The intent should always be in question.
 
 Maybe start with the tests we want to write first, and then do the implementation ?
+
+Be able to flag files as exemplary, probably by virtue of committing them, so the bot knows it should look to them for examples.  Then it can defend its choices based on these files, which causes you to have to point out faults in the committed files.
