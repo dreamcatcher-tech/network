@@ -10,3 +10,4 @@ If you use our platform, any time you hit a bug, the bots are swarming to fix it
 So overnight, an issue that exists strictly for you, that the bots couldn't solve, might just get solved.
 
 You can also put money against it to incent the solution of it.
+
