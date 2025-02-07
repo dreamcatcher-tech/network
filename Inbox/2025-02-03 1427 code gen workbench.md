@@ -45,3 +45,5 @@ Constant reapers run and look for inconsistencies.  Once these bots are tested a
 Refactoring the interface should be rolled out across the repo with full knowledge of how it changed, which makes it easier to figure out how to adapt things.
 
 Concerns or worries can be listed somewhere, and these get triggered by a particular bot too.
+
+The use of flops - make files and functions as whatever the bot felt most comfortable with, and then do presentation transforms, as well as refactoring back to original.  So generate the solution fresh, and only then translate back to the existing one, if possible, since trying to morph directly is too much.
