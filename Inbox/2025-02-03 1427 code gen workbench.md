@@ -35,3 +35,13 @@ We should also ask if the tests are outdated and if they still serve the intent 
 Maybe start with the tests we want to write first, and then do the implementation ?
 
 Be able to flag files as exemplary, probably by virtue of committing them, so the bot knows it should look to them for examples.  Then it can defend its choices based on these files, which causes you to have to point out faults in the committed files.
+
+Interfaces seem to be like the top level prompts.  If the reasoning is done at an interface level, then the consumer docs can be derived from that with a different tone.  We should allow questions and thoughts and ideas to be treated specially, like the LLM knows how to dawdle and how to respect ideas and not try to resolve them immediately.  The interfaces and how they relate and call each other should be highly documented and reasoned about.  The modularity of the whole project is laid out here.  Then the build becomes very methodical.
+
+New features would be reasoned into the interface.  Keep a log of decisions that were made to change the interface.  Perhaps the folder structure of the whole project could be laid out in the interface layout ?  Scoping the bots to a particular folder seems to have good responses.  Long running triggered threads can keep the interface following rules.  The top level business rules would be stored along with the interface.  The interface design is the specification.
+
+Constant reapers run and look for inconsistencies.  Once these bots are tested a couple of times, they can be set to run on any event.
+
+Refactoring the interface should be rolled out across the repo with full knowledge of how it changed, which makes it easier to figure out how to adapt things.
+
+Concerns or worries can be listed somewhere, and these get triggered by a particular bot too.
