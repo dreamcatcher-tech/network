@@ -47,3 +47,7 @@ Refactoring the interface should be rolled out across the repo with full knowled
 Concerns or worries can be listed somewhere, and these get triggered by a particular bot too.
 
 The use of flops - make files and functions as whatever the bot felt most comfortable with, and then do presentation transforms, as well as refactoring back to original.  So generate the solution fresh, and only then translate back to the existing one, if possible, since trying to morph directly is too much.
+
+Should be able to flag files or methods as unfinished, unsure - then when we paint things like this, as well as painting things as sure, then the AI uses this as guidance for what to focus upon.
+
+We should be able to zoom in on an individual test file, and tightly analyze it in isolation, as well as the coverage that it generates, so that the human and the AI can verify if it works as expected and meets the style and orthogonality rules.
