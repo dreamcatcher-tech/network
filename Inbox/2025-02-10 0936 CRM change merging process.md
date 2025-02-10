@@ -56,3 +56,22 @@ Fail to save (go from red to orange) means that another change that affects your
 While editing, we should warn them if someone else updated the file before they hit save, too.  These are general conflict rules to keep hold of.
 
 This tracking of commits has issues when merging.  We need to, in a merge commit, keep track of both, so we update the file ?  It has to point to two commits now.  It would have to be part of the merge commit.  It could point to just the commits, and which branch is chosen by the order of the parents in the merge commit, so no need to reference the parent commits directly ?  This means we could walk merges.
+
+Ideally this would be outside of the data, and tracked by git itself perhaps ?  Or by using indexes on the repos, so we can look things up rapidly ?
+
+Store changes separately as a merge queue or a diff queue, and we delete them when we merge in to changes branch.  This means that minimal space is stored for the change, since it is only the change.  Explicitly ingestion into the moneyworks system, since diff is removed.
+
+Moneyworks can merge in to changes as many times as we want, whenever it wants, and it is up to the sync service to handle the merges in, and to update the changes queue.
+
+This would work well for triggers that need to react or update to the changes, like changing a customer record needs to change a bunch of other things, like pickup schedules.
+
+The changes can include user info ? and can be reference by the file, so we can know who made the change ?
+
+So we need some kind of inboxing ?
+Lets us see everyones pending changes at any given moment, then we process the actions.
+Good for receiving email messages, also when a workflow requires humans, so we can see what long running step functions are in progress.
+
+If each user had their own branch, and then they signal a PR to merge into the main branch, and trigger off whatever needs changing ?
+
+Have a jobs queue, and each changed piece of data references a job by commit and path, so we can always see why it changed ?  The job references the data by commit, so we can walk the history rapidly.
+
