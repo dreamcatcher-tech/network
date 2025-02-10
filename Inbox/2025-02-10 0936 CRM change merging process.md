@@ -34,3 +34,25 @@ So don't do any moneyworks merge back into changes until all the changes in the 
 
 Or, store the previous commit along with each record, so that we can rapidly walk changes.
 Then clients would watch to see if the commit prior changed from what they set it to, but the changes remained the same.
+
+Or clients could watch the moneyworks mirror branch, and specifically watch for their changed files.
+
+Have red orange green states, for the saving process steps.
+
+
+Simple form:
+1. client reads mw commit id
+2. client commits to changes, and awaits further commits on the changes branch
+3. the next time there is a merge that pulls in from the mw branch, with a commit message "merge mw branch" client can check ?
+
+With the simple rule that we would never merge mw into changes while there were outstanding changes, so that all clients, whenever they saw a merge come in, they would know for sure that they either won or lost.
+
+Changes could also refuse to receive new changes until the new changes had been merged in, so it could block editing, or make saving wait.  Could be a time delay thing, if we couldn't manage to keep up with the rate of changes.
+
+Ideally we would be off moneyworks before we get the load up, so for now, just these changes are sufficient.
+
+Fail to save (go from red to orange) means that another change that affects your file happened before you could do the save.  This shows up as a special type of error message, and so when they go to edit, some fields have changed, and some dirty fields might be clean.
+
+While editing, we should warn them if someone else updated the file before they hit save, too.  These are general conflict rules to keep hold of.
+
+This tracking of commits has issues when merging.  We need to, in a merge commit, keep track of both, so we update the file ?  It has to point to two commits now.  It would have to be part of the merge commit.  It could point to just the commits, and which branch is chosen by the order of the parents in the merge commit, so no need to reference the parent commits directly ?  This means we could walk merges.
