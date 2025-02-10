@@ -75,3 +75,9 @@ If each user had their own branch, and then they signal a PR to merge into the m
 
 Have a jobs queue, and each changed piece of data references a job by commit and path, so we can always see why it changed ?  The job references the data by commit, so we can walk the history rapidly.
 
+? How can we detect when a conflict has occurred in mw before even trying to write changes ?  Basically the changes file would be based on something that has changed ?
+
+What if a job was a PR ?
+So the user can make a large number of changes in a branch, and then the job is actually a PR attempt.
+
+Processing the PR would trigger changes that need to occur.
