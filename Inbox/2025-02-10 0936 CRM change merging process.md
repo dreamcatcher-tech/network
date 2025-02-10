@@ -26,4 +26,11 @@ process:
 1. push to the changes branch
 2. watcher of the changes branch triggers
 3. mw pull is initiated, to ensure we have the latest items
-4. 
+
+
+So the changes branch would actually be the hamr branch
+
+So don't do any moneyworks merge back into changes until all the changes in the changes branch have been applied to moneyworks.
+
+Or, store the previous commit along with each record, so that we can rapidly walk changes.
+Then clients would watch to see if the commit prior changed from what they set it to, but the changes remained the same.
