@@ -81,3 +81,5 @@ What if a job was a PR ?
 So the user can make a large number of changes in a branch, and then the job is actually a PR attempt.
 
 Processing the PR would trigger changes that need to occur.
+
+?? what about adding a new customer ?
