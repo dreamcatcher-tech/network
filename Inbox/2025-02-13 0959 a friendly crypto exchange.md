@@ -32,3 +32,9 @@ You can also run theories to your hearts content, and we can supply bots that ca
 We would also watch social media and automatically respond to reports that defame the exchange.  We would be a bot run exchange, and would not hide this, but rather promote it.  Our business goals are set in code, and the bots execute on these things.  Anyone can start a new project on this exchange, but you have to pay for it yourself.
 
 We can help you hold accounts on multiple exchanges too.  We help you interact with the financial system compliantly and effortlessly.  Never fill in the same form twice, sometimes not even once.
+
+Can see your friends, talk to your friends, and can compare results.  Can pull stats from the exchange, like how much is being transferred, how much held on hand, how much the payout pulls, current speed of payouts, which banks the money is moving to, what nationality the users were in.
+
+Basically the price of joining is being ok sharing some anonymized data about you, and in exchange you see the anonymized data of everyone else.  Can connect chain analysis tools in, can ask for your own tools.
+
+If you build a crypto product, we should be your choice for building payments straight in, as we do your user management, and handle all that difficulty, you just focus on your app.
