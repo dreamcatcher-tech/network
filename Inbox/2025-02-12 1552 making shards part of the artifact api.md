@@ -18,3 +18,8 @@ artifact.shards.read('some/nested/path.txt')
 ```
 
 You could still read the sharded files directly, but shards are a convenience method on top for you.
+
+ls of shards should stream down results, but these would be against the actual file names, not sharded ?
+
+Make a walker that can walk over a directory, like a for await on a particular file ?
+Then can give requirements for orders and other things.
