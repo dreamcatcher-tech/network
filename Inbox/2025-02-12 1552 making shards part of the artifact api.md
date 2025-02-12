@@ -23,3 +23,5 @@ ls of shards should stream down results, but these would be against the actual f
 
 Make a walker that can walk over a directory, like a for await on a particular file ?
 Then can give requirements for orders and other things.
+
+We need a way to write some config in the shard locations.
