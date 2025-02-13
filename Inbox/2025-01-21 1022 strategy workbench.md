@@ -13,3 +13,7 @@ Can have a strategy that checks all library usage against docs, and builds up a 
 
 We should make a massive shared repo of docs that have been processed by everyone, and you pay tokens to put the data in, but you earn tokens when others read rather than re-burn tokens.
 This seems a general principle as we terraform the data landscape to be fully transformed by ai models.
+
+Along with coverage info on the code, we should also provide timing information, so we can know which functions are running hot, to help the bot with optimization tasks.  Can make gantt charts that are hand traced, and then can look at the expensive parts and focus in on that.
+
+What is probably coming is a framework to make it easy for code to be instrumented, debugged, by llms, and supporting having multiple forks or versions so the bots can try to solve concurrently.  This should just arrive for us one day.
