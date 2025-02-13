@@ -21,3 +21,5 @@ Could also do a actor strategy where it rewrites the algorithm that is hot in te
 predictions market that does ai derivations of lightweight steerage that you input, so the number of forecasts and the internal logic consistency is high, having a very granular model.
 
 What is probably coming is a framework to make it easy for code to be instrumented, debugged, by llms, and supporting having multiple forks or versions so the bots can try to solve concurrently.  This should just arrive for us one day.
+
+Walk functions one step at a time, taking notes, so we can understand the call flow better, by considering each step, so we're tracing the code, but using a strategy to focus on each function, on function at a time.  Can also be taking notes about the code, which can be processed separately.  So its like LLM based tracing, and it can fork its threads, if something is being called by an interface, so it can follow all versions of the interface, and have an oversight watcher.
