@@ -51,3 +51,9 @@ The use of flops - make files and functions as whatever the bot felt most comfor
 Should be able to flag files or methods as unfinished, unsure - then when we paint things like this, as well as painting things as sure, then the AI uses this as guidance for what to focus upon.
 
 We should be able to zoom in on an individual test file, and tightly analyze it in isolation, as well as the coverage that it generates, so that the human and the AI can verify if it works as expected and meets the style and orthogonality rules.
+
+When there is an issue, we should allow the bots to attempt the problem first, and then we get flagged with ones they couldn't solve, like tests they couldn't get to pass, or requirements they think they haven't met.  Then we try to develop a strategy to get it to solve with them, so this strategy gets included in part of a wider reuseable knowledge base, and THESE are the things of value that we share - these little strategies, that are getting tweaked and refined.  They are like agent recipes.
+
+They might include a summary of what they tried.  As multiple humans try too, the bots leave notes summarizing what they tried to do.
+
+Worst case, the human fixes directly.
