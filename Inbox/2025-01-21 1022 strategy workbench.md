@@ -16,4 +16,8 @@ This seems a general principle as we terraform the data landscape to be fully tr
 
 Along with coverage info on the code, we should also provide timing information, so we can know which functions are running hot, to help the bot with optimization tasks.  Can make gantt charts that are hand traced, and then can look at the expensive parts and focus in on that.
 
+Could also do a actor strategy where it rewrites the algorithm that is hot in terms of bit O notation to explain how it works and to help search for better options.  Seems to be all about having alternatives.
+
+predictions market that does ai derivations of lightweight steerage that you input, so the number of forecasts and the internal logic consistency is high, having a very granular model.
+
 What is probably coming is a framework to make it easy for code to be instrumented, debugged, by llms, and supporting having multiple forks or versions so the bots can try to solve concurrently.  This should just arrive for us one day.
