@@ -21,3 +21,7 @@ Agents compete with each other.
 Make a platform for the recruitment and scoring of ai agents.
 
 Have a set of interview questions so you know when the machine does the right job.
+
+Record the screens, so that the users train the bots too, where they look at what the bot did and talk to it and review it.  This makes the bot more tuned to them, then our humans look at these corrections and see if we can apply them elsewhere.
+
+The agent can come with human helpers that it can call on when it gets stuck, who can help them go thru the job.
