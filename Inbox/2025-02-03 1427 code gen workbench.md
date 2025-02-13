@@ -57,3 +57,5 @@ When there is an issue, we should allow the bots to attempt the problem first, a
 They might include a summary of what they tried.  As multiple humans try too, the bots leave notes summarizing what they tried to do.
 
 Worst case, the human fixes directly.
+
+We should have `.artifactrules` or some way of specifying design rules for a set of code files, so that as these rules are deduced from the interactions with the userbase or the coders, we can build them up, increasing the chance that a fix will adhere to them.  Bots can also challenge them if they seem out of date, or if a request appears to conflict with them.
