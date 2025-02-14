@@ -27,3 +27,5 @@ Walk functions one step at a time, taking notes, so we can understand the call f
 Process cpu profiles so we can pull out just the data for the current file.
 Profiling could be used to generate coverage as well, so we know what isn't getting hit ?
 Or just do some processing on the coverage files to give this same end result.
+
+Might write code in pseudo code before it gets turned into real code, to ensure the algorithm is minimal ?
