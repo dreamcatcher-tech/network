@@ -63,3 +63,5 @@ We should have `.artifactrules` or some way of specifying design rules for a set
 Make a format that transforms source code into coverage and timing and hit count info, so that when the bot chooses to read this info, it can immediately see what function calls are slow and need optimizing.
 
 If we give it a set of benchmarks to measure speed in certain cases, then let it experiment to improve those numbers, and it can grind over the codebase and try a range of different things.
+
+Use a widget like speedscope to display profiles that were generated during running, as the llm crafts little snippets of code that run with instrumentation, that it uses to hone in on where the bottlenecks are.  Give the LLM some tools to query the data, and to ask about a specific function, so it could query suspicious functions one at a time, or query based on a file and get the summary data for each function in a given folder, then it just walks around using this tool to find things it is suspicious of.
