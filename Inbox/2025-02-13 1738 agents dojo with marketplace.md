@@ -29,3 +29,5 @@ The agent can come with human helpers that it can call on when it gets stuck, wh
 The marketplace needs a standard way to house them all, hold the private data you have with them, trust the execution of them to not treat your data badly.
 
 Make specialized platforms, like exit planning, and let them all connect to the agent marketplace with an API, so that so long as each platform is api compatible, our agents can be deployed upon it.
+
+Trusted execution, which could include execution onsite, but offers guarantees about data sovereignty and can guarantee that no data leaves the agent, so there is no further training data that is leaked out.  Or, some training data may be lifted out, but it would be anonymized, and you can see all of it as its going out, and you can review it before it is unlocked.
