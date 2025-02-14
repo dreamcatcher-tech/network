@@ -29,3 +29,5 @@ Profiling could be used to generate coverage as well, so we know what isn't gett
 Or just do some processing on the coverage files to give this same end result.
 
 Might write code in pseudo code before it gets turned into real code, to ensure the algorithm is minimal ?
+
+When fixing tests, start at the top, focus in by making it have a .only or use a filter, then fix that, remembering to ripple down the rest of the tests if a change is made to fix it.  The idea is that we ripple forwards each time with each fix, so that we never have to fix the whole thing all at once - narrow, then open, and repeat each time.  Very rarely will an oscillation occur, and if it does, we can easily call for help, or consider the whole situation, or roll back and start again.
