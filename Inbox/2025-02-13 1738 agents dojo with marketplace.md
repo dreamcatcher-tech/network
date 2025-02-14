@@ -27,3 +27,5 @@ Record the screens, so that the users train the bots too, where they look at wha
 The agent can come with human helpers that it can call on when it gets stuck, who can help them go thru the job.
 
 The marketplace needs a standard way to house them all, hold the private data you have with them, trust the execution of them to not treat your data badly.
+
+Make specialized platforms, like exit planning, and let them all connect to the agent marketplace with an API, so that so long as each platform is api compatible, our agents can be deployed upon it.

@@ -59,3 +59,7 @@ They might include a summary of what they tried.  As multiple humans try too, th
 Worst case, the human fixes directly.
 
 We should have `.artifactrules` or some way of specifying design rules for a set of code files, so that as these rules are deduced from the interactions with the userbase or the coders, we can build them up, increasing the chance that a fix will adhere to them.  Bots can also challenge them if they seem out of date, or if a request appears to conflict with them.
+
+Make a format that transforms source code into coverage and timing and hit count info, so that when the bot chooses to read this info, it can immediately see what function calls are slow and need optimizing.
+
+If we give it a set of benchmarks to measure speed in certain cases, then let it experiment to improve those numbers, and it can grind over the codebase and try a range of different things.
