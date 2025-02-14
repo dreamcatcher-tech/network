@@ -23,3 +23,7 @@ predictions market that does ai derivations of lightweight steerage that you inp
 What is probably coming is a framework to make it easy for code to be instrumented, debugged, by llms, and supporting having multiple forks or versions so the bots can try to solve concurrently.  This should just arrive for us one day.
 
 Walk functions one step at a time, taking notes, so we can understand the call flow better, by considering each step, so we're tracing the code, but using a strategy to focus on each function, on function at a time.  Can also be taking notes about the code, which can be processed separately.  So its like LLM based tracing, and it can fork its threads, if something is being called by an interface, so it can follow all versions of the interface, and have an oversight watcher.
+
+Process cpu profiles so we can pull out just the data for the current file.
+Profiling could be used to generate coverage as well, so we know what isn't getting hit ?
+Or just do some processing on the coverage files to give this same end result.
