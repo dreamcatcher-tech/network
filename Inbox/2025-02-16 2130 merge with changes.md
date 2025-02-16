@@ -7,4 +7,4 @@
 
 Set up a tip
 When pulling in multiple parents, reconcile the files and make any changes we need to in the tip.
-When it comes time to commit, 
+When it comes time to commit, we just include the parent scopes we want to include as well.
