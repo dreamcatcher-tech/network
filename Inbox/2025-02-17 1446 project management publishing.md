@@ -12,3 +12,7 @@ So we need to start publishing project data, so we can know how the burndown is 
 Then effects like 'we got to the end and we have to bin it all' can explain the unknown parts.
 
 Having meetings about these, and explaining each piece, can help the definitions significantly.
+
+So if we could just get that top level schedule up, that woudl ease a lot of pain, really.
+
+If the shared calendar could be updated just by voice, and could run different whatif scenarios, and was scoring things on a dashboard ?

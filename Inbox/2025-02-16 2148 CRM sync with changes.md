@@ -51,4 +51,18 @@ So where to store this info ?
 
 Should we only write all the updates to the changes branch only when we are fully reconciled ?  What about when the users are changing things rapidly ?
 
-If we turn into terse 
+So keep looping over the changes branch until we are fully reconciled and have a quiet period ?
+Or, just force our way in there ?  Worse case you'd always catch up in the night sometime.
+
+If we get bounced from doing a commit with the tip, then we just start again from the top ?
+Right before merge, config stores the ch commit that we are up to date with, and this is what gets read from next time.  So we can get this straight from the config on the mw branch, and this lets us know which changes are due to changes, and which are due to moneyworks.
+
+Other options are storing the changes commit along with the record, in a separate file (like an annotation) so that we can rapidly walk changes to files. 
+
+Store the actual records separately, so that moneyworks is separate and temporary.
+
+We could write a file somewhere that simply indicates that we made some changes from the users.   So if we see differences between mw and changes, and we see no changelog for the record then that means the change came from moneyworks, so we push that into changes.  But if we see the change log, then we know we need to push that into moneyworks.  The replay of this is just checking for syncs that have already been processed, since mw and ch branches agree.  A conflict is when mw branch disagrees with the change ???
+
+changelog could be numbered files, and each one has to be the next in the sequence, so it forces user apps to coordinate.
+
+But what about if mw and ch both change a file ?  mw should win ?  So we would store the mw sync commit too, so we can detect concurrent modifications.
