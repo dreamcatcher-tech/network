@@ -66,3 +66,5 @@ We could write a file somewhere that simply indicates that we made some changes 
 changelog could be numbered files, and each one has to be the next in the sequence, so it forces user apps to coordinate.
 
 But what about if mw and ch both change a file ?  mw should win ?  So we would store the mw sync commit too, so we can detect concurrent modifications.
+
+We could just find the merge base of the branches, so we know what is the common ancestor ?  This avoids having to write anything down in configs, as this is always available to us.  
