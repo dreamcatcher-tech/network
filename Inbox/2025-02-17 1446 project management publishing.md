@@ -20,3 +20,5 @@ If the shared calendar could be updated just by voice, and could run different w
 Given the progress we have recorded so far, we should be able to get the machines to guess at how long other work might take, like how long to do the execution portion of the chain.
 
 Make a dashboard that shows the size of the components we need to achive full dreamcatcher, then rings out, showing the extra work to achieve different readiness levels.  
+
+Actual work can be recorded by what repos get worked on, or what folders.
