@@ -4,3 +4,5 @@
 >[!question] Targets: 
 
 >[!danger] Depends: 
+
+https://docs.attest.org/docs/idea--zone/use--case--examples/transparent-funding
