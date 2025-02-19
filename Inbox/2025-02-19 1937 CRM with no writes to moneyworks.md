@@ -13,6 +13,8 @@ What about downloading all of moneyworks ?
 
 Reset of the crm just copies the oids of the table names straight over, or, just set an object named 'moneyworks' to the tree oid of the mw branch, giving us an instant copy.
 
+Run decorator records, that adorn over the top of the moneyworks versions, for things like geocoding, manual address positioning.
+
 ## Data structure
 
 We need not be stuck with the moneyworks data structure.
