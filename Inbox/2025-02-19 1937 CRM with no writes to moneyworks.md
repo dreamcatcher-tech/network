@@ -9,6 +9,9 @@ It would simply read, and optionally it would reset itself back to moneyworks re
 
 Moneyworks would stay syncing the reads.
 
+What about downloading all of moneyworks ?
+
+Reset of the crm just copies the oids of the table names straight over, or, just set an object named 'moneyworks' to the tree oid of the mw branch, giving us an instant copy.
 
 ## Data structure
 
