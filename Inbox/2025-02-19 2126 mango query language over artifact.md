@@ -62,3 +62,9 @@ Add structured outputs to the queries, so the LLM will always generate valid jso
 AgentDB
 
 Store queries, and see if one similar has run before, and if we find it, upvote it, and use those results - storage is cheaper than LLM calls.
+
+For loops and other structures, like $each, $filter ?
+Allows us to set up bulk processing.
+Provide a UI element to drill into each query as it is being done and see how it worked out.
+
+The language is about query, execution, mutation, and ultimately, agency, described in a standard way.  Spin up an agent with a few lines of agentql.
