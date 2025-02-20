@@ -70,3 +70,9 @@ Provide a UI element to drill into each query as it is being done and see how it
 The language is about query, execution, mutation, and ultimately, agency, described in a standard way.  Spin up an agent with a few lines of agentql.
 
 Different formats can have different query modules, like pdf can have the concept of page, or paragraph.  Image can have concept of objects, video can have something different again.
+
+Because of all the custom stuff required, modifying graphql probably won't work, since graphql is too soft, and we only really just wanted a simple language to express operations that go over a large number of records.
+
+Should include the cost limits or token limits, can do parallel queries in a sprinkled fashion, to get a sampling rather than the full list.
+
+If we didn't have this language, then wiring up napps to talk to other napps would require programming.  This language is well understood, and whats more we can train the bots to deal in its specifics, since it already understands what mango is.  It basically flopped much of the ideas in here anyway.
