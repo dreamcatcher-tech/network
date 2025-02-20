@@ -82,3 +82,5 @@ make a `$pipe` operator, so that results of one query can be sent into another o
 If we made iterative queries, where all queries are a transcription, then we can provide results from just what we have locally cached, while we pull in more results from peers.  Then they update as they become available.
 
 The client could in fact send partial queries off to multiple servers to get faster results.
+
+The difference with graphql, is that a mango query can be verified and hashed ?  GraphQL could do that too, but it seems harder ? also graphql is not pure json, since it is a function sort of thing ??
