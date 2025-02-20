@@ -76,3 +76,9 @@ Because of all the custom stuff required, modifying graphql probably won't work,
 Should include the cost limits or token limits, can do parallel queries in a sprinkled fashion, to get a sampling rather than the full list.
 
 If we didn't have this language, then wiring up napps to talk to other napps would require programming.  This language is well understood, and whats more we can train the bots to deal in its specifics, since it already understands what mango is.  It basically flopped much of the ideas in here anyway.
+
+make a `$pipe` operator, so that results of one query can be sent into another one.
+
+If we made iterative queries, where all queries are a transcription, then we can provide results from just what we have locally cached, while we pull in more results from peers.  Then they update as they become available.
+
+The client could in fact send partial queries off to multiple servers to get faster results.
