@@ -84,3 +84,7 @@ If we made iterative queries, where all queries are a transcription, then we can
 The client could in fact send partial queries off to multiple servers to get faster results.
 
 The difference with graphql, is that a mango query can be verified and hashed ?  GraphQL could do that too, but it seems harder ? also graphql is not pure json, since it is a function sort of thing ??
+
+Add a $terminate condition, or else it will stop when it runs out of credits.
+
+Stream the file changes down using some kind of a broadcast channel, or temporary commits, or something.  Or break the docs down into chunks, so they get committed regularly, in parts, which looks like streaming is occuring.  Ideally we just have an exposed port that relays data straight down to the browser, and all workers push this info out to this listening port, so the browser sees what it would if it had an exposed port.
