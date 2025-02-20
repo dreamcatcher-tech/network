@@ -68,3 +68,5 @@ Allows us to set up bulk processing.
 Provide a UI element to drill into each query as it is being done and see how it worked out.
 
 The language is about query, execution, mutation, and ultimately, agency, described in a standard way.  Spin up an agent with a few lines of agentql.
+
+Different formats can have different query modules, like pdf can have the concept of page, or paragraph.  Image can have concept of objects, video can have something different again.
