@@ -32,3 +32,9 @@ Liveread on b2 is the best option, since we can tag the object based on key, and
 mv is then just a rename once we know what the hash is, or just a double write.  If we could do range copy in the api that would be good.
 
 Could use b2 and versioning to overwrite the object with the changed chunk of data, and so to get the file, we just pull down all the versions.
+
+We need something like a collector component, that we can just send little chunks of data to, and it will arrive at this location.  Like some kind of mini server with an IP address.  This should be turned into a product.
+
+We should also have objects that can be read, and the read just pauses at the end, so we get the appended data as soon as it is added, so we just start reading a json object, and it works like a regular read, but it is a realtime representation of the streaming data, as it is being written.
+
+Alibaba cloud has an appendable objects feature.
