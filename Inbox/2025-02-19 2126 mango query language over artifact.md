@@ -119,3 +119,7 @@ Can display an execution as a gantt chart, or as a workflow diagram.  Can show a
 Lock to a specific commit, or reread things - show when things changed between commits and give links to inspect those.
 
 Replay of query and step thru.
+
+Debugger should allow me to sample the first few runs to make sure its working right.
+Should be able to roll back.
+The partial state should itself be files, so that other tasks can pick up where it left off.
