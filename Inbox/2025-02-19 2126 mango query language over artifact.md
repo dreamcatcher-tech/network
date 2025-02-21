@@ -88,3 +88,11 @@ The difference with graphql, is that a mango query can be verified and hashed ? 
 Add a $terminate condition, or else it will stop when it runs out of credits.
 
 Stream the file changes down using some kind of a broadcast channel, or temporary commits, or something.  Or break the docs down into chunks, so they get committed regularly, in parts, which looks like streaming is occuring.  Ideally we just have an exposed port that relays data straight down to the browser, and all workers push this info out to this listening port, so the browser sees what it would if it had an exposed port.
+
+Add trigger functions and then we do a wait for some thing to change.
+
+So we'd have all these little scripts sitting around, which would be used to coordinate agents, data, and can execute functions.  So you could write whatever logic in these functions entirely, or you can use the query language to manipulate and rewrite these functions and llms.
+
+Could allow any query to run unpackaged code by wrapping it in some kind of service call.
+
+So the LLM becaomse the same as the napps field.  The same rules for specifying what function to call become just a language call.

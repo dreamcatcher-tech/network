@@ -30,3 +30,5 @@ Use an elastic storage disk, and write to it using a cluster aware filesystem.  
 Liveread on b2 is the best option, since we can tag the object based on key, and could even concatentate several pieces of the stream into one.
 
 mv is then just a rename once we know what the hash is, or just a double write.  If we could do range copy in the api that would be good.
+
+Could use b2 and versioning to overwrite the object with the changed chunk of data, and so to get the file, we just pull down all the versions.
