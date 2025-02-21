@@ -111,3 +111,11 @@ Shoudl be able to call stored little snippets, which can be locked to a hash or 
 Can also reference other parts of the program, to basically have a GOTO.
 
 Can have a `$cron` option, which will run the script on a schedule.
+
+Will need loop guards, to ensure it doesn't run forever.
+
+Can display an execution as a gantt chart, or as a workflow diagram.  Can show a planner so you can see what files were filtered at each step, and how it plans to execute, and can turn it into a statechart or looping workflow or some other visual representation.
+
+Lock to a specific commit, or reread things - show when things changed between commits and give links to inspect those.
+
+Replay of query and step thru.
