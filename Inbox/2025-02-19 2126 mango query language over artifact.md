@@ -96,3 +96,18 @@ So we'd have all these little scripts sitting around, which would be used to coo
 Could allow any query to run unpackaged code by wrapping it in some kind of service call.
 
 So the LLM becaomse the same as the napps field.  The same rules for specifying what function to call become just a language call.
+
+Need some template variables, such as the path of the current file, so that we can generate derived filenames, and can concatenate them.
+Append so we can make a combined effect.
+cp and mv and rm ops ?
+
+Give a temporary storage space for the query, which is where can store some outputs if they are asked to be stored in a variable.  These would be files that local to the fiber.
+
+Developing this language seems like less effort than trying to code all these interactions manually.
+It just means we can do many simple operations without having to write a program, since we can generate a json schema and probably get it right every time.
+Its better than doing it in code, since it is very specialized to artifact, and interactions with the database.
+
+Shoudl be able to call stored little snippets, which can be locked to a hash or a version, so we can compact the files up, since we just refer to a call by a json object.
+Can also reference other parts of the program, to basically have a GOTO.
+
+Can have a `$cron` option, which will run the script on a schedule.
