@@ -41,4 +41,4 @@ We should be able to generate sequence diagrams, as show trade flows easily, wit
 
 Once these flows are established, then we can take estimates of the value provided, and show the old way of doing things.
 
-Use something 
+Use something like ameriorate https://ameliorate.app/keyserj/mta-congestion-pricing?view=All+Structure but use AI to update the diagrams and do reasoning on them.  If chats were transformed into this data structure, then derivations would be significantly better, rather than working in unstructured text.
