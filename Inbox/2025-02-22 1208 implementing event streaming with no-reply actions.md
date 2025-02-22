@@ -35,3 +35,12 @@ On the send side, we would just discard the actions that had been produced alrea
 On the receive side, we would just replay the actions up until the wait.
 
 Subscriptions to higher events need to be stored somewhere, so if you want to subscribe to repo events, these would need to be stored in the meta branch of the repo ?
+
+This leads credence to having a single control branch per repo ?
+But could have many, and if any commits on any branches occur, we read to see if any events need to be injected into the fiber managers.
+Or there could be a dedicated events branch.  Reading all the branches that have event watchers seems best.
+1 process branch per repo seems useful too.
+
+two way streams ?
+probably requires a function call back to pull the streaming data with some kind of shared id.
+could experiment with it, but hasn't seemed to come up any time.
