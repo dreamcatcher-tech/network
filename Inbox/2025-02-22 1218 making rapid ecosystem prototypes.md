@@ -42,3 +42,21 @@ We should be able to generate sequence diagrams, as show trade flows easily, wit
 Once these flows are established, then we can take estimates of the value provided, and show the old way of doing things.
 
 Use something like ameriorate https://ameliorate.app/keyserj/mta-congestion-pricing?view=All+Structure but use AI to update the diagrams and do reasoning on them.  If chats were transformed into this data structure, then derivations would be significantly better, rather than working in unstructured text.
+
+We should be able to do this for our different offerings too, like scavenging compute capacity.
+
+Our own ecosystem physics, with current offerings measurements, switching rate guesses.
+
+We can then mock up own own product sites, and select different versions.
+
+Plus we can have our reasoning, and have website copy queues that get voted on, so that we list the top three features, but we have a total of 10 in the pipeline, and they are continually voted and refined.
+
+Then when we do product testing, we use that as the signal for how much value, how much rapidity is there.
+
+This can be used for laying out features like consensus, currency, and other things, so that we can upvote the prototypes in the queue, and start versioning the physics, so the build out is understood, then use the problem solving maps to reason about why we need each piece.
+
+This is how we can collect funds to build and presell each piece.
+
+We could even launch fake campaigns, just to test appetite.  
+
+Start running issue grinders on all these, so that they get refined by long running queries that cross reference and scour the internet looking for alternative views.
