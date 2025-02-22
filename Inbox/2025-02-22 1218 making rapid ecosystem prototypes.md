@@ -27,3 +27,5 @@ Define physics like, the hoster to hoster transfer of the private repo, split ho
 Proposing a scenario would show an existing arrangement, or create a new one.  Or update the phsyics.  Asking quesions like this would show which product was most suitable.
 
 So we would reason thru the ecosystem modelling, and then use this as the basis for service / offering construction.
+
+Each feature would be its own project, and its own justification for existence.
