@@ -29,3 +29,16 @@ Proposing a scenario would show an existing arrangement, or create a new one.  O
 So we would reason thru the ecosystem modelling, and then use this as the basis for service / offering construction.
 
 Each feature would be its own project, and its own justification for existence.
+
+We should be able to generate reactflow stories, that explain how the situation gets built up, step by step, which as a format, could also be used to generate slide decks.
+Can have some text explaining the situation next to it.
+
+Could provide multi step stories where the next action can be selected, so the story is multi part.
+
+The problem isn't just data silos, thats the symptom, the problem is coordinate silos, which is wasted energy, lost innovation, higher prices, slower response.  The symptoms of this are lack of digital transformation, slow change in day to day life.  It isn't obvious, but these steady state failings occur from settling on a state of mistrust between businesses, due to destructive competition.  A higher view of how this plays out helps everyone reach a better level of operations.
+
+We should be able to generate sequence diagrams, as show trade flows easily, with rule checkers that make sure everything makes sense.
+
+Once these flows are established, then we can take estimates of the value provided, and show the old way of doing things.
+
+Use something 
