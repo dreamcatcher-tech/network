@@ -10,3 +10,5 @@ The scope attached to an action must be aimed at latest.  We could permit it to 
 Also should be able to specify some files that we epxect not to have changed when processing this action.
 
 May have a single compute branch per repo ?
+
+Scope could be bundled up with the signature and the nonce, as part of the envelope key ?
