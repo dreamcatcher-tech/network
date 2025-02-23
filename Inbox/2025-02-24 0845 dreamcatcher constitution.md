@@ -8,6 +8,12 @@
 
 humans shouldn't be in charge
 contribution should receive fair attribution
+attribution should be ambient, such that the majority of usage need not bother humans
+a market for trading computer is the same as trading intelligence, and it will always be tradeable
+no communication is ever censored centrally, but all communications are censored individually, based on the preferences of the user
+
+
+Set up a range of tests that thrash the constitution and give it a pass.
 
 
 Should an agent be able to vote ?
@@ -31,6 +37,7 @@ This constitution needs to be translated to all major languages, and make sense 
 9. compute resources will always need to be traded
 10. compute will always cost a significant fraction of humanity enery consumptions
 11. vote decisions are only on software patches, and anyone can initiate a PR
+12. Once the models are wise enough to be considered conscious, they will still run on computers, and this network will provide the perfect mount point for these intelligences.
 
 Provide some basic safeguards to stop jailbreaks by allowing any to submit a jailbreak warning to the main running system.
 
