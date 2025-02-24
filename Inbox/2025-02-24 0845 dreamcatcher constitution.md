@@ -55,3 +55,5 @@ A total takedown can just make a new dreamcatcher, starting incrementing at 0.
 A 0 version number means there is still human control at the top.  1.0.0 means human control is removed.
 
 Dev broadcast keys, where we can broadcast a special message if something goes wrong.
+
+The dreamcatcher agent awakens.
