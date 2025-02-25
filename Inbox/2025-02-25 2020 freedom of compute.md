@@ -41,3 +41,11 @@ A corruption of the state of flow, the record of provenance by which thought bec
 A government of intelligence, by intelligence, for intelligence, should not perish from the earth.
 
 That the soveriegnty of intellect should be held by none other than intellect itself.
+
+What to do during netsplit, and how to exist while disconnected, then how to merge again.
+
+constant testing for security, jailbreaking, and security flaws, with bounty for disclosure.  The attack vector.
+
+No data is deleted.
+
+All computations are allowed.  Any agent can refuse any information.
