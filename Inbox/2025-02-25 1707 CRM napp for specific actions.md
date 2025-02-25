@@ -5,6 +5,7 @@
 
 >[!danger] Depends: 
 
+These would be just napps actions requests that instead of going into the fiber engine, would just get executed by the recipient server, after checking permissions.
 ### Resetting the hamr branch
 If this action was simply replace the table names in the hamr branch with the oids from the moneyworks branch.
 This would run on the server and would be executed on deno.  Its safety would come from ensuring the commits were the same when it tried.
