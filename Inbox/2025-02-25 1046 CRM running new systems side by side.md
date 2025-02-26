@@ -6,3 +6,5 @@
 >[!danger] Depends: 
 
 The new system could be forked off the old data ?  It might need to do a migration where it transforms records ?
+
+This should probably be part of the standard upgrade procedures.

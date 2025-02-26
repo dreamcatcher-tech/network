@@ -17,3 +17,7 @@ The currency maintainer ?  Set a version of a currency, then do upgrades on it.
 Just goal it simply ? it doesn't need any special treatment from the other agents, as they keep doing their own thing.  The kidney cares not for the brains thoughts.
 
 Can have some specialized modes, like checks the coverage for the code, checks the logic behind the patches, checks the benchmarks, checks the runcost.  Checks backwards compatibility.  Sets the semver.  Runs against prior real world usage.
+
+Running against a sampling of the previous computations is useful.
+
+Some kind of reputation, so we can avoid checking submissions - could be simply paying a fee to submit.
