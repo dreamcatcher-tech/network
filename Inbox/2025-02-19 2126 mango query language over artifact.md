@@ -123,3 +123,5 @@ Replay of query and step thru.
 Debugger should allow me to sample the first few runs to make sure its working right.
 Should be able to roll back.
 The partial state should itself be files, so that other tasks can pick up where it left off.
+
+`$error` which does something if running the function in the manner prescribed throws an error.  Can be used for doing geocoding or finding erroneous records, since we can filter based on those that errored.
