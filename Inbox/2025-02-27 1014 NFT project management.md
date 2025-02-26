@@ -48,3 +48,9 @@ If both parties agree, then they sign a transaction, and only if both sign and s
 Contingincy cost is something that is calculated as different subtasks go over budget.
 
 Need to allow some seed events, like NFTs being moved into an escrow or something.
+
+Then once you have produced an artifact, like a set of rules, then you should be able to make a new task that seeks to modify that, where the task may have some funding, it may require acceptance from the project manager.
+
+We can set human roles in place for any of these things, where we aim to replace this with AI agents once they get better at it, but the basic format can stay very much the same, like for example the email format - still going strong nearly 50 years later.
+
+We might need task dependencies relationships, too ?
