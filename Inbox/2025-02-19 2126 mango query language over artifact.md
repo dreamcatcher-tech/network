@@ -125,3 +125,7 @@ Should be able to roll back.
 The partial state should itself be files, so that other tasks can pick up where it left off.
 
 `$error` which does something if running the function in the manner prescribed throws an error.  Can be used for doing geocoding or finding erroneous records, since we can filter based on those that errored.
+
+I want to also add the code feature `$filter` which, when called, would allow you to take a list of files or results and filter them based on some criteria, which may include calling a prompt.
+
+Basically we want all the features of a programming language working on arrays, but we are working on files instead.  Then we do parallelisms to make this go very fast, particularly when we are calling an AI on each item.
