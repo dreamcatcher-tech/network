@@ -35,3 +35,35 @@ We should also ask if the tests are outdated and if they still serve the intent 
 Maybe start with the tests we want to write first, and then do the implementation ?
 
 Be able to flag files as exemplary, probably by virtue of committing them, so the bot knows it should look to them for examples.  Then it can defend its choices based on these files, which causes you to have to point out faults in the committed files.
+
+Interfaces seem to be like the top level prompts.  If the reasoning is done at an interface level, then the consumer docs can be derived from that with a different tone.  We should allow questions and thoughts and ideas to be treated specially, like the LLM knows how to dawdle and how to respect ideas and not try to resolve them immediately.  The interfaces and how they relate and call each other should be highly documented and reasoned about.  The modularity of the whole project is laid out here.  Then the build becomes very methodical.
+
+New features would be reasoned into the interface.  Keep a log of decisions that were made to change the interface.  Perhaps the folder structure of the whole project could be laid out in the interface layout ?  Scoping the bots to a particular folder seems to have good responses.  Long running triggered threads can keep the interface following rules.  The top level business rules would be stored along with the interface.  The interface design is the specification.
+
+Constant reapers run and look for inconsistencies.  Once these bots are tested a couple of times, they can be set to run on any event.
+
+Refactoring the interface should be rolled out across the repo with full knowledge of how it changed, which makes it easier to figure out how to adapt things.
+
+Concerns or worries can be listed somewhere, and these get triggered by a particular bot too.
+
+The use of flops - make files and functions as whatever the bot felt most comfortable with, and then do presentation transforms, as well as refactoring back to original.  So generate the solution fresh, and only then translate back to the existing one, if possible, since trying to morph directly is too much.
+
+Should be able to flag files or methods as unfinished, unsure - then when we paint things like this, as well as painting things as sure, then the AI uses this as guidance for what to focus upon.
+
+We should be able to zoom in on an individual test file, and tightly analyze it in isolation, as well as the coverage that it generates, so that the human and the AI can verify if it works as expected and meets the style and orthogonality rules.
+
+When there is an issue, we should allow the bots to attempt the problem first, and then we get flagged with ones they couldn't solve, like tests they couldn't get to pass, or requirements they think they haven't met.  Then we try to develop a strategy to get it to solve with them, so this strategy gets included in part of a wider reuseable knowledge base, and THESE are the things of value that we share - these little strategies, that are getting tweaked and refined.  They are like agent recipes.
+
+They might include a summary of what they tried.  As multiple humans try too, the bots leave notes summarizing what they tried to do.
+
+Worst case, the human fixes directly.
+
+We should have `.artifactrules` or some way of specifying design rules for a set of code files, so that as these rules are deduced from the interactions with the userbase or the coders, we can build them up, increasing the chance that a fix will adhere to them.  Bots can also challenge them if they seem out of date, or if a request appears to conflict with them.
+
+Make a format that transforms source code into coverage and timing and hit count info, so that when the bot chooses to read this info, it can immediately see what function calls are slow and need optimizing.
+
+If we give it a set of benchmarks to measure speed in certain cases, then let it experiment to improve those numbers, and it can grind over the codebase and try a range of different things.
+
+Use a widget like speedscope to display profiles that were generated during running, as the llm crafts little snippets of code that run with instrumentation, that it uses to hone in on where the bottlenecks are.  Give the LLM some tools to query the data, and to ask about a specific function, so it could query suspicious functions one at a time, or query based on a file and get the summary data for each function in a given folder, then it just walks around using this tool to find things it is suspicious of.
+
+Do bisect, where it can narrow down commits and changes to figure out where a fault on a broader set of tests was found.
