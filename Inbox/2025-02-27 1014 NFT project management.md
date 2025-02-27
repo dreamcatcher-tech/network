@@ -66,18 +66,26 @@ Must separate out the two parties, the funders and the doers.  The contract shou
 QA is an addition to the contract, which can be turned off.
 QA can be arbitrarily complex.
 If QA is just an external control that can only do pass or fail, then even the dispute process can be handled over there, since they can declare they are about to approve something, and invite disputes.
+QA is set during mint, and can be set to `funder` under must agree, `external` where an external address must approve it, or `instant` which means as soon as funders fund it, the project is completed, which can be used as a sale and purchase agreement.
+
+QA can be changed by both funder and doer agreement.  If we allow any updates to the system to be proposed by the doer and approved by the funder, then we can change the QA settings.
 
 So if we have a basic task definition structure, and the completion of this task is configurable to be either external, or two party, this should be enough ?
 Initiation of completion should always be done by the doer, since they say when they're done and submit the evidence.
 
 So there's a very small set of actions to be done.
-1. mint task, which is done by the doer
+1. mint task, which is done by the doer `mint( name, description, image, docs, qa, products[] )`
 2. fund task, which is done by the funder
 3. update profile (allows the contract to track a doer and funder profile that can have info attached)
-4. progress update, which is done by the doer
-5. work complete, done by the doer, which might 
-6. work accepted, done by the funder, which transfers the funds.  The NFT now passes to the funders to control.  They can update with usage update, and then could re-open the NFT for work ?
-7. alter, which will modify some parameters, needs to be accepted by both funder and doer, where if the cost of the task changed, the funder needs to add those extra funds in with their transaction.
+4. issueAdd which is done by funder or doer
+5. issueClose which must be done by funder and doer
+6. issueMessage can be done by either party, forms a conversation
+7. issueMessageEdit
+8. progress update, which is done by the doer
+9. work complete, done by the doer
+10. work accepted, done by the funder, which transfers the funds.  The NFT now passes to the funders to control.  They can update with usage update, and then could re-open the NFT for work ?
+11. alter, which will modify some parameters, needs to be accepted by both funder and doer, where if the cost of the task changed, the funder needs to add those extra funds in with their transaction.
+12. accept(taskId), called by funder, which can be used to accept a subtask and pay its amount, which is how we do milestone payments.
 
 Milestone payments would be handled by making a dedicated task for each milestone part.
 
@@ -97,3 +105,23 @@ The timeline of events should be very simple and plain.
 
 How to mint an NFT that represents the asset once the job is done ?
 The doer would create the NFT as the work to be done ? so this would be held by the task as the asset marker, and it could be any amount of NFTs or anything at all.  We are trying to make it real, and that NFT can actually have status determined by the status of the build task.
+
+Set up a dreamcatcher address to take a small cut from every payment, which we can change the address, and can also return a fail so that no fees are charged.
+
+Properties or traits can be set so the task shows up on opensea with some meaningful properties.
+So progress can be shown as a property on opensea.
+
+Disputes are when conflicting updates are in existence ?
+
+How to attach and NFT that represents the work product ? the doer would attach this as part of the output section.  If this was an NFT, we would just display it with its metadata.  It gets transferred to the funders upon their acceptance of the work.
+
+It could be dynamic up until the point of acceptance, where its ownership transfers ? then it could stay dynamic, with some restrictions ?
+
+Paying a milestone payment is paying a subtask set price out of the parent funds.
+
+Interim deliverables can transfer things like a build permit over to the funders when they commit.  Done by having a subtask be closed by the payment coming in.
+
+Profiles show how much money and work has been done, and what NFTs have been transferred, plus some base profile information.  That can just be freeform json which we can update preiodically.
+
+Probably easiest if the project data structure is stored on artifact, and that way the format can be updated easily, and the cost of updates is constant.  Plus we can get a version up rapidly.
+Then we just concern ourselves with the update functions, and approvals.
