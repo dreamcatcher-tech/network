@@ -125,3 +125,5 @@ Profiles show how much money and work has been done, and what NFTs have been tra
 
 Probably easiest if the project data structure is stored on artifact, and that way the format can be updated easily, and the cost of updates is constant.  Plus we can get a version up rapidly.
 Then we just concern ourselves with the update functions, and approvals.
+
+Issuing a building permit could be done by putting the build permit as the first task in the project plan.
