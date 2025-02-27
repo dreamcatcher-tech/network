@@ -54,3 +54,46 @@ Then once you have produced an artifact, like a set of rules, then you should be
 We can set human roles in place for any of these things, where we aim to replace this with AI agents once they get better at it, but the basic format can stay very much the same, like for example the email format - still going strong nearly 50 years later.
 
 We might need task dependencies relationships, too ?
+
+Simple management is with two party, changes can be applied, and then the other party submits the change they want.  This can be set outside of the system tho, so the project owner address can be configured separately to the primitive ability to create and manage a project.
+
+Then tasks can have dependencies that are completely independent of any given project.
+
+? Adding in QA that is separate to any party ?  This is separate too, as this is just the project governor.
+
+Must separate out the two parties, the funders and the doers.  The contract should handle the submission of complete and rejections.
+
+QA is an addition to the contract, which can be turned off.
+QA can be arbitrarily complex.
+If QA is just an external control that can only do pass or fail, then even the dispute process can be handled over there, since they can declare they are about to approve something, and invite disputes.
+
+So if we have a basic task definition structure, and the completion of this task is configurable to be either external, or two party, this should be enough ?
+Initiation of completion should always be done by the doer, since they say when they're done and submit the evidence.
+
+So there's a very small set of actions to be done.
+1. mint task, which is done by the doer
+2. fund task, which is done by the funder
+3. update profile (allows the contract to track a doer and funder profile that can have info attached)
+4. progress update, which is done by the doer
+5. work complete, done by the doer, which might 
+6. work accepted, done by the funder, which transfers the funds.  The NFT now passes to the funders to control.  They can update with usage update, and then could re-open the NFT for work ?
+7. alter, which will modify some parameters, needs to be accepted by both funder and doer, where if the cost of the task changed, the funder needs to add those extra funds in with their transaction.
+
+Milestone payments would be handled by making a dedicated task for each milestone part.
+
+Put a clearout function, that can pull all the funds from the contract, in case of emergency, which can be severed.
+
+What happens if the house needs maintenance ? the original NFT should somehow be opened up again ?
+
+Creating the building permit is an NFT that is started by the doer, with specific artwork,
+
+
+Setting the price - this could be set in any NFT or any currency, and so a building permit could be set as x USDT, plus y NFTs from land blocks.
+
+Task could be set with no escrow, which is simply just task is completed when the payment is made.
+
+Legal contracts could be tied to the events of the contract.
+The timeline of events should be very simple and plain.
+
+How to mint an NFT that represents the asset once the job is done ?
+The doer would create the NFT as the work to be done ? so this would be held by the task as the asset marker, and it could be any amount of NFTs or anything at all.  We are trying to make it real, and that NFT can actually have status determined by the status of the build task.
