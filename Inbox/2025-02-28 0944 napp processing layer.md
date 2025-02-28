@@ -122,3 +122,14 @@ The things we need to do are:
 Streams might need to be separate from tools, since they are a totally different return type.
 Also we may support streams in, so a tool call can receive a stream.
 A stream would never be called by an LLM in the current tech paradigm.
+
+We don't need the artifact context just yet, or can survive with a very limited version of it, since we only need the context enough to grab the handles on the dbs.
+Effects need only share the same global state, so we can use globals once we have isolation in place.
+The artifact object can bundle up everything nicely, but we should still be able to use each piece directly, like the side effects context piece should be available directly, if we need it.
+
+If you're in the browser and you try to access the side effect context, you would just be sharing it with other instances on the page.  We might be able to make it available to different tabs on the same machine, as a way to communicate with them.  Or give access to the web workers.
+
+When writing napp based functions, we should be able to use TS to get some types for these functions, so they always match up between the napp definition.
+
+
+
