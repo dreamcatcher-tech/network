@@ -74,4 +74,8 @@ So we also need a compatibility processor to turn a napp tool into an LLM tool, 
 
 Then we also need the mango interpreter, which might be possible to define in the napp for some reason, like a query that it knows how to use, or that is used to provision, or a way to provide a tool call that executes a mango query as part of the run, so the tool call can be programmed entirely in the napp format.
 
-So we would export from a napp on the `napp.json` key, a file that was dynamically 
+So we would export from a napp on the `napp` key, a file that was dynamically generated based on the zod schemas, that represented a json-schema object.  this is how we would have a zod specified napp be exported, so it could be called in a cross language way.
+
+If we don't export the zod object, then we cannot have types at typecheck time, since we cannot generate types at compile time.
+
+We could add keys under `deno` to indicate where the types can be found if we export those.  Or the tools we use can do some codegen to make types, if they aren't part of the napp.  A good napp published to the registry would include types as well.  It might include a zod schema as well, so we can just read that directly perhaps ?
