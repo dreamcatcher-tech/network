@@ -89,3 +89,24 @@ We do start to look a lot like a web request framework.
 Be nice to give napps the same interface as what tRPC has, where it is the main object then you have your own apps structured on it ?  
 
 We should be able to list out all possible design types by copying every other rpc based interface out there, and just wrap around that - they all reduce down to the same mechanics.
+
+So, how can we do side effects in a napp ?
+The provider functions are side effect functions.  Should a napp tool be flagged as being a side effect, and therefore unrepeatable ?  Side effects should be configurable to have different parameters. The default is just true or false, which means that it will be run with the default side effect parameters. Extra parameters can be the number of concurrent or redundant calls that the effect needs to make (e.g., make ten calls and pick the quorum of seven) or other things like that.
+
+Nice to have static registry, since the napp string can be type checked too.
+
+Make a registry, so when we load from there, the napps come in with the correct types.
+Building a new napp means we add it to the registry list using the imports, so we can dig it out when we need it.
+
+The runner of the provider would mount the provider artifact, and this context would be shared by the other effects that were running during its run ? so the context is shared by all ?
+On mount, we 
+
+Mount is just a binding to a tool.  It could then be specified as a tool, with a special key, like `@mount` and `@unmount` and then some keys like if the context is shared with other invocations or not.
+
+So, what we do is that when the provider is first mounted, that's when it would create the instances of the databases that it needs. Then, when each of the individual functions below it gets called, they can call the use context function on artifact which allows them to have access to these side-effect related things. 
+
+We will need type checking for the functions to be determined from the NAP definition. So we should be able to import from the napp definition file, run it through a tool that gives us a type, and then use this to check our function signatures when we implement the modules. 
+
+We could make the host of a particular napp act like middleware where every napp function comes in and is processed or modified in some way which can be used for things like authentication. 
+
+The issue of getting context into the napp function. So we could allow some kind of a fancy hook that it pulls it in from the environment using async local storage or something similar. But we could also allow it to have an optional extra parameter on its.function signature. We will pass in the artifact object as the last argument. This should work for either a single object argument or for an array of arguments that are spaced. The issue is that the typing of it might be problematic or tricky. That's why phrasing it out from inside the app seems a lot easier. 
