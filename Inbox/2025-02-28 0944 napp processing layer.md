@@ -110,3 +110,15 @@ We will need type checking for the functions to be determined from the NAP defin
 We could make the host of a particular napp act like middleware where every napp function comes in and is processed or modified in some way which can be used for things like authentication. 
 
 The issue of getting context into the napp function. So we could allow some kind of a fancy hook that it pulls it in from the environment using async local storage or something similar. But we could also allow it to have an optional extra parameter on its.function signature. We will pass in the artifact object as the last argument. This should work for either a single object argument or for an array of arguments that are spaced. The issue is that the typing of it might be problematic or tricky. That's why phrasing it out from inside the app seems a lot easier. 
+
+The things we need to do are:
+
+1. Be able to provide the napp description object that includes static data and config data as well as schema data.
+2. We need to be able to generate an object that has functions attached to it that are exactly the same as the tool descriptions in the napp, so that when they get called they will create an action object.
+3. We need to be able to take that action object map back to the function that we are supposed to call with that object and then turn that action into args for the function.
+4. Run the function.
+5. Make sure that the return value of the function is parsed using the schemas defined in the napp definition.
+
+Streams might need to be separate from tools, since they are a totally different return type.
+Also we may support streams in, so a tool call can receive a stream.
+A stream would never be called by an LLM in the current tech paradigm.
