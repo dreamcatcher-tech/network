@@ -1,0 +1,8 @@
+
+>[!tip] Created: [2025-02-28 Fri 15:22]
+
+>[!question] Targets: 
+
+>[!danger] Depends: 
+
+The best grade ID that we could get is to use a phone app to store the user's login using the enclave on the phone with their biometrics. So requiring a high level of security on the phone to be able to interact with our service. Then we would require them to use the NFC scanner to scan their passport which gets us their biometric information such as the image. But it can also actively challenge the NFC chip to make sure that it isn't just a replay or a clone. And so we know that we got the genuine live passport was scanned. And then we can when they enter in their mailing address if this is required we can send them an actual letter with a code and then the code gets entered on the website. In this model they would pay for these levels of verification and as a result our fees would be very low. The fraud rates should be non-existent. And the invasiveness of the questions we need to ask them would be very low again as well. They could talk to our bots and get realistic information about why we need certain information at certain times. They could theorize about or plan for a transaction they might want to make and we can give them a reliable answer on what that's going to trigger and what we're going to need from them to pay for that. The biggest problem I think with compliance is the lack of predictability about it where you don't know for sure if you are being inspected. You don't have reliability in the future that you can actually rely on the service at making payment because it will maybe work and maybe not. Maybe you'll have to supply compliance information. 

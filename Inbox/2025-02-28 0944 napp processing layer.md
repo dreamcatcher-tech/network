@@ -65,3 +65,13 @@ So napps will end up with a table.
 Here is our chance to make the napp loader, where we pass in the napp definition, and the path to the module, and then we will output an object with a dispatch.
 
 Could make a zod napp.json, which is virtual.
+
+Need a way to turn the napp into an action creator, where it has the correct types.
+
+Then when recieving an action, we need to use the napps that we are told to manage to figure out what function we want to call.
+
+So we also need a compatibility processor to turn a napp tool into an LLM tool, possibly leveraging the vertex sdk for this.  
+
+Then we also need the mango interpreter, which might be possible to define in the napp for some reason, like a query that it knows how to use, or that is used to provision, or a way to provide a tool call that executes a mango query as part of the run, so the tool call can be programmed entirely in the napp format.
+
+So we would export from a napp on the `napp.json` key, a file that was dynamically 
