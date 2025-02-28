@@ -79,3 +79,7 @@ So we would export from a napp on the `napp` key, a file that was dynamically ge
 If we don't export the zod object, then we cannot have types at typecheck time, since we cannot generate types at compile time.
 
 We could add keys under `deno` to indicate where the types can be found if we export those.  Or the tools we use can do some codegen to make types, if they aren't part of the napp.  A good napp published to the registry would include types as well.  It might include a zod schema as well, so we can just read that directly perhaps ?
+
+We're starting to see that the Napp format is actually very specific and that some places can take a schema which can be either a JSON schema definition or it can be a Zod schema. It'll probably be allowed to be any other kind of schema that has compatibility. Or can be can spit out JSON schemas in an acceptable format.
+
+The overall Napp object can be subjected to a schema which can be published as JSON schema or done using Zod. And then inside it there's these options where it could be a JSON schema or not. 
