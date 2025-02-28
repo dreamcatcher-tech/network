@@ -63,3 +63,5 @@ parameters schema and the parameters themselves should be separated, since they 
 So napps will end up with a table.
 
 Here is our chance to make the napp loader, where we pass in the napp definition, and the path to the module, and then we will output an object with a dispatch.
+
+Could make a zod napp.json, which is virtual.
