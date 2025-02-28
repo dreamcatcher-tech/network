@@ -83,3 +83,9 @@ We could add keys under `deno` to indicate where the types can be found if we ex
 We're starting to see that the Napp format is actually very specific and that some places can take a schema which can be either a JSON schema definition or it can be a Zod schema. It'll probably be allowed to be any other kind of schema that has compatibility. Or can be can spit out JSON schemas in an acceptable format.
 
 The overall Napp object can be subjected to a schema which can be published as JSON schema or done using Zod. And then inside it there's these options where it could be a JSON schema or not. 
+
+We do start to look a lot like a web request framework.
+
+Be nice to give napps the same interface as what tRPC has, where it is the main object then you have your own apps structured on it ?  
+
+We should be able to list out all possible design types by copying every other rpc based interface out there, and just wrap around that - they all reduce down to the same mechanics.
