@@ -86,3 +86,7 @@ There wouldn't be much point in playing through some of the audio (e.g. anyone s
 Should also be able to hand-pick and hand-play the buffers based on the text that it's showing you, so that you can cherry-pick the information coming in. People should be able to see that too if they see that you cherry-picked. 
 
 We could make interrupting be automatically buffered, so you have to actively push a button to interrupt
+
+Within a meeting, I may be able to direct message or message only a few people that I want to talk to. Everyone else can see it and listen in if they want, but the message is for them. 
+
+Some messages come in as people talk with each other, communicating back and forth. These types of messages would be considered a single audio stream and it would be indicated that it was whatever the participants were they were doing it. 
