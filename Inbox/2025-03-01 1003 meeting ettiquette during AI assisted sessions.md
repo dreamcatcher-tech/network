@@ -74,3 +74,13 @@ To extend this further, you can have people be introduced to each other based on
 Interuptionless conversation, lossless idea transmission.
 
 I think what's quite interesting is to consider that having to wait until someone else finished talking is the same as an interruption. So if you as an entity are, in your head, always talking then when you have an idea, if you can't say it straight away it's the same as that idea being interrupted and the higher you experience interruption the greater the chance that you'll lose the idea or you'll be unable to table it in which case it cannot be built upon. 
+
+Of particular benefit is being able to rearrange the buffers so that the items in the buffer can be condensed and collapsed down.
+
+For example, if you're in a meeting with 10 people and you've got your buffer full and there are 5 people saying the same thing (you haven't got to that buffer yet), then the AI processing should deduplicate that for you, so you don't have to listen to each individual stream. You just get the summary because it's the idea that really matters and you can hear it from whoever we chose. 
+
+I think as a stretch goal, it's also important to allow people to amplify or vote for things that other people have said - these would be upvoted and pushed forward in the buffer, giving them a better chance of being heard, even if you can't process everything immediately.
+
+There wouldn't be much point in playing through some of the audio (e.g. anyone saying "hey, can you repeat that?" or "yes, I agree" or "that's awesome, everyone should know that"). You could instead indicate that within the interface. 
+
+Should also be able to hand-pick and hand-play the buffers based on the text that it's showing you, so that you can cherry-pick the information coming in. People should be able to see that too if they see that you cherry-picked. 
