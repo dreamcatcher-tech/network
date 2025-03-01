@@ -40,7 +40,7 @@ We should also let you paint in the areas of text that you have finished reading
 
 As well, you should be able to talk at a certain thing, so when you address something, it's much clearer what information you are using as reference. This can be used by the LLMs that do summaries because they can pull in this extra content to adorn your messages with a richer representation beyond just the raw words that you used. 
 
-> Basically, why should the quality of the information depend in any way on the buffer of the other person ?  And why should I not be able to speak immediately when I have an idea, since ideas are rare and so hard to capture anyway ?  Why should I not be able to pause and think about what someone said without interrupting them in any way.
+> Basically, why should the quality of the information depend in any way on the buffer of the other person ?  And why should I not be able to speak immediately when I have an idea, since ideas are rare and so hard to capture anyway ?  Why should I not be able to pause and think about what someone said without interrupting them in any way ?
 
 Also the best version of yourself is probably one that was post processed, to remove the mix ups, errors, pauses, uhms, AND after its fact checked.  Once you reach the end, sometimes you want to recind that, so you should be able to indicate that you want to retract, which rolls it back, and the other person might not have heard it.
 
