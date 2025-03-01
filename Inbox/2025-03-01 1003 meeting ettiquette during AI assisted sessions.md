@@ -84,3 +84,5 @@ I think as a stretch goal, it's also important to allow people to amplify or vot
 There wouldn't be much point in playing through some of the audio (e.g. anyone saying "hey, can you repeat that?" or "yes, I agree" or "that's awesome, everyone should know that"). You could instead indicate that within the interface. 
 
 Should also be able to hand-pick and hand-play the buffers based on the text that it's showing you, so that you can cherry-pick the information coming in. People should be able to see that too if they see that you cherry-picked. 
+
+We could make interrupting be automatically buffered, so you have to actively push a button to interrupt
