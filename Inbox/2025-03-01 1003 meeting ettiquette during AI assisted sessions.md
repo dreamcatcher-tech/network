@@ -14,3 +14,55 @@ We can also:
 3. Flag items by loosely highlighting or gesturing at the area
 
 We can then talk about those things. This starts to get really fun when you've got more than one person communicating and it may be that it happens kind of informally - I'm just working, and this is how I work. Then if my friend happens to be online at the same time he can listen in or jump in or whatever. I don't have to take on board what he's saying, but he can often help me more, and then we can have arbitrarily many people join, come and go. The meetings can be replayed so that you can re-listen and see if you missed a thought.
+
+[[2025-03-01 1523 micd up but for everyone]]
+
+You should be able to pause the incoming audio of another person which will mean that it will buffer. Both of you can see how much audio you haven't heard. You can then when you're ready to receive it play it in. It can play in at a faster rate so that you have catch up. The AI can also snip the audio to remove uhms and ahhs and pauses and condense it and could even do a rapid summary or a super cut of what was being said. 
+
+Other means of catching up are doing rapid fire word display so that you can read what was said or a summary that works in a way that you understand.  The buttons you have are:
+1. stop broadcasting your speech which is when you want to let someone else finish without interrupting them, but you do want to start talking
+2. pause the other person which means you want to catch up on what they're saying later but you want to say something else first. The pause is automatically hit when you start recording your own speech privately. 
+3. And third button is to play in where you got up to with someone else's speaking so You can catch up on whatever you missed 
+
+Now the things you can observe and the other people is that you can see When they are buffering you Which means your free to keep talking about it. You know that it's not gonna be a real-time response You can see when they are buffering something that they want to say you may change And choose to stop what you're saying and go straight to that. Otherwise I think you just participate in freewheeling speech. You can then read notes like read what the LLM said or read some documents or something Where you can just hit buffer where your just waiting for other people to say things While the audio is buffering you are still seeing their messages or the transcriptions pop up alongside the bots should sort of indicate to you when there is something important that you'd want to see
+
+So for example, you could be reading a document that was given to you in a meeting because people love giving you a document at the last minute and Then you can start buffering up the things you think about it other people can listen in if they want.
+
+I think this can work Really well for multiple groups of people. The trick that this seems to be doing is to defer time In a way so that you can have deeper thoughts more Meaningful thoughts without being interrupted all the time whilst not getting on anyone's toes or making someone annoyed or showing bad manners and You provide a perfect entry point for the LLM to both assist you directly, but also to summarize the communication to make it Easier to communicate with the others this is of particular use when viewing the historical record or when the LLM's pass the information And reconcile it with the overall knowledge base of the project 
+
+the state of each person's track can be shown sort of like an audio track. Where you can see how much is left in the buffer spacing between it. You may be able to see who they were addressing the speech to or to what topic it was being addressed.
+
+And so if the topics could be displayed in VR and 3D then you can see if they speak to a topic directly and know that information is directed in that area, this can help people to retrieve or skip over or avoid topics they are not interested in. 
+
+If several people were talking on a topic and we could receive a summary that sort of represented what they all talked about together, then we could receive this in effect virtual multiplexed stream where all of them were the information content was combined into one, so that we can keep up better. This means that you can keep up with a meeting much faster than you could otherwise. Then you can escape the constraints of time. This is also very tolerant of poor connections in a meeting and provides very detailed recording of what's going on. 
+
+We should also let you paint in the areas of text that you have finished reading, so that other people can see what you've actually read through.
+
+As well, you should be able to talk at a certain thing, so when you address something, it's much clearer what information you are using as reference. This can be used by the LLMs that do summaries because they can pull in this extra content to adorn your messages with a richer representation beyond just the raw words that you used. 
+
+> Basically, why should the quality of the information depend in any way on the buffer of the other person ?  And why should I not be able to speak immediately when I have an idea, since ideas are rare and so hard to capture anyway ?  Why should I not be able to pause and think about what someone said without interrupting them in any way.
+
+Also the best version of yourself is probably one that was post processed, to remove the mix ups, errors, pauses, uhms, AND after its fact checked.  Once you reach the end, sometimes you want to recind that, so you should be able to indicate that you want to retract, which rolls it back, and the other person might not have heard it.
+
+The system should, if you spoke to early, afford you some clemency by collapsing things that the speaker already covered.  If you score highly in this metric, it might signal that you should pay attention better.
+
+When you're in realtime, and you've both all caught up, you can see you are both instantly present.
+
+Should be able to signal where the other person is doing something relating to what you're saying, or something different, since this changes your behaviour as you might be waiting for some answers to something. 
+
+Questions should be recognized and loaded up in a queue, so they don't get missed.
+Also statements loaded, and then votes cast.
+
+We could also be recognizing previous snippets or statements that you've made before, and so we could play those in for you or suggest them for you so you don't have to repeat yourself again. 
+
+> The best version of yourself is not the realtime one.
+
+> The best way to consume information is not in realtime as the other person delivers it.
+
+This system would encourage thoughtful pauses.  Its neartime.
+
+If you took a while to catch up or reply to something, the AI may play a quick audio summary of the chunk of information that you are referring to or replying to. Graphically, this would show as a portion of the audio timeline or a chunk of the text that was being pointed to as you replied.
+
+In a crowd, this is really good because the whole crowd can start saying what they think about what someone important is saying, and then they can have those all de-duplicated and optimized so that the most relevant questions or topics can be summed up from the whole crowd, acting as one.
+
+But if the scale permits it's just unique, we can also have LLMs acting as idea amplifiers. When they recognize something new, novel, and sound, they can amplify it up as a good idea beyond just a popular idea as well. 

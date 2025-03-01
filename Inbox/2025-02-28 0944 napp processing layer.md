@@ -131,5 +131,18 @@ If you're in the browser and you try to access the side effect context, you woul
 
 When writing napp based functions, we should be able to use TS to get some types for these functions, so they always match up between the napp definition.
 
+So basically, there's a fixed way to run things:
+1. Functions from a napp definition, which output actions when called, which go into a sink
+2. one or more links that take functions in and return functions back.
+3. a processor, which takes actions in, loads the code that backs the napp based on its definition, executes the action, and then returns the result, which might be a stream
 
+The first link is the direct connection, between the functions and the execution.
 
+Scope should be included in all the actions.
+
+If you call a streaming function in an LLM then it would receive back the full collection of results ?
+
+Cron could be part of napps ?
+Work by sending an action to the system timer and awaiting the response.
+
+Streams would be a totally separate piece.
