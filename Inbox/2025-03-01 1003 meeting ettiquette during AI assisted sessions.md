@@ -72,3 +72,5 @@ If you have recorded multiple snippets by the time the recipient is ready to rec
 To extend this further, you can have people be introduced to each other based on the content of their speech or their buffers and they can be introduced to each other to have a meeting with each other about a thing when all they were doing was talking about it (talking being acting as a proxy for thinking about it). So if the system determines that those people are close enough in similarity and they have indicated a willingness to participate in this way, then it can just connect them up and they start talking to these people directly. 
 
 Interuptionless conversation, lossless idea transmission.
+
+I think what's quite interesting is to consider that having to wait until someone else finished talking is the same as an interruption. So if you as an entity are, in your head, always talking then when you have an idea, if you can't say it straight away it's the same as that idea being interrupted and the higher you experience interruption the greater the chance that you'll lose the idea or you'll be unable to table it in which case it cannot be built upon. 
