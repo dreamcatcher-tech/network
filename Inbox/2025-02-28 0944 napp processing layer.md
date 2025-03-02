@@ -183,3 +183,6 @@ How can context be shared between languages ?
 There's no need to say if a tool is side-effect capable or not. It should be invoked as "side-effect capable." And the napp should throw if it detects it is not running in a side-effect environment. 
 
 It seems that to use a side effect is to call the dispatch function multiple times instead of the typical once. 
+
+Use the zod.function() schema to define the functions ?
+Can use implement to get zod to do much of the parsing juggling ?
