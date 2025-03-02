@@ -146,6 +146,8 @@ So if we make the napp required to be an object of the correct type ?  This seem
 It could be an object that was a json schema, but we would just turn it into a zod schema anyway.
 Upon publication, we would write out the pure json as part of the publication process.
 
+Json imports come in with their types intact, so we might specify the whole thing in pure json schema, rather than zod, and use zod to create these json objects at runtime ?  If publish, make a json object.
+
 It's like we wan tto export a pure json object, then run that thru the zod parser to get back types.
 Having it as pure json kills the types of it from compile time.  But a js object preserves it.  So the pure json needs to be a publish time thing, and we would instead import the zod schema ?
 We could derive the zod versions so that we generated them ourselves, rather than risking running code.
