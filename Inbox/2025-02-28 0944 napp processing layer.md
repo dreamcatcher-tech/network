@@ -172,3 +172,14 @@ When we run the function, we would use a context hook to gain access to the cont
 In that context, we would find our databases.
 
 napps could specific the context they expect, or the context they are going to set ?
+
+We could provide the full artifact interface, and have an action creator that just throws if we try to use it, for everything except the context.  Means we don't need a dedicated context function ?
+Maybe context should be defined in a napp, if the tool intends to use it ?
+
+Should context be shared between all napps on the branch ? or should it be able to advertise in the config that it shares its config ?
+We should allow some shared context ?
+How can context be shared between languages ?
+
+There's no need to say if a tool is side-effect capable or not. It should be invoked as "side-effect capable." And the napp should throw if it detects it is not running in a side-effect environment. 
+
+It seems that to use a side effect is to call the dispatch function multiple times instead of the typical once. 
