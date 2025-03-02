@@ -133,7 +133,7 @@ When writing napp based functions, we should be able to use TS to get some types
 
 So basically, there's a fixed way to run things:
 1. Functions from a napp definition, which output actions when called, which go into a sink
-2. one or more links that take functions in and return functions back.
+2. one or more links that take actions in and return outcome objects back.
 3. a processor, which takes actions in, loads the code that backs the napp based on its definition, executes the action, and then returns the result, which might be a stream
 
 The first link is the direct connection, between the functions and the execution.
