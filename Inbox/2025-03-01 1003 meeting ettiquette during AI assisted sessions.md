@@ -90,3 +90,9 @@ We could make interrupting be automatically buffered, so you have to actively pu
 Within a meeting, I may be able to direct message or message only a few people that I want to talk to. Everyone else can see it and listen in if they want, but the message is for them. 
 
 Some messages come in as people talk with each other, communicating back and forth. These types of messages would be considered a single audio stream and it would be indicated that it was whatever the participants were they were doing it. 
+
+It can also allow you to repeat or replay what someone else said, so you don't need to ask them to repeat it. You should be able to press a back button because the transcript has been passed, the AI has put in markers that show when topics or sentences begin, so you can go back based on chunks of meaningful information (it could be the last word, the last 5 seconds, or the start of the sentence if you want to hear it again).
+
+The AI can try and give you interpretations of a particularly difficult thing that the person said. So you could end up listening to a conversation from someone who is much smarter than you and you're able to sort of digest it a lot better.
+
+Used correctly, the system by virtue of its ability to play text back at a faster rate should allow you to catch up with the other person, typically not noticing what you were doing and especially if you start replying. In little chunks before they finish speaking they might not even notice that the buffered system was being used. 
