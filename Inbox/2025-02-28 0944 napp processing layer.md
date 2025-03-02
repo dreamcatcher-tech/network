@@ -136,6 +136,20 @@ So basically, there's a fixed way to run things:
 2. one or more links that take actions in and return outcome objects back.
 3. a processor, which takes actions in, loads the code that backs the napp based on its definition, executes the action, and then returns the result, which might be a stream
 
+Types to generate:
+1. function implementation types based on the napp definition.
+2. action creator types based on the napp definition
+
+But what is the napp definition ? seems like it has to be a zod schema or a js object that is declared somewhere, that cannot be a json object.
+The issue with json is that it cannot be exported from a zod schema, except by a build step.
+So if we make the napp required to be an object of the correct type ?  This seems the only way.
+It could be an object that was a json schema, but we would just turn it into a zod schema anyway.
+Upon publication, we would write out the pure json as part of the publication process.
+
+It's like we wan tto export a pure json object, then run that thru the zod parser to get back types.
+Having it as pure json kills the types of it from compile time.  But a js object preserves it.  So the pure json needs to be a publish time thing, and we would instead import the zod schema ?
+We could derive the zod versions so that we generated them ourselves, rather than risking running code.
+
 The first link is the direct connection, between the functions and the execution.
 
 Scope should be included in all the actions.
@@ -147,3 +161,12 @@ Work by sending an action to the system timer and awaiting the response.
 
 Streams would be a totally separate piece.
 
+If the only thing we do specially for provider functions is to preload some context, then that seems very little change to the system indeed.
+
+The mount functions we can do at a later date, probably at the point of figuring out execution in general.
+
+When we run the function, we would use a context hook to gain access to the context alone, without asking for the complete artifact object.
+
+In that context, we would find our databases.
+
+napps could specific the context they expect, or the context they are going to set ?

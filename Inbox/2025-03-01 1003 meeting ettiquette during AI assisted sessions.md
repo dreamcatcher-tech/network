@@ -96,3 +96,8 @@ It can also allow you to repeat or replay what someone else said, so you don't n
 The AI can try and give you interpretations of a particularly difficult thing that the person said. So you could end up listening to a conversation from someone who is much smarter than you and you're able to sort of digest it a lot better.
 
 Used correctly, the system by virtue of its ability to play text back at a faster rate should allow you to catch up with the other person, typically not noticing what you were doing and especially if you start replying. In little chunks before they finish speaking they might not even notice that the buffered system was being used. 
+
+## Implementation
+Use a web browser based voice relay system.
+Talk in Immersed using our computers as the relays.  Immersed moves the audio from the headset into the computer, I think.
+So we would mute ourselves in immersed, and use our PC audio.
