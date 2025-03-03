@@ -103,7 +103,7 @@ The system would be very useful to use, even passively, in a meeting with the in
 
 It seems best to make the distinction between a function that expects to have side effects and a function that is expected to be pure within the definitions of the Napp tools. When the function is defined, it could possibly have some context described in it that would say what the shape of the context it's expecting to see would be.  Hoisting like this might make its requirements more obvious.  This context would mean nothing to an LLM directly, but might offer some helpful insights as to how the system would work.
 
-In this way, @mount is expected to be a side effect, and if it describes its context shape, then 
+In this way, @mount is expected to be a side effect, and if it describes its context shape, then it can start with a pretyped version of useEffectContext ?  It could error if this context shape was changed.  It can change it to anything it likes while its running, but this will be reset each time the function exits.
 ## Implementation
 Use a web browser based voice relay system.
 Talk in Immersed using our computers as the relays.  Immersed moves the audio from the headset into the computer, I think.
