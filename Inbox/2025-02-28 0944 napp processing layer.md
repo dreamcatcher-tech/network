@@ -186,3 +186,6 @@ It seems that to use a side effect is to call the dispatch function multiple tim
 
 Use the zod.function() schema to define the functions ?
 Can use implement to get zod to do much of the parsing juggling ?
+
+Context should be limited to the fiber that it is running on. So, this means there's no requirement to say whether a context is to be shared or not—it is simply to be expected... or not.
+
