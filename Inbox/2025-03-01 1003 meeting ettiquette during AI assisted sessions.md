@@ -97,6 +97,13 @@ The AI can try and give you interpretations of a particularly difficult thing th
 
 Used correctly, the system by virtue of its ability to play text back at a faster rate should allow you to catch up with the other person, typically not noticing what you were doing and especially if you start replying. In little chunks before they finish speaking they might not even notice that the buffered system was being used. 
 
+It's as though the internet allowed us to remove distance or double coincidence of location from one of the prerequisites of forming a connection with another person using buffering. At the extreme, we have things like voicemail - these are very disconnected because they are only time-shifted. But to have something that makes time shifting be optional and naturally flow in a near-time system seems like we now have control over double coincidence of time. 
+
+The system would be very useful to use, even passively, in a meeting with the inbound audio stream. It can be buffered and then fast-forwarded through to catch up, allowing you to have a better, deeper process in time without missing anything due to task switching or buffer overflow. 
+
+It seems best to make the distinction between a function that expects to have side effects and a function that is expected to be pure within the definitions of the Napp tools. When the function is defined, it could possibly have some context described in it that would say what the shape of the context it's expecting to see would be.  Hoisting like this might make its requirements more obvious.  This context would mean nothing to an LLM directly, but might offer some helpful insights as to how the system would work.
+
+In this way, @mount is expected to be a side effect, and if it describes its context shape, then 
 ## Implementation
 Use a web browser based voice relay system.
 Talk in Immersed using our computers as the relays.  Immersed moves the audio from the headset into the computer, I think.
