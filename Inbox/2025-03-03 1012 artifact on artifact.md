@@ -11,6 +11,7 @@ This would let us simulate artifact.
 
 The importance of being able to simulate a system within that same system is:
 1. the key to self awareness, allowing a system to reason about and explore its own inner workings, without doing anything immutable or critical to itself, to better predict how it will behave.
+2. allows working on the next version with all the benefits of the artifact hosting environment
 
 Because having the ability to time travel debug, and to present bug reports as fully reproducible scenarios, is not possible if we used the real database implementations.
 
