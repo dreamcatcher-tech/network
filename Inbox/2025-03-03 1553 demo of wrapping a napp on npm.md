@@ -14,3 +14,9 @@ Show to to elevate up, to grabbing the project source code, forking it on github
 Set up mundane things, like being able to debug in ts directly.
 
 Show it generating some helpful docs from the library.
+
+Then, keep this tracking the main release, and make our own decisions as to
+
+So the registry we would launch would be for napps only, be ts native, be decentralized, include payments.
+
+Show how running the napp would cause a small micro payment to go to the module author.

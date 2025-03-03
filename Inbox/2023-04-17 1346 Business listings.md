@@ -73,3 +73,6 @@ Buyers get a clean, standard, broad view of all potentials.
 Sellers get a nice way to present their business for sale, and to refine how they present to increase their perceived value.
 Brokers on the sell side get access to more buyers with less effort, and can use the platform to refine their product to make it more saleable.
 Brokers on the buy side have very little pressure, but unsure how many buy side brokers there are.
+
+## Industry wide deal making
+Use bots to write emails and try get deals going so there is no need for the human to be involved.  So to get enough buy in from a broker, we can shop around and offer funds for data, and do all the deal making using bots talking to humans.
