@@ -31,3 +31,5 @@ We could probably sit down and map out what all of the available spaces in the b
 So likely it's simply the use case (e.g., law, exit planning, genomics, fairness, invention, stock valuation, real estate, trade tools). These models would be viewed as a single large agent that would be connected back to a marketplace of services that can enact the will or recommendations of these agents in the real world. 
 
 Also these base agents that set the majority of the utility can then be helped by highly tuned specialized agents that do things which are even more context specific, or involve performing a tasks, or being in connections to other massive foundational models.
+
+Very interesting area, since it feels like there is a containment area, like this is a thing everyone wants to do, it is suitably complex, but it can be solved in a good enough fashion using an LLM as the manager.  Its a place that requires too much private context for a big model to tackle it generally.  It needs humans attached to do the face to face, and tricky things.
