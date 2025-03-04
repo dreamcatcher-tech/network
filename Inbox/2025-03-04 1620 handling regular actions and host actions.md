@@ -18,3 +18,5 @@ Basic ops to demonstrate:
 1. action request reply
 2. action with streaming reply
 3. action with multiple file reply as well as regular reply
+
+If we have to execute something that isn't a side effecty action, then we error if they try to sample context ?
