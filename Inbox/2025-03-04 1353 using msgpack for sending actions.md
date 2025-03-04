@@ -9,3 +9,5 @@ Great for encoding bytes seamlessly, in a performant way.
 
 Can take a stream on the other end, and can be set up to emit objects during the decoding.  Not sure we need that just now.
 
+Means we can upload and download json with files and have almost no thought for it.
+
