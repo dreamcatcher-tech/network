@@ -14,3 +14,5 @@ It is important that the schema for the NAP be exported separately from the code
 On the client-side, we would say "Here is my Napp schema, give me back action creators." 
 
 On the server-side, we would say: "Here is my NAP schema. Here is my collection of implementations of the functions. Give me back function invokers that can take in an action and run it, returning the result." 
+
+We could almost assemble a provider object that was identical to the existing one that was made up of a range of action creators.  This thing is ergonomic on the consumer side, and on the service side, it's just looking up action names to find implementations and then executing those.
