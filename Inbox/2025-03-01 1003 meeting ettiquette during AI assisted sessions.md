@@ -104,6 +104,12 @@ The system would be very useful to use, even passively, in a meeting with the in
 It seems best to make the distinction between a function that expects to have side effects and a function that is expected to be pure within the definitions of the Napp tools. When the function is defined, it could possibly have some context described in it that would say what the shape of the context it's expecting to see would be.  Hoisting like this might make its requirements more obvious.  This context would mean nothing to an LLM directly, but might offer some helpful insights as to how the system would work.
 
 In this way, @mount is expected to be a side effect, and if it describes its context shape, then it can start with a pretyped version of useEffectContext ?  It could error if this context shape was changed.  It can change it to anything it likes while its running, but this will be reset each time the function exits.
+
+Make a dashboard that scores people's input based on error rates, like the number of corrections needed for what they said, the number of times they misspoke, and critically, the number of undetected or uncorrected misspoken things. A sort of a waffling score where they meander a bit too much. We should be able to formulate something like model shape for humans and bring up alarms in the dashboard when someone is behaving sub-optimally. 
+
+We should be able to allow feedback so that the senders of messages can see how far through their particular message some other person is, and they should be able to get notified or see at the top of their dashboard how that's going.
+
+That's useful because people who know each other on the internet (though they may never have met in person) could have reason to engage in a real-time conversation with each other using this system. The moderation and the intelligence moderation would ensure that whatever the person was saying wasn't offensive or stupid. It was deduplicated and supercut, and the user's past actions would be assessed by the recipient and agent to ensure that their knowledge was, in fact, genuine. 
 ## Implementation
 Use a web browser based voice relay system.
 Talk in Immersed using our computers as the relays.  Immersed moves the audio from the headset into the computer, I think.

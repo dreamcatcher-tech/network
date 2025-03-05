@@ -18,3 +18,11 @@ It uses an interesting trick to defer time where when you're speaking you speak 
 So I guess what Mic'd Up tried to do was provide the experience of a direct peer-to-peer conversation, although the scale of the communication made it traditionally a broadcast event.
 
 Because very famous people don't have the time to talk to each and every one of the participants, using technology that experience can be passed on and each person can appear to be or sound to be the best possible version of themselves when they are doing it. 
+
+One of the differences is that I could actually be available to talk to anybody at all (like why should Mic dub make this distinction that they will have selected who the speakers are) there should be anyone all the time 
+
+This becomes very much like a social network and can be additionally screened by liveliness and the fact that the clips are pre-recorded or near-time transcribed and semantically firewalled, making it a safe environment that's not gonna be abused by people, so people won't have their time wasted. 
+
+The revenue model for this system could actually just be the tokens per minute of spoken words, transcribed intelligence runs completed (where your knowledge was vetted, checked, compressed, and super chops were made of your voice to cut out all the um's and whatever else).
+
+The bots could also suggest to you a better version of what you were saying, using your clone voice if you allowed it. This would very much be like using image filters to make your photos look better online. Here you're using a super cat voice cloner to make your intellect look better online.
