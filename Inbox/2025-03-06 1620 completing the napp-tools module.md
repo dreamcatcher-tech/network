@@ -16,3 +16,5 @@ After all, the napps are intended to be public publications as opposed to dynami
 The NAPs registry would be special in that it would be a registry for all types of code and languages. That would be a meta-registry. And so having a build step or an auto-code gen step seems kinda on par. 
 
 Once people start using the registry, they'd be able to also use virtual compute resources on it - start running things immediately, hook up an agent to help navigate it, host the agent on the platform, and all those sorts of things. 
+
+If we take all of the functionality that we are asking for out of the NAPs format system and put each one into an individual file, then that means that we can upgrade each individual piece or work on it in isolation as opposed to these large monolithic things that keep occurring. The key seems to be first of all defining the requirements and then assigning one requirement to each file. 
