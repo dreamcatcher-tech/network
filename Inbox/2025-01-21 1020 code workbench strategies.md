@@ -50,3 +50,8 @@ Need to be able to mark blocks of code as good, and provide a high weight to cha
 Batching should grind over the code at night looking for small subtle improvements and running down theories for improvements.
 
 Reverse back to the top level architecture at all times.  The top level we always know is there, so we should be able to deduce it, or try to make it, especially based on formats that have worked in the past.
+
+
+Try splitting complex functionality into individual files. This will allow us to work on those files independently. The generation size is small. A key indicator that a file is too big is when large parts of the file get regenerated in response to extra functions that are requested, and the regeneration is the same. A good cut means that the features are affecting the entire file. This is some kind of an efficiency metric, like the change ratio, or the impact ratio of the file. If the score is low, the file needs to be split up. Breaking up like this also means that work can be done on each one independently, which allows good fan output.
+The key seems to be first of all defining the requirements and then assigning one requirement to each file. 
+
