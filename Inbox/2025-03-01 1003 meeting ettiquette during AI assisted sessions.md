@@ -110,6 +110,8 @@ Make a dashboard that scores people's input based on error rates, like the numbe
 We should be able to allow feedback so that the senders of messages can see how far through their particular message some other person is, and they should be able to get notified or see at the top of their dashboard how that's going.
 
 That's useful because people who know each other on the internet (though they may never have met in person) could have reason to engage in a real-time conversation with each other using this system. The moderation and the intelligence moderation would ensure that whatever the person was saying wasn't offensive or stupid. It was deduplicated and supercut, and the user's past actions would be assessed by the recipient and agent to ensure that their knowledge was, in fact, genuine. 
+
+The compression and de-duplication of a large number of similar ideas or the extraction of overlapping elements so that a single reply can be synthetically combined with others to give someone who is answering a question a response that, while not directly authentic, is derived from and can be audited to be seen to be derived from a small number of authoritative statements. 
 ## Implementation
 Use a web browser based voice relay system.
 Talk in Immersed using our computers as the relays.  Immersed moves the audio from the headset into the computer, I think.

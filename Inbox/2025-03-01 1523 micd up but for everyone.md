@@ -26,3 +26,5 @@ This becomes very much like a social network and can be additionally screened by
 The revenue model for this system could actually just be the tokens per minute of spoken words, transcribed intelligence runs completed (where your knowledge was vetted, checked, compressed, and super chops were made of your voice to cut out all the um's and whatever else).
 
 The bots could also suggest to you a better version of what you were saying, using your clone voice if you allowed it. This would very much be like using image filters to make your photos look better online. Here you're using a super cat voice cloner to make your intellect look better online.
+
+[[Micd up down left and right]]
