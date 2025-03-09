@@ -25,3 +25,6 @@ So basically, we can have a good set of defaults where we just lay out the schem
 
 
 The only benefit of a dynamic import is that it could potentially be statically importable without having to write it separately in the registry file.  But it does mean we lose the ability to know the path to the module, so we can pull that in ? or we just depend on the path to the zod schema, as use that as the base path to work from.
+
+To get the typing information, we need to do a static import of each of these zod schemas anyway. 
+
