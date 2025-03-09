@@ -13,3 +13,18 @@ I think the use case we want to support is that you call something like `artifac
 If we use the exports of the package to export the schema in isolation, then we can be assured that in the browser-side bundle, no server-side code will be pulled in. This would need to be a check when publishing the naps that the nap schema itself was able to be imported by the client unencumbered.
 
 So I'm thinking that the nap modules should export a named export at the root called "napp". This is the pure Zod schema with nothing else imported. This is the default convention.
+
+This is a test to ensure that all of the schemas that we're about to publish have modules that can be resolved 
+
+If we make the registry be pure Zod schemas and then we run a server-side check to ensure that we can resolve all the modules that are referenced by the registry itself, then we maintain a separate list which is the static imports that the system needs to fulfill every possible dynamic import as specified in the Zod schemas. 
+
+This test would be a check by reading the full import file, and checking that all the resolved module names from the schemas, using the module resolution algorithm, were included in the import specification.  We could also easily auto generate this file.
+
+Module resolution algorithm:
+- if null, then use the napp name directly, and look for the napp export or the napp export on the default export.
+- if stated, can be just a string, so do a dynamic import of it.
+
+So basically, we can have a good set of defaults where we just lay out the schema and provide a way to access the schema definition using a dynamic import. Within that, the modules if we don't mention the module, the module is equal to the napp path. If we do mention the module, that needs to be figured out at runtime. 
+
+
+The only benefit of a dynamic import is that it could potentially be statically importable without having to write it separately in the registry file.  But it does mean we lose the ability to know the path to the module, so we can pull that in ? or we just depend on the path to the zod schema, as use that as the base path to work from.
