@@ -129,3 +129,22 @@ The partial state should itself be files, so that other tasks can pick up where 
 I want to also add the code feature `$filter` which, when called, would allow you to take a list of files or results and filter them based on some criteria, which may include calling a prompt.
 
 Basically we want all the features of a programming language working on arrays, but we are working on files instead.  Then we do parallelisms to make this go very fast, particularly when we are calling an AI on each item.
+
+use a schema to turn any data into structured data:
+```js
+const schema = z.object({  
+ company_mission: z.string(),  
+ supports_sso: z.boolean(),  
+ is_open_source: z.boolean(),  
+ is_in_yc: z.boolean()  
+});  
+  
+await app.extract([  
+ 'https://docs.firecrawl.dev/*',  
+ 'https://firecrawl.dev/',  
+ 'https://www.ycombinator.com/companies/'  
+], {  
+ prompt: "Extract the data provided in the schema",  
+ schema: schema  
+});
+```
