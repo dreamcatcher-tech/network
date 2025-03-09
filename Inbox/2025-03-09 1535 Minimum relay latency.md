@@ -36,3 +36,4 @@ If we were also running on the back of WebRTC, we might start to look like a way
 
 At that point, you basically have all the features of the internet but now in this blockchain format where the nodes are in a market. The market is dynamic and highly available. It can run in hybrid mode (offline/online) and can jump firewalls, go offline, go near-real-time, and go real-time. You basically have all the properties of computing right up to real-time, highly efficient streaming and turnover of clients. 
 
+fly.io has a fly-replay feature where you can immediately replay a request to a machine in another region effortlessly, so this would be perfect.
