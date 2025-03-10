@@ -28,3 +28,24 @@ The only benefit of a dynamic import is that it could potentially be statically 
 
 To get the typing information, we need to do a static import of each of these zod schemas anyway. 
 
+```ts
+export const napp = { 
+	name: '@artifact/example-napp', 
+	runtime: 'deno', // or 'rust', 'python', etc. 
+	// Optional explicit module. If omitted, defaults are assumed. 
+	module: { 
+		package: 'npm:lodash', // optional; defaults to napp itself 
+		export: 'someNamedExport', // optional; defaults to 'default' if omitted
+		path: ['deep','nested','path'] // optional
+	}, 
+	tools: { /* Zod schema definitions */ }, 
+}
+```
+
+Module could be just a string or it could be this object. Omitting the package will default it to the NAPPS package specifier. Omitting the export will still have the path. 
+
+Why not just have the registry be the napp path and the resolved import of the schema? 
+Then server-side, we list out all the modules that need to be ingested. This is perfect type safety.
+
+server side is just the same as the registry, but lists out all the modules that are required by the registry.
+They may as well just be statically registered, and then we just look them up from the table.
