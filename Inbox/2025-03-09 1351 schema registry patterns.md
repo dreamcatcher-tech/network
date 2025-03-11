@@ -49,3 +49,24 @@ Then server-side, we list out all the modules that need to be ingested. This is 
 
 server side is just the same as the registry, but lists out all the modules that are required by the registry.
 They may as well just be statically registered, and then we just look them up from the table.
+
+Perhaps we should require that the napp be installed, in order to get types for it ?
+Then we run different functions thru to get the format we want ?
+So there is no registry, there is just the installation of the napp itself ? and then it gets referred to as a normal import would ?
+
+```ts
+import nappSuperActor from '@artifact/provider/super-actor'
+
+const actions = createActions(nappSuperActor)
+
+//server side
+import * as servers from '@artifact/provider'
+
+```
+
+We could completely split the server side exports out ?
+So client side is required to import the napp as required, rather than pull down the whole registry.
+Server side needs to dynamically import the napp when the action is received, and then the napp should give a way to access its modules for execution, such as `module: ..` which uses the parent subpath of the napp export.
+
+Server side pulls in the napp schema dynamically, so it would need a registry to ensure it had imported everything.
+Server side pulls in the implementation dynamically, so it would need a registry to ensure everything was bundled in deno deploy.
