@@ -16,3 +16,9 @@ The benefits of Tigris are that the database becomes write-local and read-local,
 Using Tigris to provide simulated streaming. What it's possible for us to do is we could write out small chunks of a streamed-in response during a job into Tigris objects, provided the overhead wasn't too high. Then the recipient can't just be watching or listening for these rather than some complicated internal networking setup that we may have to run.
 
 However, in order to support real-time calling and videos, we do actually have to make a direct network connection. This optimization may be either short-lived or pointless. If we can allow the witness to connect directly to the executor job using this low-latency system and some kind of DNS or discovery registry, so that it can find which node is running its particular job.
+
+We can use the date modified to list any job objects that are olders than a certain amount.  This means the query cost is low, but we can pick things up with very small delay, like 500ms delay type of thing.  The principle is that everything is realtime and live but we have a retry mechanism that might introduce a small delay when triggered, but this is the guarantee.
+
+Commits are used to ensure a batch of jobs in order and followed exactly.
+
+we might need to exercise the check and set by running a container in different regions and then running a large number of check and set queries where we expect there surely must be some kind of overlap or falseness or collision. And then we can make sure that we're getting the consistent behavior by flooding a system with resources that would surely have tested the limits of the consistency mechanism. 
