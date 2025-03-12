@@ -32,3 +32,6 @@ we probably have the same architecture for doing live streaming as we do for fan
 
 The piece that's the same with the live streaming design is the multiple regions can connect together to have a single relay which allows the requester to be in a totally different region to the workers and still receive streaming updates from them all, going through a central interface. 
 
+The point of making it the same, is that if a million witnesses want to see, then we should still only require each worker to stream a single version of what they're doing, and the broadcast system takes care of the rest using webrtc relays or something.
+
+Its almost like holding a mapping of jobs to machines, so that any witnesses can lookup or be notified who is running their job, and can watch the execution of it.
