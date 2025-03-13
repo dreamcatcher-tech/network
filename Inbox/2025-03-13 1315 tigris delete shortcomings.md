@@ -22,3 +22,16 @@ we should be striving to use Tigris as simply a very low-latency, durable store 
 watching or triggering as a client would require you to tap into the real-time services aspect of the platform so that you could be broadcast to when commits are being made. These broadcasts would come in from multiple commit quorums if configured that way, or just a single one. 
 
 we could do the branch deletes in one specific region only, and so that each repo would store what its home region is. If a request to do a commit is received, we would replay it back in the home region to ensure that the data store receives a consistent view. 
+
+Try a double download - read the file, then get any newer files using conditional operators.
+
+Run a postgres cluster per region, and allow migrating the primary region to other areas, so the compute can effectively be moved there.  The latest object could be based on a tigris object, but backed by a database, with most up to date wins ?  or, the whole db of the repo is put in an object ?
+
+Have a subscription service which receives notifications when changes occured and is the query source for what latest means.  Have several of these servers in each region, and have several regions.
+
+Have a single latest pointer for the whole repo, so each repo only needs a single hash to point to all the branches.  This means that the branches get treated like a sharded filesystem, and they represent the canonical view of all the branches, in a single branch, the meta branch.
+
+This branch could then be rolled up into a special branch for the hoster, where
+So basically we only have to keep one single hash current, rather than arbitrary many, which means we can quite likely have it be managed by a live running server, which is always on.
+
+so if the host was managing its workers using branches and fibers, then it could have a single thread that held the latest version of all its threads.  This should be stored, but could be held in ram across multiple regions, and would be periodic, with the server quorum providing immediate results, and the multi region backups there for failover to other regions.
