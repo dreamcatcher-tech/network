@@ -20,3 +20,5 @@ A container running in fly.io would be responsible for sampling across all of th
 we should be striving to use Tigris as simply a very low-latency, durable store that sometimes has consistency errors or caching errors, particularly around the notion of what 'latest' means. 
 
 watching or triggering as a client would require you to tap into the real-time services aspect of the platform so that you could be broadcast to when commits are being made. These broadcasts would come in from multiple commit quorums if configured that way, or just a single one. 
+
+we could do the branch deletes in one specific region only, and so that each repo would store what its home region is. If a request to do a commit is received, we would replay it back in the home region to ensure that the data store receives a consistent view. 
