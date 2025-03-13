@@ -150,3 +150,5 @@ await app.extract([
 ```
 
 We should be able to do data matching tasks, where you have columns that need to be matched up with items on the other side. This should be able to be done in parallel, or making an intermediate table, which can be continually updated in red as multiple iterations are done, sort of like how bubble sort works. So these strategies of how the processing can unfold can be selected and different ones can be tried. 
+
+Then if we can run the whisper model as a big query, then we could show doing parallel transcription jobs on a big audio file using the mango language.
