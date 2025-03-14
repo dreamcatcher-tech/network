@@ -21,6 +21,7 @@ If each watcher writes down based on the repo key, it also writes down its addre
 - First, we update the hit value (the chore of doing that notification remains undone)
 - Secondly, we do all the notifications and then mark it as complete
 
+In the meantime, we could use tigris object notifications to call something when the head gets updated ?  or use a simple nats jetstream services to announce to everyone.  At the start, reread the object for about a minute so we know we didn't miss out on announcements ?  Or just poll it anyway, since we don't get charged for reads ?  Every few seconds is fine for a UI application.
 ## using git repo to manage subscriptions. 
 It would be great if there was some way to use the Git repo structure itself as a way of recording subscriptions and doing the updates to them. This could be per region. There could be a regional broadcast manager for each repo. The status of who the running broadcast master is and their liveliness would also be stored in the repo with some kind of a timer out check to ensure that the watcher was always active.
 

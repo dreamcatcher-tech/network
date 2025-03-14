@@ -35,3 +35,6 @@ This branch could then be rolled up into a special branch for the hoster, where
 So basically we only have to keep one single hash current, rather than arbitrary many, which means we can quite likely have it be managed by a live running server, which is always on.
 
 so if the host was managing its workers using branches and fibers, then it could have a single thread that held the latest version of all its threads.  This should be stored, but could be held in ram across multiple regions, and would be periodic, with the server quorum providing immediate results, and the multi region backups there for failover to other regions.
+
+Set the metadata of the object to be tombstoned, and set the content length to be 0.
+Now if the TTL was set, does that mean that everything will see the removed item, or will some items end up with an older cached version ?
