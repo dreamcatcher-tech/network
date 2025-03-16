@@ -12,3 +12,5 @@ sell extra levels of isolation where customers can pay to have their machines ru
 We can intercept time and randomness by using nsjail so that we don't have to patch the Deno environment or the Rust environment or anything. We've patched it at the OS source, and so whenever these programs run, they could run repeatably. 
 
 Gvisor sounds most secure, and may allow us to fake the filesystem completely, since it passes in the filesystem as a seaprate component.
+
+Isolating the whole container seems easier than setting up endo, or another type of sandboxing, plus it runs for all languages too.
