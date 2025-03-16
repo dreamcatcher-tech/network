@@ -49,3 +49,5 @@ App would start up the agent visibility environment.
 Agents like the negotiator would be used to negotiate the pricing for the platform.  You could pay for your own negotiator agent to argue on your behalf.
 
 We want to enable marketplaces for trade, where our agents represent buyers and sellers, and they trade.
+
+'meet the team' page is actually just a bunch of agents.
