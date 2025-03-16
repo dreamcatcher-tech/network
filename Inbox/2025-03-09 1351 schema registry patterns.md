@@ -71,3 +71,12 @@ Server side needs to dynamically import the napp when the action is received, an
 Server side pulls in the napp schema dynamically, so it would need a registry to ensure it had imported everything.
 Server side pulls in the implementation dynamically, so it would need a registry to ensure everything was bundled in deno deploy.
 
+so the napps registry when you are coding looks a lot like the npm registry.
+
+server side it does does a dynamic import of the schema first, then uses that to do a dynamic import of the module to run.
+
+## V1
+So we make the schema downloadable directly, using traditional imports and conventions - schema is at {napp} and then imported modules are specified in the schema.
+Server side we register all the modules we care about to make sure they are statically present, but we otherwise do a dynamic import on them.
+
+If we wanted to, in the registry, we could apply type checks to them to match up the schemas with the imported modules.
