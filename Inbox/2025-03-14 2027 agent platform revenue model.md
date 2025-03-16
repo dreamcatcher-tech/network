@@ -35,6 +35,7 @@ Meet the agents:
 - social media manager
 - pricing negotiator
 - SEO / AIO
+- marketplace - hunt down services
 
 Show the agent arena, where different agents fight for top place.
 Trial an agent on your data.
