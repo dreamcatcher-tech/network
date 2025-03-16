@@ -10,3 +10,5 @@ If we use nsjail to isolate the process that we are running in, and if we take a
 sell extra levels of isolation where customers can pay to have their machines run with only their workloads, so that everything's in a private network just for them
 
 We can intercept time and randomness by using nsjail so that we don't have to patch the Deno environment or the Rust environment or anything. We've patched it at the OS source, and so whenever these programs run, they could run repeatably. 
+
+Gvisor sounds most secure, and may allow us to fake the filesystem completely, since it passes in the filesystem as a seaprate component.
