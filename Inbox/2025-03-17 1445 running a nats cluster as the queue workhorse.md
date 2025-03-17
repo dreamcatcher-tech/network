@@ -16,3 +16,9 @@ Then this could probably give us guaranteed subscriptions where we would ask the
 The jetstream queue acts as the work dispatcher, but can also be used for subscriptions of changes to different repos, to get the events stream out.  These work queues should be tied to a specific region, which is the repos home region.
 
 We would make an intelligent choice when to move a repo to another region, based on where the writes are coming in from.  This keeps the cluster messaging fast, since no global consensus is required.
+
+We could store the messaging on the ephemeral storage of the nodes, since if the nodes aren't running, we don't care about the messages.
+
+Or, for watch notifications, we could use the tigris callbacks ? return a message whenever a repo changed, then figure out from that if the subscription has changed.
+
+To get going early, just run a simple jetstream cluster, which provides the syncing of the work queue, and the notifications to the clients.
