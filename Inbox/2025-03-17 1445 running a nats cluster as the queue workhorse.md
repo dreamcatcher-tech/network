@@ -12,3 +12,7 @@ The workers could be on a totally separate app that simply provided reliable req
 Then in the client side of the application, its purpose is simply to manage things like browser connections, logins, that kind of thing, with the model being that the browser gets this docker image representation so that the browser's reliability becomes a service side reliability and the browser is effectively conducting its business as one of these server-side containers, which excuses us from a lot of the mechanics that the browser limits us with. 
 
 Then this could probably give us guaranteed subscriptions where we would ask the client machine to subscribe to the Shockwave app, which would be in charge of producing new commits. Once we have done a flush on that, we can be assured that we will get the latest updates of the app. 
+
+The jetstream queue acts as the work dispatcher, but can also be used for subscriptions of changes to different repos, to get the events stream out.  These work queues should be tied to a specific region, which is the repos home region.
+
+We would make an intelligent choice when to move a repo to another region, based on where the writes are coming in from.  This keeps the cluster messaging fast, since no global consensus is required.

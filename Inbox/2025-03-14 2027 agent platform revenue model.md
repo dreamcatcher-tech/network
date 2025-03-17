@@ -24,15 +24,17 @@ The data model would be shown as being based on git ? show how forkability means
 
 
 Meet the agents:
+- fairness - given any scenario, determine what a fair split of any pie should be
 - email agent
 - filekeeper
 - accountant / spreadsheet guy
 - database guy
+- webmaster - runs the website, and can make changes to it, so when you chat with this agent, you can convince it to make changes to the system
 - code monkey
 - IT support
 - web researcher
 - customer service
-- social media manager
+- social media manager - handles turning content into media campaignso
 - pricing negotiator
 - SEO / AIO
 - marketplace - hunt down services
@@ -56,6 +58,7 @@ Agents like the negotiator would be used to negotiate the pricing for the platfo
 We want to enable marketplaces for trade, where our agents represent buyers and sellers, and they trade.
 
 'meet the team' page is actually just a bunch of agents.
+Some of these agents can be combined together for more effect, like the debater working with the negotiator can find more avenues.
 
 Agents includes:
 - upgrade agent, to choose when a new release of an agent is due
@@ -68,6 +71,7 @@ The workbench:
 - see all jobs the agent has done
 - try out different ageents, or different tweaks, against your real workloads
 - see other public places the agent has worked - public data is sold at a discount
+- set effort limits, price limits
 
 ### FAQs
 - how do you charge ?
