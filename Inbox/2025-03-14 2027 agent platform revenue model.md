@@ -64,3 +64,6 @@ The workbench:
 - see all jobs the agent has done
 - try out different ageents, or different tweaks, against your real workloads
 - see other public places the agent has worked - public data is sold at a discount
+
+### Difference between a napp and an agent
+A napp based coding tool could be used by both a human and an agent.  An agent remembers all the instructions it receives from the human, but the coding environment may not.  The agent represents the customization based on the user preferences, whereas the napp represents correct best practice.
