@@ -52,3 +52,15 @@ Agents like the negotiator would be used to negotiate the pricing for the platfo
 We want to enable marketplaces for trade, where our agents represent buyers and sellers, and they trade.
 
 'meet the team' page is actually just a bunch of agents.
+
+Agents includes:
+- upgrade agent, to choose when a new release of an agent is due
+- reflection agent, to look at the performance of the agent and figure out how it could do better
+- stucks agent - identifies shortcomings in the platform and the agents and strives to have them solved
+
+The workbench:
+- See the agents private memories
+- the custom evals that get built to ensure that you have the most accurate version of any agent
+- see all jobs the agent has done
+- try out different ageents, or different tweaks, against your real workloads
+- see other public places the agent has worked - public data is sold at a discount
