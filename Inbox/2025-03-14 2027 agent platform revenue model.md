@@ -82,10 +82,25 @@ The workbench:
 - I want to speak to a real person
 	- no problem, you'll need to talk to our secretary agent about that, and then we'll have a call.  If you do not want to pay for private calls, then the calls are public for all to benefit from.
 
-Doers in this case are those that fix problems, build agents, help agents, work with agents.
-Users are the ones that pay for agents to do things for them
-Funders 
+Doers in this case are those that fix problems, build agents, help agents, work with agents.  Work with agents, for agents, create agents.
+Users are the ones that pay for agents to do things for them - employ agents to do your bidding.  Or use the tools the agents use and produce.
+Funders cause agents and tools to be created when they do not exist.
 
+? is it true that no human would employ another one directly, and would only interact via agent intermediaries ?
+Humans very rarely work for one another directly in this system - they are always amplified in their output and in what they can consume, by agent amplification.
+There is a lot of overhead in human collaboration, alot of machine work that is lossy, toilsome - AI makes the interactions pure and efficient, also culturally safe.
+
+Then, beyond the agents, and the separate ecosystems that each one enables, which is a landing page in its own right, which points back to the agent substrate.  So supplier marketplaces are kicked off by the agents that do tasks that cause markets to appear.  These are inter agent trade.
+
+These markets occur when multiple agents are running with multiple independent goals, on behalf of different humans.  Each agent has access to these markets, but also any other existing conventional markets, by way of API or by browser directly.  They can collaborate with each other where advantageous, like to get a group deal by way of combined purchasing power.
+
+Run the agents on your own infrastructure, or on any number of providers.  Relocate them at whim.
+
+Agentic marketplaces - so the agent store would be one such example ?  An agent of yours would help you trade.
+
+Agents, running on private blockchains, can be trusted to act in good faith for all parties.
+
+A friend of ours vs a friend of mine - show how agents can act on your behalf solely, or can broker between you and others, or can broker between your agents and other agents.
 ### Difference between a napp and an agent
 A napp based coding tool could be used by both a human and an agent.  An agent remembers all the instructions it receives from the human, but the coding environment may not.  The agent represents the customization based on the user preferences, whereas the napp represents correct best practice.
 
