@@ -82,8 +82,16 @@ The workbench:
 - I want to speak to a real person
 	- no problem, you'll need to talk to our secretary agent about that, and then we'll have a call.  If you do not want to pay for private calls, then the calls are public for all to benefit from.
 
+Doers in this case are those that fix problems, build agents, help agents, work with agents.
+Users are the ones that pay for agents to do things for them
+Funders 
+
 ### Difference between a napp and an agent
 A napp based coding tool could be used by both a human and an agent.  An agent remembers all the instructions it receives from the human, but the coding environment may not.  The agent represents the customization based on the user preferences, whereas the napp represents correct best practice.
 
 ### Human workstations
 All agents connect to the fabric from a workstation.  Humans should be able to do the same.  Ultimately every human desk can be replaced with an agent, including the desk that configures the system.  Any desk can be browsed manually, and be interacted with in some cases.
+
+### Artifact and napps
+These can be separate websites, since they represent projects hosted on the dreamcatcher, but they can be treated as components, and if people want to dig deeper into them, then they can.
+
