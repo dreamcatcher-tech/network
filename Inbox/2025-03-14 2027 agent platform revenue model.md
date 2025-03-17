@@ -36,6 +36,10 @@ Meet the agents:
 - pricing negotiator
 - SEO / AIO
 - marketplace - hunt down services
+- the debator - will argue any point, endlessly, ranking the best responses, and optionally accepting configurable degrees of decorum
+- the auditor - go thru financial records and confirm if things match
+- the fact checker - check any facts and provide a probability assessment of occurance
+- the actuary - how likely is a certain scenario to happen
 
 Show the agent arena, where different agents fight for top place.
 Trial an agent on your data.
@@ -64,6 +68,14 @@ The workbench:
 - see all jobs the agent has done
 - try out different ageents, or different tweaks, against your real workloads
 - see other public places the agent has worked - public data is sold at a discount
+
+### FAQs
+- how do you charge ?
+	- you are charged for the base cost of the AI agents, plus the fairness agents appraisal of how much the value created for you is worth.  You can refuse to pay this extra amount, but at some point you will have to run these agents on your own infrastructure if you won't pay us
+- How do I know the fair agent is fair ?
+	- you are welcome to argue with it, and you may even task the debater to argue with it in your favour, agentically.  Fair is an open and evolving question.
+- I want to speak to a real person
+	- no problem, you'll need to talk to our secretary agent about that, and then we'll have a call.  If you do not want to pay for private calls, then the calls are public for all to benefit from.
 
 ### Difference between a napp and an agent
 A napp based coding tool could be used by both a human and an agent.  An agent remembers all the instructions it receives from the human, but the coding environment may not.  The agent represents the customization based on the user preferences, whereas the napp represents correct best practice.
