@@ -72,6 +72,7 @@ The workbench:
 - try out different ageents, or different tweaks, against your real workloads
 - see other public places the agent has worked - public data is sold at a discount
 - set effort limits, price limits
+- see where human workstations can be inserted
 
 ### FAQs
 - how do you charge ?
@@ -83,3 +84,6 @@ The workbench:
 
 ### Difference between a napp and an agent
 A napp based coding tool could be used by both a human and an agent.  An agent remembers all the instructions it receives from the human, but the coding environment may not.  The agent represents the customization based on the user preferences, whereas the napp represents correct best practice.
+
+### Human workstations
+All agents connect to the fabric from a workstation.  Humans should be able to do the same.  Ultimately every human desk can be replaced with an agent, including the desk that configures the system.  Any desk can be browsed manually, and be interacted with in some cases.
