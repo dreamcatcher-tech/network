@@ -87,9 +87,9 @@ Doers in this case are those that fix problems, build agents, help agents, work 
 Users are the ones that pay for agents to do things for them - employ agents to do your bidding.  Or use the tools the agents use and produce.
 Funders cause agents and tools to be created when they do not exist.
 
-- builders
-- operators
-- commissioners
+- builders / workers - 
+- operators - they command the agents and tools to do things - they also pay (customers)
+- commissioners - they commission work to be done, which may include building new tools or agents, but can include any real world tasks.
 
 ? is it true that no human would employ another one directly, and would only interact via agent intermediaries ?
 Humans very rarely work for one another directly in this system - they are always amplified in their output and in what they can consume, by agent amplification.
