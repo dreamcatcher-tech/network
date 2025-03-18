@@ -115,3 +115,6 @@ All agents connect to the fabric from a workstation.  Humans should be able to d
 ### Artifact and napps
 These can be separate websites, since they represent projects hosted on the dreamcatcher, but they can be treated as components, and if people want to dig deeper into them, then they can.
 
+### Demos
+- have an agent that fires up chatgpt and does some work on it.
+- show how the agent workstation can be put into human approval mode, to earn the trust of the humans, plus can have conditional approval from some simple rule checks
