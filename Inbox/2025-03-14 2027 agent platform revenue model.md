@@ -87,7 +87,7 @@ Doers in this case are those that fix problems, build agents, help agents, work 
 Users are the ones that pay for agents to do things for them - employ agents to do your bidding.  Or use the tools the agents use and produce.
 Funders cause agents and tools to be created when they do not exist.
 
-- builders / workers - 
+- builders / workers - they help agents, work for agents, supply services to operators
 - operators - they command the agents and tools to do things - they also pay (customers)
 - commissioners - they commission work to be done, which may include building new tools or agents, but can include any real world tasks.
 
@@ -118,3 +118,5 @@ These can be separate websites, since they represent projects hosted on the drea
 ### Demos
 - have an agent that fires up chatgpt and does some work on it.
 - show how the agent workstation can be put into human approval mode, to earn the trust of the humans, plus can have conditional approval from some simple rule checks
+- show replay and rollback
+- show retraining a new agent on old data
