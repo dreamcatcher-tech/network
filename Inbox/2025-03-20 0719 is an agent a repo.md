@@ -6,3 +6,6 @@
 >[!danger] Depends: 
 
 Or is it a folder within a repo ?
+
+Or, just a napp, with some files attached to it ?
+
