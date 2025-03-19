@@ -19,4 +19,4 @@ As a side effect of using the network, it will be improved.
 
 Need some legal standing to ensure we can punish people for espionage.
 
-Staying ahead of the enemy is more important than having them know what we're doing.N
+Staying ahead of the enemy is more important than having them know what we're doing.
