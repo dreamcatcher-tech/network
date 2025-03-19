@@ -28,3 +28,5 @@ The revenue model for this system could actually just be the tokens per minute o
 The bots could also suggest to you a better version of what you were saying, using your clone voice if you allowed it. This would very much be like using image filters to make your photos look better online. Here you're using a super cat voice cloner to make your intellect look better online.
 
 [[Micd up down left and right]]
+
+Could this be handled agentically ?  The humans are always dumping audio streams, and the agents take care of what to do about it ?  A human operator can work over the top of an agent.  
