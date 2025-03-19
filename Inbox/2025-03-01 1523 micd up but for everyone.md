@@ -30,3 +30,5 @@ The bots could also suggest to you a better version of what you were saying, usi
 [[Micd up down left and right]]
 
 Could this be handled agentically ?  The humans are always dumping audio streams, and the agents take care of what to do about it ?  A human operator can work over the top of an agent.  
+
+An agent that was in charge of toxicity management, as well as playing in different questions from crowds of people.
