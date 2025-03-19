@@ -42,6 +42,7 @@ Meet the agents:
 - the auditor - go thru financial records and confirm if things match
 - the fact checker - check any facts and provide a probability assessment of occurance
 - the actuary - how likely is a certain scenario to happen
+- upgrade agent can decide when to upgrade artifact itself, since it should have upgrade with auto rollback ability
 
 Show the agent arena, where different agents fight for top place.
 Trial an agent on your data.
