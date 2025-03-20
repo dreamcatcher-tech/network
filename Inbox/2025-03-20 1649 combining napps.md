@@ -64,3 +64,5 @@ run a chrome napp, which would use headless chrome to do something, which might 
 The napp running on its own is nothing in these systems.
 Running a napp using the API of the contract makes it act like a weird mix of service as well as remove napp ?
 The runtime would be `ethereum` and some chain id, but other than that, it would operate exactly like a napp, otherwise.  On artifact, the changed system state would be recorded as blocks plus the data storage of the contract that changed.
+
+We could run an ethereum dev environment, so the bots could make, compile, and test eth contracts.  They should work hard to make a formal model, then they should implement it and do some follow along testing using the TLA+ model to step the system along.
