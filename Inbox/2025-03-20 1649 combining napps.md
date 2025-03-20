@@ -33,6 +33,12 @@ It might be easiest if we just import all the registries anyway rather than rely
 
 Git providers would be dreamcatcher, github, gitlab, plus add your own one, which will create a stuck that you can watch.
 
+Services in the gateway can be connections to github issues, confluence and jira.
+Connect to heroku, so we can manage external platforms using our napps.
+Even manage subscription and account preferences in things like adobe suite of products - if we can't get api access, then use operator browser driven methods.
+
+eslint as a napp or a tool in a napp would be super useful, since can get the bot to loop on linting issues.
+
 We could provide things like a fortran container - this can make it easy to set up rather exquisite dev environments for all kinds of code.  Then to get AI assistance, and if you want it, human assistance, all while keeping the code secure, since you can just share snippets or parables that the bot knows how to apply for you, all under the watch of the semantic firewall.
 
 SO THEN the napps registry lets you publish packages for languages that don't have a central registry, and for those that do not support the package format, since it can be made just a folder or some other kind of folder related standard.  Plus you can run them, compile them, check them, deploy them, all right from the web browser.
@@ -50,3 +56,11 @@ Then can make notebooks that can draw on napps to run, to enable further experim
 To provide Meta Registry search capability, how can we leverage the Mango Query language to model this? 
 
 For example, we could make a de facto package format for MS-DOS programs, where each program is distributed like a regular DOS program is and the Docker container just serves to exist solely to run that one application. It would then provide the terminal stream in and out. This could be block chained. We can also have it snapshotted periodically in and out so we can replay it. You might even be able to run Doom or some other kind of game like that. We'd need some way to not be doing one block per keystroke for example but be more continuous and streaming mode where we periodically snap the state of the system somehow if that's even possible. Probably going to be running as a side effect with a real-time connection hooked up over the top 
+
+we could become a de facto package format for WASM, even. 
+
+run a chrome napp, which would use headless chrome to do something, which might include doing some browsing or some orchestration.
+## Connecting a napp to ethereum or other blockchains
+The napp running on its own is nothing in these systems.
+Running a napp using the API of the contract makes it act like a weird mix of service as well as remove napp ?
+The runtime would be `ethereum` and some chain id, but other than that, it would operate exactly like a napp, otherwise.  On artifact, the changed system state would be recorded as blocks plus the data storage of the contract that changed.
