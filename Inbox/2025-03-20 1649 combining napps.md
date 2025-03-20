@@ -36,3 +36,15 @@ Git providers would be dreamcatcher, github, gitlab, plus add your own one, whic
 We could provide things like a fortran container - this can make it easy to set up rather exquisite dev environments for all kinds of code.  Then to get AI assistance, and if you want it, human assistance, all while keeping the code secure, since you can just share snippets or parables that the bot knows how to apply for you, all under the watch of the semantic firewall.
 
 SO THEN the napps registry lets you publish packages for languages that don't have a central registry, and for those that do not support the package format, since it can be made just a folder or some other kind of folder related standard.  Plus you can run them, compile them, check them, deploy them, all right from the web browser.
+
+Why should I be limited to just the code in one language, when there is all this great stuff out there ?
+
+Also, maybe the best ones should be wasm'd or something ?
+
+Make a registry that uses AI operators to go and search all the other registries, using the web interface, so that when it comes back, it has the best recommendations for what you were after from all the registries, and has made a napp with some example uses.
+
+Where else has this multiple source of truth problem where you have to search several things concurrently ?
+
+Then can make notebooks that can draw on napps to run, to enable further experimentation.
+
+To provide Meta Registry search capability, how can we leverage the Mango Query language to model this? 
