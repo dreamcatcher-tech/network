@@ -48,3 +48,5 @@ Where else has this multiple source of truth problem where you have to search se
 Then can make notebooks that can draw on napps to run, to enable further experimentation.
 
 To provide Meta Registry search capability, how can we leverage the Mango Query language to model this? 
+
+For example, we could make a de facto package format for MS-DOS programs, where each program is distributed like a regular DOS program is and the Docker container just serves to exist solely to run that one application. It would then provide the terminal stream in and out. This could be block chained. We can also have it snapshotted periodically in and out so we can replay it. You might even be able to run Doom or some other kind of game like that. We'd need some way to not be doing one block per keystroke for example but be more continuous and streaming mode where we periodically snap the state of the system somehow if that's even possible. Probably going to be running as a side effect with a real-time connection hooked up over the top 
