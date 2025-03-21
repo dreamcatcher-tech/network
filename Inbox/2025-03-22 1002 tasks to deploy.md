@@ -5,6 +5,12 @@
 
 >[!danger] Depends: 
 
+crm tests passing
+
+web client connection being genuine over the web
+
+server requiring a bearer token to work correctly
+
 tigris using consistency instead of denokv
 
 crm to upload to tigris as bulk, with local using denokv.
