@@ -11,3 +11,7 @@ Listen in to clipboard changes, to help with all the copy pasting required durin
 
 Mic recording so we never lose anything by accident.
 Purge over time if events occur that show we weren't interested in a particular time.
+
+great comparator: https://github.com/Elanis/web-to-desktop-framework-comparison
+
+It might be easier though to simply use the current file system permissions to synchronize user files in and out. 
