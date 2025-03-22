@@ -7,4 +7,8 @@
 
 First start testing using the test client
 
-Then make a typed RPC client
+Then make a typed RPC client ?
+
+add different functions for streaming vs regular functions
+
+Make some tests in crm that override the basic fetch
