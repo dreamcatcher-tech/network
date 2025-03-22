@@ -4,3 +4,7 @@
 >[!question] Targets: 
 
 >[!danger] Depends: 
+
+First start testing using the test client
+
+Then make a typed RPC client
