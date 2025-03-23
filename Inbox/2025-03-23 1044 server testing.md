@@ -14,4 +14,7 @@ add different functions for streaming vs regular functions
 Make some tests in crm that override the basic fetch
 
 
-----
+---
+### When building the front end
+we would need to have published the client packages onto the net, and then we would just pull in the latest versions.
+We could use this to point to the server in question, and communicate with it from the front end.
