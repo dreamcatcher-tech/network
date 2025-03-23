@@ -5,10 +5,13 @@
 
 >[!danger] Depends: 
 
-First start testing using the test client
+First start testing using the test client, use that to test that auth works
 
 Then make a typed RPC client ?
 
 add different functions for streaming vs regular functions
 
 Make some tests in crm that override the basic fetch
+
+
+----
