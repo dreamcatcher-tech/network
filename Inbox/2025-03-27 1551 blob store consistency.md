@@ -27,7 +27,7 @@ https://jsr.io/@std/ulid/doc/~/monotonicUlid to ensure they are strictly ordered
 IF we use events and use ulids, then the order might not matter, so long as the order amongst the same writers is the same ?
 At any rate we will ditch the whole solution and move to a branch based model, so this intermediate step doesn't matter.  
 
-
+Event objects can be constructed just the same as before.
 Makes it easier than watching for fork events, since this is quite heavy.
 
 Plus the whole thing is going to be ripped out once we start writing to a single branch anyway.
