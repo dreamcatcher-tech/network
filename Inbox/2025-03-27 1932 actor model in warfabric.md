@@ -17,3 +17,9 @@ Our access to user info should be no more than just seeing who is on there, and 
 The secrets are encrypted, but all else should be visible from the outside.
 We should not be able to see inside the actor repos.
 Anyone should be able to see what we can from the management repo, which is links to all the repos.
+
+Actors are repos, and we the hosting platform auth browser sessions in based on these repos.
+All other repos are free floating, but some can be bound by their ACL to be under the control of other actors, either exclusively, or shared.
+Lastly, a repo can control other repos, arbitrarily deep.  This is making a repo act like an org, as it can optionally be controlled by other actors, or it can be independent.
+
+So is an agent a complete repo ? or just a branch ? or does an agent only exist inside a repo ?
