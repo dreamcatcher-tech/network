@@ -12,3 +12,8 @@ So at all times we always store all the data we have available in the actors rep
 
 We can map out secrets to hashes, where the value is inserted only during outbound calls.
 The secrets map is stored in the actor store, but it is not extractable.
+
+Our access to user info should be no more than just seeing who is on there, and other stats.  Probably everyone else should be able to see this too.
+The secrets are encrypted, but all else should be visible from the outside.
+We should not be able to see inside the actor repos.
+Anyone should be able to see what we can from the management repo, which is links to all the repos.
