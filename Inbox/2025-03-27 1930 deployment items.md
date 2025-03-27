@@ -6,3 +6,4 @@
 >[!danger] Depends: 
 
 remove denokv from being required.
+set up privy so we have real user accounts.

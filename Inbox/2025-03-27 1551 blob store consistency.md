@@ -33,3 +33,8 @@ Makes it easier than watching for fork events, since this is quite heavy.
 Plus the whole thing is going to be ripped out once we start writing to a single branch anyway.
 
 Plus if watch fails or misses something, it is non critical, just aesthetic.
+
+Use the key with a `>` and monotonic ulids to write events to the store.
+
+Use the timestamp part of the ulid to do the last modified time search ?
+Or, just use the last modified time search only, but use the ulid to handle updates within the same second.

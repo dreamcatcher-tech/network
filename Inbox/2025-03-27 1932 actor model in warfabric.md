@@ -45,3 +45,5 @@ Show a standard UI for permissions management, that applies to any repo.
 Permissions could be delegated to parent, if there was a single owner ?
 
 Who did what shows up in which actor made the commit.
+
+Users would need to search for the repo ? or we could just make UI that auto logs them in to this repo.  Admin, like permissions, would be accessed using the standard platform level interface.
