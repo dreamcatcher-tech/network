@@ -22,3 +22,14 @@ modified since would store the most rececent time we saw, then would keep re pol
 
 TODO check if etag is affected by time, so if the same object is written at a different date, is it different.
 
+Could use events with ulids and then just watch them ?
+https://jsr.io/@std/ulid/doc/~/monotonicUlid to ensure they are strictly ordered for the same writer.
+IF we use events and use ulids, then the order might not matter, so long as the order amongst the same writers is the same ?
+At any rate we will ditch the whole solution and move to a branch based model, so this intermediate step doesn't matter.  
+
+
+Makes it easier than watching for fork events, since this is quite heavy.
+
+Plus the whole thing is going to be ripped out once we start writing to a single branch anyway.
+
+Plus if watch fails or misses something, it is non critical, just aesthetic.
