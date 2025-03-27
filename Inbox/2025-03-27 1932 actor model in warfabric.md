@@ -23,3 +23,14 @@ All other repos are free floating, but some can be bound by their ACL to be unde
 Lastly, a repo can control other repos, arbitrarily deep.  This is making a repo act like an org, as it can optionally be controlled by other actors, or it can be independent.
 
 So is an agent a complete repo ? or just a branch ? or does an agent only exist inside a repo ?
+
+The repo ACL list would be linked to dids, along with some roles.
+Each repo could be a did that gets resolved using a custom resolver.
+
+Repos must be able to communicate across repos, in an authenticated way.
+They could mount, as in permanently share data, they could live mount, where the data is kept current, or they could send actions.
+
+How can users be invited to repos ?
+A repo could offer either open invite requests, or it must reach out to add you.
+
+So our auth instance simple acts as an identity provider that is trusted by our hoster.
