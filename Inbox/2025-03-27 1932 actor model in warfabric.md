@@ -39,3 +39,9 @@ For the CRM, we could restrict access by email address ? or specific dids ?
 So someone creates the crm repo, then they can search for users, or add them by a specific email address that they will allow ?
 
 Each actor is always acting as the actor repo.  This is the connection between the hosting environment and the repos.
+
+Show a standard UI for permissions management, that applies to any repo.
+
+Permissions could be delegated to parent, if there was a single owner ?
+
+Who did what shows up in which actor made the commit.
