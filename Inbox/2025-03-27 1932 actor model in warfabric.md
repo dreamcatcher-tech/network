@@ -34,3 +34,8 @@ How can users be invited to repos ?
 A repo could offer either open invite requests, or it must reach out to add you.
 
 So our auth instance simple acts as an identity provider that is trusted by our hoster.
+
+For the CRM, we could restrict access by email address ? or specific dids ?
+So someone creates the crm repo, then they can search for users, or add them by a specific email address that they will allow ?
+
+Each actor is always acting as the actor repo.  This is the connection between the hosting environment and the repos.
