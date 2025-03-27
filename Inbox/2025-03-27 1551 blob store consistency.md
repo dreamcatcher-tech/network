@@ -11,3 +11,5 @@ Latest pointers should be etag based.
 
 Set the location in an env var, to pick a close region.
 
+Events is just using last modified times
+
