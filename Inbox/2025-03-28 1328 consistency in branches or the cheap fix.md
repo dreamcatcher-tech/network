@@ -93,3 +93,4 @@ The web server needs to auth by:
 1. checking with the auth service of the host that the client has proved their control of the did
 2. reading the repo did in the action envelope
 3. reading the `artifact-consensus` branch
+
