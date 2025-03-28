@@ -16,4 +16,4 @@ In the meantime, we need to store the head commit somewhere.
 `did:artifact:repoPubKey/objects`
 `did:artifact:repoPubKey/HEAD`
 
-This will give us no db reliance except for 
+This will give us no db reliance except for objects, and the HEAD
