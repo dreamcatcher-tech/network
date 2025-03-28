@@ -14,3 +14,5 @@ Keeping up in realtime is more important than pulling in old ones, so start with
 Use the chat backup feature, let people upload it, then we can parse it out, and build up a view.
 
 We might build up a shared view of chats where multiple people agree to collaborate, and then the messages in an imported history just get affirmed by different parties.
+
+Signal publishes their libraries, so we should be able to link and communicate using signal by processing these libraries, and keeping them up to date.  https://github.com/signalapp/libsignal/tree/main/node

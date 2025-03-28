@@ -86,3 +86,10 @@ When an actor sends in an action, we first check the privy token for validity, s
 
 
 We may actively hold an in cache copy of the super repo, and update it whenever a new commit occurs, with an authoritative answer being instantly available very soon, if we know the path hasn't changed.
+
+HEAD should store the commit hash, but also may as well store the tree items of the first layer, to save 2 round trips when doing permissions lookups.  
+
+The web server needs to auth by:
+1. checking with the auth service of the host that the client has proved their control of the did
+2. reading the repo did in the action envelope
+3. reading the `artifact-consensus` branch
