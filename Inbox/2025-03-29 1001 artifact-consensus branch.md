@@ -46,3 +46,6 @@ Use the direct methods of the providers without tangling up the full, pleasant, 
 Usage of git requires a flush, where multiple changes all get committed to the underlying id branch.
 
 readConfig would first check we still have the current tip of the id branch, and then would buffer the new file up, waiting for commit to get called.
+
+Might just fill in the RepoStore interface, which makes things pretty easy.
+If we are not in the id branch, use a gitKv instance that is in the id branch, else if we are in id, use the provider methods to do direct writes, and build up a buffer in the upserts and deletes arrays, then call flush to create the commit.
