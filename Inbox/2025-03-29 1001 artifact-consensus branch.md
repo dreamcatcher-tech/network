@@ -41,3 +41,8 @@ readCommit, readBlob, readTree - all they need is reading of the object store pa
 Also can just be switch statements, if we are in the id branch, then revert to direct reads, else use the artifact that wraps the id branch.
 
 another way is to replace the calls to repoStore with ones that do the switch automatically, so the logic of the gitkv can remain the same.
+
+Use the direct methods of the providers without tangling up the full, pleasant, user facing artifact.
+Usage of git requires a flush, where multiple changes all get committed to the underlying id branch.
+
+readConfig would first check we still have the current tip of the id branch, and then would buffer the new file up, waiting for commit to get called.
