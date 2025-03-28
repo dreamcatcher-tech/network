@@ -19,3 +19,21 @@ Then if we want to implement sharding for this branch too, things get tricky.
 So how to treat it like a genuine filesystem branch ?  We are already running in a context, so we can call provider functions directly.  Make  a form of tx that doesn't create actions in between.  It just calls implementations directly.
 
 we may need to have file pattern filters for this branch that only permit an allow list of files. 
+
+almost like we need a full version of artifact inside gitkv, and it is created for anything that isn't this base branch.
+but it needs to be able to write to the `artifact-consensus` branch too, since we need to update permissions and other items.
+
+So if its writing to its identity branch, its using gitkv directly ?
+
+Where would config and other things be stored for its own branch ?
+suppose it just reads them directly ?  So even when operating on its own self, it still reads from the artifact instance that it has created.
+
+Almost like we need to split out the read and write functions ?
+
+Its like theres two types of gitkv fs:
+1. The one for reading from the object store
+2. the one for reading the git config
+
+So they could provide different features, like the object store version need not worry at all about config, head, etc
+
+readCommit, readBlob, readTree - all they need is reading of the object store paths.
