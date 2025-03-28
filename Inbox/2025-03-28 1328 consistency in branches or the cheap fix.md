@@ -29,6 +29,7 @@ The purpose of this branch is to:
 4. refs, which are pointers to the latests commits of both local heads and remotes, the same as git, in the folder `/refs`.
 5. `/quorum` for parameters relating to consensus
 6. `/files` for any other files that process 0 might want to store here ?
+7. `/stucks` for stucks that are local to this repo ?
 
 rbacs would have a version click, and then have all the different roles, and members be individual files.
 owners of a repo could have different quorum rules.
