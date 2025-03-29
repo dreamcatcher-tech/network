@@ -55,3 +55,9 @@ If we are not in the id branch, use a gitKv instance that is in the id branch, e
 make two repostores, one for direct id branch, and one for everything else.
 
 Might need to split the schemas out into a separate package, or into the api, since they drag in the rest of they provider library any time they get used.
+
+A good summary of the rules:
+- objects go straight into the store, not matter what
+- other .git related data:
+	- if its on the `artifact-consensus` branch, it gets written as files in the branch and committed
+	- else it opens up the `artifact-consensus` branch for writing and updates it in the filesystem there
