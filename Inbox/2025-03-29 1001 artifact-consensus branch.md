@@ -53,3 +53,5 @@ If we are not in the id branch, use a gitKv instance that is in the id branch, e
 ?does it ever write multiple files ? yes.
 
 make two repostores, one for direct id branch, and one for everything else.
+
+Might need to split the schemas out into a separate package, or into the api, since they drag in the rest of they provider library any time they get used.
