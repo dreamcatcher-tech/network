@@ -49,3 +49,7 @@ readConfig would first check we still have the current tip of the id branch, and
 
 Might just fill in the RepoStore interface, which makes things pretty easy.
 If we are not in the id branch, use a gitKv instance that is in the id branch, else if we are in id, use the provider methods to do direct writes, and build up a buffer in the upserts and deletes arrays, then call flush to create the commit.
+
+?does it ever write multiple files ? yes.
+
+make two repostores, one for direct id branch, and one for everything else.
