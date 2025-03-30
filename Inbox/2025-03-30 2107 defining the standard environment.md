@@ -30,3 +30,11 @@ layers:
 2. hypervisor
 3. container
 4. napp
+
+By making sure that no data in the standard environment is stored in a data structure other than a git repo, this means we are database-less, in a sense.  Database agnostic.  So long as the backing database, which could just be raw files on disk, presents the git operations and atomic guarantees we need, then it can be anything at all.  The git format is very portable, transportable.  It is a portable blockchain.  The spec for the standard platform is database-free.  No database dependency.  DB is abstracted away.
+
+The auth method is up to any implementor, since that specifies how actors gain access to the system.
+
+we could call it the standard repo, the standard app, the standard environment, 
+
+the standard kernel maybe, or standard hypervisor.
