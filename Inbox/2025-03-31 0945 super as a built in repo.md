@@ -112,3 +112,6 @@ The super could be a well know name, so browsers can always communicate with it.
 So how to make the first one, since all the others check their parents for permission ?
 Need a little seed function, that can only be used to make a repo free from a parent, and only if none other exist.  We could also make the self repo if it wasn't found ?
 
+clone could use a temp id branch, and then when done, go make one that forks from the last commit of the main branch.
+
+init can be the first commit is the actual id branch, then the main branch is forked off this singular commit.
