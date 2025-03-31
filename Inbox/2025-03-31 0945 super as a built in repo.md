@@ -70,7 +70,7 @@ May do roles and add them to the config object for each did.
 // filesystem paths sharded by the dids
 {
 	'did:privy:asdfasdf': {
-		'': {
+		'@self': {
 			// permission on self
 			spawn // ability to spawn new repos
 		},
@@ -106,3 +106,9 @@ the auth config is consulted before any action gets deployed.
 
 call `super.ls()` to figure out what repos you have access to.
 When you first sign up, we will create a base actor repo for you.
+
+The super could be a well know name, so browsers can always communicate with it.
+
+So how to make the first one, since all the others check their parents for permission ?
+Need a little seed function, that can only be used to make a repo free from a parent, and only if none other exist.  We could also make the self repo if it wasn't found ?
+

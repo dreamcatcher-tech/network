@@ -21,3 +21,5 @@ When doing delegated permissions, machines would fall into this category too.  S
 What about group / DAO authentications ?
 
 What about DNS for repos so they have nicer to remember names ?
+
+Ideally it would work like jsr, where the cli offers up a url, and you need to go there and log in to auth the device.
