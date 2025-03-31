@@ -72,6 +72,7 @@ May do roles and add them to the config object for each did.
 	'did:privy:asdfasdf': {
 		'': {
 			// permission on self
+			spawn // ability to spawn new repos
 		},
 		'did:repo:ffffff': {
 			// permissions on its home repo
@@ -83,3 +84,25 @@ May do roles and add them to the config object for each did.
 
 
 ```
+
+
+? how would the first hosting repo get made ?
+should it read from an env var and make a repo using the private keys from the env var ?
+
+When we want to know if an actor is valid, the system reads from the super repo and looks up the did in the repo.
+
+So for all tests, we must create the super repo first, since this gets used to then make the actor repo.
+
+How do we attach the actor tools to every repo ?
+Actor tools are when we are acting like an actor, and creating children, and managing children.
+
+Can we make the friends list actually just be a permissions list ?
+Would be those advertising the friends api data, and that you can read.
+
+These commands can remain in the `@artifact/provider/actor` napp, but they are executed "on" the target repo.  Just like the current ones require the provider sends to a valid actor repo.
+So you could send actor commands to any repo, but only if they had the right permissions, would it work.
+
+the auth config is consulted before any action gets deployed.
+
+call `super.ls()` to figure out what repos you have access to.
+When you first sign up, we will create a base actor repo for you.
