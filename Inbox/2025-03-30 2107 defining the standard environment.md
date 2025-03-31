@@ -53,3 +53,4 @@ Turning data into executable instructions is the difference between a turing mac
 Git is the lingua franca of storage.
 The browser is the lingua franca of graphical interfaces.
 docker is the lingua franca of execution.
+
