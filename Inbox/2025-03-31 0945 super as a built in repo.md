@@ -37,3 +37,21 @@ The super repo holds owner relationships to all the actors.
 The super repo is how DIDs are looked up to find the actor repo they point to.
 
 So how to embue these basic functions onto the `artifact-consensus` branch ?
+
+We would turn these problems into filesystem problems, rather than database problems.
+
+Can the auth setup be used by the super repo to grant access to the actor repos ?
+
+delegated permissions, so when someone wants to access a repo, we also check the parents of the repo to see if the did is allowed.
+
+init tools should be part of every repo, since it sets up the parent child relationship ?
+
+Is auth an repo links the same thing, really ?
+
+Can we have deffered permissions, so a child which is owned would check its parent for permissions too.
+Very simple to add actors di
+
+actors control becomes a napp then ?
+add auth, init and clone - just napps that modify the filesystem in a fixed way ?
+
+Some branches must be able to limit what napps can be run on them.
