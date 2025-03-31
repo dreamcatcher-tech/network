@@ -50,3 +50,6 @@ Docker container hosts, like fly.io, are approaching this universality.
 
 Turning data into executable instructions is the difference between a turing machine and a universal turing machine.
 
+Git is the lingua franca of storage.
+The browser is the lingua franca of graphical interfaces.
+docker is the lingua franca of execution.
