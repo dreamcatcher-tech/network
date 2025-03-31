@@ -55,3 +55,26 @@ actors control becomes a napp then ?
 add auth, init and clone - just napps that modify the filesystem in a fixed way ?
 
 Some branches must be able to limit what napps can be run on them.
+
+if we had a tip object and a commit object, how would we go about storing repo info and auth details ?
+
+we need a mapping to lookup dids to repos.
+the browser needs to be told what repos it can access.
+that is probably a `super.ls()` call, then just see what comes back.
+super is a special address that is well known to the system.
+
+But want a way to turn auth into repo control.
+May do roles and add them to the config object for each did.
+
+```ts
+{
+	'did:privy:asdfasdf': {
+		'': {
+			// permission on self
+		},
+		'did:repo:ffffff': {
+			// permissions on its home repo
+		}
+	}
+}
+```
