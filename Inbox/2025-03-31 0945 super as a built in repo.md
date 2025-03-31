@@ -115,3 +115,7 @@ Need a little seed function, that can only be used to make a repo free from a pa
 clone could use a temp id branch, and then when done, go make one that forks from the last commit of the main branch.
 
 init can be the first commit is the actual id branch, then the main branch is forked off this singular commit.
+
+The first commit need not be done, it can be done as part of the flush operation, since the tip can contain everything.
+After clone, we would fork the head of the main branch.
+After init, we would do a single commit, on the default branch, and then we would fork that, to ensure we always have shared lineage.
