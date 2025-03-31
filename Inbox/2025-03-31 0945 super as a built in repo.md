@@ -67,6 +67,7 @@ But want a way to turn auth into repo control.
 May do roles and add them to the config object for each did.
 
 ```ts
+// filesystem paths sharded by the dids
 {
 	'did:privy:asdfasdf': {
 		'': {
@@ -77,4 +78,8 @@ May do roles and add them to the config object for each did.
 		}
 	}
 }
+
+// roles as a config.json in the root of the auth folder, which says what all the roles that are referenced here are
+
+
 ```
