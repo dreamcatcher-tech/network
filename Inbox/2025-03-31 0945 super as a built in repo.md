@@ -128,3 +128,9 @@ It has to be run this way anyway, since it needs to be received by an action ?
 Write a special key to the blob store: `@self` which will point to the self repo.
 
 `tree` is what we should rename actor operations to.
+
+Make two kinds of git fs object - one that handles only writes to objects, and the other which handles writes to metadata.
+
+The metadata capable one depends on the object based one.
+
+When calling on git metadata, we are always interested in the tip, hence we need to query the db to get the latest versions.  But objects do not need this query.
