@@ -126,3 +126,5 @@ Run seed within a container to make sure it runs ?
 It has to be run this way anyway, since it needs to be received by an action ?
 
 Write a special key to the blob store: `@self` which will point to the self repo.
+
+`tree` is what we should rename actor operations to.
