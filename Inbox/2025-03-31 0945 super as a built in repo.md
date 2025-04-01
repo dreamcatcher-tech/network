@@ -121,3 +121,8 @@ After clone, we would fork the head of the main branch.
 After init, we would do a single commit, on the default branch, and then we would fork that, to ensure we always have shared lineage.
 
 Reading blobs, trees, commits might be useful separated from anything that interacts with the .git dir for anything other than object storage.
+
+Run seed within a container to make sure it runs ?
+It has to be run this way anyway, since it needs to be received by an action ?
+
+Write a special key to the blob store: `@self` which will point to the self repo.
