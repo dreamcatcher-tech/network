@@ -143,4 +143,8 @@ Functions that need context and should have context, they should wrap the pure v
 Make actor-store be the interface to the auth slice of the meta filesystem.
 It handles the filesystem format, and manages the on disk formats.
 
-Move 
+Move all the git-kv related stuff, and the meta store check, out into a separate package, to be imported by the provider package.
+
+move the repo-store tests into being tests for the meta management tip.
+
+tip could be supplied with a scoped blobstore, to avoid it passing extra args around

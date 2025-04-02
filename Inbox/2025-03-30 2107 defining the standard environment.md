@@ -54,3 +54,4 @@ Git is the lingua franca of storage.
 The browser is the lingua franca of graphical interfaces.
 docker is the lingua franca of execution.
 
+typically the .git folder contents are not on chain.
