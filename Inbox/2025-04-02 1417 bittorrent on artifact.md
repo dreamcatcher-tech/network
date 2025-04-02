@@ -22,3 +22,5 @@ The BitTorrent agent would be running on a service that had an exposed IP addres
 since this is large binary unchanging data, we could store this as LFS-based chunk storage using a low-cost backend. 
 
 This means that the torrent node needs to do nothing more than maintain connections with peers. These connections may be stored with an artifact to be able to understand more about the behaviors and health of the torrents as well as to provide some attribution to peers who are sharing them. 
+
+The LFS server can treat each chunk as a distinct thing, but it can also 

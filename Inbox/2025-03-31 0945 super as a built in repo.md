@@ -139,3 +139,8 @@ want to only start feting the meta head if we are asked for something that invol
  we should never need to use any context requiring functions.
 
 Functions that need context and should have context, they should wrap the pure version that needs only the blobstore.
+
+Make actor-store be the interface to the auth slice of the meta filesystem.
+It handles the filesystem format, and manages the on disk formats.
+
+Move 
