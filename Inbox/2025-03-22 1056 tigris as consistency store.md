@@ -117,7 +117,7 @@ Or, we could expand the config to have an item that lists all the branches.
 
 So we could probably operate without the atomic guarantees of branch deletion during merge, until we switch to using the whole branch.  merge with deletes is the only thing we can't do atomically.  This might not matter in the scheme of things.
 
-Mus tbe careful since gitkv relies on a certain filestructure to be present.
+Must be careful since gitkv relies on a certain filestructure to be present.
 We would be converting the `.git/refs/` file system and including `.git/config` and then treating that like a branch.
 THIS MIGHT BE SIMPLER in git, since it would present like a genuine filesystem, and the implementation of gitkv gets a lot more relaxed.
 
