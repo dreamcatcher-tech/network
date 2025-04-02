@@ -134,3 +134,8 @@ Make two kinds of git fs object - one that handles only writes to objects, and t
 The metadata capable one depends on the object based one.
 
 When calling on git metadata, we are always interested in the tip, hence we need to query the db to get the latest versions.  But objects do not need this query.
+
+want to only start feting the meta head if we are asked for something that involves meta directly.
+ we should never need to use any context requiring functions.
+
+Functions that need context and should have context, they should wrap the pure version that needs only the blobstore.
