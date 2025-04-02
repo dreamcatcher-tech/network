@@ -24,3 +24,5 @@ since this is large binary unchanging data, we could store this as LFS-based chu
 This means that the torrent node needs to do nothing more than maintain connections with peers. These connections may be stored with an artifact to be able to understand more about the behaviors and health of the torrents as well as to provide some attribution to peers who are sharing them. 
 
 The LFS server can treat each chunk as a distinct thing, but it can also 
+
+Use other computers as storage to back artifact.  Set intelligent balancing goals using an AI to follow rules about where to store things and how to manage the state of the disks.
