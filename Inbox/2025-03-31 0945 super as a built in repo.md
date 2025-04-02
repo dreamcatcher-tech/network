@@ -148,3 +148,5 @@ Move all the git-kv related stuff, and the meta store check, out into a separate
 move the repo-store tests into being tests for the meta management tip.
 
 tip could be supplied with a scoped blobstore, to avoid it passing extra args around
+
+? should the artifact client not actually do flush, but rather push everything up to the server for flushing ?  Be good if we could emit objects up on the server as they arrive, so we can begin the job of adding them in ?
