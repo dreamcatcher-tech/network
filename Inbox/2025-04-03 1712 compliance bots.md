@@ -22,3 +22,9 @@ Also multinational, multi lingual.
 open a marketplace of service people who can do different tasks.
 
 Provide a clean data room for the info to be uploaded and checked.
+
+So we can keep you real time compliant.
+
+Can have an api, to combine with your own bots.
+
+Can run over all emails you send before they go out.
