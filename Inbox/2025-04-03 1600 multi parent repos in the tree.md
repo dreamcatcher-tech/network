@@ -5,4 +5,4 @@
 
 >[!danger] Depends: 
 
-This could be done by setting the parents, and then also setting some quorum rules.
+This could be done by setting the parents, and then also setting some quorum rules inside the child
