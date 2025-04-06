@@ -27,3 +27,7 @@ Very simple to make our own repos use the lfs protocol directly, but can also ma
 Ultimately, we should present LFS files as a conventional filesystem and under the hood use git so we can manage versioning and integrity and permissions.
 
 Given that the objects in LFS are simply objects with hashes, we could actually just store them within the repository object store just like any other object. This would require some nuances to the scrubbing or file system check run, but that's all easily doable.
+
+So then we could store the big, chunky lumps of data on Backblaze, which would be cheaper. 
+and then ideally we can allow people to connect up their own storage and their own computers to act as this LFS backing. 
+it works quite well for torrents because even if those things go offline, the system can just fetch the torrent directly. 
