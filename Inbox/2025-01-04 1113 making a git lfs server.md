@@ -25,3 +25,5 @@ https://github.com/milkey-mouse/git-lfs-s3-proxy simple js script that passes al
 Very simple to make our own repos use the lfs protocol directly, but can also make these files available using a traditional client, or they can download the files using the web and then push them into their own lfs server to connect up with the repo.
 
 Ultimately, we should present LFS files as a conventional filesystem and under the hood use git so we can manage versioning and integrity and permissions.
+
+Given that the objects in LFS are simply objects with hashes, we could actually just store them within the repository object store just like any other object. This would require some nuances to the scrubbing or file system check run, but that's all easily doable.
