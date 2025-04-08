@@ -12,3 +12,4 @@
 5. youtube premium - make our own video hosting platform
 6. heroku email for order management
 7. security camera uploads
+8. whatbox / plex
