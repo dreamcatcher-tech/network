@@ -13,3 +13,8 @@ so long as the token is set randomly, generate on the safe machine, and the decr
 
 If a separate fly.io org is set up, with independent billing, and separate keys, then having the keys stored anywhere other than Steve's computer is avoided.
 
+if fly could be deployed from the seedbox, then it could lift something off.
+
+but in the orgs, it is the same ? my personal account access them all ?
+
+the cli cannot read the secrets.
