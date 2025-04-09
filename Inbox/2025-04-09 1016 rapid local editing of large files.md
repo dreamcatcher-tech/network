@@ -29,3 +29,7 @@ Geospatial data, particularly realtime updated imagery is crucial.
 Battlefield information, particularly multimedia (drone footage, bodycam) needs to be streamed down as an agent zooms in on a specific area.  
 
 Caching the data close to where it was last accessed makes the discovery of it a little more network intensive.  Related data should be sought to be fetched, like the full file of something, or other files that are regularly accessed based on common patterns, where all nodes have agreed on what an average access pattern signature is, and they all prepare for it.
+
+Mapping system where the tiles are provided in this way means it is available offline, with the most recent info possible, and is very fast at the edge.
+
+	The dark edge blockchain.
