@@ -33,3 +33,5 @@ Caching the data close to where it was last accessed makes the discovery of it a
 Mapping system where the tiles are provided in this way means it is available offline, with the most recent info possible, and is very fast at the edge.
 
 	The dark edge blockchain.
+
+This becomes critical when running models at the dark edge becomes required - all equipment should be running at max output, and should take on jobs from everyone nearby.  This means rapid processing of visual data.  It should be a serverless battlefield.
