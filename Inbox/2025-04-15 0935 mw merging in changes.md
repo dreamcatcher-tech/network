@@ -16,3 +16,5 @@ Even just as a file browser, that would be very useful.
 
 
 So get diffs working, then get reconcile to work efficiently.  Try strip a bunch off since no longer doing sync.
+
+can we move the reconcile functions to be server side napps ?
