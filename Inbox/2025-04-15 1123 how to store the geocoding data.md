@@ -10,3 +10,7 @@ We cannot store it in the raw json records, since this info is clobbered by mone
 Could store a universal format of customer record, but this seems to complicate things.
 
 Store the geocoding, and any extra data, in a folder keyed by the customer ids.
+
+Then reassemble it when viewing it.
+
+Might present a fascade that composes the ideal object on the fly, out of stored pieces ?
