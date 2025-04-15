@@ -18,3 +18,5 @@ So its hard going for something that isn't that valuable.
 The front end  can be packaged up in formats like Electron or Android apps where the browser frontend still presents the visuals, and the heavier backend does the data storage and calculation. 
 
 Deeper means that all heavy calculations should occur on the server-side where it has direct low-latency access to data. The browser becomes almost completely dead in the water if it loses connection to the server. 
+
+The other option is to download ALL the data, and run all calculations locally, but this requires a step change when the data gets past some point in size, so hence it is best to run all operates thru the server.
