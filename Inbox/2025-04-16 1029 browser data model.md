@@ -30,3 +30,6 @@ results stream back down using filename only,
 
 
 server side search should process those items with cache hits first, so we can give relevant results quickly, with the heavier, slower results coming in after.
+
+ls should stream down and provide filenames ? 
+or, just stream down arrays of meta items.
