@@ -37,3 +37,6 @@ Have a special marker that says when the tree is not synced at a point, or will 
 Then call a function that prioritizes the sync of that portion if it is still syncing, or can set that piece to stay watched in sync.
 
 So basically the Mango query language should return these standardized objects that represent the file system after it has been processed by the query which means that even for just raw syncing the same mechanics apply and the same data structure applies. 
+
+seamless-immutable takes about 400ms when interacting with a 500k key object.
+whereas immutable-js would just eat that effortlessly.
