@@ -33,3 +33,19 @@ server side search should process those items with cache hits first, so we can g
 
 ls should stream down and provide filenames ? 
 or, just stream down arrays of meta items.
+
+take the ls in arrays, store them in a big map that is available via context, rather than passed as props, since this will always represent the latest version of the list.
+Or, just use a big object ?
+Or, use maps as directories, which hold files ?
+flag some paths as full sync, and others as lazy.
+Might store the files in localStorage of opfs ?
+
+If the opfs was the thing that was kept in sync, that might work better ?
+git commands are just keeping this thing in sync ?
+Then the access patterns become not so much our problem.
+But the issue is that now we are maintaining two things ? 
+Would be easiest to just maintain a single thing ?
+It is not as easily versioned ?
+we could use actual git here, and then just read off that ? with the fs being pullthru ?
+
+
