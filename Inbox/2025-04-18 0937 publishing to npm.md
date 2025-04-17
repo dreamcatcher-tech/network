@@ -18,3 +18,13 @@ The issue is the context package has many dependencies, and pulls in half the mo
 
 Schemas could be made a dedicated package, possibly part of the api.
 so could drop provider as a dependency.
+
+Then we can publish a react package that handles using the artifact object and turning it into a form that is easily consumed in the react paradigm.
+
+The reach package could include a vite server that we run to test and perfect the package.
+
+All other deps would be minimized, since we only need this npm package for the front end.
+
+Plus if we move flush to be server side, that removes a bunch of logic off browser ?
+
+context should publish the store component too, then we can have a separate unpublished package that is a react server that is set up to verify this thing is working before publish.

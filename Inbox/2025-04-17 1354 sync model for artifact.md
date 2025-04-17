@@ -41,3 +41,7 @@ pass in an extractor function that does some conversion on the raw binary file, 
 That should not affect everyone, but the metadata is the same for all.
 We just want back an object that has these transformed values, and holds it in sync.
 Have a function `isSynced()` to know when a binary is stale or in progress of syncing.
+
+When something is stale, it should still hold its last known value, but it needs to know that, from the parent, it was actually stale if the parent is stale, and so it can report its value by walking the top level tree down to itself.  The component needs to choose what to do - keep showing the old data, greyed out, or blank, and then when the new data arrives, insert it with a flash or something.
+
+This model should also be able to run in the CLI (for example, or anywhere where we might have need to synchronize locally with what is remote). 
