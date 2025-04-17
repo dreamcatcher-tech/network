@@ -24,4 +24,6 @@ subscribe( '.', { recursive: 3 } )
 
 It might be that there are distinct layers where we will have to accept some kind of translation. In the browser, simply because of the mechanics of React, we may have to translate from the Git style interface that is used on the server. Just like we had to translate from the Provider style interface at the backend to the Artifact style interface at the frontend, there is also a further translation to go into React mode.  It's almost like shifting between paradigms of computing.
 
-? should th
+? should the metadata sync be sparse too ? 
+sync() would give back the result, but subscribe would cause it to come down in the full tree ?
+context is appropriate since it is a global view and should be called from anywhere.
