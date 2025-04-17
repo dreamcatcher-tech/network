@@ -27,3 +27,17 @@ It might be that there are distinct layers where we will have to accept some kin
 ? should the metadata sync be sparse too ? 
 sync() would give back the result, but subscribe would cause it to come down in the full tree ?
 context is appropriate since it is a global view and should be called from anywhere.
+
+So start with a watch that watches the repo branch for commits.
+Then when you want a specific file, you ask for the sync, and wait until it has fully synced.
+read once is a subscribe, wait for the result to propogate to the state, then end the subscription.
+getting binaries, due to their unknown size, should be async.  Tree depth is always kind of known, but binaries could be terabytes in size.
+
+How to handle shards ?
+Need a config to say what paths are sharded ?
+
+? how to sync down the complete data as well, and stay synced ?
+pass in an extractor function that does some conversion on the raw binary file, like to text, to json, then thru a schema.
+That should not affect everyone, but the metadata is the same for all.
+We just want back an object that has these transformed values, and holds it in sync.
+Have a function `isSynced()` to know when a binary is stale or in progress of syncing.
