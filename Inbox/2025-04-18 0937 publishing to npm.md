@@ -33,3 +33,9 @@ test using pure npm as the vite bundler and see if we can import packages there.
 
 may need to move dotenv package out of helpers ?
 
+it would be nice if we could use deno with jsr natively
+but it might be best to bundle a full emit based npm package, so that it works in bolt.new or others ?  And this might make the packaging issue go away.
+
+checks for jsr issues:
+- blank project, then import @std members that import other @std members.
+
