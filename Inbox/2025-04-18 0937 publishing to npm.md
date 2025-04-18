@@ -39,6 +39,12 @@ remember that the import map can be used to heal or patch what deps are used.
 
 could start importing our packages one by one into the vite project, and see which ones break, so working up the dep stack.
 
+flush is a problem and should never be pulled in on the browser side.
+`deno info src/main.tsx` this is very useful
+
+Could try running the vite project inside the workspace ?
+
+
 
 
 checks for jsr issues:
