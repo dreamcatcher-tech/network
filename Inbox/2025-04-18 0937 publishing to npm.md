@@ -28,3 +28,7 @@ All other deps would be minimized, since we only need this npm package for the f
 Plus if we move flush to be server side, that removes a bunch of logic off browser ?
 
 context should publish the store component too, then we can have a separate unpublished package that is a react server that is set up to verify this thing is working before publish.
+
+test using pure npm as the vite bundler and see if we can import packages there.
+
+may need to move dotenv package out of helpers ?
