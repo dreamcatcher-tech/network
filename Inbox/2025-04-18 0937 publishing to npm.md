@@ -36,7 +36,10 @@ may need to move dotenv package out of helpers ?
 it would be nice if we could use deno with jsr natively
 but it might be best to bundle a full emit based npm package, so that it works in bolt.new or others ?  And this might make the packaging issue go away.
 remember that the import map can be used to heal or patch what deps are used.
-so if the problem truly is from 
+
+could start importing our packages one by one into the vite project, and see which ones break, so working up the dep stack.
+
+
 
 checks for jsr issues:
 - blank project, then import @std members that import other @std members.
