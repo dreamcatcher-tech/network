@@ -16,3 +16,5 @@ With internal cameras able to guide the drone when hitting a particular target, 
 Using RamJet may also allow it to change its cone into something more like a bell so that it can have a greater horizontal range at a very high speed. 
 
 Beared with this, a surveillance system that consists of stabilized cameras that can be pointed at certain things, as well as laser communications that are point-to-point communications, could build a form of surveillance and comms network using these drones, whilst also a platform from which to wait for making a strike. 
+
+drone resale for anti piracy defense.  power and control and recovery is attached to the drone tether, then it has munitions, delivers, then returns or is pulled in.

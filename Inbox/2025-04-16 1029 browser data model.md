@@ -48,4 +48,5 @@ Would be easiest to just maintain a single thing ?
 It is not as easily versioned ?
 we could use actual git here, and then just read off that ? with the fs being pullthru ?
 
+Do they even need this part, and could they just do with a clunky syncer ? a stinksync ?
 
