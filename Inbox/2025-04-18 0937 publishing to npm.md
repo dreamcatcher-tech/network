@@ -37,12 +37,16 @@ it would be nice if we could use deno with jsr natively
 but it might be best to bundle a full emit based npm package, so that it works in bolt.new or others ?  And this might make the packaging issue go away.
 remember that the import map can be used to heal or patch what deps are used.
 
-could start importing our packages one by one into the vite project, and see which ones break, so working up the dep stack.
-
 flush is a problem and should never be pulled in on the browser side.
+flush should be server side.
+
+Get to the point where we have a published page working, then start building the other parts ?
+
 `deno info src/main.tsx` this is very useful
 
 Could try running the vite project inside the workspace ?
+
+the store sync thing should have no react components and should run entirely as part of the context.
 
 
 
