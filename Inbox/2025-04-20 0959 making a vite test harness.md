@@ -18,3 +18,5 @@ We can also allow forking at certain test points, so test test test then fork to
 AI agents that can browse and compare screenshots to the previous version, as well as looping around when they find discrepancies.
 
 Strategy is to break down a page into features, and then systematically compare with the previous versions.  Possibly make a checklist that they dynamically create, that a human can curate.
+
+[[infrastructure repro]]
