@@ -18,3 +18,7 @@ having a direct connection between products and sensor data is key, allows us to
 Ambient attribution is a great model to set the price of things, so that profit can be charged respectably for some rather solemn and morally sensitive products and services.
 
 Hopefully can set up mfg cells, since those problems are just innovation problems themselves, where we can set up logistics, testing, rapid mfg, to get the loop speed up and make the items as well as test the items as close to the front line as possible, with high resilience since we can set up replacement units quickly, and hard to hit since small and mobile.
+
+A key weapon should be the auto-trigger, which is a device that mounts on any given gun and can control the trigger. It uses computer vision to understand, based on the motion of the gun and the recognized target and the motion of the target, when is the optimum time to pull the trigger. Human points at the trigger, and we take advantage of the natural wavering of the human so that eventually it will be at the precise firing point.
+
+Now we can set tunables for any given situation where the drone can wait for the perfect time or we can set a close enough ratio because the chances of us being able to paint across the target again are quite slim depending on if it's a close-quarters combat fight or if it's a drone that's coming in. We can look at the distance of the drone and say, "Well, we kind of need to be very precise here," or as it gets closer we can take more urgent shots. 
