@@ -73,3 +73,9 @@ pull down the latest commit
 update the next root oid
 begin the sync walk, but it just puts promises in a big map of oids to promises
 begin the pull from the server
+
+
+versions:
+1. raw pull of everything
+2. pull of diffs relative to prior commits
+3. filters on pulls, to reduce what gets synced
