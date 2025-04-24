@@ -62,3 +62,14 @@ So probably best way is to not render until we have fully synced, and then in th
 - high network load with individual requests
 - complicated to do the rendering in a compute efficient way
 
+Abandon gradual render.
+may make a cache to recover saved items quickly.
+or just pull down from server immediately.
+
+files read bulk, stream down results as they become available.
+
+arch
+pull down the latest commit
+update the next root oid
+begin the sync walk, but it just puts promises in a big map of oids to promises
+begin the pull from the server
