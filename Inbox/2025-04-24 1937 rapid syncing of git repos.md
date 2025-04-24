@@ -79,3 +79,9 @@ versions:
 1. raw pull of everything
 2. pull of diffs relative to prior commits
 3. filters on pulls, to reduce what gets synced
+
+on the client side, we _could_ rely on the server side order ? or if we don't, then we can just do our own walk, with the server sending things as fast as it can ?
+
+When building next, we would keep a map of meta objects, and when we find something from the previous tree that is the same, we pull that in based on its oid.
+
+periodically, every 200ms or so, the syncer would update the store with where its walk was up to.
