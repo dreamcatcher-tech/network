@@ -40,4 +40,11 @@ we could make it streaming system by default anyway, and then just emit things ?
 in the store, to ease the graphics burden, we could just present the new root only after it had been fully synced, since that might take no time.
 Or, we make the next root available, but it shows as next, and when its done, it replaces the current root in a single shot.
 
-triggering rerenders 
+triggering rerenders when there are new blobs - just spread the state.
+but it should only trigger if a file watch is triggered, so it would need to register the watch on the store, and then we would check if it was fulfilled.
+
+We need caching anyway, so this could make the whole process a bit better.
+So caching first.
+Then a diffing end point on the server.
+
+
