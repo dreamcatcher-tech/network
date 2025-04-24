@@ -17,3 +17,4 @@ It's almost like there should be a library for this dedicated purpose. It should
 It should:
 - be able to always surface as much data as it has received from the wire. 
 - Cache all of the objects that are pulled down in a weak, easily ejected way making use of the browser cache mechanism. 
+- be able to lazy load, where it doesn't load items until it needs them, basically paginating with a cursor

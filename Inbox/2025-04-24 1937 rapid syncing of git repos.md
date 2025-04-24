@@ -39,3 +39,5 @@ we could make it streaming system by default anyway, and then just emit things ?
 
 in the store, to ease the graphics burden, we could just present the new root only after it had been fully synced, since that might take no time.
 Or, we make the next root available, but it shows as next, and when its done, it replaces the current root in a single shot.
+
+triggering rerenders 
