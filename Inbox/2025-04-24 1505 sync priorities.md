@@ -11,6 +11,8 @@ reading huge numbers of small files is bad.
 
 no caching is really bad.
 
+not able to prioritize downloads is bad - we are always blocked behind bulk background data.
+
 could pull a whole commit, and say we already have some other one, so the server doesn't double send
 
 pull only objects that are newer than x

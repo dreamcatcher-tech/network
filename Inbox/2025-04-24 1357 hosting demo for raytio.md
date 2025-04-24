@@ -8,3 +8,5 @@
 create a user account
 store some PII - just show some utility
 download the user repo with full history - show verified commits in github
+
+show migration to a second host provider
