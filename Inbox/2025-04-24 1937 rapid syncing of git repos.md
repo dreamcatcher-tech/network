@@ -54,3 +54,10 @@ cache only when the blob store is changed in the syncer ?
 cache tree and meta requests as well ?
 
 If we could test without the store updates and render updates ? it might be slow for other reasons.
+
+CustomerTable is choking the thread, which is why the downloads take so long.
+
+So probably best way is to not render until we have fully synced, and then in the background, we only sync the full updated tree, rather than these intermediary states because:
+- complicated to do the walking of
+- high network load with individual requests
+- complicated to do the rendering in a compute efficient way
