@@ -6,4 +6,5 @@
 >[!danger] Depends: 
 
 create a user account
-store some PII
+store some PII - just show some utility
+download the user repo with full history - show verified commits in github
