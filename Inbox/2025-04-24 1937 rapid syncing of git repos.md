@@ -61,3 +61,4 @@ So probably best way is to not render until we have fully synced, and then in th
 - complicated to do the walking of
 - high network load with individual requests
 - complicated to do the rendering in a compute efficient way
+
