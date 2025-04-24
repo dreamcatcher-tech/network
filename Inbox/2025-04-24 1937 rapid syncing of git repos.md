@@ -47,4 +47,10 @@ We need caching anyway, so this could make the whole process a bit better.
 So caching first.
 Then a diffing end point on the server.
 
+BUT individual requests will rarely be done if we pull down the whole diff directly ?
 
+Could persist the whole store ???????
+cache only when the blob store is changed in the syncer ?  
+cache tree and meta requests as well ?
+
+If we could test without the store updates and render updates ? it might be slow for other reasons.
