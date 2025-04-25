@@ -87,3 +87,6 @@ When building next, we would keep a map of meta objects, and when we find someth
 periodically, every 200ms or so, the syncer would update the store with where its walk was up to.
 
 dirs are just arrays of metadata entries.
+
+insead of a root structure that is linked, could just go with flat oids and the clients build this up as they need it ?
+Be nice to have the directory structure be stably cached independent of blob contents changing
