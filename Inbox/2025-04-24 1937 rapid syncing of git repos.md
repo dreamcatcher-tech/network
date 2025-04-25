@@ -85,3 +85,5 @@ on the client side, we _could_ rely on the server side order ? or if we don't, t
 When building next, we would keep a map of meta objects, and when we find something from the previous tree that is the same, we pull that in based on its oid.
 
 periodically, every 200ms or so, the syncer would update the store with where its walk was up to.
+
+dirs are just arrays of metadata entries.
