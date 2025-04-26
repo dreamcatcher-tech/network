@@ -108,3 +108,5 @@ Client side, we should maintain a list of all the customers, which we patch each
 We figure out what changed in the new tree, and we update only those items in the list.
 
 Then when we are filtering that list, we do so lazily, so we old pull thru as much of the list as we need to.  This could be just a big map, and the order is done as a separate pass, since we don't know what the sort operation will be at each point.
+
+Simplest way is to rebuild the array list fully whenever something changed at first, since this should be quick, and we can insert yield points so it goes faster.  We could walk the shards specially, and yield after each shards additions have been made.
