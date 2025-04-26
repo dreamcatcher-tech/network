@@ -90,3 +90,21 @@ dirs are just arrays of metadata entries.
 
 insead of a root structure that is linked, could just go with flat oids and the clients build this up as they need it ?
 Be nice to have the directory structure be stably cached independent of blob contents changing
+
+> meta objects are simply the directory entries of the parent
+
+We can avoid any kind of browser side structure, and just treat the trees and blobs as full, then look them up based on their oid.
+
+The store only handles when a new root has been added.  While building, the same logic can still walk the new root, using two maps.  So it knows what is new and what is old ?
+Or, use the same server side diff logic to know what parts of the tree have changed quickly.
+
+Rapidly calculating diffs between two commits
+This seems doable by looking at the trees, not necessarily the oids.
+crucially, it doesn't need to wait until all the trees are walked, as it can start sending diffs immediately.  But it should look to abort some sends if later down the tree it is discovered that a certain object is a repeat.
+
+Then while sendint, we hold a list of oids and remove duplicates.
+
+Client side, we should maintain a list of all the customers, which we patch each time something new comes in, rather than generating a fresh.
+We figure out what changed in the new tree, and we update only those items in the list.
+
+Then when we are filtering that list, we do so lazily, so we old pull thru as much of the list as we need to.  This could be just a big map, and the order is done as a separate pass, since we don't know what the sort operation will be at each point.
