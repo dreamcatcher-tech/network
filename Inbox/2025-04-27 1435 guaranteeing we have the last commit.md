@@ -25,3 +25,7 @@ This would mean our load time for the next page load would be very quick.
 
 OPFS is shared between pages, so any page would see the same thing.
 Perhaps a leader should be nominated to write to the disk, so that two pages don't attempt to overwrite each other ?
+
+writing the msgpack messages straight to disk would be idea ? less processing.
+could pass back the msgpack item attached as a symbol to the object we parsed in ?
+or we can allow the msgpack stream to be tapped ?
