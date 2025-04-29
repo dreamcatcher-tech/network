@@ -8,3 +8,7 @@
 The slow types mean we do not generate type definitions, and then jsr doesn't publish consumable pacakges for typescript.
 
 So we need dnt in the meantime.
+
+Generate the types using a tool.
+
+if we move the web packages to all be in a single package, this saves hu
