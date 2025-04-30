@@ -11,4 +11,8 @@ So we need dnt in the meantime.
 
 Generate the types using a tool.
 
-if we move the web packages to all be in a single package, this saves hu
+if we move the web packages to all be in a single package, this saves doing the weird bundling step
+
+then if slow types are removed, jsr package might be usable directly.
+
+if jsr can be used directly, then 

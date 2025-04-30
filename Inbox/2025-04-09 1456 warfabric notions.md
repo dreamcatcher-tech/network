@@ -21,4 +21,9 @@ Hopefully can set up mfg cells, since those problems are just innovation problem
 
 A key weapon should be the auto-trigger, which is a device that mounts on any given gun and can control the trigger. It uses computer vision to understand, based on the motion of the gun and the recognized target and the motion of the target, when is the optimum time to pull the trigger. Human points at the trigger, and we take advantage of the natural wavering of the human so that eventually it will be at the precise firing point.
 
-Now we can set tunables for any given situation where the drone can wait for the perfect time or we can set a close enough ratio because the chances of us being able to paint across the target again are quite slim depending on if it's a close-quarters combat fight or if it's a drone that's coming in. We can look at the distance of the drone and say, "Well, we kind of need to be very precise here," or as it gets closer we can take more urgent shots. 
+Now we can set tunables for any given situation where the drone can wait for the perfect time or we can set a close enough ratio because the chances of us being able to paint across the target again are quite slim depending on if it's a close-quarters combat fight or if it's a drone that's coming in. We can look at the distance of the drone and say, "Well, we kind of need to be very precise here," or as it gets closer we can take more urgent shots.  
+
+There is a data deluge coming.  The modern war machine produces vast data.  many items are constructed without docs and without handover, whilst at the same time, huge amounts of money are spent, with very little oversight.
+
+The ability to conduct rapid polling of citizens, votes, rapid new info - this is critical.
+Being able to inventory the whole nation, continously, this is vital in the new theatre.  A nation prepping for war, should suffer no inconveniences - in fact they should have an improved quality of life - a better digital life than they have right now.
