@@ -15,4 +15,6 @@ if we move the web packages to all be in a single package, this saves doing the 
 
 then if slow types are removed, jsr package might be usable directly.
 
-if jsr can be used directly, then 
+if jsr can be used directly, then we can publish it direct to npm.
+
+need to make some type tests that affirm the zod schemas match the ts schemas.
