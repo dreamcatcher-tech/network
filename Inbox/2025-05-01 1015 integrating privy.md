@@ -23,3 +23,8 @@ When they dispatch actions, the actions would have their legitimate DID within i
 Then, when the action is set to target the CRM repo, the receiving system would check the action against the auth settings in the repo. To read the auth settings in the repo, it would also check the parent tree to see if any of the parents provide actions that can be merged down to determine what this action should be. 
 
 The permission system can be tested as a tree of JSON objects that we can write simple tests for. And then all it changes when we deploy it against the repositories is the mechanism of walking or retrieval. So if we just abstract what walk means, then we can go through and merge permissions up the tree. 
+
+We can run the test env for hamr on the same space as test for general dreamcatcher, with access control in privy contolling who can access which system.
+
+the hamr ui can probe the main repo for access and can request it if it doesn't have it.
+stucks might be a good message format to request access.  This should be a platform managed service almost ?
