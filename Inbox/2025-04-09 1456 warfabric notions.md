@@ -25,5 +25,9 @@ Now we can set tunables for any given situation where the drone can wait for the
 
 There is a data deluge coming.  The modern war machine produces vast data.  many items are constructed without docs and without handover, whilst at the same time, huge amounts of money are spent, with very little oversight.
 
+This will present a shock at the front line where the data will overrun the ingestion, and people will start resorting to overflow tactics like massive buckets and lakes. Processing this at a rapid rate securely, confidently, reliably, and accurately - this is big business. That queue processing where you may not be able to hit every job, but you just can hit more and more and more. That's the key. 
+
+So even just moving away from individual inboxes and going to a global inbox where everyone else's inbox is a subset of it, but the messages are task-related, means that people can easily take over from other people and act on behalf of them rather than asking people to afford stuff around and send it along. It's just this is the come ponies email inbox they can be tiered to different privacy settings depending on what different concerns are like health-related matters or pricing related or things like that. But this can also be filtered per message so the message can be transformed to blank out the sensitive data and still retain the useful information. 
+
 The ability to conduct rapid polling of citizens, votes, rapid new info - this is critical.
 Being able to inventory the whole nation, continously, this is vital in the new theatre.  A nation prepping for war, should suffer no inconveniences - in fact they should have an improved quality of life - a better digital life than they have right now.
