@@ -18,3 +18,5 @@ Running some code that executes live while its coming in is possible too, if you
 repos should be able to purchase an ipv4 address from the infrastrcutre, so that everything on that address will be processed by the infrastructure.
 
 This means the ai should be able to spin up a web address and receive anything at all.
+
+use enveloop as the outbound relay, since this seems to run on fly and integrate naturally.
