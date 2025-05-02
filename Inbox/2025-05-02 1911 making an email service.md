@@ -14,3 +14,7 @@ It can be treated like an external incoming action stream.
 People can have sub-dns names, so they can have their own wildcard rules.
 
 Running some code that executes live while its coming in is possible too, if you register the napp, and then when the incoming socket comes in, we'll trigger this piece of code for you, which is running as a side effect.
+
+repos should be able to purchase an ipv4 address from the infrastrcutre, so that everything on that address will be processed by the infrastructure.
+
+This means the ai should be able to spin up a web address and receive anything at all.

@@ -24,6 +24,11 @@ Billing admin is a great one if we could set the ability to pay for the repo's a
 
 Stucks and solutions need to be handled for a repo too, since whilst stucks are global, the repo pins itself to some specifically, as well as solutions, and it can issue them / sign them, so that ability is important, being able to change such a thing.
 
+role defs should say what they copied from, and maybe point to a top level commit ?
+or just write out the json, then allow editing on a per repo basis.
+
+May be best to exclude groups, since that could get complicated ?
+
 Need a table like this, but for our permissions:
 
 | Permission                 | Read | Triage | Write | Maintain | Admin |
