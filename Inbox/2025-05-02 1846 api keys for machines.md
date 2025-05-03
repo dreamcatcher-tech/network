@@ -23,4 +23,8 @@ maybe we can sign the actual actions themselves, if we only had one off signing 
 maybe oauth can be used to provide a valid signing key, and we sign every message ?
 or just sign using the in browser wallet.
 
-we will load as one
+we will load as one of the subject or other keys the repo that the machine is registered to
+before doing any checking or verification.
+we will set its type as a machine key, and will switch in how we check it.
+
+If the key is registered against the repo, then we will load up the did:key and extract out the 
