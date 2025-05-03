@@ -15,3 +15,6 @@ What about making the machine its own issuer, so it generates a key pair and sto
 
 machine id is its public key.
 all updates to soul branch must be via actions and not by blob writes + commits
+
+machines generate a self evident did
+they can generate an issuer function that always gives back a valid token.
