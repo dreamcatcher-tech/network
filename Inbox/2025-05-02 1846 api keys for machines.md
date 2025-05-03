@@ -18,3 +18,9 @@ all updates to soul branch must be via actions and not by blob writes + commits
 
 machines generate a self evident did
 they can generate an issuer function that always gives back a valid token.
+
+maybe we can sign the actual actions themselves, if we only had one off signing mechanisms ?
+maybe oauth can be used to provide a valid signing key, and we sign every message ?
+or just sign using the in browser wallet.
+
+we will load as one
