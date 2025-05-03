@@ -14,3 +14,7 @@ This is the place to go to stay up to date with container images:
 https://github.com/actions/runner-images
 
 then we just deploy these as the foundation for what napps run on.
+
+gvisor seems the way to run multiple processes.
+not just for deno but also for any other language.
+can run many of these in each machine, which means we can pack the machines more densely.
