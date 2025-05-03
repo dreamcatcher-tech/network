@@ -27,4 +27,6 @@ we will load as one of the subject or other keys the repo that the machine is re
 before doing any checking or verification.
 we will set its type as a machine key, and will switch in how we check it.
 
-If the key is registered against the repo, then we will load up the did:key and extract out the 
+If the key is registered against the repo, then we will load up the did:key and extract out the public key which we use as a verification method.  If we did not have it, then we should do a sync check to see, but if we did have it and it worked, then we accept it, if we did have it and we didn't do it then we try a sync read and try again.
+
+This is no weaker than using refresh tokens for the machines and is even stronger than just using an API key. This system needs to hold the safe; it's even better than that because possession of the API key is sufficient, but here you need to possess the private key, which is never left if the machine. 
