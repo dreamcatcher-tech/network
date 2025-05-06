@@ -16,3 +16,7 @@ the agents working memory could be just a fork of their filesystem, or some dedi
 One use case is inserting stucks lookups in the reasoning steps so the model is agentically looping over all the knowledge of the platform.
 
 people should be able to fork the agent and modify and test easily.
+
+permissions for napps and agents should be the same as for people.
+role that allows execution of apps is granted.
+seems no point to let people execute only some apps ?
