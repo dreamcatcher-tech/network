@@ -70,3 +70,6 @@ Initially, it might help to get the AI to lay out your requirements after chatti
 we should be able to set some rules for just a particular file. So you're just making short-lived rules that are well-scoped to only the files that you're dealing with, so that you can describe a pattern that you'd like applied repeatedly. 
 
 If we try to craft code that is extremely simple, that acts like a little seed that can be built upon, it is easier to add a feature to a structure that is already present. Asking for the structure itself is inviting trouble. 
+
+use knip.dev to periodically analyze what code can be removed from the codebase.
+`npx knip --production --fix --allow-remove-files`
