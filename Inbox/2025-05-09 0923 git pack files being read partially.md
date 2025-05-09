@@ -13,4 +13,4 @@ if we set the pack sizes right, this can be quite efficient.  We need to avoid h
 
 the latency would be epicly low if we packed all the time.
 
-a commit could be designed 
+a commit could be designed to do a repack every time, since this makes syncing easier, and costs about the same in terms of costs, since data doesn't cost, but writes and gets do, plus total size would be less, since the larger file compresses better.
