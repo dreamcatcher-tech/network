@@ -16,7 +16,7 @@ From the [Wikipedia Page](https://en.wikipedia.org/wiki/Project_Xanadu#Original_
 14.  Every document is automatically stored redundantly to maintain availability even in case of a disaster.
 15.  Every Xanadu service provider can charge their users at any rate they choose for the storage, retrieval and publishing of documents.
 16.  Every transaction is secure and auditable only by the parties to that transaction.
-17.  The Xanadu client–server communication protocol is an openly published standard. Third-party software development and integration is encouraged.'l
+17.  The Xanadu client–server communication protocol is an openly published standard. Third-party software development and integration is encouraged.'
 
 Closest approximations have been limited prototypes like OpenXanadu or offshoots (Udanax) and some decentralized hypermedia efforts, but none fully realized the original vision. Key issues include persistent, globally unique document addressing; dynamic transclusion at scale; secure micropayments and complex royalty structures; and universal access control. The complexity and overhead of maintaining stable links, ensuring stable identity, and handling real-time document royalties have been the main roadblocks. With advancements in distributed storage (e.g., content-addressed systems like IPFS), secure identities, and integrated micropayments (e.g., blockchain-based solutions), some of these challenges could be revisited and potentially solved.
 
