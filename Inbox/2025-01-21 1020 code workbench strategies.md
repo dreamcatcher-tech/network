@@ -73,3 +73,7 @@ If we try to craft code that is extremely simple, that acts like a little seed t
 
 use knip.dev to periodically analyze what code can be removed from the codebase.
 `npx knip --production --fix --allow-remove-files`
+
+There should be several background tasks that are always running on each repo. One of them is the cleanup where it looks at what changes have been applied and makes sure that it is cleaned up after itself and also modified in the areas that are similar or affected by the change, like renaming of UI elements and things like that. 
+
+Another process would be the refactorer that is always looking for long items or code that's not following good form. It should be configurable with the user's preference as to what good form means, but it would be coming up with suggestions and then trying to refactor the code to fit. 
