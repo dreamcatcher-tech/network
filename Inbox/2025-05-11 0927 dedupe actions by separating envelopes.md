@@ -25,4 +25,17 @@ Further space could be saved by making the nonce be in the file name of the acti
 
 The amount of hashing and data storage is still pretty much exactly the same. It's just got better alignment with the rest of the system. There's no special boundary jump where we have to take the files and treat them like a Git object. It's just literally a folder on the disk, and that is what represents the action. 
 
-Is the data format of an action then the exact same data structure as a stuck? 
+The channel of actions coming in from any other repo can be just simply a sharded folder where the names of the repo of the actions are simply their order of arrival.  Then when new actions come in, this is simply a Git patch, and so we only need to sign the commit that holds the folder. The size is unlimited because of the sharding, and it's also browsable by the other tools. As well, when files are being passed around with actions, they are first-class kit objects and so can be browsed as such.
+
+
+> Is the data format of an action then the exact same data structure as a stuck? 
+
+How would transclusions work in Git? There is no data structure within Git that can point to another Git object. We would have to parse the git structure in the same way as git annexed us. There are two options for doing transclusion:
+
+1. The full fat link can be in each document in a format that gets resolved
+2. The transclusion links in the document point to a standard folder in the repo or branch that has the full fat transclusions and any transformations
+
+A transclusion becomes a pointer to a range of bytes and some kind of transform optionally. They can also be pointed to as reference or induction or retrieval.
+
+The transclusions can actually be seen as a form of rag or citations or annotations that were used in the generation by the AI. The AI should generate these automatically, but humans can have some assistance to generate what the references actually were based on their browser history or based on the bot finding similarities.
+
