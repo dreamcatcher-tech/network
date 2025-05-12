@@ -77,3 +77,7 @@ use knip.dev to periodically analyze what code can be removed from the codebase.
 There should be several background tasks that are always running on each repo. One of them is the cleanup where it looks at what changes have been applied and makes sure that it is cleaned up after itself and also modified in the areas that are similar or affected by the change, like renaming of UI elements and things like that. 
 
 Another process would be the refactorer that is always looking for long items or code that's not following good form. It should be configurable with the user's preference as to what good form means, but it would be coming up with suggestions and then trying to refactor the code to fit. 
+
+When doing a particular task, we should be able to learn how to segregate or isolate parts of the project so we can focus in on it. The idea is that we would use a cheap, large window model to identify which folders are in scope for what we want to change and then we drill down and only load those bits into the expensive model.
+
+To aid this, we should have a background task that is constantly trying to refactor the project so that it can be scoped like this. We need to get away from having one big massive project and help structure it so that the machines can focus which also helps the humans comprehend the changes being applied. That means that an agent can be unleashed on a very focused part of the codebase as well as some tasks being done in parallel. 
