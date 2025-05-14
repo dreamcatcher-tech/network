@@ -20,3 +20,5 @@ this store could be stored in a repo, or it could be streamed around with viewer
 so you would open a window, and then in the account menu, you would select the broadcasting app, it would have access to your friends list, then you pick who you want to share too, or just make it generally available.  Possibly you could record the session too.
 
 so the store that the overall app uses would be the same as a widget store, making itself be an actual widget too.
+
+be useful to 
