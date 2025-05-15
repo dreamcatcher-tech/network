@@ -21,4 +21,7 @@ so you would open a window, and then in the account menu, you would select the b
 
 so the store that the overall app uses would be the same as a widget store, making itself be an actual widget too.
 
-be useful to 
+if you were streaming someones session, then if they shared the widget and the access to the data with you, then you should be able to recreate it ?
+show where their mouse is as a bonus that gets streamed to you as another channel.
+
+stream the current widget dimensions, scrolls etc, if you want to see 

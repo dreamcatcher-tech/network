@@ -42,3 +42,26 @@ can be told what a scope is, or can chroot style just hide from the widget what 
 seems easier just to pass it down.
 
 export a frame component that will handle all the frame rendering bits and pieces.
+
+to render a widget, push in a message requesting a render.
+rendering a different widget should be just another message ?
+we need to pass props, so the render contains the props.
+new props causes the component to rerender.
+
+widgets would have a helper component that listens for the messages from the parent frame.
+the full page should be built up from data from the parent frame.
+
+first pass would just pull in html directly
+page helper would store dev credentials for testing purposes with a real backend.
+so build in gh on push, storing data in a branch, or in the main branch, and then fetch it from raw content ?
+or sync down into a repo on platform, and load from there ?
+
+webhook the git repo in artifact.
+pull in the latest changes.
+trigger a napp to run and do the build for the changed files - this could use isogit to check out to the actual disk of the container running the job.  then run vite build.  then store dist in artifact.
+or, use ghactions to upload to artifact in a releases branch, or in a temporary registry napp.
+ghpages build then frame it.
+
+if we are the top frame, render a helper.
+
+if not, render the page in itself as an iframe.
