@@ -72,3 +72,7 @@ iframe down the privy component, then iframe the widget inside this authed frame
 gh pages the widget, then if it loads as top level, show a default page to connect up a backend.
 if not top level, then you should just render widgets, or if we pass in a special code.
 else we will load up the privy auth wrapper, that will then load the page origin again, but inside a frame, after auth has passed.
+
+Make a static page that can load the dev server in an iframe, and can provide debug info for the actions flowing over the artifact channel to help the ai debug, as well as synthesize what's happening for test purposes.
+
+stream out the mouse and typing from the widget, unless the widget doesn't want to.
