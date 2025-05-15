@@ -34,3 +34,11 @@ easiest way right now is just to allow the parent to relay the artifact messages
 or let the frame talk direct to the api ?
 maybe give the api a scoped token ?
 send the message over raw, check if it matches the scope, then send it on if so.
+
+a widget would expect a frame client rather than the web artifact.
+
+can be told what a scope is, or can chroot style just hide from the widget what the scope is ?
+
+seems easier just to pass it down.
+
+export a frame component that will handle all the frame rendering bits and pieces.
