@@ -65,3 +65,10 @@ ghpages build then frame it.
 if we are the top frame, render a helper.
 
 if not, render the page in itself as an iframe.
+
+
+iframe down the privy component, then iframe the widget inside this authed frame, avoiding downloading privy at all.
+
+gh pages the widget, then if it loads as top level, show a default page to connect up a backend.
+if not top level, then you should just render widgets, or if we pass in a special code.
+else we will load up the privy auth wrapper, that will then load the page origin again, but inside a frame, after auth has passed.
