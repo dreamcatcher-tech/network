@@ -17,3 +17,7 @@ scopes should just be an array, and the widget should be made aware of its scope
 the widget store, where many widgets display what they can do, that is browseable by an ai agent, so the agent can try them out.
 
 this is the foundation of jitters, where apps are rapidly composed on the fly, and with a little longer, a custom app that suits your needs well is developed entirely by the ai since the lego connectors were easy.
+
+The interface may also pass in render hints so that if the frame would have presented a scrollbar, for example, we would prefer that to appear within the parent element. Once we've hit that limit, we can refuse to go any lower. 
+
+there's almost another interaction, which is the browser layout interaction piece, that does some comms to and from the host page, if it wants it, to keep things cooperative.
