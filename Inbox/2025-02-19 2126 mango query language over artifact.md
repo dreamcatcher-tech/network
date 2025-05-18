@@ -152,3 +152,5 @@ await app.extract([
 We should be able to do data matching tasks, where you have columns that need to be matched up with items on the other side. This should be able to be done in parallel, or making an intermediate table, which can be continually updated in red as multiple iterations are done, sort of like how bubble sort works. So these strategies of how the processing can unfold can be selected and different ones can be tried. 
 
 Then if we can run the whisper model as a big query, then we could show doing parallel transcription jobs on a big audio file using the mango language.
+
+We should make it so that it can also search its history, so an ai that wants to make some changes can look thru history for similar tool calls, and see how they went, so it can concoct some experiments to try something in an isolated branch, so when it acts it can act with confidence.  In fact its actions can be considered before being committed, rather than done and then hoping it worked correctly.
