@@ -16,3 +16,5 @@ should be able to deny it, ask if unsure, and then it should be sticky or tempor
 show denials in the ui, so that user can go back to it, change the permission, and rerun it.
 
 a permission is to ask if it can change the scope or list scopes too.
+
+permissions requests can come from people in a group chat too, if they are browsing some context you shared, and they would like more information.  this can be default denied, or managed by some measure of trust, like only people you know can do this.
