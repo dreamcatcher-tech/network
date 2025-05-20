@@ -33,3 +33,8 @@ passing a widget around as a transclusion is the same as data, it's just that re
 because hyperlinks are not a thing / object, they are simply a string with no checksum, no integrity, no intelligence, and no first class means of passing data along - they do not contain any data except their face value.
 
 make some convention for how to refer to urls in context.  can leave them as mutable, or can include a hash to a crawled snapshot of them, which we pool into a unified view, to solve the problem that the links purposefully mutate underneath us since we are viewing an application in a completely unreproducible state.
+
+A transclusion could represent any snapshot of state.  Commits a specific repo states, but transclusions can transcend any one commit, either broader or narrow, or multiples.
+An exact transclusion would be equal to a primitive, like a commit or a repo - these might be bare transclusions perhaps.  It manages relationships between multiple things, and can represent a processing pipeline too, so they can be chained together, these contexts.  The transclude represents a relationship between things.  A link then, is to point to a transclude, which in turn points to other information.
+
+Is a stuck just a transclusion with a little snippet of a stuck in it, where the rest of the context is all about what supports the stuck.

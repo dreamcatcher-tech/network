@@ -39,8 +39,16 @@ If be a frame, then it cooperates with the parent.  If use a frame, then it writ
 Or, should the parent be the only thing that uses the parent module ?
 
 ```tsx
-<Harness>
-
-
+<Harness url='https://artifact.com' privyAppId='1234' hidden>
+	<ArtifactFrame>
+		// rest of the app ?
+	</ArtifactFrame>
 </Harness>
 ```
+
+If it doesn't have any of these tools, then it can do either a mock mode, or will show the dashboard.
+`hidden` makes the dashboard hidden.
+`Harness` presents a frame message protocol parent to the child
+Or, we could make the harness be the base artifact provider.
+
+Harness could 
