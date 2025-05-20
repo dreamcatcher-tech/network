@@ -14,10 +14,14 @@ The would include context changing, and some free form data.
 so a standard format for scope, and some freeform json for anything else that might be asked for - like state.
 
 So the privy widget would send up typed messages with payloads
-1. state
+1. state / custom data objects
 2. context which lists selection order and names primary selection by integer
 3. navigateTo
 4. artifact
+
+it would receive down:
+1. show - sends down the scope to present on screen
+2. diff - an array  
 
 State is a side channel where widgets can be made to communicate with each other. A prime example is when privy needs to pass back the login information that it has. It would send it to the parent using a state transfer. 
 But this might not be within scope for the comms system, although I guess it might as well be. 
@@ -49,4 +53,13 @@ widget should advertise if it can to in chat versions / brief versions of itself
 the versions should be split in to full board, or partial / dynamic sizeable items.
 
 advertise if diff capable.  or just make it a message type that sends in arrays to diff the target with.
+pull in privy by dynamic import, but pull in the types as a statically analyzable dynamic import, or make it part of the package.
 
+by far the easiest path is a wrapper component that goes round the outside of any widget. 
+this can be the top level wrapper of all widgets, and in production it can render its children
+
+another version can render all the components directly, without being in a frame, but it still handles the privy login stuff.
+
+the privy stuff is what will be slowing bolt down too.
+
+make the iframe background transparent, and have some test widgets like a storybook.
