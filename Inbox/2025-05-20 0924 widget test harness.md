@@ -27,3 +27,20 @@ If exporting a react component, would be best to export to npm, due to jsx issue
 
 but if we could export the GUI for the harness separately to the actual project that did the harness piece itself ?
 The frames can nest several levels without loss, tho ?
+
+Definitely not exporting from the main artifact system tho - that just exports a framer that holds a widget in a frame.  Widget creators would import the framer to wrap their widgets, and then they would also wrap the harness up top, which would disappear itself during production.
+
+The Harness is a separate project, meant to ease developement of these widgets.
+
+We could start it off as just a starter project, then turn it into something that gets imported from a registry.
+
+Framer could be configured via props to use a frame or be a frame.
+If be a frame, then it cooperates with the parent.  If use a frame, then it writes its children in a parent ?
+Or, should the parent be the only thing that uses the parent module ?
+
+```tsx
+<Harness>
+
+
+</Harness>
+```
