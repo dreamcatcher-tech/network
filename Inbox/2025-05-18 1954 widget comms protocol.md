@@ -69,3 +69,9 @@ The Framer would be the thing that handles private login and sets up Artifact, c
 Additionally, we can publish an independent package that can sit inside of the Framer. Or can wrap around the outside that can represent the development environment or the debugging panel where you can sit a URL of the Artifact you connect to. You can see its sizing information like mobile, tablet desktop. You could see the message flow in and out of the widget. You could see the context that was being set. You could see it scopes to pass in diff options to pass in so that you can see it in your own. 
 
 So then the framer would pass down some extra props that would allow you to change the URL, change the privy app ID. 
+
+```tsx
+<ArtifactFrame>
+	
+</ArtifactFrame>
+```
