@@ -51,4 +51,5 @@ If it doesn't have any of these tools, then it can do either a mock mode, or wil
 `Harness` presents a frame message protocol parent to the child
 Or, we could make the harness be the base artifact provider.
 
-Harness could 
+Harness should be able to disappear if it finds itself in a frame.
+Pass itself a prop to say when its running itself as a child ?
