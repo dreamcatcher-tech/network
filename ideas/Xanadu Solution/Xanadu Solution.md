@@ -15,7 +15,7 @@ They are special in that they are content that can generate more content - a Pro
 Content itself is merely the past states of Processes
 
 We need to redefine server as:
-> 
+> a git repository
 
 ## Folders cannot contain information
 
@@ -46,6 +46,7 @@ Healing the web by backfilling transclusions when they are not there.
 
 We can use their EDL format to store references inside the state of chains.
 
+may try talk to Jeff Atwood about our Xanadu pitch, since he seems to understand the situation quite well: https://blog.codinghorror.com/the-xanadu-dream/
 ## Transclusion as attribution trees
 If the transclusion format was used as a way to attribute back to owners, then we can start paying for code, but also for any kind of information.  It can be applied to physical items too.
 

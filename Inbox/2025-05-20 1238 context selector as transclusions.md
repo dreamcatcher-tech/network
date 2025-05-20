@@ -29,3 +29,5 @@ A Transclude might include a widget, and so when you pass the Transclude around,
 user could turn off widget display, and could toggle it on and off if they liked.
 
 passing a widget around as a transclusion is the same as data, it's just that rendering it is running it, which is no different to a document viewer.
+
+because hyperlinks are not a thing / object, they are simply a string with no checksum, no integrity, no intelligence, and no first class means of passing data along - they do not contain any data except their face value.
