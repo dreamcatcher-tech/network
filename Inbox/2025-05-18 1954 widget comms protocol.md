@@ -80,3 +80,4 @@ is it just an artifact scope component ?
 can the scoped version handle the ui concerns ?
 
 if we made the starter pack with the framed ui built in, then it might be simpler ?
+rendering a frame means passing down the props we want to send in ?
