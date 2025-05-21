@@ -10,3 +10,8 @@ when anything changes, like address, or pickup frequency, then we can know that 
 can flag new customers.
 
 run book format, seems easiest as just a single file ? or we could make it a folder ?
+Names of the files would be the order of the file.
+hooks check the names are always counting up.
+This lets us put in notes in whatever structure we want.
+
+do some logical checks, like commit hooks, like checking for double entry.
