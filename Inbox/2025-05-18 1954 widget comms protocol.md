@@ -75,3 +75,8 @@ So then the framer would pass down some extra props that would allow you to chan
 	
 </ArtifactFrame>
 ```
+
+is it just an artifact scope component ?
+can the scoped version handle the ui concerns ?
+
+if we made the starter pack with the framed ui built in, then it might be simpler ?
