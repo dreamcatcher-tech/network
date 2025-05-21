@@ -53,3 +53,5 @@ Or, we could make the harness be the base artifact provider.
 
 Harness should be able to disappear if it finds itself in a frame.
 Pass itself a prop to say when its running itself as a child ?
+
+might be easiest to use the full blown artifact, running a harness widget, to then run the test widget ?  that test widget could be running on a dev server.
