@@ -29,3 +29,7 @@ innovations or transclusions ?
 stateboard needs diff and history management.
 
 friends can be added with varying degrees of permission.
+
+need to add personas to the accounts setting, and some way to show this in the UI.
+
+if the whole ui was made of frames, then people could upgrade these to their own liking using vibe coding.  like how vscode required editing json to set prefs, here to change config, you might just use a vibe coding tool to change the actual code in a safe way, which shows you how the most powerful tools on the platform work, and indicates how complete your control over the platform is.

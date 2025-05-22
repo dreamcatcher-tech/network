@@ -55,3 +55,7 @@ Harness should be able to disappear if it finds itself in a frame.
 Pass itself a prop to say when its running itself as a child ?
 
 might be easiest to use the full blown artifact, running a harness widget, to then run the test widget ?  that test widget could be running on a dev server.
+
+so we could run in dev mode within a harness that was hosted externally on an https site, or you could run it in full artifact, maybe wrapped in some other code, like a debug tool to simulate some things, in which case your artifact installation sets the context.
+
+capabilities advertisement from children is important, as well as listing the widgets available and their caps.
