@@ -59,3 +59,11 @@ might be easiest to use the full blown artifact, running a harness widget, to th
 so we could run in dev mode within a harness that was hosted externally on an https site, or you could run it in full artifact, maybe wrapped in some other code, like a debug tool to simulate some things, in which case your artifact installation sets the context.
 
 capabilities advertisement from children is important, as well as listing the widgets available and their caps.
+
+if the harness was the only place we ran the jspm pattern, where it loads all the big things in from cdn, then in the children, they need to pull in the frame item, to get the hooks and things, 
+
+is the framer a separate repo ? with its own published npm package ? or is it in the monorepo ?
+
+can pull the harness in as a test project in the workspace if we get stuck, but other wise it is a standalone, it handles privy.
+
+THEN once we have it, we can use that to make a frame that runs privy ? or maybe this IS the privy frame ?  the privy widget can then sit as part of the dashboard controls.**
