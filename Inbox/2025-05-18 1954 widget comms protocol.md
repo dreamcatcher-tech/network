@@ -14,14 +14,18 @@ The would include context changing, and some free form data.
 so a standard format for scope, and some freeform json for anything else that might be asked for - like state.
 
 So the privy widget would send up typed messages with payloads
-1. state / custom data objects
-2. context which lists selection order and names primary selection by integer
-3. navigateTo
-4. artifact
+1. state / custom data objects (seems not needed generally)
+2. context selection which lists selection order and names primary selection by integer
+3. context access requests
+4. navigateTo - send to another widget with another scope, diff, context selection
+5. artifact
 
 it would receive down:
 1. show - sends down the scope to present on screen
-2. diff - an array  
+2. diff - an array of other scopes for comparison - not required to handle this
+3. selection - passes down selection from on top.
+
+
 
 State is a side channel where widgets can be made to communicate with each other. A prime example is when privy needs to pass back the login information that it has. It would send it to the parent using a state transfer. 
 But this might not be within scope for the comms system, although I guess it might as well be. 
@@ -84,3 +88,4 @@ rendering a frame means passing down the props we want to send in ?
 
 making a frame use esm imports so that it isn't bundling all these things would be good, but we need some kind of other tool to map imports to things on artifact, so they are integrity hashed, and pulled only from artifact.
 
+Should be able to open a new window with the frame in it, and have it load up full screen, basically, without all the surrounding artifact stuff in it.
