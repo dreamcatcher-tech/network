@@ -81,3 +81,6 @@ can the scoped version handle the ui concerns ?
 
 if we made the starter pack with the framed ui built in, then it might be simpler ?
 rendering a frame means passing down the props we want to send in ?
+
+making a frame use esm imports so that it isn't bundling all these things would be good, but we need some kind of other tool to map imports to things on artifact, so they are integrity hashed, and pulled only from artifact.
+
