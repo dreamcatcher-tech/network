@@ -66,4 +66,6 @@ is the framer a separate repo ? with its own published npm package ? or is it in
 
 can pull the harness in as a test project in the workspace if we get stuck, but other wise it is a standalone, it handles privy.
 
-THEN once we have it, we can use that to make a frame that runs privy ? or maybe this IS the privy frame ?  the privy widget can then sit as part of the dashboard controls.**
+THEN once we have it, we can use that to make a frame that runs privy ? or maybe this IS the privy frame ?  the privy widget can then sit as part of the dashboard controls.
+
+farcaster frames offer docs on helping devs follow this pattern, so we can just learn from them.
