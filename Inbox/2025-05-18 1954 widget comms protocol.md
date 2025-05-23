@@ -89,3 +89,6 @@ rendering a frame means passing down the props we want to send in ?
 making a frame use esm imports so that it isn't bundling all these things would be good, but we need some kind of other tool to map imports to things on artifact, so they are integrity hashed, and pulled only from artifact.
 
 Should be able to open a new window with the frame in it, and have it load up full screen, basically, without all the surrounding artifact stuff in it.
+
+? does the framehost need to be told what the limiting scope is ? and would it automatically permit anything within this range ?
+it would need to be a permissions object that declared a scope and the permissions within it.
