@@ -26,6 +26,16 @@ it would receive down:
 3. selection - passes down selection from on top.
 
 
+```tsx
+<Privy>
+  <ArtifactBase>
+	<ArtifactFrame src='https://some.frame/path'>
+	
+	</ArtifactFrame>
+  </ArtifactBase>
+</Privy>
+```
+
 
 State is a side channel where widgets can be made to communicate with each other. A prime example is when privy needs to pass back the login information that it has. It would send it to the parent using a state transfer. 
 But this might not be within scope for the comms system, although I guess it might as well be. 
@@ -73,12 +83,6 @@ The Framer would be the thing that handles private login and sets up Artifact, c
 Additionally, we can publish an independent package that can sit inside of the Framer. Or can wrap around the outside that can represent the development environment or the debugging panel where you can sit a URL of the Artifact you connect to. You can see its sizing information like mobile, tablet desktop. You could see the message flow in and out of the widget. You could see the context that was being set. You could see it scopes to pass in diff options to pass in so that you can see it in your own. 
 
 So then the framer would pass down some extra props that would allow you to change the URL, change the privy app ID. 
-
-```tsx
-<ArtifactFrame>
-	
-</ArtifactFrame>
-```
 
 is it just an artifact scope component ?
 can the scoped version handle the ui concerns ?
