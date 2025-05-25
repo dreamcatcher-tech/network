@@ -28,8 +28,10 @@ it would receive down:
 
 ```tsx
 <Privy>
-  <ArtifactBase>
-	<ArtifactFrame src='https://some.frame/path'>
+  <ArtifactBase> // the web transport interface
+	// other components
+	<ArtifactFrame src='https://some.frame/path' scope=''>
+	  // the browser frame boundary, pierced only by messages
 	
 	</ArtifactFrame>
   </ArtifactBase>
