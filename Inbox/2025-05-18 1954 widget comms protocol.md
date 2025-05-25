@@ -32,6 +32,9 @@ it would receive down:
 	// other components
 	<ArtifactFrame src='https://some.frame/path' scope=''>
 	  // the browser frame boundary, pierced only by messages
+      <ArtifactFrameChild>
+		// here the artifact object is available to use in scopes
+	  </ArtifactFrameChild>
 	
 	</ArtifactFrame>
   </ArtifactBase>
