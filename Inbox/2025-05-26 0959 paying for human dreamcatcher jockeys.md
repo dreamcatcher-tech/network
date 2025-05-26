@@ -12,3 +12,5 @@ we have a small guard that ensures the tokens are deployed towards the task.  We
 With a certain amount of direct queries, we do allow some grace, so long as the majority is directed towards our goal.
 
 if you justify your thinkinging, then likley it will be permitted.
+
+basically saying there are problems or tasks in the system, and we'd pay to have them solved, because the AI hasn't bee nable to solve them directly.
