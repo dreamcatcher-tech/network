@@ -23,3 +23,11 @@ that could allow for rewriting of history, as we would just commit another versi
 it binds the git versioning into the file format more than keeping the two systems unaware of each other.  So you can export out to a single ledger file that is text based, but it requires a simple script to run.  This is what would run every time any op was run.
 
 It seems prudent to keep format compatibility with some other system, rather than just our own thing.
+
+we could just store the whole ledger file and delete it each commit, so it gets retrieved by walking the commits.  we should treat it as read only within a closeout period or something, so that when a period closes, this is when we delete the file, and then you can't change it any more.
+
+the records should be immutable.
+
+to alter the file would be to make a new name for the file, so the old history is ignored ?
+
+if we release a tool that makes it easy to account for crypto and taxes, then bolt on advice and other things, trading and payments, then starts to become an exchange.
