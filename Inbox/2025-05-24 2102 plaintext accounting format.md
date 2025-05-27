@@ -31,3 +31,11 @@ the records should be immutable.
 to alter the file would be to make a new name for the file, so the old history is ignored ?
 
 if we release a tool that makes it easy to account for crypto and taxes, then bolt on advice and other things, trading and payments, then starts to become an exchange.
+
+if we don't store the accounting data as plain text, then how else will we load it into the ai context ?  it would need to be either db calls, or other on disk format that it reads in, presumably json.  If we make our own format, we may gain a small amount and have no external users. 
+
+being able to read it, and page it into the ai context, then use tools to write it correctly and generate whatever reports are desired seems powerful ?
+
+basically you should be able to get your backups and generate the files out, then start using other files as accounting.
+
+pijul would be great for this, so we can just have the whole file with no extra tools.
