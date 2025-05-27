@@ -11,6 +11,7 @@ building the framing protocol:
 building frames themselves:
 - provide a static page that can be configured as a harness, or use the artifact platform itself to display the frame.  
 - on our platform, we could snapshot a location to test with ?
+- static page that can be used to help dev
 
 
 
