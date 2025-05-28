@@ -23,3 +23,5 @@ batching the billing for many small requests, like maybe not required for every 
 this avoids thrashing the accounting too heavily.
 
 this would allow negative amounts, since we can't know ahead of time what something will cost.
+
+so for the compute market, we should have ledger be the means of tracking value exchange.  this makes it easy for anyone to audit without tools, compresses nicely, holds all necessary information.
