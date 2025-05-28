@@ -17,4 +17,7 @@ structured clone is fine for now.
 
 requests and replies need to be wrapped so the system knows which are which, so this system should be extended for handling streams ?
 
-CHANNEL=stable DEST=$HOME/opt/cft npx -q @puppeteer/browsers install chrome@$CHANNEL --path "$DEST"
+OR we could use the artifact protocol with a wrapper, and just set the host as different values since it is the upstream window ?
+
+we could defer the stream handling piece until later ?
+or, use our own messaging system to generate a stream over the top of the penpal protocol.
