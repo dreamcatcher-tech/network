@@ -11,3 +11,10 @@ but transmit is always called with stream, so we know in advance if we are doing
 
 maybe message ports is best, since can be used for invoke as well as stream ?
 
+so, for binaries, we would want to use transferrable objects to send binaries from parent to child.
+
+structured clone is fine for now.
+
+requests and replies need to be wrapped so the system knows which are which, so this system should be extended for handling streams ?
+
+CHANNEL=stable DEST=$HOME/opt/cft npx -q @puppeteer/browsers install chrome@$CHANNEL --path "$DEST"
