@@ -18,3 +18,5 @@ Ideally, we would have a system that could handle this queuing automatically and
 This is the way to get maximum throughput from the system because the human is able to be engaged all the time and Codex can take its time to complete the specific tasks, and there's no merge conflicts. 
 
 Sometimes we can avoid merge conflicts by simply using the exact same prompt and starting again, perhaps with slightly more guidance and using a newer version of the code. This is often easier than trying to merge in the latest branch, which seems a little difficult in Codex at the moment. 
+
+Instead of merging a pull request that has been overtaken by subsequent merged pull requests, it's actually easier in many cases to look at the existing pull request, learn from what happened, what we didn't like, make a new modified prompt, and then run it again. It's easier to refactor the prompt than it is to deal with the code, which pushes the human again out of the codebase and into the prompt base. 
