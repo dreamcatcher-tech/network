@@ -11,4 +11,6 @@ The tasks get added to as we get closer to them, to take in the knowledge of wha
 
 means that we can not lose our train of thought.
 
-We should be able to describe tasks that build upon others, but we can insist that the smaller ones are perfected first before proceeding with the next ones. We would like to stack these things and have the bot be aware of them, but also make the bot reprioritize their list or past comments as work progresses. This is how it works:
+We should be able to describe tasks that build upon others, but we can insist that the smaller ones are perfected first before proceeding with the next ones. We would like to stack these things and have the bot be aware of them, but also make the bot reprioritize their list or past comments as work progresses as it works.
+
+based on the task queue, we can also forecast completion time, in terms of runs we require, how likely to succeed they are, how much time the human has available to check.
