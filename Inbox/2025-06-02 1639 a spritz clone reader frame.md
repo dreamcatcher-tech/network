@@ -15,3 +15,7 @@ detect gaze, so stop and rewind if you look away.
 test your comprehension on passages so we can know what writing styles are easy for you to digest.
 
 use a dyslexic font.
+
+would be super useful in quest3 bx can make a large sized thing, and take advantage of the quests high refresh rate.
+
+have jog dials and scrubbing / timeline tools
