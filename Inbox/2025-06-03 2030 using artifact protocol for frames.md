@@ -71,3 +71,5 @@ only when the server sends down 'connected' will it start sending.
 add event listeners that have an abort signal attached, ready for teardown.
 
 we could make it so it never tears down, because it probably shouldn't ? but then if it hot reloads or something, it might need to ?
+
+
