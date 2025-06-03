@@ -19,3 +19,11 @@ use a dyslexic font.
 would be super useful in quest3 bx can make a large sized thing, and take advantage of the quests high refresh rate.
 
 have jog dials and scrubbing / timeline tools
+
+make the bot set the speed of the words based on the content.
+
+quick buttons to repeat a previous concept.
+
+quick rapidfire summary of chapters.
+
+takes advantage that you can process words faster than you can think, so you can ram it all in, then call out to have it back up.
