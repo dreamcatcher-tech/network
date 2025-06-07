@@ -35,3 +35,5 @@ if not, then we'll have to seed with bolt.new, codex over to a frame, wait for o
 
 seems best to just use bolt for the flop, as a starter pack, then rely on codex to bed it in ?
 to use our framework requires specific training and prompting. so it might be wasted effort to rely on bolt, if it doesn't work first pop.
+
+make a github template ui so can create template with all the settings for pages already there ?
