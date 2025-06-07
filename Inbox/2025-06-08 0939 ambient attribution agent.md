@@ -25,3 +25,9 @@ We may produce periodically a fine tuned bot that is based on the knowledge base
 It seems unlikely that baked in would then cause other faults to occur, since these would get reconciled too ? perhaps the reconciller is always pure, so that we cannot end up fine tuned in a place we can't reconcile out of ? we are relying on the model builders always producing a fair model.  Our fine tuned version is just for execution, rather than for reconcilling.
 
 So the executive is the thing that makes judgements based on the knowledge base, but the reconciler is an open model that can walk the knowledge base but is not tuned on it, so it is not biased to the knowledge already present.
+
+This design makes a nice fast executor, but a slow deliberate reconciler, which then runs the exectutor again to make sure the outcome is as expected.  This is the part humans interact with also.  Might include a dedicated button to call the reconciler ?
+
+Maybe the reconciler looks at the log notes of the executor, so that it then reports back what the executor was doing ?
+
+Why not make these the same bot ? the executor surely does not need the full broad knowledge of the reconciler, since it only looks at evidence and the knowledge base.  But you should not really talk to this bot, since it will only explain what it was doing, which can be quick an cheap, but the reconciler would always be waiting to jump in.
