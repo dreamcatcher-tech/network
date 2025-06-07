@@ -20,3 +20,10 @@ in codex environments, always clone down the latest reference project and make c
 
 so this painful loop only applies until we can get our own bots up.
 which might not be that long, since the number of widgets would stabilize, and then napps would begin to form, which should be done in codex.
+
+and then how do we pull in the trucking stuff ?
+make that a frame, and load it in a stripped down version of the system ?
+Or we could make it be a single app with no framing, since it seems maybe small enough for that ?
+
+Or, make it a single frame, and it handles run cards and customers as a single thing.
+Then it can still run as a frame, but also it can run as a standalone thing ?
