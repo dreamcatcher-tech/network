@@ -6,10 +6,10 @@
 >[!danger] Depends: 
 
 home ( focus the scope onto the home repo )
-napps ( installed applications and frames )
-agents (search for robots and people)
 chats ( active conversations with agents and people )
+agents (search for robots and people)
 transclusions
+napps ( installed applications and frames )
 Events
 
 ---
@@ -19,7 +19,7 @@ branches
 files
 innovations or transclusions ?
 napps ( installed applications and frames )
-members ( shows permissions and list of members connected to the repo )
+agents ( shows permissions and list of members connected to the repo )
 events
 processes
 settings
@@ -33,3 +33,5 @@ friends can be added with varying degrees of permission.
 need to add personas to the accounts setting, and some way to show this in the UI.
 
 if the whole ui was made of frames, then people could upgrade these to their own liking using vibe coding.  like how vscode required editing json to set prefs, here to change config, you might just use a vibe coding tool to change the actual code in a safe way, which shows you how the most powerful tools on the platform work, and indicates how complete your control over the platform is.
+
+agents is a duplicate tab, where it is the same thing for a repo as for your home repo, and it lets you search for agents but also manages permissions.  in home there is a restricted set of permissions you can grant.

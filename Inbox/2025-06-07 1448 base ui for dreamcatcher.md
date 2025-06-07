@@ -27,3 +27,11 @@ Or we could make it be a single app with no framing, since it seems maybe small 
 
 Or, make it a single frame, and it handles run cards and customers as a single thing.
 Then it can still run as a frame, but also it can run as a standalone thing ?
+
+how can we dual develop the main platform and their piece ? doing one or the other seems zero sum ?
+
+so prove we can get good bolt.new results in a framed item.
+if not, then we'll have to seed with bolt.new, codex over to a frame, wait for our platform to be made.
+
+seems best to just use bolt for the flop, as a starter pack, then rely on codex to bed it in ?
+to use our framework requires specific training and prompting. so it might be wasted effort to rely on bolt, if it doesn't work first pop.
