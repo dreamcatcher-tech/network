@@ -6,3 +6,5 @@
 >[!danger] Depends: 
 
 maybe just using a chat instruction ?
+
+takes the context to do the copy, and the instructions ?
