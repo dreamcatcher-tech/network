@@ -13,3 +13,5 @@ make tests that work on the built bundle, so tests that run in browser an feed b
 
 also help by using an agent to poke at it, and the agent helps write some permanent tests.
 
+that way, it would see the console errors in the browser and could use those to implement fixes.
+
