@@ -27,6 +27,8 @@ talking to friends:
 how would many conversations with many friends look ?
 format should be the same as with agents - just a collection of message items, ordered by their name.
 
+chats with internal bots should be the same format as any other chat ? so do not have any internal chat bots, since these are just napps ? or, treat them as a special agent - 'self'.
+
 
 how would a new message look, where you've never seen them before ?
 use whitelists and rules to determine who can ask for you to talk to them.
