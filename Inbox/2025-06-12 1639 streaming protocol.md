@@ -20,3 +20,13 @@ So listeners have to somehow get hold of the job id ?
 This can be just getting a listing for the currently active file writing jobs that are happening, and then you zone in on the exact chat you're interested in.
 
 If the whole thing is simple files, and you can read a file or a folder, of you can stream it in, this means the means of reading is the same for streamed files as they are for fixed files.
+
+Handle random file access by streaming down instructions on how to patch different parts of a file ?
+
+Almost like we need a transient commit or something like that.
+
+Each time the worker does a write, it broadcasts out a patch to anyone listening.
+Always in ram, and relies on a single reasonably reliable machine that does the job.
+During high job failures, the stream would need to reset.
+
+We would add a portion to artifact so that it would write with streaming.
