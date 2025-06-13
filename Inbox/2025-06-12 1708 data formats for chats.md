@@ -46,3 +46,7 @@ tool calls would be translated to threads on the process branch, so we know wher
 jobid as a dht key ?
 quite good, since the workers are the ones that keep the dht alive ?
 This might be done with a jetstream node for each discovery ?
+
+Execution:
+We'd send up the requests over the protocol that would trigger a run in the receiving server.
+Then upon completion, we would write that down to disk.

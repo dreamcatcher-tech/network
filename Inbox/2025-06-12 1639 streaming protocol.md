@@ -30,3 +30,13 @@ Always in ram, and relies on a single reasonably reliable machine that does the 
 During high job failures, the stream would need to reset.
 
 We would add a portion to artifact so that it would write with streaming.
+
+Best way is to treat it as "who is preparing a next commit to this branch ?"  
+We could require some kind of registration ? or, just simply post this on the dht.
+We could use this info to avoid collisions early ?
+Then, in that commit, we can gain access to either the fiber controller, which is in charge of doing the next commit and nows how to find all the workers.
+
+
+There is some principle that is about grouping things together, like how a torrent groups all the hashes, and the workmanager groups all the individual processes together.
+
+? what happened to massive parallel queries occuring ?
