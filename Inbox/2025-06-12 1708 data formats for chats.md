@@ -92,7 +92,26 @@ can point at some dictionary, so others are free to describe what they want.
 meta can say what the path is.
 
 The folders contain the actual transclusion information, and the meta files contain info about those objects.
-The objects are transferred by hash, so that there is not duplication of data in the system, with the transclude wrapper being the only 
+The objects are transferred by hash, so that there is not duplication of data in the system, with the transclude wrapper being the only data not used elsewhere.
+
+sending a transclude in another transclude.
+perfectly fine, sends it as the sole object in the folder.
+
+sending a whole repo.
+send the repo pubkey ?
+
+sending a whole commit ?
+payload folder contains the item ?
+Or, we can just make the payload be whatever type it needs to be, file, folder, commit, and then the meta includes its name or its source path, and intended destination ?
+sending a repo would set the type info in meta as 'repo' ?
+
+sending actions ?
+
+Where are transcludes stored ?
+
+
+How are they received ?
+
 
 basically, how do we handle chats that were sourced from us ?
 where would the sysprompt go ?  be part of the chat config ?
@@ -120,3 +139,10 @@ then the messages can require no further checking ?
 This is better than having a separate logic check on the messages ?
 message numbering could be done by the recipient ?
 This means there is no single consensus'd view of the conversation.
+
+internal chats would be a napp running in agent mode, where it takes in plain text and responds with the next message ?
+
+If you want to run an agent, then you need to set up a dedicated agent.
+Talking to an agent sends messages to and fro using transcludes.
+A chat with an agent would use a shared value that represents the channel ID.
+
