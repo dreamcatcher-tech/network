@@ -192,3 +192,5 @@ no more groups, just threads, which can be sorted by memberships.
 means you can add or remove members easily.
 
 vote tiebreaker as an ai.
+
+![[Pasted image 20250613231120.png]]
