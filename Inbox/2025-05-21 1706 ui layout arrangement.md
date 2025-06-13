@@ -8,9 +8,8 @@
 home ( focus the scope onto the home repo )
 chats ( active conversations with agents and people )
 agents (search for robots and people)
-transclusions
-napps ( installed applications and frames )
-Events
+transcludes
+events
 
 ---
 
