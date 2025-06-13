@@ -50,3 +50,30 @@ This might be done with a jetstream node for each discovery ?
 Execution:
 We'd send up the requests over the protocol that would trigger a run in the receiving server.
 Then upon completion, we would write that down to disk.
+
+
+```
+/
+  chats/
+    self/
+      ulid-1/
+      ulid-2/
+    actor-pubkey-1/
+    group-ulid-1/
+```
+
+inside each folder, there are json objects.
+each file is numbered to indicate order.  Pruning is just deletion of messages.
+
+```
+source: self | pubkey
+napp: ?
+```
+
+basically, how do we handle chats that were sourced from us ?
+where would the sysprompt go ?  be part of the chat config ?
+how about context of the transcludes to include ?
+
+how do we relate the chain of transludes to the chat file structure?
+feels like the transclude data format could be just stored verbatim as the messages should fall out ?
+how to verify the transclude chains ?

@@ -37,6 +37,5 @@ We could use this info to avoid collisions early ?
 Then, in that commit, we can gain access to either the fiber controller, which is in charge of doing the next commit and nows how to find all the workers.
 
 
-There is some principle that is about grouping things together, like how a torrent groups all the hashes, and the workmanager groups all the individual processes together.
 
 ? what happened to massive parallel queries occuring ?
