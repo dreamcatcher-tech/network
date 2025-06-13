@@ -77,3 +77,22 @@ how about context of the transcludes to include ?
 how do we relate the chain of transludes to the chat file structure?
 feels like the transclude data format could be just stored verbatim as the messages should fall out ?
 how to verify the transclude chains ?
+
+? what should make a group chat id ? should it be entirely in the eye of the beholder ?
+
+replies to messages:
+have a message hash that it always points at ?
+or a message id that is shared or agreed on by all participants ?
+a message hash, and each message therefore needing nonce or uniqueness, like a timestamp plus a ulid ?
+Sender picks the ulid, and receivers choose to accept if it matches their logic checks enough.
+
+what's the different in a reply vs a transclude that includes another message ?
+Nothing really - can just be presented a certain way, and can allow messages with multiple transcludes.
+The transcludes can be modified as required too.
+
+messages would need to come in in order from others.
+if we only locked the transcludes being the right heirarchy.
+then the messages can require no further checking ?
+This is better than having a separate logic check on the messages ?
+message numbering could be done by the recipient ?
+This means there is no single consensus'd view of the conversation.
