@@ -70,6 +70,30 @@ source: self | pubkey
 napp: ?
 ```
 
+
+transclude format:
+```
+jwt ?
+commit proof ?
+0/
+1/
+2/
+0.meta.json
+1.meta.json
+2.meta.json
+```
+
+basically some header info, like a signature, or the proof of its belonging to a commit.
+proof gets ripped off since it can only be created outside of the transclusion.
+? any point in naming the transclusions ?
+then folders of arbitrary data ?
+needs metadata about each one, like what type of link it represents ?
+can point at some dictionary, so others are free to describe what they want.
+meta can say what the path is.
+
+The folders contain the actual transclusion information, and the meta files contain info about those objects.
+The objects are transferred by hash, so that there is not duplication of data in the system, with the transclude wrapper being the only 
+
 basically, how do we handle chats that were sourced from us ?
 where would the sysprompt go ?  be part of the chat config ?
 how about context of the transcludes to include ?
