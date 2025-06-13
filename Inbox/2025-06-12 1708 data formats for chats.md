@@ -54,6 +54,10 @@ Then upon completion, we would write that down to disk.
 
 ```
 /
+  transmissions/
+    member1/
+    member2/
+    member7/
   chats/
     self/
       ulid-1/
@@ -75,6 +79,15 @@ Then upon completion, we would write that down to disk.
       ulid-5/
     group-ulid-1/
       ulid-6/
+    group-two/
+      member1
+      member2
+    group-42/
+      member1
+      member7
+
+  
+    
       
 ```
 
