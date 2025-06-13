@@ -85,6 +85,10 @@ Then upon completion, we would write that down to disk.
     group-42/
       member1
       member7
+    isr-ira-peace-talks-group-chat/
+      UN-security-council
+      isr
+      ira
 
   
     
@@ -181,3 +185,5 @@ pass a live thing as a snapshot and then also as the 'latest' version.
 
 transcludes as chain joining
 store the last transclude we made, and the ack of the last one
+
+each transclude is of the whole folder ?  the folder channel should be deleting old things ?
