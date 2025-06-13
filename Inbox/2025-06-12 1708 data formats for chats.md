@@ -58,8 +58,24 @@ Then upon completion, we would write that down to disk.
     self/
       ulid-1/
       ulid-2/
+      ulid-8-locust-swarms/
+	    do we think the user is asking about weapons control systems ?
+	    ...
+	    ...
+    smax/
+      locust-swarm-control-models/
+	      smax-0.json
+		    Hi I'd like to talk about locust swams
+	      self-0.json
+	        I'm sorry I can't help with that
+	      2.json
     actor-pubkey-1/
+      ulid-3/
+      ulid-4/
+      ulid-5/
     group-ulid-1/
+      ulid-6/
+      
 ```
 
 inside each folder, there are json objects.
@@ -146,3 +162,9 @@ If you want to run an agent, then you need to set up a dedicated agent.
 Talking to an agent sends messages to and fro using transcludes.
 A chat with an agent would use a shared value that represents the channel ID.
 
+discovery of peers ?
+
+pass a live thing as a snapshot and then also as the 'latest' version.
+
+transcludes as chain joining
+store the last transclude we made, and the ack of the last one
