@@ -187,3 +187,8 @@ transcludes as chain joining
 store the last transclude we made, and the ack of the last one
 
 each transclude is of the whole folder ?  the folder channel should be deleting old things ?
+
+no more groups, just threads, which can be sorted by memberships.
+means you can add or remove members easily.
+
+vote tiebreaker as an ai.
