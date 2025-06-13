@@ -16,12 +16,11 @@ events
 repos
 branches 
 files
-innovations or transclusions ?
 napps ( installed applications and frames )
-agents ( shows permissions and list of members connected to the repo )
-events
 processes
+events
 settings
+innovations
 
 
 
