@@ -9,6 +9,6 @@ get the base platform ui rendering without issues.
 fix the performance so we don't thump tigris and get stalls from them.
 
 
-get chats working with napp format.
-
 repo browsing, branch selection, files.
+
+get chats working with napp format.
