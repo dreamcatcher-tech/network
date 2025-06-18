@@ -7,4 +7,10 @@
 
 Thinking about software dev as a set of moves that are made along decision trees.
 
-There are base rules, around sensibilities
+There are base rules, around sensibilities.
+
+It would determine that for each file, or each step towards the goal, there are several strategies.
+
+it would backtest them all, since it can eliminate some by realizing later that they don't work out.
+
+So the steps it takes, it can reason thru the implications of each path, and then create these branches.  you can drop in at each point and mess around or ask for changes.
