@@ -18,4 +18,6 @@ might be done using jasmine so we can test the frame protocols too ?
 
 if we make a dedicated page, and then can change the server url and run it on localhost if we want.  
 
-? how can we get to reproducibility 
+? how can we get to reproducibility or the infrastructure ?
+
+
