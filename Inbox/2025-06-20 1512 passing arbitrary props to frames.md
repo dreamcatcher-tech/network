@@ -4,3 +4,5 @@
 >[!question] Targets: 
 
 >[!danger] Depends: 
+
+Might be advantageous to pass props directly and have them get put into the frames ?
