@@ -11,4 +11,4 @@ so useTree would return init, clone, rm, mv ?
 in this case, ls is done by the hook, and watch as well.
 
 
-This makes a nice patter to write files to the index, too.
+This makes a nice patter to write files to the index, too.**
