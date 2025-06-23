@@ -9,3 +9,6 @@ ideally a codex workbench would make the odd call out to o3-pro to get strategy 
 
 but surely openai is moving towards making selection automatic, and fully integrating all their tools and models together ?
 
+so anything that relies on the inconvenience of model connection seems doomed, as the models will get super convenient.
+
+private data will always be valuable.
