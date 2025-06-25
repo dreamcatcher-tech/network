@@ -8,3 +8,4 @@
 If there are bugs and you're not sure where, particularly performance bugs, then proceed with further features, rather than pausing to fix them.  In the course of the refactoring, the cause may be removed or discovered.
 
 Always seek to simplify the model, to make it more understandable.
+Ideally it would be modelled at the top level.
