@@ -5,3 +5,4 @@
 
 >[!danger] Depends: 
 
+might be that a repo can know what has transcluded it ? and which chats those are part of ?

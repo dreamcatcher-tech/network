@@ -24,8 +24,14 @@ needs to be given a path that it can access to.
 it can check it has been granted the permissions it has asked for.
 
 
+read them with a useNapps hook.
+artifact needs provider functions to interact with napps.  But this is just filesystem mechanics.
+it could be a napp that governs the write access to the napps folder anyway.  the napp napp.
+
 ? how does this fit into the process tree ?
 
 ? how does this napp get invoked ?
 requires:
 - a napp name, based on the install name, or based on a transclude ?
+
+Installing the napp napp allows that napp, as part of the install, to install other napps.
