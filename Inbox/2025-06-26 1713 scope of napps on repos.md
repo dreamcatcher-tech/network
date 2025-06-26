@@ -12,3 +12,4 @@ the path they control would be a branch pattern and a path.
 so it could be installed on just one branch, or on all.
 
 it would act exactly like a commit hook.
+

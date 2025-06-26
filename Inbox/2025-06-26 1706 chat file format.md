@@ -11,3 +11,6 @@ would run server side only
 
 client might pull in the schemas.
 
+use the ai sdk for types and schemas.
+
+transcludes are our own pointer / format.
