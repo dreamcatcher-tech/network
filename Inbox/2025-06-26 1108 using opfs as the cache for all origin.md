@@ -27,4 +27,6 @@ then use this as a passthru cache ?
 so if we pull envelops from the server, we write them down on the disk ?
 this gets stored in a cache under the hood ?
 
-It would be ide
+It would be ideal if the backing store for each frame was actually just reading from the parent, rather than duplicating memory on the child ?
+
+opfs handles can be passed as a message, but only if the origin is the same.
