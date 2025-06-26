@@ -20,3 +20,5 @@ each folder needs some metadata to summarize things like the permissions, who is
 if its a chat between multiple people, then you all have a copy, and you use transcludes to keep everyones versions up to date.
 
 so each message will have a timestamp on it ? and a ulid ?  the ulid is the filename.  clients can only post increasing messages.
+
+translucudes have a repoid, which is the repo that created the transclude.
