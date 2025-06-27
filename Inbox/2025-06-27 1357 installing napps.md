@@ -24,3 +24,5 @@ if a frame depends on a napp for schemas, then they have to be either:
 could copy in the frame into the napp using a transclude ?
 
 so for now, keep the frames and the napps separated.
+
+upgrade function of the napp napp (aka nappman) to go update all the versions.
