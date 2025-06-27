@@ -20,3 +20,7 @@ MASSIVELY reduces the load on the s3 bucket.
 Makes the cache load require less iops.
 
 faster to save a single big file than many little ones, more reliable, more predictable timing too.
+
+use some kind of geometric decay, so we keep recent writes as small separate pack files, and then as they get older, we periodically merge pack files together as part of the commit process.
+
+Each runner would check for pack files older than the atomic head listing that are not in the atomic head, indicating a process that failed to clean up old packs.
