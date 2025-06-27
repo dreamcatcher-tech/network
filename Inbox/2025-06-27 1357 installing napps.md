@@ -16,3 +16,11 @@ when the action comes in, the branch scope is used to target to a specific napp 
 if the branch and napp alias doesn't match, then it errors.
 
 to get the schemas, we need the full specifier, and we need to pass in an alias in case the same napp is installed in multiple locations.  also pass a version of the napp or an api hash, so we can have some surety we're sending the right thing ?
+
+if a frame depends on a napp for schemas, then they have to be either:
+- separately published packages, with frame published after the napp
+- published out of the same package
+
+could copy in the frame into the napp using a transclude ?
+
+so for now, keep the frames and the napps separated.
