@@ -44,3 +44,5 @@ continuing an exiting chat:
 streaming down someone elses chat ?
 - in a group setting, we can either have a dedicated channel for streaming, or we can have a universal way to stream down the index of the git folder, where all changes are streamed down, and can be watched for, or targetted to watch for.
 - ideally, we would see which process was running, contact that server, and receive the streaming updates to the filesystem
+
+each chat should be the entry point to a mango query, to allow complex workflows to determine the result back in.
