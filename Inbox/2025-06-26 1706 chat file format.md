@@ -30,3 +30,17 @@ capturing token usage for billing.
 - upon completion, update the ledger with the users cost ? and link that to the activity that occured
 
 So to get the monetary burn, we would need to look up the ledger entry and translate that, rather than storing that direct with the message ?
+
+starting a new chat:
+- client sends the new message with the config they want and the first message
+- server creates a new folder, and sends back the folder to watch
+- the results start streaming down
+
+continuing an exiting chat:
+- files are used to lay out the chat messages
+- any live running items are streamed down ?
+
+
+streaming down someone elses chat ?
+- in a group setting, we can either have a dedicated channel for streaming, or we can have a universal way to stream down the index of the git folder, where all changes are streamed down, and can be watched for, or targetted to watch for.
+- ideally, we would see which process was running, contact that server, and receive the streaming updates to the filesystem
