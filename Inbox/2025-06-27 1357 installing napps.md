@@ -26,3 +26,7 @@ could copy in the frame into the napp using a transclude ?
 so for now, keep the frames and the napps separated.
 
 upgrade function of the napp napp (aka nappman) to go update all the versions.
+
+build path:
+- make a harness that each item can import to test itself with an artifact instance available
+- make a very simple napp, or a test napp, that we can exercise the system with
