@@ -13,3 +13,6 @@ unlike bitcoin mining, the jobs are each different, so specialized hardware is h
 so this market is probably always going to be present.
 
 the one thing your local hardware can handle is privacy.  you can sell off the spare capacity, but you can use it for your own needs with full privacy.
+
+consumer silicon can't work in datacentres due to density ?  TFLops per litre.
+in citizen model, density is irrelevant, so the price for the silicon - $/tok/sec - is what matters.  citizen seems vastly superior by this metric.  but then we also have zero cost for building.  power can be solar or renewables too.
