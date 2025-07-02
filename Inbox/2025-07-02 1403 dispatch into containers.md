@@ -23,3 +23,14 @@ So if each napp just assumes it has global scope, which it should since we shoul
 // so each tx needs to load up its own container
 // it needs to verify that the branch location is valid.
 // hard code the fiber to exist already.
+
+isolation at the repo level, or at the napp level ?
+if the same container ran for every napp, then we have no isolation between napps.
+if we run the same napp with conccurent invocations, between repos, that can leak between repos.
+same napp concurrent invocations on a repo, this is good enough, but requires async local storage to keep processes separate, which adds complications, and difficulty debugging.
+
+lastly, one web worker per request per napp per repo.
+start a new container if you want concurrent operations.
+reuse containers when they become idle - only start a new one when busy.
+This seems easier than relying on async context within the container ?
+gives each process a dedicated cpu, rather than having contention within the container ?
