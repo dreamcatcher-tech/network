@@ -34,3 +34,14 @@ start a new container if you want concurrent operations.
 reuse containers when they become idle - only start a new one when busy.
 This seems easier than relying on async context within the container ?
 gives each process a dedicated cpu, rather than having contention within the container ?
+
+provider can have a separate worker per did, and then just share context between everyone with the same hooks ?
+
+this would limit concurrent running effects since they would only run one at a time ? or the parallel would not be able to share context between them ?  We could throttle them, so they have to run linearly, but that seems annoying ?
+
+So maybe leave async in place, but just run it at the worker level ?  
+or optionally be able to run it without async, and turn it on or off depending on the context ?
+
+or, concurrent for a repo / napp pair, then just share global state between them all ? so no async required ?
+
+might want to limit concurrency to avoid commit conflicts anyway ?
