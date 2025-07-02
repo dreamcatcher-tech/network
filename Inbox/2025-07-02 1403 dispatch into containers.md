@@ -18,3 +18,8 @@ Makes debugging easier.
 Also less overheads, and slightly better performance, slightly less complication.
 
 So if each napp just assumes it has global scope, which it should since we should be globally isolated, then using context hooks like useArtifact becomes very simple.
+
+// we need a new container for a new scope
+// so each tx needs to load up its own container
+// it needs to verify that the branch location is valid.
+// hard code the fiber to exist already.
