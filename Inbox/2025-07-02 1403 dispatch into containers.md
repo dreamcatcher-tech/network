@@ -49,3 +49,5 @@ might want to limit concurrency to avoid commit conflicts anyway ?
 to ease debugging, we could make provider containers run not inside a web worker at all, and just run at the plain top level.  
 
 it might not need the useActor hook, since we already know the actor based on the action.
+
+so for testing, we can run with no containment, to allow debugging, otherwise we need to debug somehow ?
