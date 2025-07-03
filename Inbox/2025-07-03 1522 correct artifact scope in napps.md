@@ -30,4 +30,19 @@ When each child container is started, it needs a way to call the system containe
 Pass in the system transmit function in to each container, so they can tunnel back out to system functions ?
 This seems essential, as each container needs a way to get out again ?
 
-start container should be 
+start container should be the transmit function.
+
+? does an artifact instance ever need to talk to a container directly, or is it always via the host using dispatch ?
+
+start the host, pass in the permissions check and start a new container as the transmit.
+into each new container, pass in the ability to transmit back to the host.
+
+to the napp containers goes a portal to talk to the host via provider actions.
+to the provider container goes a portal to instantiate and talk to the napp containers.
+
+could expose the host transmit with a context hook, so it is context that is always present - like the system portal.
+otherwise for each non host container, we pass it in as a constructor, and it is available on the context hooks ? 
+or it gets wrapped up in artifact.
+
+in the system container, the artifact instance comes with the provider with the transmit function that is a direct access to making new containers.
+in the napp containers, the artifact instance comes with the provider with the transmit function that is access to the host function.
