@@ -14,3 +14,9 @@ so if any provider actions are being called, then we do not create an artifact c
 dispatch would get passed a receive function in the context for them to poke out.
 
 artifact.tx would pop the action out inside the provider container ?
+
+provider operations don't need to know the latest commit - they are about marshalling everything to prepare for napps that execute on a given commit, so they purposefully do not have any concept of latest, since they are pure side effects.
+
+so it is meaningless to provide them with an artifact item in their context.
+
+they do need a transmit function that allows for actions to come in that need user operated containers.
