@@ -26,3 +26,8 @@ we have to supply the artifact object, and it needs a provider to tunnel actions
 when a new action goes in, then it starts a new container, runs checks, etc.
 
 When each child container is started, it needs a way to call the system container again ?
+
+Pass in the system transmit function in to each container, so they can tunnel back out to system functions ?
+This seems essential, as each container needs a way to get out again ?
+
+start container should be 
