@@ -20,3 +20,9 @@ provider operations don't need to know the latest commit - they are about marsha
 so it is meaningless to provide them with an artifact item in their context.
 
 they do need a transmit function that allows for actions to come in that need user operated containers.
+
+we have to supply the artifact object, and it needs a provider to tunnel actions back into the system with.
+
+when a new action goes in, then it starts a new container, runs checks, etc.
+
+When each child container is started, it needs a way to call the system container again ?
