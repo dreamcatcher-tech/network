@@ -9,4 +9,4 @@ give it a vague problem, like lower back pain, and it goes on a wild research ri
 
 strategies appear - like back pain would use a diagnostic book to ask about doing certain movements to ascertain the exact nature of the injury.
 
-The idea is, spare
+The idea is, spare eevryone the really long form content, and focus in tightly.
