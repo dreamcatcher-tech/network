@@ -16,3 +16,11 @@ If we could make tools to rank influencers and be able to contact them, then we 
 It is like search has changed, and no any platform can be a search engine for a particular thing, and be something that attracts advertisers to it.
 
 Then we would broker connections between the influencers and the advertisers.
+
+Marketing is a good one to capture, since it is peddled by people who have latched on to things that are hard to measure, then they convince you that you need to buy it.
+
+So a few highly capable growth marketers, suitably incentived, using this platform, should be able to show max gains for your company.  Plus you can investigate ideas and be guided thru how to set up campaigns.
+
+We would use this ourselves to figure out how to get exporsure.
+
+Can also use this to organize events with influencers coming to various gatherings.
