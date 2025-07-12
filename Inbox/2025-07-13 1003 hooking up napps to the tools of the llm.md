@@ -5,3 +5,9 @@
 
 >[!danger] Depends: 
 
+install a napp for a specific chat ?
+
+provide a tool that can install other tools ?
+
+dynamically wire up tools like frames ?
+
