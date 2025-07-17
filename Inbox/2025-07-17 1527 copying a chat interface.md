@@ -50,3 +50,11 @@ The key is to touch it as lightly as possible, and just silently / surgically sn
 
 Making librechat be a frame is probably the cleanest way to keep it under wraps.
 So we would have a repo, that made a branch that was our working branch, and we periodically cleaned things up, and documented the changes we were making to translate to our use case.
+
+If we simply recreate the entire server side api using artifact, then we have within this system a fully featured user management app ?
+And because of their incentives, we stay aligned with them almost fully ?
+
+permissions turn features on and off easily.
+
+So if we changed nothing, and just provided routes using artifact ?
+then, if we used frames to give extended features ?
