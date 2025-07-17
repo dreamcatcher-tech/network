@@ -28,4 +28,6 @@ We piggy back on top, having hard won code that we just slightly modify each tim
 
 Their problems are our problems.
 
+They will keep riding high and solving untold numbers of bugs, we just inherit.
 
+There isn't a more free spirited project around.
