@@ -37,3 +37,16 @@ or, bail, and just limp on with our custom front end ?
 Or snippet out just the bits that handle the streaming and rendering ?
 
 I am supposed to be getting transcludes working.  This would delay that.
+Then we need innovations, and finally agents.  This would delay that.
+But it would in the meantime give use a very stable, high quality, pleasant to use interface.
+
+However it has all of the features we need, 
+
+So where are the cut points in this library ?
+we could just take the chat view piece, and then leave the rest ?
+or pull the rest in later ?
+
+The key is to touch it as lightly as possible, and just silently / surgically snip bits off it, and inject our own backend stuff in there.
+
+Making librechat be a frame is probably the cleanest way to keep it under wraps.
+So we would have a repo, that made a branch that was our working branch, and we periodically cleaned things up, and documented the changes we were making to translate to our use case.
