@@ -31,3 +31,9 @@ Their problems are our problems.
 They will keep riding high and solving untold numbers of bugs, we just inherit.
 
 There isn't a more free spirited project around.
+
+or, bail, and just limp on with our custom front end ?
+
+Or snippet out just the bits that handle the streaming and rendering ?
+
+I am supposed to be getting transcludes working.  This would delay that.
