@@ -105,3 +105,13 @@ like shared messages are at `/api/share/share-id`
 
 If we synced down the whole user repo, then our data-service queries could be just straight up reading from the filesystem.  We could present it as an opfs filesystem, so it stays at the latest value, making interactions easy ?
 
+list of other candidates:
+## open web ui
+no because it runs python on the backend
+
+## lobechat
+
+## lobehub/ui
+https://ui.lobehub.com/components/chat/chat-list
+ui with nice chat components in it
+
