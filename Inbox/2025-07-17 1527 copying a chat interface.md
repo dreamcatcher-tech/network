@@ -76,3 +76,9 @@ could snip out some of the hooks ?
 
 replace the data service, so that it uses artifact to make these calls ?
 We might be able to avoid syncing the whole repo down, and instead, we make calls on demand with the client ? or do the sync, but high prioritize the queries directly made, so that responsiveness is improved.
+
+read each file in the librechat-data-provider package and check that they all use the data-service.
+read each file in the client/src/data-provider and see if this is the insertion point ?
+
+or, we could skip the syntax highlighting, and just move on with our own stuff ?
+or just copy how they do syntax highlighting and chat display ?
