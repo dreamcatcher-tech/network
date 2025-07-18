@@ -113,5 +113,6 @@ no because it runs python on the backend
 
 ## lobehub/ui
 https://ui.lobehub.com/components/chat/chat-list
-ui with nice chat components in it
+ui with nice chat components in it.
+might be especially spliceable since they offer offline db in browser or server postgres, so we might insert ourselves as a 3rd switch.
 
