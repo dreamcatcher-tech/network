@@ -92,3 +92,9 @@ so we would wrap the whole app in an ArtifactProvider, and handle our own sign i
 so we could either be a patch over the top of the data-service package, or we could be a separate package that is imported separately ?
 
 It looks like, all we need to do, is modify the data-service.ts file and sit over the top of that.
+
+would be really nice to use the ai-sdk to handle the messaging and tool calling ?
+
+but we only need like, two providers off the bat - a pattern may emerge for the others.
+we could probably do that, and just translate it on the client side into something they expect ?
+
