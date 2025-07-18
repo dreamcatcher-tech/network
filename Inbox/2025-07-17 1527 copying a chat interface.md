@@ -64,3 +64,5 @@ we should be able to mimick mongodb fairly easily, but we would like to expose m
 we could run their project as a server too, and then replace the mongodb instance with our own.
 
 Or use their exact project, but add repos in ?
+
+Rather than trying to snip librechat at the data-provider junction, it might be easier to lift off its UI components.
