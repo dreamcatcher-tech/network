@@ -73,3 +73,6 @@ They will always work on making a nice conformant UI for chatbots, which we can 
 bugs in the interface will always be their problem, which we can push out to them.
 
 could snip out some of the hooks ?
+
+replace the data service, so that it uses artifact to make these calls ?
+We might be able to avoid syncing the whole repo down, and instead, we make calls on demand with the client ? or do the sync, but high prioritize the queries directly made, so that responsiveness is improved.
