@@ -128,3 +128,9 @@ replacing the nextjs logic seems hard, and not really necessary.
 
 many featuers can be disabled with feature flags.
 getting frames working seems the crucial step.
+
+burden on keeping in sync with their db schemas, particularly when they migrate or update, is hard.  so if we keep things running using browser dbs, and just leave everything the same as theirs, that is the least amount of effort.  Then we add in hooks to write to our own storage when relevant things occur, like the chats increase or something.
+
+because file goes to s3, that might suit us for files anyway, easily.  we might be able to hook that one directly ?
+so hauling in chats as context might be hard ?
+repopulating the db based on git might be hard ?
