@@ -66,3 +66,10 @@ we could run their project as a server too, and then replace the mongodb instanc
 Or use their exact project, but add repos in ?
 
 Rather than trying to snip librechat at the data-provider junction, it might be easier to lift off its UI components.  Pull of just a component at a time, and build up our own view into it ?
+
+Or, persist at undercutting the server side, and presenting a neutered version of the app, with some key aspects overridden.
+
+They will always work on making a nice conformant UI for chatbots, which we can ride.
+bugs in the interface will always be their problem, which we can push out to them.
+
+could snip out some of the hooks ?
