@@ -116,3 +116,15 @@ https://ui.lobehub.com/components/chat/chat-list
 ui with nice chat components in it.
 might be especially spliceable since they offer offline db in browser or server postgres, so we might insert ourselves as a 3rd switch.
 
+## lobechat conversion
+If we ran the nextjs server, this is the path of least resistance to get up and running.
+then the filesystem is the git stuff.
+the execution remains in the nextjs realm, and it just writes the data to git as a filestore, with no execution.
+then how do we execute napps ?  This could be done via tool calls ?
+
+This means that the desktop app needs no extra replacements either, and it just works, and only its database operations are altered in any way.
+
+replacing the nextjs logic seems hard, and not really necessary.
+
+many featuers can be disabled with feature flags.
+getting frames working seems the crucial step.
