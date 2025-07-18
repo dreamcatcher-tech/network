@@ -88,3 +88,7 @@ if we make our own shim package, that is imported in the client as an api compat
 Another junction point is to run their own server, but replace mongodb with our own db.  Issue is, now, to run the app, you need a server side app as well as artifact running.
 
 so we would wrap the whole app in an ArtifactProvider, and handle our own sign in flows, then 
+
+so we could either be a patch over the top of the data-service package, or we could be a separate package that is imported separately ?
+
+It looks like, all we need to do, is modify the data-service.ts file and sit over the top of that.
