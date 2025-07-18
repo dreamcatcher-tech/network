@@ -82,3 +82,9 @@ read each file in the client/src/data-provider and see if this is the insertion 
 
 or, we could skip the syntax highlighting, and just move on with our own stuff ?
 or just copy how they do syntax highlighting and chat display ?
+
+if we make our own shim package, that is imported in the client as an api compatible drop in for librechat-data-provider then we can switch out this one thing from the front end, and now all the service calls go thru us.
+
+Another junction point is to run their own server, but replace mongodb with our own db.  Issue is, now, to run the app, you need a server side app as well as artifact running.
+
+so we would wrap the whole app in an ArtifactProvider, and handle our own sign in flows, then 
