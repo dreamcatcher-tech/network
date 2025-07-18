@@ -98,3 +98,10 @@ would be really nice to use the ai-sdk to handle the messaging and tool calling 
 but we only need like, two providers off the bat - a pattern may emerge for the others.
 we could probably do that, and just translate it on the client side into something they expect ?
 
+request needs to be modified to handle the token refresh.  This would be handled purely by privy lib code.
+
+we could use the routes they use as the filesystem paths that we store all the data on.
+like shared messages are at `/api/share/share-id`
+
+If we synced down the whole user repo, then our data-service queries could be just straight up reading from the filesystem.  We could present it as an opfs filesystem, so it stays at the latest value, making interactions easy ?
+
