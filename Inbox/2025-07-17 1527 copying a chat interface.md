@@ -60,3 +60,7 @@ So if we changed nothing, and just provided routes using artifact ?
 then, if we used frames to give extended features ?
 
 we should be able to mimick mongodb fairly easily, but we would like to expose more functions, like history.
+
+we could run their project as a server too, and then replace the mongodb instance with our own.
+
+Or use their exact project, but add repos in ?
