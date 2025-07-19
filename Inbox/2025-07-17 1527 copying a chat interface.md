@@ -188,6 +188,13 @@ they have frames showing as tool calls.
 your server would reach out to the others you had to chat with and would organize the chat with them
 
 sharing of messages and chats needs to allow live view as well as snapshot, and bulk selection of messages to share and include in the transclude.  Transclude selection is no different to sharing, as they are the exact same thing.
+
+use this app as the way to make model calls, then make the server side and client side store and retrieve their data from artifact.  So that we can treat all data as git repos, so we can put them into context, and have more data controls over them.
+
+Maybe intercept on the trpc calls ? the webapi calls seem to not matter ?
+seems a lot of rsc components, so we should let that all stay serverside.
+
+Files should be the whole repos thing, so that we can deeply integrate with transclusions, and so we can make it nice and uniform.
 ## Plan
 1. deploy version using latest code using feature flags to turn things off
 2. stamp our brand on it
