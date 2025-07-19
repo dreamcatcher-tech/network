@@ -162,3 +162,8 @@ Or add on napps as the same way as plugins.
 get up a version that we have modified the code on, first, in a separate branch.
 
 ??? can we make the ambient attribution agent using someone elses agent framework ?
+
+
+We should be able to run mcp servers as napps, on a remote server, so they require no setup locally.
+plus napps of our own, that show up like plugins.
+plus frames, that show some graphics.
