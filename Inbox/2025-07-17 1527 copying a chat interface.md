@@ -167,3 +167,9 @@ get up a version that we have modified the code on, first, in a separate branch.
 We should be able to run mcp servers as napps, on a remote server, so they require no setup locally.
 plus napps of our own, that show up like plugins.
 plus frames, that show some graphics.
+
+monetizing the external services that things connect to with a conveninence fee, as well as the fees from usage of things people make.
+
+making programs that can be directly consumed and shared in the platform that created them.
+
+so because the remote server does not have a way to run untrusted code lightly, nor to package up and connect to it, that might be a lightweight gap they have ?
