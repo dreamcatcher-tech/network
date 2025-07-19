@@ -212,6 +212,36 @@ If its all just reading and writing, then we could probably make a good translat
 list all the orm calls that the project uses.
 
 look at the createAdaptor functions to see if we can't make an adapater for artifact ?
+
+replacing the db system and then allowing the db to be tucked back in as context ?
+need some mappings between repos and tables, since there is one database per client.
+some mapping tables can be computed on the fly, like luts ? these could be ephemeral ?
+
+What if we attached the chats straight from the db ?
+A transclusions table would simplify the whole app, since it groups things together.
+
+Ideally we would run one instance of the backend per user ? or, at least, the backend would be treating each user like a dedicated db.
+
+If we made a drizzle driver, then we have a new universally useful piece, and we can ride the lobe-chat UI with near zero changes.
+
+If we override the db layer, then deploying to vercel may have benefits of server side rendering etc.
+Keeps our deployment mainline.
+Intercepting at the db layer is cleanest, since at the functional layer is subject to tangles, and requires a much higher bar.
+So intercepting at an external interface is much simpler, since they will always strive for uniformity there.
+
+Tap the postgres driver, so that when writes occur, we update our data structures ?
+But we will need migrations to be handled, so we can stay compliant, altho this can be deferred.
+Or, we could use sloppy placement, where we store the messages using an AI or make our own sloppy migrations ?
+
+trpc interception might be another good area to intercept the execution calls ?
+
+they seem to have a database adaptor, so this might be easier to intercept ?
+one layer higher than postgres but doesn't handle migrations, as these will need to be done manually.
+
+If all the src/database/schemas were overridden, then we could drop in a type safe replacement, without getting tangled up in drizzle ?  So it is compatible with how lobe calls the db, but nothing more.
+These can already easily be turned into zod schemas.
+
+One of the key s
 ## Plan
 1. deploy version using latest code using feature flags to turn things off
 2. get artifact repos showing in the files section of the app, replacing the s3 operations, using all their existing UI around upload and download, so keep a full db running of theirs, then replace all the s3 stuff with our repos.
