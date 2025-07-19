@@ -6,3 +6,5 @@
 >[!danger] Depends: 
 
 Would be nice to be able to lay it out, ask questions, build up a map of the codebase, preferrably with some companions to help and share and have calls with.
+
+then can build up a knowledge base that keeps getting checked whenever new commits come in, so we can get notified about meaningful changes to the codebase.

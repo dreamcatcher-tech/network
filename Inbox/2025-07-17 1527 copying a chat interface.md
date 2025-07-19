@@ -194,10 +194,28 @@ use this app as the way to make model calls, then make the server side and clien
 Maybe intercept on the trpc calls ? the webapi calls seem to not matter ?
 seems a lot of rsc components, so we should let that all stay serverside.
 
+Really nice that they integrated the UI with all the models - calling the models in a uniform way is just part of it - making their outputs appear nicely is another thing altogether.
+
+replacing the functionality of a server piece is easier than replacing the exact schema operation, since we don't end up hand fixing the result of automated schema migrations.
+
 Files should be the whole repos thing, so that we can deeply integrate with transclusions, and so we can make it nice and uniform.
+
+binary file operations go thru s3, so they are totally separte from the db anyway, hence this is a good place to insert.
+repos has no place in their ui at the moments, so this is greenfields.
+implement repos alongside the regular file uploads, and just move over gradually as we pick up more incidental knowledge.
+
+Look at all the database code, and see where the deps are between the functions.
+see where the orm packages are imported, to know where all the database operations are occuring.
+there is some usage in the lambdas, but think this is transient, like task tracking.
+
+If its all just reading and writing, then we could probably make a good translator so that we work with the orm directly, as a shim, then we don't care what they do to the schemas and all that ?
+list all the orm calls that the project uses.
+
+look at the createAdaptor functions to see if we can't make an adapater for artifact ?
 ## Plan
 1. deploy version using latest code using feature flags to turn things off
-2. stamp our brand on it
-3. get frames working on the front end
-4. set up auth for our systems, may or may not use privy ???? timewasting
-5. 
+2. get artifact repos showing in the files section of the app, replacing the s3 operations, using all their existing UI around upload and download, so keep a full db running of theirs, then replace all the s3 stuff with our repos.
+3. stamp our brand on it
+4. get frames working on the front end
+5. set up auth for our systems, may or may not use privy ???? timewasting
+6. 
