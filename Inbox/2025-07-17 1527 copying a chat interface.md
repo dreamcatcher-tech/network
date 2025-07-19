@@ -134,3 +134,6 @@ burden on keeping in sync with their db schemas, particularly when they migrate 
 because file goes to s3, that might suit us for files anyway, easily.  we might be able to hook that one directly ?
 so hauling in chats as context might be hard ?
 repopulating the db based on git might be hard ?
+
+to intercept at the app level, we would have to intercept everything in the src/services dir
+or intercept at the fetch level, but then making an api compatible backend in huge.
