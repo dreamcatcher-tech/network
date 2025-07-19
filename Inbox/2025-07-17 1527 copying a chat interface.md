@@ -241,11 +241,61 @@ one layer higher than postgres but doesn't handle migrations, as these will need
 If all the src/database/schemas were overridden, then we could drop in a type safe replacement, without getting tangled up in drizzle ?  So it is compatible with how lobe calls the db, but nothing more.
 These can already easily be turned into zod schemas.
 
-One of the key shortcomings is that you cannot talk to the bots about your user settings on lobechat because the database is out of band from the application - it is not self aware or self accessible, with a wall being in place between those conventional functions and the ai functions, requiring people to still interpret UI layout for meaning, rather than ask a bot to do it.
+One of the key shortcomings is that you cannot talk to the bots about your user settings on lobechat because the database is out of band from the application - it is not self aware or self accessible, with a wall being in place between those conventional functions and the ai functions, requiring people to still interpret UI layout for meaning, rather than ask a bot to do it.  Reflexivity is missing.
 
 One of the key conceptual changes is one db per user.  This should allow people to go from lobe-cloud hosting to local hosting easily, and to choose other hosters, so long as everyone had a payment agreement in place to pay lobechat.
 
 The more people we can get to fight or lean on people for their fair cut, the more it helps everyone get their cut, so we can all band together reasonably, rather than a few loud gougers taking more than their share and being rude / extractionist.
+
+transcludes needs to include a translation step, so going from raw messages on disk to context packed chats is required, plus we may introduce some conversion or translation steps too.  This can be done using the database view initially, removing the need for all chats to be in a repo ?
+
+Git repos could just be thru a mcp server ?
+but then long term we want to be able to host mcp servers and treat them like things rather than services.
+
+If we could get git repos connected up as context, then get chats up as context using a translator ?
+Transcludes - the transcluder - would allow context assembly from many sources, including RAG.
+
+Override their rag generator with the transcluder.
+
+Keep the postgres db, but tap it, so that we write to git each time they write to the db, so that we are not using the git repos per se, but we are able to gain access to the chats and tables and things, and then add them in as transcludes.
+Key is it lowers the bar to usage, so we don't have to store all the data, we just store enough that it can be transcluded, and then we gradually bring across the features, to ultimately intercept.
+
+It seems unavoidable that we need to be the db layer, and we want to intercept there, since their arch is built to this interface.
+
+Then present the whole installation as an mcp server that can be remotely accessed and deep researched over.
+
+We need to introduce the concept of commit based editing of files and other settings.
+
+Adding repos in as something that can be browser and added to context seems key ?
+
+if we focus on sidecaring the data flows, but work hard to get transcludes working, repo browsing and management going, then we can have all the ai benefits of our approach without the up front hit that being the actual data layer would entail, so we can online gracefully and gradually.  We can ride their exact almost unaltered server.
+
+consistency relationships should be described in each folder, so that if we go to write there, those constraints are always upheld, no matter who is doing the writing.  fk constraints etc.  schemas for the table.
+
+migrations should be straight forwards since we have good strong transactional guarantees.
+
+how can we attach all the files in full context ?
+perhaps the best start is to make the transcluder piece, which we needed to anyway, and then see how that goes just using regular files, as they have provided, then move up from there.
+
+We can experiment with group chats and the social aspects of things, possibly using a single db to relate everyone without awkward blockchain related semantics ?
+So maybe just keep the full db, add some features in using that db, and then extract out blockchain stuff once we have the features complete, and a reasoning platform to help ?
+
+The current conventional build seems to offer the fastest way to have a reasoning platform to assist us in our goals.
+Things that go against the computational grain are large slow projects.
+Rather than being fully git independent, we use this to iterate thru based on end user utility, and then migrate to self sovereign data structures.
+
+Must be able to select files, and then do something to add them to a chat, like into the transclude widget.
+
+make an mcp server or a plugin that gives files completely, but the model has to call for it ?
+stuffing them in context might actually not be the best move ?
+Transclude function needs a translator module so we can manage and see what it is.
+It should maybe show up as an artifact ?
+
+### where pg is used
+all operations seem very simple, with just primitives, except rag which uses vector.  Transactions is only used to remove the file chunk embeddings at the same time as the files.
+Everything else is strictly in the src/database/schemas dir, as this is the only place that imports from drizzle-orm/pg-core
+
+
 ## Plan
 1. deploy version using latest code using feature flags to turn things off
 2. get artifact repos showing in the files section of the app, replacing the s3 operations, using all their existing UI around upload and download, so keep a full db running of theirs, then replace all the s3 stuff with our repos.
