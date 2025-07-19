@@ -291,6 +291,10 @@ stuffing them in context might actually not be the best move ?
 Transclude function needs a translator module so we can manage and see what it is.
 It should maybe show up as an artifact ?
 
+Make tasks show up as artifacts.
+If the model needs some answers, it can commission and agent or long running thread to find them before it continues, and this progress should be viewable, and you may wish to tick it off or confirm it, or interact with it, before continuing, like browsing thru large numbers of images.
+Altering what this reponse is, changes the higher level model output substantially so control, multiverse, and experimentation, reusability, switching tooling - all very importnat.
+
 ### where pg is used
 all operations seem very simple, with just primitives, except rag which uses vector.  Transactions is only used to remove the file chunk embeddings at the same time as the files.
 Everything else is strictly in the src/database/schemas dir, as this is the only place that imports from drizzle-orm/pg-core
