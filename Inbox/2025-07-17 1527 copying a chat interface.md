@@ -173,3 +173,24 @@ monetizing the external services that things connect to with a conveninence fee,
 making programs that can be directly consumed and shared in the platform that created them.
 
 so because the remote server does not have a way to run untrusted code lightly, nor to package up and connect to it, that might be a lightweight gap they have ?
+
+they pulled in prompt libs from FlowGPT.
+
+the agents they show do not have tools that can run arbitrary code, or modules, no execution framework it seems, and no evals, no tuning process, no fault feedback and upgrades.
+
+want t tool to go to npm, browse it, and pull in packages that can be used directly.
+also can make little code sandboxes that themselves become packages.
+
+agents should be able to call other agents.
+
+they have frames showing as tool calls.
+
+your server would reach out to the others you had to chat with and would organize the chat with them
+
+sharing of messages and chats needs to allow live view as well as snapshot, and bulk selection of messages to share and include in the transclude.  Transclude selection is no different to sharing, as they are the exact same thing.
+## Plan
+1. deploy version using latest code using feature flags to turn things off
+2. stamp our brand on it
+3. get frames working on the front end
+4. set up auth for our systems, may or may not use privy ???? timewasting
+5. 
