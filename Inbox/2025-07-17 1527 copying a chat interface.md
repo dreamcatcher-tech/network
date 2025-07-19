@@ -149,4 +149,16 @@ take the pg-lite version, and then gradually peel of functions that go into our 
 docker images
 - pg-lite seems up to date
 - lobe-chat seems outdated
-- 
+
+so we could use the pg edition to get our basic functionality up, and get it connecting to our backend.
+see how it uses s3 for files and stuff, and switch that over to us.
+use the cloud deployment to see how these features work, and see how to manage them.
+so we'll roll back to the last version that built the docker for pg-lite successfully, and then iterate on that.
+
+See what we can change with feature flags, then start yanking code.
+Check how plugins work, as we might leave that intact.
+Or add on napps as the same way as plugins.
+
+get up a version that we have modified the code on, first, in a separate branch.
+
+??? can we make the ambient attribution agent using someone elses agent framework ?
