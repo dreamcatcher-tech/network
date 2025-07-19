@@ -137,3 +137,7 @@ repopulating the db based on git might be hard ?
 
 to intercept at the app level, we would have to intercept everything in the src/services dir
 or intercept at the fetch level, but then making an api compatible backend in huge.
+
+would be nice to just lift off the front end.
+
+running their docker image would be the easiest ? possibly then just intercept the postgres calls ?  or insert a frontend of our own ?
