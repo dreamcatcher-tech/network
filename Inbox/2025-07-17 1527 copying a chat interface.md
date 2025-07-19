@@ -141,3 +141,6 @@ or intercept at the fetch level, but then making an api compatible backend in hu
 would be nice to just lift off the front end.
 
 running their docker image would be the easiest ? possibly then just intercept the postgres calls ?  or insert a frontend of our own ?
+
+we could use their api as the way to do agentic chat calls from our backend.
+So our backend is really about agents.
