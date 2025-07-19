@@ -241,7 +241,11 @@ one layer higher than postgres but doesn't handle migrations, as these will need
 If all the src/database/schemas were overridden, then we could drop in a type safe replacement, without getting tangled up in drizzle ?  So it is compatible with how lobe calls the db, but nothing more.
 These can already easily be turned into zod schemas.
 
-One of the key s
+One of the key shortcomings is that you cannot talk to the bots about your user settings on lobechat because the database is out of band from the application - it is not self aware or self accessible, with a wall being in place between those conventional functions and the ai functions, requiring people to still interpret UI layout for meaning, rather than ask a bot to do it.
+
+One of the key conceptual changes is one db per user.  This should allow people to go from lobe-cloud hosting to local hosting easily, and to choose other hosters, so long as everyone had a payment agreement in place to pay lobechat.
+
+The more people we can get to fight or lean on people for their fair cut, the more it helps everyone get their cut, so we can all band together reasonably, rather than a few loud gougers taking more than their share and being rude / extractionist.
 ## Plan
 1. deploy version using latest code using feature flags to turn things off
 2. get artifact repos showing in the files section of the app, replacing the s3 operations, using all their existing UI around upload and download, so keep a full db running of theirs, then replace all the s3 stuff with our repos.
