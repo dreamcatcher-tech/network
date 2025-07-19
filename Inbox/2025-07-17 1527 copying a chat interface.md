@@ -144,3 +144,9 @@ running their docker image would be the easiest ? possibly then just intercept t
 
 we could use their api as the way to do agentic chat calls from our backend.
 So our backend is really about agents.
+take the pg-lite version, and then gradually peel of functions that go into our backend ?
+
+docker images
+- pg-lite seems up to date
+- lobe-chat seems outdated
+- 
