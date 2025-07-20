@@ -326,3 +326,15 @@ Replacing the s3 system:
 need to provide presigned urls to let clients upload to them - these could go straight to artifact, or they could go straight to the backing s3 bucket in a staging area.
 Make our own page that displays the repos and files, rather that keep getting squished by them adding new things.
 Our translcuder sits over the top of knowledgebase and files anyway, so doesn't matter about getting tangled or conflicts with these.
+
+Is it possible that we can get our intelligence requirements from not having git ?
+Why does git link strongly to our features ?
+Is it worthwhile to implement all our features in db, for speed, then split off to git ?
+git integration is needed anyway, but the rest might not need to be in git, since we could tuck chats into context easily ? transcludes are just a type of file.
+
+We want long running agents that grind out intelligence for us in the background and in response to any changes.
+
+compare our results and the db results side by side, so we know we can switch out.
+Using a flag, can disable the db or not, which makes it use artifact or not, so we can test easily.
+
+eslint rules can detect when we haven't tapped a function correctly ?
