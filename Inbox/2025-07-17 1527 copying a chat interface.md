@@ -324,3 +324,5 @@ then need to check if we can achieve all we want.
 
 Replacing the s3 system:
 need to provide presigned urls to let clients upload to them - these could go straight to artifact, or they could go straight to the backing s3 bucket in a staging area.
+Make our own page that displays the repos and files, rather that keep getting squished by them adding new things.
+Our translcuder sits over the top of knowledgebase and files anyway, so doesn't matter about getting tangled or conflicts with these.
