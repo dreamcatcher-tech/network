@@ -340,3 +340,7 @@ compare our results and the db results side by side, so we know we can switch ou
 Using a flag, can disable the db or not, which makes it use artifact or not, so we can test easily.
 
 eslint rules can detect when we haven't tapped a function correctly ?
+
+transclude would be configured to have some default translators, so turning text files into something for the model would involve putting it into an xml structure or similar.
+
+Need a multifile capable artifact, so we can get the ai to edit multiple files and view the changes in a ui item.
