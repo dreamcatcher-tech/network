@@ -314,6 +314,7 @@ Vercel deployment is much faster, since we don't have to build a docker image ea
 We *could* technically run a docker image, but this is a fairly slow and inconvenient way to deploy things, as takes about 10m to build.
 
 Vercel for rapid iterations, test deployments, analytics, and general ease.  Fly for the artifact backend.  neon lets us see inside the tables
+Makes us very tangled with vercel, but this could be thought of like an application server, and anyone can run their own, including a desktop.  We server everyone with this single instance, but we give everyone their own database.  And hopefully the computation is repeatable.
 
 What we can present:
 1. our own deployed instance of lobe-chat, possibly branded, and feature flag snipped.
