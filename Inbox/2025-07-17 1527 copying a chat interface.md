@@ -319,3 +319,8 @@ Makes us very tangled with vercel, but this could be thought of like an applicat
 What we can present:
 1. our own deployed instance of lobe-chat, possibly branded, and feature flag snipped.
 2. hook the db calls, so we know when data is being changed.
+
+then need to check if we can achieve all we want.
+
+Replacing the s3 system:
+need to provide presigned urls to let clients upload to them - these could go straight to artifact, or they could go straight to the backing s3 bucket in a staging area.
