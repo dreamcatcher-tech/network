@@ -332,6 +332,8 @@ Why does git link strongly to our features ?
 Is it worthwhile to implement all our features in db, for speed, then split off to git ?
 git integration is needed anyway, but the rest might not need to be in git, since we could tuck chats into context easily ? transcludes are just a type of file.
 
+Basically, what is the point of being on a dark edge capable system ? the database thing lets us inherit a whole heap of thinking, and a working front end, then we should figure out our features there - the git thing, the blockchain thing - that is a property of operation that is crucial for trust, but initial users don't need that level of trust.
+
 We want long running agents that grind out intelligence for us in the background and in response to any changes.
 
 compare our results and the db results side by side, so we know we can switch out.
