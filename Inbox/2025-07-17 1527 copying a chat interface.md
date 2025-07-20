@@ -306,4 +306,11 @@ Everything else is strictly in the src/database/schemas dir, as this is the only
 3. stamp our brand on it
 4. get frames working on the front end
 5. set up auth for our systems, may or may not use privy ???? timewasting
-6. 
+
+Seems best way is to proxy calls thru the db.ts object, and intercept everything while it is still in schema form, and start with a tap that writes to artifact.
+This is the least amount of effort to get up to speed, and allows us to bail, still keeps data sort of sovereign.
+
+Vercel deployment is much faster, since we don't have to build a docker image each time.
+We *could* technically run a docker image, but this is a fairly slow and inconvenient way to deploy things, as takes about 10m to build.
+
+Vercel for rapid iterations, test deployments, analytics, and general ease.  Fly for the artifact backend.
