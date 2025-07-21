@@ -5,6 +5,10 @@
 
 >[!danger] Depends: 
 
-They are st
+They are still stuck in big db land.
 
-pay to use their token gateway, that handles all the models
+pay to use their token gateway, that handles all the models.
+
+they should allow any installation of lobechat to be merged in and out of the cloud version.
+
+mobile versions should function offline, and then merge in when online again.

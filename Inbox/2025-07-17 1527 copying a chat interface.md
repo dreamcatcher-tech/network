@@ -109,6 +109,9 @@ list of other candidates:
 ## open web ui
 no because it runs python on the backend
 
+## NextChat
+size raw: 29MB
+
 ## lobechat
 
 ## lobehub/ui
@@ -295,6 +298,8 @@ Make tasks show up as artifacts.
 If the model needs some answers, it can commission and agent or long running thread to find them before it continues, and this progress should be viewable, and you may wish to tick it off or confirm it, or interact with it, before continuing, like browsing thru large numbers of images.
 Altering what this reponse is, changes the higher level model output substantially so control, multiverse, and experimentation, reusability, switching tooling - all very importnat.
 
+
+
 ### where pg is used
 all operations seem very simple, with just primitives, except rag which uses vector.  Transactions is only used to remove the file chunk embeddings at the same time as the files.
 Everything else is strictly in the src/database/schemas dir, as this is the only place that imports from drizzle-orm/pg-core
@@ -344,3 +349,8 @@ eslint rules can detect when we haven't tapped a function correctly ?
 transclude would be configured to have some default translators, so turning text files into something for the model would involve putting it into an xml structure or similar.
 
 Need a multifile capable artifact, so we can get the ai to edit multiple files and view the changes in a ui item.
+
+issue is that if we cannot get a lightweight dev environment working to make changes, then this won't work out, particularly as we need to use codex.
+
+nextchat has less to rip out, but doesn't support x.ai
+
