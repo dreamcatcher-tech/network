@@ -5,4 +5,4 @@
 
 >[!danger] Depends: 
 
-it seems best that orgs is managed on our side, where the individuals are responsible for their logins.
+it seems best that orgs is managed on our side, where the individuals are responsible for their logins., and permissions grants access to agents and files, possibly token allocations too.
