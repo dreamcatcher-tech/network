@@ -7,4 +7,4 @@
 
 a repo could have several sql databases, as it just depends on a particular folder structure being present that can be translated into a sql database.
 
-so if we could use dolt as t
+so if we could use dolt as the on disk format, then we could present a sql db with very little code of our own.
