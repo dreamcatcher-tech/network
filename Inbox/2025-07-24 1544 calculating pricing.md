@@ -5,4 +5,6 @@
 
 >[!danger] Depends: 
 
-be best if we did
+be best if we didn't have to maintain two tables, if the pricing was calculated based off reading the message metadata ?
+
+then the current price could be kept in some ephemeral table, since it can be recovered, so no point storing it permanently.
