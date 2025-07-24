@@ -15,3 +15,5 @@ We might need to perfect the api and interfaces, then make libraries, before try
 So each time we need a new feature, redesign the core, test it, then apply it ?
 
 being self aware requires a lot of grinding - it should be aware of each user that is interacting with the system, and work out entity maps between people, so it knows who to talk to about things.  It should use the same way it learns about ai agents and capabilities to determine who to call.
+
+we would present the environment of the agent as an mcp server, so it can query about its own reflection, learn things, ask questions, perform operations.
