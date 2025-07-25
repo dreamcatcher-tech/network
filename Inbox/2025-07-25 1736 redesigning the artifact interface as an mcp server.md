@@ -39,3 +39,5 @@ make a portion of the mcp server for testing, where it flicks over to the test n
 
 
 mcp makes like a portable api server.
+
+expose our backend as a mcp server, so it can interrogate itself ?
