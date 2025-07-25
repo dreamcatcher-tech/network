@@ -35,7 +35,7 @@ Weirdly, artifact needs to make ai calls thru the nextjs app, so that billing is
 
 the artifact front end library is better as an mcp client, since we can sit atop all their work, and get the same result ?  then the lib is the same in the front end, in the cli, and in the backend between the napps.
 
-
+make a portion of the mcp server for testing, where it flicks over to the test napp and starts allowing self test and experimentation.
 
 
 mcp makes like a portable api server.
