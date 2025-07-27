@@ -56,3 +56,25 @@ Use roots as a way for the server to access transcludes ?
 We now have a clear view of the UI mechanic we want, where every button just opens a chat with different context.
 
 If the servers were chained, then one becomes the client of another, so listing roots is where the runner of the napp learns about its permissions from the caller.
+
+so the way in which mcp servers are exposed by being nested needs to be defined.
+it should all use the mcp interface so that we don't have to make any special components ?
+Altho it might be simpler to make a dedicated entry api, and then mcp the rest of the way ?
+
+if we treat lobe like a stepping stone, where we use it to get the foundations of our server side operations ?
+? Are we going to make mcp be the interface of artifact ?
+if so, then the smoothest path is to make lobechat call artifact as an mcp server, then get our use cases initially working, since we need those basic things.  Then make our own front end to handle this simplified model.
+
+lobechat might have implemented the sampling portion of the interface, so we can make our llm requests thru them ?
+
+artifact would need flattening, so that all the tools were present as one ?
+
+each napp could be presented as an mcp server.  the methods are almost identical.
+
+add frames ?
+add a frame that lets you call mcp functions manually, for testing.
+frames interface should be mcp, brokered by the client.
+make a ui element that calls an mcp server to populate the file list ?
+or just make the file selector ALWAYs be in context of a chat ?
+
+use the example server deployed to fly, then connect to lobechat ?
