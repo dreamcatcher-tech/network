@@ -40,3 +40,9 @@ Haul in chunks of the lobechat UI system as portions.
 
 api gateway using mcp servers, where they negotiate to make api calls remotely ?
 by making them all mcp, they can be recomposed easily, tested easily, and since we want to make napps be the unit of packaging up an mcp server and running it, means it is all just this single interface everywhere that we deal with.
+
+Make a brutalist interface that pays no attention to UI whatsoever, that just focuses on laying things out logically.
+
+Because the provider interface into artifact is actually set up as mcp compatible, 
+
+So have the browser, and this just connects straight to an mcp server ?
