@@ -43,6 +43,16 @@ by making them all mcp, they can be recomposed easily, tested easily, and since 
 
 Make a brutalist interface that pays no attention to UI whatsoever, that just focuses on laying things out logically.
 
-Because the provider interface into artifact is actually set up as mcp compatible, 
+Because the provider interface into artifact is actually set up as mcp compatible, we could just expose artifact as an mcp server, and then allow a client run by a program to use this interface to access nested mcp servers, which is to say, different combos of repos and napps.  
 
-So have the browser, and this just connects straight to an mcp server ?
+The mcp server is actually a repo.  Inside it, we can change out the tools by loading a specific napp.  This will dynamically shift the tools.
+
+So have the browser, and this just connects straight to an mcp server ?  Uses this server to populate all the things it needs.  MCP interface is very similar to the artifact interface, in fact the artifact protocol can be transmitted over MCP, so mcp is like the transmit protocol.
+
+Make git items available at https addresses ?  or allow bulk transfer using the git layer to permit rapid access within ui or application contexts ? or stream it down of the mcp interface, so its all standard ?
+
+Use roots as a way for the server to access transcludes ?
+
+We now have a clear view of the UI mechanic we want, where every button just opens a chat with different context.
+
+If the servers were chained, then one becomes the client of another, so listing roots is where the runner of the napp learns about its permissions from the caller.
