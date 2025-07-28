@@ -42,3 +42,5 @@ this might be the help agent, since it knows about the system itself.  human can
 frames as we made them might be quite close to being mcp'd.
 
 layout would be as a grid, showing which pieces were occupied by which components.  also the state of each component.
+
+makes the frames able to be treated like a server, but makes them easily driveable by an agent, and you wouldn't know if it was a human or an agent.  So the tool call stream is possibly available to authors, but at the very least means that an ai can help you navigate a ui and it could drive it headless, with nothing rendered, to get the output it needs.
