@@ -17,3 +17,5 @@ steps
 2. make a basic mcp server
 3. set up clerk as the auth checking thing
 4. expose the super ls repos as resources.
+
+stream down ai-sdk messages down as the response.
