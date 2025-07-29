@@ -36,3 +36,5 @@ Recovering a single piece is easy.
 sql is great for speed, and for quick lookups.
 
 can treat a sql serevr as a service, so it runs as part of a napp, so the napp can do quicker things.  time is a spearate thing than recoverability / resiliency.
+
+actually we can do this easy, since we already have a postgress db acting as a cache ? sort of, with the deno kv.
