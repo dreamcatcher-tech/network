@@ -20,7 +20,14 @@ we have these fundamental components, and ways of interacting with them:
 1. chats
 2. stateboard
 3. bots
+4. the host application holding these things together
 
 maybe group chats happen in the stateboard, and the chats are always internal ?  so you can talk directly, or you can use your agents to do things and say things to the chat ?
 
 the chat is the human thread history.  it is driven by the human, and the system and bots are responding.
+
+one of the key issues is that if the chat is sticky, then how do you switch chats ?
+that could be a modal.
+clicking on a bot could open the bot picker so you can swap something out.
+
+we always want to be able to take a pause, and then prep something, then add it back in, like go find a bot by chatting about it, wait a bit, then come back, and insert it in without any losses.
