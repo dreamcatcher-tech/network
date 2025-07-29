@@ -17,3 +17,12 @@ Because an llm would use the direct mcp interface, but the UI and react componen
 
 roots is just the scope, which the client keeps updated.
 in a session, we could set the scope, and use that statefully ?
+see how it goes, with the scope alone, then maybe look at statefully setting the scope.
+
+need a test set that exercise the provider using mcp.
+
+then we need to test remote napp / mcp invocation thru fibers.
+
+then we need to make the chat napps, and carry on making all the native napps.
+
+how we going to move the UI to be pure tool calls ?
