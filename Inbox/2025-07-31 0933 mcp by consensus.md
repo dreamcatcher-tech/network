@@ -27,10 +27,13 @@ properties:
 8. fuzzable, where we can thrash thru some torturous events
 9. keep going even if byzantine faults detected, since fault injection tests the safety of the network
 10. hookable, so we get a proposal with a hash, we can hook that and go verify this info for ourselves, and we know which node the proposal came from too
+11. multichannel, so a single network can handle consensus on a number of independent repos
+12. overlay capable, so consensus with a subset required can use the same comms channels, to reduce chatter
 
 wishes:
-1. take advantge of git structure to not waste commits that are behind, so making merges be a bit more useful, and allowing high speed nodes to race ahead, with slow nodes catching up later, without holding back the leaders.  The creation of commits shouldn't need to wait for consensus, so a slow node can get a hundred commits, verify them all, then vote.  The commit history should inherit sigs, so if there were a hundred commits, and 99 signed at the top, but one signed at commit 50, then commit 50 is 100% signed, but higher commits are 99% signed - a node shouldn't have to sign every commit, to imply signing all the ones below.
+1. take advantage of git structure to not waste commits that are behind, so making merges be a bit more useful, and allowing high speed nodes to race ahead, with slow nodes catching up later, without holding back the leaders.  The creation of commits shouldn't need to wait for consensus, so a slow node can get a hundred commits, verify them all, then vote.  The commit history should inherit sigs, so if there were a hundred commits, and 99 signed at the top, but one signed at commit 50, then commit 50 is 100% signed, but higher commits are 99% signed - a node shouldn't have to sign every commit, to imply signing all the ones below.
 2. data transfer should be minimal - if we have all the inputs to generate the next commit, there is no need to receive the actual commit if we can calculate it.
+3. a dht so that nodes can find each other in the cluster easily by walking the dht.
 
 executors that are allowed to push updates to data may be different from the nodes doing the data synchrony ?  but, the data nodes must be in complete control of the execution nodes.
 
