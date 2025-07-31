@@ -46,3 +46,7 @@ There might be a way to make a consensus mechanism that, instead of having point
 
 sign the commits using a group pgp key that each node adds as their own key or something, so github shows as verified ?
 provide our own analysis tools for walking the chains.
+
+if the ai models are increasing as we think they are, then superior consensus algos should be discoverable by them, so if we just make do with something that kind of works, something that is saleable, as in works between reliable nodes, then we can launch with that, and patch in newer consensus as it becomes available.
+
+We are probably wed to the git protocol for now, since it might be pretty close to optimal, and not sure much would change with the help of AI grinders.
