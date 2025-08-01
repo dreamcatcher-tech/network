@@ -36,3 +36,12 @@ basically have some standard tests for each algo, and the mesurement is network 
 the simulators should be able to run in the browser, running as web workers.
 or, run as simulated nodes in this standard workbench, where we simulate a computer, it has message queues, and then we go round tending to it.
 this gives good graphs or algo performance.
+
+Can test the system with a simple naive consensus mechanism and see where its faults lie.
+Show how TLA+ will show a failed test.
+
+is there a way to map it to the tla+ proofs, so that we provide a base framework to construct any tla proof with, and if you do that, we can implement it and run it on the simulator ?
+
+define the standard guarantees we need, like liveliness, stall recorvery.  Define standard ratios, like recovery from fault as a ratio of time to propogate without fault.
+
+test network hops for things like joining and leaving, and test joining and leaving en masse.
