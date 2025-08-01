@@ -32,3 +32,7 @@ it is best to write the cost ourselves, since it is quite simple.  It could use 
 can measure the noise to error rate - as errors increase, does the amount of chatter stay small ?
 
 basically have some standard tests for each algo, and the mesurement is network steps / ticks, not compute time or wall time.
+
+the simulators should be able to run in the browser, running as web workers.
+or, run as simulated nodes in this standard workbench, where we simulate a computer, it has message queues, and then we go round tending to it.
+this gives good graphs or algo performance.
