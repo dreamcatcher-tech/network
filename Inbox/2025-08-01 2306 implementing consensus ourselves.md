@@ -19,4 +19,16 @@ plus as ai advances, it can help us handle it better ?
 
 there is a rust implementation of tendermint - we could abstract this and compile it to wasm then run for our purposes ?
 
-so we'd make our o
+so we'd make our own algo, and then have standard interfaces that we give to each algo implementation, and then we run different benchmarks, but on steps, where each network message is a step, not on actual latency.  We can show then, that a large number of steps will equate to slow perf, so we can start sampling behaviour as number of participants gets large.
+
+seems bad to incorporate anything at all about geography into consensus decisions ?  makes it quite hard to simulate ?
+
+need to test some nodes always being very much slower.
+
+simplicity of checking scores vs performance should be recorded.
+
+it is best to write the cost ourselves, since it is quite simple.  It could use an artifact interface to store all its data, so anyone can interrogate it.
+
+can measure the noise to error rate - as errors increase, does the amount of chatter stay small ?
+
+basically have some standard tests for each algo, and the mesurement is network steps / ticks, not compute time or wall time.
