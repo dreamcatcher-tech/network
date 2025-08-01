@@ -47,4 +47,8 @@ could turn a lot of the cosmetics isle into really just a printer.
 
 so instead of asking for a different brand, you just directly edit the mix, with the help of an ai model that also trawls thru other user feedback to help you diagnoze what the complaint you have with.  Can also post online and have people sell you solutions.
 
+machine would use glass syringes, and have a wash station where it used water to wash the syringe before taking a dip from another cartridge.  or the cartridges can have little print head like squirters, like ultrasonic pistons that squirt the product out.  Cartridges could come sealed.
+
+or, longer shelf life can be attained by separating out components and mixing on demand https://www.topfeelpack.com/two-in-one-mixing-launcher-cosmetics-double-tube-bottle-product/
+
 costmetics
