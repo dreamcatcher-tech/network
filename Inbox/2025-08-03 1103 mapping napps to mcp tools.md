@@ -8,3 +8,5 @@
 there surely must be a neat way to compactly merge these two things, or make them the same thing, like a napp is a package of mcp functionality.
 
 so to install a napp means to allow the mcp server to serve that napp ?
+
+tool names could use pathing, so we expect object nesting but then we expand that out ?
