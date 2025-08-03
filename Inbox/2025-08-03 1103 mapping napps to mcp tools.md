@@ -42,4 +42,11 @@ files might just be something that every mcp server has access to, and can use r
 so the `.bind()` function we currently have is what sets up the napp.
 should the mcp be bounded to a particular path in the repo ? and then allow it to change any of these things ? or is changing actually a new mcp instance ?
 
-it should auto track the latest thing.
+it should auto track the latest thing, so no more having to fetch latest, that just comes by default.
+special system actions allow deeper operations, like rolling back to a particular commmit.
+the resources list the scope. or the resources just list out all the scope elements directly, so calling list resources shows the full scope.
+
+permissions are used to scope what actions the mcp server permits.  like history browsing.
+roots might be used to show access restrictions / but we wouldn't give away the path info - it would always just look like `/` altho this might be useful to view from the clients perspective.
+
+if a napp is the packaging format of mcp servers?
