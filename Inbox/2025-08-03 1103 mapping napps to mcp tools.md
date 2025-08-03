@@ -57,6 +57,7 @@ there seems only a few modes:
 1. root mcp mode where you talk to the hosting provider directly, over the web.
 2. bound mcp mode, where you walk to a napp that you have bound by tunneling thru the root mcp server - the repo location may only allow some napps, and block others
 3. napp mcp mode, where during the course of napp execution, and executing napp uses the mcp protocol to talk to another napp, or to an external mcp service
+4. mcp being exposed externally to others to call a napp chainside.
 
 the purpose of keeping all these modes the same, is so that inside a napp should be no different to being outside, allowing for lossless simulation, and to insert intelligence at any point in the call chain.
 
@@ -93,3 +94,12 @@ the repo is the identity / files / state of the mcp server, the napp is the appl
 discovery of napps is like using a napps browser tool, so we could have installed or allowed napps, or you could be allowed to run anything.
 
 if we just mcp the host first, and play with tunnelled napps after ? just get a feel for it ?
+
+would the mcp server be a new one or would it be the same one and it just switches out the tools ?
+if we made our own version of this virtual server that swaps in and out rapidly ?
+
+custom methods? for things like rolling back to a specific commit or something ?
+provision it, set it up, configure it, then
+Connect handshake might add some extra info ?
+
+Making a new mcp server sounds easiest, if you want a new napp, fork the current one, with a new napp, then list the tools in it, or if you already know the tool calls you expect, use those.
