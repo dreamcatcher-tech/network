@@ -67,3 +67,25 @@ The important thing to remember to model is the trigger that causes the mcp clie
 we can subscribe to resources to be told when they changed if we want .
 
 roots could be used to show you what your permissions are with a particular repo ?
+roots should be where the sender restricts what the recipient can access, if the recipient needs to access some files.  For running a napp, that would restrict the napp as to what it can access.
+
+each sub napp in the provider could be a new mcp server.
+the base lets you create / connect a new mcp server, much like how most commands in artifact returned a new artifact.
+
+the list of immediate napps can be in the resources list.  you would then scope to the napp you wanted, in order to make a new mcp server ?
+client tunneling is the thing we need then.  We should make that be a call that we intercept ?
+
+if a repo is the server that hosts an mcp server, which includes its state and auth, and a napp is the execution package that is used to create the application / tools layer in the mcp server.
+	
+the gateway host is a repo that hosts and mcp server but presents it to the outside world.
+
+1. resources
+2. prompts
+3. tools
+4. ping
+5. sampling
+6. elicitations
+7. roots
+8. auth
+
+
