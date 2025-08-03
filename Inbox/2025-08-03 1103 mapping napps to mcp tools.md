@@ -77,9 +77,11 @@ client tunneling is the thing we need then.  We should make that be a call that 
 
 if a repo is the server that hosts an mcp server, which includes its state and auth, and a napp is the execution package that is used to create the application / tools layer in the mcp server.
 	
-the gateway host is a repo that hosts and mcp server but presents it to the outside world.
+the gateway host is a repo that hosts an mcp server but presents it to the outside world.
 
-1. resources
+the repo is the identity / files / state of the mcp server, the napp is the application code.
+
+1. resources (files, available napps)
 2. prompts
 3. tools
 4. ping
@@ -88,4 +90,4 @@ the gateway host is a repo that hosts and mcp server but presents it to the outs
 7. roots
 8. auth
 
-
+discovery of napps is like using a napps browser tool, so we could have installed or allowed napps, or you could be allowed to run anything.
