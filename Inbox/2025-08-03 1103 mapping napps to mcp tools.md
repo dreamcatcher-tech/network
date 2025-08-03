@@ -91,3 +91,5 @@ the repo is the identity / files / state of the mcp server, the napp is the appl
 8. auth
 
 discovery of napps is like using a napps browser tool, so we could have installed or allowed napps, or you could be allowed to run anything.
+
+if we just mcp the host first, and play with tunnelled napps after ? just get a feel for it ?
