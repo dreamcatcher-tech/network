@@ -50,3 +50,12 @@ permissions are used to scope what actions the mcp server permits.  like history
 roots might be used to show access restrictions / but we wouldn't give away the path info - it would always just look like `/` altho this might be useful to view from the clients perspective.
 
 if a napp is the packaging format of mcp servers?
+
+would need to shift streaming napps to be something different ? streaming is like a side channel or a notifications thing ?
+
+there seems only a few modes:
+1. root mcp mode where you talk to the hosting provider directly, over the web.
+2. bound mcp mode, where you walk to a napp that you have bound by tunneling thru the root mcp server
+3. napp mcp mode, where during the course of napp execution, and executing napp uses the mcp protocol to talk to another napp, or to an external mcp service
+
+The important thing to remember to model is the trigger that causes the mcp client to start in the first place - this is implied in normal usage, but for us, a tool call provides this intention.
