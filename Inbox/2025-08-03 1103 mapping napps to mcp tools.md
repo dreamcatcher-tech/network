@@ -103,3 +103,15 @@ provision it, set it up, configure it, then
 Connect handshake might add some extra info ?
 
 Making a new mcp server sounds easiest, if you want a new napp, fork the current one, with a new napp, then list the tools in it, or if you already know the tool calls you expect, use those.
+
+So each mcp server that we produce has an extra function, which is like spawn, or bind, where you can create a new mcp 
+
+making a new server is very light weight once the gateway has been set up.  so making a new one is vastly preferrable to shifting and old one around, which involves round trips and server side state.  If the mcp server was stateless as it, once your session is set up, the only possibly stateful things would be the execution progress updates, but when its stopped, it is pure.
+
+client can change the roots to alter what the napp should focus on, but this is no permissions.  Changing something like the branch requires a new mcp server.  So scope is set on instantiation ?
+Otherwise the tools for managing the git cursor ends up polluting everything ?
+
+the inspector service would be extended with UI elements that could be displayed.
+
+the frame would be connected to an mcp server.
+then the whole UI can be made as a frame, where it just sends its actions via mcp, which means that even the root ui can be arbitrarily nested / virtualized.
