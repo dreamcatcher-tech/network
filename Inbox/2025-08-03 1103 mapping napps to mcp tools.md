@@ -115,3 +115,5 @@ the inspector service would be extended with UI elements that could be displayed
 
 the frame would be connected to an mcp server.
 then the whole UI can be made as a frame, where it just sends its actions via mcp, which means that even the root ui can be arbitrarily nested / virtualized.
+
+So a mocked mcp server looks the same as the real mcp server, it just runs in browser.
