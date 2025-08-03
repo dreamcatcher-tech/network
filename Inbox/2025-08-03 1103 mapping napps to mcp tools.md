@@ -60,6 +60,8 @@ there seems only a few modes:
 
 the purpose of keeping all these modes the same, is so that inside a napp should be no different to being outside, allowing for lossless simulation, and to insert intelligence at any point in the call chain.
 
+when connecting to root, the napp you run is the provider napp.  or at least each of the provider napps.
+
 The important thing to remember to model is the trigger that causes the mcp client to start in the first place - this is implied in normal usage, but for us, a tool call provides this intention.
 
 we can subscribe to resources to be told when they changed if we want .
