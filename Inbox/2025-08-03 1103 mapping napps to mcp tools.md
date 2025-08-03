@@ -55,7 +55,7 @@ would need to shift streaming napps to be something different ? streaming is lik
 
 there seems only a few modes:
 1. root mcp mode where you talk to the hosting provider directly, over the web.
-2. bound mcp mode, where you walk to a napp that you have bound by tunneling thru the root mcp server
+2. bound mcp mode, where you walk to a napp that you have bound by tunneling thru the root mcp server - the repo location may only allow some napps, and block others
 3. napp mcp mode, where during the course of napp execution, and executing napp uses the mcp protocol to talk to another napp, or to an external mcp service
 
 the purpose of keeping all these modes the same, is so that inside a napp should be no different to being outside, allowing for lossless simulation, and to insert intelligence at any point in the call chain.
@@ -65,3 +65,5 @@ when connecting to root, the napp you run is the provider napp.  or at least eac
 The important thing to remember to model is the trigger that causes the mcp client to start in the first place - this is implied in normal usage, but for us, a tool call provides this intention.
 
 we can subscribe to resources to be told when they changed if we want .
+
+roots could be used to show you what your permissions are with a particular repo ?
