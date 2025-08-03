@@ -36,3 +36,10 @@ or should each mcp server be bound to a particular napp, and swapping them out i
 or is the base host actually in charge of managing all the mcp servers that this client has access too ?  and can 'provision' new ones, destroy running ones ?
 so the provider base is about managing mcps, and that is what provides the scope, so the scope doesn't have to keep getting called ?
 scope of each mcp would be given in its resource list ?
+
+files might just be something that every mcp server has access to, and can use resources to walk and list these items.
+
+so the `.bind()` function we currently have is what sets up the napp.
+should the mcp be bounded to a particular path in the repo ? and then allow it to change any of these things ? or is changing actually a new mcp instance ?
+
+it should auto track the latest thing.

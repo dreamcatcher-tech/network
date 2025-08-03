@@ -26,3 +26,5 @@ make a passthru service where it pulls in existing s3 bucket data dynamically as
 
 can be optimized for very small reads and writes too.
 buckets might be subpartitioned, so a particular folder is a single repo, rather than the whole bucket being a repo.  so if a users data had a particular prefix, this is moved around differently than another users data.
+
+seems like the critical piece is consensus, that allows us to present a swarm of nodes as a single node.  this is what makes the virtual server be strong.  And so anything you can do with the api of a single node can now be done with this reliability property, as well as a distribution property so it can be closer to you.

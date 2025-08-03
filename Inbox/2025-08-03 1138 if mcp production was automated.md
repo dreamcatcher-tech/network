@@ -13,3 +13,7 @@ makes the codebase exceptionally modular.
 
 so implies we need the concept of trees of mcp servers ? so a server can drill down into groups of napps that do a specific thing.
 
+napps should be presented as a packaging format for mcp servers.
+
+therefor, we need to figure out how to boot a napp and present an mcp interface to it ?
+
