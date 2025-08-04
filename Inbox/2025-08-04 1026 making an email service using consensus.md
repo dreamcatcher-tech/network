@@ -48,3 +48,7 @@ Key si being able to simulate them and debug them, these rules.
 Being able to chat to the mailserver, at a personal level using NL, and ask it about any spam that might have bounced, and have it go thru and check what got deleted even bfore you received it.  The server becomes like a person, and you can make api calls, but you can also chat with it naturally.
 
 go talk to it about never letting thru antyihgn from a certain address unless it 'looks important'
+
+if we merge the mta and mua role - the same LLM that talks to the user and helps them compose is also the one that handles the spam and other concerns.
+
+groups of these agents band together and report bad servers, staking against the claim.
