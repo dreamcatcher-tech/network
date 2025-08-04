@@ -5,3 +5,6 @@
 
 >[!danger] Depends: 
 
+plus can do high perf queries on the data.
+offer a query language over it, that uses LLMs to process the data in pipelines.
+
