@@ -14,3 +14,5 @@ this is done so that a node never needs to swap its keys out at any point, so it
 then having nodes that step in when its offline - these nodes can be warm standby.
 
 useful in cases where the node is punished for being offline.
+
+we could make the execution server be a separate computer to the data node, and treat the execution engine as its fallback.
