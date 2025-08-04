@@ -117,3 +117,15 @@ the frame would be connected to an mcp server.
 then the whole UI can be made as a frame, where it just sends its actions via mcp, which means that even the root ui can be arbitrarily nested / virtualized.
 
 So a mocked mcp server looks the same as the real mcp server, it just runs in browser.
+
+so make the homepage to interface with a virtualized mcp server, using the artifact transport mechanism, and then it can be run as a frame as well.
+
+in base page, the real web mcp client with the http transport, it is driven from the outside to connect, and then driven to create a virtualized / tunnelled mcp server / artifact mcp server, which is then used to present the base mcp actions verbatim, but makes it easy for us to test.
+
+Props passsed would be an ArtifactMCP client object ? or made availabe as a provider context.
+there would be some extra tools on this, that allow some UI commands to be issued.
+props and things can be made available on the resources list.
+
+slot the transport straight into the existing artifact functions.
+
+need long running tool calls to be intercepted / virtualized.  need to make tool calls that can take hours, but also not time out the network while they're running.  And have a convention for how to get process in a sideband, where that progress can be accessible to anyone.
