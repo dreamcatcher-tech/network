@@ -52,3 +52,5 @@ go talk to it about never letting thru antyihgn from a certain address unless it
 if we merge the mta and mua role - the same LLM that talks to the user and helps them compose is also the one that handles the spam and other concerns.
 
 groups of these agents band together and report bad servers, staking against the claim.
+
+there is vast complex pieces in infrastructure that can be totally removed.  The biggest errors are where software that needed to handle fuzzy answers like tuning, as written to manage all edge cases fully, so like redundancy management, and other things that require significant pieces of code to perform in an automated fashion.  These answers do not need to be precise, and in some cases cannot be precise, like what is the ideal load balancing distribution amongst nodes ? so having an LLM do this removes a lot of software, and gives a better result, but keeps the result understandable in human terms, and allows it to adapt, and allows each customer to tune these inner variables to suit just themselves.
