@@ -23,3 +23,10 @@ llm can also run edge tests that benchmark your perf from all round the world.
 basically brings all the benefits of the dark edge service to a plain application interfact that everyone understands.
 
 the client would make connections to multiple consensus nodes, so that it had in built resilience.
+
+provide a sharding key, where we can map parts of a key to a dedicated chain, to avoid overloading a central chain.
+
+web browser clients can download urls, and we provide services that map this to the right chain and retrieve from it.
+Web clients can have multiple connections to these url provider services, for resilience.
+
+Web clients can also resolve down to a hash, and then fetch the hash from whatever bucket can be found.

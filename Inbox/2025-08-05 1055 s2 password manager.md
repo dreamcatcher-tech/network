@@ -25,3 +25,7 @@ pay for hosting, pay for usage, pay for security checks.
 the secrets vault can be used by mcp servers to get special secrets data on demand, so it is a machine vault as well as a human vault - an agent vault of sorts.
 
 can do some extra features, like holding the relationship with the service.
+
+have some way that the decryption keys of a user are stored on their computer with the extension, and on their phone, and against a cold storage wallet that we can open up but only after some time.
+
+if you provide kyc info to us, we can use that to unlock your account if you want.
