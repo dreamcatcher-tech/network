@@ -30,3 +30,5 @@ web browser clients can download urls, and we provide services that map this to 
 Web clients can have multiple connections to these url provider services, for resilience.
 
 Web clients can also resolve down to a hash, and then fetch the hash from whatever bucket can be found.
+
+by using llms to handle things like scaling, we can make something that doesn't have to be ready to automatically handle shock loads, which is hard to do, and hard to test, but instead we have a simple llm that watches the load, and makes decisions to fire things up or down based on the current status.
