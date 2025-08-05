@@ -87,4 +87,14 @@ Maybe artifact interface is what is used to provision the servers ?
 seems weird to make a separate system for preping the mcp client.
 Allow making mcp servers that blend multiple napps together ? you need to supply a namespace for each one or use the napp name.
 
-these are v
+these are virtual mcp servers, and there is only one on the outside which is the direct mcp server.
+we can wrap this one to provide a dynamic stateful one that presents anything inside it as tho it was itself.
+
+constructing a new mcp server requires passing in the one you already have ?
+its just an mcp function that takes in some kind of basic mcp server ?
+all vmcp's would have restricted access to their transmitting mcp - the one they are tunnelling thru.
+
+artifact the platform is the host that can run virtual mcp servers.
+napps are the package format for mcp servers.
+repos are the filesystem that mcp servers are mounted on.
+filesystems can be turned into napps, and therefore can become executable.
