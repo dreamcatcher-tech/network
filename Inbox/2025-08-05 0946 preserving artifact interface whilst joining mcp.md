@@ -60,4 +60,31 @@ but this makes it hard for a group to subscribe to a chat stream.
 sse stream reading could supply the last event we saw, making it resumable ?
 doesn't matter in chain land, since that is fundamentally reliable.
 
-notifa
+notifications could be different to streamed results ? but we would want to wrap them ?
+being internal to the tool calling means that they aren't able to be shared to other callers, but often they don't need to be.
+Also means the tool call stays open, which can be problematic.
+Streaming is nicer if it uses a separate mechanism.
+We mostly use it for notifications - we don't often use it within tools themselves ?
+but we could ?
+might also use the in band notification system ?
+that seems harder to chain up, since it tangles up what happens.
+but a separate structure that was for repeatable streams, this seems easily repeatable.
+
+should be able to make an mcp server and not change any data about the remote chain - we only need to make a call, and then that will change the state of the remote chain.  Or engage a watch method, or something like that.
+The tools list might change due to permissions.
+permissions should be exposed as a resource.
+
+mcp becomes the interface layer over the top.
+
+to get building:
+1. ignore streaming for now, as we can add this in later
+2. 
+
+how does interchain comms work ?
+the running napp would act as the application host, and it would create an mcp client, that would talk to the remote.
+
+Maybe artifact interface is what is used to provision the servers ?
+seems weird to make a separate system for preping the mcp client.
+Allow making mcp servers that blend multiple napps together ? you need to supply a namespace for each one or use the napp name.
+
+these are v
