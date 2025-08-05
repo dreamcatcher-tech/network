@@ -115,6 +115,18 @@ tools would be the wrapped tool functions of the mcp client.
 artifact the object can be a wrapped collection of mcp client servers.
 
 each napp function gets a context available function or an extra arg function that allows it to create mcp client connections:
+
 ```ts
 const 
 ```
+
+
+so to make the base artifact thing that a napp gets given, we make each provider be an mcp server connection, tunneling thru the base mcp server.
+Then we take all the clients that this produces, and we wrap them to present the base artifact item.
+
+the base mcp might be a schema driven thing that just relays ?
+
+its ok to wrap the mcp clients with extra software, but not if they were going to be tool calls ?
+so how to handle file edit tool calls followed by a commit ? is this just buffered up in the remote server ?
+
+writing files would send them to the remote server using tool calls, and then it would call commit on this files.  So the remote server would be holding the state of the whole thing.

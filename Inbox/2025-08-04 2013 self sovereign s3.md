@@ -35,7 +35,3 @@ by using llms to handle things like scaling, we can make something that doesn't 
 
 be able to show people exactly all the machines their data touched.  We can audit the location of the data.  We can show you where the data is stored to prove the resiliency calculations.  But it also doesn't go in unknown places - you can set geographic fences and other types of rules.
 
-so to make the base artifact thing that a napp gets given, we make each provider be an mcp server connection, tunneling thru the base mcp server.
-Then we take all the clients that this produces, and we wrap them to present the base artifact item.
-
-the base mcp might be a schema driven thing that just relays ?
