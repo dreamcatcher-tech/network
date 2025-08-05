@@ -112,6 +112,7 @@ wrapper round the outside can be the thing that makes the mcp server nice to use
 wrap it to form a proxy that gets fulfilled with its schema, and if the schema 
 
 tools would be the wrapped tool functions of the mcp client.
+artifact the object can be a wrapped collection of mcp client servers.
 
 each napp function gets a context available function or an extra arg function that allows it to create mcp client connections:
 ```ts
