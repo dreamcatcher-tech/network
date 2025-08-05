@@ -35,3 +35,4 @@ by using llms to handle things like scaling, we can make something that doesn't 
 
 be able to show people exactly all the machines their data touched.  We can audit the location of the data.  We can show you where the data is stored to prove the resiliency calculations.  But it also doesn't go in unknown places - you can set geographic fences and other types of rules.
 
+They can see what was touched by the signatures on the commits.  By design, the data has not gone anywhere other than those nodes.
