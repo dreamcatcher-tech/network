@@ -17,3 +17,4 @@ This allows an external mcp client to connect to any repo with any napp loaded u
 
 if a server was told to load a napp, then it would pull in the schemas, and the implementations would be lazy loaded.
 
+change the stream tool call type to first return a path to a resource to watch for the stream, and then pull down the stream from that ?
