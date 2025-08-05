@@ -5,6 +5,8 @@
 
 >[!danger] Depends: 
 
+[[2025-08-05 0946 preserving artifact interface whilst joining mcp]]
+
 there surely must be a neat way to compactly merge these two things, or make them the same thing, like a napp is a package of mcp functionality.
 
 so to install a napp means to allow the mcp server to serve that napp ?
@@ -57,7 +59,7 @@ there seems only a few modes:
 1. root mcp mode where you talk to the hosting provider directly, over the web.
 2. bound mcp mode, where you walk to a napp that you have bound by tunneling thru the root mcp server - the repo location may only allow some napps, and block others
 3. napp mcp mode, where during the course of napp execution, and executing napp uses the mcp protocol to talk to another napp, or to an external mcp service
-4. mcp being exposed externally to others to call a napp chainside.
+4. mcp being exposed externally to others to call a napp chainside. use query parameters and pathing to specify what you want.
 
 the purpose of keeping all these modes the same, is so that inside a napp should be no different to being outside, allowing for lossless simulation, and to insert intelligence at any point in the call chain.
 

@@ -130,3 +130,13 @@ its ok to wrap the mcp clients with extra software, but not if they were going t
 so how to handle file edit tool calls followed by a commit ? is this just buffered up in the remote server ?
 
 writing files would send them to the remote server using tool calls, and then it would call commit on this files.  So the remote server would be holding the state of the whole thing.
+
+should the staging area be local or remote ? 
+local makes it easy, but remote is more pure, since otherwise we end up wrapping things all over the show - wrapped clients cannot be easily controlled by models - the models can't easily provision themselves tools and also be aware of the client side wrapping.
+
+So basically we need to move the artifact.files.write stuff over to be at the end of a tool.
+This means they would become async.
+
+the server would expose the staging area as one of its resources ?
+it could expose prior commits via a commits resource.
+the file manipulation section, including branch.write, should be made one napp.  This is the napp you get when you get granded file access.  It is a separate napp when you are granted write access.
