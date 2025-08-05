@@ -16,3 +16,5 @@ we would charge based on joining a meeting and on the transcription time used.
 then bot can communicate with our platform fabric for inference, retrieval, and app based integrations in the system.
 
 basically a jack point for the human level comms that are not currently easily joined in.
+
+make an mcp endpoint for the agent, so people can connect to it with their own tools, and can retrieve info, run queires.
