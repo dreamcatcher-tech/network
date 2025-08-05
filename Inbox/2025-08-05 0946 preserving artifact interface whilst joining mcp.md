@@ -78,7 +78,7 @@ mcp becomes the interface layer over the top.
 
 to get building:
 1. ignore streaming for now, as we can add this in later
-2. 
+2. ignore changing tools until we get any tools working.
 
 how does interchain comms work ?
 the running napp would act as the application host, and it would create an mcp client, that would talk to the remote.
@@ -98,3 +98,22 @@ artifact the platform is the host that can run virtual mcp servers.
 napps are the package format for mcp servers.
 repos are the filesystem that mcp servers are mounted on.
 filesystems can be turned into napps, and therefore can become executable.
+
+so the container becomes the true mcp server ?
+hostscope is the mcp host, or the bottom mcp server - the hypervisor ?
+
+calling useArtifact() inside a napp should give you a bag of common mcp servers.
+we can put a wrapper around the mcp client, so it looks like calling artifact directly, as tho someone called bind on it.
+providing nicely bound functions seems a nicer way to present, rather than requiring the verbose toolCall thing.
+
+files write is a funny one - diesn't exist as a function, but manipultes state client side before pushing.  So this is an example of an mpc server that has been modified to have some client side code that does something and keeps that latency low.
+
+wrapper round the outside can be the thing that makes the mcp server nice to use ?
+wrap it to form a proxy that gets fulfilled with its schema, and if the schema 
+
+tools would be the wrapped tool functions of the mcp client.
+
+each napp function gets a context available function or an extra arg function that allows it to create mcp client connections:
+```ts
+const 
+```
