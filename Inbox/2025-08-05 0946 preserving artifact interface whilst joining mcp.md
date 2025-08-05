@@ -45,3 +45,19 @@ read the stream from the mcp server as a resource with a non advertized id.
 Anyone with the id and access to the server can read the stream, and multiple parties can read it, with the same result.
 
 files can be exposed as resources, so they can be downloaded in bulk, and use web cache on those calls.  Or the download might be for blobs, and so you download by blob from the web, which caches the request on the client browser.  Muich easier than managing the cache ourselves.
+
+this server would keep tracking the latest commit of the repo that it was set up to work with.
+it could be configured to subscribe to changes.
+
+the latest commit could be a resource, and it could subscribe to that resource to get triggered each time it changes.
+
+when subscribing to something, we can get back a notification, and we just dedupe the requestIds so we know what it is about ?
+
+streams could be notifications being send from the server down.
+but this makes it hard for a group to subscribe to a chat stream.
+? are notifications guaranteed to be in order ?
+
+sse stream reading could supply the last event we saw, making it resumable ?
+doesn't matter in chain land, since that is fundamentally reliable.
+
+notifa
