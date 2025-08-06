@@ -38,3 +38,17 @@ be able to show people exactly all the machines their data touched.  We can audi
 They can see what was touched by the signatures on the commits.  By design, the data has not gone anywhere other than those nodes.
 
 take advantage of content addressable systems for their guaranteed synchrony.  the value that backs a hash is not changeable, so once you are aware of it, you can repeatedly try to fetch it.  you need synchrony if you want to map a mutable value like a file path to a hash, but if you have a commit hash you can work with that.  This means we can provide LFS storage using these nodes, which can avoid having to duplicate the data around the place, since the storage chain has all these big files on disk, and provides them over the network to peers, where the peers request them by hash, so there is no confusion over mutations or checks to get the latest version.
+
+### storing large binary objects with strong consistency:
+if it is a single machine, then we have good put controls
+also a chain that shards out the binaries can also provide consensus acknolwedgement that it has been stored.
+it can also tolerate mutable values by using the chain for finality - it seems hard to give it anything but strong consistency.
+storing it in one place, we can let you know that it is there but not part of quorum yet.
+then when consensus is reached, then you know its on other nodes.
+You could upload different pieces to different nodes, if you declare it separately ?
+or you could trigger them to go fetch, then process, then store.
+Would use a different storage layer than lmdb.
+might use the actual disk ? or use a separate lmdb instance with chunking.
+need some processing for dedupe.
+run initial pass at full fat, then start breaking it down into chunks to dedupe.  Charge for the dedupe cost, but the benefit is that monthly storage can be reduced.
+should really do rolling comparisons, like what rsync does, to dedect dupes.  Possibly with bloom filters.
