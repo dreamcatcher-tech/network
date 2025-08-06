@@ -117,9 +117,11 @@ artifact the object can be a wrapped collection of mcp client servers.
 each napp function gets a context available function or an extra arg function that allows it to create mcp client connections:
 
 ```ts
-const 
+const artifact = useArtifact()
+const mcp = await artifact.mcp.connect( scope, napp1, napp2 )
 ```
 
+now you have an mcp client that is 'bound' to the remote valid scope.
 
 so to make the base artifact thing that a napp gets given, we make each provider be an mcp server connection, tunneling thru the base mcp server.
 Then we take all the clients that this produces, and we wrap them to present the base artifact item.
