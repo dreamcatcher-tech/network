@@ -140,3 +140,26 @@ This means they would become async.
 the server would expose the staging area as one of its resources ?
 it could expose prior commits via a commits resource.
 the file manipulation section, including branch.write, should be made one napp.  This is the napp you get when you get granded file access.  It is a separate napp when you are granted write access.
+
+## V1
+may have some system tool calls that can switch out what tools, or what mcp server the client is connected to - these functions would be tool calls that affect the client, and trigger client side actions, like connecting to a new server.
+
+the mutable fs would be held server side.
+checkout becomes async, where we check that the other side is available, and we have appropriate permissions.  No changes are made to this side.
+
+So the server is a facade, and it runs on the client, and it uses artifact actions under the hood, so mcp is a wrapper around the base protocol.  We shift the protocol to fit mcp succinctly.
+
+add a staging area to each repo where you can use this temporary storage ?
+
+for now, if you destroy the mcp server, then you destroy the staging area ?
+staging area has to be server side, since the napp tools may run against it, and need the staged data.  staging is in the compute thread, which is server side, but private to the mcp server.  So the mcp server occupies ram whilst it is doing stuff.
+
+swapping out the tool napp
+running multiple napps
+
+so the artifact mcp is a collection of clients, designed to be driven by a software program, not an llm ?
+it could be flattened to a large number of tool calls.
+one of the key functions is the ability to make a new mcp server, which would swap out the client for something else.
+
+have a range of system functions that can interact with the client using tool calls.
+mcp server can hook on the remote chain, so it is updated, or so it fetches the latest view when requested.

@@ -36,3 +36,5 @@ by using llms to handle things like scaling, we can make something that doesn't 
 be able to show people exactly all the machines their data touched.  We can audit the location of the data.  We can show you where the data is stored to prove the resiliency calculations.  But it also doesn't go in unknown places - you can set geographic fences and other types of rules.
 
 They can see what was touched by the signatures on the commits.  By design, the data has not gone anywhere other than those nodes.
+
+take advantage of content addressable systems for their guaranteed synchrony.  the value that backs a hash is not changeable, so once you are aware of it, you can repeatedly try to fetch it.  you need synchrony if you want to map a mutable value like a file path to a hash, but if you have a commit hash you can work with that.  This means we can provide LFS storage using these nodes, which can avoid having to duplicate the data around the place, since the storage chain has all these big files on disk, and provides them over the network to peers, where the peers request them by hash, so there is no confusion over mutations or checks to get the latest version.
