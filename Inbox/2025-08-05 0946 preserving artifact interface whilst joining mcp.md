@@ -119,7 +119,9 @@ each napp function gets a context available function or an extra arg function th
 ```ts
 const artifact = useArtifact()
 const mcp1 = await artifact.createMcp( scope, napp1, napp2 )
-const mcp2 = await mcp.connect( scope, napp3 )
+const mcp2 = await mcp1.createMcp( scope, napp3 )
+const mcp3 = await mcp2.createDynamicMcp( scope ) // allows dynamic scope and tools
+await mcp3.callTool( napp4 ) // calls the 'load' tool which switches the tools
 ```
 
 now you have an mcp client that is 'bound' to the remote valid scope.
@@ -136,6 +138,8 @@ or artifact might be a preconnected mcp client, with some special functions to c
 tools are always flat in mcp, so nesting either should not be done, or should be done by flattening.
 
 what if we didn't expose the mcp client directly, but just the functions ? like on a tools key ?
+We could do this with a wrapper utility function, or just add the tools key.
+Seems inevitable that we need to wrap the mcp client ?  unless we
 
 so to make the base artifact thing that a napp gets given, we make each provider be an mcp server connection, tunneling thru the base mcp server.
 Then we take all the clients that this produces, and we wrap them to present the base artifact item.
