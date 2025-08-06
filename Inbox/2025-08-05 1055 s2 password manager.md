@@ -29,3 +29,9 @@ can do some extra features, like holding the relationship with the service.
 have some way that the decryption keys of a user are stored on their computer with the extension, and on their phone, and against a cold storage wallet that we can open up but only after some time.
 
 if you provide kyc info to us, we can use that to unlock your account if you want.
+
+AI guidance can have an opinion on the veracity of the site, and can kick off warnings if you're in the wrong place.  Or can comment on the side about things, plus can be asked questions.
+
+AI can be passed back key info about the fields that are being filled in, and can auto place the auto fill boxes based on the dom, since it should be able to read the pages quite well.  Should make it easier than coding for detection.  Plus grab a bunch of examples.  Plus track the user login patterns so it knows what to type in and which boxes, then it averages this info out between all the users without sharing any other info about them.
+
+Just means we stay always current but without much coding.
