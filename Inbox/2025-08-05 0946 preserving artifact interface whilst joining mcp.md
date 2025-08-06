@@ -183,3 +183,8 @@ one of the key functions is the ability to make a new mcp server, which would sw
 
 have a range of system functions that can interact with the client using tool calls.
 mcp server can hook on the remote chain, so it is updated, or so it fetches the latest view when requested.
+
+So the root mcp server has just a single function, or simple set of functions, that is intended to be used by the nested mcp servers ?
+the root server functions are what is genuinely being called each time.
+
+is there also the notion of relaying thru other servers, if they expose the relay tool ? so you could bounce off different servers if you needed to.
