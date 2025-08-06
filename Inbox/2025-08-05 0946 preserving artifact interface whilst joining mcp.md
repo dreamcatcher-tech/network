@@ -118,10 +118,24 @@ each napp function gets a context available function or an extra arg function th
 
 ```ts
 const artifact = useArtifact()
-const mcp = await artifact.mcp.connect( scope, napp1, napp2 )
+const mcp1 = await artifact.createMcp( scope, napp1, napp2 )
+const mcp2 = await mcp.connect( scope, napp3 )
 ```
 
 now you have an mcp client that is 'bound' to the remote valid scope.
+
+so we might not need to mcp everything, and can start by just mcp'ing some parts of the system ? like start with the existing artifact functions ?
+The base mcp instance is scoped to the host, and the napps it uses are the provider napps.
+Just error if there is a tool nameclash between napps ? or, prefix all tool names with the napp name.
+
+but is it just the transport that is special each time ?
+so artifact would be a bag of mcp servers that were bound to different napps ?
+
+or artifact might be a preconnected mcp client, with some special functions to create new clients.
+
+tools are always flat in mcp, so nesting either should not be done, or should be done by flattening.
+
+what if we didn't expose the mcp client directly, but just the functions ? like on a tools key ?
 
 so to make the base artifact thing that a napp gets given, we make each provider be an mcp server connection, tunneling thru the base mcp server.
 Then we take all the clients that this produces, and we wrap them to present the base artifact item.
