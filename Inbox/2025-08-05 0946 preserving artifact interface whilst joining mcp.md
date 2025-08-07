@@ -214,3 +214,5 @@ when we talk to the substrate, we are always talking about a particular scope.
 so dispatch would be just telling the host that we want it to execute this particular tool call on this particular scope.  This is the means of tunneling
 
 So actions should be renamed as tool calls.
+
+So for us, we might make a new instance of the server for every client, so the transports don't actually matter, since we can make the server alter based on what the client asks ?
