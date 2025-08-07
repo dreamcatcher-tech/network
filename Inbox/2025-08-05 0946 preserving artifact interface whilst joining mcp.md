@@ -266,3 +266,19 @@ so system permissions are segmented by the napps that you can call on - these na
 
 actions always go to a fiber scope tho.  they never go to a branch directly - always to the execution system.  so a system action goes to which branch ? do they get hooked and intercepted ? are they collected under the system fiber of the repo ?  They should be linearized here since they can collide with each other ?
 
+### post gpt-5
+
+roots is what the client should set its current scope to.
+tunnel would be sending the mcp protocol messages along.
+mcpCreate would set up a new virtual server at a particular location by simply verifying that the napp loads and the repo is there and it has permissions.
+Then the clients transport, if ok, attaches this info as the header to each request - which scope it wants, what the mcp message it wants is.
+
+
+we replace our dispatch with call tool function that takes the json message from mcp as its payload.  Or we swap it out at the client side, and do an artifact call, and just rehydrate to the mcp client.
+
+So the mcp server is a very thin fascade, since its protocols are really just about presenting an interface.
+
+So that means that mcp is unsuitable as the underlying protocol of artifact, but that artifact the protocol is used to fulfill mcp requests by using a translator to emulate a server.  
+
+How we fulfill the mcp interface is largely up to us.  We *could* use their exact message formats all the way thru, and just replace our own message formats, so that we have one less format hanging around ?  really makes no difference, since it's all just jsonrpc.
+
