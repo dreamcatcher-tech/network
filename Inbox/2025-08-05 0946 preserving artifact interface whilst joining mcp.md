@@ -189,3 +189,28 @@ the root server functions are what is genuinely being called each time.
 those root tool calls are really just dispatch calls ?
 
 is there also the notion of relaying thru other servers, if they expose the relay tool ? so you could bounce off different servers if you needed to.
+
+
+## entry tools on the root mcp
+search napps (resource listing)
+list repos (resource listing)
+getSubstrateScope - what is the scope used to talk to the artifact substrate
+getSelfScope - what is the scope of myself
+dispatch( scope, action )
+sbuscribe( scope ) - this is using mcp, but could be done using a tool call that tucks in the mcp commands into something the llm can use.  So providing the mcp client functions as tool calls in as well as the tool calls from the server.
+
+
+so client side, when created, is making a scope bound client, which is what the artifact object did anyway.
+
+### notes
+but llms don't handle resources, like the llm cannot use the resource functions as a tool call, unless we make some wrappers to make resource interaction part of the tool set, in which case we might as well have just done a tool call anyway ?
+
+resources are good for browsing and compatibility, but not strictly necessary for LLM control.
+
+we could make it so if you did not include a scope, then you are targetting the substrate / host.  otherwise you are targetting something specific.  
+We could just attach this well known scope as the default ?
+
+when we talk to the substrate, we are always talking about a particular scope.
+so dispatch would be just telling the host that we want it to execute this particular tool call on this particular scope.  This is the means of tunneling
+
+So actions should be renamed as tool calls.
