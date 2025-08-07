@@ -218,3 +218,5 @@ So actions should be renamed as tool calls.
 So for us, we might make a new instance of the server for every client, so the transports don't actually matter, since we can make the server alter based on what the client asks ?
 
 make a dxt file that can be installed on claude desktop, which connects to the base mcp server, then can use that to modify what tools will be used ?  Can somehow drive claude to connect to new mcp servers based on that core server.
+
+would we be making a transport that tunnels thru the base mcp server ? so the transport needs some special functions opened up on the mcp server so it can send its protocol messages thru ?
