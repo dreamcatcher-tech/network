@@ -248,3 +248,21 @@ during a tool call, the streaming of intermediary state is permitted.
 So now the container id and the container host become relevant ?
 To connect to it, this should be look upable in a live server somehow, using a ram table.
 ram tables are great when if the server died the op would be useless too, so it has matching resilience for the job at hand.
+
+We might have angled the actions wrong - to fork a branch, we require that the action come in enveloped to the host and scoped to the target, but what if it was instead just the target was given, and the napp knows that it needs to use system tooling to make it happen ?
+
+We know which napps are system napps, and they would never get invoked by anyone else for any reason.  So target is wasted, since every action has to hit the host - it can't go anywhere else.
+
+dispatch is actually tunnel.
+
+?shouldn't the basic tools be the exact same tools that are on a client ?
+- listTools
+
+? how to lock the napp by version ?
+
+maybe fiber management is mcp server management ? where each one is potentially an mcp server ?
+
+so system permissions are segmented by the napps that you can call on - these napps contain all the functions of a particular permission class, and so access to be able to run that napp grants you that privilege.  system actions are hooked, and are processed by the system container.
+
+actions always go to a fiber scope tho.  they never go to a branch directly - always to the execution system.  so a system action goes to which branch ? do they get hooked and intercepted ? are they collected under the system fiber of the repo ?  They should be linearized here since they can collide with each other ?
+
