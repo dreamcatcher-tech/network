@@ -197,7 +197,7 @@ list repos (resource listing)
 getSubstrateScope - what is the scope used to talk to the artifact substrate
 getSelfScope - what is the scope of myself
 dispatch( scope, action )
-sbuscribe( scope ) - this is using mcp, but could be done using a tool call that tucks in the mcp commands into something the llm can use.  So providing the mcp client functions as tool calls in as well as the tool calls from the server.
+subscribe( scope ) - this is using mcp, but could be done using a tool call that tucks in the mcp commands into something the llm can use.  So providing the mcp client functions as tool calls in as well as the tool calls from the server.
 
 
 so client side, when created, is making a scope bound client, which is what the artifact object did anyway.
@@ -220,3 +220,31 @@ So for us, we might make a new instance of the server for every client, so the t
 make a dxt file that can be installed on claude desktop, which connects to the base mcp server, then can use that to modify what tools will be used ?  Can somehow drive claude to connect to new mcp servers based on that core server.
 
 would we be making a transport that tunnels thru the base mcp server ? so the transport needs some special functions opened up on the mcp server so it can send its protocol messages thru ?
+
+servers feel leaky in that they are really just napp calls being run on the filesystem ?  they don't have any exclusivity over the repo they ride upon.  their permanence is the repo branch they are set upon ?
+Switching over to a new branch requires creating a new server ? or giving the server the tools to be able to be told to switch - meta tools, as it were.
+
+an action is a tool call, so the containers receive tool calls.
+is an mcp server then, a container ?
+containers are bound by the napp base package, and the repo pubkey.
+So they could switch branches, and that would leak isolation ? so writing to one given branch would leak across to another branch ?
+
+make a function that takes in a napp and a scope, and produces an mcp server that is bound to that napp, which would dispatch into the container subsystem.
+
+the server represents a container, would could also be effectful.
+when a server is started, it is directly connected to a container, but the container might not have been created until an action actually comes in.
+
+The container could hold all the transient state, like the streaming side channels for the chats and things.  The container could also be the thing that received subscription notifications, like if it was told to watch for new commits on its own chain ?
+The container might be active as long as there is an mcp client attached to it ?
+If that client was in another chain, then it might not be needed ?
+
+Subscriptions are better as state changes.  If it is an external client, then we would keep the notification watchers transient, but if its in a napp, it would be state change based, since the state would have changed to even make the request, so we simply raise a flag which registers it with the host as something that needs to be notified.  the host of that chain will actively seek out the chain being watched and subscribe to updates.
+
+The host of the other chain would be obliging and would register a subscriber in its live running state, or in a db or something.
+
+The container might get torn down in between actions at any point.
+The only state it has is entirely recreateable from the repo state.
+during a tool call, the streaming of intermediary state is permitted.
+So now the container id and the container host become relevant ?
+To connect to it, this should be look upable in a live server somehow, using a ram table.
+ram tables are great when if the server died the op would be useless too, so it has matching resilience for the job at hand.
