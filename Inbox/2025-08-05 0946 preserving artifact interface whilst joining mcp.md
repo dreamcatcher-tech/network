@@ -286,7 +286,7 @@ so resources are like reading from the repo to get state that has changed or is 
 tool calls are always in and out - request reply.
 the repo is the statefulness of the mcp server - its where its long term and transient state is stored.
 
-So the envelop internally is an mcp jsonrpc action that has a session id attached which represents really just the branch that the thing is working on ?
+So the envelope internally is an mcp jsonrpc action that has a session id attached which represents really just the branch that the thing is working on ?
 the scope / address in our system is just the session id in the mcp spec, since it represents different state.
 
 dynamically switching the client tools is just read - no writing occurs.
