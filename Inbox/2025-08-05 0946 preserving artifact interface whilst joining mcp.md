@@ -348,6 +348,6 @@ Rename napps to be mcppackage.
 
 mutating mcp servers is the same as just creating a new one and switching - they have no state themselves, the repos hold the state.
 
-a dynamic mcp server is one that can switch out what it is bound to by having multiple mcp servers inside it, each bound narrowly.
+a dynamic mcp server is one that can switch out what it is bound to by having multiple mcp servers inside it, each bound narrowly.  It could have a special tool call that creates new ones - that routes straight to the host.  This is the one updispatch to the host infrastructure.  It replaces dispatch, or even the use artifact thing, since the napps are specified.
 
 So it can be configured to have tool calls to multiple different scopes.
