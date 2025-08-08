@@ -305,3 +305,49 @@ Can a given tool be switched between branches ?
 We could make the tools open scope, or we could scope each tool to a different thing ? but in general, scope should be restricted to the same branch for each vmcp snapshot.
 
 No, combining must be allowed, so napps need to be loaded and selected based on scopes.  the provision tool call would be provided here.
+
+concept of a subsession - there is a root session, but then it can tunnel other sessions thru in a way that is just a passthru function, that would never be called by anything but a piece of software, so could remain off the tool list.  When this gets used to set up a new session, then this new session id is tracked in the root mcp server.  This covers outside looking in.
+
+Inside a given napp, this session would be tracked by stored state, and would probably be orchestrated using the existing action systems of artifact.
+
+Notifications is the way to handle streaming coming in, in chain.  Notifications can contain a request id that they refer to.
+
+should the container itself actually BE an mcp server, and talk back as such ?
+
+from the outside, could we make a new mcp server every time ? why go thru an existing one ?
+on the inside, we would make a new one every time too.
+We need to mux the connections, but maybe that can be handled by the web protocols ?
+So we have a way of using pathing and queries to access any internal mcp using an external url.
+
+the proc tree is just really the state of each individual container, even if the reified container gets destroyed due to resource pressure.  The proc tree is storing the state of the running mcp server.
+
+testing the connection / establishing it, is really just talking to the host about if its there or not and what it has.  Then interactions are just regular chain actions.
+sessionid at this point is self descriptive as the hash of the requesting action.
+Talking to the system is a special system level mcp server.
+
+Modifying repos is not actually talking to the system, it is talking to that repo at the system level ?
+So it would be the repo mcp, which is its system, just liek the host is really just the host repo mcp.
+
+This repo level is like the external server level, and it helps you open new hosts inside that repo, but it acts like a gateway.
+
+The actions need to become mcp actions, so there is only one kind of action.  Streaming needs to be done using notifications.
+
+Make a combo mcp server which can take a number of mcp server and combine then by picking and choosing, so the bot can reprogram itself on the fly for a better outcome, or to pass to another specialized model.
+
+so external, it is just a new mcp server every time, just like how anyone would connect to a hosted napp in there.
+
+internal is a special system hook that allows you to attempt to create a server to anywhere.
+Each repo is a base mcp server with all the provider actions rescoped to support this.
+So scope of provider functions is always present since they are in a particular mcp server which is scoped, like branch, files, etc - the mcp server is bound to the scope.  Just like how you had to create an artifact instance for each of the scope narrowments.
+
+There is no mcp tunnelling.  This is not explainable to llms.
+
+llms are being trained heavily on mcp like behaviours, so we need to fit in.
+
+Rename napps to be mcppackage.
+
+mutating mcp servers is the same as just creating a new one and switching - they have no state themselves, the repos hold the state.
+
+a dynamic mcp server is one that can switch out what it is bound to by having multiple mcp servers inside it, each bound narrowly.
+
+So it can be configured to have tool calls to multiple different scopes.
