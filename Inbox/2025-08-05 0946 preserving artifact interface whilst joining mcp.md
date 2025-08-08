@@ -291,3 +291,17 @@ the scope / address in our system is just the session id in the mcp spec, since 
 
 dynamically switching the client tools is just read - no writing occurs.
 
+a server that can switch tools would indicate this in its capabilities.
+
+```ts
+const scopedArtifact = useArtifact( scope )
+```
+This would create a vmcp using the root mcp server, which is the one that all the spawm functions ultimately come down to.  If you want to pass on the spawn capability, then it really is just passing thru a call to this root capability which is part of all clients that get created.  Spawn is what gets used to make the root thing, and should be attached to all the clients, possibly as a tool call.
+
+If an LLM calls spawn, then it would become loaded with the tools ?  So an llm should call switch ?  switch and spawn for the LLM is different ?
+Or a vmcp could be dynamic and the LLM or a helper of the LLM could call the reconfigure commands.
+
+Can a given tool be switched between branches ?
+We could make the tools open scope, or we could scope each tool to a different thing ? but in general, scope should be restricted to the same branch for each vmcp snapshot.
+
+No, combining must be allowed, so napps need to be loaded and selected based on scopes.  the provision tool call would be provided here.
