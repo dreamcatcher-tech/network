@@ -364,3 +364,33 @@ setScope is definitely an exposable state.
 So basically if you know the params of the server ahead of time, you can connect directly to it, otherwise you need to use the navigation tools.
 
 set scope tool would switch what the default mcp server was targinetting as scope ? otherwise you have to include scope in every call, which seems a bit much to ask in the default case with a dumb cheap model.   Yes, web client defaults to actor home repo as bound scope against which all functions are called.
+
+We need event diagrams for all the kinds of mcp operation that are required.
+For each diagram, we need a code sketch of how this gets used.
+
+a compound mcp server has multiple napps, some of which might be disabled, and might be across multiple scopes.  The facade is the same tho - the 'server' is actually running in the client when it is internal.  It is running in the web server when coming in from the outside.
+
+crash recovery will matter with these kinds of servers ?  The client would just send up the config it wants to init with in the event of a resume if the server crashed.
+
+if the base mcp server had command to search for mcpapps and it could dynamically install them, with restricted tool calls, and get info about them, plus could browse repos and use a tool call to list teh resources on the server, plus navigate around the repos by configuring up a napp to to give extended functions, then so long as it had a reset tool call, any kind of agent could ultimately get to anywhere on the system.
+
+> If this was modelled like a cli, where the user can navigate the filesystem, switch branches, check history, run commands, install commands from packages, set their path - this is what using the core mcp is like.  We can set up shells, where a user comes in an has a specific mcp thing available to them, but we also allow this general navigable thing as well.  So use the general thing to produce restricted things that can be exposed so that bots don't get confused and so that permissions are honoured.  the restricted things are like chroots.
+
+the cli metaphor is a good one, and we should be able to make a cli that only uses tool calls to navigate around the place, with some client side helpers like cwd and some other cosmetics.
+
+so seems a bit weird to bond an mcp server to a particular scope - it should start with a default scope, but it should be able to move around fairly easily ?  But it could also be provisioned to not be able to do this.
+
+We need to make the pattern where one bot is in charge of managing the tools being given to another bot, to help them solve functions - it is too much to ask for it to be done in band.
+
+a repo with napps installed would not need you to specify napps as it would have some already, and it might have been permissioned to deny you using napps other that what it has installed, which may restrict usage to its exact versions, which might not be what you want but you have to accept it since the repo sets the rules of access.
+
+so repos can grant lower grade mcp access / restricted access to some actors and some napps.
+
+use pathing or query params to auto set the permissions of the root mcp server, depending on what you want, like rw, ro, executable, browseable, etc.
+Or could set this with headers as config, perhaps.
+
+the init from the client can include a config object, which can include scope, napps, allowed tools, rewrites and renames of tools.  It is in the format of a napp, or it can just name a napp, or none, or system ones.  Plus a repo.  If no repo, then defaults to home.
+
+there's no such thing as mcp tunnel since this isn't something an LLM can understand.
+
+All the state that the client changes of the server, like napps configuration etc, this can be stored on the client or streamed down as notifications, so that if the client needs to reconnect, it can pick up where it left off.
