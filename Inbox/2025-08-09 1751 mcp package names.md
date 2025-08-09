@@ -16,4 +16,6 @@ McPackage
 
 McPkg
 
+McApp - model context app.  Served over mcp.
+
 so napp should be renamed, since it is all about the packaging and the interfacing.

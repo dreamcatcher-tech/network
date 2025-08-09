@@ -381,3 +381,5 @@ Or could set this with headers as config, perhaps.
 the init from the client can include a config object, which can include scope, napps, allowed tools, rewrites and renames of tools.  It is in the format of a napp, or it can just name a napp, or none, or system ones.  Plus a repo.  If no repo, then defaults to home.
 
 there's no such thing as mcp tunnel since this isn't something an LLM can understand.
+
+All the state that the client changes of the server, like napps configuration etc, this can be stored on the client or streamed down as notifications, so that if the client needs to reconnect, it can pick up where it left off.
