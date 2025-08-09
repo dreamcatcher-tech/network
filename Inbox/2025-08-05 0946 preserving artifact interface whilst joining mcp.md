@@ -454,9 +454,13 @@ the tools needed are:
 2. all of the tree functions, execpt superLs and watch
 3. all of repo-remotes
 4. all of files-read
+5. napps catalog tools - search, list, inspect, catalog sources management
 
 the mcp control tools are:
-1. loadTools( napp, toolname1?, toolname2? )
+1. loadTools( napp, toolname1?, toolname2? ) errors throw close name matches
 2. unloadTools( napp, toolname1?, toolname2? )
+3. listToolPackages
+4. searchTool
+5. listLoadedTools - breaks it down by tool packages.
 
 can reading a binary in the client be loaded into the model, like audio data or something ?
