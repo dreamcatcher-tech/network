@@ -353,3 +353,9 @@ a dynamic mcp server is one that can switch out what it is bound to by having mu
 So it can be configured to have tool calls to multiple different scopes.
 
 That base function might just be a search function and a load function ? search for mcp servers, search for repos, then load ?  or load would be just start a new direct mcp server ?
+
+We need event diagrams for all the kinds of mcp operation that are required.
+
+a compound mcp server has multiple napps, some of which might be disabled, and might be across multiple scopes.  The facade is the same tho - the 'server' is actually running in the client when it is internal.  It is running in the web server when coming in from the outside.
+
+crash recovery will matter with these kinds of servers ?  The client would just send up the config it wants to init with in the event of a resume if the server crashed.
