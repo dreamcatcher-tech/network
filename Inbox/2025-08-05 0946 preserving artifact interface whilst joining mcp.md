@@ -394,3 +394,69 @@ the init from the client can include a config object, which can include scope, n
 there's no such thing as mcp tunnel since this isn't something an LLM can understand.
 
 All the state that the client changes of the server, like napps configuration etc, this can be stored on the client or streamed down as notifications, so that if the client needs to reconnect, it can pick up where it left off.
+
+If the session info was ultimately stored as part of the actors home repo, then it can be resumed upon gateway crash, but also allows the storing of state, like what the current scope was set at.  Or we can just store that as part of the session state, so the mcp server purposfully intercepts some calls ?
+
+To start with we can store in ram in the server session.  Otherwise client has to keep sending the full scope they want to target  ?  But would a machine care, really ?
+So try just making the machine send the scope as args for now.
+
+some stateful things, like subscriptions to things - in chainland these need to be cacnelled and managed and other such things.
+
+? should we separate out did from the actions ?
+
+the key is being able to make a dynamic mcp server that is connected to the root.
+The only way to do this is to have the server intercept some tool calls, as the calls are for the mcp server itself.  This can be done in ram, but ultimately would be done on the actors home chain.  If the home chain always holds the session, then
+
+Means that one actor one did - want a new actor, need a new did.
+A given actor can always assume another actors identity, but the auth for that user stays as the original connection.
+
+So the sessions are part of the users home repo, but for now they just sit in ram.
+
+fat clients can be made thin by pushing their functionality onto the server as an additional layer.
+
+fiber state would probably be the session information for stateful sessions - not convinced we can't do it all statelessly.
+fiber management might be how to add napps to the current process ?
+fiber actions disappears, since it is implicit in the mcp.
+
+commit absolutely needs to be stateful.
+so the client state needs to be tracked server side.
+The mcp session might be in fact a fat artifact instance ?
+so if we wrap around the artifact object, then we use that as the statefulness of the session ?  This has all the writes and things that other tool calls may have altered.
+
+> wrap the artifact client object in each server session
+
+or at least something like it, so it holds state.
+
+the underlying artifact actions could remain scoped, and therefore stateless ? but the mcp server presents versions that remove the scope requirement from each function call.
+
+make it so the object can't be navigated to new scopes if staging area is dirty, so we throw an error.
+
+So long as we haven't broken anything to be mcp compatible ? it might be better to just keep our own independent protocol, and then make a translator / interface ? means we can evolve internally independently of the mcp, and we can adapt to mcp upgrades and changes that we don't like.
+
+? list available napps ? given a location ?
+add napp, plus allowed functions
+update napp, to modify allowed functions
+remove napp
+
+ADD some napp management functions, to manage the loaded tools that the current session has.  these are session related / stateful functions, where the tool call is hooked by the server itself
+
+try first as having scope just be required by each tool call, since it is possible for a human to do this.
+
+capabilities of the server would be set by which provider level napps are loaded.
+
+3 groups of functions:
+1. mcp hooked, where the tool call affects the mcp state, like which napps to load
+2. mcp loopback, where the tool call exposes parts of the mcp interface as tool calls, such as resource interactions.
+3. napp related, where the tool calls are handed by napps running on artifact
+
+the tools needed are:
+1. listResources - wraps the resources into a tool call so an llm can see it.  Allows reading the current state, altho it should never have lost track of that.  whoami is provided by the current scope, or the actors home repo id.
+2. all of the tree functions, execpt superLs and watch
+3. all of repo-remotes
+4. all of files-read
+
+the mcp control tools are:
+1. loadTools( napp, toolname1?, toolname2? )
+2. unloadTools( napp, toolname1?, toolname2? )
+
+can reading a binary in the client be loaded into the model, like audio data or something ?
