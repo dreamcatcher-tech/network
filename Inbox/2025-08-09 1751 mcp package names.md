@@ -12,7 +12,7 @@ mcp is broad enough that it could feasibly be used to package up every kind of r
 
 McPack
 McPackage
-McPapp
+**McPapp**
 
 McPkg
 
