@@ -462,5 +462,6 @@ the mcp control tools are:
 3. listToolPackages
 4. searchTool
 5. listLoadedTools - breaks it down by tool packages.
+6. await tool call - given a long running tool id, this will resolve when the tool call has finished ? or just implement progress for long running tool calls.
 
 can reading a binary in the client be loaded into the model, like audio data or something ?
