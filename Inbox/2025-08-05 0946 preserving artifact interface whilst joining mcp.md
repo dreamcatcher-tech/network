@@ -465,3 +465,12 @@ the mcp control tools are:
 6. await tool call - given a long running tool id, this will resolve when the tool call has finished ? or just implement progress for long running tool calls.
 
 can reading a binary in the client be loaded into the model, like audio data or something ?
+
+load tool is called by the default tool loader when you connect to the gateway.
+
+implementation plan
+1. base gateway with base tools loaded up
+2. load up new tools, like the ai chat tool
+3. gateway handle direct deep mcp servers, like only the chat tool
+4. internal blockchain calls using mcp, rather than artifact
+5. retrofit internal functions to match this calling method
