@@ -353,3 +353,14 @@ a dynamic mcp server is one that can switch out what it is bound to by having mu
 So it can be configured to have tool calls to multiple different scopes.
 
 That base function might just be a search function and a load function ? search for mcp servers, search for repos, then load ?  or load would be just start a new direct mcp server ?
+
+connecting to the mcp web server should use query params to provide scope, and then list the napps it wants too, also allowed tools arrays too.
+
+connecting to the mcp virtual server is what happens internally.
+
+root host should be scoped to home repo, not no scope and just have functions in the host ?
+setScope is definitely an exposable state.
+
+So basically if you know the params of the server ahead of time, you can connect directly to it, otherwise you need to use the navigation tools.
+
+set scope tool would switch what the default mcp server was targinetting as scope ? otherwise you have to include scope in every call, which seems a bit much to ask in the default case with a dumb cheap model.   Yes, web client defaults to actor home repo as bound scope against which all functions are called.
