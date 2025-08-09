@@ -351,3 +351,5 @@ mutating mcp servers is the same as just creating a new one and switching - they
 a dynamic mcp server is one that can switch out what it is bound to by having multiple mcp servers inside it, each bound narrowly.  It could have a special tool call that creates new ones - that routes straight to the host.  This is the one updispatch to the host infrastructure.  It replaces dispatch, or even the use artifact thing, since the napps are specified.
 
 So it can be configured to have tool calls to multiple different scopes.
+
+That base function might just be a search function and a load function ? search for mcp servers, search for repos, then load ?  or load would be just start a new direct mcp server ?
