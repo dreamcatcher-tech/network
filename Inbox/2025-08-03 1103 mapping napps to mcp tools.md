@@ -45,7 +45,7 @@ so the `.bind()` function we currently have is what sets up the napp.
 should the mcp be bounded to a particular path in the repo ? and then allow it to change any of these things ? or is changing actually a new mcp instance ?
 
 it should auto track the latest thing, so no more having to fetch latest, that just comes by default.
-special system actions allow deeper operations, like rolling back to a particular commmit.
+special system actions allow deeper operations, like rolling back to a particular commit.
 the resources list the scope. or the resources just list out all the scope elements directly, so calling list resources shows the full scope.
 
 permissions are used to scope what actions the mcp server permits.  like history browsing.
