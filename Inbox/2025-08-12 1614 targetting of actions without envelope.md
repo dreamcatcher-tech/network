@@ -22,3 +22,5 @@ This means that the system actions that acted upon a repo are ordered too, where
 so when the isolated containers want to call a system function, they call the system action channel, and use the agreed set of actions (the provider set) but they include what scope they want the system action to occur at, which is just their own scope.
 
 So the executing napps can only ask for system changes to their own selves.
+
+Otherwise the system actions have to check the repo to see if they can act ? but they sitll have to do that to check if the action can be added to the repo at all.
