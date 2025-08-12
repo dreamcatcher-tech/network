@@ -14,3 +14,11 @@ we could make it so that any time these system actions run, they run in the host
 Or we could boune the actions, so that we have a set of targetted actions that hit a repo, and then while they're running, they us upchannel to call the system ?
 
 That would mean that the repo that was the target would be changed by the action, but this might be desirable, since we can see who did what system level action in there, and then it just called up to system when it ran ?
+
+Idea is to have the system actions be targetted at a specific repo, which removes the need for scope in all the actions.  The scope is part of the action targeting, and so we can remove it from being in the provider actions everywhere.
+
+This means that the system actions that acted upon a repo are ordered too, whereas if the came in from the outside, they would be unrepeatable, since changes just happened, and it isn't clear what caused them.
+
+so when the isolated containers want to call a system function, they call the system action channel, and use the agreed set of actions (the provider set) but they include what scope they want the system action to occur at, which is just their own scope.
+
+So the executing napps can only ask for system changes to their own selves.
