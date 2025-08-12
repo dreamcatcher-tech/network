@@ -474,3 +474,13 @@ implementation plan
 3. gateway handle direct deep mcp servers, like only the chat tool
 4. internal blockchain calls using mcp, rather than artifact
 5. retrofit internal functions to match this calling method
+
+> key part of the model is one server per client connection
+
+so inside napps they get a function that can be used to create client/server pairs by passing in the scope, and or the napp(s) to load up in that spot.
+With neither specified, the default is provided.
+
+The server can have its scope changed, but only if it is clean.  This effectively just makes a new one.
+Could pass --no-check so it doesn't verify that the scope or the napps exist until late.
+
+Execution always happens on the consensus branch, but it can be targetted at a certain scope within the repo.
