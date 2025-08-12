@@ -9,3 +9,8 @@ Currently actions that are for the system use an envelope on the action to signa
 
 also all actions have to be executed on the consensus branch, and might be sent to a particular fiber.
 
+we could make it so that any time these system actions run, they run in the host container so they have this long running context between everything ?
+
+Or we could boune the actions, so that we have a set of targetted actions that hit a repo, and then while they're running, they us upchannel to call the system ?
+
+That would mean that the repo that was the target would be changed by the action, but this might be desirable, since we can see who did what system level action in there, and then it just called up to system when it ran ?
