@@ -27,4 +27,16 @@ whatever branch you have scoped matters when the action is dispatched, since thi
 are actions executed as tho they are the repo that they landed in ?
 the mcp server gets the actions to the repo, and marks where they came from, but the action bounces off the floor of the repo and is executed as tho it was the repo itself ?
 
+the consensus chain is the canonical view of the entire repo, including all other branches.
+views of other repos are synchronized thru this branch.
+any changes to the repo cause a change in this branch.
+
+so all actions have to occur in this branch ? alternatives we can figure out later, but for now.
+
+? how can an action in one repo request a view of another repo ? 
+Does this ever happen in practice ?
+
 next steps ? 
+
+setScope and other options can use posix relative paths.  this is an mcp class action, that happens in a specific napp, and that gets intercepted by the server.
+So you can turn this off when you create mcp servers, since you can specify the napps to use.
