@@ -484,3 +484,7 @@ The server can have its scope changed, but only if it is clean.  This effectivel
 Could pass --no-check so it doesn't verify that the scope or the napps exist until late.
 
 Execution always happens on the consensus branch, but it can be targetted at a certain scope within the repo.
+
+or, the server could namespace all the napps using the napp name, since this should guarantee uniqueness.  Dynamica servers that load napps in them should be allow to do that ?
+
+server can have no napps, but then it just has the bare tools, which might be nothing (so resources only) or it might able to search for and load up napps.
