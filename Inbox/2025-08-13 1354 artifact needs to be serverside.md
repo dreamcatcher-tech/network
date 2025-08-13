@@ -17,3 +17,4 @@ so we need to convert all the tip methods to be tool callable.
 
 We could maybe hide the provider level calls behind this wrapper then ?
 
+So in fact, the tools api should be the artifact api ?
