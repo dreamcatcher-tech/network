@@ -29,3 +29,16 @@ But we could make it be like a segmented context per repo, rather than needing t
 Or, the way we process the actions means we know the container scope, and we won't be told what the scope is, but we get the request in from the container.
 
 We could set the scope as part of the context ? so that it is set in context from the outside, meaning we don't need to pass it as a function all the time.
+
+we could make artifact tool calls be raw, and then all loaded tool calls are prefixed with _loaded_ ? doesn't help us with multiple napps loaded at once tho.
+
+read actions that don't change anything should not cause an action to be made - they would be intercepted by the server, and would give back read results.
+
+So we need to split the read and the write actions completely, where read is a totally separate thing, and then write is totally separate, but it results in an action.  The cut was wrong as it was cut by function, then each function had read write splits, but actually we should to the top split as rw and then function cuts.
+
+Reads can be interpreted by the mcp server, and might be handled by sending resources down to the client.  These have size hints and data types.
+Client would have some mcp hook functions that let it read a link if that's what it got back, since it might not mean to read the whole thing.
+It could have some peek functions that let it read just little chunks at a time.
+
+So the system container would only directly receive scoped reads, which mcp servers would send in.
+writes need to go direct into a repo container, targetting the '/' branch, which would then call the system hook to enact write operations where the scope is defined outside the container.
