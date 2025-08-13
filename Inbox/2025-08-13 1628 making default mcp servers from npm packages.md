@@ -18,3 +18,10 @@ repo, branch, path - these are not as easily mapped up using just paths, so woul
 then can also pass in options for how the mcp server should be provisioned, like denial of basic tools - we can label these presets, or you can start with none and build it back up using the system packages which enable these defaults.
 
 
+Whatever mappings need to be made could probably be auto generated.
+
+So we could make the request start up, and then an automated builder service kicks in to build the tool capabilities in, you can tweak the builder, it writes some tests, and then eventually you have a nice wrapper around the code.  It can be set to watch the npm rego and rebuild on change.
+
+We can auto build a bunch off hand - makes it easy for our systems to consume these libraries for different things.
+
+Glue code that calls them should use the mcp interface for repeatability and isolation.
