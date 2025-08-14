@@ -10,6 +10,11 @@
 was it the question about where the state was ?
 we didn't see that the state was actually the same as the disk state - the staging area.
 we didn't know to value narrow and walking, since we were making for conventional apps.
+I was writing the interface for programming with, not for bots to drive with, or both.
+
+So resources should be the programming bulk reads.
+Resources are converted into tools so they can be consumed.
+
 
 git status should be a resource that shows the state of the repo at all time.
 
@@ -54,3 +59,16 @@ the fs layer is virtualized - there is no real filesystem, we just act like ther
 the staging is still done, mostly so the bot isn't surprised ? or we just say that all writes are immediately staged.  this temp file situation is what we could set up as the transient streaming write file - this is just written to disk and not staged.
 
 navigating away from a dirty repo causes an error.
+
+read files would be optimized for bots, with read portions of a file, or x number of lines.
+
+so we'd have a concept of a tool path, that is drilling around in tool space for different things.
+In napps this might be just pure pathing ?
+the current tool loaded ?
+changinge the tool path would return what the current path was, and would have a description of the tool path at that point.
+
+So basically all the tools are in a tree, and you can ask to read the tree posibly in detail ? or you might have to navigate wound it with a very narrow cursor - this seem sto be how deep research does it.
+
+This means that napps need a nested structure, so they can be walked and scoped, so they present a tool pack, rather than a single napp.  This structure can be done as a reference to another napp, so a directory napp can have its own name, but all it does is present some tools in a helpful way.
+
+be able to build this up graphically, to drag and drop these toolpacks, so that the bots can drill in and out, to keep their tool list small but also 
