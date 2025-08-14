@@ -10,3 +10,8 @@ If we present back in to the lobe ui as a stateboard frame, and allow the frames
 Then we would have artifact mcp be included in the base of lobe and pass along the clerk token.
 
 This would become a system plugin, like artifact, and would have its own prompt injection.
+
+so our frames could load, and the mcp tools for controlling the frames would be the bot context.  Then they could trigger remote bots with mcp calls.
+
+The top level experience would be roughly the same, except its hard to talk about the chats you are having in this environment.
+Unless we just copy or sync the chats over as top level chats.
