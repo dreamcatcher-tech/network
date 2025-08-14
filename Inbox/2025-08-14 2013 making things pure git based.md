@@ -39,4 +39,18 @@ you're driving a git repo, plain and simple.  We need to make it a high fidelity
 if we are going to do this, then we could perhaps that the complete git binary running on the server to manage the index, and the git folder can be mimicked by a database ?
 Use a layered fs so that the git binary sees a snapshot of the repo on disk.
 
-the tool tree might be on
+the tool tree might be only loadable if there are no directories in it, otherwise you need to navigate it.
+
+so we probably can get the git navigation thing a bit wrong to start with, but that seems totally fine.
+We can also get the tool navigation thing a bit bung, but that should be refinable.
+
+so we'd use basic fs commands to write to the working tree, then we'd use git commands to turn that into a commit.  These would be our fs read and write and shard commands.
+
+So the filesystem part is a separate tool, and then the sharded filesystem tool as well.
+
+The key is to not bundle stuff up in the software that detracts from the metaphor -  it should be very easy for the bot to understand what is happening - this seems to be the new skill in programming - making things of least surprise to the bots.
+
+the fs layer is virtualized - there is no real filesystem, we just act like there is.
+the staging is still done, mostly so the bot isn't surprised ? or we just say that all writes are immediately staged.  this temp file situation is what we could set up as the transient streaming write file - this is just written to disk and not staged.
+
+navigating away from a dirty repo causes an error.
