@@ -5,6 +5,8 @@
 
 >[!danger] Depends: 
 
+> Every call that is a read thing should be redone as a resource
+
 then the tools just loop back in to reading resources, rather than sending actions into artifact.
 
 it still bothers me that artifact is somehow different to mcp ?
