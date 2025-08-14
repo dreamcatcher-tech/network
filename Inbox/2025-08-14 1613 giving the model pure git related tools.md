@@ -15,8 +15,12 @@ So the write tools should be filesystem writing.
 the navigation should be git branch navigations.
 the execution should be clear and simple
 
-tree is a bit special, 
+tree is a bit special, as its one level higher, like management commands.
 
 browsing tools, load tools, unload tools - these are the simple deep research style tools.
 
 we could make a bot that crawls tools and loads them just to test their suitability before returning a result that it has checked, guaranteeing the tool choice.
+
+fs tools should be very narrow and tight, and need to be loaded explicitly.
+
+List tools would give the full list of allowed tools, if specified.  These would be like roots.  If any tool is allowed, then we say so, and require the list of search.  Error and tell it to use the search function.
