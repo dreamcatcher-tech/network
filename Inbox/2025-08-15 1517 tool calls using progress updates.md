@@ -6,3 +6,5 @@
 >[!danger] Depends: 
 
 if we make the dynamic tool call discernable from the tool call id or something, then all clients watching can connect to it.
+
+or maybe logs ?
