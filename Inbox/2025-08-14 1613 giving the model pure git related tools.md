@@ -31,3 +31,13 @@ so to do a write, you cannot just specify a path, you have to change into that d
 toolpacks need to be presented as a tree, so when the info about the toolpack comes back, then the children that it might have comes back too.  the tool might be either a directory or an installable, where the directory lists a mix of either other directories or other tools.
 posix pathing to navigate.
 
+toolpacks should be part of the resources feature.
+so we could search tools with just a list resources, search resources ?
+This makes it easy for clients to navigate the tool tree too.
+Just like the file tree.
+
+git presents the git stuff like commit, branch, remote, 
+fs will present the files of the current checked out commit
+stats will show if dirty
+
+so the errors give helpful info, like the current state of the system, the cwd, etc.
