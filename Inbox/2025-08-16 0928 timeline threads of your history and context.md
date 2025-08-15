@@ -30,7 +30,7 @@ you could merge and summarize the sessions ?
 
 > SOMEWHERE THE MACHINE HAS TO KNOW EVERYTHING YOU DID AND IN ORDER
 
-This means we have to track it, and expose it to you, and let you modify it.
+This means we have to track it, and expose it to you, and let you modify it.  Context can only come from history - selecting context in other words is selecting history to bring into the present chat.
 
 this timeline thing, should be where the ongoing conversation happens.
 To manage your timelines, would be a chat to the timelines bot, and a stateboard piece that shows all the timelines in a tree so they can be worked on, like any other file.
@@ -44,3 +44,17 @@ reversing and forking should be captured too, where you went back and restarted 
 It should allow you to wire up context between stateboards / sinks - so I should be in a group chat, and I can go wire up some files that stay live, or a jitter session, or even another chat as the context I am sharing in another chat.
 
 All these data links probably need managing too.
+
+have background agents that trigger off what happens in this history.
+surface their suggestions as decorations on the timeline.
+config the background agents in the timeline management panel.  Config in general or per specific timeline.
+data format of a timeline is just an event stream ?
+agents can be working but hidden, so have a widget that lets you expand.
+when an agent has something useful to say it can pop up as a note, or it can feed it in to the current bot as context.  Have some privacy considerations before auto attaching.
+wrap swarms of agents in a single agent so it just presents as a single one.  show token burn and ongoing tasks.  show scores, so how often it got it right by how often the user indicated (by click or in chat) to use what the background rover found.
+
+can add bots or chats with people to the sidebar, so you can quickly switch to them.
+
+we still discard transient switches around until you do something ? or we at least compact it.
+the analytics of the system should be part of your own context.
+app optimization from analytics can be entirely private on your end, rather than handled by the devs - before only the devs could do this so they had a need for your analytics, now bots can do it so the analytics are yours entirely.
