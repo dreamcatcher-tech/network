@@ -24,3 +24,6 @@ we could make a bot that crawls tools and loads them just to test their suitabil
 fs tools should be very narrow and tight, and need to be loaded explicitly.
 
 List tools would give the full list of allowed tools, if specified.  These would be like roots.  If any tool is allowed, then we say so, and require the list of search.  Error and tell it to use the search function.
+
+file writing, if there is a schema file, the tool for writing json changes to have the schema required.
+so to do a write, you cannot just specify a path, you have to change into that directory, which would cause the tools to reload / change.
