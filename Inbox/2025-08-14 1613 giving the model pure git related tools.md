@@ -27,3 +27,7 @@ List tools would give the full list of allowed tools, if specified.  These would
 
 file writing, if there is a schema file, the tool for writing json changes to have the schema required.
 so to do a write, you cannot just specify a path, you have to change into that directory, which would cause the tools to reload / change.
+
+toolpacks need to be presented as a tree, so when the info about the toolpack comes back, then the children that it might have comes back too.  the tool might be either a directory or an installable, where the directory lists a mix of either other directories or other tools.
+posix pathing to navigate.
+
