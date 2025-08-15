@@ -41,3 +41,5 @@ fs will present the files of the current checked out commit
 stats will show if dirty
 
 so the errors give helpful info, like the current state of the system, the cwd, etc.
+
+seems all about thinking about these intelligences as very narrow, rather than the full open web form that we do, and how we actually in our heads, mentally load and unload toolpacks.  We can't do massive sprawling queries, we also drill down, so we are recreating that process.  The error rates of ourselves is massive if we try to it all at once with no scope.
