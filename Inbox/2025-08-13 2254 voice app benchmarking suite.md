@@ -14,3 +14,6 @@ evals can run using voice alone, with scripting
 the tests can be run using all kinds of voice and manner of delivery.
 
 can also experiement with the latency and packet loss on the network connection, so it can be shown under what net connection is it within tolerance.
+
+should be able to have a scoreboard of properties that any given system is capable of.
+eg: multiparty, noise level score.
