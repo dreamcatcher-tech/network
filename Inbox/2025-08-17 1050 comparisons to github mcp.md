@@ -33,3 +33,4 @@ we must have a list function.
 basically any time there is a register* call on the server code, then we should make that part of the mcapp config.
 
 @mount or other options might be able to tune what resources come available ? but this seems a bit too confusing.
+Mount options like readonly or with children ?
