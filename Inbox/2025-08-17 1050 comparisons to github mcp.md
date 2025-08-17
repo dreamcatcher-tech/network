@@ -39,3 +39,5 @@ we could make it so our inbuild mcp, to manage github auth, could guide the user
 At this point we would probably just run the server locally ?
 
 we should absolutely follow the github mcp server resource format and template listings.
+
+with dynamic tooling, we would still want a way to use static toolsets for some bots, to allow a more focused task and allow a stupider model to work.
