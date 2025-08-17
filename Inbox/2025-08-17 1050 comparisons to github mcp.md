@@ -41,3 +41,7 @@ At this point we would probably just run the server locally ?
 we should absolutely follow the github mcp server resource format and template listings.
 
 with dynamic tooling, we would still want a way to use static toolsets for some bots, to allow a more focused task and allow a stupider model to work.
+
+so the trick is to make our system easily modifiable, and rapid to experiement with, since this part will become fundamental.  This is something we want to have benchmarks about, and we should own those benchmarks.  Our benchmarks should include real world usage as well as synthetic, so we can show how models are actually performing.
+
+A bot (or its helpers that run after the fact) should be able to wish for a tool.
