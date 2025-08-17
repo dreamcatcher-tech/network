@@ -58,3 +58,11 @@ can add bots or chats with people to the sidebar, so you can quickly switch to t
 we still discard transient switches around until you do something ? or we at least compact it.
 the analytics of the system should be part of your own context.
 app optimization from analytics can be entirely private on your end, rather than handled by the devs - before only the devs could do this so they had a need for your analytics, now bots can do it so the analytics are yours entirely.
+
+depending on settings, and agent may have access to the timeline, or it might be isolated and "narrowed".
+When calling another agent, the clipboard can be included automatically ?
+
+each state changing event on the timeline would show as an item - click to expand it onto the stateboard.
+A chat might show as a standalone chat ?
+the chat might expand in the timeline view ?
+show it as a git graph, where you can select multiple items.
