@@ -29,3 +29,6 @@ an mcp browser service, where we can see external mcp servers, or at least add o
 Then we can user our tooling to interact with anything we like, such as aws or fly infrasrtucture.
 
 Each bot should be called by mcp, so when they subscribe to changes in another chat, using the subscribe, with or without an llm filter, then they start acting.  They subscribe to other chats by subscribing to the change in resources for that chat.  An llm filter with instructions can be put in place too.  It can run a separate thread to check this, and change it accordingly to make sure it does right - the main thredas job is signalling intent, and then workers come in the back and reasearch it all, test it, expand on it.
+
+selecting the right tool, the bot could fork whenever it had many options, and each version of itself assess if the current version will work, and feeds back up.
+At the end, it wipes its history, and goes with the tool it has found best.  Can look in to the debug if you want, but the point is that a lot of thinking when in at this step - this junction - since its effects are profound, so we should flare out the number of agents that are working on it.
