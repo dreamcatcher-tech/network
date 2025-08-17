@@ -34,3 +34,8 @@ basically any time there is a register* call on the server code, then we should 
 
 @mount or other options might be able to tune what resources come available ? but this seems a bit too confusing.
 Mount options like readonly or with children ?
+
+we could make it so our inbuild mcp, to manage github auth, could guide the user thru getting a PAT so that the external github server can work ?
+At this point we would probably just run the server locally ?
+
+we should absolutely follow the github mcp server resource format and template listings.
