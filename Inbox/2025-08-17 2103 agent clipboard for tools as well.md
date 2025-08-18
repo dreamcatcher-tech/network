@@ -16,3 +16,8 @@ It can have something like a workflow doc that it executes, or it can make a lit
 Other agents can read this and build on it, and perhaps update it.
 
 This makes the llms get served like us, where in the background, little agents keep improving what we did and polishing it eagerly.
+
+? what happens if the resource that the clipboard holds is no longer valid ?
+should we silently drop it ?
+should we error if it tries to be used ?
+thing is that it should never be invalid, since it represents something immutable.
