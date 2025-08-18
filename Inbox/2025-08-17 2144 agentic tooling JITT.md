@@ -65,3 +65,5 @@ notes might be a separate tool, that gets treated differently, and exposes a par
 copy is easily done using just resources.
 rm is tool specific
 paste is tool specific
+
+the clipboard stores the repo, the commit, and the napp that produced that resources, so that it can be recovered no matter what.

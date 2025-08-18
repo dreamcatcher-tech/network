@@ -66,3 +66,27 @@ each state changing event on the timeline would show as an item - click to expan
 A chat might show as a standalone chat ?
 the chat might expand in the timeline view ?
 show it as a git graph, where you can select multiple items.
+Allows backtracking.
+agents can backtrack, and then put a marker so they don't go down the previous branch.
+
+When viewing another agents timelines, we can see everything that occured to them.
+
+[[Drawing 2025-08-18 13.13.10.excalidraw]]
+
+when switching bots, we can opt to go back to the previous context, or we can allow the bot to see the timeline, as well as the timeline depth.
+
+operator agent would be able to switch out the running agent for you and exist, so it hands over and then the next agent is up.
+
+when click on a chat, the input box appears at the base, to allow you to carry it on.
+esc will drop the box down to the bottom of the thread.
+Or a button that you click to indicate you want to resume the thread, which will shift it down to the bottom of the timeline ?
+When working on something, other portion of the timeline interleaving the chat are compressed down.
+
+Or, selecting makes it be an attachment to the current chat, but select again makes it be the chat you are resuming, causing everything in between to become context.  Pick a specific item in the chat to make that become the context.  Can pick stateboard changes to have that change the stateboard.
+
+Can hide events form the timeline, like UI events, like scrolling, moveing, whatever.
+This is the train of thought, and everything you do is captured here, including interacting with your history.
+
+Universal threading.
+The hunt for a universal agent.
+
