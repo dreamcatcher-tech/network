@@ -87,6 +87,12 @@ Or, selecting makes it be an attachment to the current chat, but select again ma
 Can hide events form the timeline, like UI events, like scrolling, moveing, whatever.
 This is the train of thought, and everything you do is captured here, including interacting with your history.
 
+If you want to talk about this thread, call on that particular agent, and it comes in and helps you find which thread you were talking about, and gets you started again.
+Can just be a special variation on enter, where you want to talk to the timeline bot.
+
+Offer tabs to view this timeline in different forms ?
+but under the hood, this is the pure data structure that we are operating on, since this is the full context of your interactions with the machine.
+
 Universal threading.
 The hunt for a universal agent.
 
