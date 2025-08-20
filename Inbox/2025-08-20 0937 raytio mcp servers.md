@@ -14,3 +14,7 @@ Can stall waiting for human approval.
 can be restricted in ways that use natural language.
 
 have nice access logs and other things so you can see what systems were using things.
+
+attach them to an agent to handle your sensitive things.
+
+gateway interactions with otherwise difficult services, like IRD.
