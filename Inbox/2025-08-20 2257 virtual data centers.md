@@ -18,3 +18,13 @@ But then you don't need to host, really - you just publish and the consumers pay
 So consumers need hosting, and they purchase it in elastic amounts, which is much simpler than if the server tries to be elastic.
 
 consumer demand is for static hash stored assets, not for remotely computed dynamic objects.
+
+things like optimization, balancing, cost optimization, availability targets, migrations.
+
+Additional work, like provisioning new datacenters, testing new hardware, keeping our own records of reliability or anomoalies.
+
+posting jobs to be done and some payments around that.
+
+we could offer artifact chain hosting ?
+or be an 'mcp host' where people can host their vibe coded mcp connections ?
+add services so we provide trusted computing for accessing sensitive resources thru mcp interfaces, with semantic firewalls in place.
