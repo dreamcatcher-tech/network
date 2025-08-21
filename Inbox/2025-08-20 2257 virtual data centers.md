@@ -18,3 +18,9 @@ But then you don't need to host, really - you just publish and the consumers pay
 So consumers need hosting, and they purchase it in elastic amounts, which is much simpler than if the server tries to be elastic.
 
 consumer demand is for static hash stored assets, not for remotely computed dynamic objects.
+
+if we're very much tolerant of servers going offline, then we can save a lot of money - if we are ok with things being repaired next few days, that cuts the bills significantly, since we can axe salaries.
+
+so if we eventually set up ai run datacenters, with no staff, just servers and they sometimes get replaced, that's as cheap as htings can go.
+
+have failover servers that a hot available to take the load.
