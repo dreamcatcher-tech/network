@@ -22,3 +22,5 @@ ambient attribution needs to be independent of the work being done ?
 It needs to be so etherlike that you could just as easily say "i hope that someone acknowledges my good work"
 
 at point of payment, we would calculate worth ? so we would show you projected future worth ?
+
+Maybe you couldn't make the payment unless you state something insightful about the project, like a video call or something ?
