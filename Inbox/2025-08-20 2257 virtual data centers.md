@@ -24,3 +24,25 @@ if we're very much tolerant of servers going offline, then we can save a lot of 
 so if we eventually set up ai run datacenters, with no staff, just servers and they sometimes get replaced, that's as cheap as htings can go.
 
 have failover servers that a hot available to take the load.
+
+things like optimization, balancing, cost optimization, availability targets, migrations.
+
+Additional work, like provisioning new datacenters, testing new hardware, keeping our own records of reliability or anomoalies.
+
+posting jobs to be done and some payments around that.
+
+we could offer artifact chain hosting ?
+or be an 'mcp host' where people can host their vibe coded mcp connections ?
+add services so we provide trusted computing for accessing sensitive resources thru mcp interfaces, with semantic firewalls in place.
+
+copy the fly.io model, but we sell repo hosting, with configurable redundancies.
+might be hard to get people to make apps to fit this model, but if it vibe codes easily, particularly if it vibe codes autonomously, that is a winner.
+Any new programming paradigm has to be vibe first these days.
+
+Best to copy the fly paradigm of a big fat web server that redirects into repos.
+Be the same cheapness, but we would manage the server locations dynamically.
+So the serviceability model of fly, using fly proxy, but running repos, so you don't have to deal with fly disks and unreliability.
+
+Could give you your own s3 bucket installation to manage as you please.  AI management of your infrastructure makes things much cleaner - always driving to keep the costs down.
+
+globally move each users repo to be near them, moving to any of the allowed hosts.
