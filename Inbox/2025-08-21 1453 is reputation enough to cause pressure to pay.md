@@ -16,3 +16,9 @@ Does that make it not a security, since the money was for some work that had bee
 So two points of participation:
 1. asking for it to be done
 2. paying the money for it, signaling acceptance.
+
+So long as our workflows have a very clear path of participation ?
+ambient attribution needs to be independent of the work being done ?
+It needs to be so etherlike that you could just as easily say "i hope that someone acknowledges my good work"
+
+at point of payment, we would calculate worth ? so we would show you projected future worth ?
