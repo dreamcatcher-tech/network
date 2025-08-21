@@ -20,3 +20,10 @@ warnings can be issued if they drift from the code supplied.
 Bots can help massge them to fit the new things.
 
 prompts may be used to send down system prompts that you may wish to use.
+
+can store this in the user profile, so it always loads.
+
+from this can publish to our registry as a derivation, pulling on the backing code from npm or jsr or similar.
+
+should the range of discoverable tools be stored on the user profile or in relation to an agent, so that we can narrow what can be loaded ?
+We can run a bot that first figures out what are good toolsets to rely upon, and then makes these available to a bot that does discovery.
