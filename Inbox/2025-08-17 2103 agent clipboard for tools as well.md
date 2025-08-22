@@ -34,3 +34,11 @@ possibly resume a chat that someone else was having ?
 
 be nice if the mcp server could read the disk state to know what was the mcp state of other clients ?
 
+the resource list is really just for the UI to understand what is happening ?
+they aren't really for the bots to interact with, other than to provide a handle for moving things around lightly.
+
+how does cd and navigation work ? are these just toolsets ?
+
+can present ui interrogation panels that also have auto complete on the file and branch browsing ?
+you start typing and it auto completes for you ?
+might present some full options based on ai guessing.

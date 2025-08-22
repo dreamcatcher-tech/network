@@ -27,3 +27,8 @@ perhaps the task of making a system prompt with as few conepts as possible is go
 
 
 intent passing is the key - this is what topograhy is about.
+
+child mcps might be the other tasks that it has kicked off ?
+
+triggers schema would be to hook onto a resource, and be informed when it changed, so we can do something.
+can be as simple as waiting for something long to finish.
