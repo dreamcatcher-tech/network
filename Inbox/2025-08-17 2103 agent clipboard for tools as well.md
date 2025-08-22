@@ -23,7 +23,7 @@ should we error if it tries to be used ?
 thing is that it should never be invalid, since it represents something immutable.
 
 clipboard should check that a resource is available before adding it.
-when added
+when added, it verifies resource is valid.  Might be set to get latest version of a resource.
 
 is it enough to just have mcp tools that can run an ai chat, and then get those results back ?
 then those chats would have mcp access too ?
