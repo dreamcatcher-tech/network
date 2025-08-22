@@ -21,3 +21,16 @@ This makes the llms get served like us, where in the background, little agents k
 should we silently drop it ?
 should we error if it tries to be used ?
 thing is that it should never be invalid, since it represents something immutable.
+
+clipboard should check that a resource is available before adding it.
+when added
+
+is it enough to just have mcp tools that can run an ai chat, and then get those results back ?
+then those chats would have mcp access too ?
+resources show current scope and current clipboard ?
+
+could start a separate mcp server instance that lets you go browse files and poke around.
+possibly resume a chat that someone else was having ?
+
+be nice if the mcp server could read the disk state to know what was the mcp state of other clients ?
+
