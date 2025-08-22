@@ -27,3 +27,24 @@ from this can publish to our registry as a derivation, pulling on the backing co
 
 should the range of discoverable tools be stored on the user profile or in relation to an agent, so that we can narrow what can be loaded ?
 We can run a bot that first figures out what are good toolsets to rely upon, and then makes these available to a bot that does discovery.
+
+
+All this is, is that we hold a file mapping in the users home repo, which is tool ids, and tool names, and arg descriptions.
+
+mcp commands are:
+1. create override
+2. reset override
+3. modify description
+4. reset descriptions
+5. modify tool description
+6. reset tool description
+7. modify tool parameter
+8. reset tool parameter
+9. modify tool return
+10. reset tool return
+
+you can't change the variable names, 
+
+then make it so these overrides show up in the ui, if they are being applied.
+
+? what about switching between multiple versions, to play ? what about toggling on and off ?
