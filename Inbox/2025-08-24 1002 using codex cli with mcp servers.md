@@ -40,3 +40,24 @@ the current long agent runs are too open ended - they don't loop or tuck back in
 We could rebadge the codex cli, and make the prompts dynamic and configurable (probably using mcp tooling) so that the codex flow, of endless looping and filesystem interactions, can be leveraged using our own tooling.
 
 By sitting atop their work, we can inherit all the benefits of their efforts, even tho they may not document or include all of their tuning steps.  We know we have the frontier long horizon agent here, and it is fast and efficient.
+
+codex seems to give us the driving loop, so that whole thing isn't something we have to deal with.
+the driving loop is hard, so is the streaming of progress, the sandboxing of commands.
+These things would run one per container type of thing, and they would run an retry until they died, which means that all that retry logic, connection logic, auth logic - that's all handled for us, and kept up to speed.  The whole streaming ui is removed from our domain too.
+
+File access can be done with a vscode or other form of online editor, or a direct connection to the container fs.
+
+start with using the real filesystem, and check out each dir, then detect diffs ?
+so the real filesystem becomes the staging area.
+if we just intercept the read, then things can be virtual.
+
+then the chat goes into the filesystem
+
+allow each user to auth loop with chatgpt.
+
+so we basically become a task management system, with some interface goodness, like mic recordings, where we use the codex engine as the way any agent does its jobs.
+
+The codex runner becomes the atomic unit of AI execution for us.
+The fact that we need this building block is the key - we had previously been making these things appear by using haphazard ways of interacting with the model, but the codex thing lifts it up one level higher.
+
+But what are we trying to do with this ?
