@@ -66,3 +66,7 @@ The fact that we need this building block is the key - we had previously been ma
 But what are we trying to do with this ?
 
 control the graph of executing agents using fibers on the root repo.  Shows the parent child relationship, and the cross agent interactions.
+
+? could it be made to work with our mcp server to be able to navigate around the repos, read things and write things, and ultimately commit them ?
+
+Is the prompting really going to be getting this agent set up to use these base tools, and then probably getting other agents set up to use their own unique tools.
