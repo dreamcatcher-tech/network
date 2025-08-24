@@ -11,7 +11,7 @@ Each user could in fact tweak the machine to their own preferences in this way, 
 
 So the world we are moving into is apps that were ai generated just for you.
 
-if the codex prompt was altered to suit ourselves, then 
+if the codex prompt was altered to suit ourselves, then this is effectively an agent, but with a lot more wrapping around the outside.  Plus that wrapping is maintained.
 
 so long as the codex tooling can call other codex tooling agents, and receive results from their long running updates, this is ideal.
 
@@ -28,3 +28,5 @@ It could run right now, using a modified prompt, and then be able to call other 
 These runs should be able to take all night.
 
 we should be able to take the output of a run, and even tho we don't know what it is, pipe it somewhere, or instruct something to be done with the output.
+
+we could run the pure cli version without the cloud infra and run on raw filesystem ?
