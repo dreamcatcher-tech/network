@@ -51,7 +51,10 @@ start with using the real filesystem, and check out each dir, then detect diffs 
 so the real filesystem becomes the staging area.
 if we just intercept the read, then things can be virtual.
 
-then the chat goes into the filesystem
+then the chat goes into the filesystem for ui display ?  while running it shows a streaming version, and commits at the end of the task.
+
+agents flavoured differently can spawn off parallel agents, with different settings, since they're set for a particular task.  Lightweight testing, investigating, theorizing, multi agent.
+agents can have different filesystem / repo access to draw on.d
 
 allow each user to auth loop with chatgpt.
 
@@ -61,3 +64,5 @@ The codex runner becomes the atomic unit of AI execution for us.
 The fact that we need this building block is the key - we had previously been making these things appear by using haphazard ways of interacting with the model, but the codex thing lifts it up one level higher.
 
 But what are we trying to do with this ?
+
+control the graph of executing agents using fibers on the root repo.  Shows the parent child relationship, and the cross agent interactions.

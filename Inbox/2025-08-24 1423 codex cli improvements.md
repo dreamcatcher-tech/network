@@ -10,3 +10,5 @@ sharing chats between runs
 running in the cloud, so not on my machine
 multiple task navigation, status, progress, completion estimations - like a power dashboard, grouped by project
 insert access to the openai web search tool by default, plus maybe code editor ?
+
+attachments of files that are forced into context.
