@@ -36,3 +36,7 @@ Decision points are confirmed, and all options at decision point are taken, some
 removing of options should always warrant deeper reflection to update the knowledge base to avoid making that mistake again.
 All mistakes can be represented as tokens that concluded with knowing it was better not to burn those.
 the current long agent runs are too open ended - they don't loop or tuck back in on themselves and reflect endlessly, almost like they're trying to save tokens.
+
+We could rebadge the codex cli, and make the prompts dynamic and configurable (probably using mcp tooling) so that the codex flow, of endless looping and filesystem interactions, can be leveraged using our own tooling.
+
+By sitting atop their work, we can inherit all the benefits of their efforts, even tho they may not document or include all of their tuning steps.  We know we have the frontier long horizon agent here, and it is fast and efficient.
