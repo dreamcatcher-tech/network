@@ -19,3 +19,24 @@ we should drive the fly api using a worker, and then show the logs to the user, 
 
 it might be that we never need to do anything other than call the fly.io infra mcp.
 if someone wants to migrate to their own org, we can do that, and then the git app just points at their own fly infra, not ours.
+
+fly can run mcp servers, so running the stdio mcp server might be the easiest, then we interpret its messages ?
+Is this the long term best option ?
+It is not good for autonomous agents.  unless we put an autonomy shim in front of it.
+
+raw stdout stream is far more pure, as it involves the UI too.
+we can then roll back the layers as we go.
+
+using fly, we can even show the infrastructure geometry on a map.
+
+artifact can make the mcp tooling provisioning be instant, so it doesn't need 
+also makes the mcp calls repeatable.
+
+artifact is the mcp host, then we need this agent host thing too.
+
+check out a repo using a full pack file generated on the fly.
+the final state gets pushed back to artifact and is stored on a fiber.  All the worker states a pooled and then periodically committed down.
+
+So on artifact, the request to start a worker comes in, and it gets received by one of the Hosts workers.  this worker shares its state and its reasoning.  You are effectively talking to this worker, but with a hard locked interface where you can only say one thing "provision".  
+
+you could start talking to just the hosts workers, who can answer any questions you have, and guide you into starting your own account.  You history is just stored in the browser until you make an account.
