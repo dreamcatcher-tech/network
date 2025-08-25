@@ -73,3 +73,17 @@ the container fleet interactions are:
 3. fetch agents
 4. spawn agent
 5. resume snapshot
+
+the container header:
+security ?
+once auth'd, any request should get the full stdio file of the active task.  Late comers would get the full file and then they would get the latest version.  So write this to disk and then update as soon as anything changes on it.
+
+
+should it be an mcp server, and the tool calls it takes are the same shape as the fly mcp server, but, 
+
+pull down prior state by using git to check out.
+
+
+something dirty:
+webserver ssh's into the running agent, and tails the stdout file, then writes to the stdin pipe, if allowed.
+or exec on the machine, whilst streaming down the result ?
