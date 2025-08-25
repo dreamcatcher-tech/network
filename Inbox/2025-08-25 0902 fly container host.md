@@ -77,7 +77,9 @@ the container fleet interactions are:
 the container header:
 security ?
 once auth'd, any request should get the full stdio file of the active task.  Late comers would get the full file and then they would get the latest version.  So write this to disk and then update as soon as anything changes on it.
-
+post pushes something straight into the stdin.
+tool calls used for this purpose.
+resources list the web links for the stdout file, which is appended to.
 
 should it be an mcp server, and the tool calls it takes are the same shape as the fly mcp server, but, 
 
