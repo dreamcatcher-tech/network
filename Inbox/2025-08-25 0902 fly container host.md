@@ -51,6 +51,7 @@ the tile is:
 2. a user message
 3. the sysprompt
 4. some config
+5. tool prompt mapping
 
 the state can be frozen at any point and resumed with
 1. a new user message
@@ -71,5 +72,4 @@ the container fleet interactions are:
 2. search agent snapshots
 3. fetch agents
 4. spawn agent
-5. list snapshots
-6. resume snapshot
+5. resume snapshot
