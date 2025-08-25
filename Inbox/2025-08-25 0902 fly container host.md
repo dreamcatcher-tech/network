@@ -40,3 +40,18 @@ the final state gets pushed back to artifact and is stored on a fiber.  All the 
 So on artifact, the request to start a worker comes in, and it gets received by one of the Hosts workers.  this worker shares its state and its reasoning.  You are effectively talking to this worker, but with a hard locked interface where you can only say one thing "provision".  
 
 you could start talking to just the hosts workers, who can answer any questions you have, and guide you into starting your own account.  You history is just stored in the browser until you make an account.
+
+we could make a docker image that built the codex codebase, and then added some scripting shims over the top of it.
+Then we make it callable from inside artifact ?
+
+subagents just looks like an mcp call out to artifact.
+
+the tile is:
+1. a repo, a branch, and a path
+2. a user message
+3. the sysprompt
+4. some config
+
+the state can be frozen at any point and resumed with
+1. a new user message
+2. any changes of the initial params
