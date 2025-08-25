@@ -54,3 +54,7 @@ each git server controls an execution pool and manages it, so in lockstep, clien
 
 read the stream as an mcp resource operation, using an http link.
 mcp boots and kicks off and resumes the turn.  the process and filesystem are provided by direct connections.
+
+so we make a fly app that builds the images and deploys the entry / host machine, which should always exist, since that is what makes the other machines.
+When anyone attempts to connect to it,
+This app is entirely private to artifact, and when artifact is satisfied that permissions have been satisfied, it will make a request to this single app.
