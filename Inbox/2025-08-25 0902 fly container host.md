@@ -47,7 +47,7 @@ Then we make it callable from inside artifact ?
 subagents just looks like an mcp call out to artifact.
 
 the tile is:
-1. a repo, a branch, and a path
+1. a repo, a branch, a commit, and a path
 2. a user message
 3. the sysprompt
 4. some config
@@ -55,3 +55,21 @@ the tile is:
 the state can be frozen at any point and resumed with
 1. a new user message
 2. any changes of the initial params
+
+passing in multiple repos ?
+
+modify the artifact mcp server to search and fetch agents.
+instead of load, there is start.
+but also need to search for currently running agents ?
+
+should there always be an intro agent, and that one has access to all the children, so there isn't ever a top level means of searching, there is an agent for you, and all your chats are with children of this agent.
+
+so we definitely need a registry of agents.
+
+the container fleet interactions are:
+1. search agent images
+2. search agent snapshots
+3. fetch agents
+4. spawn agent
+5. list snapshots
+6. resume snapshot
