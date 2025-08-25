@@ -89,3 +89,15 @@ pull down prior state by using git to check out.
 something dirty:
 webserver ssh's into the running agent, and tails the stdout file, then writes to the stdin pipe, if allowed.
 or exec on the machine, whilst streaming down the result ?
+
+no auth, artifact does the checking if it will do the fetch request of the remote server, and the tool call to retrieve the stdout stream, too.
+Can list all the previous task stdout files, which can be pulled down as well.
+Can pull without thinking if you want only output.
+
+So artifact controls the access to the private execution network, and it only allows connections to be made that pass auth permissions on the repos.  If you can see the repos and have the 'x' permission, then you can make a request to pull the stdout file.
+
+definitely be mcp to help expose other resources, like health, cpu load, config.
+
+make the deployment by using git submodules, where the codex project is a submodule to a bigger wrapper project that builds the docker image for it, and puts the dev container for running in together.
+then have the agent header be a little deno server.
+test with a little program that exercises the stdout stdin thing.
