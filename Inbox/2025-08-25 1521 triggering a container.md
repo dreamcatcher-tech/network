@@ -32,4 +32,25 @@ Either way, a discrete call comes in from somewhere to artifact requesting and a
 so run it all on defaults first, with no repo, just boot and talk.
 then visibility, so we can see it and know what its doing.
 
-the agen
+the agents start all frozen or all unspawned.  artifact triggers them by calling the fly mcp server.
+
+secrets are managed per app, so we could make a hosting manager app that had a base agent that was the thing that made the mcp calls.
+
+so this hosting agent, it may be capable of many concurrent sessions, and it has the fly mcp server locally inside it.
+
+It then runs with this config, and does the instructions it was told to do, using the mcp server that was supplied, which is the fly one.  That agent should be a derived image, from the base image, that has different tooling attached, and then the prompting is done dynamically from the entry point call.
+
+this is instead of running via artifact where the agent mcp server is accessed via the artifact gateway, which seems to make it simpler and have less indirection ?
+
+entry point call is a web call  ?
+could be an ssh call ?
+web call comes in with an api key
+
+
+if the hosting was an app, then it has its own secrets and everything, and then we just set up new users inside their own apps.
+So long as we can codex chat with the hosting app somehow ?  This should probably just take fixed strings, as the trigger would be rather high security.
+
+shelling into a running machine and using codex on the cli would help with debugging.
+
+Make another app that routes calls to the machines, based on machine id and permissions ?
+or is this perhaps artifact itself that knows how to do this ?
