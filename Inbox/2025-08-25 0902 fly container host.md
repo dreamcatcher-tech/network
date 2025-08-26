@@ -107,3 +107,7 @@ so to artifact, the agent presents as an mcp call, with the special
 ? how to handle queuing of messages ?
 holding the queue message status seems hard ?
 sending characters is just a tool call, and you can do that at any time.
+
+we could make a provisioner thing that checks out a git worktree ?
+
+or just make it one agent at a time to start with, just to get it going.
