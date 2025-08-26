@@ -101,3 +101,9 @@ definitely be mcp to help expose other resources, like health, cpu load, config.
 make the deployment by using git submodules, where the codex project is a submodule to a bigger wrapper project that builds the docker image for it, and puts the dev container for running in together.
 then have the agent header be a little deno server.
 test with a little program that exercises the stdout stdin thing.
+
+so to artifact, the agent presents as an mcp call, with the special 
+
+? how to handle queuing of messages ?
+holding the queue message status seems hard ?
+sending characters is just a tool call, and you can do that at any time.
