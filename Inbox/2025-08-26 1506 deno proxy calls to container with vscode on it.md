@@ -30,3 +30,5 @@ otherwise starting a new agent is a bit of a burden ?
 but we would always be chatting with something anyway, so it could make a call to the ai that handles this, and the timing might not be too bad ?  Or we could talk to that agent ahead of time and ask for some apps to be put up in the pool, since we're going to kick them off quickly.
 
 so if there isn't a machine with the repo checked out, then we ask for it, but if we do, then we can start new sessions on  it, since it can handle many sessions concurrently.
+
+make the 
