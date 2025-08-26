@@ -18,3 +18,9 @@ provides an external replayable mcp log.
 
 can help with virutalizing mcp servers to help with testing and evals.
 
+it would manage secrets, and clean running.
+can handle tool prompt overrides.
+can handle assembing multiple toolsets together.
+can exclude some tools.
+
+can take a stdio server and wrap it as an artifact server, ensuring it executes in clean isolation.
