@@ -31,4 +31,4 @@ but we would always be chatting with something anyway, so it could make a call t
 
 so if there isn't a machine with the repo checked out, then we ask for it, but if we do, then we can start new sessions on  it, since it can handle many sessions concurrently.
 
-make the 
+make the web server header on each machine receive any requests, but then use fly replay to send it to the dedicated machine.
