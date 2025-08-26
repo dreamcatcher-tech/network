@@ -12,3 +12,9 @@ we can sit it within its own filesystem layer, so that multiple edits can occur 
 or, we can make it all edit the live mutable filesystem.
 
 if you wanted your own version, you should start a new image and connect to that.
+
+use fly proxy to hit the exact machine, and connect to its remote mcp server being hosted.
+
+the machines may need to be hardened, since fly lets all machines in the same org see all others ?
+
+w
