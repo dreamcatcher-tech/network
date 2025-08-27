@@ -30,4 +30,4 @@ so we have the terminal shell, hooked up straight to the agent, and then we have
 
 we also have agent control protocol in an ide, so the question is, which takes least work, to get up and running now ?  seems the cli route is near instant, and can keep working today.
 
-Ultimately we want text files output, and text based instructions.
+Ultimately we want text files output, and text based instructions.  It is the grind ability that we really want - the knowledge - not actual code.
