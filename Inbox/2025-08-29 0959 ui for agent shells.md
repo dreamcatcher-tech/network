@@ -12,3 +12,4 @@ top bar shows who you are, and who else is in the session.
 could also be your tabs ?
 so you have one tab per session, and inside each tab you can see what's happening ?
 your home agent can see your tabs.
+tabs should be handled by the browser.  you should be able to list your sessions in agent, then switch over to them.
