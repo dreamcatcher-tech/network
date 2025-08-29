@@ -14,6 +14,7 @@ To build apps in this way, we still have all the richness and animations we all 
 4. very low bandwidth to update
 5. easy to test, as we don't need a browser
 6. snapshottable, since the exact state is easy to capture ?
+7. alignment over overlay drawings becomes very easy due to the cell positioning nature of tui
 
 all the logic then runs on the server, and is highly testable.
 
