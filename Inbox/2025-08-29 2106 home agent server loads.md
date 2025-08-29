@@ -9,4 +9,4 @@ Each agent should support multiple concurrent sessions, so long as the config an
 
 If different that seems to make it a bit weird and not as simple to get a handle on.
 
-fly proxy can then route based on traffic load so that we are 
+fly proxy can then route based on traffic load so that we are always responsive.
