@@ -4,3 +4,7 @@
 >[!question] Targets: 
 
 >[!danger] Depends: 
+
+If only the home repo handles process management, then all child repos of it are pure data ?
+
+or maybe agents are a different kind of process.
