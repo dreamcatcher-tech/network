@@ -7,3 +7,4 @@
 
 agentic platform winners
 agents as a compute unit - not necessarily ai
+https://www.npmjs.com/package/@modelcontextprotocol/sdk rate of downloads
