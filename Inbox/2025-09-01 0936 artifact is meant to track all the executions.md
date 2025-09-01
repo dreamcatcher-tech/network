@@ -47,3 +47,4 @@ If there is no base agenta t the ready, then provisioning has died - artifact ca
 So artifact is an inert store, that produces logical results to things, and then agents are expected to be on hand to respond to these things.
 
 the base agent would subscribe to artifact, and when it got notified of a change, it would do something ?  or artifact would make the mcp call into that agent ?
+
