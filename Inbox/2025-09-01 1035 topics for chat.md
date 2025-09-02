@@ -1,0 +1,12 @@
+
+>[!tip] Created: [2025-09-01 Mon 10:35]
+
+>[!question] Targets: 
+
+>[!danger] Depends: 
+
+agentic platform winners
+agents as a compute unit - not necessarily ai
+https://www.npmjs.com/package/@modelcontextprotocol/sdk rate of downloads
+
+naming of the computer / agent network / app
