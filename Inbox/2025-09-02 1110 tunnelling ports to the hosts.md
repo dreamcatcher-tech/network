@@ -17,3 +17,7 @@ pipe the errors back inside to the bot to work its way thru.
 could provide a public server that exposed any ports we wanted to any agent ? could be done without a sw tunnel, so the ports and domains were exposed legitimately on the internet, so can be used for hosting pages or other apps.
 
 Or we can tunnel https terminated info straight to the host on a configured port, but it needs to say this in its config. Or use a convention.
+
+can shunt levels, so https://my-app.com/agent-0/?port=4534 would cause the proxy to proxy the port on the particular agent, making it serve whatever was on that port.
+
+Useful when starting dev servers.
