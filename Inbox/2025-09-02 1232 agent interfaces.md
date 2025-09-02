@@ -27,3 +27,10 @@ all images carry the ttyd viewer ability.
 
 it might be that the manifest config file specifies the entry point action, not the mcp control server.
 then new views can call this entry command.
+
+
+mcp function calls:
+- task: basically takes command plus args and returns back a view where the status can be watched
+- resume_task: takes a task index and then puts in some other text into it - can be used to carry on a function, like a codex call.
+
+coming in an starting a new view will start a new task by default.
