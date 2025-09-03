@@ -23,3 +23,6 @@ have the concept of a primary viewer, so this is the one whose hardware is conne
 the face could ssh into the other agent and present the face back in this manner ?
 
 or we just add a token that shows the redirect origin and all the places it visits along the way, so that if redirect finds a loop, then we come in with a tool call to break it.
+
+having multiple mics come in should be fine - it's all just hardware, and we can connect as much as we want.
+Seems an easy way for everyone to have a voice call, all hook up mics to the agent.
