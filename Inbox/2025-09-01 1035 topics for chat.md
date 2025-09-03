@@ -5,8 +5,13 @@
 
 >[!danger] Depends: 
 
-agentic platform winners
-agents as a compute unit - not necessarily ai
-https://www.npmjs.com/package/@modelcontextprotocol/sdk rate of downloads
+https://enegames.itch.io/thunder-lizard-eat-or-be-eaten
+https://blog.jeffschomay.com/rendering-a-game-in-real-time-with-ai
+basically the limits of ai upscaling, but in the opposite directly.
 
-naming of the computer / agent network / app
+the raft of utility in cli / terminal apps that we can instantly browserify and vibe interface with.
+
+strudel: https://www.youtube.com/watch?v=ZCcpWzhekEY
+
+telnet doom.w-graj.net 666
+
