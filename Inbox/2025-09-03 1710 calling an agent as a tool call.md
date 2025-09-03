@@ -18,3 +18,7 @@ those types of tools might not be faceable ?
 what about hooking up a debugger to the agent during the tool call ?
 
 tool call could use the session id and the call id / request id as a way to get the view or derive it ?
+
+we could use the task management tool to handle status of long running tasks ?
+
+the dep

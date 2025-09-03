@@ -14,6 +14,7 @@ the raft of utility in cli / terminal apps that we can instantly browserify and 
 strudel: https://www.youtube.com/watch?v=ZCcpWzhekEY
 
 telnet doom.w-graj.net 666
+ssh -C 666@sshdoom.megidish.net using sixel
 
 all watchers of a view getting navigated away too.
 or what about all turning their mics on ?
