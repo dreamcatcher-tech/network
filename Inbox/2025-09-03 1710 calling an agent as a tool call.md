@@ -21,4 +21,12 @@ tool call could use the session id and the call id / request id as a way to get 
 
 we could use the task management tool to handle status of long running tasks ?
 
-the dep
+the delayed version could be, tool returns with a task id, and then when it finishes, a message enters the chat, so long as the same chat is still active, and it says "btw task id is finished now".
+
+the client then pulls the result using the task id.
+
+they should be able to cancel it too.
+
+we can give it a subscribe function, where it calls this and knows it will be notified (somehow) when the task is done.  When done, we just pipe text in on the terminal, or just tell the bot that the user will in fact tell you when the task is done.  
+
+Let them cancel or unsubscribe too.
