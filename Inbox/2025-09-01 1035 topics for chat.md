@@ -18,3 +18,6 @@ ssh -C 666@sshdoom.megidish.net using sixel
 
 all watchers of a view getting navigated away too.
 or what about all turning their mics on ?
+
+design decisions:
+1. agent workspace config, like sysprompt and others can only be set at creation time
