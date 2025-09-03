@@ -19,3 +19,7 @@ what about turning their mics on ?
 maybe following or navigating is a session setting, where the viewers can toggle that ?
 
 have the concept of a primary viewer, so this is the one whose hardware is connected ?
+
+the face could ssh into the other agent and present the face back in this manner ?
+
+or we just add a token that shows the redirect origin and all the places it visits along the way, so that if redirect finds a loop, then we come in with a tool call to break it.
