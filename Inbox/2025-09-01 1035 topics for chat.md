@@ -15,3 +15,5 @@ strudel: https://www.youtube.com/watch?v=ZCcpWzhekEY
 
 telnet doom.w-graj.net 666
 
+all watchers of a view getting navigated away too.
+or what about all turning their mics on ?
