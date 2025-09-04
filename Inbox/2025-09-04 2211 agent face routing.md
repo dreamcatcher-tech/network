@@ -50,3 +50,7 @@ it should be the exact same server logic ?
 one is stdio and makes connections out to the web based version of itself.
 it should maybe just confirm it dialed correctly ?
 keep connections around a few minutes then shut them down.
+
+so we'd have a face control system running in each agent.
+this would be interacted with via an mcp server.
+definitely need the face client mcp server running in each agent, which is how it reaches out.
