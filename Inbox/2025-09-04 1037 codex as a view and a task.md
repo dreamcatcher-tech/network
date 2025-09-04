@@ -24,3 +24,5 @@ the agent task framework is therefore only ever plain text ? what about making i
 is an agent that can control these things reuqired to be set up first, since you can't change your mcp servers midway / dynamically ?
 
 codex can be run turn by turn, using exec.
+
+shortlived computations is the key to resilience.  These defined ticks.

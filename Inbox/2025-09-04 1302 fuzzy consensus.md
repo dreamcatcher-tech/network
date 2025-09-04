@@ -20,3 +20,4 @@ So then these agents need not have any hard coding except some prompting, and th
 diversity is important so they all don't get conned ?
 
 they might figure out their own structure of deeper governance.
+

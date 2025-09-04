@@ -56,6 +56,20 @@ We can then define the system in terms of levels:
 1. computers
 2. agents
 3. faces
-4. commands
+4. tasks
 
-We should be able to make a mermaid diagram that shows this relationship ?
+We should be able to make a mermaid ER diagram that shows this relationship ?
+
+probably the status at east level could be the same ?
+
+status:
+1. starting
+2. running
+3. error
+4. finished
+
+? what of having defaults ? so if you send a task in, and do not spec much, it will start a new agent, then a new face, then a new task of default kind ?
+
+computer kinds - not sure - we only have one for now
+agent kinds are what the docker images are, and are named conveniently.  Named for purpose.
+face kinds for now are bash and 
