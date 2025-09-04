@@ -31,3 +31,22 @@ So its interface is given a machine path to connect to.
 but the receiving side is a stream web based mcp server.
 this streaming server receives the exact calls, but it doesn't receive the agent id information.
 
+self is just no outbound agentpath ?
+
+should interaction id's include the face too ?
+simplest function is just:
+- agentId
+- faceId
+- interactionId
+
+interfaces were the personification of computing - now we're back full circle and it seems like our forefathers have left us a gift of simplicity.
+
+searching for supported face kinds could get large if there was a freeform set of faces.
+can deal with that later, but it looks like a deep research type of discovery, with a test and find out thing, plus possibly a commissioning phase.
+
+each agent presents a web server mcp that gives the face interfaces to it, and throws if the agentId does not match itself.
+
+it should be the exact same server logic ?
+one is stdio and makes connections out to the web based version of itself.
+it should maybe just confirm it dialed correctly ?
+keep connections around a few minutes then shut them down.
