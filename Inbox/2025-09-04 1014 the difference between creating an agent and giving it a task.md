@@ -18,3 +18,8 @@ this should be the same toolset as the task management.
 3. await_task
 4. interupt_task
 5. update_task
+
+So maybe task management should be the same all round, with the await pattern ?
+the patterns should reinforce the llm ?
+create_agent gives back an id.
+await_agent( agent_id ) waits for it to reach a certain state.

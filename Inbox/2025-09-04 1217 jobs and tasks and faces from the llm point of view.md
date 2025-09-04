@@ -49,27 +49,31 @@ the args schema checking need not be in the mcp tool calls themselves - it could
 
 so we're seeing the common command purposes with the CoW principle, where there is no update, only creation, and they're always nested:
 1. list_
-2. create_
-3. destroy_
+2. read_
+3. create_
+4. destroy_
 
 We can then define the system in terms of levels:
 1. computers
 2. agents
 3. faces
-4. tasks
+4. interactions
 
 We should be able to make a mermaid ER diagram that shows this relationship ?
 
 probably the status at east level could be the same ?
 
 status:
-1. starting
-2. running
+1. creating
+2. ready
 3. error
-4. finished
+4. completed
 
 ? what of having defaults ? so if you send a task in, and do not spec much, it will start a new agent, then a new face, then a new task of default kind ?
 
 computer kinds - not sure - we only have one for now
 agent kinds are what the docker images are, and are named conveniently.  Named for purpose.
 face kinds for now are bash and 
+
+status would be common to all.  name the level that you are at, and always in all tool calls make sure you mention what other levels there are, like computer, agent, etc.
+
