@@ -21,3 +21,8 @@ or what about all turning their mics on ?
 
 design decisions:
 1. agent workspace config, like sysprompt and others can only be set at creation time
+2. a face is used to get a job done, which may be multi turn
+
+What's hard is to think that all the concepts we use have to also be presented to the model too - conventionally we the programmers held the concepts in our minds, but now, we have to share them with the llms
+
+like trying to close a suitcase that is too full.
