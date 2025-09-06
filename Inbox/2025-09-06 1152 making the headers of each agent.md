@@ -55,4 +55,30 @@ the mcp server has commands start face ?
 it probably has interaction commands for the face too ?
 
 
-the header app runs by default, on a prearranged port that is known to the infrastructure.
+the header app runs by default, on a prearranged port that is known to the infrastructure.  This is the base of the agent design.
+- fly replay if the incoming request isn't for this agent, or this app
+- port proxy unroll if not for the default face - used for face viewing and face interactions
+- reject if no default face
+
+it also presents two mcp web servers, which are agent level interactions:
+- faces
+- interactions
+
+faces cause redirects if they're coming in on web protocols.
+so if you start an mcp face, we proxy to the port that thing runs on, whenever a request for the face comes in.
+when a view for a face comes in, as proxy thru to the view, which might be the same as the face some times, in the default case.
+
+working with faces and interactions is agent land table stakes.
+after the face is started, it can do anything at all, so at that point all we do is port unrolling.
+
+the agent client mcp servers, these are skilled at running locally, but they could 
+if could prove machine id reliably, run as remotes servers.
+So the fly infra controller could be a remove machine running the mcp server and keeping the fly token safe.  then the agents and computers mcp servers are not stdio but are web servers.
+This could mean we can drop having a fly token inside each app.
+
+use the meta to signal opening of a port, so a machine can read this to know the machine is genuinely there.
+
+so we would have a trusted computer, and it would be the infra manager, and all the apps just point at that one to get things done on their infra.
+Is better if it is just the one machine tho.
+perhaps artifact could be that, and store the token ciphertext in the repo state ?
+then it becomes a question of who can access the ciphertext, rather than who can access the env vars.
