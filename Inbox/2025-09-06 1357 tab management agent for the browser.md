@@ -21,3 +21,4 @@ can check for backlinks and other places that linked to the info.
 trigger any time a new tab opens, and do the crawl.
 provide then, a crawl based navigation view, which may graph leap across to other pages and other prior knowledge.
 
+this agent can then do extra things, like opening ports and whatever - making the browser remote controllable.

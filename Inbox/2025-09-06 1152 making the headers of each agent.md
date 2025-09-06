@@ -53,3 +53,6 @@ the header starts and it is actually an mcp server, a fly redirecter, and a http
 
 the mcp server has commands start face ?
 it probably has interaction commands for the face too ?
+
+
+the header app runs by default, on a prearranged port that is known to the infrastructure.

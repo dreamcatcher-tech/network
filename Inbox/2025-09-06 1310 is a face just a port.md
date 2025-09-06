@@ -28,3 +28,5 @@ ranges of ports we can deal with another day perhaps ?
 allow the debug param 'port' and we'll just redirect to any port we like.
 
 a face is intended to interacted with by other agents.  a port is classical app interactions.
+
+views should really be registerd, and have a type like http, or tcp or whatever.

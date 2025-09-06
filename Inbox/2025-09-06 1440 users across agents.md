@@ -7,3 +7,5 @@
 
 we should be able to have faces that run as a restricted user ?
 this would be specified when the agent header does htings.
+
+user is just a permissions scoping thing for a face to use.
