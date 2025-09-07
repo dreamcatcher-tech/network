@@ -11,4 +11,4 @@ this would be done inside the proxy, as it would be configured to do this new fa
 
 in the config file, it says what the default face kind is, if not specified.  It also enables new face creation on arrival.  It will then create a default face and redirect you to its view once made.
 
-It may store in the face state info like who created, what ip it came from, etc.
+It may store in the face state info like who created, what ip it 
