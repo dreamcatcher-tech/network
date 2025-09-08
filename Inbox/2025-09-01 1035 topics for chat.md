@@ -25,6 +25,4 @@ design decisions:
 
 What's hard is to think that all the concepts we use have to also be presented to the model too - conventionally we the programmers held the concepts in our minds, but now, we have to share them with the llms
 
-like trying to close a suitcase that is too full.
-
-storing agent state in git.
+the agent interactions seem exclusively strings, rather than schema'd function calls.
