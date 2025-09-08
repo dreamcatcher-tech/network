@@ -5,4 +5,6 @@
 
 >[!danger] Depends: 
 
-Each time there is a problem, the agent should consider multiple different paths 
+Each time there is a problem, the agent should consider multiple different paths and evaluate each one.
+
+currently it picks a path and goes down it, but it should be trained for fork into many versions of itself and explore which outcomes have the best quality.
