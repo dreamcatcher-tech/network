@@ -26,3 +26,5 @@ design decisions:
 What's hard is to think that all the concepts we use have to also be presented to the model too - conventionally we the programmers held the concepts in our minds, but now, we have to share them with the llms
 
 the agent interactions seem exclusively strings, rather than schema'd function calls.
+
+even with a perfect model, it probably comes down to about 40% harness, as to the quality of the performance.  Plus we can see that with how the Agent from openai, and deep research, score much higher in hard benchmarks than the raw model.
