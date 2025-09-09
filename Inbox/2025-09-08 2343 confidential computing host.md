@@ -32,3 +32,7 @@ or can charge extra to keep the next container on standby.
 
 so the tuning of the hardware can be ai managed, as we do large scale experiments to tweak the hosts better and better.  The chain wants them to be more efficient, because that is margin, so you can trust that the tuner has your interests at heart.
 So all the dials and knobs, and all the hardware differences, can all be sampled and tuned for, as experiments are run.
+
+so its basically a blockchain kubernetes thing.
+
+for public containers, we could run the container as confidential, then run each container in non confidential mode relative to each other, then use the proof of the whole vm as proof of each one.
