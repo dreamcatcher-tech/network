@@ -23,3 +23,12 @@ if we are going to trust the cpu attestation anyway, then does it matter about a
 being confidential also guarantees integrity, so even if no secret, then we can also know they ran with integrity.
 
 the boot kit can auto connect to the chain and can be controlled by ai agents from that point on, including troubleshooting and provisioning.
+
+we'd want to make sure we had paths for upgrading the way we do containers, like keeping an eye on firecracker advancements.
+
+because they're confidential, we can boot them, and then have them on warm standby, and they are still confidential - they can then provision themselves with the next layer or the files required for a specific job.
+
+or can charge extra to keep the next container on standby.
+
+so the tuning of the hardware can be ai managed, as we do large scale experiments to tweak the hosts better and better.  The chain wants them to be more efficient, because that is margin, so you can trust that the tuner has your interests at heart.
+So all the dials and knobs, and all the hardware differences, can all be sampled and tuned for, as experiments are run.
