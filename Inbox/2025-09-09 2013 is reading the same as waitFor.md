@@ -6,3 +6,5 @@
 >[!danger] Depends: 
 
 why would you ever need to read something if you were not intending to wait for it ?
+
+also list can be the same as just checking on what the status is.
