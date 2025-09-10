@@ -25,3 +25,6 @@ the inspector face could be just available to all, and you can reach it by askin
 new face should be reachable by url parameters, so I can specify the face kind that I want, and then I get redirected to it.
 
 so we need to change the header, being the thing that gets hit by the browser first.
+
+be just inspecting locally and making tool calls to test the process.
+start the server, start the inspector, hit the server, see what it does ?
