@@ -42,3 +42,15 @@ we could then raise to load up the hardware and software to do this computing in
 Confidential computing extends the practice of securing data in transit and data at rest by adding the practice of securing data in use.
 
 that we ever thought we could do dark edge without confidential computing seems insane, actually.
+
+we would also want to have LLMs continually modelling the trusted execution path, so they keep pace with changes, and any designs we submit, it can reason thru them and gauge them against threat models.  It also keeps track of changes, and live vulnerabilities, so its always figuring out the best arrangement.  
+
+so the highest bar is trusted infrastructure with confidential computing running inside.
+
+the tls that gets presented to the browser can be anchored in TEE, so even the browser can take that cert and verify it.  We can make a small browser extension that lights green when your page is being served by a trusted confidential vm.
+
+a HUGE problem with public blockchains, is all the data is public.  plus if you try to do bespoke useful computations as your workload, then the operators can see it.  coco removes trust in the operator, so we can indeed make a system of general compute that is confidential but is trustless for the operators, so they don't even need to score reputation.
+
+we also have strong host affinity, so we can attribute the calculation to an exact cpu, meaning they can't be switched out by an attacker.
+
+operators would give the whole host over to the pool, so it controls the entire piece of hardware.
