@@ -41,3 +41,4 @@ we could then raise to load up the hardware and software to do this computing in
 
 Confidential computing extends the practice of securing data in transit and data at rest by adding the practice of securing data in use.
 
+that we ever thought we could do dark edge without confidential computing seems insane, actually.
