@@ -36,3 +36,8 @@ So all the dials and knobs, and all the hardware differences, can all be sampled
 so its basically a blockchain kubernetes thing.
 
 for public containers, we could run the container as confidential, then run each container in non confidential mode relative to each other, then use the proof of the whole vm as proof of each one.
+
+we could then raise to load up the hardware and software to do this computing in a confidential way.  and make a currency out of it, and tax the running of it to run the overhead of opteration, like maintaining the ledger. as well as running the AI required to manage the operations.
+
+Confidential computing extends the practice of securing data in transit and data at rest by adding the practice of securing data in use.
+
