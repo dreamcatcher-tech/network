@@ -23,3 +23,10 @@ face status view is just the json value of its status, piped out to the web.
 mcp must be specified alone.
 
 agent may have a default face, or a system face, which is used to show the status of the agent and all its running faces.  Views could be auto refreshing, or just snapshot view.
+
+every face should indeed run in a tmux wrapper, and there should always be a default view that points to that session in a readonly way.
+
+basically we'd be wrapping any command we want to run in this tmux wrapper, then making a default view, and that way you can always see the process logs at a glance.
+
+? should there be a views list face ? 
+or a bash face that is available for every agent ?
