@@ -14,3 +14,10 @@ so if you come in looking for a particular view, then if it is a ttyd view, we n
 
 the issue seems to be only what the page comes back with, and tries to make a path request.
 
+So the ttyd face needs to be told what path it is being served from, since that is how it will build its urls.
+
+so if it does a get, we just look for the ws upgrade, and know that this is a special thing ?
+we would be making a special allowance for ttyd to operate.
+
+any other app would need some kind of handshake thing ? hopefully there aren't any other special cases.
+it might be easiest to do the tunnelling 
