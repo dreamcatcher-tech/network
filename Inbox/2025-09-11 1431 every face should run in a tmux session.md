@@ -18,6 +18,9 @@ url params required:
 - newFaceConfig=...args used to pass custom config options to the face start
 - view=faceView which view of the face you want to connect with, or the default one if not specified
 
+a view with no face is asking to start a new default face and look at that view.
+
+views can be accessed by number or by name.
 
 face status view is just the json value of its status, piped out to the web.
 mcp must be specified alone.
@@ -30,3 +33,5 @@ basically we'd be wrapping any command we want to run in this tmux wrapper, then
 
 ? should there be a views list face ? 
 or a bash face that is available for every agent ?
+
+so the tmux script would get tested for its error handling and reporting, and that it started the ttyd server on the default view.
