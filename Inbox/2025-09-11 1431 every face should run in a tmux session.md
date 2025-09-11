@@ -15,6 +15,7 @@ agent may always provide a bash face, or an htop face, so it can be monitored.
 url params required:
 - mcp - used by agents to mcp in and do things
 - newFaceKind=faceKind used to make a new face, assuming this is allowed
+- newFaceConfig=...args used to pass custom config options to the face start
 - view=faceView which view of the face you want to connect with, or the default one if not specified
 
 
