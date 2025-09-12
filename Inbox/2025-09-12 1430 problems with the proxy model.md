@@ -45,3 +45,17 @@ so have an auth proxy on each container that checks the auth cookie.
 
 encode the port in the dns wildcard name, which dictates how we terminate the connection.
 no, because the running service expects to modify ports.
+
+we could use pure tcp, but we could then do a fly replay after we have learned about the auth status, and we can add the auth key in the replay request thing.
+
+we could replay to ourselves, and then know that we have already passed the auth on it, so can just do the tcp forwarding thing.
+
+so using fly replay, we can have one app that processes http and determines auth state, then uses fly replay to fling it off to a private app, which can do raw tcp proxying.
+auth state can include the permissions inside agent land to access the coco in question.
+
+we can receive http, do the auth, then just pass the whole stream thru to the receipient raw.
+so the cookie would determine the auth status, then it gets stripped from the stream, and then the stream is sent raw thru to the terminating agent.
+stripping out the cookie bytes might be quite surgical, but we should be able to do it.
+this skips a lot of the gymnastics around proxying different protocols.
+
+one app for the wildcard termination, then use fly replay but strip the cookie header out, and replay it to another app.
