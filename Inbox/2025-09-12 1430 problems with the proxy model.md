@@ -25,3 +25,7 @@ agent names then have two spaces in the names separating them, and then every po
 
 or if we only roll with ttyd, we can proxy ttyd reliably, so that works just fine.
 these other things are a bit fancy.
+
+so now each container is exposed on the internet, and needs to be aware of auth before it lets anything connect.
+
+VPN in,
