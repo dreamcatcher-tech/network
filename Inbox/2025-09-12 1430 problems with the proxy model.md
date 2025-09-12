@@ -6,3 +6,5 @@
 >[!danger] Depends: 
 
 some web pages expect to be able to use paths freely, but we have this port parameter that seems to really get in the way, plus we want to be in charge of pathing.
+
+ideally we'd make it so that the cookie gets set, and then after that, every request sends the cookie so we know how to redirect them.
