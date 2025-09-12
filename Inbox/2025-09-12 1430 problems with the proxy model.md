@@ -59,3 +59,5 @@ stripping out the cookie bytes might be quite surgical, but we should be able to
 this skips a lot of the gymnastics around proxying different protocols.
 
 one app for the wildcard termination, then use fly replay but strip the cookie header out, and replay it to another app.
+
+so turns out best way is to accept http, then do the auth check, then proxy thru.
