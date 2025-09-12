@@ -28,4 +28,20 @@ these other things are a bit fancy.
 
 so now each container is exposed on the internet, and needs to be aware of auth before it lets anything connect.
 
-VPN in,
+VPN in, and then you are authed to a certain computer.
+We could say that, for anything that isn't http, that you must vpn in ?
+
+a browser extension that injects auth for all the non standard ports you want to connect on ?
+
+use a service worker on each page to rewrite requests to put auth header in there ?
+
+make the agent names hash based so they are secured by the fact that you even know what they are ?
+so in the top level browser, you see the full agent name, but in the iframe you see the scramled name, which is used to bypass auth.
+
+we could use cookies, and set them on every root domain, and across multiple ports ?
+or, the root domain sets them ?
+
+so have an auth proxy on each container that checks the auth cookie.
+
+encode the port in the dns wildcard name, which dictates how we terminate the connection.
+no, because the running service expects to modify ports.
