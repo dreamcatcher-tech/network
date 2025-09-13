@@ -32,3 +32,5 @@ for an auto created face, does it get removed when someone leaves ?
 could we store some state in the users browser ?
 if they go away, the face would go away ? so if they close the page, then the face disappears too ?
 what if the tab went to sleep ?
+
+it could be a single static face, and the service just makes a new thing each time, internally ? so the view is just the same ?
