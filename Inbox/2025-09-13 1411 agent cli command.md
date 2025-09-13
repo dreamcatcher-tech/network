@@ -23,3 +23,5 @@ probably just be the same as the mcp interfaces ?
 
 when doing face create, you can override any setting in the config file.
 can also run it as a single shot, where it runs and then exits.
+
+this is required so we can start an agent with different sets of prompts and toolings each time.
