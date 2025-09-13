@@ -17,3 +17,11 @@ config says if you make a new one on landing or not.
 
 if its tmux faces, we can set path options for them, so each one sits at a dedicated path and knows about it too.
 this is special to ttyd sessions, which is very general, so makes it easy to run cli apps and just have distinct paths for them.
+
+when you land on the agent home page, you would get the default face with the default view.
+you might get a new face created if it was configured to be that way.
+
+this could be triggered by sending a call into the mcp server that manages faces ?
+
+default face could be just, any old thing, like even a simple webpage ?
+so the app that fires up could be different, or selected from different faces, and then that just gets presented as the base view ?
