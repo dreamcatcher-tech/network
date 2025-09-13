@@ -25,3 +25,10 @@ this could be triggered by sending a call into the mcp server that manages faces
 
 default face could be just, any old thing, like even a simple webpage ?
 so the app that fires up could be different, or selected from different faces, and then that just gets presented as the base view ?
+
+is the default face just the first face that was started ?
+
+for an auto created face, does it get removed when someone leaves ?
+could we store some state in the users browser ?
+if they go away, the face would go away ? so if they close the page, then the face disappears too ?
+what if the tab went to sleep ?
