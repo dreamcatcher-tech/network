@@ -15,3 +15,7 @@ it can be overridden to handle latest or a specific commit or branch.
 
 yes, in the agent definition.
 faces can ask for subfolders ?
+
+if the face got its own local workspace of the git repo, then it can work independent of the other faces, and can make commits back accordingly ?
+
+or all the faces should share the same common filesystem.
