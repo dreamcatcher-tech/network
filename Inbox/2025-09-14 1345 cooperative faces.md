@@ -59,3 +59,21 @@ start codex with some altered config options, then with some changed sys prompt.
 if I pick the starting ports, and treat that as the known good face, using some vars from the shared lib as our startup config, then we can always have that face online.
 
 so we would have a command face, which starts up any command we like, makes the view optionally interactive, and enables interactions in some way ?
+
+how do I get smax working on this system with me ?
+how can I get the system doing the design work to reason thru how the system should work, make the tests, etc ?
+seems tricky to test because of the deployment step requiring human interaction ?
+
+starting an inspector face seems to crash the system, which is annoying.
+seems it needs some help to get its ports right, and seems sometimes it collides with our port that we are listening to.
+
+starting a codex face ought to spin up the interactions, too ?
+so we should be able to, with just codex faces, on a single agent, make an agent system that can do work that helps us.
+
+the test face didn't have a backing command, so no need to report a view.
+a face should be able to change its views dynamically ?
+so a bash face that started a new view each interaction, essentially, would keep updating its views.
+
+faces need to present as mcp objects so that llms can control them.
+
+? should the inspector be started automatically, to enable debugging ?
