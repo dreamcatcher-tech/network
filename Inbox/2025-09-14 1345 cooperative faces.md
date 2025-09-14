@@ -77,3 +77,11 @@ so a bash face that started a new view each interaction, essentially, would keep
 faces need to present as mcp objects so that llms can control them.
 
 ? should the inspector be started automatically, to enable debugging ?
+
+the face not being allocated a port to start at is causing collisions ?
+
+faces themselves might track some state, like what the last used port was, so it can increment predictably up ?  
+choosing a random port seems actually annoying.
+
+so a well behaved face would be given a start port range and then would increment up predictably as new instances of the face were started ?
+
