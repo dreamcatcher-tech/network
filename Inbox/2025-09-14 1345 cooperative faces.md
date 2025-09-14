@@ -41,3 +41,21 @@ at boot, there is a root face, which is running so that if you know its port num
 
 make a little script so we can interact with the agents in cli, that mimicks what mcp can do, and also mimick the config file for options.
 
+each time we start a new face, we run a ttyd server for its background process, in readonly, and present links to let you browse to it.
+
+trying to do with the inspector face:
+- starting an arbitrary web service using an mcp tool call from within codex
+
+want to boot into codex
+
+starting codex faces from within chat, and from within the cli
+
+every face launch includes a background ttyd shell, since it is running as a shell anyway, so you always get a ttyd view.  This might be interactive, allowing face control on the cli ? or just leave that alone ?
+
+testing interactions in the codex face.
+
+start codex with some altered config options, then with some changed sys prompt.
+
+if I pick the starting ports, and treat that as the known good face, using some vars from the shared lib as our startup config, then we can always have that face online.
+
+so we would have a command face, which starts up any command we like, makes the view optionally interactive, and enables interactions in some way ?
