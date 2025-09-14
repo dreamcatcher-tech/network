@@ -32,3 +32,12 @@ could make an entry script that takes some specific args in as url params, which
 so if we allow those args, we can pass thru thru to tmux, or to the face in question ?
 
 Each face should have its logs available in a backstage read only ttyd view
+
+common public landing page version:
+- browser we've never seen before lands, they get a new codex session, stripped of tools to make other agents, and can only chat about the project at hand
+
+
+at boot, there is a root face, which is running so that if you know its port number, you can connect to it and see the full blown agent logs.
+
+make a little script so we can interact with the agents in cli, that mimicks what mcp can do, and also mimick the config file for options.
+
