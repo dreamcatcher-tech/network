@@ -27,3 +27,8 @@ power user v1
 
 make a new codex face by using url params which act as args, so you can prompt the agent faces ?
 can list all the faces on the agent.
+
+could make an entry script that takes some specific args in as url params, which get sanitized by the internal proxy.
+so if we allow those args, we can pass thru thru to tmux, or to the face in question ?
+
+Each face should have its logs available in a backstage read only ttyd view
