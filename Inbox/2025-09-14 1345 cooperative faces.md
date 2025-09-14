@@ -97,3 +97,5 @@ live faces need to show what ports and views they have.
 this makes it easy for the user to open them.
 
 landing face can be done in code, then pulled out into config later.
+
+landing page should, if it isn't an mcp call, proxy thru to a ttyd service for the default face, so the default face can be on any port, and we just decide to proxy thru to it based on the incoming request.  
