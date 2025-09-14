@@ -85,3 +85,4 @@ choosing a random port seems actually annoying.
 
 so a well behaved face would be given a start port range and then would increment up predictably as new instances of the face were started ?
 
+go thru the features, and one by one enable them, and then rejig them as required.
