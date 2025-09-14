@@ -86,3 +86,14 @@ choosing a random port seems actually annoying.
 so a well behaved face would be given a start port range and then would increment up predictably as new instances of the face were started ?
 
 go thru the features, and one by one enable them, and then rejig them as required.
+
+face creation should show the ports and url and stuff of the views, so the UI can easily trigger them.
+it should also be expressly available via mcp, and the model should be able to drive the browser to navigate.
+
+what do we want to see on the landing page ?
+start with a single codex cli that is interactive, and that everyone sees the same page.
+
+live faces need to show what ports and views they have.
+this makes it easy for the user to open them.
+
+landing face can be done in code, then pulled out into config later.
