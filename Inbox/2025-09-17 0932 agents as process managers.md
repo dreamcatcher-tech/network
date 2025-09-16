@@ -18,3 +18,11 @@ so an agent is defined by the docker file, and by ultimately running the face pr
 the image stays kind of agnostic, since when it runs things, it runs them as linux processes, so any  language suits.
 
 the dockerfile is responsible for the tools in the environment, installed from the likes of apt package managers.
+
+if we made the process manager be controllable by mcp, then we can enable agentic management of the system.
+
+if we use a lib, like pup, that has well typed config and state objects, then we can sync these up somewhere and provide a combined view.  Even if that view is json only, it can still be managed by an agent.
+
+this can give the agent some debugging tools to track down problems, like ability to restart processes, kill unresponsive agents.
+
+these tools would likely be provided to a bot that specialized in agent management.
