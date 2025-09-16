@@ -5,4 +5,6 @@
 
 >[!danger] Depends: 
 
-the economic impact can be 
+the economic impact can be automatically balanced.
+
+we can start with the city's current books, and anything anyone suggests, we can map out the income for.
