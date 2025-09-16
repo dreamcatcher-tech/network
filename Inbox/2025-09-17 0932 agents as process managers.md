@@ -26,3 +26,12 @@ if we use a lib, like pup, that has well typed config and state objects, then we
 this can give the agent some debugging tools to track down problems, like ability to restart processes, kill unresponsive agents.
 
 these tools would likely be provided to a bot that specialized in agent management.
+
+we can mock http responses out to other servers too.
+
+we need a language where we can abstract away the tcp part of things, so we can run in simulated world for tests, and know we have good fidelity to the slow and expensive processes running in agent land.
+So the top level bus would handle a very simple interface for arranging agents and calling faces.
+? maybe that could be mango language, so agents could use it to simulate what they want so they can get the config right, and then they deploy it and want it go ?
+if they want to change things, they should run the simulator first.
+
+if we could wrap the mitm proxy using process management, then we might be able to train an agent to help us debug some of these things, since they could set up the proxy, capture the data, read it, make the changes, and keep going until they had a working tool.
