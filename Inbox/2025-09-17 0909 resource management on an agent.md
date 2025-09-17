@@ -26,3 +26,12 @@ faces need to say what types of resources they need, too, li
 so the agent is the docker image, and the face is the agent file.
 
 the docker file boots a standard image that is capable of running faces.
+
+ultimately once we have git being served over NFS, then it should be one agent per face, really, so this issue goes away.
+so each new face is a new container, so we never have to worry about resource contention, provided the agent can run a single face.
+
+how does NFS fit in with coco ?
+coco NFS ?
+
+web servers at scale might be handled differently, using dedicated frontage or something ?
+or have hot agents in a pool ready to be assigned by a router.

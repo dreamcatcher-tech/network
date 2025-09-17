@@ -5,24 +5,14 @@
 
 >[!danger] Depends: 
 
-https://enegames.itch.io/thunder-lizard-eat-or-be-eaten
-https://blog.jeffschomay.com/rendering-a-game-in-real-time-with-ai
-basically the limits of ai upscaling, but in the opposite directly.
 
-the raft of utility in cli / terminal apps that we can instantly browserify and vibe interface with.
+agents seems to be all about faces ?
+so you start the agent, then dynamically select the face you want to start ?
+so that config file seems all about the agent ?
+bothered about the amount of fly specific stuff - it is definitely affecting our design.
 
-strudel: https://www.youtube.com/watch?v=ZCcpWzhekEY
+where to now ?
 
-telnet doom.w-graj.net 666
-ssh -C 666@sshdoom.megidish.net using sixel
-
-all watchers of a view getting navigated away too.
-or what about all turning their mics on ?
-
-design decisions:
-1. agent workspace config, like sysprompt and others can only be set at creation time
-2. a face is used to get a job done, which may be multi turn
-
-What's hard is to think that all the concepts we use have to also be presented to the model too - conventionally we the programmers held the concepts in our minds, but now, we have to share them with the llms
-
-the agent interactions seem exclusively strings, rather than schema'd function calls.
+1. multi agent
+2. standard format for the config files
+3. git repos
