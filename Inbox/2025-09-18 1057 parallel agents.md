@@ -22,3 +22,8 @@ definitely lighter to spin up a new face, but the issue is when they get resourc
 can send a replay request under this situation ?
 
 better, we would receive the request, and then redirect to an agent that could handle it.
+its 100MB for a codex session, so it seems the cost is not much compared to wasted ram costs from underutilized machines.
+
+Also the programming time is high.
+
+So basically, one coco per incoming user session.  We just shut down if the browser is idle.  Can put some shutdown UI in front of it, and give it time to wake up.
