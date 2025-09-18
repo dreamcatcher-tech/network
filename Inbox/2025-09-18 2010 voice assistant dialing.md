@@ -31,3 +31,9 @@ use voice cloning of the human when the real person talks, so you can sound sexy
 start analyzing the call flow.
 
 structure the call in segments, with a strategy, and only let the bot follow a set path, only expose the current allowed path so it can't go off piste.
+
+the trick is being able to adversarially drive against it, using text to speech models, so we can exercise and tune the system without bothering humans.
+
+so even the bot being able to sell the services of the company to make prompting bots by sort of demonstrating its own skills would be good.
+
+can game out the knowledge based conversational flow first, and then test the realtime api using text only afterwards.
