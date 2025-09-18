@@ -41,3 +41,5 @@ Or we could redirect to a dedicated agent ?
 or have just one agent, and have only one face per agent, and just stick to that.
 If you want a new face or a dynamic one, then that is going to spawn a new agent with a new name.
 Each agent has a strong identity, and you might want to share exactly that one with someone else, so it needs a unique name.
+
+therefore the name of each agent must be unique, and they would never present to the browser the same name but for different entities.
