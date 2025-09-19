@@ -43,3 +43,5 @@ If you want a new face or a dynamic one, then that is going to spawn a new agent
 Each agent has a strong identity, and you might want to share exactly that one with someone else, so it needs a unique name.
 
 therefore the name of each agent must be unique, and they would never present to the browser the same name but for different entities.
+
+seems actually really bad that more than one agent would work on the same mutable field, because how can we restore the state in crash recovery ? the crash recovery model is always 'since the last commit' and if multiple agents altering things, now timing matters, so each agent should be in their own branch ?  If multiple agents modify the same mutable store, then they must be treated as a single agent, for the purpose of replay.

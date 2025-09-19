@@ -23,3 +23,6 @@ but actually
 
 and then...
 1. computer to computer communication
+
+
+seems actually really bad that more than one agent would work on the same mutable field, because how can we restore the state in crash recovery ? the crash recovery model is always 'since the last commit' and if multiple agents altering things, now timing matters, so each agent should be in their own branch ?
