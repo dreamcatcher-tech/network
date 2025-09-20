@@ -28,3 +28,9 @@ The agent that is booting, once it has aquired lock to act as the agent, it will
 
 we could clone of a single base repo, that is kept in sync with the remote, and then each workspace just pushes and pulls to that one, or uses it as a clone. 
 keeps things fast an local but also space efficient.
+
+workspace spec can narrow the repos down to a path, or a specific branch, in which case we would use sparse checkout.
+
+we could check out with no fetch depth, and then the bot has to know to get the history if it needs it.
+
+may provide an mcp server to do management of backing repos.
