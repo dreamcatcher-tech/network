@@ -16,5 +16,9 @@ long running services that are hosting something like a web app would need some 
 boot
 1. machine is started from the pool of ready workers, and told what its agent id is
 2. grabs its config down.
-3. if its workspace is not created, reads the workspace spect from the config
-4. git clones whatever it is supposed to, and can 
+3. provisions the workspace from its config
+4. git clones whatever it is supposed to, and can do a pull to make sure things are up to date, also resets the git index hard.
+5. reset whatever git repos are already present ?
+
+halt
+1. crash immediately - like hard reset.
