@@ -33,3 +33,7 @@ should also handle locking where it knows if multiple processes are trying to do
 So the concurrency management is built in to the procman.
 
 Setting the exclusive flag makes it ensure it is the only one, and you can configure how it determines task identity.
+
+handle things like fs manipulation, removals, etc so that the fs can be in a guaranteed state.
+
+can use some schema to just lay out or declare how we need the fs to be.
