@@ -37,3 +37,16 @@ the trick is being able to adversarially drive against it, using text to speech 
 so even the bot being able to sell the services of the company to make prompting bots by sort of demonstrating its own skills would be good.
 
 can game out the knowledge based conversational flow first, and then test the realtime api using text only afterwards.
+
+using SIP, we should be able to have a human on warm standby whilst the dialing is happening.
+
+look for peoples whos numbers are likely to receive high amounts of spam and then offer to fix the problem for them.
+
+scrape businesses and figure out if they rely on chatbots, then give them a call and offer to make these things, have a ready made thing to show them, and then if they pay use we just go ahead and do it.  We basically just be the chatbot.  we make it already, and we train up a sales chatbot to be able to figure out what they person wants.
+
+general form of "i think what you need is a ..." and then we go away and make that thing and call them back when its done.
+
+Once we have some users, we are effectively a self vetting network, where we can introduce concepts to people in the network, for commission, but only if we think it genuinely benefits them.
+
+learn about family on facebook etc, make bots that come join these networks just for the purpose of infiltration.
+pay to have access to peoples facebook accounts.
