@@ -50,3 +50,11 @@ Once we have some users, we are effectively a self vetting network, where we can
 
 learn about family on facebook etc, make bots that come join these networks just for the purpose of infiltration.
 pay to have access to peoples facebook accounts.
+
+we could make a dojo that generates voices to ensure the end computer can receive things well and eval well.
+we can do the evals as text only ?
+we can eval the self upgrade / self switching where the voice agent is upgraded directly based on feedback.
+
+operate kiosks with this model, where the kiosk is just a thin layer that decides when its time to dial the agent with something.
+
+use 3D displays to catch peoples eye, but also to provide a greater feeling of presence, since they can look right at you.  Can be just a cartoon model, which seems a lot less threatening.
