@@ -25,3 +25,11 @@ tracks the pid's of all, and can close them all down ?
 can be set to restart them.
 
 can do port groups and select ports.
+
+this should also be able to handle api calls, and infrastructure changes, where it does a loop to check if the command worked.
+
+should also handle locking where it knows if multiple processes are trying to do the same operation that it is, where the operation can be id'd somehow.
+
+So the concurrency management is built in to the procman.
+
+Setting the exclusive flag makes it ensure it is the only one, and you can configure how it determines task identity.
