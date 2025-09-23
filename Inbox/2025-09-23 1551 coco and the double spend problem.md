@@ -20,3 +20,9 @@ if the primary chain ensured no rollback of state, then any coco that was starte
 the idea is, if we can enable decentralized lightweight spending with confidentiality, we can have very high tx thruput and micropayments.
 
 the double spend problem becomes the double boot problem.  so long as there were no two cocos booted with the same keys at the same time, you can trust it.
+
+if networks get detached, you can 'carry the flame' as it were, where if the cocos are still lit, you can still trust them to be accurate.
+
+so when you get disconnected or netsplit, you can still keep trading and trusting, provided the net stays disconnected.
+
+if users held their keys with them, and they had some 'checked out funds' then those split with the netsplit, so wherever you end up.   so you would store funds in places that were split resistant, a bit like storing gold in differen tlocations - if you get cut off from the location, you can't spend it anyway.

@@ -37,3 +37,7 @@ Setting the exclusive flag makes it ensure it is the only one, and you can confi
 handle things like fs manipulation, removals, etc so that the fs can be in a guaranteed state.
 
 can use some schema to just lay out or declare how we need the fs to be.
+
+be able to mock or inject the procman for easy confirmation that it was called with the right args, and be able to replay out different responses.
+
+this could be used for api calls as well, helping store on tape what the requests and responses were.
