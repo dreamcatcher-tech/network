@@ -14,4 +14,8 @@ So it runs as a specific user, and then you can't bust out of the system since y
 
 Each session could be a unique user, to avoid cross chat modifications ?
 
-have a fron
+have a front end chatty fast bot, with no web search tools, then call specialized agents once the job is clear.
+
+make a web relay to make the openai requests, so that we do billing here and keep the api keys secret.
+
+ingestiong pipeline where screenshots can be put in to the repo too.
