@@ -19,3 +19,5 @@ have a front end chatty fast bot, with no web search tools, then call specialize
 make a web relay to make the openai requests, so that we do billing here and keep the api keys secret.
 
 ingestiong pipeline where screenshots can be put in to the repo too.
+
+welcome banner displays always and says the limitations of the current system.
