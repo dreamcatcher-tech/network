@@ -21,3 +21,9 @@ make a web relay to make the openai requests, so that we do billing here and kee
 ingestiong pipeline where screenshots can be put in to the repo too.
 
 welcome banner displays always and says the limitations of the current system.
+
+is the DAO a hyper computer, and we allow people to access it at the standard address ?
+
+so the computer, is run on the dreamcatcher hypernetwork, but presents itself at the satoshi island address.
+
+the hypernet.
