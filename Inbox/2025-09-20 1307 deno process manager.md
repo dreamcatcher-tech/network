@@ -41,3 +41,5 @@ can use some schema to just lay out or declare how we need the fs to be.
 be able to mock or inject the procman for easy confirmation that it was called with the right args, and be able to replay out different responses.
 
 this could be used for api calls as well, helping store on tape what the requests and responses were.
+
+should be able to store timing information so we can store it and get either per run stats or sample many runs and get some averages, just by running it under normal conditions.
