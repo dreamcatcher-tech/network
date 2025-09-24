@@ -37,5 +37,18 @@ the machine runner can use nfs to store its accounting data too, so it uses a gi
 
 does this help emulated testing ?
 
-so really, permissions management
+so really, permissions management is nfs based, and network hardening is the machine image responsibility.
 this seems closer to coco, where coco releases keys that grant access to the nfs slice.
+
+communicating thru the nfs server seems safe and we could lock that down maybe ?
+
+if we use message passing on the nfs filesystem, this is an ultimately stable and implementation agnostic api, which is a better way to interact with things.
+
+
+
+so the agent machine is the ultimate thing that services everything, and all we really do is route traffic around, to hit them.
+they are ultimately represented by the state stored on the nfs server, and we also marshall around machine images to run these agents.
+
+So if we make one app that deals with machine handling, and it reconciles the nfs store with the hardware, then another app handles auth and replay.  They could be the same app since they are light.
+
+we could also use some agents to manage this list ?
