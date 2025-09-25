@@ -20,5 +20,6 @@ agents creating new agents would just do the same - write to nfs, notify the exe
 
 if it notified exactly, that might be delayed, so full computer is best.
 
-but then 
+but then the requester needs to know the machine id when the machine is ready.
+so it could just poll the nfs server until it got what it needed ?
 
