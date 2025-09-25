@@ -84,3 +84,9 @@ if we made new machine ids, we could use the cache to force the routing to alway
 uptime and availability might be the realm of the blockchain, rather than things inside the agent layer.
 
 closer mimicks cocos, since it is a pool of secure machines that are driven by the filesystem, and a reconciler that manages hardware to filesystem mappings.
+
+
+store some system config on the nfs server, like the base domain it is serving from.
+
+is the router just a computer ?????????
+then it can store info about itself on there ?
