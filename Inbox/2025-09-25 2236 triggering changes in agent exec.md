@@ -23,3 +23,5 @@ if it notified exactly, that might be delayed, so full computer is best.
 but then the requester needs to know the machine id when the machine is ready.
 so it could just poll the nfs server until it got what it needed ?
 
+
+
