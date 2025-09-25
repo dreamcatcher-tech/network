@@ -72,7 +72,7 @@ so 3 apps:
 2. router - will also provision new computers if you're missing them.
 3. executor
 
-machiner uses a prefer instance id to send you on to, and if that fails for whatever reason, you come back to the landing http services of the machiner.
+executor uses a prefer instance id to send you on to, and if that fails for whatever reason, you come back to the landing http services of the machiner.
 
 if you come to the executor and the agent-computer path doesn't exist, you get a 404.
 it basically checks that the machine you want is alive, and then uses fly replay with a prefer instance id.  If it fails, it should fall back to the executor again which will check the machine is up and running, has a heartbeat, and then will replay you back there.  
