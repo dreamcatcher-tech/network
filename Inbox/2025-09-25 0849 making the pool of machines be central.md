@@ -52,3 +52,35 @@ they are ultimately represented by the state stored on the nfs server, and we al
 So if we make one app that deals with machine handling, and it reconciles the nfs store with the hardware, then another app handles auth and replay.  They could be the same app since they are light.
 
 we could also use some agents to manage this list ?
+
+so auth app is just a bit special, and then the machines app becomes separate, but auth flycasts into the machines app, after reading from nfs.
+
+
+when each agent deploys and does its self check, it writes its image into the image registry, so that everyone knows how to get the latest image, and the machine minders are watching that, to trigger the upgrades.
+
+Otherwise we end up with all this tangled stuff in fly.
+
+ultimately we want to come in on the root url, get redirected to to a subdomain that represents a specific agent, then when that resolvable request comes in, we fly replay with a forced instance id, to a specific machine.  If that machine fails, we want to come back to the machine manager, since it will set up the machines.
+
+So the purpose of the redirector is to get you a subdomain that can be resolved to a specific agent, using the nfs.
+When you request a specific agent, you get flycast to the executor.
+
+come in with no computer, we make a computer on nfs, then we make the default agent (if the computer is configured that way), then we send you off to the machiner which livens up the nfs state into something running.
+
+so 3 apps:
+1. nfs
+2. router - will also provision new computers if you're missing them.
+3. executor
+
+machiner uses a prefer instance id to send you on to, and if that fails for whatever reason, you come back to the landing http services of the machiner.
+
+if you come to the executor and the agent-computer path doesn't exist, you get a 404.
+it basically checks that the machine you want is alive, and then uses fly replay with a prefer instance id.  If it fails, it should fall back to the executor again which will check the machine is up and running, has a heartbeat, and then will replay you back there.  
+
+land with an agent specified, flycast to the executor.
+
+if we made new machine ids, we could use the cache to force the routing to always take that path.
+
+uptime and availability might be the realm of the blockchain, rather than things inside the agent layer.
+
+closer mimicks cocos, since it is a pool of secure machines that are driven by the filesystem, and a reconciler that manages hardware to filesystem mappings.
