@@ -35,3 +35,9 @@ availability should be rewarded / mined too.
 latency / edge metrics.
 
 If the currency has multiple dimensions, and we can add more on later, and we have some trade rates between them, we are future proof.
+
+can be like a debt that the chain owes you.
+
+the platform skim is the loss where you can't trade 1:1 you'll get like, 10:9 or something - so for providing x units, you'll get x - y redeemable.
+
+this debt is what can be traded around the place, and sold for real world currency.
