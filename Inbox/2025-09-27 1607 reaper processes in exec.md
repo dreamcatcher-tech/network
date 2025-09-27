@@ -25,4 +25,4 @@ each computer time, we could also pick all the machines that had their metadata 
 
 Then we can destroy or standby the machines.
 
-we should atten
+we should attenuate the fly token down for each machine, and then give each machine limited command over it's own environment.
